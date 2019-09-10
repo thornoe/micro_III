@@ -24,28 +24,28 @@
 \usepackage{bm} % bold symbol in math mode
 
 % Optional packages
+\usepackage{xcolor}
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage[super,negative]{nth} % allows writing 1st, 2nd, 3rd with superscript
-%\usepackage{ulem} % use the "sout" tag to "strikethrough" text
-
+\usepackage{ulem} % use the "sout" tag to "strikethrough" text
+\usepackage{tcolorbox}
 
 % Select what to do with command \comment:
   % \newcommand{\comment}[1]{}  %comments not shown
-   \newcommand{\comment}[1]{\par {\bfseries \color{blue} #1 \par}} %comment showed
-
+  % \newcommand{\comment}[1]{\par {\bfseries \color{blue} #1 \par}} %comments shown
 % Select what to do with todonotes: i.e. \todo{}, \todo[inline]{}
   % \usepackage[disable]{todonotes} % notes not shown
-  \usepackage[draft]{todonotes}   % notes shown
+  % \usepackage[draft]{todonotes}   % notes shown
 
-  %\numberwithin{equation}{section}
+%\numberwithin{equation}{section}
 
 %\addbibresource{references}
 
 \titlegraphic{\hfill \includegraphics[width=0.15 \textwidth]{graphics/logo}}
-\title{Microeconomics III, Ex. Class 4}
-\author{Thor Donsby Noe (thor.noe@econ.ku.dk)}
-\date{Session 1, September 11 2019} % \today
+\title{Microeconomics III, Ex. Class 4: Session 1}
+\author{Thor Donsby Noe (\href{mailto:thor.noe@econ.ku.dk}{thor.noe@econ.ku.dk})}
+\date{September 11 2019} % \today
 \institute{\normalsize Department of Economics, University of Copenhagen}
 
     % \definecolor{BlueTOL}{HTML}{222255}
@@ -55,19 +55,6 @@
     \setbeamercolor{alerted text}{fg=BrownTOL}
     \setbeamercolor{example text}{fg=GreenTOL}
     \setbeamercolor{background canvas}{bg=white}
-
-    % \setbeamercolor{block title alerted}{use=alerted text,
-    %     fg=alerted text.fg,
-    %     bg=}
-    % \setbeamercolor{block body alerted}{use={block title alerted, alerted text},
-    %     fg=alerted text.fg,
-    %     bg=}
-    % \setbeamercolor{block title example}{use=example text,
-    %     fg=example text.fg,
-    %     bg=}
-    % \setbeamercolor{block body example}{use={block title example, example text},
-    %     fg=example text.fg,
-    %     bg=}
 
     \setbeamercolor{block title alerted}{use=alerted text,
         fg=alerted text.fg,
