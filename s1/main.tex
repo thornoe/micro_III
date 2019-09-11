@@ -795,12 +795,12 @@ Solve these games by iterative elimination of strictly dominated strategies:
 \begin{multicols}{2}
   Mikael and Jonas are playing a game instead of working. The game has the following rules: Both secretly pick a (natural) number between 1 and 5. Then they reveal the numbers to each other. If both have picked the same number, nobody gets anything. If Jonas’ number is higher than Mikael’s number, Mikael has to pay Jonas 1 kr. If Mikael’s number is higher than Jonas’, Jonas has to pay 10 kr. to Mikael
 \vfill\null \columnbreak
-\begin{enumerate}
+\begin{itemize}
   \item[(a)] Does this game seem fair to you?
   \item[(b)] Write the game in bimatrix form.
   \item[(c)] Are there any strictly dominated strategies? Solve the game by iterated elimination of strictly dominated strategies.
   \item[(d)] What is the outcome of the game if both Mikael and Jonas are rational, know that the other is rational, know that the other knows that they are rational etc.?
-\end{enumerate}
+\end{itemize}
 \vfill\null
 \end{multicols}
 \textit{Take 10 min. to answer the questions on your own or with your neighbor(s)}
@@ -808,14 +808,17 @@ Solve these games by iterative elimination of strictly dominated strategies:
 
 \begin{frame}{PS1: Exercise 5}
 \begin{multicols}{2}
-  \begin{enumerate}
+  \begin{itemize}
     \item[(a)] Does this game seem fair to you?
     \item[(b)] Write the game in bimatrix form.
     \item[(c)] Are there any strictly dominated strategies? Solve the game by iterated elimination of strictly dominated strategies.
     \item[(d)] What is the outcome of the game if both Mikael and Jonas are rational, know that the other is rational, know that the other knows that they are rational etc.?
-  \end{enumerate}
+  \end{itemize}
 \vfill\null \columnbreak
-\vfill\null
+  \begin{itemize}
+    \item[(a)] How do you define "fair"? Symmetric payoffs and/or equal chance of winning?
+    \item[(b)] In bimatrix form:
+  \end{itemize}
 \begin{table}
   \footnotesize
   \begin{tabular}{c|c|c|c|c|c}
@@ -832,6 +835,38 @@ Solve these games by iterative elimination of strictly dominated strategies:
     "5" & 10, -10 & 10, -10 & 10, -10 & 10, -10 & 0, 0    \\
   \end{tabular}
 \end{table}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{PS1: Exercise 5}
+\begin{multicols}{2}
+  \begin{itemize}
+    \item[(a)] Does this game seem fair to you?
+    \item[(b)] Write the game in bimatrix form.
+    \item[(c)] Are there any strictly dominated strategies? Solve the game by iterated elimination of strictly dominated strategies.
+    \item[(d)] What is the outcome of the game if both Mikael and Jonas are rational, know that the other is rational, know that the other knows that they are rational etc.?
+  \end{itemize}
+\vfill\null \columnbreak
+\begin{table}
+  \footnotesize
+  \begin{tabular}{c|c|c|c|c|c}
+        & "1"     & "2"     & "3"     & "4"     & "5"     \\
+    \midrule
+    "1" & 0, 0    & -1, 1   & -1, 1   & -1, 1   & -1, 1   \\
+    \midrule
+    "2" & 10, -10 & 0, 0    & -1, 1   & -1, 1   & -1, 1   \\
+    \midrule
+    "3" & 10, -10 & 10, -10 & 0, 0    & -1, 1   & -1, 1   \\
+    \midrule
+    "4" & 10, -10 & 10, -10 & 10, -10 & 0, 0    & -1, 1   \\
+    \midrule
+    "5" & 10, -10 & 10, -10 & 10, -10 & 10, -10 & 0, 0    \\
+  \end{tabular}
+\end{table}
+\begin{itemize}
+  \item[(c)] In the initial game playing "2", "3", or "4" is only weakly dominated by playing "5". However, "1" is strictly dominated by "5". After removing "1" for each player, "2" is strictly dominated by "5" and is removed for each player as well. Continue till only ("5","5") survive IESDS.
+  \item[(d)] Both IESDS and Nash Equilibrium require common knowledge of rationality. If the assumption holds, ("5","5") is the outcome.
+\end{itemize}
 \end{multicols}
 \end{frame}
 
