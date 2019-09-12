@@ -1,0 +1,60 @@
+\input{preample.tex}
+\begin{document}
+\maketitle
+
+% ------------------------------------------------------------------------------
+% ------ FRAME -----------------------------------------------------------------
+% ------------------------------------------------------------------------------
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+\section{A-exercises}
+
+\begin{frame}{A Beautiful Mind}
+ \includegraphics[width=1.0 \textwidth]{graphics/blonde}
+\end{frame}
+
+
+\begin{frame}{PS2: Exercise 1}
+  \begin{table}
+    \begin{tabular}{cc|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player $Y$}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player $X$}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$A$}  & \multicolumn{1}{c}{$B$} \\\cline{3-4}
+        & $A$ & $(x,y)$ & $(x,y)$ \\\cline{3-4}
+        & $B$ & $(x,y)$ & $(x,y)$ \\\cline{3-4}
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+
+\begin{frame}{PS2: Exercise 1}
+Two ways of viewing the game:
+\begin{multicols}{2}
+  As a "Game of Chicken":
+  \begin{table}
+    \begin{tabular}{c|c|c|c}
+            & $t_1$ & $t_2$ & $t_3$ \\
+      \midrule
+      $s_1$ & 5, 0  & 3, 3  & 1, 1 \\
+      \midrule
+      $s_2$ & 3, 4  & 2, 2  & 3, 1 \\
+      \midrule
+      $s_3$ & 2, 2  & 1, 1  & 0, 5
+    \end{tabular}
+  \end{table}
+\vfill\null \columnbreak
+\vfill\null
+\end{multicols}
+\end{frame}
+
+
+
+
+% \begin{frame}%{References}
+%   \printbibliography
+% \end{frame}
+
+\end{document}
