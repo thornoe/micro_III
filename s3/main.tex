@@ -1,124 +1,124 @@
 \input{preample.tex}
 \begin{document}
-\maketitle
-
-% ------------------------------------------------------------------------------
-% ------ FRAME -----------------------------------------------------------------
-% ------------------------------------------------------------------------------
-\begin{frame}{Outline}
-\tableofcontents
-\end{frame}
-
-
-\section{PS3, Ex. 1 (A): Dominance and best response}
-
-\begin{frame}{PS3, Ex. 1 (A): Dominance and best response}
-  \begin{enumerate}
-    \item (A) Show that for each of the following two games, the only Nash equilibrium is in pure strategies. Describe the intuition for this result. What do these two games have in common?
-  \end{enumerate}
-  \begin{multicols}{2}
-    \begin{table}
-      \begin{tabular}{cc|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{\color{blue}R} \\\cline{3-4}
-        & U & 5, 5 & 1, \textcolor{blue}{6}  \\\cline{3-4}
-        & \color{red} & \textcolor{red}{6}, 1 & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-      \end{tabular}
-    \end{table}
-    $(D,R)$ is a unique Pure Strategy Nash Equilibrium (PSNE). The game is a Prisoner's Dilemma as it fulfills:
-    \begin{align*}
-      T>R>P>S\Leftrightarrow6>5>2>1
-    \end{align*}
-    i.e. the \textbf{T}emptation to deviate (6) is greater than the \textbf{R}eward for cooperating on the socially optimal outcome (5) and the \textbf{P}unishment payoff (2) is greater than the "\textbf{S}ucker's" payoff (1).
-  \vfill\null \columnbreak
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{PS3, Ex. 1 (A): Dominance and best response}
-  \begin{enumerate}
-    \item (A) Show that for each of the following two games, the only Nash equilibrium is in pure strategies. Describe the intuition for this result. What do these two games have in common?
-  \end{enumerate}
-  \begin{multicols}{2}
-    \begin{table}
-      \begin{tabular}{cc|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{\color{blue}R} \\\cline{3-4}
-        & U & 5, 5 & 1, \textcolor{blue}{6}  \\\cline{3-4}
-        & \color{red}D & \textcolor{red}{6}, 1 & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-      \end{tabular}
-    \end{table}
-    $(D,R)$ is a unique Pure Strategy Nash Equilibrium (PSNE). The game is a Prisoner's Dilemma as it fulfills:
-    \begin{align*}
-      T>R>P>S\Leftrightarrow6>5>2>1
-    \end{align*}
-    i.e. the \textbf{T}emptation to deviate (6) is greater than the \textbf{R}eward for cooperating on the socially optimal outcome (5) and the \textbf{P}unishment payoff (2) is greater than the "\textbf{S}ucker's" payoff (1).
-  \vfill\null \columnbreak
-    \begin{table}
-      \begin{tabular}{cc|c|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{R} \\\cline{3-5}
-        & U & \textcolor{red}{1}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} & 0, 1 \\\cline{3-5}
-        & D & 0, \textcolor{blue}{3} & 0, 1 & \textcolor{red}{2}, 0 \\\cline{3-5}
-      \end{tabular}
-    \end{table}
-    $(U,C)$ is a unique Pure Strategy Nash Equilibrium (PSNE) as no other combination of (mixed or pure) strategies gives as high payoffs.\\\medskip
-    Iterated Elimination of Strictly Dominated Strategies (IESDS) leads to the same outcome as the best responses (eliminate $R$ then $D$ and lastly $L$).
-  \vfill\null
-  \end{multicols}
-  \textbf{As both games can be solved by IESDS they both have a unique PSNE.}
-\end{frame}
-
-
-\section{PS3, Ex. 2 (A): Equilibrium selection}
-
-\begin{frame}{PS3, Ex. 2 (A): Equilibrium selection}
-  \begin{itemize}
-    \item[2.] (A) Solve for all pure strategy Nash equilibria. Which equilibrium do you find most reasonable?
-  \end{itemize}
-  \begin{multicols}{2}
-    \begin{table}
-      \begin{tabular}{cc|c|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{a} & \multicolumn{1}{c}{b} & \multicolumn{1}{c}{c} \\\cline{3-5}
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & A & \textcolor{red}{2}, \textcolor{blue}{2} & \textcolor{red}{0}, 0 & -1, \textcolor{blue}{2} \\\cline{3-5}
-        & B & 0, \textcolor{blue}{0} & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-5}
-        & C & \textcolor{red}{2}, -1 & \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-5}
-      \end{tabular}
-    \end{table}
-    $PSNE=\{(A,a),(B,b),(C,c)\}$.
-  \vfill\null \columnbreak
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{PS3, Ex. 2 (A): Equilibrium selection}
-  \begin{itemize}
-    \item[2.] (A) Solve for all pure strategy Nash equilibria. Which equilibrium do you find most reasonable?
-  \end{itemize}
-  \begin{multicols}{2}
-    \begin{table}
-      \begin{tabular}{cc|c|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{a} & \multicolumn{1}{c}{b} & \multicolumn{1}{c}{c} \\\cline{3-5}
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & A & \textcolor{red}{2}, \textcolor{blue}{2} & \textcolor{red}{0}, 0 & -1, \textcolor{blue}{2} \\\cline{3-5}
-        & B & 0, \textcolor{blue}{0} & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-5}
-        & C & \textcolor{red}{2}, -1 & \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-5}
-      \end{tabular}
-    \end{table}
-    $PSNE=\{(A,a),(B,b),(C,c)\}$.
-  \vfill\null \columnbreak
-    For \textbf{risk neutral} players $(A,a)$ is the most reasonable as it maximizes payoff for both players.\\\medskip
-    For \textbf{risk averse} players avoiding $A$ and $a$ eliminates the risk of a negative payoff. $(C,c)$ is more reasonable than $(B,b)$ as the payoffs are positive.
-  \vfill\null
-  \end{multicols}
-\end{frame}
-
-
-\section{PS3, Ex. 3 (A): NE proof using IEWDS}
+% \maketitle
+%
+% % ------------------------------------------------------------------------------
+% % ------ FRAME -----------------------------------------------------------------
+% % ------------------------------------------------------------------------------
+% \begin{frame}{Outline}
+% \tableofcontents
+% \end{frame}
+%
+%
+% \section{PS3, Ex. 1 (A): Dominance and best response}
+%
+% \begin{frame}{PS3, Ex. 1 (A): Dominance and best response}
+%   \begin{enumerate}
+%     \item (A) Show that for each of the following two games, the only Nash equilibrium is in pure strategies. Describe the intuition for this result. What do these two games have in common?
+%   \end{enumerate}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{\color{blue}R} \\\cline{3-4}
+%         & U & 5, 5 & 1, \textcolor{blue}{6}  \\\cline{3-4}
+%         & \color{red} & \textcolor{red}{6}, 1 & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     $(D,R)$ is a unique Pure Strategy Nash Equilibrium (PSNE). The game is a Prisoner's Dilemma as it fulfills:
+%     \begin{align*}
+%       T>R>P>S\Leftrightarrow6>5>2>1
+%     \end{align*}
+%     i.e. the \textbf{T}emptation to deviate (6) is greater than the \textbf{R}eward for cooperating on the socially optimal outcome (5) and the \textbf{P}unishment payoff (2) is greater than the "\textbf{S}ucker's" payoff (1).
+%   \vfill\null \columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 1 (A): Dominance and best response}
+%   \begin{enumerate}
+%     \item (A) Show that for each of the following two games, the only Nash equilibrium is in pure strategies. Describe the intuition for this result. What do these two games have in common?
+%   \end{enumerate}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{\color{blue}R} \\\cline{3-4}
+%         & U & 5, 5 & 1, \textcolor{blue}{6}  \\\cline{3-4}
+%         & \color{red}D & \textcolor{red}{6}, 1 & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     $(D,R)$ is a unique Pure Strategy Nash Equilibrium (PSNE). The game is a Prisoner's Dilemma as it fulfills:
+%     \begin{align*}
+%       T>R>P>S\Leftrightarrow6>5>2>1
+%     \end{align*}
+%     i.e. the \textbf{T}emptation to deviate (6) is greater than the \textbf{R}eward for cooperating on the socially optimal outcome (5) and the \textbf{P}unishment payoff (2) is greater than the "\textbf{S}ucker's" payoff (1).
+%   \vfill\null \columnbreak
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{R} \\\cline{3-5}
+%         & U & \textcolor{red}{1}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} & 0, 1 \\\cline{3-5}
+%         & D & 0, \textcolor{blue}{3} & 0, 1 & \textcolor{red}{2}, 0 \\\cline{3-5}
+%       \end{tabular}
+%     \end{table}
+%     $(U,C)$ is a unique Pure Strategy Nash Equilibrium (PSNE) as no other combination of (mixed or pure) strategies gives as high payoffs.\\\medskip
+%     Iterated Elimination of Strictly Dominated Strategies (IESDS) leads to the same outcome as the best responses (eliminate $R$ then $D$ and lastly $L$).
+%   \vfill\null
+%   \end{multicols}
+%   \textbf{As both games can be solved by IESDS they both have a unique PSNE.}
+% \end{frame}
+%
+%
+% \section{PS3, Ex. 2 (A): Equilibrium selection}
+%
+% \begin{frame}{PS3, Ex. 2 (A): Equilibrium selection}
+%   \begin{itemize}
+%     \item[2.] (A) Solve for all pure strategy Nash equilibria. Which equilibrium do you find most reasonable?
+%   \end{itemize}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{a} & \multicolumn{1}{c}{b} & \multicolumn{1}{c}{c} \\\cline{3-5}
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & A & \textcolor{red}{2}, \textcolor{blue}{2} & \textcolor{red}{0}, 0 & -1, \textcolor{blue}{2} \\\cline{3-5}
+%         & B & 0, \textcolor{blue}{0} & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-5}
+%         & C & \textcolor{red}{2}, -1 & \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-5}
+%       \end{tabular}
+%     \end{table}
+%     $PSNE=\{(A,a),(B,b),(C,c)\}$.
+%   \vfill\null \columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 2 (A): Equilibrium selection}
+%   \begin{itemize}
+%     \item[2.] (A) Solve for all pure strategy Nash equilibria. Which equilibrium do you find most reasonable?
+%   \end{itemize}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{a} & \multicolumn{1}{c}{b} & \multicolumn{1}{c}{c} \\\cline{3-5}
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & A & \textcolor{red}{2}, \textcolor{blue}{2} & \textcolor{red}{0}, 0 & -1, \textcolor{blue}{2} \\\cline{3-5}
+%         & B & 0, \textcolor{blue}{0} & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-5}
+%         & C & \textcolor{red}{2}, -1 & \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-5}
+%       \end{tabular}
+%     \end{table}
+%     $PSNE=\{(A,a),(B,b),(C,c)\}$.
+%   \vfill\null \columnbreak
+%     For \textbf{risk neutral} players $(A,a)$ is the most reasonable as it maximizes payoff for both players.\\\medskip
+%     For \textbf{risk averse} players avoiding $A$ and $a$ eliminates the risk of a negative payoff. $(C,c)$ is more reasonable than $(B,b)$ as the payoffs are positive.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+%
+%
+% \section{PS3, Ex. 3 (A): NE proof using IEWDS}
 
 \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
   \begin{itemize}
@@ -129,24 +129,24 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-\begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
-    The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item Let $(s_1^{*},s_2^{*})$ be a NE.
-      \item Say we carry out \underline{\textbf{IEWDS}} and $s_1^{*}$ is the first NE strategy to be eliminated (in round $n$ of elimination).
-      \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
-    \end{itemize}
-      \begin{align*}
-        \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)
-      \end{align*}
-      \begin{itemize}
-        \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
-      \end{itemize}
-  \vfill\null \columnbreak
-  \vfill\null
-  \end{multicols}
-\end{frame}
+% \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+%     The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:.
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item Let $(s_1^{*},s_2^{*})$ be a NE.
+%       \item Say we carry out \underline{\textbf{IEWDS}} and $s_1^{*}$ is the first NE strategy to be eliminated (in round $n$ of elimination).
+%       \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
+%     \end{itemize}
+%       \begin{align*}
+%         \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)
+%       \end{align*}
+%       \begin{itemize}
+%         \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
+%       \end{itemize}
+%   \vfill\null \columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
 \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
     The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
   \begin{multicols}{2}
@@ -156,7 +156,7 @@
       \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
     \end{itemize}
       \begin{align}
-        \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{Weak}u_1(s_1^{'},s_2)\label{proof}
+        \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)\label{proof}
       \end{align}
       \begin{itemize}
         \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
@@ -173,13 +173,13 @@
       \end{align*}
       \item \underline{\textbf{No}} contradiction!
     \end{itemize}
-    I.e. for a NE $(s_1^{*},s_2^{*})$ IEWDS can eliminate $s_1^{*}$ if $s_1^{'},s_2^{'}$ exist such that:
+    \underline{\textbf{Conclusion}}: for a NE $(s_1^{*},s_2^{*})$ IEWDS can eliminate $s_1^{*}$ if $s_1^{'},s_2^{'}$ exist such that:
     \begin{align*}
       \text{for }s_1^{'}\in S_1^n:\ u_1(s_1^{*},s_2^{*})=u_1(s_1^{'},s_2^{*})
     \end{align*}
     and
     \begin{align*}
-      \text{for }s_2^{'}\in S_2^n:\ u_1(s_1^{*},s_2^{*})<u_1(s_1^{'},s_2^{'})
+      \text{for }s_2^{'}\in S_2^n:\ u_1(s_1^{*},s_2^{'})<u_1(s_1^{'},s_2^{'})
     \end{align*}
   \vfill\null
   \end{multicols}
@@ -187,112 +187,112 @@
 
 
 
-\section{PS3, Ex. 5: Luxembourg as a rogue state}
-
-\begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
-  \begin{multicols}{2}
-    Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
-    \begin{align*}
-      p(s_V,s_D)=s_V+s_D-s_vs_D,
-    \end{align*}
-    where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
-    \begin{align*}
-      c_i(s_i)=s_i^2
-    \end{align*}
-    The objective of each country is to maximize its expected payoff from the attack minus the cost.
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
-      \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
-    \end{itemize}
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Find the NE in the static game:
-    \end{itemize}
-    Expected payoffs for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    Take advantage of symmetry:
-    \begin{align*}
-       s_i&=\frac{1-s_i}{2}\\
-      2s_i&=s_i=1\\
-       s_i^{*}&=\frac{1}{3}
-    \end{align*}
-    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(b)] Find the SO given shares are equal:
-    \end{itemize}
-    Expected payoffs for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
-    \begin{align*}
-      u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
-                  &=2\bar{s}-2\bar{s}^2
-    \end{align*}
-    Social planner target function:
-    \begin{align*}
-      \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
-    \end{align*}
-    Find the social optimum (SO):
-    \begin{align*}
-      FOC:\ \frac{\delta\pi^S}{\delta s_i}=4-8\bar{S}&=0\\
-       \bar{S}&=\frac{4}{8}=\frac{1}{2}>\frac{1}{3}
-    \end{align*}
-    i.e. the SO is higher than the NE as the positive externality is not rewarded, leading to an incentive to free ride.
-  \vfill\null
-  \end{multicols}
-\end{frame}
-
-
-
-\section{PS3, Ex. }
-
-\begin{frame}{PS3, Ex. }
-  \begin{multicols}{2}
-    \begin{table}
-      \begin{tabular}{cc|c|c|}
-          & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
-          \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
-          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{3-4}
-          & A &  &  \\\cline{3-4}
-          & B &  &  \\\cline{3-4}
-      \end{tabular}
-    \end{table}
-  \vfill\null \columnbreak
-    \begin{table}
-      \begin{tabular}{cc|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{3-4}
-        & A & \textcolor{red}{}, \textcolor{blue}{} &   \\\cline{3-4}
-        & B &  &  \\\cline{3-4}
-      \end{tabular}
-    \end{table}
-    \begin{table}
-      \begin{tabular}{c|c|c|}
-          \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{2-3}
-          A &  &  \\\cline{2-3}
-          B &  &  \\\cline{2-3}
-      \end{tabular}
-    \end{table}
-  \vfill\null
-  \end{multicols}
-\end{frame}
-
-
-
-% \begin{frame}%{References}
-%   \includegraphics[width=1.0 \textwidth]{figures/example}
-%   \printbibliography
+% \section{PS3, Ex. 5: Luxembourg as a rogue state}
+%
+% \begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
+%   \begin{multicols}{2}
+%     Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
+%     \begin{align*}
+%       p(s_V,s_D)=s_V+s_D-s_vs_D,
+%     \end{align*}
+%     where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
+%     \begin{align*}
+%       c_i(s_i)=s_i^2
+%     \end{align*}
+%     The objective of each country is to maximize its expected payoff from the attack minus the cost.
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
+%       \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
+%     \end{itemize}
+%   \vfill\null
+%   \end{multicols}
 % \end{frame}
-
+% \begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Find the NE in the static game:
+%     \end{itemize}
+%     Expected payoffs for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     Take advantage of symmetry:
+%     \begin{align*}
+%        s_i&=\frac{1-s_i}{2}\\
+%       2s_i&=s_i=1\\
+%        s_i^{*}&=\frac{1}{3}
+%     \end{align*}
+%     i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(b)] Find the SO given shares are equal:
+%     \end{itemize}
+%     Expected payoffs for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
+%     \begin{align*}
+%       u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
+%                   &=2\bar{s}-2\bar{s}^2
+%     \end{align*}
+%     Social planner target function:
+%     \begin{align*}
+%       \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
+%     \end{align*}
+%     Find the social optimum (SO):
+%     \begin{align*}
+%       FOC:\ \frac{\delta\pi^S}{\delta s_i}=4-8\bar{S}&=0\\
+%        \bar{S}&=\frac{4}{8}=\frac{1}{2}>\frac{1}{3}
+%     \end{align*}
+%     i.e. the SO is higher than the NE as the positive externality is not rewarded, leading to an incentive to free ride.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+%
+%
+%
+% \section{PS3, Ex. }
+%
+% \begin{frame}{PS3, Ex. }
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%           & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
+%           \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
+%           & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{3-4}
+%           & A &  &  \\\cline{3-4}
+%           & B &  &  \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null \columnbreak
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{3-4}
+%         & A & \textcolor{red}{}, \textcolor{blue}{} &   \\\cline{3-4}
+%         & B &  &  \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     \begin{table}
+%       \begin{tabular}{c|c|c|}
+%           \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{2-3}
+%           A &  &  \\\cline{2-3}
+%           B &  &  \\\cline{2-3}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+%
+%
+%
+% % \begin{frame}%{References}
+% %   \includegraphics[width=1.0 \textwidth]{figures/example}
+% %   \printbibliography
+% % \end{frame}
+%
 \end{document}
