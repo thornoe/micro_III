@@ -83,7 +83,7 @@
       \begin{tabular}{cc|c|c|c|}
         & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{a} & \multicolumn{1}{c}{b} & \multicolumn{1}{c}{c} \\\cline{3-5}
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
         & A & \textcolor{red}{2}, \textcolor{blue}{2} & \textcolor{red}{0}, 0 & -1, \textcolor{blue}{2} \\\cline{3-5}
         & B & 0, \textcolor{blue}{0} & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-5}
         & C & \textcolor{red}{2}, -1 & \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-5}
@@ -103,7 +103,7 @@
       \begin{tabular}{cc|c|c|c|}
         & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{a} & \multicolumn{1}{c}{b} & \multicolumn{1}{c}{c} \\\cline{3-5}
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
         & A & \textcolor{red}{2}, \textcolor{blue}{2} & \textcolor{red}{0}, 0 & -1, \textcolor{blue}{2} \\\cline{3-5}
         & B & 0, \textcolor{blue}{0} & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-5}
         & C & \textcolor{red}{2}, -1 & \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-5}
@@ -186,6 +186,206 @@
 \end{frame}
 
 
+\section{PS3, Ex. 4 (A): Mixed strategy price competition}
+
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{itemize}
+      \item[4.] (A). Consider price competition between two firms when some consumers are informed about prices and others are not. Firms have zero marginal cost and they set price simultaneously; for the sake of this example, assume each price can only take one of the following values: 80, 54, 38. The market consists of two consumers. The uninformed consumer will visit a firm at random (probabilities $\frac{1}{2},\frac{1}{2}$) and buy from it, regardless of the price. The informed consumer will visit the firm with the lowest price and buy from it. If both firms set the same price, assume that the informed consumer picks a firm at random (probabilities $\frac{1}{2},\frac{1}{2}$).
+      \item[(a)] Argue that this game can be represented by the following bimatrix.
+      \vspace{-4pt}
+      \begin{table}
+        \begin{tabular}{c|c|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{$p_2$=80} & \multicolumn{1}{c}{$p_2$=54} & \multicolumn{1}{c}{$p_2$=38} \\\cline{2-4}
+          $p_1$=80 & 80, 80 & 40, 81 & 40, 57 \\\cline{2-4}
+          $p_1$=54 & 81, 40 & 54, 54 & 27, 57 \\\cline{2-4}
+          $p_1$=38 & 57, 40 & 57, 27 & 38, 38 \\\cline{2-4}
+        \end{tabular}
+      \end{table}
+      \item[(b)] Show that there is no Nash equilibrium in pure strategies.
+      \item[(c)] Confirm that the following strategy profile is a Nash equilibrium: each firm plays price 80 with probability 0.232, price 54 with probability 0.361, and price 38 with probability 0.407.
+      \item[(d)] Why do you think the equilibrium is so different from the standard Bertrand pricing game (i.e. where competition drives price down to marginal cost)?
+    \end{itemize}
+\end{frame}
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{itemize}
+      \item[(a)] The game in normal form and bimatrix:
+    \end{itemize}
+    Players: \textit{Firm 1, Firm 2}. Strategies: $p_i\in S_i = S = \{80, 54, 38\}$\\\medskip
+    Payoffs consist of \textit{payoff from the informed consumer} + \textit{payoff from the uninformed}.
+    I.e. payoffs for player $i\neq j$:
+    \begin{align*}
+      u_i(p_i,p_j)=
+      \left\{ \begin{array}{rcl}
+      p_i + \frac{1}{2}p_i & \mbox{if} & p_i < p_j \\
+      \frac{1}{2}p_i + \frac{1}{2}p_i & \mbox{if} & p_i = p_j \\
+      0 + \frac{1}{2}p_i & \mbox{if} & p_i > p_j
+      \end{array}\right.
+      =
+      \left\{ \begin{array}{rcl}
+      \frac{3}{2}p_i & \mbox{if} & p_i < p_j \\
+                 p_i & \mbox{if} & p_i = p_j \\
+      \frac{1}{2}p_i & \mbox{if} & p_i > p_j
+      \end{array}\right.
+    \end{align*}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{itemize}
+      \item[(a)] The game in normal form and bimatrix:
+    \end{itemize}
+    Players: \textit{Firm 1, Firm 2}. Strategies: $p_i\in S_i = S = \{80, 54, 38\}$\\\medskip
+    Payoffs consist of \textit{payoff from the informed consumer} + \textit{payoff from the uninformed}.
+    I.e. payoffs for player $i\neq j$:
+    \begin{align*}
+      u_i(p_i,p_j)=
+      \left\{ \begin{array}{rcl}
+      p_i + \frac{1}{2}p_i & \mbox{if} & p_i < p_j \\
+      \frac{1}{2}p_i + \frac{1}{2}p_i & \mbox{if} & p_i = p_j \\
+      0 + \frac{1}{2}p_i & \mbox{if} & p_i > p_j
+      \end{array}\right.
+      =
+      \left\{ \begin{array}{rcl}
+      \frac{3}{2}p_i & \mbox{if} & p_i < p_j \\
+                 p_i & \mbox{if} & p_i = p_j \\
+      \frac{1}{2}p_i & \mbox{if} & p_i > p_j
+      \end{array}\right.
+    \end{align*}
+    Which can be represented as:
+      \vspace{-6pt}
+      \begin{table}
+        \begin{tabular}{c|c|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{$p_j$=80} & \multicolumn{1}{c}{$p_j$=54} & \multicolumn{1}{c}{$p_j$=38} \\\cline{2-4}
+          $p_i$=80 & 80, - & $\frac{1}{2}$80=40, - & $\frac{1}{2}$80=40, - \\\cline{2-4}
+          $p_i$=54 & $\frac{3}{2}$54=81, - & 54, - & $\frac{1}{2}$54=27, - \\\cline{2-4}
+          $p_i$=38 & $\frac{3}{2}$80=57, - & $\frac{3}{2}$38=57, - & 38, - \\\cline{2-4}
+        \end{tabular}
+      \end{table}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{itemize}
+      \item[(a)] The game in normal form and bimatrix:
+    \end{itemize}
+    Players: \textit{Firm 1, Firm 2}. Strategies: $p_i\in S_i = S = \{80, 54, 38\}$\\\medskip
+    Payoffs consist of \textit{payoff from the informed consumer} + \textit{payoff from the uninformed}.
+    I.e. payoffs for player $i\neq j$:
+    \begin{align*}
+      u_i(p_i,p_j)=
+      \left\{ \begin{array}{rcl}
+      p_i + \frac{1}{2}p_i & \mbox{if} & p_i < p_j \\
+      \frac{1}{2}p_i + \frac{1}{2}p_i & \mbox{if} & p_i = p_j \\
+      0 + \frac{1}{2}p_i & \mbox{if} & p_i > p_j
+      \end{array}\right.
+      =
+      \left\{ \begin{array}{rcl}
+      \frac{3}{2}p_i & \mbox{if} & p_i < p_j \\
+                 p_i & \mbox{if} & p_i = p_j \\
+      \frac{1}{2}p_i & \mbox{if} & p_i > p_j
+      \end{array}\right.
+    \end{align*}
+    Which can be represented as:
+      \vspace{-6pt}
+      \begin{table}
+        \begin{tabular}{c|c|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{$p_j$=80} & \multicolumn{1}{c}{$p_j$=54} & \multicolumn{1}{c}{$p_j$=38} \\\cline{2-4}
+          $p_i$=80 & 80, - & $\frac{1}{2}$80=40, - & $\frac{1}{2}$80=40, - \\\cline{2-4}
+          $p_i$=54 & $\frac{3}{2}$54=81, - & 54, - & $\frac{1}{2}$54=27, - \\\cline{2-4}
+          $p_i$=38 & $\frac{3}{2}$80=57, - & $\frac{3}{2}$38=57, - & 38, - \\\cline{2-4}
+        \end{tabular}
+      \end{table}
+    \begin{itemize}
+      \item[(b)] Show that there is no Nash equilibrium in pure strategies:
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{table}
+      \begin{tabular}{cc|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Firm 2}\\
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$p_2$=80} & \multicolumn{1}{c}{$p_2$=54} & \multicolumn{1}{c}{$p_2$=38} \\\cline{3-5}
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\color{red}Firm 1}}}
+        & $p_1$=80 & 80, 80 & 40, \textcolor{blue}{81} & \textcolor{red}{40}, 57 \\\cline{3-5}
+        & $p_1$=54 & \textcolor{red}{81}, 40 & 54, 54 & 27, \textcolor{blue}{57} \\\cline{3-5}
+        & $p_1$=38 & 57, \textcolor{blue}{40} & \textcolor{red}{57}, 27 & 38, 38 \\\cline{3-5}
+      \end{tabular}
+    \end{table}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{table}
+      \begin{tabular}{c|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{$p_2$=80} & \multicolumn{1}{c}{$p_2$=54} & \multicolumn{1}{c}{$p_2$=38} \\\cline{2-4}
+        $p_1$=80 & 80, 80 & 40, 81 & 40, 57 \\\cline{2-4}
+        $p_1$=54 & 81, 40 & 54, 54 & 27, 57 \\\cline{2-4}
+        $p_1$=38 & 57, 40 & 57, 27 & 38, 38 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(c)] Confirm that the following strategy profile is a Nash equilibrium: each firm plays price 80 with probability 0.232, price 54 with probability 0.361, and price 38 with probability 0.407.
+    \end{itemize}
+    \begin{tabular}{|l|}
+      \cline{1-1}
+      \textbf{Remember}: In an equilibrium in mixed strategies, a player is indifferent between all \\
+      pure strategies that she is choosing with positive probability.\\\cline{1-1}
+    \end{tabular}
+    \begin{table}
+      \begin{tabular}{c|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{$p_2$=80} & \multicolumn{1}{c}{$p_2$=54} & \multicolumn{1}{c}{$p_2$=38} \\\cline{2-4}
+        $p_1$=80 & 80, 80 & 40, 81 & 40, 57 \\\cline{2-4}
+        $p_1$=54 & 81, 40 & 54, 54 & 27, 57 \\\cline{2-4}
+        $p_1$=38 & 57, 40 & 57, 27 & 38, 38 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{itemize}
+      \item[(c)] Confirm that the following strategy profile is a Nash equilibrium: each firm plays price 80 with probability 0.232, price 54 with probability 0.361, and price 38 with probability 0.407.
+    \end{itemize}
+    \begin{tabular}{|l|}
+      \cline{1-1}
+      \textbf{Remember}: In an equilibrium in mixed strategies, a player is indifferent between all \\
+      pure strategies that she is choosing with positive probability.\\\cline{1-1}
+    \end{tabular}
+    \begin{table}
+      \begin{tabular}{c|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{$p_2$=80} & \multicolumn{1}{c}{$p_2$=54} & \multicolumn{1}{c}{$p_2$=38} \\\cline{2-4}
+        $p_1$=80 & 80, 80 & 40, 81 & 40, 57 \\\cline{2-4}
+        $p_1$=54 & 81, 40 & 54, 54 & 27, 57 \\\cline{2-4}
+        $p_1$=38 & 57, 40 & 57, 27 & 38, 38 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    Check that firm $i$ is indifferent between all pure strategies when the opposing firm's strategy is given by the probability distribution $\widehat{p_j}=(0.232,0.361)$:
+    \begin{align*}
+      u_i(p_i=80,\widehat{p_j})= 0.232\cdot80 + 0.361\cdot40 + (1-0.232-0.361)\cdot40 = 49.280 \approx 49.3\\
+      u_i(p_i=54,\widehat{p_j})= 0.232\cdot81 + 0.361\cdot54 + (1-0.232-0.361)\cdot27 = 49.275 \approx 49.3\\
+      u_i(p_i=38,\widehat{p_j})= 0.232\cdot57 + 0.361\cdot57 + (1-0.232-0.361)\cdot38 = 49.267 \approx 49.3
+    \end{align*}
+    There are rounding errors as the exact mixed strategy profile is $\widehat{p_j}=\left(\frac{193}{833},\frac{8127}{22491}\right)$.
+  \vfill\null
+\end{frame}
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{itemize}
+      \item[(d)] Why do you think the equilibrium is so different from the standard Bertrand pricing game (i.e. where competition drives price down to marginal cost)?
+    \end{itemize}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{itemize}
+      \item[(d)] Why do you think the equilibrium is so different from the standard Bertrand pricing game (i.e. where competition drives price down to marginal cost)?
+    \end{itemize}
+    In the standard Bertrand Oligopoly price competition would lead to the perfectly competitive outcome (price = marginal cost), here:
+    \begin{align*}
+      p_1^{*}=p_2^{*}=c=0
+    \end{align*}
+    Introduction of an uninformed consumer dampens the effect of price competition as a firm $i$ can expect a revenue of at least $\frac{1}{2}p_i$ no matter what price $p_i$ it sets.\\\medskip
+    Price competition could be increased by lowering the probability that an uninformed customer randomly picks the firm, i.e. through:
+    \begin{enumerate}
+      \item A higher share of informed customers.
+      \item More competing firms (moreover, increasing the pure price competition).
+    \end{enumerate}
+  \vfill\null
+\end{frame}
+
+
 \section{PS3, Ex. 5: Luxembourg as a rogue state}
 
 \begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
@@ -212,7 +412,63 @@
     \begin{itemize}
       \item[(a)] Find the NE in the static game:
     \end{itemize}
-    Expected payoffs for player $i\neq j$:
+    Expected payoff for player $i\neq j$:
+    \begin{align*}
+      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+    \end{align*}
+  \vfill\null\columnbreak
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Find the NE in the static game:
+    \end{itemize}
+    Expected payoff for player $i\neq j$:
+    \begin{align*}
+      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+    \end{align*}
+    Find the best-response function for $i$:
+    \begin{align*}
+      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+       s_i&=\frac{1-s_j}{2}
+    \end{align*}
+  \vfill\null\columnbreak
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Find the NE in the static game:
+    \end{itemize}
+    Expected payoff for player $i\neq j$:
+    \begin{align*}
+      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+    \end{align*}
+    Find the best-response function for $i$:
+    \begin{align*}
+      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+       s_i&=\frac{1-s_j}{2}
+    \end{align*}
+    Take advantage of symmetry:
+    \begin{align*}
+       s_i&=\frac{1-s_i}{2}\\
+      2s_i&=s_i=1\\
+       s_i^{*}&=\frac{1}{3}
+    \end{align*}
+    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+  \vfill\null\columnbreak
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Find the NE in the static game:
+    \end{itemize}
+    Expected payoff for player $i\neq j$:
     \begin{align*}
       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
     \end{align*}
@@ -232,7 +488,105 @@
     \begin{itemize}
       \item[(b)] Find the SO given shares are equal:
     \end{itemize}
-    Expected payoffs for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Find the NE in the static game:
+    \end{itemize}
+    Expected payoff for player $i\neq j$:
+    \begin{align*}
+      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+    \end{align*}
+    Find the best-response function for $i$:
+    \begin{align*}
+      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+       s_i&=\frac{1-s_j}{2}
+    \end{align*}
+    Take advantage of symmetry:
+    \begin{align*}
+       s_i&=\frac{1-s_i}{2}\\
+      2s_i&=s_i=1\\
+       s_i^{*}&=\frac{1}{3}
+    \end{align*}
+    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+  \vfill\null\columnbreak
+    \begin{itemize}
+      \item[(b)] Find the SO given shares are equal:
+    \end{itemize}
+    Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
+    \begin{align*}
+      u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
+                  &=2\bar{s}-2\bar{s}^2
+    \end{align*}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Find the NE in the static game:
+    \end{itemize}
+    Expected payoff for player $i\neq j$:
+    \begin{align*}
+      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+    \end{align*}
+    Find the best-response function for $i$:
+    \begin{align*}
+      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+       s_i&=\frac{1-s_j}{2}
+    \end{align*}
+    Take advantage of symmetry:
+    \begin{align*}
+       s_i&=\frac{1-s_i}{2}\\
+      2s_i&=s_i=1\\
+       s_i^{*}&=\frac{1}{3}
+    \end{align*}
+    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+  \vfill\null\columnbreak
+    \begin{itemize}
+      \item[(b)] Find the SO given shares are equal:
+    \end{itemize}
+    Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
+    \begin{align*}
+      u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
+                  &=2\bar{s}-2\bar{s}^2
+    \end{align*}
+    Social planner target function:
+    \begin{align*}
+      \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
+    \end{align*}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 5: Luxembourg as a rogue state}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Find the NE in the static game:
+    \end{itemize}
+    Expected payoff for player $i\neq j$:
+    \begin{align*}
+      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+    \end{align*}
+    Find the best-response function for $i$:
+    \begin{align*}
+      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+       s_i&=\frac{1-s_j}{2}
+    \end{align*}
+    Take advantage of symmetry:
+    \begin{align*}
+       s_i&=\frac{1-s_i}{2}\\
+      2s_i&=s_i=1\\
+       s_i^{*}&=\frac{1}{3}
+    \end{align*}
+    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+  \vfill\null\columnbreak
+    \begin{itemize}
+      \item[(b)] Find the SO given shares are equal:
+    \end{itemize}
+    Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
     \begin{align*}
       u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
                   &=2\bar{s}-2\bar{s}^2
