@@ -12,7 +12,7 @@ fig, ax = plt.subplots(figsize=(w,w/1.62)) # create new figure
 x = np.arange(0, 10) # x values
 y1 = 9 - 2*x # line 1 points
 y2 = (9-x)/2 # line 2 points
-ne = set(y2).intersection(y2)
+ne = set(y2).intersection(y1)
 plt.plot(x, y1, label = "BR function for firm 1") # plotting the line 1 points
 plt.plot(x, y2, label = "BR function for firm 2") # plotting the line 2 points
 ax.set_xlim([0,10]) # x range
