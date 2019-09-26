@@ -79,6 +79,41 @@
     Iterated Elimination of Strictly Dominated Strategies (IESDS) leads to the same outcome as the best responses (eliminate $R$ then $D$ and lastly $L$).
   \vfill\null
   \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 1 (A): Dominance and best response}
+  \begin{enumerate}
+    \item (A) Show that for each of the following two games, the only Nash equilibrium is in pure strategies. Describe the intuition for this result. What do these two games have in common?
+  \end{enumerate}
+  \begin{multicols}{2}
+    \begin{table}
+      \begin{tabular}{cc|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{\color{blue}R} \\\cline{3-4}
+        & U & 5, 5 & 1, \textcolor{blue}{6}  \\\cline{3-4}
+        & \color{red}D & \textcolor{red}{6}, 1 & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    $(D,R)$ is a unique Pure Strategy Nash Equilibrium (PSNE). The game is a Prisoner's Dilemma as it fulfills:
+    \begin{align*}
+      T>R>P>S\Leftrightarrow6>5>2>1
+    \end{align*}
+    i.e. the \textbf{T}emptation to deviate (6) is greater than the \textbf{R}eward for cooperating on the socially optimal outcome (5) and the \textbf{P}unishment payoff (2) is greater than the "\textbf{S}ucker's" payoff (1).
+  \vfill\null \columnbreak
+    \begin{table}
+      \begin{tabular}{cc|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{R} \\\cline{3-5}
+        & U & \textcolor{red}{1}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} & 0, 1 \\\cline{3-5}
+        & D & 0, \textcolor{blue}{3} & 0, 1 & \textcolor{red}{2}, 0 \\\cline{3-5}
+      \end{tabular}
+    \end{table}
+    $(U,C)$ is a unique Pure Strategy Nash Equilibrium (PSNE) as no other combination of (mixed or pure) strategies gives as high payoffs.\\\medskip
+    Iterated Elimination of Strictly Dominated Strategies (IESDS) leads to the same outcome as the best responses (eliminate $R$ then $D$ and lastly $L$).
+  \vfill\null
+  \end{multicols}
+  In a mixed strategy NE both players must be indifferent between strategies. This is impossible if one of the strategies are strictly dominated.\\\medskip
   \textbf{As both games can be solved by IESDS they both have a unique PSNE.}
 \end{frame}
 
@@ -216,6 +251,23 @@
       \item[(c)] Confirm that the following strategy profile is a Nash equilibrium: each firm plays price 80 with probability 0.232, price 54 with probability 0.361, and price 38 with probability 0.407.
       \item[(d)] Why do you think the equilibrium is so different from the standard Bertrand pricing game (i.e. where competition drives price down to marginal cost)?
     \end{itemize}
+\end{frame}
+\begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
+    \begin{itemize}
+      \item[(a)] The game in normal form and bimatrix:
+    \end{itemize}
+    Players: \textit{Firm 1, Firm 2}. Strategies: $p_i\in S_i = S = \{80, 54, 38\}$\\\medskip
+    Payoffs consist of \textit{payoff from the informed consumer} + \textit{payoff from the uninformed}.
+    I.e. payoffs for player $i\neq j$:
+    \begin{align*}
+      u_i(p_i,p_j)=
+      \left\{ \begin{array}{rcl}
+      p_i + \frac{1}{2}p_i & \mbox{if} & p_i < p_j \\
+      \frac{1}{2}p_i + \frac{1}{2}p_i & \mbox{if} & p_i = p_j \\
+      0 + \frac{1}{2}p_i & \mbox{if} & p_i > p_j
+      \end{array}\right.
+    \end{align*}
+  \vfill\null
 \end{frame}
 \begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
     \begin{itemize}
