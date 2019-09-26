@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="424.09633"
+     inkscape:cx="299.34249"
      inkscape:cy="463.98147"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,12 +68,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="65.208549"
+       x="67.325218"
        y="159.45981"
        id="text1076-7-9-7-4"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4"
-         x="65.208549"
+         x="67.325218"
          y="159.45981"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$L^{'}$</tspan></text>
     <circle
@@ -85,12 +85,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="54.728069"
+       x="54.198902"
        y="189.91505"
        id="text1076-7-9-7-6-5"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-5-8"
-         x="54.728069"
+         x="54.198902"
          y="189.91505"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(3,3)</tspan></text>
     <circle
@@ -118,12 +118,12 @@
          id="flowPara96" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="67.896011"
+       x="67.366844"
        y="189.82211"
        id="text1076-7-9-7-6-5-0"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-5-8-8"
-         x="67.896011"
+         x="67.366844"
          y="189.82211"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(4,0)</tspan></text>
     <path
@@ -164,23 +164,23 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="98.889488"
+       x="98.360321"
        y="189.642"
        id="text1076-7-9-7-6-5-0-3"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-5-8-8-5"
-         x="98.889488"
+         x="98.360321"
          y="189.642"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(1,1)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="50.647572"
+       x="51.705906"
        y="165.93225"
        id="text217"><tspan
          sodipodi:role="line"
          id="tspan215"
-         x="50.647572"
+         x="51.705906"
          y="165.93225"
          style="stroke-width:0.26458332">Player 1</tspan></text>
     <text
@@ -197,23 +197,23 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="65.901108"
+       x="67.488609"
        y="151.72545"
        id="text217-4-9"><tspan
          sodipodi:role="line"
          id="tspan215-2-0"
-         x="65.901108"
+         x="67.488609"
          y="151.72545"
          style="stroke-width:0.26458332">Player 2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="85.629242"
+       x="88.275078"
        y="159.45981"
        id="text1076-7-9-7-4-8"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4-9"
-         x="85.629242"
+         x="88.275078"
          y="159.45981"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$R^{'}$</tspan></text>
     <path
@@ -231,12 +231,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="119.46117"
+       x="121.57784"
        y="159.59673"
        id="text1076-7-9-7-4-3"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4-0"
-         x="119.46117"
+         x="121.57784"
          y="159.59673"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$L^{''}$</tspan></text>
     <text
@@ -276,23 +276,23 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="118.83266"
+       x="119.89098"
        y="144.50253"
        id="text1212-5-7-6"><tspan
          sodipodi:role="line"
          id="tspan1210-5-4-6"
-         x="118.83266"
+         x="119.89098"
          y="144.50253"
          style="font-size:2.82222223px;stroke-width:0.26458332">$R$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="89.285301"
+       x="90.343636"
        y="144.50253"
        id="text1212-5-7-6-5"><tspan
          sodipodi:role="line"
          id="tspan1210-5-4-6-6"
-         x="89.285301"
+         x="90.343636"
          y="144.50253"
          style="font-size:2.82222223px;stroke-width:0.26458332">$L$</tspan></text>
     <text
@@ -309,23 +309,23 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="114.75925"
+       x="115.28841"
        y="169.9301"
        id="text1076-7-9-7-6-5-83"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-5-8-5"
-         x="114.75925"
+         x="115.28841"
          y="169.9301"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(2,2)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="145.59598"
+       x="146.12514"
        y="170.08571"
        id="text1076-7-9-7-6-5-0-32"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-5-8-8-0"
-         x="145.59598"
+         x="146.12514"
          y="170.08571"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(3,1)</tspan></text>
     <path
@@ -355,23 +355,23 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="57.490574"
+       x="58.019741"
        y="176.50253"
        id="text1076-7-9-7-4-2"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4-5"
-         x="57.490574"
+         x="58.019741"
          y="176.50253"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$l$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="67.975845"
+       x="68.505013"
        y="176.50253"
        id="text1076-7-9-7-4-2-5"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4-5-5"
-         x="67.975845"
+         x="68.505013"
          y="176.50253"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$r$</tspan></text>
     <flowRoot
@@ -387,24 +387,24 @@
          id="flowPara573" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="98.218857"
-       y="176.50253"
+       x="98.748024"
+       y="176.45981"
        id="text1076-7-9-7-4-2-5-6"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4-5-5-7"
-         x="98.218857"
-         y="176.50253"
+         x="98.748024"
+         y="176.45981"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$r^{'}$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="84.699089"
-       y="176.60907"
+       x="88.403259"
+       y="176.45981"
        id="text1076-7-9-7-4-2-5-6-4"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4-5-5-7-9"
-         x="84.699089"
-         y="176.60907"
+         x="88.403259"
+         y="176.45981"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$l^{'}$</tspan></text>
   </g>
 </svg>
