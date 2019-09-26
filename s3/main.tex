@@ -321,14 +321,6 @@
   \vfill\null
 \end{frame}
 \begin{frame}{PS3, Ex. 4 (A): Mixed strategy price competition}
-    \begin{table}
-      \begin{tabular}{c|c|c|c|}
-        \multicolumn{1}{c}{} & \multicolumn{1}{c}{$p_2$=80} & \multicolumn{1}{c}{$p_2$=54} & \multicolumn{1}{c}{$p_2$=38} \\\cline{2-4}
-        $p_1$=80 & 80, 80 & 40, 81 & 40, 57 \\\cline{2-4}
-        $p_1$=54 & 81, 40 & 54, 54 & 27, 57 \\\cline{2-4}
-        $p_1$=38 & 57, 40 & 57, 27 & 38, 38 \\\cline{2-4}
-      \end{tabular}
-    \end{table}
     \begin{itemize}
       \item[(c)] Confirm that the following strategy profile is a Nash equilibrium: each firm plays price 80 with probability 0.232, price 54 with probability 0.361, and price 38 with probability 0.407.
     \end{itemize}
@@ -894,7 +886,7 @@
     \begin{align*}
         \pi_i&=(1-q_i-q_j)q_i
     \end{align*}
-    BR function for firm $i$ in the duopoly in the duopoly:
+    BR function for firm $i$ in the duopoly:
     \begin{align*}
         q_i&=\frac{1-q_j}{2}\\
         q_i^{*} &= \frac{1-2q_i^{*}}{2},\ \ q_i^{*}=q_j^{*}\\
@@ -1061,6 +1053,7 @@
     \begin{itemize}
       \item[(a)]
     \end{itemize}
+    \vspace{-16pt}
     \begin{table}
       \begin{tabular}{cl|c|c|}
           & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
@@ -1073,6 +1066,7 @@
     \begin{itemize}
       \item[(b)]
     \end{itemize}
+    \vspace{-16pt}
     \begin{table}
       \begin{tabular}{cl|c|c|}
           & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
@@ -1086,6 +1080,7 @@
   \begin{itemize}
     \item[(c)]
   \end{itemize}
+  \vspace{-16pt}
   \begin{table}
     \begin{tabular}{cl|c|c|}
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
@@ -1098,6 +1093,7 @@
   \begin{itemize}
     \item[(d)]
   \end{itemize}
+  \vspace{-16pt}
   \begin{table}
     \begin{tabular}{cl|c|c|}
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
@@ -1733,12 +1729,12 @@
       \item Find the relationship between $q_1$ and $q_2$ for which \textbf{Player 1 is indifferent}.
       \item Write up the \textbf{best responses for Player 1}: $p^{*}(q_1,q_2)$, i.e. $BR_1(q_1,q_2)$.
       \item Pairwise find the probabilities $p$ for which \textbf{Player 2 is indifferent}, e.g. between $L$ and $C$, then $L$ and $R$, and finally between $C$ and $R$.
-      \item Write up the \textbf{best responses for Player 2}: $\left(q_1^{*}(p),q_2^{*}(p)\right)$, i.e.
+      \item Write up the \textbf{best responses for Player 2}:
       \begin{align*}
-        BR_2(p)=\left\{ \begin{array}{ll}
-            \vdots                  & \vdots  \\
-            \{(0,q_2):q_2\in[0,1]\} & p = 2/3 \\
-            (0,0)                   & p > 2/3 \\
+        BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)=\left\{ \begin{array}{ll}
+            \vdots              & \vdots  \\
+            \{(0,x):x\in[0,1]\} & p = 2/3 \\
+            (0,0)               & p > 2/3 \\
         \end{array}\right.
       \end{align*}
       \item \textbf{Find the NE} (pure and mixed). In MSNE both players must be indifferent between their respective pure strategies..
@@ -1948,9 +1944,9 @@
     \textbf{Player 2:} $\bm{BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)}=$
     \begin{align*}
       \left\{ \begin{array}{ll}
-          (1,0)                       & p < 1/3 \\
-          \{(q_1,1-q_1):q_1\in[0,1]\} & p = 1/3 \\
-          \vdots                      & \vdots
+          (1,0)                 & p < 1/3 \\
+          \{(x,1-x):x\in[0,1]\} & p = 1/3 \\
+          \vdots                & \vdots
       \end{array}\right.
     \end{align*}
   \vfill\null \columnbreak
@@ -1997,9 +1993,9 @@
     \textbf{Player 2:} $\bm{BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)}=$
     \begin{align*}
       \left\{ \begin{array}{ll}
-          (1,0)                       & p < 1/3 \\
-          \{(q_1,1-q_1):q_1\in[0,1]\} & p = 1/3 \\
-          \vdots                      & \vdots
+          (1,0)                 & p < 1/3 \\
+          \{(x,1-x):x\in[0,1]\} & p = 1/3 \\
+          \vdots                & \vdots
       \end{array}\right.
     \end{align*}
     Note: if $p=\frac{1}{2}:u_2(C)>u_2(L)=u_2(R)$
@@ -2051,10 +2047,10 @@
     \textbf{Player 2:} $\bm{BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)}=$
     \begin{align*}
       \left\{ \begin{array}{ll}
-          (1,0)                       & p < 1/3 \\
-          \{(q_1,1-q_1):q_1\in[0,1]\} & p = 1/3 \\
-          (0,1)                       & p\in\left(\frac{1}{3},\frac{2}{3}\right)\\
-          \vdots                      & \vdots
+          (1,0)                 & p < 1/3 \\
+          \{(x,1-x):x\in[0,1]\} & p = 1/3 \\
+          (0,1)                 & p\in\left(\frac{1}{3},\frac{2}{3}\right)\\
+          \vdots                & \vdots
       \end{array}\right.
     \end{align*}
     Note: if $p=\frac{1}{2}:u_2(C)>u_2(L)=u_2(R)$
@@ -2227,6 +2223,7 @@
       \underbrace{0}_{q_1} + \frac{6}{7}\underbrace{x}_{q_2} = \frac{5}{7} \Leftrightarrow x=\frac{5}{6}\\
       \Rightarrow BR_1\left(0,\frac{5}{6}\right)=[0,1]\ni\frac{2}{3}
     \end{align*}
+    How many NE does the game have?
   \vfill\null
   \end{multicols}
 \end{frame}
@@ -2282,10 +2279,6 @@
     \end{align*}
     $\Rightarrow$ $BR_2\left(\frac{2}{3}\right)=\left(0,\frac{5}{6}\right)$ is a unique MSNE:
     \vspace{-4pt}
-    % \begin{align*}
-    %   \left[p^{*},\left(q_1^{*},q_2^{*}\right)\right]
-    %   =\left\{\left[\frac{2}{3},\left(0,\frac{5}{6}\right)\right]\right\}
-    % \end{align*}
     \begin{align*}
       \left[\left(p^{*}\right),\left(q_1^{*},q_2^{*}\right)\right]
       =\left\{\left[\left(\frac{2}{3}\right),\left(0,\frac{5}{6}\right)\right]\right\}
@@ -2293,7 +2286,6 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-
 
 
 
