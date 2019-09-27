@@ -177,25 +177,148 @@
   \end{multicols}
 \end{frame}
 \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
-    The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
+  \textbf{Informal proof:} For the intuition, look at this example for now. At home, you can compare the two different formal proofs.
   \begin{multicols}{2}
-    \begin{itemize}
-      \item Let $(s_1^{*},s_2^{*})$ be a NE.
-      \item Say we carry out \underline{\textbf{IEWDS}} and $s_1^{*}$ is the first NE strategy to be eliminated (in round $n$ of elimination).
-      \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
-    \end{itemize}
-      \begin{align*}
-        \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)
-      \end{align*}
-      \begin{itemize}
-        \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
-      \end{itemize}
-  \vfill\null \columnbreak
+    \begin{table}
+      \begin{tabular}{cc|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & U & \textcolor{red}{3}, \textcolor{blue}{2} & 0, 0  \\\cline{3-4}
+        & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    \textbf{NE} is any strategy where no player can be strictly better off by deviating:
+    \begin{align*}
+      NE=\{(U,L),(D,R)\}
+    \end{align*}
+  \vfill\null\columnbreak
   \vfill\null
   \end{multicols}
 \end{frame}
 \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
-    The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
+  \textbf{Informal proof:} For the intuition, look at this example for now. At home, you can compare the two different formal proofs.
+  \begin{multicols}{2}
+    \begin{table}
+      \begin{tabular}{cc|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & U & \textcolor{red}{3}, \textcolor{blue}{2} & 0, 0  \\\cline{3-4}
+        & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    \textbf{NE} is any strategy where no player can be strictly better off by deviating:
+    \begin{align*}
+      NE=\{(U,L),(D,R)\}
+    \end{align*}
+    \textbf{IESDS:} If a strategy was strongly dominated there would be a clear incentive to deviate from it, thus, by definition the strategy could not be a NE.
+  \vfill\null\columnbreak
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+  \textbf{Informal proof:} For the intuition, look at this example for now. At home, you can compare the two different formal proofs.
+  \begin{multicols}{2}
+    \begin{table}
+      \begin{tabular}{cc|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & U & \textcolor{red}{3}, \textcolor{blue}{2} & 0, 0  \\\cline{3-4}
+        & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    \textbf{NE} is any strategy where no player can be strictly better off by deviating:
+    \begin{align*}
+      NE=\{(U,L),(D,R)\}
+    \end{align*}
+    \textbf{IESDS:} If a strategy was strongly dominated there would be a clear incentive to deviate from it, thus, by definition the strategy could not be a NE.
+  \vfill\null\columnbreak
+  \textbf{IEWDS:} In a NE where a player $A$ is indifferent between the NE-payoff and her payoff from deviating, the NE-strategy can be weakly dominated if player $A$'s' alternative strategy would give a higher payoff in the case where player $B$ deviates from his NE strategy as well.
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+  \textbf{Informal proof:} For the intuition, look at this example for now. At home, you can compare the two different formal proofs.
+  \begin{multicols}{2}
+    \begin{table}
+      \begin{tabular}{cc|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & \sout{U} & \sout{\textcolor{red}{3}, \textcolor{blue}{2}} & \sout{0, 0}  \\\cline{3-4}
+        & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    \textbf{NE} is any strategy where no player can be strictly better off by deviating:
+    \begin{align*}
+      NE=\{(U,L),(D,R)\}
+    \end{align*}
+    \textbf{IESDS:} If a strategy was strongly dominated there would be a clear incentive to deviate from it, thus, by definition the strategy could not be a NE.
+  \vfill\null\columnbreak
+    \textbf{IEWDS:} In a NE where a player $A$ is indifferent between the NE-payoff and her payoff from deviating, the NE-strategy can be weakly dominated if player $A$'s' alternative strategy would give a higher payoff in the case where player $B$ deviates from his NE strategy as well.\\\medskip
+    E.g. Player 1 is indifferent between $u_1(U,L)$ and $u_1(D,L)$, however, $u_1(D,R)>u_1(U,R)$, i.e. $D$ weakly dominates $U$ and $U$ can be eliminated. I.e. eliminating the NE $(U,L)$, leaving behind the reduced form game:
+    \begin{table}
+      \begin{tabular}{cc|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{2}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+    \textbf{Formal proof:} The proof that all NE survive IESDS holds by contradiction. For the two-player case the IESDS proof is as follows:
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item Let $(s_1^{*},s_2^{*})$ be a NE.
+      \item Say we carry out IESDS and $s_1^{*}$ is the first NE strategy to be eliminated (in round $n$ of elimination).
+      \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that strictly dominates $s_1^{*}$, i.e.
+    \end{itemize}
+      \begin{align}
+        \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)<u_1(s_1^{'},s_2)\label{iesds}
+      \end{align}
+      \begin{itemize}
+        \item[] where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
+      \end{itemize}
+  \vfill\null\columnbreak
+    \begin{itemize}
+      \item Since $s_2^{*}\in S_2^n$, inequality \eqref{iesds} also means
+      \begin{align*}
+        u_1(s_1^{*},s_2^{*})<u_1(s_1^{'},s_2^{*})
+      \end{align*}
+      \item But $(s_1^{*},s_2^{*})$ is a NE, so by definition
+      \begin{align*}
+        \forall s_1\in S_1:\ u_1(s_1^{*},s_2^{*})\geq u_1(s_1,s_2^{*})
+      \end{align*}
+      \item Contradiction! We can do the same for player 2. It follows that $s_i^{*}$ survives IESDS for $i=1,2$.
+    \end{itemize}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+% \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+%     \textbf{Formal proof:} The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item Let $(s_1^{*},s_2^{*})$ be a NE.
+%       \item Say we carry out \underline{\textbf{IEWDS}} and $s_1^{*}$ is the first NE strategy to be eliminated (in round $n$ of elimination).
+%       \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
+%     \end{itemize}
+%       \begin{align*}
+%         \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)
+%       \end{align*}
+%       \begin{itemize}
+%         \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
+%       \end{itemize}
+%   \vfill\null \columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+\begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+    \textbf{Formal proof:} The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
   \begin{multicols}{2}
     \begin{itemize}
       \item Let $(s_1^{*},s_2^{*})$ be a NE.
@@ -203,14 +326,14 @@
       \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
     \end{itemize}
       \begin{align}
-        \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)\label{proof}
+        \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)\label{iewds}
       \end{align}
       \begin{itemize}
         \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
       \end{itemize}
   \vfill\null\columnbreak
     \begin{itemize}
-      \item Since $s_2^{*}\in S_2^n$, inequality \eqref{proof} also means
+      \item Since $s_2^{*}\in S_2^n$, inequality \eqref{iewds} also means
       \begin{align*}
         u_1(s_1^{*},s_2^{*})\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2^{*})
       \end{align*}
@@ -446,7 +569,7 @@
 
 \begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
   \begin{multicols}{2}
-    Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1, but fighting is costly for firm 1, lowering its payoff to 0.
+    Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1), but fighting is costly for firm 1, lowering its payoff to 0.
     \begin{itemize}
       \item[(a)] Draw the game tree.
       \item[(b)] Solve the game by backwards induction.
@@ -457,7 +580,7 @@
 \end{frame}
 \begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
   \begin{multicols}{2}
-    Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1, but fighting is costly for firm 1, lowering its payoff to 0.
+    Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1), but fighting is costly for firm 1, lowering its payoff to 0.
     \begin{itemize}
       \item[(a)] Draw the game tree.
       \item[(b)] Solve the game by backwards induction.
