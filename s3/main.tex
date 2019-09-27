@@ -460,24 +460,6 @@
     Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1, but fighting is costly for firm 1, lowering its payoff to 0.
     \begin{itemize}
       \item[(a)] Draw the game tree.
-    \end{itemize}
-  \vfill\null \columnbreak
-    Whoops, I'll have to turn it upside down:
-    \begin{figure}[!h]
-      \begin{center}
-      \def\svgwidth{1.0\columnwidth}
-      \import{figures/}{game_tree.pdf_tex}
-      \end{center}
-    \end{figure}
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Draw the game tree.
-    \end{itemize}
-    \begin{itemize}
       \item[(b)] Solve the game by backwards induction.
     \end{itemize}
   \vfill\null \columnbreak
@@ -494,12 +476,9 @@
   \begin{multicols}{2}
     \begin{itemize}
       \item[(a)] Draw the game tree.
-    \end{itemize}
-    \begin{itemize}
       \item[(b)] Solve the game by backwards induction.
     \end{itemize}
-    Starting from the bottom: If Firm 2 has entered in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
-    \textbf{Firm 1} will always accommodate, as it's too costly to fight.
+    \textbf{Starting from the bottom}: If Firm 2 has entered the market in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.
   \vfill\null \columnbreak
     \begin{figure}[!h]
       \begin{center}
@@ -514,12 +493,28 @@
   \begin{multicols}{2}
     \begin{itemize}
       \item[(a)] Draw the game tree.
-    \end{itemize}
-    \begin{itemize}
       \item[(b)] Solve the game by backwards induction.
     \end{itemize}
-    \textbf{Starting from the bottom}: If Firm 2 has entered in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
-    \textbf{Firm 1} will always accommodate, as it's too costly to fight $(1>0)$.\\\medskip
+    \textbf{Starting from the bottom}: If Firm 2 has entered the market in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always accommodate, as it is more  costly to fight.
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Draw the game tree.
+      \item[(b)] Solve the game by backwards induction.
+    \end{itemize}
+    \textbf{Starting from the bottom}: If Firm 2 has entered the market in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always accommodate, as it is more costly to fight $(1>0)$.\\\medskip
     Knowing that Firm 1 is rational and will accommodate in the \nth{2} round, \textbf{Firm 2} (first mover), will always chose to enter in the \nth{1} round $(1>0)$.
   \vfill\null \columnbreak
     \begin{figure}[!h]
@@ -535,19 +530,23 @@
   \begin{multicols}{2}
     \begin{itemize}
       \item[(a)] Draw the game tree.
-    \end{itemize}
-    \begin{itemize}
       \item[(b)] Solve the game by backwards induction.
     \end{itemize}
-    \textbf{Starting from the bottom}: If Firm 2 has entered in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
-    \textbf{Firm 1} will always accommodate, as it's too costly to fight $(1>0)$.\\\medskip
+    \textbf{Starting from the bottom}: If Firm 2 has entered the market in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always accommodate, as it is more costly to fight $(1>0)$.\\\medskip
     Knowing that Firm 1 is rational and will accommodate in the \nth{2} round, \textbf{Firm 2} (first mover), will always chose to enter in the \nth{1} round $(1>0)$.\\\medskip
-    \textbf{Intuition:} Firm 2 has \textit{first mover advantage}, thus, it would not be credible if Firm 1 threatens to "Fight".
+    \textbf{Intuition:} Firm 2 has \textit{first mover advantage}, thus, it would not be credible if Firm 1 threatens to fight. Using backwards induction, the problem for Firm 2 can be reduced to the upper part of the game tree, given Firm 1 is rational.
   \vfill\null \columnbreak
     \begin{figure}[!h]
       \begin{center}
       \def\svgwidth{1.0\columnwidth}
       \import{figures/}{game_tree.pdf_tex}
+      \end{center}
+    \end{figure}
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree_reduced.pdf_tex}
       \end{center}
     \end{figure}
   \vfill\null

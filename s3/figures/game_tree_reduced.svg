@@ -15,7 +15,7 @@
    version="1.1"
    id="svg46"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="game_tree.svg">
+   sodipodi:docname="game_tree_reduced.svg">
   <defs
      id="defs40" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="264.02572"
+     inkscape:cx="349.62724"
      inkscape:cy="507.01653"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -66,104 +66,53 @@
        r="1.0775048" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="56.785553"
-       y="168.96417"
-       id="text1076-7-9-7-4-3"><tspan
-         sodipodi:role="line"
-         id="tspan1074-7-7-7-4-0"
-         x="56.785553"
-         y="168.96417"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">Fight</tspan></text>
-    <text
-       xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="84.924873"
+       x="85.454041"
        y="145.9689"
        id="text217-4-9-6"><tspan
          sodipodi:role="line"
          id="tspan215-2-0-2"
-         x="84.924873"
+         x="85.454041"
          y="145.9689"
          style="stroke-width:0.26458332">Firm 2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="83.02726"
-       y="168.95728"
-       id="text1076-7-9-7-4-8-6"><tspan
-         sodipodi:role="line"
-         id="tspan1074-7-7-7-4-9-4"
-         x="83.02726"
-         y="168.95728"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">Accommodate</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 58.27212,174.43682 15.304045,-13.14587 7.93068,6.81161 7.3813,6.33975"
-       id="path815-1-2-6-8-1-7"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="74.677879"
+       x="76.794548"
        y="153.46417"
        id="text1212-5-7-6"><tspan
          sodipodi:role="line"
          id="tspan1210-5-4-6"
-         x="74.677879"
+         x="76.794548"
          y="153.46417"
          style="font-size:2.82222223px;stroke-width:0.26458332">Enter</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="63.597496"
-       y="160.58786"
-       id="text217-9"><tspan
-         sodipodi:role="line"
-         id="tspan215-3"
-         x="63.597496"
-         y="160.58786"
-         style="stroke-width:0.26458332">Firm 1</tspan></text>
-    <text
-       xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="85.627861"
-       y="178.46141"
+       x="71.117744"
+       y="164.92609"
        id="text1076-7-9-7-6-5-83"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-5-8-5"
-         x="85.627861"
-         y="178.46141"
+         x="71.117744"
+         y="164.92609"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(1,1)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="101.32481"
-       y="165.4549"
+       x="102.38314"
+       y="164.92574"
        id="text1076-7-9-7-6-5-0-32"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-5-8-8-0"
-         x="101.32481"
-         y="165.4549"
+         x="102.38314"
+         y="164.92574"
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(2,0)</tspan></text>
     <circle
        style="opacity:1;fill:#000003;fill-opacity:1;stroke:#000000;stroke-width:0.18886022;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path832-0-1-5-33-5-3-3"
        cx="73.576164"
        cy="161.29095"
-       r="1.0775048" />
-    <circle
-       style="opacity:1;fill:#000003;fill-opacity:1;stroke:#000000;stroke-width:0.18886022;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path832-0-1-5-33-5-3-35"
-       cx="58.272121"
-       cy="174.43681"
-       r="1.0775048" />
-    <circle
-       style="opacity:1;fill:#000003;fill-opacity:1;stroke:#000000;stroke-width:0.18886022;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path832-0-1-5-33-5-3-4"
-       cx="88.880135"
-       cy="174.43681"
        r="1.0775048" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -182,16 +131,5 @@
          x="95.384842"
          y="153.45728"
          style="font-size:2.82222223px;stroke-width:0.26458332">Not enter</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="54.933891"
-       y="178.46141"
-       id="text1076-7-9-7-6-5-83-6"><tspan
-         sodipodi:role="line"
-         id="tspan1074-7-7-7-5-8-5-0"
-         x="54.933891"
-         y="178.46141"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(0,-1)</tspan></text>
   </g>
 </svg>
