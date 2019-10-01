@@ -49,7 +49,7 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-\begin{frame}{PS4, Ex. 1 (A): MSNE and best-response functions}
+\begin{frame}{PS4, Ex. 1.a (A): MSNE and best-response functions}
   \begin{multicols}{2}
     \begin{itemize}
       \item[(a)] Find all equilibria (pure and mixed), first analytically and then through plotting the BR functions.
@@ -92,7 +92,7 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-\begin{frame}{PS4, Ex. 1 (A): MSNE and best-response functions}
+\begin{frame}{PS4, Ex. 1.b (A): MSNE and best-response functions}
   \begin{multicols}{2}
     \begin{itemize}
       \item[(b)] Find all NE, first analytically:
@@ -252,11 +252,11 @@
           & C2 (1-p)  & 0, 0 & 1, N \\\cline{3-4}
       \end{tabular}
     \end{table}
-    \begin{itemize}
-      \item[(a)] How can you interpret the parameter $N$?
-      \item[(b)] Solve for the mixed strategy Nash equilibrium (MSNE). When $N$ becomes very large, what happens to the probability of successful coordination?
-    \end{itemize}
   \vfill\null \columnbreak
+  \begin{itemize}
+    \item[(a)] How can you interpret the parameter $N$?
+    \item[(b)] Solve for the mixed strategy Nash equilibrium (MSNE). When $N$ becomes very large, what happens to the probability of successful coordination?
+  \end{itemize}
   \vfill\null
   \end{multicols}
 \end{frame}
@@ -300,6 +300,36 @@
     When $N\rightarrow\infty$, what happens to the probability of successful coordination?
   \vfill\null
   \end{multicols}
+\end{frame}
+
+
+\section{Take Home Assignment 1: Common issues}
+
+\begin{frame}{Take Home Assignment 1: Common issues}
+  \begin{itemize}
+    \item[(3a)] Backwards Induction (BI)
+  \end{itemize}
+  \begin{figure}[!h]
+    \begin{center}
+    \def\svgwidth{\columnwidth}
+    \import{figures/}{TH1_Ex3.pdf_tex}
+    \end{center}
+  \end{figure}
+\end{frame}
+\begin{frame}{Take Home Assignment 1: Common issues}
+  \begin{itemize}
+    \item[(3a)] Backwards Induction (BI)
+  \end{itemize}
+  \begin{figure}[!h]
+    \begin{center}
+    \def\svgwidth{\columnwidth}
+    \import{figures/}{TH1_Ex3_color.pdf_tex}
+    \end{center}
+  \end{figure}
+  The BI solution is the complete strategy profile - on and off the equilibrium path:
+  \begin{align*}
+    (preferred\ strategies\ for\ player\ 1,\ preferred\ strategies\ for\ player\ 2)=(Rrr^{'},R^{'}L^{''})
+  \end{align*}
 \end{frame}
 
 
@@ -350,7 +380,7 @@
   \end{itemize}
   \begin{align*}
      u_A(p^{*},q^{*}) &= p^{*}u_A(North)+(1-p^{*})u_A(South)\\
-     &= \frac{2}{3}(74q + 94(1-q)) + \left(1-\frac{2}{3}\right)(100q + 60(1-q))
+     &= \frac{2}{3}(74q + 94(1-q)) + \left(1-\frac{2}{3}\right)(100q + 60(1-q)) \\
      &= \vdots \\
      &\approx 82.67
   \end{align*}
@@ -375,15 +405,16 @@
     \begin{itemize}
       \item[a)] Solve for a symmetric mixed strategy equilibrium of this game, where each witness stops the thief with probability $p\in(0,1)$.
     \end{itemize}
+\end{frame}
+\begin{frame}{PS4, Ex. 6: Stopping the bike thief}
     \begin{itemize}
       \item[b)] Discuss what happens to $p$ as the number of witness becomes very large. What happens then to the probability that the thief will get stopped? What is the intuition for this result?
     \end{itemize}
 \end{frame}
 
+\section{PS4, Ex. 7: To keep or split (backwards induction)}
 
-\section{PS4, Ex. 7: To keep or split (game tree)}
-
-\begin{frame}{PS4, Ex. 7: To keep or split}
+\begin{frame}{PS4, Ex. 7: To keep or split (backwards induction)}
   \begin{multicols}{2}
     Consider the following 2 × 2 game where payoffs are monetary:
     \begin{table}
@@ -402,41 +433,92 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-\begin{frame}{PS4, Ex. 7: To keep or split}
-  \begin{tabular}{l|c|c|}
-    \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
-    T & 3, 3 & 0, 4 \\\cline{2-3}
-    B & 4, 0 & 1, 1 \\\cline{2-3}
-  \end{tabular}\enskip
-  \begin{tabular}{l|c|c|}
-    \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
-    T & 3, 3 & 0, 4 \\\cline{2-3}
-    B & 4, 0 & 1, 1 \\\cline{2-3}
-  \end{tabular}
+\begin{frame}{PS4, Ex. 7: To keep or split (backwards induction)}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(a)] Draw the game tree of this two-stage game (assuming that Players 1’s choice of whether to split payoffs is revealed to Player 2 before the second stage).
+      \item[(a)] Draw the game tree:
     \end{itemize}
-    \begin{itemize}
-      \item[(b)] Solve by backwards induction.
-    \end{itemize}
-    First, the unique NE
+    \nth{1} stage: Player 1 chooses Keep or Split. Player 2 observes the choice.\\\medskip
+    \nth{2} stage: They play the static game and payoffs are realized.
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{.5\columnwidth}
+      \import{figures/}{7a.pdf_tex}
+      \end{center}
+    \end{figure}
+    \vspace{-12pt}
     \begin{table}
-      \begin{tabular}{cl|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
-        & T & 3, 3 & 0, 4 \\\cline{3-4}
-        & B & 4, 0 & 1, 1 \\\cline{3-4}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 3, 3 & 0, 4 \\\cline{2-3}
+        B & 4, 0 & 1, 1 \\\cline{2-3}
+      \end{tabular}
+      \enskip
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 3, 3 & 2, 2 \\\cline{2-3}
+        B & 2, 2 & 1, 1 \\\cline{2-3}
       \end{tabular}
     \end{table}
-    Before this game is played, Player 1 can choose whether, after the game is played, players should keep their own payoffs or split the aggregate payoff evenly between them.
   \vfill\null \columnbreak
-    \begin{itemize}
-      \item[(b)] Solve by backwards induction.
-    \end{itemize}
   \vfill\null
   \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 7: To keep or split (backwards induction)}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Draw the game tree:
+    \end{itemize}
+    \nth{1} stage: Player 1 chooses Keep or Split. Player 2 observes the choice.\\\medskip
+    \nth{2} stage: They play the static game and payoffs are realized.
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{.5\columnwidth}
+      \import{figures/}{7a.pdf_tex}
+      \end{center}
+    \end{figure}
+    \vspace{-14pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\textcolor{blue}{R}} \\\cline{2-3}
+        T & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
+        \textcolor{red}{B} & \textcolor{red}{4}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{2-3}
+        \end{tabular}\enskip
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textcolor{blue}{L}} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          \textcolor{red}{T} & \textcolor{red}{3}, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+          B & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+        \end{tabular}
+    \end{table}
+  \vfill\null \columnbreak
+  \begin{itemize}
+    \item[(b)] Solve by backwards induction:
+  \end{itemize}
+  \nth{2} stage: Each bi-matrix has a unique NE that can be founds using IESDS.\\\medskip
+  \nth{1} stage: Player 1's choice can be reduced to choosing between the subgame NE in each bi-matrix:
+  \begin{figure}[!h]
+    \begin{center}
+    \def\svgwidth{.5\columnwidth}
+    \import{figures/}{7b.pdf_tex}
+    \end{center}
+  \end{figure}
+  BI gives the subgame perfect NE:
+  \begin{align*}
+    SPNE=(Keep\ B\ T,\ R\ L)
+  \end{align*}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 7: To keep or split (backwards induction)}
+  Alternatively, draw the game tree in extensive form to find $SPNE=(Keep\ B\ T,\ R\ L)$.\\\medskip
+  \nth{1} stage: Player 1 chooses Keep or Split. Player 2 observes the choice.\\\medskip
+  \nth{2} stage: They play the static game and payoffs are realized (doesn't matter who "moves first" as one's actions are private information till the other has moved).
+  \begin{figure}[!h]
+    \begin{center}
+    \def\svgwidth{\columnwidth}
+    \import{figures/}{7a_extensive_form.pdf_tex}
+    \end{center}
+  \end{figure}
 \end{frame}
 
 
