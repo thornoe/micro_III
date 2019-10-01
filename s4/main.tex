@@ -49,7 +49,7 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-\begin{frame}{PS4, Ex. 1.a (A): MSNE and best-response functions}
+\begin{frame}{PS4, Ex. 1 (A): MSNE and best-response functions}
   \begin{multicols}{2}
     \begin{itemize}
       \item[(a)] Find all equilibria (pure and mixed), first analytically and then through plotting the BR functions.
@@ -92,7 +92,7 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-\begin{frame}{PS4, Ex. 1.b (A): MSNE and best-response functions}
+\begin{frame}{PS4, Ex. 1 (A): MSNE and best-response functions}
   \begin{multicols}{2}
     \begin{itemize}
       \item[(b)] Find all NE, first analytically:
@@ -252,11 +252,11 @@
           & C2 (1-p)  & 0, 0 & 1, N \\\cline{3-4}
       \end{tabular}
     \end{table}
-  \vfill\null \columnbreak
     \begin{itemize}
       \item[(a)] How can you interpret the parameter $N$?
       \item[(b)] Solve for the mixed strategy Nash equilibrium (MSNE). When $N$ becomes very large, what happens to the probability of successful coordination?
     \end{itemize}
+  \vfill\null \columnbreak
   \vfill\null
   \end{multicols}
 \end{frame}
@@ -381,18 +381,16 @@
 \end{frame}
 
 
-\section{PS4, Ex. 7: To split or not to split (game tree)}
+\section{PS4, Ex. 7: To keep or split (game tree)}
 
-\begin{frame}{PS4, Ex. 7: To split or not to split}
+\begin{frame}{PS4, Ex. 7: To keep or split}
   \begin{multicols}{2}
     Consider the following 2 × 2 game where payoffs are monetary:
     \begin{table}
-      \begin{tabular}{cl|c|c|}
-          & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
-          \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
-          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
-          & T & 3, 3 & 0, 4 \\\cline{3-4}
-          & B & 4, 0 & 1, 1 \\\cline{3-4}
+      \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T & 3, 3 & 0, 4 \\\cline{2-3}
+          B & 4, 0 & 1, 1 \\\cline{2-3}
       \end{tabular}
     \end{table}
     Before this game is played, Player 1 can choose whether, after the game is played, players should keep their own payoffs or split the aggregate payoff evenly between them.
@@ -404,22 +402,37 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-\begin{frame}{PS4, Ex. 7: To split or not to split}
+\begin{frame}{PS4, Ex. 7: To keep or split}
+  \begin{tabular}{l|c|c|}
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+    T & 3, 3 & 0, 4 \\\cline{2-3}
+    B & 4, 0 & 1, 1 \\\cline{2-3}
+  \end{tabular}\enskip
+  \begin{tabular}{l|c|c|}
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+    T & 3, 3 & 0, 4 \\\cline{2-3}
+    B & 4, 0 & 1, 1 \\\cline{2-3}
+  \end{tabular}
   \begin{multicols}{2}
-    Consider the following 2 × 2 game where payoffs are monetary:
+    \begin{itemize}
+      \item[(a)] Draw the game tree of this two-stage game (assuming that Players 1’s choice of whether to split payoffs is revealed to Player 2 before the second stage).
+    \end{itemize}
+    \begin{itemize}
+      \item[(b)] Solve by backwards induction.
+    \end{itemize}
+    First, the unique NE
     \begin{table}
       \begin{tabular}{cl|c|c|}
-          & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
-          \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
-          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
-          & T & 3, 3 & 0, 4 \\\cline{3-4}
-          & B & 4, 0 & 1, 1 \\\cline{3-4}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & T & 3, 3 & 0, 4 \\\cline{3-4}
+        & B & 4, 0 & 1, 1 \\\cline{3-4}
       \end{tabular}
     \end{table}
     Before this game is played, Player 1 can choose whether, after the game is played, players should keep their own payoffs or split the aggregate payoff evenly between them.
   \vfill\null \columnbreak
     \begin{itemize}
-      \item[(a)] Draw the game tree of this two-stage game (assuming that Players 1’s choice of whether to split payoffs is revealed to Player 2 before the second stage).
       \item[(b)] Solve by backwards induction.
     \end{itemize}
   \vfill\null
@@ -723,10 +736,10 @@
 %       \end{tabular}
 %     \end{table}
 %     \begin{table}
-%       \begin{tabular}{l|c|c|}
-%           \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{L (1-q)} \\\cline{2-3}
-%           T (p)   &  &  \\\cline{2-3}
-%           B (1-p) &  &  \\\cline{2-3}
+      % \begin{tabular}{l|c|c|}
+      %     \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{2-3}
+      %     T (p)   &  &  \\\cline{2-3}
+      %     B (1-p) &  &  \\\cline{2-3}
 %       \end{tabular}
 %     \end{table}
 %   \vfill\null
