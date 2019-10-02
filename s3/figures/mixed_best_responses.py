@@ -1,11 +1,13 @@
 # importing the required modules
 import os
 import matplotlib.pyplot as plt
-plt.rcParams.update({'font.size': 18})
 
 # Set working folder (replace backslashes with standard slashes)
-os.chdir('C:/Users/jwz766/Documents/GitHub/micro_III/s3/figures')
-os.chdir('C:/Users/thorn/Onedrive/Dokumenter/GitHub/micro_III/s3/figures')
+os.chdir('C:/Users/jwz766/Documents/GitHub/micro_III/s3/figures') # work pc
+os.chdir('C:/Users/thorn/Onedrive/Dokumenter/GitHub/micro_III/s3/figures') # home pc
+
+# Run to update font size again after creating the first figure:
+plt.rcParams.update({'font.size': 18})
 
 ##############################################################################
 #   Mixed best responses in a "(p,q)-diagram"                                #

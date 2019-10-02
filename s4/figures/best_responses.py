@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 os.chdir('C:/Users/jwz766/Documents/GitHub/micro_III/s4/figures') # work pc
 os.chdir('C:/Users/thorn/Onedrive/Dokumenter/GitHub/micro_III/s4/figures') # home pc
 
+# Run to update font size again after creating the first figure:
+plt.rcParams.update({'font.size': 18})
 
 ##############################################################################
 #   Ex. 1: Mixed best-response functions in a "(p,q)-diagram                 #
@@ -19,7 +21,6 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-plt.rcParams.update({'font.size': 18}) # update font size
 fig.savefig('1a.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the full plot
 
@@ -33,7 +34,6 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-plt.rcParams.update({'font.size': 18}) # update font size
 fig.savefig('1b.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the full plot
 
@@ -77,7 +77,6 @@ plt.plot([0], [0], 'ks', markersize=8) # plotting the PSNE point
 plt.plot([1.01,1.01], [1/2,1], 'k', ls='dotted', lw=5, label="$NE$") # plotting the MSNE line
 plt.xlabel('q (probability of L)', color='b') # naming the x axis
 # plt.setp(ax4.get_yticklabels(), visible=False) # make y tick labels invisible
-plt.rcParams.update({'font.size': 18}) # update font size
 f.savefig('1_kahoot.png', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the full plot
 
@@ -94,7 +93,6 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-plt.rcParams.update({'font.size': 18}) # update font size
 fig.savefig('3b.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the full plot
 
@@ -111,6 +109,5 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-plt.rcParams.update({'font.size': 18}) # update font size
 fig.savefig('4b.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the full plot
