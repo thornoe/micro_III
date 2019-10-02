@@ -2515,6 +2515,25 @@
     \begin{itemize}
       \item[1.] Highlight the best responses in the matrix:
     \end{itemize}
+    \vspace{-15pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+          \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
+          T ($p$)   & 4, 1 & 2, 3 & 0, 4 \\\cline{2-4}
+          B (1-$p$) & 2, 3 & 1, 2 & 5, 0 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \textit{Which Pure Strategy Nash Equilibria (PSNE) exist?}
+  \vfill\null \columnbreak
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - analytical solution}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[1.] Highlight the best responses in the matrix:
+    \end{itemize}
+    \vspace{-15pt}
     \begin{table}
       \begin{tabular}{l|c|c|c|}
           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
@@ -2529,18 +2548,17 @@
 \end{frame}
 \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - analytical solution}
   \begin{multicols}{2}
-    \begin{itemize}
-      \item[1.] Highlight the best responses in the matrix:
-    \end{itemize}
-    \vspace{-20pt}
     \begin{table}
       \begin{tabular}{l|c|c|c|}
           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
-          T ($p$)   & 4, 1 & 2, 3 & 0, 4 \\\cline{2-4}
-          B (1-$p$) & 2, 3 & 1, 2 & 5, 0 \\\cline{2-4}
+          T ($p$)   & \textcolor{red}{4}, 1 & \textcolor{red}{2}, 3 & 0, \textcolor{blue}{4} \\\cline{2-4}
+          B (1-$p$) & 2, \textcolor{blue}{3} & 1, 2 & \textcolor{red}{5}, 0 \\\cline{2-4}
       \end{tabular}
     \end{table}
-    \textit{Which Pure Strategy Nash Equilibria (PSNE) exist?}
+    No Pure Strategy Nash Equilibrium (PSNE) exist.
+    \begin{itemize}
+      \item[2.] Find the relationship between $q_1$ and $q_2$ for which \textbf{Player 1 is indifferent}.
+    \end{itemize}
   \vfill\null \columnbreak
   \vfill\null
   \end{multicols}
@@ -2775,10 +2793,7 @@
       \end{array}\right.
     \end{align*}
     \begin{itemize}
-      \item[5.] Write up the \textbf{best responses for Player 2}:
-        \begin{align*}
-          BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)
-        \end{align*}
+      \item[5.] Write up the \textbf{best responses for Player 2}: $BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)$
     \end{itemize}
   \vfill\null \columnbreak
     Player 2 is indifferent between $L$ and $C$ if:
@@ -3027,7 +3042,7 @@
           0                 & q_1 + \frac{6}{7}q_2 < \frac{5}{7}
       \end{array}\right.
     \end{align*}
-    \textbf{Player 2:} $\bm{BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)}=$
+    Player 2: $BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)=$
     \begin{align*}
       \left\{ \begin{array}{ll}
           (1,0)                 & p < 1/3 \\
