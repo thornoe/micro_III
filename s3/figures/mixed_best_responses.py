@@ -7,7 +7,7 @@ os.chdir('C:/Users/jwz766/Documents/GitHub/micro_III/s3/figures') # work pc
 os.chdir('C:/Users/thorn/Onedrive/Dokumenter/GitHub/micro_III/s3/figures') # home pc
 
 # Run to update font size again after creating the first figure:
-plt.rcParams.update({'font.size': 18})
+plt.rcParams.update({'font.size': 23})
 
 ##############################################################################
 #   Mixed best responses in a "(p,q)-diagram"                                #
@@ -22,7 +22,7 @@ plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
 fig.savefig('5a1.pdf', bbox_inches='tight') # save the first plot to working folder
 plt.plot([0,0,1], [0,1,1], 'b', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.plot([0,1], [0,1], 'kX', markersize=18, label="$NE$") # plotting the PSNE points
-plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
+plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
 fig.savefig('5a2.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the full plot
@@ -38,7 +38,7 @@ fig.savefig('5b1.pdf', bbox_inches='tight') # save the first plot to working fol
 plt.plot([0,0,0.99,0.99], [0,4/7,4/7,1], 'b', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.plot([0], [0], 'ks', markersize=8) # plotting the PSNE point
 plt.plot([1.01,1.01], [4/7,1], 'k', ls='dotted', lw=5, label="$NE$") # plotting the MSNE line
-plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
+plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
 fig.savefig('5b2.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the full plot
@@ -53,7 +53,7 @@ plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
 fig.savefig('5c1.pdf', bbox_inches='tight') # save the first plot to working folder
 plt.plot([0.01,0.01,1], [0,0.99,0.99], 'b', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.plot([-0.01,-0.01,1], [0,1.01,1.01], 'k', ls='dotted', lw=5, label="$NE$") # plotting the MSNE line
-plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
+plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
 fig.savefig('5c2.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the plot
@@ -68,7 +68,7 @@ plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
 fig.savefig('5d1.pdf', bbox_inches='tight') # save the first plot to working folder
 plt.plot([0,0,1,1], [0,1/2,1/2,1], 'b', ls='dashed', label="$BR_2(p_1)$") # plotting the line 2 points
 plt.plot([0,1/2,1], [0,1/2,1], 'kX', markersize=18, label="$NE$") # plotting the PSNE points
-plt.legend(bbox_to_anchor=(0, 1.02, 1, 1), # bbox=(x, y, width, height)
+plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
 fig.savefig('5d2.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.show() # show the full plot
