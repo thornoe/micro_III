@@ -294,7 +294,7 @@
       NE:(p^{*},q^{*})=\left\{(0,0);(1,1);\left(\frac{1}{2},\frac{1}{2}\right)\right\}
     \end{align*}
   \vfill\null \columnbreak
-    (example plot for $N=1$)
+    \textit{(example plot for $N=9$)}
     \includegraphics[width=\columnwidth]{figures/4b}
     \vspace{-0pt}
     When $N\rightarrow\infty$, what happens to the probability of successful coordination?
@@ -483,11 +483,11 @@
         \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\textcolor{blue}{R}} \\\cline{2-3}
         T & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
         \textcolor{red}{B} & \textcolor{red}{4}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{2-3}
-        \end{tabular}\enskip
+        \end{tabular}\
         \begin{tabular}{l|c|c|}
-          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textcolor{blue}{L}} & \multicolumn{1}{c}{R} \\\cline{2-3}
-          \textcolor{red}{T} & \textcolor{red}{3}, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
-          B & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textcolor{blue}{L'}} & \multicolumn{1}{c}{R'} \\\cline{2-3}
+          \textcolor{red}{T'} & \textcolor{red}{3}, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+          B' & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
         \end{tabular}
     \end{table}
   \vfill\null \columnbreak
@@ -504,21 +504,25 @@
   \end{figure}
   BI gives the subgame perfect NE:
   \begin{align*}
-    SPNE=(Keep\ B\ T,\ R\ L)
+    SPNE=(Keep\ B\ T',\ R\ L')
   \end{align*}
   \vfill\null
   \end{multicols}
 \end{frame}
 \begin{frame}{PS4, Ex. 7: To keep or split (backwards induction)}
-  Alternatively, draw the game tree in extensive form to find $SPNE=(Keep\ B\ T,\ R\ L)$.\\\medskip
+  Alternatively, draw the game tree in extensive form to find $SPNE:(Keep\ B\ T',\ R\ L')$\\\medskip
   \nth{1} stage: Player 1 chooses Keep or Split. Player 2 observes the choice.\\\medskip
-  \nth{2} stage: They play the static game and payoffs are realized (doesn't matter who "moves first" as one's actions are private information till the other has moved).
+  \nth{2} stage: Player 2 chooses $L$ or $R$ ($L'$ or $R'$). The action is private information.\\\medskip
+  \nth{3} stage: Player 1 chooses $T$ or $B$ ($T'$ or $B'$) without knowing what Player 2 did.\\\medskip
   \begin{figure}[!h]
     \begin{center}
     \def\svgwidth{\columnwidth}
     \import{figures/}{7a_extensive_form.pdf_tex}
     \end{center}
   \end{figure}
+  \vspace{-8pt}
+  The order of stage 2 and 3 is arbitrary, but the \nth{2} stage must be private information.
+  %(you can swap stage 2 and 3, then the new \nth{2} stage would be private information.)
 \end{frame}
 
 

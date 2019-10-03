@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file '7a_extensive_form.pdf' (pdf, eps, ps)
 %%
@@ -68,9 +68,9 @@
     \put(0.13148441,0.37115196){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
     \put(0.31283774,0.30309168){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{7a_extensive_form.pdf}}%
-    \put(0.65240795,0.30179836){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L$\end{tabular}}}}%
+    \put(0.65240795,0.30179836){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L'$\end{tabular}}}}%
     \put(0.75891818,0.36985865){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
-    \put(0.82530751,0.30179836){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
+    \put(0.82530751,0.30179836){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R'$\end{tabular}}}}%
     \put(0.62147843,0.43438115){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Split\end{tabular}}}}%
     \put(0.29738776,0.43438115){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Keep\end{tabular}}}}%
     \put(0.44656185,0.51520813){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 1\end{tabular}}}}%
@@ -89,9 +89,9 @@
     \put(0.93199092,0.00794227){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
     \put(0.51128744,0.25189816){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 1\end{tabular}}}}%
     \put(0.89440657,0.25189816){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 1\end{tabular}}}}%
-    \put(0.54593563,0.13205758){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T$\end{tabular}}}}%
-    \put(0.64997792,0.13205758){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B$\end{tabular}}}}%
-    \put(0.93565324,0.13246116){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B$\end{tabular}}}}%
-    \put(0.83293814,0.13246116){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T$\end{tabular}}}}%
+    \put(0.54093712,0.13205758){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T'$\end{tabular}}}}%
+    \put(0.64997792,0.13205758){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B'$\end{tabular}}}}%
+    \put(0.93565324,0.13246116){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B'$\end{tabular}}}}%
+    \put(0.8279397,0.13246116){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T'$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
