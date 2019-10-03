@@ -14,7 +14,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="7a_extensive_form.svg">
   <defs
      id="defs2" />
@@ -32,9 +32,9 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1137"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true" />
   <metadata
@@ -390,7 +390,7 @@
          id="tspan1074-7-7-7-4-0"
          x="123.16534"
          y="158.53841"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$L$</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$L'$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -412,7 +412,7 @@
          id="tspan1074-7-7-7-4-9-4"
          x="141.46935"
          y="158.53841"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$R$</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$R'$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -635,14 +635,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="111.89365"
+       x="111.36448"
        y="176.50801"
        id="text1076-7-9-7-4-2-9"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4-5-7"
-         x="111.89365"
+         x="111.36448"
          y="176.50801"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$T$</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$T'$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -653,7 +653,7 @@
          id="tspan1074-7-7-7-4-5-5-2"
          x="122.90808"
          y="176.50801"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$B$</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$B'$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -664,17 +664,17 @@
          id="tspan1074-7-7-7-4-5-5-7-2"
          x="153.15109"
          y="176.46529"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$B$</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$B'$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="142.27716"
+       x="141.748"
        y="176.46529"
        id="text1076-7-9-7-4-2-5-6-4-6"><tspan
          sodipodi:role="line"
          id="tspan1074-7-7-7-4-5-5-7-9-2"
-         x="142.27716"
+         x="141.748"
          y="176.46529"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$T$</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$T'$</tspan></text>
   </g>
 </svg>
