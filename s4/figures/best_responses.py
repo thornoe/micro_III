@@ -18,7 +18,7 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-fig.savefig('empty_plot_.pdf', bbox_inches='tight') # save the full plot to working folder
+fig.savefig('empty_plot_.pdf', bbox_inches='tight') # save the first plot to working folder
 plt.plot([1], [1], 'w', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.plot([0], [0], 'wX', markersize=18, label="$NE$") # plotting the PSNE points
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
@@ -37,7 +37,7 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-fig.savefig('1a_.pdf', bbox_inches='tight') # save the full plot to working folder
+fig.savefig('1a_.pdf', bbox_inches='tight') # save the first plot to working folder
 plt.plot([0,0,1,1], [0,4/7,4/7,1], 'b', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.plot([0,4/7,1], [0,4/7,1], 'kX', markersize=18, label="$NE$") # plotting the PSNE points
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
@@ -53,8 +53,8 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-fig.savefig('1b_.pdf', bbox_inches='tight') # save the full plot to working folder
-plt.plot([0], [0], 'ks', markersize=8) # plotting the PSNE point
+fig.savefig('1b_.pdf', bbox_inches='tight') # save the first plot to working folder
+plt.plot([0,1.01], [0,1], 'ks', markersize=8) # plotting the PSNE points
 plt.plot([1.01,1.01], [1/2,1], 'k', ls='dotted', lw=5, label="$NE$") # plotting the MSNE line
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
@@ -72,7 +72,7 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-fig.savefig('3b_.pdf', bbox_inches='tight') # save the full plot to working folder
+fig.savefig('3b_.pdf', bbox_inches='tight') # save the first plot to working folder
 plt.plot([0,0,1,1], [0,1/2,1/2,1], 'b', ls='dashed', label="$BR_T(p)$") # plotting the line 2 points
 plt.plot([1/2], [1/2], 'kX', markersize=18, label="$NE$") # plotting the PSNE points
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
@@ -91,7 +91,7 @@ plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-fig.savefig('4b_.pdf', bbox_inches='tight') # save the full plot to working folder
+fig.savefig('4b_.pdf', bbox_inches='tight') # save the first plot to working folder
 plt.plot([0,0,1,1], [0,9/10,9/10,1], 'b', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.plot([0,1/10,1], [0,9/10,1], 'kX', markersize=18, label="$NE$") # plotting the PSNE points
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
