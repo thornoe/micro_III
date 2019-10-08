@@ -10,13 +10,15 @@ os.chdir('C:/Users/thorn/Onedrive/Dokumenter/GitHub/micro_III/s4/figures') # hom
 plt.rcParams.update({'font.size': 23})
 
 ##############################################################################
-#   Ex. 1: Mixed best-response functions in a "(p,q)-diagram                 #
+#   Empty "(p,q)-diagram"                                                    #
 ##############################################################################
-# Ex. 1.a
 fig, ax = plt.subplots(figsize=(6,6)) # create new figure
 plt.plot([0], [0], 'w', label="$BR_1(q)$") # plotting the line 1 points
 plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
+plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
+           loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
+fig.savefig('empty_plot_.pdf', bbox_inches='tight') # save the full plot to working folder
 plt.plot([1], [1], 'w', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.plot([0], [0], 'wX', markersize=18, label="$NE$") # plotting the PSNE points
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
@@ -26,7 +28,7 @@ plt.show() # show the full plot
 
 
 ##############################################################################
-#   Ex. 1: Mixed best-response functions in a "(p,q)-diagram                 #
+#   Ex. 1: Mixed best-response functions in a "(p,q)-diagram"                #
 ##############################################################################
 # Ex. 1.a
 fig, ax = plt.subplots(figsize=(6,6)) # create new figure
