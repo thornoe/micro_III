@@ -13,18 +13,18 @@ plt.rcParams.update({'font.size': 23})
 #   Empty "(p,q)-diagram"                                                    #
 ##############################################################################
 fig, ax = plt.subplots(figsize=(6,6)) # create new figure
-plt.plot([0], [0], 'w', label="$BR_1(q)$") # plotting the line 1 points
+plt.plot([0,1], [0,1], 'w', label="$BR_1(q)$") # plotting the white line 1 points
 plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-fig.savefig('empty_plot_.pdf', bbox_inches='tight') # save the first plot to working folder
-plt.plot([1], [1], 'w', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
-plt.plot([0], [0], 'wX', markersize=18, label="$NE$") # plotting the PSNE points
+fig.savefig('empty_plot_.pdf', bbox_inches='tight') # save the first empty plot to working folder
+plt.plot([0], [0], 'w', ls='dashed', label="$BR_2(p)$") # plotting the white line 2 point
+plt.plot([1], [1], 'wX', markersize=18, label="$NE$") # plotting the white PSNE point
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
-fig.savefig('empty_plot.pdf', bbox_inches='tight') # save the full plot to working folder
-plt.show() # show the full plot
+fig.savefig('empty_plot.pdf', bbox_inches='tight') # save the full empty plot to working folder
+plt.show() # show the empty plot
 
 
 ##############################################################################
