@@ -84,11 +84,21 @@ plt.show() # show the full plot
 ##############################################################################
 #   Ex. 4: Mixed best-response functions in a "(p,q)-diagram                 #
 ##############################################################################
+# Empty
+fig, ax = plt.subplots(figsize=(6,6)) # create new figure
+plt.plot([0,1], [0,1], 'w', label="$BR_1(q)$") # plotting the white line points
+plt.xlabel('q (probability of C1)', color='b') # naming the x axis
+plt.ylabel('p (probability of C1)', color='r') # naming the y axis
+plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
+           loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
+fig.savefig('4b_empty.pdf', bbox_inches='tight') # save the empty plot to working folder
+plt.show() # show the empty plot
+
 # Ex. 4.b
 fig, ax = plt.subplots(figsize=(6,6)) # create new figure
 plt.plot([0,1/10,1/10,1], [0,0,1,1], 'r', label="$BR_1(q)$") # plotting the line 1 points
-plt.xlabel('q (probability of L)', color='b') # naming the x axis
-plt.ylabel('p (probability of T)', color='r') # naming the y axis
+plt.xlabel('q (probability of C1)', color='b') # naming the x axis
+plt.ylabel('p (probability of C1)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
 fig.savefig('4b_.pdf', bbox_inches='tight') # save the first plot to working folder
