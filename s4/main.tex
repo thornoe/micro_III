@@ -300,9 +300,9 @@
 \end{frame}
 
 
-\section{Take Home Assignment 1: Backwards induction}
+\section{Take Home Assignment 1 (backwards induction)}
 
-\begin{frame}{Take Home Assignment 1: Backwards induction}
+\begin{frame}{Take Home Assignment 1 (backwards induction)}
   \begin{itemize}
     \item[3.] A dynamic game.
   \end{itemize}
@@ -313,7 +313,7 @@
     \end{center}
   \end{figure}
 \end{frame}
-\begin{frame}{Take Home Assignment 1: Backwards induction}
+\begin{frame}{Take Home Assignment 1 (backwards induction)}
   \begin{itemize}
     \item[(3a)] The Backwards Induction (BI) solution.
   \end{itemize}
@@ -328,9 +328,9 @@
     (best\ responses\ for\ player\ 1,\ best\ responses\ for\ player\ 2)=(s_1,s_2)=(Rrr',R'L'')
   \end{align*}
 \end{frame}
-\begin{frame}{Take Home Assignment 1: Backwards induction}
+\begin{frame}{Take Home Assignment 1 (backwards induction)}
   \begin{itemize}
-    \item[(3b)] Improvement from deleting a strategy.
+    \item[(3b)] Player 1: Any improvement from deleting a strategy.
   \end{itemize}
   \begin{figure}[!h]
     \begin{center}
@@ -341,9 +341,9 @@
   Most of you answered that Player 1 can improve his outcome by deleting $r$ to get 3.\\\medskip
   This is true, but it is suboptimal (for Player 1 at least).
 \end{frame}
-\begin{frame}{Take Home Assignment 1: Backwards induction}
+\begin{frame}{Take Home Assignment 1 (backwards induction)}
   \begin{itemize}
-    \item[(3b)] The best improvement from deleting a strategy.
+    \item[(3b)] Player 1: The best improvement from deleting a strategy.
   \end{itemize}
   \begin{figure}[!h]
     \begin{center}
@@ -354,6 +354,20 @@
   Player 1 can do better by deleting $r'$. Then he can use the \textit{\textbf{first mover advantage}} to choose the left side of the tree and use the \textit{\textbf{last mover advantage}} to pick $r$ and get $4$.\\\medskip
   Player 2 has limited agency in the middle stage, but picks $L'$ to avoid negative payoffs.
 \end{frame}
+\begin{frame}{Take Home Assignment 1 (backwards induction)}
+  \begin{itemize}
+    \item[(3c)] Player 2: Show there can be no improvement from deleting a strategy,
+  \end{itemize}
+  \begin{figure}[!h]
+    \begin{center}
+    \def\svgwidth{\columnwidth}
+    \import{figures/}{TH1_Ex3_color.pdf_tex}
+    \end{center}
+  \end{figure}
+  The foolproof way: Delete $L',R',L'',R''$ one at the time and solve all 4 new games.\\\medskip
+  The smart way: Argue that the only possible improvement for Player 2 would be to end up in $(3,3)$, but Player 1 would never choose $l$ over $r$.
+\end{frame}
+
 
 \section{PS4, Ex. 5: North-Atlantic, 1943 (MSNE)}
 
@@ -433,6 +447,7 @@
       \item[b)] Discuss what happens to $p$ as the number of witness becomes very large. What happens then to the probability that the thief will get stopped? What is the intuition for this result?
     \end{itemize}
 \end{frame}
+
 
 \section{PS4, Ex. 7: To keep or split (backwards induction)}
 
