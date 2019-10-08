@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'game_tree_extended.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{169.77549733bp}%
+    \setlength{\unitlength}{176.72471488bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,26 +50,26 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.5958882)%
+  \begin{picture}(1,0.57245653)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{game_tree_extended.pdf}}%
-    \put(0.00024603,0.17697651){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fight\end{tabular}}}}%
-    \put(0.39939073,0.56091555){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Firm 2\end{tabular}}}}%
-    \put(0.29702571,0.17709166){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Acc.\end{tabular}}}}%
+    \put(0.00023635,0.17001739){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fight\end{tabular}}}}%
+    \put(0.38368578,0.53885907){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Firm 2\end{tabular}}}}%
+    \put(0.28534598,0.17012801){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Acc.\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{game_tree_extended.pdf}}%
-    \put(0.22830246,0.43577126){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Enter\end{tabular}}}}%
-    \put(0.03446434,0.31683106){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Firm 1\end{tabular}}}}%
-    \put(0.31394086,0.0095714){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
+    \put(0.21932508,0.41863574){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Enter\end{tabular}}}}%
+    \put(0.03310913,0.30437255){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Firm 1\end{tabular}}}}%
+    \put(0.30159599,0.00919503){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{game_tree_extended.pdf}}%
-    \put(0.57403493,0.43588641){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Not enter\end{tabular}}}}%
-    \put(-0.00416451,0.0095714){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,-1)\end{tabular}}}}%
-    \put(0.42307098,0.17688479){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Continue\end{tabular}}}}%
-    \put(0.80820259,0.17699969){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Implode\end{tabular}}}}%
+    \put(0.55146257,0.41874637){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Not enter\end{tabular}}}}%
+    \put(-0.00400075,0.00919503){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,-1)\end{tabular}}}}%
+    \put(0.40643487,0.16992928){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Continue\end{tabular}}}}%
+    \put(0.77642223,0.17003966){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Shutdown\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{game_tree_extended.pdf}}%
-    \put(0.7400155,0.31673909){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Firm 1\end{tabular}}}}%
-    \put(0.82511787,0.00947943){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,2)\end{tabular}}}}%
+    \put(0.71091641,0.30428419){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Firm 1\end{tabular}}}}%
+    \put(0.79267236,0.00910668){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,2)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{game_tree_extended.pdf}}%
-    \put(0.5070125,0.00947943){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,0)\end{tabular}}}}%
+    \put(0.48707562,0.00910668){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,0)\end{tabular}}}}%
   \end{picture}%
 \endgroup%
