@@ -48,12 +48,12 @@ plt.show() # show the full plot
 # Ex. 1.b
 fig, ax = plt.subplots(figsize=(6,6)) # create new figure
 plt.plot([0,1,1], [0,0,1], 'r', label="$BR_1(q)$") # plotting the line 1 points
-plt.plot([0,0,.99,.99], [0,1/2,1/2,1], 'b', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.xlabel('q (probability of L)', color='b') # naming the x axis
 plt.ylabel('p (probability of T)', color='r') # naming the y axis
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
            loc='lower left', ncol=3, mode="expand", borderaxespad=0.)
 fig.savefig('1b_.pdf', bbox_inches='tight') # save the first plot to working folder
+plt.plot([0,0,.99,.99], [0,1/2,1/2,1], 'b', ls='dashed', label="$BR_2(p)$") # plotting the line 2 points
 plt.plot([0,1.01], [0,1], 'ks', markersize=8) # plotting the PSNE points
 plt.plot([1.01,1.01], [1/2,1], 'k', ls='dotted', lw=5, label="$NE$") # plotting the MSNE line
 plt.legend(bbox_to_anchor=(-.21, 1.02, 1.21, 1), # bbox=(x, y, width, height)
