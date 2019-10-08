@@ -34,7 +34,7 @@
 %         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
 %         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{\color{blue}R} \\\cline{3-4}
 %         & U & 5, 5 & 1, \textcolor{blue}{6}  \\\cline{3-4}
-%         & \color{red} & \textcolor{red}{6}, 1 & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+%         & \color{red}D & \textcolor{red}{6}, 1 & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
 %       \end{tabular}
 %     \end{table}
 %     $(D,R)$ is a unique Pure Strategy Nash Equilibrium (PSNE). The game is a Prisoner's Dilemma as it fulfills:
@@ -177,25 +177,148 @@
 %   \end{multicols}
 % \end{frame}
 % \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
-%     The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
+%   \textbf{Informal proof:} For the intuition, look at this example for now. At home, you can compare the two different formal proofs.
 %   \begin{multicols}{2}
-%     \begin{itemize}
-%       \item Let $(s_1^{*},s_2^{*})$ be a NE.
-%       \item Say we carry out \underline{\textbf{IEWDS}} and $s_1^{*}$ is the first NE strategy to be eliminated (in round $n$ of elimination).
-%       \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
-%     \end{itemize}
-%       \begin{align*}
-%         \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)
-%       \end{align*}
-%       \begin{itemize}
-%         \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
-%       \end{itemize}
-%   \vfill\null \columnbreak
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+%         & U & \textcolor{red}{3}, \textcolor{blue}{2} & 0, 0  \\\cline{3-4}
+%         & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     \textbf{NE} is any strategy where no player can be strictly better off by deviating:
+%     \begin{align*}
+%       NE=\{(U,L),(D,R)\}
+%     \end{align*}
+%   \vfill\null\columnbreak
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
 % \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
-%     The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
+%   \textbf{Informal proof:} For the intuition, look at this example for now. At home, you can compare the two different formal proofs.
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+%         & U & \textcolor{red}{3}, \textcolor{blue}{2} & 0, 0  \\\cline{3-4}
+%         & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     \textbf{NE} is any strategy where no player can be strictly better off by deviating:
+%     \begin{align*}
+%       NE=\{(U,L),(D,R)\}
+%     \end{align*}
+%     \textbf{IESDS:} If a strategy was strongly dominated there would be a clear incentive to deviate from it, thus, by definition the strategy could not be a NE.
+%   \vfill\null\columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+%   \textbf{Informal proof:} For the intuition, look at this example for now. At home, you can compare the two different formal proofs.
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+%         & U & \textcolor{red}{3}, \textcolor{blue}{2} & 0, 0  \\\cline{3-4}
+%         & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     \textbf{NE} is any strategy where no player can be strictly better off by deviating:
+%     \begin{align*}
+%       NE=\{(U,L),(D,R)\}
+%     \end{align*}
+%     \textbf{IESDS:} If a strategy was strongly dominated there would be a clear incentive to deviate from it, thus, by definition the strategy could not be a NE.
+%   \vfill\null\columnbreak
+%   \textbf{IEWDS:} In a NE where a player $1$ is indifferent between the NE-payoff and her payoff from deviating, the NE-strategy can be weakly dominated if player $1$'s' alternative strategy would give a higher payoff in the case where player $2$ deviates from his NE strategy as well.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+%   \textbf{Informal proof:} For the intuition, look at this example for now. At home, you can compare the two different formal proofs.
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+%         & \sout{U} & \sout{\textcolor{red}{3}, \textcolor{blue}{2}} & \sout{0, 0}  \\\cline{3-4}
+%         & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     \textbf{NE} is any strategy where no player can be strictly better off by deviating:
+%     \begin{align*}
+%       NE=\{(U,L),(D,R)\}
+%     \end{align*}
+%     \textbf{IESDS:} If a strategy was strongly dominated there would be a clear incentive to deviate from it, thus, by definition the strategy could not be a NE.
+%   \vfill\null\columnbreak
+%     \textbf{IEWDS:} In a NE where a player $1$ is indifferent between the NE-payoff and her payoff from deviating, the NE-strategy can be weakly dominated if player $1$'s' alternative strategy would give a higher payoff in the case where player $2$ deviates from his NE strategy as well.\\\medskip
+%     E.g. Player 1 is indifferent between $u_1(U,L)$ and $u_1(D,L)$, however, $u_1(D,R)>u_1(U,R)$, i.e. $D$ weakly dominates $U$ and $U$ can be eliminated. I.e. eliminating the NE $(U,L)$, leaving behind the reduced form game:
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{2}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L}  & \multicolumn{1}{c}{R} \\\cline{3-4}
+%         & D & \textcolor{red}{3}, 0 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+%     \textbf{Formal proof:} The proof that all NE survive IESDS holds by contradiction. For the two-player case the IESDS proof is as follows:
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item Let $(s_1^{*},s_2^{*})$ be a NE.
+%       \item Say we carry out IESDS and $s_1^{*}$ is the first NE strategy to be eliminated (in round $n$ of elimination).
+%       \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that strictly dominates $s_1^{*}$, i.e.
+%     \end{itemize}
+%       \begin{align}
+%         \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)<u_1(s_1^{'},s_2)\label{iesds}
+%       \end{align}
+%       \begin{itemize}
+%         \item[] where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
+%       \end{itemize}
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item Since $s_2^{*}\in S_2^n$, inequality \eqref{iesds} also means
+%       \begin{align*}
+%         u_1(s_1^{*},s_2^{*})<u_1(s_1^{'},s_2^{*})
+%       \end{align*}
+%       \item But $(s_1^{*},s_2^{*})$ is a NE, so by definition
+%       \begin{align*}
+%         \forall s_1\in S_1:\ u_1(s_1^{*},s_2^{*})\geq u_1(s_1,s_2^{*})
+%       \end{align*}
+%       \item Contradiction! We can do the same for player 2. It follows that $s_i^{*}$ survives IESDS for $i=1,2$.
+%     \end{itemize}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% % \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+% %     \textbf{Formal proof:} The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
+% %   \begin{multicols}{2}
+% %     \begin{itemize}
+% %       \item Let $(s_1^{*},s_2^{*})$ be a NE.
+% %       \item Say we carry out \underline{\textbf{IEWDS}} and $s_1^{*}$ is the first NE strategy to be eliminated (in round $n$ of elimination).
+% %       \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
+% %     \end{itemize}
+% %       \begin{align*}
+% %         \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)
+% %       \end{align*}
+% %       \begin{itemize}
+% %         \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
+% %       \end{itemize}
+% %   \vfill\null \columnbreak
+% %   \vfill\null
+% %   \end{multicols}
+% % \end{frame}
+% \begin{frame}{PS3, Ex. 3 (A): NE proof using IEWDS}
+%     \textbf{Formal proof:} The proof that all NE survive IESDS holds by contradiction. We \underline{\textbf{highlight}} where the contradiction breaks down using IEWDS instead:
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item Let $(s_1^{*},s_2^{*})$ be a NE.
@@ -203,14 +326,14 @@
 %       \item Then there must be a strategy $s_1^{'}\neq s_1^{*}$ that \underline{\textbf{weakly}} dominates $s_1^{*}$, i.e.
 %     \end{itemize}
 %       \begin{align}
-%         \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)\label{proof}
+%         \forall s_2\in S_2^n:\ u_1(s_1^{*},s_2)\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2)\label{iewds}
 %       \end{align}
 %       \begin{itemize}
 %         \item[] \underline{\textbf{and the inequality holds strictly for}} \underline{\textbf{at least one strategy $\bm{s_2^{'}\in S_2^n}$}} where $S_2^n$ is the set of player-2 strategies that have not been eliminated in rounds $1,...,n-1$.
 %       \end{itemize}
 %   \vfill\null\columnbreak
 %     \begin{itemize}
-%       \item Since $s_2^{*}\in S_2^n$, inequality \eqref{proof} also means
+%       \item Since $s_2^{*}\in S_2^n$, inequality \eqref{iewds} also means
 %       \begin{align*}
 %         u_1(s_1^{*},s_2^{*})\underbrace{\bm{\leq}}_\text{\underline{\textbf{Weak}}}u_1(s_1^{'},s_2^{*})
 %       \end{align*}
@@ -436,15 +559,15 @@
 %     Price competition could be increased by lowering the probability that an uninformed customer randomly picks the firm, i.e. through:
 %     \begin{enumerate}
 %       \item A higher share of informed customers.
-%       \item More competing firms (moreover, increasing the pure price competition).
+%       \item More competing firms (however, other effects affect the outcome as well).
 %     \end{enumerate}
 %   \vfill\null
 % \end{frame}
 %
 %
-% \section{PS4, Ex. 2: Entry deterrence in a game tree}
-
-\begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
+% \section{PS4, Ex. 2: Entry deterrence (backwards induction)}
+%
+\begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
   \begin{multicols}{2}
     Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1), but fighting is costly for firm 1, lowering its payoff to 0.
     \begin{itemize}
@@ -455,7 +578,7 @@
   \vfill\null
   \end{multicols}
 \end{frame}
-% \begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
+% \begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
 %   \begin{multicols}{2}
 %     Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1), but fighting is costly for firm 1, lowering its payoff to 0.
 %     \begin{itemize}
@@ -472,7 +595,7 @@
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
+% \begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(a)] Draw the game tree.
@@ -489,7 +612,7 @@
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
+% \begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(a)] Draw the game tree.
@@ -507,7 +630,7 @@
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
+% \begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(a)] Draw the game tree.
@@ -529,7 +652,7 @@
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-\begin{frame}{PS4, Ex. 2: Entry deterrence in a game tree}
+\begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
   \begin{multicols}{2}
     \begin{itemize}
       \item[(a)] Draw the game tree.
@@ -553,6 +676,63 @@
       \begin{center}
       \def\svgwidth{1.0\columnwidth}
       \import{figures/}{game_tree_reduced.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2 extra: Choices off the equilibrium path}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(c)] What is the solution now?
+    \end{itemize}
+    \textbf{Looking at the new choices}: If Firm 2 chooses to not enter in the \nth{1} round, then Firm 1 can choose to either continue on as normal or shut down in the \nth{2} round, effectively handing over the whole market to Firm 2 instead.
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree_extended.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+% \begin{frame}{PS4, Ex. 2 extra: Choices off the equilibrium path}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(c)] What is the solution now?
+%     \end{itemize}
+%     \textbf{Looking at the new choices}: If Firm 2 chooses to not enter in the \nth{1} round, then Firm 1 can choose to either continue on as normal or shut down in the \nth{2} round.\\\medskip
+%     \textbf{Firm 1} will always continue on, as it will gain nothing in a shutdown $(2>0)$.\\\medskip
+%     Knowing that Firm 1 is rational and will choose to continue on in the \nth{2} round, \textbf{Firm 2} (first mover), would get 0 by not entering in the \nth{1} round, so to enter in the \nth{1} round will be the best response $(1>0)$.\\\medskip
+%     What is the full strategy profile for the backwards induction solution?
+%   \vfill\null \columnbreak
+%     \begin{figure}[!h]
+%       \begin{center}
+%       \def\svgwidth{1.0\columnwidth}
+%       \import{figures/}{game_tree_extended_color.pdf_tex}
+%       \end{center}
+%     \end{figure}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+\begin{frame}{PS4, Ex. 2 extra: Choices off the equilibrium path}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] What is the solution now?
+    \end{itemize}
+    \textbf{Looking at the new choices}: If Firm 2 chooses to not enter in the \nth{1} round, then Firm 1 can choose to either continue on as normal or shut down in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always continue on, as it will gain nothing in a shutdown $(2>0)$.\\\medskip
+    Knowing that Firm 1 is rational and will choose to continue on in the \nth{2} round, \textbf{Firm 2} (first mover), would get 0 by not entering in the \nth{1} round, so to enter in the \nth{1} round will be the best response $(1>0)$, i.e. the backwards induction solution is the strategy profile:
+      \begin{align*}
+        (s_1,s_2)=("Accommodate""Continue","Enter")
+      \end{align*}
+    \textbf{Off the equilibrium path:} The strategy profile now reflect choices off the equilibrium path, this is done because firm 1's choices off the equilibrium path might be relevant to the equilibrium path.
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree_extended_color.pdf_tex}
       \end{center}
     \end{figure}
   \vfill\null
@@ -993,9 +1173,9 @@
 %
 %
 %
-% \section{PS3, Ex. 8: Mixed Strategy Nash Equilibria - best-response functions}
+% \section{PS3, Ex. 7: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %
-% \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - best-response functions}
+% \begin{frame}{PS3, Ex. 7: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   Plot the mixed best responses of each player (in a "(p,q)-diagram" - see the textbook). And find all Nash equilibria (pure and mixed) in the games below
 %   \begin{multicols}{2}
 %     \begin{itemize}
@@ -1055,7 +1235,7 @@
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - best-response functions}
+% \begin{frame}{PS3, Ex. 7: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   Plot the mixed best responses of each player (in a "(p,q)-diagram" - see the textbook). And find all Nash equilibria (pure and mixed) in the games below
 %   \begin{multicols}{2}
 %     \begin{itemize}
@@ -1120,11 +1300,33 @@
 %                       and the probabilities $p$ for which Player 2 is indifferent, e.g. $u_2(L,p)=u_2(R,p)$.\\\cline{1-1}
 %   \end{tabular}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria}
+%
+% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(a)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%           & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%           & T  ($p$)  & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+%           & B  (1-$p$)& \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null \columnbreak
+%     \textit{For which values of $q$ is Player 1 indifferent?}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1140,14 +1342,16 @@
 %       \item Prefers $B$ if $q<1\Rightarrow p=0$.
 %     \end{itemize}
 %   \vfill\null \columnbreak
+%     \textit{Write up Player 1's best-response (BR) function, $p^{*}(q)$.}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(a)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1162,24 +1366,94 @@
 %       \item Indifferent if $q=1\Rightarrow p\in[0,1]$
 %       \item Prefers $B$ if $q<1\Rightarrow p=0$.
 %     \end{itemize}
+%     Player 1's BR function, $p^{*}(q)$:
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \textit{Plot Player 1's BR function, $p^{*}(q)$, in a (p,q)-diagram.}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%           & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%           & T  ($p$)  & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+%           & B  (1-$p$)& \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1:
+%     \begin{itemize}
+%       \item Indifferent if $q=1\Rightarrow p\in[0,1]$
+%       \item Prefers $B$ if $q<1\Rightarrow p=0$.
+%     \end{itemize}
+%     Player 1's BR function, $p^{*}(q)$:
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7a1}
+%     \textit{For which values of $p$ is Player 2 indifferent?}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%           & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%           & T  ($p$)  & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+%           & B  (1-$p$)& \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1:
+%     \begin{itemize}
+%       \item Indifferent if $q=1\Rightarrow p\in[0,1]$
+%       \item Prefers $B$ if $q<1\Rightarrow p=0$.
+%     \end{itemize}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
 %     Player 2:
 %     \begin{itemize}
 %       \item Indifferent if $p=1\Rightarrow q\in[0,1]$
 %       \item Prefers $R$ if $p<1\Rightarrow q=0$.
 %     \end{itemize}
-%     i.e. two Pure Strategy Nash Equilibria:
-%     \begin{align*}
-%       PSNE=\{(T,L),(B,R)\}
-%     \end{align*}
 %   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7a1}
+%     \textit{Write up Player 2's best-response (BR) function, $q^{*}(p)$}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(a)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1194,25 +1468,36 @@
 %       \item Indifferent if $q=1\Rightarrow p\in[0,1]$
 %       \item Prefers $B$ if $q<1\Rightarrow p=0$.
 %     \end{itemize}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
 %     Player 2:
 %     \begin{itemize}
 %       \item Indifferent if $p=1\Rightarrow q\in[0,1]$
 %       \item Prefers $R$ if $p<1\Rightarrow q=0$.
 %     \end{itemize}
-%     i.e. two Pure Strategy Nash Equilibria:
+%     Player 2's BR function, $q^{*}(p)$:
 %     \begin{align*}
-%       PSNE=\{(T,L),(B,R)\}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<1  \\
+%       q\in[0,1] & \text{if} & p=1
+%       \end{array}\right.
 %     \end{align*}
 %   \vfill\null \columnbreak
-%     \includegraphics[width=\columnwidth]{figures/5a1}
+%     \includegraphics[width=\columnwidth]{figures/7a1}
+%     \textit{Plot Player 2's BR function, $q^{*}(p)$}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(a)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1227,25 +1512,100 @@
 %       \item Indifferent if $q=1\Rightarrow p\in[0,1]$
 %       \item Prefers $B$ if $q<1\Rightarrow p=0$.
 %     \end{itemize}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
 %     Player 2:
 %     \begin{itemize}
 %       \item Indifferent if $p=1\Rightarrow q\in[0,1]$
 %       \item Prefers $R$ if $p<1\Rightarrow q=0$.
 %     \end{itemize}
-%     i.e. two Pure Strategy Nash Equilibria:
+%     \begin{align*}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<1  \\
+%       q\in[0,1] & \text{if} & p=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7a2}
+%     \textit{Write up all NE (pure and mixed).}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.a: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%           & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%           & T  ($p$)  & \textcolor{red}{0}, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+%           & B  (1-$p$)& \textcolor{red}{0}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1:
+%     \begin{itemize}
+%       \item Indifferent if $q=1\Rightarrow p\in[0,1]$
+%       \item Prefers $B$ if $q<1\Rightarrow p=0$.
+%     \end{itemize}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
+%     Player 2:
+%     \begin{itemize}
+%       \item Indifferent if $p=1\Rightarrow q\in[0,1]$
+%       \item Prefers $R$ if $p<1\Rightarrow q=0$.
+%     \end{itemize}
+%     \begin{align*}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<1  \\
+%       q\in[0,1] & \text{if} & p=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7a2}
+%     Two Pure Strategy Nash Equilibria:
 %     \begin{align*}
 %       PSNE=\{(T,L),(B,R)\}
 %     \end{align*}
-%   \vfill\null \columnbreak
-%     \includegraphics[width=\columnwidth]{figures/5a2}
-%     We only find the two Mixed Strategy NE (MSNE). Both coincide with the PSNE:
+%     We find two Mixed Strategy NE (MSNE). Both coincide with the PSNE:
 %     \begin{align*}
 %       (p^{*},q^{*})=\left\{(1,1),(0,0)\right\}
-%     \end{align*}
+%     \end{align*}  \vfill\null
+%   \end{multicols}
+% \end{frame}
+%
+% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(b)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{1}, \textcolor{blue}{3} & 1, 0 \\\cline{3-4}
+%         & B  (1-$p$)& \textcolor{red}{1}, 1 & \textcolor{red}{5}, \textcolor{blue}{5} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null \columnbreak
+%     \textit{For which values of $q$ is Player 1 indifferent?}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(b)] Plot the mixed best responses and find all NE (pure and mixed):
@@ -1262,18 +1622,19 @@
 %     Player 1 is indifferent if:
 %     \begin{align*}
 %       1 &= 1q + 5(1-q) \\
-%       5q&= 4          \\
-%       q &= 1
+%       5q&= 4 \Rightarrow q = 1
 %     \end{align*}
 %   \vfill\null \columnbreak
+%   \textit{Write up Player 1's best-response (BR) function, $p^{*}(q)$.}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(b)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1286,28 +1647,96 @@
 %     Player 1 is indifferent if:
 %     \begin{align*}
 %       1 &= 1q + 5(1-q) \\
-%       5q&= 4          \\
-%       q &= 1
+%       5q&= 4 \Rightarrow q = 1
+%     \end{align*}
+%     Player 1's BR function, $p^{*}(q)$:
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \textit{Plot Player 1's BR function, $p^{*}(q)$, in a (p,q)-diagram.}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(b)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{1}, \textcolor{blue}{3} & 1, 0 \\\cline{3-4}
+%         & B  (1-$p$)& \textcolor{red}{1}, 1 & \textcolor{red}{5}, \textcolor{blue}{5} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
+%     \begin{align*}
+%       1 &= 1q + 5(1-q) \\
+%       5q&= 4 \Rightarrow q = 1
+%     \end{align*}
+%     Player 1's BR function, $p^{*}(q)$:
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7b1}
+%     \textit{For which values of $p$ is Player 2 indifferent?}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(b)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{1}, \textcolor{blue}{3} & 1, 0 \\\cline{3-4}
+%         & B  (1-$p$)& \textcolor{red}{1}, 1 & \textcolor{red}{5}, \textcolor{blue}{5} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
+%     \begin{align*}
+%       1 &= 1q + 5(1-q) \\
+%       5q&= 4 \Rightarrow q = 1
+%     \end{align*}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
 %     \end{align*}
 %     Player 2 is indifferent if:
 %     \begin{align*}
 %       3p + 1(1-p)&= 0p+5(1-p)\\
-%       7p         &= 4     \\
-%       p          &= \frac{4}{7}
-%     \end{align*}
-%     i.e. two Pure Strategy Nash Equilibria:
-%     \begin{align*}
-%       PSNE=\{(T,L),(B,R)\}
+%       7p         &= 4 \Rightarrow p = \frac{4}{7}
 %     \end{align*}
 %   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7b1}
+%     \textit{Write up Player 2's best-response (BR) function, $q^{*}(p)$}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(b)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1320,29 +1749,38 @@
 %     Player 1 is indifferent if:
 %     \begin{align*}
 %       1 &= 1q + 5(1-q) \\
-%       5q&= 4          \\
-%       q &= 1
+%       5q&= 4 \Rightarrow q = 1
+%     \end{align*}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
 %     \end{align*}
 %     Player 2 is indifferent if:
 %     \begin{align*}
 %       3p + 1(1-p)&= 0p+5(1-p)\\
-%       7p         &= 4     \\
-%       p          &= \frac{4}{7}
+%       7p         &= 4 \Rightarrow p = \frac{4}{7}
 %     \end{align*}
-%     i.e. two Pure Strategy Nash Equilibria:
 %     \begin{align*}
-%       PSNE=\{(T,L),(B,R)\}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<4/7 \\
+%       q\in[0,1] & \text{if} & p=4/7 \\
+%       q=1       & \text{if} & p<4/7
+%       \end{array}\right.
 %     \end{align*}
 %   \vfill\null \columnbreak
-%     \includegraphics[width=\columnwidth]{figures/5b1}
+%     \includegraphics[width=\columnwidth]{figures/7b1}
+%     \textit{Plot Player 2's BR function, $q^{*}(p)$}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(b)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1355,33 +1793,107 @@
 %     Player 1 is indifferent if:
 %     \begin{align*}
 %       1 &= 1q + 5(1-q) \\
-%       5q&= 4          \\
-%       q &= 1
+%       5q&= 4 \Rightarrow q = 1
+%     \end{align*}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
 %     \end{align*}
 %     Player 2 is indifferent if:
 %     \begin{align*}
 %       3p + 1(1-p)&= 0p+5(1-p)\\
-%       7p         &= 4     \\
-%       p          &= \frac{4}{7}
+%       7p         &= 4 \Rightarrow p = \frac{4}{7}
 %     \end{align*}
-%     i.e. two Pure Strategy Nash Equilibria:
 %     \begin{align*}
-%       PSNE=\{(T,L),(B,R)\}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<4/7 \\
+%       q\in[0,1] & \text{if} & p=4/7 \\
+%       q=1       & \text{if} & p<4/7
+%       \end{array}\right.
 %     \end{align*}
 %   \vfill\null \columnbreak
-%     \includegraphics[width=\columnwidth]{figures/5b2}
-%     From drawing, the two PSNE are contained in two Mixed Strategy Nash Equilibria (MSNE):
+%     \includegraphics[width=\columnwidth]{figures/7b2}
+%     \textit{Write up all NE (pure and mixed).}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.b: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(b)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{1}, \textcolor{blue}{3} & 1, 0 \\\cline{3-4}
+%         & B  (1-$p$)& \textcolor{red}{1}, 1 & \textcolor{red}{5}, \textcolor{blue}{5} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
 %     \begin{align*}
-%       (p^{*},q^{*})=\left\{(0,0)\right\}\cup\left\{(p,1):p\in\left[\frac{4}{7},1\right]\right\}
+%       1 &= 1q + 5(1-q) \\
+%       5q&= 4 \Leftrightarrow q = 1
+%     \end{align*}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p=0       & \text{if} & q<1 \\
+%       p\in[0,1] & \text{if} & q=1
+%       \end{array}\right.
+%     \end{align*}
+%     Player 2 is indifferent if:
+%     \begin{align*}
+%       3p + 1(1-p)&= 0p+5(1-p)\\
+%       7p         &= 4 \Leftrightarrow p = \frac{4}{7}
+%     \end{align*}
+%     \vspace{-8pt}
+%     \begin{align*}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<4/7 \\
+%       q\in[0,1] & \text{if} & p=4/7 \\
+%       q=1       & \text{if} & p<4/7
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7b2}
+%     The pure and mixed strategy NE are:
+%     \begin{align*}
+%       (p^{*},q^{*})=\left\{(0,0);(1,1);\left(p\in\left[\frac{4}{7},1\right),q=1\right)\right\}
 %     \end{align*}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria}
+%
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{3}, \textcolor{blue}{2} & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%         & B  (1-$p$)& 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null \columnbreak
+%     \textit{For which values of $q$ is Player 1 indifferent?}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1397,14 +1909,16 @@
 %       q &= 0
 %     \end{align*}
 %   \vfill\null \columnbreak
+%     \textit{Write up Player 1's best-response (BR) function, $p^{*}(q)$.}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1418,26 +1932,96 @@
 %     \begin{align*}
 %       3q+(1-q) &= (1-q) \\
 %       q &= 0
+%     \end{align*}
+%     Player 1's BR function, $p^{*}(q)$:
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p\in[0,1] & \text{if} & q=0 \\
+%       p=1       & \text{if} & q>0
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \textit{Plot Player 1's BR function, $p^{*}(q)$, in a (p,q)-diagram.}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{3}, \textcolor{blue}{2} & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%         & B  (1-$p$)& 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
+%     \begin{align*}
+%       3q+(1-q) &= (1-q) \\
+%       q &= 0
+%     \end{align*}
+%     Player 1's BR function, $p^{*}(q)$:
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p\in[0,1] & \text{if} & q=0 \\
+%       p=1       & \text{if} & q>0
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7c1}
+%     \textit{For which values of $p$ is Player 2 indifferent?}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{3}, \textcolor{blue}{2} & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%         & B  (1-$p$)& 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
+%     \begin{align*}
+%       3q+(1-q) &= (1-q) \\
+%       q &= 0
+%     \end{align*}
+%     \vspace{-15pt}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p\in[0,1] & \text{if} & q=0 \\
+%       p=1       & \text{if} & q>0
+%       \end{array}\right.
 %     \end{align*}
 %     Player 2 is indifferent if:
 %     \begin{align*}
 %       2p + (1-p) &= 2 \\
-%       p + 1      &= 2 \\
-%       p          &= 1
-%     \end{align*}
-%     i.e. three PSNE exist:
-%     \begin{align*}
-%       PSNE=\{(T,L),(T,R),(B,R)\}
+%       p + 1      &= 2 \Rightarrow p = 1
 %     \end{align*}
 %   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7c1}
+%     \textit{Write up Player 2's best-response (BR) function, $q^{*}(p)$}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1452,26 +2036,37 @@
 %       3q+(1-q) &= (1-q) \\
 %       q &= 0
 %     \end{align*}
+%     \vspace{-15pt}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p\in[0,1] & \text{if} & q=0 \\
+%       p=1       & \text{if} & q>0
+%       \end{array}\right.
+%     \end{align*}
 %     Player 2 is indifferent if:
 %     \begin{align*}
 %       2p + (1-p) &= 2 \\
-%       p + 1      &= 2 \\
-%       p          &= 1
+%       p + 1      &= 2 \Rightarrow p = 1
 %     \end{align*}
-%     i.e. three PSNE exist:
+%     \vspace{-15pt}
 %     \begin{align*}
-%       PSNE=\{(T,L),(T,R),(B,R)\}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<1  \\
+%       q\in[0,1] & \text{if} & p=1
+%       \end{array}\right.
 %     \end{align*}
 %   \vfill\null \columnbreak
-%     \includegraphics[width=\columnwidth]{figures/5c1}
+%     \includegraphics[width=\columnwidth]{figures/7c1}
+%     \textit{Plot Player 2's BR function, $q^{*}(p)$}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{cl|c|c|}
 %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -1486,31 +2081,138 @@
 %       3q+(1-q) &= (1-q) \\
 %       q &= 0
 %     \end{align*}
+%     \vspace{-15pt}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p\in[0,1] & \text{if} & q=0 \\
+%       p=1       & \text{if} & q>0
+%       \end{array}\right.
+%     \end{align*}
 %     Player 2 is indifferent if:
 %     \begin{align*}
 %       2p + (1-p) &= 2 \\
-%       p + 1      &= 2 \\
-%       p          &= 1
+%       p + 1      &= 2 \Rightarrow p = 1
 %     \end{align*}
-%     i.e. three PSNE exist:
+%     \vspace{-15pt}
+%     \begin{align*}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<1  \\
+%       q\in[0,1] & \text{if} & p=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7c2}
+%     \textit{Write up all NE (pure and mixed).}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{3}, \textcolor{blue}{2} & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%         & B  (1-$p$)& 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
+%     \begin{align*}
+%       3q+(1-q) &= (1-q) \\
+%       q &= 0
+%     \end{align*}
+%     \vspace{-15pt}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p\in[0,1] & \text{if} & q=0 \\
+%       p=1       & \text{if} & q>0
+%       \end{array}\right.
+%     \end{align*}
+%     Player 2 is indifferent if:
+%     \begin{align*}
+%       2p + (1-p) &= 2 \\
+%       p + 1      &= 2 \Rightarrow p = 1
+%     \end{align*}
+%     \vspace{-15pt}
+%     \begin{align*}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<1  \\
+%       q\in[0,1] & \text{if} & p=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7c2}
+%     Three Pure Strategy NE (PSNE) exist:
 %     \begin{align*}
 %       PSNE=\{(T,L),(T,R),(B,R)\}
 %     \end{align*}
-%   \vfill\null \columnbreak
-%     \includegraphics[width=\columnwidth]{figures/5c2}
-%     From drawing, we find that the three PSNE are contained in just two MSNE:
+%     \textit{What about Mixed Strategy NE (MSNE), $(p^{*},q^{*})$?}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.c: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(c)] Plot the mixed best responses and find all NE (pure and mixed):
+%     \end{itemize}
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+%         & T  ($p$)  & \textcolor{red}{3}, \textcolor{blue}{2} & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%         & B  (1-$p$)& 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
 %     \begin{align*}
-%       (p^{*},q^{*})=&\left\{(1,q):q\in(0,1]\right\}\cup\\
-%                     &\left\{(p,0):p\in[0,1]\right\}
+%       3q+(1-q) &= (1-q) \\
+%       q &= 0
+%     \end{align*}
+%     \vspace{-15pt}
+%     \begin{align*}
+%       BR_1(q)=\left\{ \begin{array}{lcl}
+%       p\in[0,1] & \text{if} & q=0 \\
+%       p=1       & \text{if} & q>0
+%       \end{array}\right.
+%     \end{align*}
+%     Player 2 is indifferent if:
+%     \begin{align*}
+%       2p + (1-p) &= 2 \\
+%       p + 1      &= 2 \Rightarrow p = 1
+%     \end{align*}
+%     \vspace{-15pt}
+%     \begin{align*}
+%       BR_2(p)=\left\{ \begin{array}{lcl}
+%       q=0       & \text{if} & p<1  \\
+%       q\in[0,1] & \text{if} & p=1
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7c2}
+%     \begin{align*}
+%       PSNE=\{(T,L),(T,R),(B,R)\}
+%     \end{align*}
+%     The three PSNE are contained in the two mixed strategy NE (MSNE), $(p^{*},q^{*})$:
+%     \begin{align*}
+%       \left\{\left(p\in\left[0,1\right),q=0\right);\left(p=1,\in\left(0,1\right]\right)\right\}
 %     \end{align*}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria}
+%
+% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(d)] $PSNE=\{(s_1,t_1),(s_2,t_2)\}$
 %     \end{itemize}
+%     \vspace{-10pt}
 %     \begin{table}
 %       \begin{tabular}{l|c|c|}
 %           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{$t_1$ ($q$)} & \multicolumn{1}{c}{$t_2$ (1-$q$)} \\\cline{2-3}
@@ -1520,10 +2222,11 @@
 %       \end{tabular}
 %     \end{table}
 %   \vfill\null \columnbreak
+%     \textit{Can we reduce the bi-matrix?}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(d)] $PSNE=\{(s_1,t_1),(s_2,t_2)\}$
@@ -1547,10 +2250,11 @@
 %       \end{tabular}
 %     \end{table}
 %   \vfill\null \columnbreak
+%     \textit{For which values of $q$ is Player 1 indifferent?}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(d)] $PSNE=\{(s_1,t_1),(s_2,t_2)\}$
@@ -1582,10 +2286,11 @@
 %       q &= 1-q \Rightarrow q = \frac{1}{2}
 %     \end{align*}
 %   \vfill\null \columnbreak
+%     \textit{For which values of $p$ is Player 2 indifferent?}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(d)] $PSNE=\{(s_1,t_1),(s_2,t_2)\}$
@@ -1622,10 +2327,11 @@
 %       p_1             &= 1-p_1 \Rightarrow p_1 = \frac{1}{2}
 %     \end{align*}
 %   \vfill\null \columnbreak
+%     \textit{Plot Player 1's BR function, $p^{*}(q)$, in a (p,q)-diagram.}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(d)] $PSNE=\{(s_1,t_1),(s_2,t_2)\}$
@@ -1662,11 +2368,54 @@
 %       p_1             &= 1-p_1 \Rightarrow p_1 = \frac{1}{2}
 %     \end{align*}
 %   \vfill\null \columnbreak
-%     \includegraphics[width=\columnwidth]{figures/5d1}
+%     \includegraphics[width=\columnwidth]{figures/7d1}
+%     \textit{Plot Player 2's BR function, $q^{*}(p)$}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
-% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria}
+% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(d)] $PSNE=\{(s_1,t_1),(s_2,t_2)\}$
+%     \end{itemize}
+%     \vspace{-8pt}
+%     \begin{table}
+%       \begin{tabular}{l|c|c|}
+%           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{$t_1$ ($q$)} & \multicolumn{1}{c}{$t_2$ (1-$q$)} \\\cline{2-3}
+%           $s_1$ ($p_1$)         & \textcolor{red}{2}, \textcolor{blue}{1} & 3, 0 \\\cline{2-3}
+%           $s_2$ ($p_2$)         & 1, 2 & \textcolor{red}{4}, \textcolor{blue}{3} \\\cline{2-3}
+%           $s_3$ (1-$p_1$-$p_2$) & 0, 1 & 0, \textcolor{blue}{3} \\\cline{2-3}
+%       \end{tabular}
+%     \end{table}
+%     \vspace{-2pt}
+%     \textbf{IESDS}: $s_2>s_3$, thus $s_3$ can be eliminated and 1-$p_1$-$p_2=0\Rightarrow p_2=1-p_1$
+%     \vspace{-6pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{}  & \multicolumn{1}{c}{$t_1$ ($q$)} & \multicolumn{1}{c}{$t_2$ (1-$q$)} \\\cline{3-4}
+%         & $s_1$ ($p_1$)  & \textcolor{red}{2}, \textcolor{blue}{1} & 3, 0 \\\cline{3-4}
+%         & $s_2$ (1-$p_1$)& 1, 2 & \textcolor{red}{4}, \textcolor{blue}{3} \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
+%     \begin{align*}
+%       2q+3(1-q) &= q+4(1-q) \\
+%       q &= 1-q \Rightarrow q = \frac{1}{2}
+%     \end{align*}
+%     Player 2 is indifferent if:
+%     \begin{align*}
+%       p_1 + 2(1-p_1)  &= 3(1-p_1) \\
+%       p_1             &= 1-p_1 \Rightarrow p_1 = \frac{1}{2}
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \includegraphics[width=\columnwidth]{figures/7d2}
+%     \textit{Write up all NE (pure and mixed), both in the reduced game and in the full game.}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 7.d: Mixed Strategy Nash Equilibria - (p,q)-diagrams}
 %   \begin{multicols}{2}
 %     \begin{itemize}
 %       \item[(d)] $PSNE=\{(s_1,t_1),(s_2,t_2)\}$
@@ -1706,8 +2455,8 @@
 %       p_1             &= 1-p_1 \Rightarrow p_1 = \frac{1}{2}
 %     \end{align*}
 %   \vfill\null \columnbreak
-%     \includegraphics[width=\columnwidth]{figures/5d2}
-%     In the reduced game, three MSNE exist:
+%     \includegraphics[width=\columnwidth]{figures/7d2}
+%     In the reduced game, three NE exist:
 %     \begin{align*}
 %       (p_1^{*},q^{*})=\left\{(0,0),(1/2,1/2),(1,1)\right\}
 %     \end{align*}
@@ -1765,6 +2514,25 @@
 %     \begin{itemize}
 %       \item[1.] Highlight the best responses in the matrix:
 %     \end{itemize}
+%     \vspace{-15pt}
+%     \begin{table}
+%       \begin{tabular}{l|c|c|c|}
+%           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
+%           T ($p$)   & 4, 1 & 2, 3 & 0, 4 \\\cline{2-4}
+%           B (1-$p$) & 2, 3 & 1, 2 & 5, 0 \\\cline{2-4}
+%       \end{tabular}
+%     \end{table}
+%     \textit{Which Pure Strategy Nash Equilibria (PSNE) exist?}
+%   \vfill\null \columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - analytical solution}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[1.] Highlight the best responses in the matrix:
+%     \end{itemize}
+%     \vspace{-15pt}
 %     \begin{table}
 %       \begin{tabular}{l|c|c|c|}
 %           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
@@ -1773,6 +2541,23 @@
 %       \end{tabular}
 %     \end{table}
 %     No Pure Strategy Nash Equilibrium (PSNE) exist.
+%   \vfill\null \columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - analytical solution}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{l|c|c|c|}
+%           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
+%           T ($p$)   & \textcolor{red}{4}, 1 & \textcolor{red}{2}, 3 & 0, \textcolor{blue}{4} \\\cline{2-4}
+%           B (1-$p$) & 2, \textcolor{blue}{3} & 1, 2 & \textcolor{red}{5}, 0 \\\cline{2-4}
+%       \end{tabular}
+%     \end{table}
+%     No Pure Strategy Nash Equilibrium (PSNE) exist.
+%     \begin{itemize}
+%       \item[2.] Find the relationship between $q_1$ and $q_2$ for which \textbf{Player 1 is indifferent}.
+%     \end{itemize}
 %   \vfill\null \columnbreak
 %   \vfill\null
 %   \end{multicols}
@@ -1815,6 +2600,28 @@
 %       q_1 + \frac{6}{7}q_2 &= \frac{5}{7}
 %     \end{align*}
 %     \begin{itemize}
+%       \item[3.] Write up the \textbf{best responses for Player 1}: $p^{*}(q_1,q_2)=$
+%     \end{itemize}
+%   \vfill\null \columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - analytical solution}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{l|c|c|c|}
+%           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
+%           T ($p$)   & \textcolor{red}{4}, 1 & \textcolor{red}{2}, 3 & 0, \textcolor{blue}{4} \\\cline{2-4}
+%           B (1-$p$) & 2, \textcolor{blue}{3} & 1, 2 & \textcolor{red}{5}, 0 \\\cline{2-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1 is indifferent if:
+%     \begin{align*}
+%       4q_1 + 2q_2 &= 2q_1 + q_2 + 5(1-q_1-q_2)\\
+%       7q_1 + 6q_2 &= 5 \\
+%       q_1 + \frac{6}{7}q_2 &= \frac{5}{7}
+%     \end{align*}
+%     \begin{itemize}
 %       \item[3.] Write up the \textbf{best responses for Player 1}: $p^{*}(q_1,q_2)=$, i.e.
 %     \end{itemize}
 %     \begin{align*}
@@ -1824,6 +2631,30 @@
 %           0                 & q_1 + \frac{6}{7}q_2 < \frac{5}{7}
 %       \end{array}\right.
 %     \end{align*}
+%   \vfill\null \columnbreak
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - analytical solution}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{l|c|c|c|}
+%           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
+%           T ($p$)   & \textcolor{red}{4}, 1 & \textcolor{red}{2}, 3 & 0, \textcolor{blue}{4} \\\cline{2-4}
+%           B (1-$p$) & 2, \textcolor{blue}{3} & 1, 2 & \textcolor{red}{5}, 0 \\\cline{2-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1's best responses: $p^{*}(q_1,q_2)$, i.e.
+%     \begin{align*}
+%       BR_1(q_1,q_2)=\left\{ \begin{array}{ll}
+%           1                 & q_1 + \frac{6}{7}q_2 > \frac{5}{7}\\
+%           \left[0,1\right]  & q_1 + \frac{6}{7}q_2 = \frac{5}{7}\\
+%           0                 & q_1 + \frac{6}{7}q_2 < \frac{5}{7}
+%       \end{array}\right.
+%     \end{align*}
+%     \begin{itemize}
+%       \item[4.] Pairwise find the probabilities $p$ for which \textbf{Player 2 is indifferent}, e.g. between $L$ and $C$, then $L$ and $R$, and finally between $C$ and $R$.
+%     \end{itemize}
 %   \vfill\null \columnbreak
 %   \vfill\null
 %   \end{multicols}
@@ -1918,6 +2749,50 @@
 %     \end{align*}
 %     \begin{itemize}
 %       \item[4.] Pairwise find the probabilities $p$ for which \textbf{Player 2 is indifferent}, e.g. between $L$ and $C$, then $L$ and $R$, and finally between $C$ and $R$.
+%     \end{itemize}
+%   \vfill\null \columnbreak
+%     Player 2 is indifferent between $L$ and $C$ if:
+%     \begin{align*}
+%       p+3(1-p)&= 3p + 2(1-p) \\
+%       1-p     &= 2p \\
+%       p       &= \frac{1}{3}
+%     \end{align*}
+%     If $p<1/3$ prefer $L$; if $p>1/3$ prefer $C$.\\\medskip
+%     Player 2 is indifferent between $L$ and $R$ if:
+%     \begin{align*}
+%       p+3(1-p)&= 4p \\
+%       3       &= 6p \\
+%       p       &= \frac{1}{2}
+%     \end{align*}
+%     If $p<1/2$ prefer $L$; if $p>1/2$ prefer $R$.\\\medskip
+%     Player 2 is indifferent between $C$ and $R$ if:
+%     \begin{align*}
+%       3p+2(1-p) = 4p \Leftrightarrow 2 = 3p \Leftrightarrow p = \frac{2}{3}
+%     \end{align*}
+%     If $p<2/3$ prefer $C$; if $p>2/3$ prefer $R$.\\\medskip
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - analytical solution}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{l|c|c|c|}
+%           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
+%           T ($p$)   & \textcolor{red}{4}, 1 & \textcolor{red}{2}, 3 & 0, \textcolor{blue}{4} \\\cline{2-4}
+%           B (1-$p$) & 2, \textcolor{blue}{3} & 1, 2 & \textcolor{red}{5}, 0 \\\cline{2-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1's best responses: $p^{*}(q_1,q_2)$, i.e.
+%     \begin{align*}
+%       BR_1(q_1,q_2)=
+%       \left\{ \begin{array}{ll}
+%           1                 & q_1 + \frac{6}{7}q_2 > \frac{5}{7}\\
+%           \left[0,1\right]  & q_1 + \frac{6}{7}q_2 = \frac{5}{7}\\
+%           0                 & q_1 + \frac{6}{7}q_2 < \frac{5}{7}
+%       \end{array}\right.
+%     \end{align*}
+%     \begin{itemize}
+%       \item[5.] Write up the \textbf{best responses for Player 2}: $BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)$
 %     \end{itemize}
 %   \vfill\null \columnbreak
 %     Player 2 is indifferent between $L$ and $C$ if:
@@ -2162,6 +3037,41 @@
 %       BR_1(q_1,q_2)=
 %       \left\{ \begin{array}{ll}
 %           1                 & q_1 + \frac{6}{7}q_2 > \frac{5}{7}\\
+%           \left[0,1\right]  & q_1 + \frac{6}{7}q_2 = \frac{5}{7}\\
+%           0                 & q_1 + \frac{6}{7}q_2 < \frac{5}{7}
+%       \end{array}\right.
+%     \end{align*}
+%     Player 2: $BR_2(p)=\left(q_1^{*}(p),q_2^{*}(p)\right)=$
+%     \begin{align*}
+%       \left\{ \begin{array}{ll}
+%           (1,0)                 & p < 1/3 \\
+%           \{(x,1-x):x\in[0,1]\} & p = 1/3 \\
+%           (0,1)                 & p\in\left(\frac{1}{3},\frac{2}{3}\right)\\
+%           \{(0,x):x\in[0,1]\}   & p = 2/3 \\
+%           (0,0)                 & p > 2/3
+%       \end{array}\right.
+%     \end{align*}
+%   \vfill\null \columnbreak
+%     \begin{itemize}
+%       \item[6.] \textbf{Find the NE} (pure and mixed). In a MSNE both players must be indifferent between their respective pure strategies.
+%     \end{itemize}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{PS3, Ex. 8: Mixed Strategy Nash Equilibria - analytical solution}
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{l|c|c|c|}
+%           \multicolumn{1}{c}{}  & \multicolumn{1}{c}{L ($q_1$)} & \multicolumn{1}{c}{C ($q_2$)} & \multicolumn{1}{c}{R (1-$q_1$-$q_2$)} \\\cline{2-4}
+%           T ($p$)   & \textcolor{red}{4}, 1 & \textcolor{red}{2}, 3 & 0, \textcolor{blue}{4} \\\cline{2-4}
+%           B (1-$p$) & 2, \textcolor{blue}{3} & 1, 2 & \textcolor{red}{5}, 0 \\\cline{2-4}
+%       \end{tabular}
+%     \end{table}
+%     Player 1's best responses: $p^{*}(q_1,q_2)$, i.e.
+%     \begin{align*}
+%       BR_1(q_1,q_2)=
+%       \left\{ \begin{array}{ll}
+%           1                 & q_1 + \frac{6}{7}q_2 > \frac{5}{7}\\
 %           \textcolor{red}{\left[0,1\right]}  & \textcolor{red}{q_1 + \frac{6}{7}q_2 = \frac{5}{7}}\\
 %           0                 & q_1 + \frac{6}{7}q_2 < \frac{5}{7}
 %       \end{array}\right.
@@ -2242,7 +3152,7 @@
 %       \underbrace{0}_{q_1} + \frac{6}{7}\underbrace{x}_{q_2} = \frac{5}{7} \Leftrightarrow x=\frac{5}{6}\\
 %       \Rightarrow BR_1\left(0,\frac{5}{6}\right)=[0,1]\ni\frac{2}{3}
 %     \end{align*}
-%     How many NE are there in total?
+%     \textit{How many NE are there in total?}
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
@@ -2305,49 +3215,49 @@
 %   \vfill\null
 %   \end{multicols}
 % \end{frame}
+
+
+
+
+% \section{PS3, Ex. }
 %
-%
-%
-%
-% % \section{PS3, Ex. }
-% %
-% % \begin{frame}{PS3, Ex. }
-% %   \begin{multicols}{2}
-% %     \begin{table}
-% %       \begin{tabular}{cc|c|c|}
-% %           & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
-% %           \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
-% %           & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{3-4}
-% %           & A &  &  \\\cline{3-4}
-% %           & B &  &  \\\cline{3-4}
-% %       \end{tabular}
-% %     \end{table}
-% %   \vfill\null \columnbreak
-% %     \begin{table}
-% %       \begin{tabular}{cc|c|c|}
-% %         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-% %         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-% %         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{3-4}
-% %         & A & \textcolor{red}{}, \textcolor{blue}{} &   \\\cline{3-4}
-% %         & B &  &  \\\cline{3-4}
-% %       \end{tabular}
-% %     \end{table}
-% %     \begin{table}
-% %       \begin{tabular}{c|c|c|}
-% %           \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{2-3}
-% %           A &  &  \\\cline{2-3}
-% %           B &  &  \\\cline{2-3}
-% %       \end{tabular}
-% %     \end{table}
-% %   \vfill\null
-% %   \end{multicols}
-% % \end{frame}
-%
-%
-%
-% % \begin{frame}%{References}
-% %   \printbibliography
-% %   \includegraphics[width=1.0 \textwidth]{figures/example}
-% % \end{frame}
-%
+% \begin{frame}{PS3, Ex. }
+%   \begin{multicols}{2}
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%           & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
+%           \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
+%           & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{3-4}
+%           & A &  &  \\\cline{3-4}
+%           & B &  &  \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null \columnbreak
+%     \begin{table}
+%       \begin{tabular}{cc|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{3-4}
+%         & A & \textcolor{red}{}, \textcolor{blue}{} &   \\\cline{3-4}
+%         & B &  &  \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     \begin{table}
+%       \begin{tabular}{c|c|c|}
+%           \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{B} \\\cline{2-3}
+%           A &  &  \\\cline{2-3}
+%           B &  &  \\\cline{2-3}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+
+
+
+% \begin{frame}%{References}
+%   \printbibliography
+%   \includegraphics[width=1.0 \textwidth]{figures/example}
+% \end{frame}
+
 \end{document}
