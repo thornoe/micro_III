@@ -1504,6 +1504,7 @@
         & $Bar_3$ (1-$p_1$-$p_2$) & 0, 0 & 0, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{3-5}
       \end{tabular}
     \end{table}
+    \vspace{-4pt}
     In the three PSNE, the expected payoffs are: $\left(E[u_A|q_1^{*},q_2^{*})],E[u_T|p_1^{*},p_2^{*})]\right)=$
     \begin{align*}
       \left\{(1-q_1-q_2,1-p_1-p_2);(q_2,p_2);(q_1,p_1)\right\}\sim
@@ -1521,7 +1522,42 @@
       ;\left(\frac{1}{2},\frac{1}{2}\right)
       ;\left(\frac{1}{3},\frac{1}{3}\right)\right\}
     \end{align*}
-    PSNE are the most realistic due to higher payoffs. Due to coordination issues, the expected payoffs are reciprocal to the number of actions that a MSNE is split between.
+    PSNE have higher expected payoffs but without communication it's not clear which one to go for. Due to coordination issues, the MSNE can be just as good, even though expected payoffs are reciprocal to the number of actions that a MSNE is split between.
+\end{frame}
+
+
+\section{Guide: Examine which equilibria are the most realistic in a static game}
+
+\begin{frame}{Guide: Examine which equilibria is the most realistic in a static game}
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item Look at the pareto optimal solutions:\\
+      \begin{itemize}
+        \normalsize
+          \item[a.] If exactly one PSNE is pareto optimal, risk neutral players should pick this solution.
+          \item[b.] If there are multiple pareto optimal PSNE, there is a risk of miscoordination, as players can't tell which PSNE the other player is going for. Thus, playing a mix of these can be just as good as arbitrarily picking a pure strategy.
+      \end{itemize}
+      \item Look at the punishment in the case of miscoordination:\\
+      \begin{itemize}
+        \normalsize
+          \item E.g. If Player 1 thinks they are going for a certain PSNE, but they miscoordinate and Player 2 plays something else, how hard will Player 1 be punished?
+      \end{itemize}
+      \item Use the two first points to talk about what risk neutral players would do?
+    \end{enumerate}
+    \vfill\null \columnbreak
+    \begin{itemize}
+      \item[4.] And what if the players were risk averse or risk loving?\\
+      \begin{itemize}
+        \normalsize
+          \item[ad. 1] If there is a risk of miscoordination between multiple pareto optimal PSNE, then a risk averse Player 1 could benefit from playing a mix of these to have a positive probability of hitting the PSNE regardless of which pure strategy Player 2 would go for.
+          %If there are risks of miscoordination between multiple pareto optimal PSNE, then a risk averse player would most likely benefit from playing a mix of these, in order to lower the variance of his payoff.
+          \item[ad. 2] If a strategy has severe punishment for miscoordination, a risk averse player would most likely want to look for a strategy with lower possible punishment.
+          %If a strategy has severe punishment for miscoordination, a risk averse player would most likely want to look for another strategy where he isn't punished as hard by miscoordination.
+      \end{itemize}
+      \item[5.] Finally, consider what would happen if one player could send a message? Or they had just played the game with mixed strategies, and by chance landed on a pareto optimal PSNE?
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
 \end{frame}
 
 
@@ -1956,7 +1992,7 @@
     \end{tabular}\\\bigskip
   Refinement:
   \begin{itemize}
-    \item[(2)] \textbf{The Oddness Theorem (Robert Wilson, \href{http://www.dklevine.com/archive/refs4402.pdf}{1971}; John Charles Harsanyi, \href{https://link.springer.com/article/10.1007\%2FBF01737572#page-1 }{1973}):}
+    \item[(2)] \textbf{The Oddness Theorem (Robert Wilson, \href{http://www.dklevine.com/archive/refs4402.pdf}{1971}; John Charles Harsanyi, \href{https://link.springer.com/article/10.1007\%2FBF01737572\#page-1 }{1973}):}
   \end{itemize}
     \begin{tabular}{|l|}
       \cline{1-1}
@@ -1977,7 +2013,7 @@
     \end{tabular}\\\bigskip
   Refinement:
   \begin{itemize}
-    \item[(2)] \textbf{The Oddness Theorem (Robert Wilson, \href{http://www.dklevine.com/archive/refs4402.pdf}{1971}; John Charles Harsanyi, \href{https://link.springer.com/article/10.1007\%2FBF01737572#page-1 }{1973}):}
+    \item[(2)] \textbf{The Oddness Theorem (Robert Wilson, \href{http://www.dklevine.com/archive/refs4402.pdf}{1971}; John Charles Harsanyi, \href{https://link.springer.com/article/10.1007\%2FBF01737572\#page-1 }{1973}):}
   \end{itemize}
     \begin{tabular}{|l|}
       \cline{1-1}
@@ -2005,7 +2041,7 @@
     \end{center}
   \end{figure}
 \end{frame}
-\begin{frame}{Take Home Assignment 1, Ex. 3: Backwards induction}
+\begin{frame}{Take Home Assignment 1, Ex. 3.a: Backwards induction}
   \begin{itemize}
     \item[(3a)] The Backwards Induction (BI) solution.
   \end{itemize}
@@ -2020,7 +2056,7 @@
     (best\ responses\ for\ player\ 1,\ best\ responses\ for\ player\ 2)=(s_1,s_2)=(Rrr',R'L'')
   \end{align*}
 \end{frame}
-\begin{frame}{Take Home Assignment 1, Ex. 3: Backwards induction}
+\begin{frame}{Take Home Assignment 1, Ex. 3.b: Backwards induction}
   \begin{itemize}
     \item[(3b)] Player 1: Any improvement from deleting a strategy.
   \end{itemize}
@@ -2033,7 +2069,7 @@
   Most of you answered that Player 1 can improve his outcome by deleting $r$ to get 3.\\\medskip
   This is true, but it is suboptimal (for Player 1 at least).
 \end{frame}
-\begin{frame}{Take Home Assignment 1, Ex. 3: Backwards induction}
+\begin{frame}{Take Home Assignment 1, Ex. 3.b: Backwards induction}
   \begin{itemize}
     \item[(3b)] Player 1: The best improvement from deleting a strategy.
   \end{itemize}
@@ -2046,7 +2082,7 @@
   Player 1 can do better by deleting $r'$. Then he can use the \textit{\textbf{first mover advantage}} to choose the left side of the tree and use the \textit{\textbf{last mover advantage}} to pick $r$ and get $4$.\\\medskip
   Player 2 has limited agency in the middle stage, but picks $L'$ to avoid negative payoffs.
 \end{frame}
-\begin{frame}{Take Home Assignment 1, Ex. 3: Backwards induction}
+\begin{frame}{Take Home Assignment 1, Ex. 3.c: Backwards induction}
   \begin{itemize}
     \item[(3c)] Player 2: Show there can be no improvement from deleting a strategy,
   \end{itemize}
@@ -2400,12 +2436,12 @@
         p^{*}&=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}},
         \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\ 0<\frac{c}{v}<1\nonumber
     \end{align}
-    The MSNE is where each persons stops the thief with probability $p^{*}&=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
+    The MSNE is where each persons stops the thief with probability $p^{*}=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
   \vfill\null
 \end{frame}
 
 \begin{frame}{PS4, Ex. 6.b: Stopping the bike thief (MSNE)}
-    The MSNE is where each persons stops the thief with probability $p^{*}&=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
+    The MSNE is where each persons stops the thief with probability $p^{*}=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
     \begin{itemize}
       \item[b)] Discuss what happens to $p$ as the number of witness becomes very large. What happens then to the probability that the thief will get stopped? What is the intuition for this result?
     \end{itemize}
@@ -2413,7 +2449,7 @@
   \vfill\null
 \end{frame}
 \begin{frame}{PS4, Ex. 6.b: Stopping the bike thief (MSNE)}
-    The MSNE is where each persons stops the thief with probability $p^{*}&=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
+    The MSNE is where each persons stops the thief with probability $p^{*}=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
     \begin{itemize}
       \item[b)] Discuss what happens to $p$ as the number of witness becomes very large. What happens then to the probability that the thief will get stopped? What is the intuition for this result?
     \end{itemize}
@@ -2425,7 +2461,7 @@
   \vfill\null
 \end{frame}
 \begin{frame}{PS4, Ex. 6.b: Stopping the bike thief (MSNE)}
-    The MSNE is where each persons stops the thief with probability $p^{*}&=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
+    The MSNE is where each persons stops the thief with probability $p^{*}=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
     \begin{itemize}
       \item[b)] Discuss what happens to $p$ as the number of witness becomes very large. What happens then to the probability that the thief will get stopped? What is the intuition for this result?
     \end{itemize}
@@ -2442,7 +2478,7 @@
   \vfill\null
 \end{frame}
 \begin{frame}{PS4, Ex. 6.b: Stopping the bike thief (MSNE)}
-    The MSNE is where each persons stops the thief with probability $p^{*}&=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
+    The MSNE is where each persons stops the thief with probability $p^{*}=1-\left(\frac{c}{v}\right)^{\frac{1}{N-1}}$
     \begin{itemize}
       \item[b)] Discuss what happens to $p$ as the number of witness becomes very large. What happens then to the probability that the thief will get stopped? What is the intuition for this result?
     \end{itemize}
@@ -2567,34 +2603,33 @@
         \end{tabular}
     \end{table}
   \vfill\null \columnbreak
-  \begin{itemize}
-    \item[(b)] Solve by backwards induction:
-  \end{itemize}
-  \nth{2} stage: Each bi-matrix has a unique NE that can be founds using IESDS.\\\medskip
-  \nth{1} stage: Player 1's choice can be reduced to choosing between the subgame NE in each bi-matrix:
-  \begin{figure}[!h]
-    \begin{center}
-    \def\svgwidth{.5\columnwidth}
-    \import{figures/}{7b.pdf_tex}
-    \end{center}
-  \end{figure}
-  BI gives the subgame perfect NE:
-  \begin{align*}
-    SPNE=(Keep\ B\ T',\ R\ L')
-  \end{align*}
+    \begin{itemize}
+      \item[(b)] Solve by backwards induction:
+    \end{itemize}
+    \nth{2} stage: Each bi-matrix has a unique NE that can be founds using IESDS.\\\medskip
+    \nth{1} stage: Player 1's choice can be reduced to choosing between the subgame NE in each bi-matrix:
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.5\columnwidth}
+      \import{figures/}{7b.pdf_tex}
+    \end{figure}
+    BI gives the subgame perfect NE:
+    \begin{align*}
+      SPNE=(Split\ B\ T',\ R\ L')
+    \end{align*}
   \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS4, Ex. 7.: To keep or split (backwards induction)}
-  Alternatively, draw the game tree in extensive form to find $SPNE:(Keep\ B\ T',\ R\ L')$\\\medskip
+\begin{frame}{PS4, Ex. 7: To keep or split (backwards induction)}
+  Alternatively, draw the game tree in extensive form to find $SPNE:(Split\ B\ T',\ R\ L')$\\\medskip
   \nth{1} stage: Player 1 chooses Keep or Split. Player 2 observes the choice.\\\medskip
   \nth{2} stage: Player 2 chooses $L$ or $R$ ($L'$ or $R'$). The action is private information.\\\medskip
   \nth{3} stage: Player 1 chooses $T$ or $B$ ($T'$ or $B'$) without knowing what Player 2 did.\\\medskip
   \begin{figure}[!h]
     \begin{center}
     \def\svgwidth{\columnwidth}
-    \import{figures/}{7a_extensive_form.pdf_tex}
+    \import{figures/}{7b_extensive_form.pdf_tex}
     \end{center}
   \end{figure}
   \vspace{-8pt}
@@ -3175,20 +3210,6 @@
       \item[G2] \begin{math}U_1=0+\frac{1}{2}-0*\frac{1}{2}-0^2=\frac{1}{2}\end{math}
       \item[G1] \begin{math}U_2=\frac{1}{3}+\frac{1}{3}-\frac{1}{3}^2-\frac{1}{3}^2=\frac{4}{9}\end{math}
       \item[G2] \begin{math}U_2=0+\frac{1}{3}-0*\frac{1}{2}-\frac{1}{2}^2=\frac{1}{4}\end{math}
-    \end{itemize}
-    \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Guide to examining which equilibria is the most realistic in a static game)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item Firt look at the pareto optimal solutions: I only one of them is pareto optimal, a risk neutral player will be very likely to pick this solution. If there a many pareto optimal solutions, there is a risk of miscoordination, the players not knowing the NE the other player is going for.
-       \item Next look at the punishment of the other playing misplaying? If player one thinks they are going for a certain NE, but player 2 "misplays" and plays something else, will player 1 be punished?
-    \end{itemize}
-    \vfill\null \columnbreak
-    \begin{itemize}
-      \item Now use the above two to talk about what a risk averse player would do, and what if they are risk neutral? If there are risks of miscoordination between multiple pareto optimal NE, then a risk averse player would most likely benefit from playing a mix of these, in order to lower the variance of his payoff. If there are severe punishment for payoffs, a risk averse player would most likely want to look for another strategy where they weren't punished for the other player misplaying.
-      \item Finally, consider what would happen if one player could send a message, or they had played the game before with a mixed strategy, and by chance had landed on a pareto optimal PSNE.
     \end{itemize}
     \vfill\null
   \end{multicols}
