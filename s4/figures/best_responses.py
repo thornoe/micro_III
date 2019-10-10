@@ -9,6 +9,7 @@ os.chdir('C:/Users/thorn/Onedrive/Dokumenter/GitHub/micro_III/s4/figures') # hom
 # Run to update font size again after creating the first figure:
 plt.rcParams.update({'font.size': 23})
 
+
 ##############################################################################
 #   Empty "(p,q)-diagram"                                                    #
 ##############################################################################
