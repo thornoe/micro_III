@@ -1,0 +1,223 @@
+\input{preample.tex}
+\begin{document}
+\maketitle
+
+% ------------------------------------------------------------------------------
+% ------ FRAME -----------------------------------------------------------------
+% ------------------------------------------------------------------------------
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+
+\section{PS6, Ex. 1 (A): }
+
+\begin{frame}{PS6, Ex. 1 (A): }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 1 (A): }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{PS6, Ex. 2 (A): }
+
+\begin{frame}{PS6, Ex. 2 (A): }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 2.a (A): }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{PS6, Ex. 3 (A): }
+
+\begin{frame}{PS6, Ex. 3 (A): }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 3.a (A): }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{PS6, Ex. 4: }
+
+\begin{frame}{PS6, Ex. 4: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 4.a: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{PS6, Ex. 5: }
+
+\begin{frame}{PS6, Ex. 5: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 5.a: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{PS6, Ex. 6: }
+
+\begin{frame}{PS6, Ex. 6: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 6.a: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{PS6, Ex. 7: }
+
+\begin{frame}{PS6, Ex. 7: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 7.a: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{PS6, Ex. 8: }
+
+\begin{frame}{PS6, Ex. 8: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 8.a: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{PS6, Ex. 9: }
+
+\begin{frame}{PS6, Ex. 9: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 9.a: }
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\section{Code examples} % out-comment: ctrl-shift-7 or ctrl-shift-* (use cmd for Mac)
+
+\begin{frame}{Code examples}
+  \begin{multicols}{2}
+    % Game tree:
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{long_.pdf_tex}
+    \end{figure}
+  \vfill\null \columnbreak
+    Matrix, no player names:
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{2-3}
+        T (p)   &  &  \\\cline{2-3}
+        B (1-p) &  &  \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    Matrix, no colors:
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
+        & T (p)   &  &  \\\cline{3-4}
+        & B (1-p) &  &  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    Matrix, with colors:
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
+        & T (p)   & \textcolor{red}{}, \textcolor{blue}{} &   \\\cline{3-4}
+        & B (1-p) &  &  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+\end{document}
