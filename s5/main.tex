@@ -300,7 +300,28 @@
 
 \begin{frame}{PS5, Ex. 3 (A): Stackelberg game}
   \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Write up the equilibria described above formally, using for the strategies the notation of the ‘Simple Dynamic Game’.
+    \end{itemize}
+
+In the equilibrium, player 1 plays any quantity $\hat{q}_1$ he is dictated, player 2 then play his BR. To finalize the equilibrium, we need players 2s response off the equilibrium path, ie. if player one plays $q_1\neq\hat{q}_1$ \\
+
+The NE are:
+
+    \begin{align*}
+    q_1^*=\hat{q}_1 & \text{where} & q_1^*<a \\
+    q_2^*=\left\{ \begin{array}{lcl}
+          BR_2(\hat{q}_1) & \text{if} & q_1=\hat{q}_1 \\
+          a-q_1 & \text{if} & q_1\neq\hat{q}_1
+                \end{array}\right. \\
+    \end{align*}
     \vfill\null \columnbreak
+    \begin{itemize}
+      \item[(b)] Explain why this kind of equilibrium does not survive backwards induction unless $\hat{q}_1=BR_1(BR_2(q_1)$, which is the Stackelberg outcome we derived in the lecture. \\
+      
+     For the case where player 2 selects $\hat{q}_1$ to be the quantity selected in the stackelberg game, the outcome will be exactly as in the stackelberg game. \\
+     For the case where player 2 selects another outcome, player one will know that no matter his choice of $q_2$, player 2 will always maximize his profits, selecting his $q_2$ using his best response function. Thus the threat is empty.
+    \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
@@ -456,6 +477,7 @@
       \end{tabular}
     \end{table}
   \vfill\null
+  PSNE: \{B,D,F\}
 \end{frame}
 
 
