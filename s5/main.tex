@@ -736,17 +736,90 @@
     \begin{align*}
       SPNE=(s_1^{*},s_2^{*})=(R\ R'',\ L')
     \end{align*}
-    Which coincides with the backwards induction solution from Ex. 1!
+    Which coincides with the backwards induction solution from Exercise 1!
     \vfill\null \columnbreak
     \begin{figure}[!h]
       \center
       \def\svgwidth{\columnwidth}
-      \import{figures/}{7a.pdf_tex}
+      \import{figures/}{7b.pdf_tex}
     \end{figure}
     \vfill\null
   \end{multicols}
 \end{frame}
 
+\begin{frame}{PS5, Ex. 7.c: Dynamic game (proper subgames)}
+  \begin{multicols}{2}
+    Consider the game from exercise 1.
+    \begin{itemize}
+      \item[(c)] \textbf{\textit{Write down the normal form of the game}} and find all (pure strategy) Nash equilibria. Compare to the set of SPNE and comment.
+    \end{itemize}
+    \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{7b.pdf_tex}
+    \end{figure}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 7.c: Dynamic game (proper subgames)}
+  \begin{multicols}{2}
+    Consider the game from exercise 1.
+    \begin{itemize}
+      \item[(c)] Write down the normal form of the game and \textbf{\textit{find all (pure strategy) Nash equilibria}}. Compare to the set of SPNE and comment.
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L'} & \multicolumn{1}{c}{R'} \\\cline{3-4}
+        \parbox[t]{1mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{Player 1}}}
+        & (L, L'') & 1, 4 & 1, 4 \\\cline{3-4}
+        & (L, R'') & 1, 4 & 1, 4 \\\cline{3-4}
+        & (R, L'') & 1, 0 & 0, 2 \\\cline{3-4}
+        & (R, R'') & 2, 3 & 0, 2 \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{7b.pdf_tex}
+    \end{figure}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 7.c: Dynamic game (proper subgames)}
+  \begin{multicols}{2}
+    Consider the game from exercise 1.
+    \begin{itemize}
+      \item[(c)] Write down the normal form of the game and \textbf{\textit{find all (pure strategy) Nash equilibria}}. Compare to the set of SPNE and comment.
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L'} & \multicolumn{1}{c}{R'} \\\cline{3-4}
+        \parbox[t]{1mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
+        & (L, L'') & 1, \textcolor{blue}{4} & \textcolor{red}{1}, \textcolor{blue}{4} \\\cline{3-4}
+        & (L, R'') & 1, \textcolor{blue}{4} & \textcolor{red}{1}, \textcolor{blue}{4} \\\cline{3-4}
+        & (R, L'') & 1, 0 & 0, \textcolor{blue}{2} \\\cline{3-4}
+        & (R, R'') & \textcolor{red}{2}, \textcolor{blue}{3} & 0, 2 \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    \vspace{-8pt}
+    \begin{align*}
+      PSNE=\
+    \end{align*}
+    \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{7b.pdf_tex}
+    \end{figure}
+    \vfill\null
+  \end{multicols}
+\end{frame}
 
 
 
