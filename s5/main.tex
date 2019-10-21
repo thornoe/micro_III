@@ -2,6 +2,11 @@
 \begin{document}
 \maketitle
 
+% Select what to do with command \intuition:
+  % \newcommand{\intuition}[1]{\par {[...] \par}}  % intuition not shown
+  \newcommand{\intuition}[1]{\par {#1 \par}} % intuition shown
+
+
 % ------------------------------------------------------------------------------
 % ------ FRAME -----------------------------------------------------------------
 % ------------------------------------------------------------------------------
@@ -47,7 +52,7 @@
     \end{itemize}
     The backwards induction solution is the full strategy profile given by the subgame perfect NE:
     \begin{align*}
-      SPNE=(s_1^{*},s_2^{*})=(R\ R'',\ L')
+      BI=(s_1^{*},s_2^{*})=(R\ R'',\ L')
     \end{align*}
     \vfill\null \columnbreak
     \begin{figure}[!h]
@@ -68,9 +73,9 @@
     Consider the game in the figure.
     \begin{itemize}
       \item[(a)] Write up the strategy sets of the players.
-      \item[(b)] Write up the normal form (including the bi-matrix).
+      \item[(b)] Write up the normal form (bi-matrix).
       \item[(c)] Find the Nash Equilibria.
-      \item[(d)] Find the backwards induction outcome
+      \item[(d)] Find the backwards induction outcome.
     \end{itemize}
     \vfill\null \columnbreak
     \begin{figure}[!h]
@@ -103,11 +108,11 @@
     \end{itemize}
     The two strategy sets are:
     \begin{align*}
-      S_1=\{\ &(G\ O'\ O''),\ (G\ O'\ F''),\\
-              &(G\ F'\ O''),\ (G\ F'\ F''),\\
-              &(S\ O'\ O''),\ (S\ O'\ F''),\\
-              &(S\ F'\ O''),\ (S\ F'\ F'')\ \}\\
-      S_2=\{\ &(O),\ (F)\ \}
+      S_1=\{\ &(G,\ O',\ O'');\ (G,\ O',\ F'');\\
+              &(G,\ F',\ O'');\ (G,\ F',\ F'');\\
+              &(S,\ O',\ O'');\ (S,\ O',\ F'');\\
+              &(S,\ F',\ O'');\ (S,\ F',\ F'')\ \}\\
+      S_2=\{\ &O;\ F\ \}
     \end{align*}
     \vfill\null \columnbreak
     \begin{figure}[!h]
@@ -232,7 +237,7 @@
 \begin{frame}{PS5, Ex. 2.d (A): Extended Battle of the Sexes Game (strategy sets)}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(d)] Find the backwards induction outcome
+      \item[(d)] Find the backwards induction outcome.
     \end{itemize}
     \begin{table}
       \begin{tabular}{cl|c|c|}
@@ -261,7 +266,7 @@
 \begin{frame}{PS5, Ex. 2.d (A): Extended Battle of the Sexes Game (strategy sets)}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(d)] Find the backwards induction outcome
+      \item[(d)] Find the backwards induction outcome.
     \end{itemize}
     BI gives the unique SPNE:
     \begin{align*}
@@ -296,46 +301,66 @@
 
 
 
-\section{PS5, Ex. 3 (A): Stackelberg game}
+\section{PS5, Ex. 3 (A): Stackelberg Duopoly (empty threats)}
 
-\begin{frame}{PS5, Ex. 3 (A): Stackelberg game}
+\begin{frame}{PS5, Ex. 3 (A): Stackelberg Duopoly (empty threats)}
+  \begin{multicols}{2}
+    Consider the Stackelberg game we saw in the lecture (Stackelberg Duopoly presented in the end of Lecture 3). We solved for the backwards induction outcome. But if we were to look for Nash Equilibria, there are many. In fact there is an infinite amount. But they rely on ‘empty threats’. To see why, consider the following equilibrium. The \textit{follower} says to the \textit{leader}: I want you to produce $\widehat{q_1}$ (where $\widehat{q_1} < a$) and then I will produce $\widehat{q_2} = BR_2(\widehat{q_1})$. If you produce $q_1\neq\widehat{q_1}$ then I will set $q_2=a-q_1$ such that you make zero profit.
+    \vfill\null \columnbreak
+    \begin{itemize}
+      \item[(a)] Write up the equilibria described above formally, using for the strategies the notation of the ‘Simple Dynamic Game’.
+      \item[(b)] Explain why this kind of equilibrium does not survive backwards induction unless $\widehat{q_1}=BR_1\left(BR_2(q_1)\right)$, which is the Stackelberg outcome we derived in the lecture.
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 3.a (A): Stackelberg Duopoly (empty threats)}
   \begin{multicols}{2}
     \begin{itemize}
       \item[(a)] Write up the equilibria described above formally, using for the strategies the notation of the ‘Simple Dynamic Game’.
     \end{itemize}
-
-In the equilibrium, player 1 plays any quantity $\hat{q}_1$ he is dictated, player 2 then play his BR. To finalize the equilibrium, we need players 2s response off the equilibrium path, ie. if player one plays $q_1\neq\hat{q}_1$ \\
-
-The NE are:
-
+    In the equilibrium, player 1 plays any quantity $\widehat{q_1}$ he is dictated, player 2 then play his BR.\\\medskip
+    To finalize the equilibrium, we need players 2's response off the equilibrium path, i.e. if player one plays $q_1\neq\widehat{q_1}$ \\\medskip
+    The NE consists of the strategies:
     \begin{align*}
-    q_1^*=\hat{q}_1 & \text{where} & q_1^*<a \\
-    q_2^*=\left\{ \begin{array}{lcl}
-          BR_2(\hat{q}_1) & \text{if} & q_1=\hat{q}_1 \\
-          a-q_1 & \text{if} & q_1\neq\hat{q}_1
-                \end{array}\right. \\
+    q_1^*&=\widehat{q_1},\quad\textit{where }q_1^*<a \\
+    q_2^*&=\left\{
+      \begin{array}{lcl}
+          BR_2(\widehat{q_1}) & \text{if} & q_1=\widehat{q_1} \\
+          a-q_1 & \text{if} & q_1\neq\widehat{q_1}
+      \end{array}\right.
     \end{align*}
     \vfill\null \columnbreak
     \begin{itemize}
-      \item[(b)] Explain why this kind of equilibrium does not survive backwards induction unless $\hat{q}_1=BR_1(BR_2(q_1)$, which is the Stackelberg outcome we derived in the lecture. \\
-      
-     For the case where player 2 selects $\hat{q}_1$ to be the quantity selected in the stackelberg game, the outcome will be exactly as in the stackelberg game. \\
-     For the case where player 2 selects another outcome, player one will know that no matter his choice of $q_2$, player 2 will always maximize his profits, selecting his $q_2$ using his best response function. Thus the threat is empty.
+      \item[(b)] Explain why this kind of equilibrium does not survive backwards induction unless $\widehat{q_1}=BR_1\left(BR_2(q_1)\right)$, which is the Stackelberg outcome we derived in the lecture.
     \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS5, Ex. 3.a (A): Stackelberg game}
+\begin{frame}{PS5, Ex. 3.b (A): Stackelberg Duopoly (empty threats)}
   \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Write up the equilibria described above formally, using for the strategies the notation of the ‘Simple Dynamic Game’.
+    \end{itemize}
+    In the equilibrium, player 1 plays any quantity $\widehat{q_1}$ he is dictated, player 2 then play his BR.\\\medskip
+    To finalize the equilibrium, we need players 2's response off the equilibrium path, i.e. if player one plays $q_1\neq\widehat{q_1}$ \\\medskip
+    The NE consists of the strategies:
+    \begin{align*}
+    q_1^*&=\widehat{q_1},\quad\textit{where }q_1^*<a \\
+    q_2^*&=\left\{
+      \begin{array}{lcl}
+          BR_2(\widehat{q_1}) & \text{if} & q_1=\widehat{q_1} \\
+          a-q_1 & \text{if} & q_1\neq\widehat{q_1}
+      \end{array}\right.
+    \end{align*}
     \vfill\null \columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{PS5, Ex. 3.b (A): Stackelberg game}
-  \begin{multicols}{2}
-    \vfill\null \columnbreak
+    \begin{itemize}
+      \item[(b)] Explain why this kind of equilibrium does not survive backwards induction unless $\widehat{q_1}=BR_1\left(BR_2(q_1)\right)$, which is the Stackelberg outcome we derived in the lecture.
+    \end{itemize}
+     For the case where player 2 selects $\widehat{q_1}$ to be the quantity selected in the Stackelberg game, the outcome will be exactly as in the Stackelberg game. \\\medskip
+     For the case where player 2 selects another outcome, player 1 will know that no matter his choice of $q_1$, player 2 will always maximize his profits, selecting his $q_2$ using his best response function. Thus, the threat is empty.
     \vfill\null
   \end{multicols}
 \end{frame}
@@ -380,7 +405,6 @@ The NE are:
       \item[\nth{3} stage:] Org. A will choose to attack if having acquired the weapon and not attack if not having acquired the weapon.
       \item[\nth{2} stage:] Org. B will choose to attack if Org. A has acquired the weapon and not attack if they have not acquired the weapon.
       \item[\nth{1} stage:] Org. A will choose to not acquire the weapon in order to signal peaceful intentions to Org. B, i.e. giving the payoffs $(0,0)$.
-      \item[SPNE:] $\{S_A;S_B\}=\{ (Not\ acquire, a, na');(A, NA') \}$
     \end{itemize}
   \end{itemize}
   \vspace{-8pt}
@@ -389,18 +413,19 @@ The NE are:
     \def\svgwidth{\columnwidth}
     \import{figures/}{4b.pdf_tex}
   \end{figure}
+  \vspace{-4pt}
+  $SPNE=\{S_A,S_B\}=\{ (Not\ acquire, a, na'),(A, NA') \}$
   \vfill\null
 \end{frame}
 
 \begin{frame}{PS5, Ex. 4.c: The Mutated Seabass (backwards induction)}
     \begin{itemize}
-      \item[(c)] What is the intuition for the outcome? What role do you think it plays that B observes if A acquires the weapon or not?
+      \item[(c)] What is the intuition for the outcome?
       \begin{itemize}\normalsize
         \item[\nth{3} stage:] Org. A does only benefit from attacking if having acquired the weapon.
         \item[\nth{2} stage:] Org. B will only choose to attack if Org. A has acquired the weapon.
         \item[\nth{1} stage:] Not acquiring the weapon is a credible signal that Org. A will not attack.
       \end{itemize}
-      \item[] What if Org. A cannot send a signal in the \nth{1} stage?
     \end{itemize}
     \vspace{-8pt}
     \begin{figure}[!h]
@@ -408,28 +433,30 @@ The NE are:
       \def\svgwidth{\columnwidth}
       \import{figures/}{4b.pdf_tex}
     \end{figure}
-    \vfill\null
+    What role do you think it plays that B observes if A acquires the weapon or not?\\
+    I.e. what is the outcome if Organization A cannot send a signal in the \nth{1} stage?
   \vfill\null
 \end{frame}
 \begin{frame}{PS5, Ex. 4.c: The Mutated Seabass (backwards induction)}
     \begin{itemize}
-      \item[(c)] What is the intuition for the outcome? What role do you think it plays that B observes if A acquires the weapon or not?
+      \item[(c)] What role do you think it plays that B observes if A acquires the weapon or not? I.e. what is the outcome if Organization A cannot send a signal in the \nth{1} stage?
       \begin{itemize}\normalsize
         \item[\nth{3} stage:] [unchanged] Org. A will choose to attack if having acquired the weapon and not attack if not having acquired the weapon.
-        \item[\nth{2} stage:] Knowing that Org. A will attack if having acquired the weapon, Org. B chooses to attack first, giving the payoffs $(-1,-1)$.
+        \item[\nth{2} stage:] Knowing that Org. A will attack if having acquired the weapon, Org. B chooses to attack first, giving the payoffs $(-1,-1)$ regardless of stage one.
         \item[\nth{1} stage:] Org. A cannot affect the outcome, but acquires it in case Org. B deviates.
-        \item[SPNE:] $\{S_A;S_B\}=\{ (Acquire, a, na');A \}$
       \end{itemize}
     \end{itemize}
-    \vspace{-10pt}
+    \vspace{-8pt}
     \begin{figure}[!h]
       \center
       \def\svgwidth{\columnwidth}
       \import{figures/}{4c.pdf_tex}
     \end{figure}
-    \vfill\null
+    \vspace{-2pt}
+    $SPNE=\{S_A,S_B\}=\{ (Acquire, a, na'),A \}$
   \vfill\null
 \end{frame}
+
 
 
 \section{PS5, Ex. 5: Three player game (backwards induction)}
@@ -465,56 +492,261 @@ The NE are:
     \begin{table}
       \begin{tabular}{l|c|c|}
         \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{F} \\\cline{2-3}
-        C & 5, \textcolor{blue}{2}, \textcolor{green}{2} & 2, \textcolor{blue}{1}, 1 \\\cline{2-3}
-        D & 0, 1, \textcolor{green}{1} & 1, 0, 0 \\\cline{2-3}
+        C & 5, \textcolor{red}{2}, \textcolor{blue}{2} & 2, \textcolor{red}{1}, 1 \\\cline{2-3}
+        D & 0, 1, \textcolor{blue}{1} & 1, 0, 0 \\\cline{2-3}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{A}
+      \end{tabular}\quad
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{\color{blue}F} \\\cline{2-3}
+        C & \textcolor{green}{6}, 0, 1 & \textcolor{green}{3}, 1, \textcolor{blue}{2} \\\cline{2-3}
+        \color{red}D & \textcolor{green}{1}, \textcolor{red}{1}, 0 & \textcolor{green}{2}, \textcolor{red}{2}, \textcolor{blue}{1} \\\cline{2-3}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{green}B}
+      \end{tabular}
+    \end{table}
+    Iterated Elimination of Strictly Dominated Strategies (IESDS): For player 1, A is strictly dominated by B. In the reduced form game, C and E are strictly dominated for Player 2 and 3 respectively.\\\medskip
+    $\Rightarrow$ Pure Strategy Nash Equilibrium: $\{B,D,F\}$ with outcome (2,2,1).
+  \vfill\null
+\end{frame}
+
+\begin{frame}{PS5, Ex. 5.b: Three player game (backwards induction)}
+    Consider the game below where player 1 chooses the matrix (A or B), player 2 chooses the row (C or D), and player 3 chooses the column (E or F). In each cell, the first number gives the payoff of Player 1, the second number the payoff of Player 2, and the third number the payoff of Player 3.
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{F} \\\cline{2-3}
+        C & 5, 2, 2 & 2, 1, 1 \\\cline{2-3}
+        D & 0, 1, 1 & 1, 0, 0 \\\cline{2-3}
         \multicolumn{1}{c}{} & \multicolumn{2}{c}{A}
       \end{tabular}\quad
       \begin{tabular}{l|c|c|}
         \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{F} \\\cline{2-3}
-        C & \textcolor{red}{6}, 0, 1 & \textcolor{red}{3}, 1, \textcolor{green}{2} \\\cline{2-3}
-        D & \textcolor{red}{1}, \textcolor{blue}{1}, 0 & \textcolor{red}{2}, \textcolor{blue}{2}, \textcolor{green}{1} \\\cline{2-3}
+        C & 6, 0, 1 & 3, 1, 2 \\\cline{2-3}
+        D & 1, 1, 0 & 2, 2, 1 \\\cline{2-3}
         \multicolumn{1}{c}{} & \multicolumn{2}{c}{B}
       \end{tabular}
     \end{table}
+    \begin{itemize}
+      \item[(b)] Now suppose the game is dynamic: Player 1 moves first, and then, after having observed his move, Player 2 moves, and, finally, after having observed the first two moves, Player 3 moves. \textbf{\textit{Draw the game tree}} and solve by backwards induction.
+    \end{itemize}
   \vfill\null
-  PSNE: \{B,D,F\}
+\end{frame}
+\begin{frame}{PS5, Ex. 5.b: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(b)] Now suppose the game is dynamic: Player 1 moves first, and then, after having observed his move, Player 2 moves, and, finally, after having observed the first two moves, Player 3 moves. Draw the game tree and \textbf{\textit{solve by backwards induction}}.
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{5b_.pdf_tex}
+    \end{figure}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS5, Ex. 5.b: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(b)] Now suppose the game is dynamic: Player 1 moves first, and then, after having observed his move, Player 2 moves, and, finally, after having observed the first two moves, Player 3 moves. Draw the game tree and solve by backwards induction.
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{5b.pdf_tex}
+    \end{figure}
+    $\Rightarrow$ Subgame Perfect NE: $\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+  \vfill\null
+\end{frame}
+
+\begin{frame}{PS5, Ex. 5.c: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(a)] $PSNE=\{B,D,F\}$ with outcome (2,2,1).
+      \item[(b)] $SPNE=\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{5b.pdf_tex}
+    \end{figure}
+    \begin{itemize}
+      \item[(c)] \textbf{\textit{Discuss the differences in the results you find.}}
+    \end{itemize}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS5, Ex. 5.c: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(a)] $PSNE=\{B,D,F\}$ with outcome (2,2,1).
+      \item[(b)] $SPNE=\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+    \end{itemize}
+    \vspace{-6pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{5b.pdf_tex}
+    \end{figure}
+    \begin{itemize}
+      \item[(c)] Discuss the differences in the results you find.
+    \end{itemize}
+    \textbf{In the static game:} $(A,C,E)$ with outcome (5,2,2) cannot be a solution. Player 2 and 3 will not play $C$ and $E$ as they expect player 1 to play $B$ instead and get (6,0,1).\\\medskip
+    \textbf{In the dynamic game:} Player 1 can expect at higher payoff on the left side of the tree than on the right side, thus, commits to $A$, allowing Player 2 and 3 to play $C$ and $E$.
+  \vfill\null
 \end{frame}
 
 
 
-\section{PS5, Ex. 6: }
+\section{PS5, Ex. 6: Stackelberg assignment (backwards induction)}
 
-\begin{frame}{PS5, Ex. 6: }
+\begin{frame}{PS5, Ex. 6: Stackelberg assignment (backwards induction)}
   \begin{multicols}{2}
+    Two students are working together on the next assignment. Student $i, i = 1, 2,$ exerts an effort $y_i\geq0$. The resulting quality of the assignment is
+    \begin{align*}
+      q(y_1, y_2) = y_1y_2.
+    \end{align*}
+    Exerting effort is costly, but the costs differ, since one student likes game theory more than the other. More precisely, the cost functions are
+    \begin{align*}
+      C_1(y_1) &= \frac{1}{3}(y_1)^3,\\
+      C_2(y_2) &= (y_2)^2.
+    \end{align*}
+    The payoff for student $i, U_i,$ is equal to the quality of the assignment less his cost of effort.
+    \begin{align*}
+      U_1(y_1,y_2)&=q(y_1,y_2)-C_1(y_1),\\
+      U_2(y_1,y_2)&=q(y_1,y_2)-C_2(y_2).
+    \end{align*}
     \vfill\null \columnbreak
+    \textbf{(a)} Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.\\
+    \textbf{(b)} Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.\\
+    \textbf{(c)} Compare the outcomes in (a) and (b) with respect to the payoffs of the students. Which game does each of the two students prefer? Give an intuitive explanation of your answer.\\
+    \textbf{(d)} Find the socially optimal levels of effort $(y_1^{SO}, y_2^{SO})$, i.e., the levels that maximize the sum of the two students’ payoffs. Calculate the payoff that the two students get in the social optimum.
     \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS5, Ex. 6.a: }
+\begin{frame}{PS5, Ex. 6.a: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(a)] Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.
+  \end{itemize}
   \begin{multicols}{2}
     \vfill\null \columnbreak
-    \vfill\null
+    Information so far:\\\medskip
+    Quality: $q(y_1, y_2) = y_1y_2.$\\
+    Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    Payoffs: $U_i(y_i,y_j) = q(y_i,y_j)-C_i(y_i).$
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.b: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(b)] Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.
+  \end{itemize}
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    Information so far:\\\medskip
+    Quality: $q(y_1, y_2) = y_1y_2.$\\
+    Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    Payoffs: $U_i(y_i,y_j) = q(y_i,y_j)-C_i(y_i).$
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.c: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(c)] Compare the outcomes in (a) and (b) with respect to the payoffs of the students. Which game does each of the two students prefer? Give an intuitive explanation of your answer.
+  \end{itemize}
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    Information so far:\\\medskip
+    Quality: $q(y_1, y_2) = y_1y_2.$\\
+    Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    Payoffs: $U_i(y_i,y_j) = q(y_i,y_j)-C_i(y_i).$
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.d: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(d)] Find the socially optimal levels of effort $(y_1^{SO}, y_2^{SO})$, i.e., the levels that maximize the sum of the two students’ payoffs. Calculate the payoff that the two students get in the social optimum.
+  \end{itemize}
+  \begin{multicols}{2}
+    \vfill\null \columnbreak
+    Information so far:\\\medskip
+    Quality: $q(y_1, y_2) = y_1y_2.$\\
+    Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    Payoffs: $U_i(y_i,y_j) = q(y_i,y_j)-C_i(y_i).$
   \end{multicols}
 \end{frame}
 
 
 
-\section{PS5, Ex. 7: }
+\section{PS5, Ex. 7: Dynamic game (proper subgames)}
 
-\begin{frame}{PS5, Ex. 7: }
+\begin{frame}{PS5, Ex. 7: Dynamic game (proper subgames)}
   \begin{multicols}{2}
+    Consider the game from exercise 1.
+    \begin{itemize}
+      \item[(a)] Write down the strategies of the two players. How many proper subgames are there (so not including the entire game itself)?
+      \item[(b)] Write down the Subgame-Perfect Nash Equilibrium (SPNE). Compare the SPNE to the backwards-induction outcome which you found in question 1.
+      \item[(c)] Write down the normal form of the game and find all (pure strategy) Nash equilibria. Compare to the set of SPNE and comment.
+    \end{itemize}
     \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{1_.pdf_tex}
+    \end{figure}
     \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS5, Ex. 7.a: }
+\begin{frame}{PS5, Ex. 7.a: Dynamic game (proper subgames)}
   \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Write down the strategies of the two players. How many proper subgames are there (so not including the entire game itself)?
+    \end{itemize}
+    The two strategy sets are:
+    \begin{align*}
+      S_1=\{\ &(L, L''); (L, R''); (R, L''); (R, R'')\ \}\\
+      S_2=\{\ &L'\ ; R'\ \}
+    \end{align*}
+    There are two proper subgames.
     \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{7a.pdf_tex}
+    \end{figure}
     \vfill\null
   \end{multicols}
 \end{frame}
+
+\begin{frame}{PS5, Ex. 7.b: Dynamic game (proper subgames)}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(b)] Write down the Subgame-Perfect Nash Equilibrium (SPNE). Compare the SPNE to the backwards-induction outcome which you found in question 1.
+    \end{itemize}
+    \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{7a.pdf_tex}
+    \end{figure}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 7.b: Dynamic game (proper subgames)}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(b)] Write down the Subgame-Perfect Nash Equilibrium (SPNE). Compare the SPNE to the backwards-induction outcome which you found in question 1.
+    \end{itemize}
+    \begin{align*}
+      SPNE=(s_1^{*},s_2^{*})=(R\ R'',\ L')
+    \end{align*}
+    Which coincides with the backwards induction solution from Ex. 1!
+    \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{7a.pdf_tex}
+    \end{figure}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
 
 
 

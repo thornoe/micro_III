@@ -1,0 +1,140 @@
+\input{preample.tex}
+\begin{document}
+
+
+% ------------------------------------------------------------------------------
+% ------ FRAME -----------------------------------------------------------------
+% ------------------------------------------------------------------------------
+
+
+\begin{frame}{PS5, Ex. 5: Three player game (backwards induction)}
+    Consider the game below where player 1 chooses the matrix (A or B), player 2 chooses the row (C or D), and player 3 chooses the column (E or F). In each cell, the first number gives the payoff of Player 1, the second number the payoff of Player 2, and the third number the payoff of Player 3.
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{F} \\\cline{2-3}
+        C & 5, 2, 2 & 2, 1, 1 \\\cline{2-3}
+        D & 0, 1, 1 & 1, 0, 0 \\\cline{2-3}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{A}
+      \end{tabular}\quad
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{F} \\\cline{2-3}
+        C & 6, 0, 1 & 3, 1, 2 \\\cline{2-3}
+        D & 1, 1, 0 & 2, 2, 1 \\\cline{2-3}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{B}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(a)] Suppose first that the game is static, such that all three players move simultaneously. Find all the pure-strategy Nash Equilibria.
+      \item[(b)] Now suppose the game is dynamic: Player 1 moves first, and then, after having observed his move, Player 2 moves, and, finally, after having observed the first two moves, Player 3 moves. Draw the game tree and solve by backwards induction.
+      \item[(c)] Discuss the differences in the results you find
+    \end{itemize}
+  \vfill\null
+\end{frame}
+
+\begin{frame}{PS5, Ex. 5.a: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(a)] Suppose first that the game is static, such that all three players move simultaneously. Find all the pure-strategy Nash Equilibria.
+    \end{itemize}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{F} \\\cline{2-3}
+        C & 5, \textcolor{red}{2}, \textcolor{blue}{2} & 2, \textcolor{red}{1}, 1 \\\cline{2-3}
+        D & 0, 1, \textcolor{blue}{1} & 1, 0, 0 \\\cline{2-3}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{A}
+      \end{tabular}\quad
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{\color{blue}F} \\\cline{2-3}
+        C & \textcolor{green}{6}, 0, 1 & \textcolor{green}{3}, 1, \textcolor{blue}{2} \\\cline{2-3}
+        \color{red}D & \textcolor{green}{1}, \textcolor{red}{1}, 0 & \textcolor{green}{2}, \textcolor{red}{2}, \textcolor{blue}{1} \\\cline{2-3}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{green}B}
+      \end{tabular}
+    \end{table}
+    Iterated Elimination of Strictly Dominated Strategies (IESDS): For player 1, A is strictly dominated by B. In the reduced form game, C and E are strictly dominated for Player 2 and 3 respectively.\\\medskip
+    $\Rightarrow$ Pure Strategy Nash Equilibrium: $\{B,D,F\}$ with outcome (2,2,1).
+  \vfill\null
+\end{frame}
+
+\begin{frame}{PS5, Ex. 5.b: Three player game (backwards induction)}
+    Consider the game below where player 1 chooses the matrix (A or B), player 2 chooses the row (C or D), and player 3 chooses the column (E or F). In each cell, the first number gives the payoff of Player 1, the second number the payoff of Player 2, and the third number the payoff of Player 3.
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{F} \\\cline{2-3}
+        C & 5, 2, 2 & 2, 1, 1 \\\cline{2-3}
+        D & 0, 1, 1 & 1, 0, 0 \\\cline{2-3}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{A}
+      \end{tabular}\quad
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{E} & \multicolumn{1}{c}{F} \\\cline{2-3}
+        C & 6, 0, 1 & 3, 1, 2 \\\cline{2-3}
+        D & 1, 1, 0 & 2, 2, 1 \\\cline{2-3}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{B}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(b)] Now suppose the game is dynamic: Player 1 moves first, and then, after having observed his move, Player 2 moves, and, finally, after having observed the first two moves, Player 3 moves. \textbf{\textit{Draw the game tree}} and solve by backwards induction.
+    \end{itemize}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS5, Ex. 5.b: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(b)] Now suppose the game is dynamic: Player 1 moves first, and then, after having observed his move, Player 2 moves, and, finally, after having observed the first two moves, Player 3 moves. Draw the game tree and \textbf{\textit{solve by backwards induction}}.
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{5b_.pdf_tex}
+    \end{figure}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS5, Ex. 5.b: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(b)] Now suppose the game is dynamic: Player 1 moves first, and then, after having observed his move, Player 2 moves, and, finally, after having observed the first two moves, Player 3 moves. Draw the game tree and solve by backwards induction.
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{5b.pdf_tex}
+    \end{figure}
+    $\Rightarrow$ Subgame Perfect NE: $\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+  \vfill\null
+\end{frame}
+
+\begin{frame}{PS5, Ex. 5.c: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(a)] $PSNE=\{B,D,F\}$ with outcome (2,2,1).
+      \item[(b)] $SPNE=\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{5b.pdf_tex}
+    \end{figure}
+    \begin{itemize}
+      \item[(c)] \textbf{\textit{Discuss the differences in the results you find.}}
+    \end{itemize}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS5, Ex. 5.c: Three player game (backwards induction)}
+    \begin{itemize}
+      \item[(a)] $PSNE=\{B,D,F\}$ with outcome (2,2,1).
+      \item[(b)] $SPNE=\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+    \end{itemize}
+    \vspace{-6pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{5b.pdf_tex}
+    \end{figure}
+    \begin{itemize}
+      \item[(c)] Discuss the differences in the results you find.
+    \end{itemize}
+    \textbf{In the static game:} $(A,C,E)$ with outcome (5,2,2) cannot be a solution. Player 2 and 3 will not play $C$ and $E$ as they expect player 1 to play $B$ instead and get (6,0,1).\\\medskip
+    \textbf{In the dynamic game:} Player 1 can expect at higher payoff on the left side of the tree than on the right side, thus, commits to $A$, allowing Player 2 and 3 to play $C$ and $E$.
+  \vfill\null
+\end{frame}
+
+
+\end{document}
