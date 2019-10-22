@@ -96,6 +96,31 @@
     $SPNE=\{S_A,S_B\}=\{ (Acquire, a, na'),A \}$
   \vfill\null
 \end{frame}
+\begin{frame}{PS5, Ex. 4.c: The Mutated Seabass (backwards induction)}
+    \begin{itemize}
+      \item[(c)] Fool-proof alternative solution method:
+      \begin{itemize}\normalsize
+        \item[\nth{3} stage:] [unchanged] Org. A will choose to attack if having acquired the weapon and not attack if not having acquired the weapon.
+        \item[Reduce:] Substitute in Org A's best actions and outcomes from the \nth{3} stage to get the reduced form game which is a static game.
+        \item[Bi-matrix:] Write up the normal form of the reduced game and highlight best responses:
+      \end{itemize}
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Org. B}\\
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{NA} \\\cline{3-4}
+        \parbox[t]{1mm}{\multirow{2}{*}{\rotatebox[origin=c]{90}{\color{red}Org. A}}}
+        & $(Acquire, a, na')$ & \textcolor{red}{-1}, \textcolor{blue}{-1} & \textcolor{red}{2}, -2 \\\cline{3-4}
+        & $(Not\ acquire, a, na')$ & \textcolor{red}{-1}, -1 & 0, \textcolor{blue}{0} \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    The strategy $(Not\ acquire, a, na')$ is weakly dominated by $(Acquire, a, na')$ and the unique Subgame Perfect NE is crystal clear:
+    \begin{align*}
+      SPNE=\{S_A,S_B\}=\{(Acquire, a, na'),A\}
+    \end{align*}
+  \vfill\null
+\end{frame}
 
 
 

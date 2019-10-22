@@ -52,7 +52,7 @@
     \end{itemize}
     The backwards induction solution is the full strategy profile given by the subgame perfect NE:
     \begin{align*}
-      BI=(s_1^{*},s_2^{*})=(R\ R'',\ L')
+      BI=\{s_1^{*},s_2^{*}\}=\{(R, R''),\ L'\}
     \end{align*}
     \vfill\null \columnbreak
     \begin{figure}[!h]
@@ -92,27 +92,13 @@
     \begin{itemize}
       \item[(a)] Write up the strategy sets of the players.
     \end{itemize}
-    \vfill\null \columnbreak
-    \begin{figure}[!h]
-      \center
-      \def\svgwidth{\columnwidth}
-      \import{figures/}{2_.pdf_tex}
-    \end{figure}
-    \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{PS5, Ex. 2.a (A): Extended Battle of the Sexes Game (strategy sets)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Write up the strategy sets of the players.
-    \end{itemize}
     The two strategy sets are:
     \begin{align*}
-      S_1=\{\ &(G,\ O',\ O'');\ (G,\ O',\ F'');\\
-              &(G,\ F',\ O'');\ (G,\ F',\ F'');\\
-              &(S,\ O',\ O'');\ (S,\ O',\ F'');\\
-              &(S,\ F',\ O'');\ (S,\ F',\ F'')\ \}\\
-      S_2=\{\ &O;\ F\ \}
+      S_1=\{\ &(G, O', O'');\ (G, O', F'');\\
+              &(G, F', O'');\ (G, F', F'');\\
+              &(S, O', O'');\ (S, O', F'');\\
+              &(S, F', O'');\ (S, F', F'')\ \}\\
+      S_2=\{\ &O\ ;\ F\ \}
     \end{align*}
     \vfill\null \columnbreak
     \begin{figure}[!h]
@@ -148,14 +134,14 @@
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{O} & \multicolumn{1}{c}{F} \\\cline{3-4}
         \parbox[t]{1mm}{\multirow{8}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
-        & (G\ O'\ O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
-        & (G\ O'\ F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (G\ F'\ O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
-        & (G\ F'\ F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (S\ O'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ O'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (G, O', O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
+        & (G, O', F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (G, F', O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+        & (G, F', F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (S, O', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, O', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
       \end{tabular}
     \end{table}
     \vfill\null \columnbreak
@@ -178,14 +164,14 @@
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{O} & \multicolumn{1}{c}{F} \\\cline{3-4}
         \parbox[t]{1mm}{\multirow{8}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
-        & (G\ O'\ O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
-        & (G\ O'\ F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (G\ F'\ O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
-        & (G\ F'\ F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (S\ O'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ O'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (G, O', O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
+        & (G, O', F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (G, F', O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+        & (G, F', F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (S, O', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, O', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
       \end{tabular}
     \end{table}
     \vfill\null \columnbreak
@@ -204,9 +190,9 @@
     \end{itemize}
     The five NE are:
     \begin{align*}
-      NE=\{\ &(G\ O'\ O'',\ O);\ (S\ O'\ O'',\ F);\\
-            &(S\ O'\ F'',\ F);\ (S\ F'\ O'',\ F);\\
-            &(S\ F'\ F'',\ F)\ \}\\
+      NE=\{\  &(G, O', O''), O\ ;\ (S, O', O''), F\ ;\\
+              &(S, O', F''), F\ ;\ (S, F', O''), F\ ;\\
+              &(S, F', F''), F\ \}
     \end{align*}
     \vspace{-30pt}
     \begin{table}
@@ -214,14 +200,14 @@
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{O} & \multicolumn{1}{c}{F} \\\cline{3-4}
         \parbox[t]{1mm}{\multirow{8}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
-        & (G\ O'\ O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
-        & (G\ O'\ F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (G\ F'\ O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
-        & (G\ F'\ F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (S\ O'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ O'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (G, O', O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
+        & (G, O', F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (G, F', O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+        & (G, F', F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (S, O', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, O', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
       \end{tabular}
     \end{table}
     \vfill\null \columnbreak
@@ -244,14 +230,14 @@
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{O} & \multicolumn{1}{c}{F} \\\cline{3-4}
         \parbox[t]{1mm}{\multirow{8}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
-        & (G\ O'\ O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
-        & (G\ O'\ F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (G\ F'\ O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
-        & (G\ F'\ F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (S\ O'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ O'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (G, O', O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
+        & (G, O', F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (G, F', O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+        & (G, F', F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (S, O', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, O', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
       \end{tabular}
     \end{table}
     \vfill\null \columnbreak
@@ -270,23 +256,23 @@
     \end{itemize}
     BI gives the unique SPNE:
     \begin{align*}
-      SPNE=(s_1^{*},s_2^{*})=(S\ O'\ F'',\ F)
+      SPNE=\{s_1^{*},s_2^{*}\}=\{(S, O', F''), F\}
     \end{align*}
-    The NE $(G\ O'\ O'',\ O)$ is not subgame perfect as player 1's strategy is weakly dominated by $(G\ O'\ F'')$. A SPNE needs to be rational on and off the equilibrium path, thus, $O''$ is an empty threat.
+    The NE $\{(G, O', O''), O\}$ is not subgame perfect as player 1's strategy is weakly dominated by $(G, O', F'')$. A SPNE needs to be rational on and off the equilibrium path, thus, $O''$ is an empty threat.
     \vspace{-8pt}
     \begin{table}
       \begin{tabular}{cl|c|c|}
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{O} & \multicolumn{1}{c}{F} \\\cline{3-4}
         \parbox[t]{1mm}{\multirow{8}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
-        & (G\ O'\ O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
-        & (G\ O'\ F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (G\ F'\ O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
-        & (G\ F'\ F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (S\ O'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ O'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S\ F'\ F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (G, O', O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
+        & (G, O', F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (G, F', O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
+        & (G, F', F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
+        & (S, O', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, O', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
+        & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
       \end{tabular}
     \end{table}
     \vfill\null \columnbreak
@@ -454,6 +440,31 @@
     \end{figure}
     \vspace{-2pt}
     $SPNE=\{S_A,S_B\}=\{ (Acquire, a, na'),A \}$
+  \vfill\null
+\end{frame}
+\begin{frame}{PS5, Ex. 4.c: The Mutated Seabass (backwards induction)}
+    \begin{itemize}
+      \item[(c)] Fool-proof alternative solution method:
+      \begin{itemize}\normalsize
+        \item[\nth{3} stage:] [unchanged] Org. A will choose to attack if having acquired the weapon and not attack if not having acquired the weapon.
+        \item[Reduce:] Substitute in Org A's best actions and outcomes from the \nth{3} stage to get the reduced form game which is a static game.
+        \item[Bi-matrix:] Write up the normal form of the reduced game and highlight best responses:
+      \end{itemize}
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Org. B}\\
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{NA} \\\cline{3-4}
+        \parbox[t]{1mm}{\multirow{2}{*}{\rotatebox[origin=c]{90}{\color{red}Org. A}}}
+        & $(Acquire, a, na')$ & \textcolor{red}{-1}, \textcolor{blue}{-1} & \textcolor{red}{2}, -2 \\\cline{3-4}
+        & $(Not\ acquire, a, na')$ & \textcolor{red}{-1}, -1 & 0, \textcolor{blue}{0} \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    The strategy $(Not\ acquire, a, na')$ is weakly dominated by $(Acquire, a, na')$ and the unique Subgame Perfect NE is crystal clear:
+    \begin{align*}
+      SPNE=\{S_A,S_B\}=\{(Acquire, a, na'),A\}
+    \end{align*}
   \vfill\null
 \end{frame}
 
@@ -807,9 +818,9 @@
         & (R, R'') & \textcolor{red}{2}, \textcolor{blue}{3} & 0, 2 \\\cline{3-4}
       \end{tabular}
     \end{table}
-    \vspace{-8pt}
+    \vspace{-10pt}
     \begin{align*}
-      PSNE=\
+      PSNE=\{ \}
     \end{align*}
     \vfill\null \columnbreak
     \begin{figure}[!h]
