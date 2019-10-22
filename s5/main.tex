@@ -424,17 +424,23 @@
       \item[(c)] Fool-proof alternative solution method:
       \begin{itemize}\normalsize
         \item[\nth{3} stage:] [unchanged] Org. A will choose to attack if having acquired the weapon and not attack if not having acquired the weapon.
-        \item[Reduce:] Substitute in Org A's best actions and outcomes from the \nth{3} stage to get the reduced form game which is a static game.
+        \item[Reduce:] Substitute in Org A's best actions and outcomes from the \nth{3} stage to get the reduced form game which is the static game below:
+      \end{itemize}
+    \end{itemize}
+    \vspace{-6pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{4c_reduced.pdf_tex}
+    \end{figure}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[]
+      \begin{itemize}\normalsize
         \item[Bi-matrix:] Write up the normal form of the reduced game and highlight best responses:
       \end{itemize}
     \end{itemize}
-    \vspace{-10pt}
-    % \begin{figure}[!h]
-    %   \center
-    %   \def\svgwidth{.8\columnwidth}
-    %   \import{figures/}{4c_reduced.pdf_tex}
-    % \end{figure}
-    \vspace{-10pt}
+    \vspace{-8pt}
     \begin{table}
       \begin{tabular}{cl|c|c|}
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Org. B}\\
@@ -444,11 +450,9 @@
         & $(Not\ acquire, a, na')$ & \textcolor{red}{-1}, -1 & 0, \textcolor{blue}{0} \\\cline{3-4}
       \end{tabular}
     \end{table}
-    The strategy $(Not\ acquire, a, na')$ is weakly dominated by $(Acquire, a, na')$ and the unique Subgame Perfect NE is crystal clear:
-    \begin{align*}
-      SPNE=\{S_A,S_B\}=\{(Acquire, a, na'),A\}
-    \end{align*}
-  \vfill\null
+    \vspace{-2pt}
+    The strategy $(Not\ acquire, a, na')$ is weakly dominated by $(Acquire, a, na')$ and the unique Subgame Perfect NE is crystal clear: $\{S_A,S_B\}=\{(Acquire, a, na'),A\}$
+    \vfill\null
 \end{frame}
 
 
@@ -860,21 +864,81 @@
     \item[(c)] Find the backwards induction outcome and write down the SPNE.
     \item[(d)] Write down this game as a bi-matrix and find all pure strategy Nash equilibria.]
   \end{itemize}
-  % \begin{figure}[!h]
-  %   \center
-  %   \def\svgwidth{\columnwidth}
-  %   \import{figures/}{8.pdf_tex}
-  % \end{figure}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.8\columnwidth}
+    \import{figures/}{8.pdf_tex}
+  \end{figure}
   \vfill\null
 \end{frame}
 
 \begin{frame}{PS5, Ex. 8.a: Dynamic game (bi-matrix)}
-  \begin{multicols}{2}
-    \vfill\null \columnbreak
-    \vfill\null
-  \end{multicols}
+  \begin{itemize}
+    \item[(a)] What are the strategy sets of each player?
+  \end{itemize}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.8\columnwidth}
+    \import{figures/}{8.pdf_tex}
+  \end{figure}
+  $S_1=\{L;R\}$\\
+  $S_2=\{(L',L'');(L', R'');(C',L'');(C', R'');(R',L'');(R', R'')\}$
+  \begin{itemize}
+    \item[(b)] \textbf{\textit{How many proper subgames are there (so not including the entire game itself)?}}
+  \end{itemize}
+  \vfill\null
 \end{frame}
 
+\begin{frame}{PS5, Ex. 8.b: Dynamic game (bi-matrix)}
+  \begin{itemize}
+    \item[(b)] How many proper subgames are there (so not including the entire game itself)?
+  \end{itemize}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.9\columnwidth}
+    \import{figures/}{8b.pdf_tex}
+  \end{figure}
+  \begin{itemize}
+    \item[(b)] \textbf{\textit{Find the backwards induction outcome and write down the SPNE.}}
+  \end{itemize}
+  \vfill\null
+\end{frame}
+
+\begin{frame}{PS5, Ex. 8.c: Dynamic game (bi-matrix)}
+  \begin{itemize}
+    \item[(c)] Find the backwards induction outcome and write down the SPNE.
+  \end{itemize}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.9\columnwidth}
+    \import{figures/}{8c.pdf_tex}
+  \end{figure}
+  \begin{itemize}
+    \item[(d)] \textbf{\textit{Write down this game as a bi-matrix and find all pure strategy Nash equilibria.}}
+  \end{itemize}
+  \vfill\null
+\end{frame}
+
+\begin{frame}{PS5, Ex. 8.d: Dynamic game (bi-matrix)}
+  \begin{itemize}
+    \item[(d)] Write down this game as a bi-matrix and find all pure strategy Nash equilibria.
+  \end{itemize}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.8\columnwidth}
+    \import{figures/}{8d.pdf_tex}
+  \end{figure}
+  \begin{table}
+    \begin{tabular}{cl|c|c|c|c|c|c|}
+      & \multicolumn{1}{c}{} & \multicolumn{6}{c}{\color{blue}Player 2}\\
+      \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+      & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L',L''} & \multicolumn{1}{c}{L',R''} & \multicolumn{1}{c}{C',L''} & \multicolumn{1}{c}{C',R''} & \multicolumn{1}{c}{R',L''} & \multicolumn{1}{c}{R',R''} \\\cline{3-8}
+      & L & \textcolor{red}{1}, \textcolor{blue}{5} & 1, \textcolor{blue}{5} & \textcolor{red}{9}, 4 & \textcolor{red}{9}, 4 & \textcolor{red}{5}, 1 & \textcolor{red}{5}, 1 \\\cline{3-8}
+      & R & 0, 0 & \textcolor{red}{2}, \textcolor{blue}{3} & 0, 0 & 2, \textcolor{blue}{3} & 0, 0 & 2, \textcolor{blue}{3} \\\cline{3-8}
+    \end{tabular}
+  \end{table}
+  \vfill\null
+\end{frame}
 
 
 \section{PS5, Ex. 9: Dynamic games (proper subgames)}
@@ -889,60 +953,128 @@
 \end{frame}
 
 \begin{frame}{PS5, Ex. 9.a: Dynamic games (proper subgames)}
-  \begin{itemize}
-    \item What are the strategies of the players?
-    \item How many proper subgames are there (so not including the entire game itself)?
-    \item Find all SPNE.
-  \end{itemize}
-\end{frame}
-
-
-
-\section{Code examples} % out-comment: ctrl-shift-7 or ctrl-shift-* (use cmd for Mac)
-
-\begin{frame}{Code examples}
   \begin{multicols}{2}
-    % Game tree:
-    \begin{figure}[!h]
-      \center
-      \def\svgwidth{.8\columnwidth}
-      \import{figures/}{1_.pdf_tex}
-    \end{figure}
-  \vfill\null \columnbreak
-    Matrix, no player names:
-    \vspace{-10pt}
-    \begin{table}
-      \begin{tabular}{l|c|c|}
-        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{2-3}
-        T (p)   &  &  \\\cline{2-3}
-        B (1-p) &  &  \\\cline{2-3}
-      \end{tabular}
-    \end{table}
-    Matrix, no colors:
-    \vspace{-10pt}
-    \begin{table}
-      \begin{tabular}{cl|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
-        & T (p)   &  &  \\\cline{3-4}
-        & B (1-p) &  &  \\\cline{3-4}
-      \end{tabular}
-    \end{table}
-    Matrix, with colors:
-    \vspace{-10pt}
-    \begin{table}
-      \begin{tabular}{cl|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
-        & T (p)   & \textcolor{red}{}, \textcolor{blue}{} &   \\\cline{3-4}
-        & B (1-p) &  &  \\\cline{3-4}
-      \end{tabular}
-    \end{table}
-  \vfill\null
+    (a) \textbf{\textit{Answer the following questions:}}
+    \begin{itemize}
+      \item What are the strategies of the players?
+      \item How many proper subgames are there (so not including the entire game itself)?
+      \item Find all SPNE.
+    \end{itemize}
+    \vfill\null \columnbreak
+    \includegraphics[width=1.2\columnwidth]{figures/Set_5_figure_1}
+    \vfill\null
   \end{multicols}
 \end{frame}
+\begin{frame}{PS5, Ex. 9.a: Dynamic games (proper subgames)}
+  \begin{multicols}{2}
+    (a)
+    \begin{itemize}
+      \item Strategy sets:
+      \begin{align*}
+        S_1=\{&L;R\}\\
+        S_2=\{&L;R\}\\
+        S_3=\{&(L,L,L);(L,L,R);\\
+              &(L,R,L);(L,R,R);\\
+              &(R,L,L);(R,L,R);\\
+              &(R,R,L);(R,R,R);\}
+      \end{align*}
+      \item There are 4 proper subgames.
+      \item $SPNE=\{R,L,(R,L,L)\}$ \\
+            with outcome (5,4,4).
+    \end{itemize}
+    \vfill\null \columnbreak
+    \includegraphics[width=1.2\columnwidth]{figures/Set_5_figure_1}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 9.b: Dynamic games (proper subgames)}
+  \begin{multicols}{2}
+    (b) \textbf{\textit{Answer the following questions:}}
+    \begin{itemize}
+      \item What are the strategies of the players?
+      \item How many proper subgames are there (so not including the entire game itself)?
+      \item Find all SPNE.
+    \end{itemize}
+    \vfill\null \columnbreak
+    \includegraphics[width=1.2\columnwidth]{figures/Set_5_figure_2}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 9.b: Dynamic games (proper subgames)}
+  \begin{multicols}{2}
+    (b)
+    \begin{itemize}
+      \item Strategy sets (same as in 9.a):
+      \begin{align*}
+        S_1=\{&L;R\}\\
+        S_2=\{&L;R\}\\
+        S_3=\{&(L,L,L);(L,L,R);\\
+              &(L,R,L);(L,R,R);\\
+              &(R,L,L);(R,L,R);\\
+              &(R,R,L);(R,R,R);\}
+      \end{align*}
+      \item There are 4 proper subgames.
+      \item At two different nodes, a player can be indifferent. Solving for each case:
+      \begin{align*}
+        SPNE=\{ &L,L,(L,L,L);\\
+                &L,L,(L,L,R);\\
+                &R,R,(L,L,R)\}
+      \end{align*}
+    \end{itemize}
+    \vfill\null \columnbreak
+    \includegraphics[width=1.2\columnwidth]{figures/Set_5_figure_2}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+% \section{Code examples} % out-comment: ctrl-shift-7 or ctrl-shift-* (use cmd for Mac)
+%
+% \begin{frame}{Code examples}
+%   \begin{multicols}{2}
+%     % Game tree:
+%     \begin{figure}[!h]
+%       \center
+%       \def\svgwidth{.8\columnwidth}
+%       \import{figures/}{1_.pdf_tex}
+%     \end{figure}
+%   \vfill\null \columnbreak
+%     Matrix, no player names:
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{l|c|c|}
+%         \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{2-3}
+%         T (p)   &  &  \\\cline{2-3}
+%         B (1-p) &  &  \\\cline{2-3}
+%       \end{tabular}
+%     \end{table}
+%     Matrix, no colors:
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
+%         & T (p)   &  &  \\\cline{3-4}
+%         & B (1-p) &  &  \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%     Matrix, with colors:
+%     \vspace{-10pt}
+%     \begin{table}
+%       \begin{tabular}{cl|c|c|}
+%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
+%         & T (p)   & \textcolor{red}{}, \textcolor{blue}{} &   \\\cline{3-4}
+%         & B (1-p) &  &  \\\cline{3-4}
+%       \end{tabular}
+%     \end{table}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
 
 
 \end{document}

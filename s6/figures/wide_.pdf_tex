@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'wide_.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{305.42738644bp}%
+    \setlength{\unitlength}{260.13996618bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,47 +50,31 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.45656014)%
+  \begin{picture}(1,0.39444077)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{wide_.pdf}}%
-    \put(0.14554677,0.22825027){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C$\end{tabular}}}}%
-    \put(-0.63465345,-1.66954366){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.97815456\unitlength}\raggedright \end{minipage}}}%
+    \put(0.09079573,0.12638456){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L'$\end{tabular}}}}%
+    \put(-0.8252285,-2.10179363){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.32252885\unitlength}\raggedright \end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{wide_.pdf}}%
-    \put(0.28190347,0.00527365){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,-2)\end{tabular}}}}%
-    \put(0.42375861,0.00526926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
-    \put(0.36718618,0.17800225){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 3\end{tabular}}}}%
-    \put(0.13232972,0.29512112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
-    \put(0.31542486,0.22825027){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$D$\end{tabular}}}}%
+    \put(0.3309798,0.00619173){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(5,1)\end{tabular}}}}%
+    \put(0.07527774,0.20489687){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
+    \put(0.29024775,0.12638456){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R'$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{wide_.pdf}}%
-    \put(0.6490607,0.22697955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C'$\end{tabular}}}}%
-    \put(0.74879846,0.2938504){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
-    \put(0.81893865,0.22697955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$D'$\end{tabular}}}}%
-    \put(0.61867171,0.3572453){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B$\end{tabular}}}}%
-    \put(0.35426759,0.3572453){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$A$\end{tabular}}}}%
-    \put(0.44681199,0.43665975){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 1\end{tabular}}}}%
+    \put(0.68196565,0.12489263){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L''$\end{tabular}}}}%
+    \put(0.79906671,0.20340511){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
+    \put(0.88141751,0.12489263){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R''$\end{tabular}}}}%
+    \put(0.64628653,0.27783634){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
+    \put(0.33585248,0.27783634){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L$\end{tabular}}}}%
+    \put(0.44450781,0.37107594){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{wide_.pdf}}%
-    \put(1.27318759,-4.39770929){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.08282857\unitlength}\raggedright \end{minipage}}}%
-    \put(0.42735685,0.09011905){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F'$\end{tabular}}}}%
-    \put(0.32152565,0.09011905){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E'$\end{tabular}}}}%
+    \put(1.41474604,-5.30490199){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.27133676\unitlength}\raggedright \end{minipage}}}%
+    \put(0.9244247,0.00618657){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,3)\end{tabular}}}}%
+    \put(-0.00271789,0.00619173){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,5)\end{tabular}}}}%
+    \put(0.16383271,0.00618657){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(9,4)\end{tabular}}}}%
+    \put(0.59014715,0.00618657){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{wide_.pdf}}%
-    \put(0.78190265,0.00526926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(-1,-1)\end{tabular}}}}%
-    \put(0.92866873,0.00526926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
-    \put(0.87700796,0.17795141){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 3\end{tabular}}}}%
-    \put(0.93226704,0.09011508){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F'''$\end{tabular}}}}%
-    \put(0.81661375,0.09011508){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E'''$\end{tabular}}}}%
+    \put(0.15723856,0.09084137){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C'$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{wide_.pdf}}%
-    \put(-0.00231489,0.00527365){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,-2)\end{tabular}}}}%
-    \put(0.13954021,0.00526926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
-    \put(0.14313845,0.09011905){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F$\end{tabular}}}}%
-    \put(0.03730729,0.09011905){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=7]{wide_.pdf}}%
-    \put(0.50266884,0.00527365){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,-2)\end{tabular}}}}%
-    \put(0.64452398,0.00526926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
-    \put(0.64812222,0.09011919){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F''$\end{tabular}}}}%
-    \put(0.54229095,0.09011919){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E''$\end{tabular}}}}%
-    \put(0.00414295,0.17800564){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 3\end{tabular}}}}%
-    \put(0.51178668,0.17800564){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 3\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=8]{wide_.pdf}}%
   \end{picture}%
 \endgroup%
