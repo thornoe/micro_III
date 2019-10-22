@@ -3,8 +3,8 @@
 \maketitle
 
 % Select what to do with command \intuition:
-  % \newcommand{\intuition}[1]{\par {[...] \par}}  % intuition not shown
-  \newcommand{\intuition}[1]{\par {#1 \par}} % intuition shown
+  %\newcommand{\intuition}[1]{[...]}  % intuition not shown
+  \newcommand{\intuition}[1]{#1} % intuition shown
 
 
 % ------------------------------------------------------------------------------
@@ -100,20 +100,8 @@
               &(S, F', O'');\ (S, F', F'')\ \}\\
       S_2=\{\ &O\ ;\ F\ \}
     \end{align*}
-    \vfill\null \columnbreak
-    \begin{figure}[!h]
-      \center
-      \def\svgwidth{\columnwidth}
-      \import{figures/}{2_.pdf_tex}
-    \end{figure}
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{PS5, Ex. 2.b (A): Extended Battle of the Sexes Game (strategy sets)}
-  \begin{multicols}{2}
     \begin{itemize}
-      \item[(b)] Write up the normal form (bi-matrix).
+      \item[(b)] \textbf{\textit{Write up the normal form (bi-matrix).}}
     \end{itemize}
     \vfill\null \columnbreak
     \begin{figure}[!h]
@@ -124,6 +112,7 @@
     \vfill\null
   \end{multicols}
 \end{frame}
+
 \begin{frame}{PS5, Ex. 2.b (A): Extended Battle of the Sexes Game (strategy sets)}
   \begin{multicols}{2}
     \begin{itemize}
@@ -144,6 +133,9 @@
         & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
       \end{tabular}
     \end{table}
+    \begin{itemize}
+      \item[(c)] \textbf{\textit{Find the Nash Equilibria.}}
+    \end{itemize}
     \vfill\null \columnbreak
     \begin{figure}[!h]
       \center
@@ -154,35 +146,6 @@
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS5, Ex. 2.c (A): Extended Battle of the Sexes Game (strategy sets)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(c)] Find the Nash Equilibria.
-    \end{itemize}
-    \begin{table}
-      \begin{tabular}{cl|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{O} & \multicolumn{1}{c}{F} \\\cline{3-4}
-        \parbox[t]{1mm}{\multirow{8}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
-        & (G, O', O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
-        & (G, O', F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (G, F', O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
-        & (G, F', F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (S, O', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S, O', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S, F', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-      \end{tabular}
-    \end{table}
-    \vfill\null \columnbreak
-    \begin{figure}[!h]
-      \center
-      \def\svgwidth{\columnwidth}
-      \import{figures/}{2_.pdf_tex}
-    \end{figure}
-    \vfill\null
-  \end{multicols}
-\end{frame}
 \begin{frame}{PS5, Ex. 2.c (A): Extended Battle of the Sexes Game (strategy sets)}
   \begin{multicols}{2}
     \begin{itemize}
@@ -210,6 +173,9 @@
         & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
       \end{tabular}
     \end{table}
+    \begin{itemize}
+      \item[(d)] \textbf{\textit{Find the backwards induction outcome.}}
+    \end{itemize}
     \vfill\null \columnbreak
     \begin{figure}[!h]
       \center
@@ -225,36 +191,7 @@
     \begin{itemize}
       \item[(d)] Find the backwards induction outcome.
     \end{itemize}
-    \begin{table}
-      \begin{tabular}{cl|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{O} & \multicolumn{1}{c}{F} \\\cline{3-4}
-        \parbox[t]{1mm}{\multirow{8}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
-        & (G, O', O'') & \textcolor{red}{3}, \textcolor{blue}{1} & 0, 0 \\\cline{3-4}
-        & (G, O', F'') & \textcolor{red}{3}, 1 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (G, F', O'') & 0, \textcolor{blue}{0} & 0, \textcolor{blue}{0} \\\cline{3-4}
-        & (G, F', F'') & 0, 0 & 1, \textcolor{blue}{3} \\\cline{3-4}
-        & (S, O', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S, O', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S, F', O'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-        & (S, F', F'') & 2, \textcolor{blue}{2} & \textcolor{red}{2}, \textcolor{blue}{2} \\\cline{3-4}
-      \end{tabular}
-    \end{table}
-    \vfill\null \columnbreak
-    \begin{figure}[!h]
-      \center
-      \def\svgwidth{\columnwidth}
-      \import{figures/}{2_.pdf_tex}
-    \end{figure}
-    \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{PS5, Ex. 2.d (A): Extended Battle of the Sexes Game (strategy sets)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(d)] Find the backwards induction outcome.
-    \end{itemize}
-    BI gives the unique SPNE:
+    BI gives the unique Subgame Perfect NE:
     \begin{align*}
       SPNE=\{s_1^{*},s_2^{*}\}=\{(S, O', F''), F\}
     \end{align*}
@@ -319,7 +256,7 @@
     \end{align*}
     \vfill\null \columnbreak
     \begin{itemize}
-      \item[(b)] Explain why this kind of equilibrium does not survive backwards induction unless $\widehat{q_1}=BR_1\left(BR_2(q_1)\right)$, which is the Stackelberg outcome we derived in the lecture.
+      \item[(b)] \textbf{\textit{Explain why this kind of equilibrium does not survive backwards induction unless $\bm{\widehat{q_1}=BR_1\left(BR_2(q_1)\right)}$, which is the Stackelberg outcome we derived in the lecture.}}
     \end{itemize}
     \vfill\null
   \end{multicols}
@@ -367,20 +304,36 @@
 
 \begin{frame}{PS5, Ex. 4.a: The Mutated Seabass (backwards induction)}
   \begin{itemize}
-    \item[(a)] Draw the game tree that corresponds to the game. What are the strategies of the players?
+    \item[(a)] Draw the game tree that corresponds to the game. \textbf{\textit{What are the strategies of the players?}}
   \end{itemize}
-  \vspace{-8pt}
-  \begin{align*}
-    S_A=\{ &(Acquire, a, a'), (Acquire, a, na'), (Acquire, na, a'), (Acquire, na, na'),\\
-            &(Not\ acquire, a, a'), (Not\ acquire, a, na'), (Not\ acquire, na, a'), (Not\ acquire, na, na') \}\\
-    S_B=\{ &(A, A'), (A, NA'), (NA, A'), (NA, NA') \}
-  \end{align*}
   \vspace{-8pt}
   \begin{figure}[!h]
     \center
     \def\svgwidth{\columnwidth}
     \import{figures/}{4a.pdf_tex}
   \end{figure}
+  \vfill\null
+\end{frame}
+\begin{frame}{PS5, Ex. 4.a: The Mutated Seabass (backwards induction)}
+  \begin{itemize}
+    \item[(a)] Draw the game tree that corresponds to the game. What are the strategies of the players?
+  \end{itemize}
+  \vspace{-8pt}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{\columnwidth}
+    \import{figures/}{4a.pdf_tex}
+  \end{figure}
+  \vspace{-8pt}
+  \begin{align*}
+    S_A=\{ &(Acquire, a, a'); (Acquire, a, na'); (Acquire, na, a'); (Acquire, na, na');\\
+            &(Not\ acquire, a, a'); (Not\ acquire, a, na'); (Not\ acquire, na, a'); (Not\ acquire, na, na') \}\\
+    S_B=\{ &(A, A'); (A, NA'); (NA, A'); (NA, NA') \}
+  \end{align*}
+  \vspace{-12pt}
+  \begin{itemize}
+    \item[(b)] \textbf{\textit{What is the backwards induction outcome?}}
+  \end{itemize}
   \vfill\null
 \end{frame}
 
@@ -400,7 +353,31 @@
     \import{figures/}{4b.pdf_tex}
   \end{figure}
   \vspace{-4pt}
-  $SPNE=\{S_A,S_B\}=\{ (Not\ acquire, a, na'),(A, NA') \}$
+  $BI=SPNE=\{S_A,S_B\}=\{ (Not\ acquire, a, na'),(A, NA') \}$
+  \vfill\null
+\end{frame}
+\begin{frame}{PS5, Ex. 4.b: The Mutated Seabass (backwards induction)}
+  \vspace{-4pt}
+  \begin{itemize}
+    \item[]
+    \begin{itemize}\normalsize
+      \item[\nth{3} stage:] Org. A will choose to attack if having acquired the weapon and not attack if not having acquired the weapon.
+      \item[\nth{2} stage:] Org. B will choose to attack if Org. A has acquired the weapon and not attack if they have not acquired the weapon.
+      \item[\nth{1} stage:] Org. A will choose to not acquire the weapon in order to signal peaceful intentions to Org. B, i.e. giving the payoffs $(0,0)$.
+    \end{itemize}
+  \end{itemize}
+  \vspace{-8pt}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{\columnwidth}
+    \import{figures/}{4b.pdf_tex}
+  \end{figure}
+  \vspace{-4pt}
+  $BI=SPNE=\{S_A,S_B\}=\{ (Not\ acquire, a, na'),(A, NA') \}$
+  \vspace{-2pt}
+  \begin{itemize}
+    \item[(c)] \textbf{\textit{What is the intuition for the outcome?}}
+  \end{itemize}
   \vfill\null
 \end{frame}
 
@@ -408,9 +385,9 @@
     \begin{itemize}
       \item[(c)] What is the intuition for the outcome?
       \begin{itemize}\normalsize
-        \item[\nth{3} stage:] Org. A does only benefit from attacking if having acquired the weapon.
-        \item[\nth{2} stage:] Org. B will only choose to attack if Org. A has acquired the weapon.
-        \item[\nth{1} stage:] Not acquiring the weapon is a credible signal that Org. A will not attack.
+        \item[\nth{3} stage:] \intuition{Org. A does only benefit from attacking if having acquired the weapon.}
+        \item[\nth{2} stage:] \intuition{Org. B will only choose to attack if Org. A has acquired the weapon.}
+        \item[\nth{1} stage:] \intuition{Not acquiring the weapon is a credible signal that Org. A will not attack.}
       \end{itemize}
     \end{itemize}
     \vspace{-8pt}
@@ -419,8 +396,8 @@
       \def\svgwidth{\columnwidth}
       \import{figures/}{4b.pdf_tex}
     \end{figure}
-    What role do you think it plays that B observes if A acquires the weapon or not?\\
-    I.e. what is the outcome if Organization A cannot send a signal in the \nth{1} stage?
+    \textbf{\textit{What role do you think it plays that B observes if A acquires the weapon or not?\\
+    I.e. what is the outcome if Organization A cannot send a signal in the \nth{1} stage?}}
   \vfill\null
 \end{frame}
 \begin{frame}{PS5, Ex. 4.c: The Mutated Seabass (backwards induction)}
@@ -515,7 +492,7 @@
       \end{tabular}
     \end{table}
     Iterated Elimination of Strictly Dominated Strategies (IESDS): For player 1, A is strictly dominated by B. In the reduced form game, C and E are strictly dominated for Player 2 and 3 respectively.\\\medskip
-    $\Rightarrow$ Pure Strategy Nash Equilibrium: $\{B,D,F\}$ with outcome (2,2,1).
+    $IESDS \Rightarrow$ Pure Strategy NE: $PSNE=\{S_1,S_2,S_3\}=\{B,D,F\}$ with outcome (2,2,1).
   \vfill\null
 \end{frame}
 
@@ -562,14 +539,14 @@
       \def\svgwidth{\columnwidth}
       \import{figures/}{5b.pdf_tex}
     \end{figure}
-    $\Rightarrow$ Subgame Perfect NE: $\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+    $BI \Rightarrow SPNE=\{S_1,S_2,S_3\}=\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
   \vfill\null
 \end{frame}
 
 \begin{frame}{PS5, Ex. 5.c: Three player game (backwards induction)}
     \begin{itemize}
-      \item[(a)] $PSNE=\{B,D,F\}$ with outcome (2,2,1).
-      \item[(b)] $SPNE=\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+      \item[(a)] $IESDS \Rightarrow PSNE=\{S_1,S_2,S_3\}=\{B,D,F\}$ with outcome (2,2,1).
+      \item[(b)] $BI \Rightarrow SPNE=\{S_1,S_2,S_3\}=\{A,(C,D'),(E,E',F'',F''')\}$ w. outcome (5,2,2).
     \end{itemize}
     \vspace{-10pt}
     \begin{figure}[!h]
@@ -584,8 +561,8 @@
 \end{frame}
 \begin{frame}{PS5, Ex. 5.c: Three player game (backwards induction)}
     \begin{itemize}
-      \item[(a)] $PSNE=\{B,D,F\}$ with outcome (2,2,1).
-      \item[(b)] $SPNE=\{A,(C,D'),(E,E',F'',F''')\}$ with outcome (5,2,2).
+      \item[(a)] $IESDS \Rightarrow PSNE=\{S_1,S_2,S_3\}=\{B,D,F\}$ with outcome (2,2,1).
+      \item[(b)] $BI \Rightarrow SPNE=\{S_1,S_2,S_3\}=\{A,(C,D'),(E,E',F'',F''')\}$ w. outcome (5,2,2).
     \end{itemize}
     \vspace{-6pt}
     \begin{figure}[!h]
@@ -596,8 +573,8 @@
     \begin{itemize}
       \item[(c)] Discuss the differences in the results you find.
     \end{itemize}
-    \textbf{In the static game:} $(A,C,E)$ with outcome (5,2,2) cannot be a solution. Player 2 and 3 will not play $C$ and $E$ as they expect player 1 to play $B$ instead and get (6,0,1).\\\medskip
-    \textbf{In the dynamic game:} Player 1 can expect at higher payoff on the left side of the tree than on the right side, thus, commits to $A$, allowing Player 2 and 3 to play $C$ and $E$.
+    \textbf{In the static game:} \intuition{$(A,C,E)$ with outcome (5,2,2) cannot be a solution. Player 2 and 3 will not play $C$ and $E$ as they expect player 1 to play $B$ instead and get (6,0,1).}\\\medskip
+    \textbf{In the dynamic game:} \intuition{Player 1 can expect at higher payoff on the left side of the tree than on the right side, thus, commits to $A$, allowing Player 2 and 3 to play $C$ and $E$.}
   \vfill\null
 \end{frame}
 
@@ -707,14 +684,36 @@
 \begin{frame}{PS5, Ex. 7.a: Dynamic game (proper subgames)}
   \begin{multicols}{2}
     \begin{itemize}
+      \item[(a)] Write down the strategies of the two players. \textbf{\textit{How many proper subgames are there (so not including the entire game itself)?}}
+    \end{itemize}
+    The two strategy sets are:
+    \begin{align*}
+      S_1=\{\ &(L, L''); (L, R''); (R, L''); (R, R'')\ \}\\
+      S_2=\{\ &L'\ ;\ R'\ \}
+    \end{align*}
+    \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{1_.pdf_tex}
+    \end{figure}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 7.a: Dynamic game (proper subgames)}
+  \begin{multicols}{2}
+    \begin{itemize}
       \item[(a)] Write down the strategies of the two players. How many proper subgames are there (so not including the entire game itself)?
     \end{itemize}
     The two strategy sets are:
     \begin{align*}
       S_1=\{\ &(L, L''); (L, R''); (R, L''); (R, R'')\ \}\\
-      S_2=\{\ &L'\ ; R'\ \}
+      S_2=\{\ &L'\ ;\ R'\ \}
     \end{align*}
     There are two proper subgames.
+    \begin{itemize}
+      \item[(b)] \textbf{\textit{Write down the Subgame-Perfect Nash Equilibrium (SPNE). Compare the SPNE to the backwards-induction outcome which you found in question 1.}}
+    \end{itemize}
     \vfill\null \columnbreak
     \begin{figure}[!h]
       \center
@@ -729,38 +728,14 @@
   \begin{multicols}{2}
     \begin{itemize}
       \item[(b)] Write down the Subgame-Perfect Nash Equilibrium (SPNE). Compare the SPNE to the backwards-induction outcome which you found in question 1.
+      \vspace{6pt}
+      \begin{itemize}\normalsize
+        \item[Turquoise game:] $SPNE_T=\{s_1^{*}\}=\{R''\}$
+        \item[Purple game:] $SPNE_P=\{s_1^{*},s_2^{*}\}=\{R'',L'\}$
+        \item[Entire game:] $SPNE_E=\{(R\ R''),L'\}$
+      \end{itemize}
     \end{itemize}
-    \vfill\null \columnbreak
-    \begin{figure}[!h]
-      \center
-      \def\svgwidth{\columnwidth}
-      \import{figures/}{7a.pdf_tex}
-    \end{figure}
-    \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{PS5, Ex. 7.b: Dynamic game (proper subgames)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(b)] Write down the Subgame-Perfect Nash Equilibrium (SPNE). Compare the SPNE to the backwards-induction outcome which you found in question 1.
-    \end{itemize}
-    \begin{align*}
-      SPNE=(s_1^{*},s_2^{*})=(R\ R'',\ L')
-    \end{align*}
     Which coincides with the backwards induction solution from Exercise 1!
-    \vfill\null \columnbreak
-    \begin{figure}[!h]
-      \center
-      \def\svgwidth{\columnwidth}
-      \import{figures/}{7b.pdf_tex}
-    \end{figure}
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{PS5, Ex. 7.c: Dynamic game (proper subgames)}
-  \begin{multicols}{2}
-    Consider the game from exercise 1.
     \begin{itemize}
       \item[(c)] \textbf{\textit{Write down the normal form of the game}} and find all (pure strategy) Nash equilibria. Compare to the set of SPNE and comment.
     \end{itemize}
@@ -773,9 +748,9 @@
     \vfill\null
   \end{multicols}
 \end{frame}
+
 \begin{frame}{PS5, Ex. 7.c: Dynamic game (proper subgames)}
   \begin{multicols}{2}
-    Consider the game from exercise 1.
     \begin{itemize}
       \item[(c)] Write down the normal form of the game and \textbf{\textit{find all (pure strategy) Nash equilibria}}. Compare to the set of SPNE and comment.
     \end{itemize}
@@ -802,9 +777,8 @@
 \end{frame}
 \begin{frame}{PS5, Ex. 7.c: Dynamic game (proper subgames)}
   \begin{multicols}{2}
-    Consider the game from exercise 1.
     \begin{itemize}
-      \item[(c)] Write down the normal form of the game and \textbf{\textit{find all (pure strategy) Nash equilibria}}. Compare to the set of SPNE and comment.
+      \item[(c)] Write down the normal form of the game and find all (pure strategy) Nash equilibria. \textbf{\textit{Compare to the set of SPNE and comment.}}
     \end{itemize}
     \vspace{-10pt}
     \begin{table}
@@ -820,8 +794,44 @@
     \end{table}
     \vspace{-10pt}
     \begin{align*}
-      PSNE=\{ \}
+      PSNE=\{\ &(L, L''),R';\\
+               &(L, R''),R';\\
+               &(R, R''),L'\ \}
     \end{align*}
+    \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{7b.pdf_tex}
+    \end{figure}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 7.c: Dynamic game (proper subgames)}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(c)] Write down the normal form of the game and find all (pure strategy) Nash equilibria. Compare to the set of SPNE and comment.
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L'} & \multicolumn{1}{c}{R'} \\\cline{3-4}
+        \parbox[t]{1mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\color{red}Player 1}}}
+        & (L, L'') & 1, \textcolor{blue}{4} & \textcolor{red}{1}, \textcolor{blue}{4} \\\cline{3-4}
+        & (L, R'') & 1, \textcolor{blue}{4} & \textcolor{red}{1}, \textcolor{blue}{4} \\\cline{3-4}
+        & (R, L'') & 1, 0 & 0, \textcolor{blue}{2} \\\cline{3-4}
+        & (R, R'') & \textcolor{red}{2}, \textcolor{blue}{3} & 0, 2 \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    \vspace{-10pt}
+    \begin{align*}
+      PSNE=\{\ &(L, L''),R';\\
+               &(L, R''),R';\\
+               &(R, R''),L'\ \}
+    \end{align*}
+    How is it, that $(L, L''),R'$ and $(L, R''),R'$ are not Subgame Perfect Nash Equilibria?\\\medskip
+    \intuition{They rely on empty threats (Player 2 playing $R'$ and Player 1 playing $L''$).}
     \vfill\null \columnbreak
     \begin{figure}[!h]
       \center
@@ -839,6 +849,11 @@
 \begin{frame}{PS5, Ex. 8: }
   \begin{multicols}{2}
     \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{8.pdf_tex}
+    \end{figure}
     \vfill\null
   \end{multicols}
 \end{frame}
