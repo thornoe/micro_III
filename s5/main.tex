@@ -2,9 +2,9 @@
 \begin{document}
 \maketitle
 
-% Select what to do with command \intuition:
-  %\newcommand{\intuition}[1]{[...]}  % intuition not shown
+% Select what to do with command \intuition{}:
   \newcommand{\intuition}[1]{#1} % intuition shown
+  %\newcommand{\intuition}[1]{[...]}  % intuition not shown
 
 
 % ------------------------------------------------------------------------------
@@ -62,7 +62,7 @@
     \begin{itemize}
       \item[(a)] Write up the strategy sets of the players.
       \item[(b)] Write up the normal form (bi-matrix).
-      \item[(c)] Find the Nash Equilibria.
+      \item[(c)] Find the (Pure Strategy) Nash Equilibria.
       \item[(d)] Find the backwards induction outcome.
     \end{itemize}
     \vfill\null \columnbreak
@@ -122,7 +122,7 @@
       \end{tabular}
     \end{table}
     \begin{itemize}
-      \item[(c)] \textbf{\textit{Find the Nash Equilibria.}}
+      \item[(c)] \textbf{\textit{Find the (Pure Strategy) Nash Equilibria.}}
     \end{itemize}
     \vfill\null \columnbreak
     \begin{figure}[!h]
@@ -137,15 +137,15 @@
 \begin{frame}{PS5, Ex. 2.c (A): Extended Battle of the Sexes Game (strategy sets)}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(c)] Find the Nash Equilibria.
+      \item[(c)] Find the (Pure Strategy) Nash Equilibria.
     \end{itemize}
-    The five NE are:
+    The five PSNE are:
     \begin{align*}
-      NE=\{\  &(G, O', O''), O\ ;\ (S, O', O''), F\ ;\\
+      PSNE=\{\  &(G, O', O''), O\ ;\ (S, O', O''), F\ ;\\
               &(S, O', F''), F\ ;\ (S, F', O''), F\ ;\\
               &(S, F', F''), F\ \}
     \end{align*}
-    \vspace{-30pt}
+    \vspace{-16pt}
     \begin{table}
       \begin{tabular}{cl|c|c|}
         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
@@ -183,7 +183,7 @@
     \begin{align*}
       SPNE=\{s_1^{*},s_2^{*}\}=\{(S, O', F''), F\}
     \end{align*}
-    The NE $\{(G, O', O''), O\}$ is not subgame perfect as player 1's strategy is weakly dominated by $(G, O', F'')$. A SPNE needs to be rational on and off the equilibrium path, thus, $O''$ is an empty threat.
+    The PSNE $\{(G, O', O''), O\}$ is not subgame perfect as player 1's strategy is weakly dominated by $(G, O', F'')$. A SPNE needs to be rational on and off the equilibrium path, thus, $O''$ is an empty threat.
     \vspace{-8pt}
     \begin{table}
       \begin{tabular}{cl|c|c|}
@@ -331,7 +331,7 @@
     \begin{itemize}\normalsize
       \item[\nth{3} stage:] Org. A will choose to attack if having acquired the weapon and not attack if not having acquired the weapon.
       \item[\nth{2} stage:] Org. B will choose to attack if Org. A has acquired the weapon and not attack if they have not acquired the weapon.
-      \item[\nth{1} stage:] Org. A will choose to not acquire the weapon in order to signal peaceful intentions to Org. B, i.e. giving the payoffs $(0,0)$.
+      \item[\nth{1} stage:] Org. A will commit to not acquiring the weapon in order to signal peaceful intentions to Org. B, i.e. leading to the payoffs $(0,0)$.
     \end{itemize}
   \end{itemize}
   \vspace{-8pt}
@@ -351,7 +351,7 @@
     \begin{itemize}\normalsize
       \item[\nth{3} stage:] Org. A will choose to attack if having acquired the weapon and not attack if not having acquired the weapon.
       \item[\nth{2} stage:] Org. B will choose to attack if Org. A has acquired the weapon and not attack if they have not acquired the weapon.
-      \item[\nth{1} stage:] Org. A will choose to not acquire the weapon in order to signal peaceful intentions to Org. B, i.e. giving the payoffs $(0,0)$.
+      \item[\nth{1} stage:] Org. A will commit to not acquiring the weapon in order to signal peaceful intentions to Org. B, i.e. leading to the payoffs $(0,0)$.
     \end{itemize}
   \end{itemize}
   \vspace{-8pt}
@@ -375,7 +375,7 @@
       \begin{itemize}\normalsize
         \item[\nth{3} stage:] \intuition{Org. A does only benefit from attacking if having acquired the weapon.}
         \item[\nth{2} stage:] \intuition{Org. B will only choose to attack if Org. A has acquired the weapon.}
-        \item[\nth{1} stage:] \intuition{Not acquiring the weapon is a credible signal that Org. A will not attack.}
+        \item[\nth{1} stage:] \intuition{Due to the order of the game, not acquiring the weapon is a precommitment that sends the credible signal that Org. A will not attack in the last stage.}
       \end{itemize}
     \end{itemize}
     \vspace{-8pt}
@@ -743,7 +743,7 @@
     \vfill\null
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}y_1\end{math} and \begin{math}BR_2(y_1)\end{math}
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -764,8 +764,38 @@
     \vfill\null
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
-      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}y_1\end{math} and \begin{math}BR_2(y_1)\end{math}
+      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}y_1\end{math} and \begin{math}BR_2(y_1)\end{math}
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+        \item[5] $Payoff_1(y_1,BR_2(y_1))$: $U_1(y_1,\frac{y_1}{2}) = y_1*\frac{y_1}{2}-\frac{1}{3}y_1^3$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.b: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(b)] Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}y_1\end{math} and \begin{math}BR_2(y_1)\end{math}
+      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}y_1\end{math} and \begin{math}BR_2(y_1)\end{math}:
+      \begin{align*}
+          FOC:            &\ y_1 - y_1^2 = 0\\
+          BR_1(BR_2(y_1)):&\ y_1 = y_1^2\\
+              \Rightarrow &\ y_1=0\vee y_1=1
+      \end{align*}
+      Of the two roots, $y_1=1$ is the best response as the payoff is positive.
+      \item[(Step 3)] Use the value for $y_1$ to find $y_2$ and write up the SPNE:
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -787,35 +817,9 @@
     \vfill\null
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
-      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
-      \item[(Step 3)] Use the value for $x_1$ to find $x_2$ and write up the SPNE:
-    \end{itemize}
-    \vfill\null \columnbreak
-    Information so far:
-    \begin{itemize}
-        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
-        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
-        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
-        \item[4] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
-        \item[5] $Payoff_1(y_1,BR_2(y_1))$: $U_1(y_1,\frac{y_1}{2}) = y_1*\frac{y_1}{2}-\frac{1}{3}y_1^3$ \\
-        \item[6] $FOC$: $0 = y_1 - y_1^2$ \\
-        \item[7] $BR_1(BR_2(y_1))$: $y_1 = y_1^2 \Rightarrow y_1=1$ \\
-    \end{itemize}
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{PS5, Ex. 6.b: Stackelberg assignment (backwards induction)}
-    \begin{itemize}
-    \item[(b)] Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.
-    \end{itemize}
-    \vfill\null
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
-      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
-      \item[(Step 3)] Use the value for $x_1$ to find $x_2$ and write up the SPNE:
+      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}y_1\end{math} and \begin{math}BR_2(y_1)\end{math}
+      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}y_1\end{math} and \begin{math}BR_2(y_1)\end{math}
+      \item[(Step 3)] Use the value for $y_1$ to find $y_2$ and write up the SPNE:
       \begin{align*}
           y_1&=1\\
           y_2&=\frac{y_1}{2}=\frac{1}{2}
@@ -830,7 +834,7 @@
         \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
         \item[4] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
         \item[5] $Payoff_1(y_1,BR_2(y_1))$: $U_1(y_1,\frac{y_1}{2}) = y_1*\frac{y_1}{2}-\frac{1}{3}y_1^3$ \\
-        \item[6] $FOC$: $0 = y_1 - y_1^2$ \\
+        \item[6] $FOC$: $y_1 - y_1^2 = 0$ \\
         \item[7] $BR_1(BR_2(y_1))$: $y_1 = y_1^2 \Rightarrow y_1=1$ \\
     \end{itemize}
     \vfill\null
@@ -1286,7 +1290,7 @@
   \end{itemize}
   Looking at the last tier of subgames, P2 would play respectively L' and R'. Knowing this strategy of P2, P1's payoff for L is 1 and R is 2, so he will choose R:
   \begin{align*}
-      \Rightarrow SPNE=(L,L'R'')
+      \Rightarrow SPNE=\{R,(L',R'')\}
   \end{align*}
   \begin{figure}[!h]
     \center
@@ -1317,14 +1321,14 @@
       & R & 0, 0 & \textcolor{red}{2}, \textcolor{blue}{3} & 0, 0 & 2, \textcolor{blue}{3} & 0, 0 & 2, \textcolor{blue}{3} \\\cline{3-8}
     \end{tabular}
   \end{table}
-    PSNE are $\{(L,L'L''),(R,L'R'')\}$
+    PSNE are $\{L,(L'L'');R,(L'R'')\}$
   \vfill\null
 \end{frame}
 
 
-\section{PS5, Ex. 9: Dynamic games (proper subgames)}
+\section{PS5, Ex. 9: Dynamic games (proper subgames / indifference)}
 
-\begin{frame}{PS5, Ex. 9: Dynamic games (proper subgames)}
+\begin{frame}{PS5, Ex. 9: Dynamic games (proper subgames / indifference)}
   (Voluntary, if there is enough time) Answer the following questions for the two games below:
   \begin{itemize}
     \item What are the strategies of the players?
@@ -1360,7 +1364,7 @@
               &(R,R,L);(R,R,R);\}
       \end{align*}
       \item There are 4 proper subgames.
-      \item $SPNE=\{R,L,(R,L,L)\}$ \\
+      \item $SPNE=\{R,L,(R,R,L)\}$ \\
             with outcome (5,4,4).
     \end{itemize}
     \vfill\null \columnbreak
@@ -1369,7 +1373,7 @@
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS5, Ex. 9.b: Dynamic games (proper subgames)}
+\begin{frame}{PS5, Ex. 9.b: Dynamic games (indifference)}
   \begin{multicols}{2}
     (b) \textbf{\textit{Answer the following questions:}}
     \begin{itemize}
@@ -1382,7 +1386,28 @@
     \vfill\null
   \end{multicols}
 \end{frame}
-\begin{frame}{PS5, Ex. 9.b: Dynamic games (proper subgames)}
+\begin{frame}{PS5, Ex. 9.b: Dynamic games (indifference)}
+  \begin{multicols}{2}
+    (b)
+    \begin{itemize}
+      \item Strategy sets (same as in 9.a):
+      \begin{align*}
+        S_1=\{&L;R\}\\
+        S_2=\{&L;R\}\\
+        S_3=\{&(L,L,L);(L,L,R);\\
+              &(L,R,L);(L,R,R);\\
+              &(R,L,L);(R,L,R);\\
+              &(R,R,L);(R,R,R);\}
+      \end{align*}
+      \item There are 4 proper subgames.
+      \item \textbf{\textit{At two different nodes, a player can be indifferent. Solve for each case.}}
+    \end{itemize}
+    \vfill\null \columnbreak
+    \includegraphics[width=1.2\columnwidth]{figures/Set_5_figure_2}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 9.b: Dynamic games (indifference)}
   \begin{multicols}{2}
     (b)
     \begin{itemize}
