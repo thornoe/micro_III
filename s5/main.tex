@@ -16,18 +16,6 @@
 
 
 
-\section{Kahoot!}
-
-\begin{frame}{Kahoot: A exercises}
-  Form a group for each table:
-  \begin{itemize}
-    \item Get prepared to answer the three A exercises as a team (5 min).
-  \end{itemize}
-  \includegraphics[width=\textwidth]{figures/kahoot}
-\end{frame}
-
-
-
 \section{PS5, Ex. 1 (A): Dynamic game (backwards induction)}
 
 \begin{frame}{PS5, Ex. 1 (A): Dynamic game (backwards induction)}
@@ -621,6 +609,7 @@
   \begin{itemize}
     \item[(a)] Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.
   \end{itemize}
+    \vfill\null
   \begin{multicols}{2}
     \vfill\null \columnbreak
     Information so far:\\\medskip
@@ -630,16 +619,221 @@
   \end{multicols}
 \end{frame}
 
+\begin{frame}{PS5, Ex. 6.a: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(a)] Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the payoff functions
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+    \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    \item[3] $Payoff_i$: $U_i(y_i,y_j) = q(y_1,y_2)-C_i(y_i).$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.a: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(a)] Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the payoff functions
+      \item[(Step 2)] Write up the FOC and find the best response functions
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+    \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    \item[3] $Payoff_i$: $U_i(y_i,y_j) = q(y_1,y_2)-C_i(y_i).$ \\
+    \item[4] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+    \item[5] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.a: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(a)] Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the payoff functions
+      \item[(Step 2)] Write up the FOC and find the best response functions
+      \item[(Step 3)] This is not a symmetric game, so you have to substitute $BR_i$ into $BR_j$ and then isolate $y_i$ and insert it into $BR_j$:
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+    \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    \item[3] $Payoff_i$: $U_i(y_i,y_j) = q(y_1,y_2)-C_i(y_i).$ \\
+    \item[4] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+    \item[5] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+    \item[6] $BR_1(y_2)$: $y_1 = y_2^{1/2}$ \\
+    \item[7] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.a: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(a)] Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the payoff functions
+      \item[(Step 2)] Write up the FOC and find the best response functions
+      \item[(Step 3)] This is not a symmetric game, so you have to substitute $BR_i$ into $BR_j$ and then isolate $y_i$ and insert it into $BR_j$:
+      \begin{align*}
+          y_1&=\frac{y_1}{2}^{\frac{1}{2}} \Rightarrow y_1-2y_1^2=0 \Rightarrow y_1=\frac{1}{2} \\
+          y_2&=\frac{\frac{1}{2}}{2}=\frac{1}{4}
+      \end{align*}
+      \item[NE:] \begin{math} \left(\frac{1}{2},\frac{1}{4}\right)\end{math}
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+    \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    \item[3] $Payoff_i$: $U_i(y_i,y_j) = q(y_1,y_2)-C_i(y_i).$ \\
+    \item[4] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+    \item[5] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+    \item[6] $BR_1(y_2)$: $y_1 = y_2^{1/2}$ \\
+    \item[7] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
 \begin{frame}{PS5, Ex. 6.b: Stackelberg assignment (backwards induction)}
-  \begin{itemize}
+    \begin{itemize}
     \item[(b)] Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.
-  \end{itemize}
+    \end{itemize}
+    \vfill\null
   \begin{multicols}{2}
     \vfill\null \columnbreak
-    Information so far:\\\medskip
-    Quality: $q(y_1, y_2) = y_1y_2.$\\
-    Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
-    Payoffs: $U_i(y_i,y_j) = q(y_i,y_j)-C_i(y_i).$
+    Information so far:
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 6.b: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(b)] Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.b: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(b)] Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+        \item[5] $Payoff_1(y_1,BR_2(y_1))$: $U_1(y_1,\frac{y_1}{2}) = y_1*\frac{y_1}{2}-\frac{1}{3}y_1^3$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.b: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(b)] Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+      \item[(Step 3)] Use the value for $x_1$ to find $x_2$ and write up the SPNE:
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+        \item[5] $Payoff_1(y_1,BR_2(y_1))$: $U_1(y_1,\frac{y_1}{2}) = y_1*\frac{y_1}{2}-\frac{1}{3}y_1^3$ \\
+        \item[6] $FOC$: $0 = y_1 - y_1^2$ \\
+        \item[7] $BR_1(BR_2(y_1))$: $y_1 = y_1^2 \Rightarrow y_1=1$ \\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.b: Stackelberg assignment (backwards induction)}
+    \begin{itemize}
+    \item[(b)] Suppose now that Student 1 chooses his effort first, then sends the assignment on to Student 2. Student 2 observes how much exert Student 1 has exerted, makes his own choice of effort, and then submits. Solve by backwards induction.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the new payoff function for player one, where he takes player 2s best response as given. In other words, write his payoff as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+      \item[(Step 2)] Write up the FOC and find the best response function for player 1, as a function of \begin{math}x_1\end{math} and \begin{math}BR_2(x_1)\end{math}
+      \item[(Step 3)] Use the value for $x_1$ to find $x_2$ and write up the SPNE:
+      \begin{align*}
+          y_1&=1\\
+          y_2&=\frac{y_1}{2}=\frac{1}{2}
+      \end{align*}
+      \item[SPNE:] \begin{math}\left(1,\frac{1}{2}\right)\end{math}
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+        \item[5] $Payoff_1(y_1,BR_2(y_1))$: $U_1(y_1,\frac{y_1}{2}) = y_1*\frac{y_1}{2}-\frac{1}{3}y_1^3$ \\
+        \item[6] $FOC$: $0 = y_1 - y_1^2$ \\
+        \item[7] $BR_1(BR_2(y_1))$: $y_1 = y_1^2 \Rightarrow y_1=1$ \\
+    \end{itemize}
+    \vfill\null
   \end{multicols}
 \end{frame}
 
@@ -648,11 +842,38 @@
     \item[(c)] Compare the outcomes in (a) and (b) with respect to the payoffs of the students. Which game does each of the two students prefer? Give an intuitive explanation of your answer.
   \end{itemize}
   \begin{multicols}{2}
+    \begin{itemize}
+        \item[(Step 1)] Calculate the payoffs.
+        \item[(Step 2)] They prefer? 
+    \end{itemize}
     \vfill\null \columnbreak
-    Information so far:\\\medskip
-    Quality: $q(y_1, y_2) = y_1y_2.$\\
-    Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
-    Payoffs: $U_i(y_i,y_j) = q(y_i,y_j)-C_i(y_i).$
+    Relevant information:
+    \begin{itemize}
+        \item[(a)] \begin{math} NE=\left(\frac{1}{2},\frac{1}{4}\right)\end{math}
+        \item[(b)] \begin{math} SPNE=\left(1,\frac{1}{2}\right)\end{math}
+    \end{itemize}
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS5, Ex. 6.c: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(c)] Compare the outcomes in (a) and (b) with respect to the payoffs of the students. Which game does each of the two students prefer? Give an intuitive explanation of your answer.
+  \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+        \item[(Step 1)] Calculate the payoffs.
+        \item[(Step 2)] They prefer?
+        \item[(Player 1)] \intuition{This is a case of second mover advantage, the payoff function means that Player 1 has an incentive to set his effort high, in order to motivate player 2 to do the same}
+        \item[(Player 2)] \intuition{Gets most of the extra benefit, since he can optimize his own effort, without it affecting player 1s effort }
+        \item[(Pref)] Both players prefer the dynamic game! But is it optimal?
+    \end{itemize}
+    \vfill\null \columnbreak
+    Relevant information:
+    \begin{itemize}
+        \item[(a)] \begin{math} NE=\left(\frac{1}{2},\frac{1}{4}\right)\end{math}
+        \item[(a)] \begin{math} Payoffs=\left(\frac{1}{12},\frac{1}{16}\right)\end{math}
+        \item[(b)] \begin{math} SPNE=\left(1,\frac{1}{2}\right)\end{math}
+        \item[(b)] \begin{math} Payoffs=\left(\frac{1}{6},\frac{1}{4}\right)\end{math}
+    \end{itemize}
   \end{multicols}
 \end{frame}
 
@@ -663,9 +884,110 @@
   \begin{multicols}{2}
     \vfill\null \columnbreak
     Information so far:\\\medskip
-    Quality: $q(y_1, y_2) = y_1y_2.$\\
-    Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
-    Payoffs: $U_i(y_i,y_j) = q(y_i,y_j)-C_i(y_i).$
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+    \end{itemize}
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.d: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(d)] Find the socially optimal levels of effort $(y_1^{SO}, y_2^{SO})$, i.e., the levels that maximize the sum of the two students’ payoffs. Calculate the payoff that the two students get in the social optimum.
+  \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the combined payoff function for the players
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:\\\medskip
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+    \end{itemize}
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.d: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(d)] Find the socially optimal levels of effort $(y_1^{SO}, y_2^{SO})$, i.e., the levels that maximize the sum of the two students’ payoffs. Calculate the payoff that the two students get in the social optimum.
+  \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the combined payoff function for the players
+      \item[(Step 2)] Write up the FOCs
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:\\\medskip
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+        \item[5] $Payoff_T(y_1,y_2)$: $U_1(y_1,y_2)+U_2(y_1,y_2) = 2*y_1*y_2-\frac{1}{3}y_1^3 - y_2^2$ \\
+    \end{itemize}
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.d: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(d)] Find the socially optimal levels of effort $(y_1^{SO}, y_2^{SO})$, i.e., the levels that maximize the sum of the two students’ payoffs. Calculate the payoff that the two students get in the social optimum.
+  \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the combined payoff function for the players
+      \item[(Step 2)] Write up the FOCs
+      \item[(Step 3)] Subsitute $FOC_i$ into $FOC_j$ and isolate $y_i$, then insert $y_i$ into $FOC_j$ and calculate the payoffs:
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:\\\medskip
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+        \item[5] $Payoff_T(y_1,y_2)$: $U_1(y_1,y_2)+U_2(y_1,y_2) = 2*y_1*y_2-\frac{1}{3}y_1^3 - y_2^2$ \\
+        \item[5] $FOC_{y_1}: 0=2y_2-y_1^2 \Rightarrow y_1=(2y_2)^{\frac{1}{2}}$ \\
+        \item[5] $FOC_{y_2}: 0=2y_1-2y_2 \Rightarrow y_2=y_1$ \\
+    \end{itemize}
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS5, Ex. 6.d: Stackelberg assignment (backwards induction)}
+  \begin{itemize}
+    \item[(d)] Find the socially optimal levels of effort $(y_1^{SO}, y_2^{SO})$, i.e., the levels that maximize the sum of the two students’ payoffs. Calculate the payoff that the two students get in the social optimum.
+  \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the combined payoff function for the players
+      \item[(Step 2)] Write up the FOCs
+      \item[(Step 3)] Subsitute $FOC_i$ into $FOC_j$ and isolate $y_i$, then insert $y_i$ into $FOC_j$ and calculate the payoffs:
+      \begin{align*}
+          y_1=(2y_1)^{\frac{1}{2}} \Rightarrow y_1=2 \\
+          y_2=y_1=2
+      \end{align*}
+      \item[SO:] The social optimum is \begin{math} (2,2)\end{math}
+        \begin{align*}
+          Payoff_1=2*2-\frac{1}{3}2^2= \frac{4}{3} \\
+          Payoff_2=2*2-2^2=0
+        \end{align*}
+    \item[(Interpret)] \intuition{Since player 1s effort is cheaper for small values of effort, he could pay player 2 to increase P2s effort, whilst increasing both of their payoffs.}
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:\\\medskip
+    \begin{itemize}
+        \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+        \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+        \item[3] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+        \item[4] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+        \item[5] $Payoff_T(y_1,y_2)$: $U_1(y_1,y_2)+U_2(y_1,y_2) = 2*y_1*y_2-\frac{1}{3}y_1^3 - y_2^2$ \\
+        \item[5] $FOC_{y_1}: 0=2y_2-y_1^2 \Rightarrow y_1=(2y_2)^{\frac{1}{2}}$ \\
+        \item[5] $FOC_{y_2}: 0=2y_1-2y_2 \Rightarrow y_2=y_1$ \\
+    \end{itemize}
   \end{multicols}
 \end{frame}
 
@@ -864,6 +1186,7 @@
     \item[(c)] Find the backwards induction outcome and write down the SPNE.
     \item[(d)] Write down this game as a bi-matrix and find all pure strategy Nash equilibria.]
   \end{itemize}
+    ‘’ is used to notate player 2’s choices given player 1 plays R. $S_2(R)=(L’’,R’’)$
   \begin{figure}[!h]
     \center
     \def\svgwidth{.8\columnwidth}
@@ -893,13 +1216,14 @@
   \begin{itemize}
     \item[(b)] How many proper subgames are there (so not including the entire game itself)?
   \end{itemize}
+  There are two:
   \begin{figure}[!h]
     \center
     \def\svgwidth{.9\columnwidth}
     \import{figures/}{8b.pdf_tex}
   \end{figure}
   \begin{itemize}
-    \item[(b)] \textbf{\textit{Find the backwards induction outcome and write down the SPNE.}}
+    \item[(C)] \textbf{\textit{Find the backwards induction outcome and write down the SPNE.}}
   \end{itemize}
   \vfill\null
 \end{frame}
@@ -908,6 +1232,10 @@
   \begin{itemize}
     \item[(c)] Find the backwards induction outcome and write down the SPNE.
   \end{itemize}
+  Looking at the last tier of subgames, P2 would play respectively L’ and R’’. Knowing this strategy of P2, P1's payoff for L is 1 and R is 2, so he will choose R:
+  \begin{align*}
+      \Rightarrow SPNE=(L,L’R’’)
+  \end{align*}
   \begin{figure}[!h]
     \center
     \def\svgwidth{.9\columnwidth}
@@ -937,6 +1265,7 @@
       & R & 0, 0 & \textcolor{red}{2}, \textcolor{blue}{3} & 0, 0 & 2, \textcolor{blue}{3} & 0, 0 & 2, \textcolor{blue}{3} \\\cline{3-8}
     \end{tabular}
   \end{table}
+    PSNE are $\{(L,L'L''),(R,L'R'')\}$
   \vfill\null
 \end{frame}
 
