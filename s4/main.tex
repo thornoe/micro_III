@@ -715,6 +715,183 @@
 \end{frame}
 
 
+
+\section{PS4, Ex. 2: Entry deterrence (backwards induction)}
+
+\begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
+  \begin{multicols}{2}
+    Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1), but fighting is costly for firm 1, lowering its payoff to 0.
+    \begin{itemize}
+      \item[(a)] Draw the game tree.
+      \item[(b)] Solve the game by backwards induction.
+    \end{itemize}
+  \vfill\null \columnbreak
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
+  \begin{multicols}{2}
+    Consider the following dynamic game: firm 1 owns a shop in town A. Firm 2 decides whether to enter the market in town A. If firm 2 enters, firm 1 chooses whether to fight or accommodate the entrant. If firm 2 does not enter, firm 1 receives a profit of 2 and firm 2 gets 0. If firm 2 enters and firm 1 accommodates, they share the market and each of them receives a profit of 1. If firm 2 enters and firm 1 decides to fight, firm 2 suffers a loss of 1 (so that the payoff is -1), but fighting is costly for firm 1, lowering its payoff to 0.
+    \begin{itemize}
+      \item[(a)] Draw the game tree.
+      \item[(b)] Solve the game by backwards induction.
+    \end{itemize}
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Draw the game tree.
+      \item[(b)] Solve the game by backwards induction.
+    \end{itemize}
+    \textbf{Starting from the bottom}: If Firm 2 has entered the market in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Draw the game tree.
+      \item[(b)] Solve the game by backwards induction.
+    \end{itemize}
+    \textbf{Starting from the bottom}: If Firm 2 has entered the market in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always accommodate, as it is more costly to fight $(1>0)$.
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Draw the game tree.
+      \item[(b)] Solve the game by backwards induction.
+    \end{itemize}
+    \textbf{Starting from the bottom}: If Firm 2 has entered the market in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always accommodate, as it is more costly to fight $(1>0)$.\\\medskip
+    Knowing that Firm 1 is rational and will accommodate in the \nth{2} round, \textbf{Firm 2} (first mover), will always chose to enter in the \nth{1} round $(1>0)$, i.e. the backwards induction solution is the strategy profile:
+      \begin{align*}
+        (s_1,s_2)=(Accommodate,Enter)
+      \end{align*}
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2: Entry deterrence (backwards induction)}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] Draw the game tree.
+      \item[(b)] Solve the game by backwards induction.
+    \end{itemize}
+    \textbf{Starting from the bottom}: If Firm 2 has entered the market in the \nth{1} round, then Firm 1 can choose to either fight or accommodate in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always accommodate, as it is more costly to fight $(1>0)$.\\\medskip
+    Knowing that Firm 1 is rational and will accommodate in the \nth{2} round, \textbf{Firm 2} (first mover), will always chose to enter in the \nth{1} round $(1>0)$, i.e. the backwards induction solution is the strategy profile:
+      \begin{align*}
+        (s_1,s_2)=(Accommodate,Enter)
+      \end{align*}
+    \textbf{Intuition:} Firm 2 has \textit{first mover advantage}, thus, to "Fight" would not be a credible threat given Firm 1 is rational. I.e. Firm 2's decision can be reduced to the upper part of the game tree.
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree.pdf_tex}
+      \end{center}
+    \end{figure}
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree_reduced.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2 extra: Choices off the equilibrium path}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(c)] What is the solution now?
+    \end{itemize}
+    \textbf{Looking at the new choices}: If Firm 2 chooses to not enter in the \nth{1} round, then Firm 1 can choose to either continue as normal or shut down in the \nth{2} round, effectively handing over the whole market to Firm 2 instead.
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree_extended.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2 extra: Choices off the equilibrium path}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(c)] What is the solution now?
+    \end{itemize}
+    \textbf{Looking at the new choices}: If Firm 2 chooses to not enter in the \nth{1} round, then Firm 1 can choose to either continue as normal or shut down in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always continue, as it will gain nothing in a shutdown $(2>0)$.\\\medskip
+    Knowing that Firm 1 is rational and will choose to continue in the \nth{2} round, \textbf{Firm 2} (first mover), would get 0 by not entering in the \nth{1} round, so to enter in the \nth{1} round will be the best response $(1>0)$.\\\medskip
+    What is the full strategy profile for the backwards induction solution?
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree_extended_color.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS4, Ex. 2 extra: Choices off the equilibrium path}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(a)] What is the solution now?
+    \end{itemize}
+    \textbf{Looking at the new choices}: If Firm 2 chooses to not enter in the \nth{1} round, then Firm 1 can choose to either continue as normal or shut down in the \nth{2} round.\\\medskip
+    \textbf{Firm 1} will always continue, as it will gain nothing in a shutdown $(2>0)$.\\\medskip
+    Knowing that Firm 1 is rational and will choose to continue in the \nth{2} round, \textbf{Firm 2} (first mover), would get 0 by not entering in the \nth{1} round, so to enter in the \nth{1} round will be the best response $(1>0)$, i.e. the backwards induction solution is the full strategy profile:
+      \begin{align*}
+        (s_1,s_2)=("Accommodate""Continue","Enter")
+      \end{align*}
+    \textbf{Off the equilibrium path:} The strategy profile now reflect choices off the equilibrium path, this is done because firm 1's choices off the equilibrium path might be relevant to the equilibrium path.
+  \vfill\null \columnbreak
+    \begin{figure}[!h]
+      \begin{center}
+      \def\svgwidth{1.0\columnwidth}
+      \import{figures/}{game_tree_extended_color.pdf_tex}
+      \end{center}
+    \end{figure}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
 \section{PS4, Ex. 3: The Focal Point (plotting BR functions)}
 
 \begin{frame}{PS4, Ex. 3: The Focal Point (plotting BR functions)}
@@ -1528,13 +1705,13 @@
 
 \section{Guide: Examine which equilibria are the most realistic in a static game}
 
-\begin{frame}{Guide: Examine which equilibria is the most realistic in a static game}
+\begin{frame}{Guide: Examine which equilibria are the most realistic in a static game}
   \begin{multicols}{2}
     \begin{enumerate}
       \item Look at the pareto optimal solutions:\\
       \begin{itemize}
         \normalsize
-          \item[a.] If exactly one PSNE is pareto optimal, risk neutral players should pick this solution.
+          \item[a.] If exactly one Pure Strategy Nash Equilibrium (PSNE) is pareto optimal, rational players should pick this sd olution.
           \item[b.] If there are multiple pareto optimal PSNE, there is a risk of miscoordination, as players can't tell which PSNE the other player is going for. Thus, playing a mix of these can be just as good as arbitrarily picking a pure strategy.
       \end{itemize}
       \item Look at the punishment in the case of miscoordination:\\
@@ -1542,19 +1719,19 @@
         \normalsize
           \item E.g. If Player 1 thinks they are going for a certain PSNE, but they miscoordinate and Player 2 plays something else, how hard will Player 1 be punished?
       \end{itemize}
-      \item Use the two first points to talk about what risk neutral players would do?
     \end{enumerate}
     \vfill\null \columnbreak
     \begin{itemize}
-      \item[4.] And what if the players were risk averse or risk loving?\\
-      \begin{itemize}
-        \normalsize
-          \item[ad. 1] If there is a risk of miscoordination between multiple pareto optimal PSNE, then a risk averse Player 1 could benefit from playing a mix of these to have a positive probability of hitting the PSNE regardless of which pure strategy Player 2 would go for.
-          %If there are risks of miscoordination between multiple pareto optimal PSNE, then a risk averse player would most likely benefit from playing a mix of these, in order to lower the variance of his payoff.
-          \item[ad. 2] If a strategy has severe punishment for miscoordination, a risk averse player would most likely want to look for a strategy with lower possible punishment.
-          %If a strategy has severe punishment for miscoordination, a risk averse player would most likely want to look for another strategy where he isn't punished as hard by miscoordination.
-      \end{itemize}
-      \item[5.] Finally, consider what would happen if one player could send a message? Or they had just played the game with mixed strategies, and by chance landed on a pareto optimal PSNE?
+      \item[3.] Use the two first points to talk about what rational players would do?
+      % \item[4.] And what if the players were risk averse or risk loving?\\
+      % \begin{itemize}
+      %   \normalsize
+      %     \item[ad. 1] If there is a risk of miscoordination between multiple pareto optimal PSNE, then a risk averse Player 1 could benefit from playing a mix of these to have a positive probability of hitting the PSNE regardless of which pure strategy Player 2 would go for.
+      %     %If there are risks of miscoordination between multiple pareto optimal PSNE, then a risk averse player would most likely benefit from playing a mix of these, in order to lower the variance of his payoff.
+      %     \item[ad. 2] If a strategy has severe punishment for miscoordination, a risk averse player would most likely want to look for a strategy with lower possible punishment.
+      %     %If a strategy has severe punishment for miscoordination, a risk averse player would most likely want to look for another strategy where he isn't punished as hard by miscoordination.
+      % \end{itemize}
+      \item[4.] Finally, consider what would happen if one player could send a message? Or they had just played the game with mixed strategies, and by chance landed on a pareto optimal PSNE?
     \end{itemize}
     \vfill\null
   \end{multicols}
@@ -2631,353 +2808,353 @@
 \end{frame}
 
 
-\section{Problem Set 3, Ex. 5: Luxembourg as a rogue state (static game)}
-
-\begin{frame}{Problem Set 3, Ex. 5: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
-    \begin{align*}
-      p(s_V,s_D)=s_V+s_D-s_vs_D,
-    \end{align*}
-    where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
-    \begin{align*}
-      c_i(s_i)=s_i^2
-    \end{align*}
-    The objective of each country is to maximize its expected payoff from the attack minus the cost.
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
-      \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
-    \end{itemize}
-    \hfill \includegraphics[width=0.20 \textwidth]{figures/nuclear}
-  \vfill\null
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{Problem Set 3, Ex. 5.a: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
-    \begin{align*}
-      p(s_V,s_D)=s_V+s_D-s_vs_D,
-    \end{align*}
-    where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
-    \begin{align*}
-      c_i(s_i)=s_i^2
-    \end{align*}
-    The objective of each country is to maximize its expected payoff from the attack minus the cost.
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
-    \end{itemize}
-    Write expected payoff for player $i\neq j$.
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Problem Set 3, Ex. 5.a: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
-    \begin{align*}
-      p(s_V,s_D)=s_V+s_D-s_vs_D,
-    \end{align*}
-    where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
-    \begin{align*}
-      c_i(s_i)=s_i^2
-    \end{align*}
-    The objective of each country is to maximize its expected payoff from the attack minus the cost.
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$.
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Problem Set 3, Ex. 5.a: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
-    \begin{align*}
-      p(s_V,s_D)=s_V+s_D-s_vs_D,
-    \end{align*}
-    where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
-    \begin{align*}
-      c_i(s_i)=s_i^2
-    \end{align*}
-    The objective of each country is to maximize its expected payoff from the attack minus the cost.
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    What is the NE?\\\medskip
-    (Hint: is the game symmetric?)
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Problem Set 3, Ex. 5.a: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
-    \begin{align*}
-      p(s_V,s_D)=s_V+s_D-s_vs_D,
-    \end{align*}
-    where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
-    \begin{align*}
-      c_i(s_i)=s_i^2
-    \end{align*}
-    The objective of each country is to maximize its expected payoff from the attack minus the cost.
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(a)] Find the NE in the static game:
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
-    \begin{align*}
-       s_i^{*}&=\frac{1-s_i^{*}}{2}\\
-      2s_i^{*}+s_i^{*}&=1\\
-       s_i^{*}&=\frac{1}{3}\equiv s^{NE}
-    \end{align*}
-    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
-  \vfill\null
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Find the NE in the static game:
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
-    \begin{align*}
-       s_i^{*}&=\frac{1-s_i^{*}}{2}\\
-      2s_i^{*}+s_i^{*}&=1\\
-       s_i^{*}&=\frac{1}{3}\equiv s^{NE}
-    \end{align*}
-    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
-    \end{itemize}
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Find the NE in the static game:
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
-    \begin{align*}
-       s_i^{*}&=\frac{1-s_i^{*}}{2}\\
-      2s_i^{*}+s_i^{*}&=1\\
-       s_i^{*}&=\frac{1}{3}\equiv s^{NE}
-    \end{align*}
-    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
-    \end{itemize}
-    Write expected payoff for player $i\neq j$.
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Find the NE in the static game:
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
-    \begin{align*}
-       s_i^{*}&=\frac{1-s_i^{*}}{2}\\
-      2s_i^{*}+s_i^{*}&=1\\
-       s_i^{*}&=\frac{1}{3}\equiv s^{NE}
-    \end{align*}
-    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
-    \end{itemize}
-    Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
-    \begin{align*}
-      u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
-                  &=2\bar{s}-2\bar{s}^2
-    \end{align*}
-    Find the social planner target function.
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Find the NE in the static game:
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
-    \begin{align*}
-       s_i^{*}&=\frac{1-s_i^{*}}{2}\\
-      2s_i^{*}+s_i^{*}&=1\\
-       s_i^{*}&=\frac{1}{3}\equiv s^{NE}
-    \end{align*}
-    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
-    \end{itemize}
-    Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
-    \vspace{-6pt}
-    \begin{align*}
-      u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
-                  &=2\bar{s}-2\bar{s}^2
-    \end{align*}
-    \vspace{-6pt}
-    The social planner target function:
-    \begin{align*}
-      \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
-    \end{align*}
-    \vspace{-6pt}
-    Find the social optimum (SO).
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Find the NE in the static game:
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
-    \begin{align*}
-       s_i^{*}&=\frac{1-s_i^{*}}{2}\\
-      2s_i^{*}+s_i^{*}&=1\\
-       s_i^{*}&=\frac{1}{3}\equiv s^{NE}
-    \end{align*}
-    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(b)] Find the SO given shares are equal:
-    \end{itemize}
-    Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
-    \begin{align*}
-      u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
-                  &=2\bar{s}-2\bar{s}^2
-    \end{align*}
-    Social planner target function:
-    \begin{align*}
-      \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
-    \end{align*}
-    Find the social optimum (SO):
-    \begin{align*}
-      FOC:\ \frac{\delta\pi^S}{\delta s_i}=4-8\bar{S}&=0\\
-       \bar{S}&=\frac{4}{8}=\frac{1}{2}>\frac{1}{3}
-    \end{align*}
-    Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
-  \vfill\null
-  \end{multicols}
-\end{frame}
-\begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[(a)] Find the NE in the static game:
-    \end{itemize}
-    Expected payoff for player $i\neq j$:
-    \begin{align*}
-      u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
-    \end{align*}
-    Find the best-response function for $i$:
-    \begin{align*}
-      FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
-       s_i&=\frac{1-s_j}{2}
-    \end{align*}
-    Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
-    \begin{align*}
-       s_i^{*}&=\frac{1-s_i^{*}}{2}\\
-      2s_i^{*}+s_i^{*}&=1\\
-       s_i^{*}&=\frac{1}{3}\equiv s^{NE}
-    \end{align*}
-    i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
-  \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(b)] Find the SO given shares are equal:
-    \end{itemize}
-    Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
-    \begin{align*}
-      u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
-                  &=2\bar{s}-2\bar{s}^2
-    \end{align*}
-    Social planner target function:
-    \begin{align*}
-      \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
-    \end{align*}
-    Find the social optimum (SO):
-    \begin{align*}
-      FOC:\ \frac{\delta\pi^S}{\delta s_i}=4-8\bar{S}&=0\\
-       \bar{S}&=\frac{4}{8}=\frac{1}{2}>\frac{1}{3}
-    \end{align*}
-    The SO is higher than the NE as the positive externality is not rewarded, which leads to an incentive to free ride.
-  \vfill\null
-  \end{multicols}
-\end{frame}
+% \section{Problem Set 3, Ex. 5: Luxembourg as a rogue state (static game)}
+%
+% \begin{frame}{Problem Set 3, Ex. 5: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
+%     \begin{align*}
+%       p(s_V,s_D)=s_V+s_D-s_vs_D,
+%     \end{align*}
+%     where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
+%     \begin{align*}
+%       c_i(s_i)=s_i^2
+%     \end{align*}
+%     The objective of each country is to maximize its expected payoff from the attack minus the cost.
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
+%       \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
+%     \end{itemize}
+%     \hfill \includegraphics[width=0.20 \textwidth]{figures/nuclear}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+%
+% \begin{frame}{Problem Set 3, Ex. 5.a: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
+%     \begin{align*}
+%       p(s_V,s_D)=s_V+s_D-s_vs_D,
+%     \end{align*}
+%     where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
+%     \begin{align*}
+%       c_i(s_i)=s_i^2
+%     \end{align*}
+%     The objective of each country is to maximize its expected payoff from the attack minus the cost.
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
+%     \end{itemize}
+%     Write expected payoff for player $i\neq j$.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{Problem Set 3, Ex. 5.a: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
+%     \begin{align*}
+%       p(s_V,s_D)=s_V+s_D-s_vs_D,
+%     \end{align*}
+%     where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
+%     \begin{align*}
+%       c_i(s_i)=s_i^2
+%     \end{align*}
+%     The objective of each country is to maximize its expected payoff from the attack minus the cost.
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{Problem Set 3, Ex. 5.a: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
+%     \begin{align*}
+%       p(s_V,s_D)=s_V+s_D-s_vs_D,
+%     \end{align*}
+%     where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
+%     \begin{align*}
+%       c_i(s_i)=s_i^2
+%     \end{align*}
+%     The objective of each country is to maximize its expected payoff from the attack minus the cost.
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(a)] Suppose that the Vatican and Denmark choose the shares of military capacity to use in the attack simultaneously and independently. Find the Nash equilibrium (NE) of this game.
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     What is the NE?\\\medskip
+%     (Hint: is the game symmetric?)
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{Problem Set 3, Ex. 5.a: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     Assume that Luxembourg has turned into a rogue state. It is close to acquiring nuclear weapons, which would threaten the stability in the whole region. The Vatican ($V$) and Denmark ($D$) are preparing an attack on Luxembourg’s nuclear research facilities to stop or slow down its nuclear program. The probability that the attack will be a success is
+%     \begin{align*}
+%       p(s_V,s_D)=s_V+s_D-s_vs_D,
+%     \end{align*}
+%     where $s_i\in[0,1]$ is the share of its military capacity that country $i\ (i\in\{V,D\})$ uses in the attack. If the attack is successful then each country receives a payoff of 1. The cost of participating in the attack for country $i$ is
+%     \begin{align*}
+%       c_i(s_i)=s_i^2
+%     \end{align*}
+%     The objective of each country is to maximize its expected payoff from the attack minus the cost.
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(a)] Find the NE in the static game:
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
+%     \begin{align*}
+%        s_i^{*}&=\frac{1-s_i^{*}}{2}\\
+%       2s_i^{*}+s_i^{*}&=1\\
+%        s_i^{*}&=\frac{1}{3}\equiv s^{NE}
+%     \end{align*}
+%     i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+%
+% \begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Find the NE in the static game:
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
+%     \begin{align*}
+%        s_i^{*}&=\frac{1-s_i^{*}}{2}\\
+%       2s_i^{*}+s_i^{*}&=1\\
+%        s_i^{*}&=\frac{1}{3}\equiv s^{NE}
+%     \end{align*}
+%     i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
+%     \end{itemize}
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Find the NE in the static game:
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
+%     \begin{align*}
+%        s_i^{*}&=\frac{1-s_i^{*}}{2}\\
+%       2s_i^{*}+s_i^{*}&=1\\
+%        s_i^{*}&=\frac{1}{3}\equiv s^{NE}
+%     \end{align*}
+%     i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
+%     \end{itemize}
+%     Write expected payoff for player $i\neq j$.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Find the NE in the static game:
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
+%     \begin{align*}
+%        s_i^{*}&=\frac{1-s_i^{*}}{2}\\
+%       2s_i^{*}+s_i^{*}&=1\\
+%        s_i^{*}&=\frac{1}{3}\equiv s^{NE}
+%     \end{align*}
+%     i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
+%     \end{itemize}
+%     Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
+%     \begin{align*}
+%       u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
+%                   &=2\bar{s}-2\bar{s}^2
+%     \end{align*}
+%     Find the social planner target function.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Find the NE in the static game:
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
+%     \begin{align*}
+%        s_i^{*}&=\frac{1-s_i^{*}}{2}\\
+%       2s_i^{*}+s_i^{*}&=1\\
+%        s_i^{*}&=\frac{1}{3}\equiv s^{NE}
+%     \end{align*}
+%     i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(b)] Find the social optimum (SO) under the condition that the two countries use the same share of their military capacity. I.e., find the $\bar{s}_V=\bar{s}_D=\bar{s}$ that maximizes aggregate payoff from the attack minus costs. Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
+%     \end{itemize}
+%     Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
+%     \vspace{-6pt}
+%     \begin{align*}
+%       u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
+%                   &=2\bar{s}-2\bar{s}^2
+%     \end{align*}
+%     \vspace{-6pt}
+%     The social planner target function:
+%     \begin{align*}
+%       \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
+%     \end{align*}
+%     \vspace{-6pt}
+%     Find the social optimum (SO).
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Find the NE in the static game:
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
+%     \begin{align*}
+%        s_i^{*}&=\frac{1-s_i^{*}}{2}\\
+%       2s_i^{*}+s_i^{*}&=1\\
+%        s_i^{*}&=\frac{1}{3}\equiv s^{NE}
+%     \end{align*}
+%     i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(b)] Find the SO given shares are equal:
+%     \end{itemize}
+%     Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
+%     \begin{align*}
+%       u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
+%                   &=2\bar{s}-2\bar{s}^2
+%     \end{align*}
+%     Social planner target function:
+%     \begin{align*}
+%       \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
+%     \end{align*}
+%     Find the social optimum (SO):
+%     \begin{align*}
+%       FOC:\ \frac{\delta\pi^S}{\delta s_i}=4-8\bar{S}&=0\\
+%        \bar{S}&=\frac{4}{8}=\frac{1}{2}>\frac{1}{3}
+%     \end{align*}
+%     Compare with the equilibrium from question (a) and give an intuitive explanation of your findings.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
+% \begin{frame}{Problem Set 3, Ex. 5.b: Luxembourg as a rogue state (static game)}
+%   \begin{multicols}{2}
+%     \begin{itemize}
+%       \item[(a)] Find the NE in the static game:
+%     \end{itemize}
+%     Expected payoff for player $i\neq j$:
+%     \begin{align*}
+%       u_i(s_i,s_j)=\underbrace{s_i+s_j-s_is_j}_\text{Probability of success}-\underbrace{s_i^2}_\text{Cost}
+%     \end{align*}
+%     Find the best-response function for $i$:
+%     \begin{align*}
+%       FOC:\ \frac{\delta u_i}{\delta s_i}=1+0-s_j-2s_i&=0\\
+%        s_i&=\frac{1-s_j}{2}
+%     \end{align*}
+%     Taking advantage of symmetry $s_i^{*}=s_j^{*}$:
+%     \begin{align*}
+%        s_i^{*}&=\frac{1-s_i^{*}}{2}\\
+%       2s_i^{*}+s_i^{*}&=1\\
+%        s_i^{*}&=\frac{1}{3}\equiv s^{NE}
+%     \end{align*}
+%     i.e. $NE=\left\{(s_D^{*},s_V^{*})=(\frac{1}{3},\frac{1}{3})\right\}$
+%   \vfill\null\columnbreak
+%     \begin{itemize}
+%       \item[(b)] Find the SO given shares are equal:
+%     \end{itemize}
+%     Expected payoff for $i$, $\bar{s}_D=\bar{s}_V=\bar{s}$:
+%     \begin{align*}
+%       u_i(\bar{s})&=\underbrace{\bar{s}+\bar{s}-\bar{s}\bar{s}}_\text{Probability of success}-\underbrace{\bar{s}^2}_\text{Cost}\\
+%                   &=2\bar{s}-2\bar{s}^2
+%     \end{align*}
+%     Social planner target function:
+%     \begin{align*}
+%       \pi^S(\bar{s})&=\underbrace{2}_\text{Countries}(2\bar{s}-2\bar{s}^2)=4\bar{s}-4\bar{s}^2
+%     \end{align*}
+%     Find the social optimum (SO):
+%     \begin{align*}
+%       FOC:\ \frac{\delta\pi^S}{\delta s_i}=4-8\bar{S}&=0\\
+%        \bar{S}&=\frac{4}{8}=\frac{1}{2}>\frac{1}{3}
+%     \end{align*}
+%     The SO is higher than the NE as the positive externality is not rewarded, which leads to an incentive to free ride.
+%   \vfill\null
+%   \end{multicols}
+% \end{frame}
 
 
 \section{PS4, Ex. 8: Building a playground (Stackelberg game)}
