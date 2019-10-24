@@ -3444,49 +3444,53 @@
 \end{frame}
 
 
-% \section{PS4, Ex. : }
-%
-% \begin{frame}{PS4, Ex. : }
-%   \begin{multicols}{2}
-%   \vfill\null \columnbreak
-%   \vfill\null
-%   \end{multicols}
-% \end{frame}
 
+\section{Code examples} % out-comment: ctrl-shift-7 or ctrl-shift-* (use cmd for Mac)
 
-% \section{PS4, Ex. : }
-%
-% \begin{frame}{PS4, Ex. : }
-%   \begin{multicols}{2}
-%     \begin{table}
-%       \begin{tabular}{cl|c|c|}
-%           & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
-%           \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}}
-%           & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
-%           & T (p)   &  &  \\\cline{3-4}
-%           & B (1-p) &  &  \\\cline{3-4}
-%       \end{tabular}
-%     \end{table}
-%   \vfill\null \columnbreak
-%     \begin{table}
-%       \begin{tabular}{cc|c|c|}
-%         & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-%         \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-%         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
-%         & T (p)   & \textcolor{red}{}, \textcolor{blue}{} &   \\\cline{3-4}
-%         & B (1-p) &  &  \\\cline{3-4}
-%       \end{tabular}
-%     \end{table}
-%     \begin{table}
-      % \begin{tabular}{l|c|c|}
-      %     \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{2-3}
-      %     T (p)   &  &  \\\cline{2-3}
-      %     B (1-p) &  &  \\\cline{2-3}
-%       \end{tabular}
-%     \end{table}
-%   \vfill\null
-%   \end{multicols}
-% \end{frame}
+\begin{frame}{Code examples}
+  \begin{multicols}{2}
+    % Game tree:
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{\columnwidth}
+      \import{figures/}{game_tree.pdf_tex}
+    \end{figure}
+  \vfill\null \columnbreak
+    Matrix, no player names:
+    \vspace{-10pt}
+    \begin{table} % as opposed to matrices with player names, each line does not start with "&" as there's no empty column for the name-box. Otherwise, see the explanations below.
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{2-3}
+        T (p)   &  &  \\\cline{2-3}
+        B (1-p) &  &  \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    Matrix, no colors:
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|} % the number of total columns and which have vertical lines between them (left-align or center text).
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\ % "2" is the number of columns in the matrix that the 2nd player name spans over
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{Player 1}}} % "3" is the number of rows the 1st player name spans over (including the one with the column names)
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4} % column names use the "\multicolumn" command to not draw vertical lines between them.
+        & T (p)   &  &  \\\cline{3-4} % a horizontal line is drawn after the line break using "\cline{x-y}" where x and y are the column numbers of the cells to be underlined.
+        & B (1-p) &  &  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    Matrix, with colors:
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L (q)} & \multicolumn{1}{c}{R (1-q)} \\\cline{3-4}
+        & T (p)   & \textcolor{red}{1}, \textcolor{blue}{1} &   \\\cline{3-4}
+        & B (1-p) &  &  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+
 
 
 \end{document}
