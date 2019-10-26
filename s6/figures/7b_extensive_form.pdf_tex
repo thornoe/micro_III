@@ -1,0 +1,97 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file '7b_extensive_form.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{299.84850288bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.53503562)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{7b_extensive_form.pdf}}%
+    \put(0.14174301,0.30328558){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{7b_extensive_form.pdf}}%
+    \put(-0.00235796,0.00536917){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,3)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{7b_extensive_form.pdf}}%
+    \put(-0.65297335,-1.62981808){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.01495946\unitlength}\raggedright \end{minipage}}}%
+    \put(0.12712893,0.00536729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(4,0)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{7b_extensive_form.pdf}}%
+    \put(0.28563926,0.00536729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,4)\end{tabular}}}}%
+    \put(0.42012864,0.00536729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
+    \put(0.0441097,0.25210266){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P1\end{tabular}}}}%
+    \put(0.3875163,0.25210266){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P1\end{tabular}}}}%
+    \put(0.18831042,0.37640307){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P2\end{tabular}}}}%
+    \put(0.3147818,0.30328558){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{7b_extensive_form.pdf}}%
+    \put(0.65462516,0.30199122){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L'$\end{tabular}}}}%
+    \put(0.76122107,0.37510871){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P2\end{tabular}}}}%
+    \put(0.82766381,0.30199122){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R'$\end{tabular}}}}%
+    \put(0.62367076,0.43468066){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Split\end{tabular}}}}%
+    \put(0.29431685,0.43468066){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Keep\end{tabular}}}}%
+    \put(0.47862866,0.51557266){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{7b_extensive_form.pdf}}%
+    \put(0.02876016,0.13216569){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T$\end{tabular}}}}%
+    \put(0.13788871,0.13216569){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B$\end{tabular}}}}%
+    \put(1.29036435,-4.40874308){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.10297533\unitlength}\raggedright \end{minipage}}}%
+    \put(0.42379383,0.13256959){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B$\end{tabular}}}}%
+    \put(0.31599357,0.13256959){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{7b_extensive_form.pdf}}%
+    \put(0.51694899,0.00536729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,3)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{7b_extensive_form.pdf}}%
+    \put(0.64643592,0.00536729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,2)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{7b_extensive_form.pdf}}%
+    \put(0.8049461,0.00536729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,2)\end{tabular}}}}%
+    \put(0.93443303,0.00536729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
+    \put(0.5634163,0.25205088){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P1\end{tabular}}}}%
+    \put(0.90182091,0.25205088){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P1\end{tabular}}}}%
+    \put(0.53806213,0.1321139){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T'$\end{tabular}}}}%
+    \put(0.65219317,0.1321139){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B'$\end{tabular}}}}%
+    \put(0.93809829,0.1325178){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B'$\end{tabular}}}}%
+    \put(0.82529565,0.1325178){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T'$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

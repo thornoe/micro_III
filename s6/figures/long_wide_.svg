@@ -26,15 +26,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="414.68341"
+     inkscape:cx="356.6477"
      inkscape:cy="518.65581"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-height="1137"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true" />
   <metadata
@@ -429,7 +429,7 @@
          style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">$E'''$</tspan></text>
     <g
        style="display:inline"
-       transform="matrix(1.9688773,0,0,1,-45.596786,-13.151584)"
+       transform="matrix(2.2786594,0,0,1,-69.511537,-13.15136)"
        id="g5034-9">
       <path
          sodipodi:nodetypes="cc"
@@ -610,7 +610,7 @@
          style="stroke-width:0.26458332">Player 3</tspan></text>
     <g
        style="display:inline"
-       transform="matrix(1.9688773,0,0,1,-61.98968,0)"
+       transform="matrix(2.4290411,0,0,1,-94.634756,0)"
        id="g5034-9-9">
       <path
          sodipodi:nodetypes="cc"
@@ -639,7 +639,7 @@
     </g>
     <g
        style="display:inline"
-       transform="matrix(1.9688773,0,0,1,-7.5410945,0)"
+       transform="matrix(2.4290411,0,0,1,-40.223775,0)"
        id="g5034-9-9-7">
       <path
          sodipodi:nodetypes="cc"

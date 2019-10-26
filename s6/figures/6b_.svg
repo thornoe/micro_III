@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="6a_.svg">
+   sodipodi:docname="6b_.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="435.60287"
+     inkscape:cx="336.38935"
      inkscape:cy="553.26328"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1137"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -233,7 +233,7 @@
          id="tspan1074-7-7-7-5-8-0-5"
          x="138.00795"
          y="182.53224"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(-2,1)</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(-1,-1)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -244,7 +244,7 @@
          id="tspan1074-7-7-7-5-8-8-5-9"
          x="152.23422"
          y="182.53224"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(3,0)</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(-3,-3)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -299,7 +299,7 @@
          id="tspan1074-7-7-7-5-8-0-9"
          x="106.86274"
          y="182.53177"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(-3,-1)</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(-6,-6)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -310,7 +310,7 @@
          id="tspan1074-7-7-7-5-8-8-5-1"
          x="121.61818"
          y="182.53224"
-         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(1,-2)</tspan></text>
+         style="font-size:2.82222223px;line-height:2;stroke-width:0.26458332">(-1,-1)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"

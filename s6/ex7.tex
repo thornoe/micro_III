@@ -1,0 +1,405 @@
+\input{preample.tex}
+\begin{document}
+
+
+% ------------------------------------------------------------------------------
+% ------ FRAME -----------------------------------------------------------------
+% ------------------------------------------------------------------------------
+
+
+\begin{frame}{PS6, Ex. 7: To keep or split (imperfect information)}
+  \begin{multicols}{2}
+    Consider the following 2 × 2 game where payoffs are monetary:
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T & 3, 3 & 0, 4 \\\cline{2-3}
+          B & 4, 0 & 1, 1 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    Before this game is played, Player 1 can choose whether, after the game is played, players should keep their own payoffs or split the aggregate payoff evenly between them. Player 2 observes this choice.
+  \vfill\null \columnbreak
+    \begin{itemize}
+      \item[(a)] Write down the game tree of this two-stage game: be careful to represent the simultaneous-move game in the second stage using information sets.
+      \item[(b)] Find the \underline{subgame perfect} Nash Equilibria (SPNE).
+      \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. Draw
+      the game tree (again using information sets) and find the \underline{pure strategy} Nash Equilibria (PSNE).
+    \end{itemize}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS6, Ex. 7.a: To keep or split (imperfect information)}
+  \begin{itemize}
+    \item[(a)] Write down the game tree of this two-stage game: be careful to represent the simultaneous-move game in the second stage using information sets.
+  \end{itemize}
+  \vspace{-4pt}
+  \nth{1} stage: Player 1 chooses Keep or Split. Player 2 observes the choice.\\\medskip
+  \nth{2} stage: Player 2 chooses $L$ or $R$ ($L'$ or $R'$). The action is private information.\\\medskip
+  \nth{3} stage: Player 1 chooses $T$ or $B$ ($T'$ or $B'$) without knowing what Player 2 did.
+  \vspace{-4pt}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.8\columnwidth}
+    \import{figures/}{7a_extensive_form.pdf_tex}
+  \end{figure}
+  \vspace{-2pt}
+  The order of stage 2 and 3 is arbitrary, but the \nth{2} stage must be private information.
+  %(you can swap stage 2 and 3, then the new \nth{2} stage would be private information.)
+  \vspace{-2pt}
+  \begin{itemize}
+    \item[(b)] \textbf{\textit{Find the subgame perfect Nash Equilibria (SPNE).}}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{PS6, Ex. 7.b: To keep or split (imperfect information)}
+  \begin{itemize}
+    \item[(b)] Find the subgame perfect Nash Equilibria (SPNE).
+  \end{itemize}
+  \vspace{-4pt}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.8\columnwidth}
+    \import{figures/}{7a_extensive_form.pdf_tex}
+  \end{figure}
+  \vspace{-2pt}
+  \begin{multicols}{2}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.5\columnwidth}
+      \import{figures/}{7b_.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 3, 3 & 0, 4 \\\cline{2-3}
+        B & 4, 0 & 1, 1 \\\cline{2-3}
+      \end{tabular}\
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L'} & \multicolumn{1}{c}{R'} \\\cline{2-3}
+        T' & 3, 3 & 2, 2 \\\cline{2-3}
+        B' & 2, 2 & 1, 1 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+  \vfill\null \columnbreak
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 7.b: To keep or split (imperfect information)}
+  \begin{itemize}
+    \item[(b)] Find the subgame perfect Nash Equilibria (SPNE).
+  \end{itemize}
+  \vspace{-4pt}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.8\columnwidth}
+    \import{figures/}{7a_extensive_form.pdf_tex}
+  \end{figure}
+  \vspace{-2pt}
+  \begin{multicols}{2}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.5\columnwidth}
+      \import{figures/}{7b_.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\textcolor{blue}{R}} \\\cline{2-3}
+        T & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
+        \textcolor{red}{B} & \textcolor{red}{4}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{2-3}
+        \end{tabular}\
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textcolor{blue}{L'}} & \multicolumn{1}{c}{R'} \\\cline{2-3}
+          \textcolor{red}{T'} & \textcolor{red}{3}, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+          B' & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+        \end{tabular}
+    \end{table}
+  \vfill\null \columnbreak
+  \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 7.b: To keep or split (imperfect information)}
+  \begin{itemize}
+    \item[(b)] Find the subgame perfect Nash Equilibria (SPNE).
+  \end{itemize}
+  \vspace{-4pt}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.8\columnwidth}
+    \import{figures/}{7b_extensive_form.pdf_tex}
+  \end{figure}
+  \vspace{-2pt}
+  \begin{multicols}{2}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.5\columnwidth}
+      \import{figures/}{7b.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\textcolor{blue}{R}} \\\cline{2-3}
+        T & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
+        \textcolor{red}{B} & \textcolor{red}{4}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{2-3}
+        \end{tabular}\
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textcolor{blue}{L'}} & \multicolumn{1}{c}{R'} \\\cline{2-3}
+          \textcolor{red}{T'} & \textcolor{red}{3}, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+          B' & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+        \end{tabular}
+    \end{table}
+  \vfill\null\columnbreak
+  \vfill\null
+  \textbf{\textit{Write up the full strategy profiles for the subgame perfect Nash Equilibria (SPNE).}}
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 7.b: To keep or split (imperfect information)}
+  \begin{itemize}
+    \item[(b)] Find the subgame perfect Nash Equilibria (SPNE).
+  \end{itemize}
+  \vspace{-4pt}
+  \begin{figure}[!h]
+    \center
+    \def\svgwidth{.8\columnwidth}
+    \import{figures/}{7b_extensive_form.pdf_tex}
+  \end{figure}
+  \vspace{-2pt}
+  \begin{multicols}{2}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.5\columnwidth}
+      \import{figures/}{7b.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\textcolor{blue}{R}} \\\cline{2-3}
+        T & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
+        \textcolor{red}{B} & \textcolor{red}{4}, 0 & \textcolor{red}{1}, \textcolor{blue}{1} \\\cline{2-3}
+        \end{tabular}\
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textcolor{blue}{L'}} & \multicolumn{1}{c}{R'} \\\cline{2-3}
+          \textcolor{red}{T'} & \textcolor{red}{3}, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+          B' & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+        \end{tabular}
+    \end{table}
+  \vfill\null\columnbreak
+  \vspace{-8pt}
+  $SPNE=\{(Split,B,T'),(R,L')\}$ with outcome (3,3).
+  \vspace{-6pt}
+  \begin{itemize}
+    \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. \textbf{\textit{Draw the game tree (again using information sets)}} and find the pure strategy Nash Equilibria (PSNE).
+  \end{itemize}
+  \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
+    \begin{itemize}
+      \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. Draw the game tree (again using information sets) \textbf{\textit{and find the pure strategy Nash Equilibria (PSNE).}}
+    \end{itemize}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{7c_extensive_form_.pdf_tex}
+    \end{figure}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
+    \begin{itemize}
+      \item[(c)] Find the pure strategy Nash Equilibria (PSNE).
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{7c_extensive_form_.pdf_tex}
+    \end{figure}
+    \vspace{-4pt}
+    \nth{2} and \nth{3} stage in normal form (Player 1 knows her own action in \nth{1} stage):
+    \vspace{-4pt}
+    \begin{multicols}{2}
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{.5\columnwidth}
+        \import{figures/}{7c_.pdf_tex}
+      \end{figure}
+      \vspace{-9pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T & 3, 3 & 0, 4 \\\cline{2-3}
+          B & 4, 0 & 1, 1 \\\cline{2-3}
+        \end{tabular}\
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T' & 3, 3 & 2, 2 \\\cline{2-3}
+          B' & 2, 2 & 1, 1 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+    \vfill\null \columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
+    \begin{itemize}
+      \item[(c)] Find the PSNE.
+    \end{itemize}
+    \vspace{-16pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{7c_extensive_form_.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \nth{2} and \nth{3} stage in normal form:
+      \vspace{-4pt}
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{.5\columnwidth}
+        \import{figures/}{7c_.pdf_tex}
+      \end{figure}
+      \vspace{-9pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T & 3, 3 & 0, 4 \\\cline{2-3}
+          B & 4, 0 & 1, 1 \\\cline{2-3}
+        \end{tabular}\
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T' & 3, 3 & 2, 2 \\\cline{2-3}
+          B' & 2, 2 & 1, 1 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+    \vfill\null \columnbreak
+    Full game:
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        Keep, T, T' & 3, 3 & 0, 4 \\\cline{2-3}
+        Keep, T, B' & 3, 3 & 0, 4 \\\cline{2-3}
+        Keep, B, T' & 4, 0 & 1, 1 \\\cline{2-3}
+        Keep, B, B' & 4, 0 & 1, 1 \\\cline{2-3}
+        Split, T, T' & 3, 3 & 2, 2 \\\cline{2-3}
+        Split, B, T' & 3, 3 & 2, 2 \\\cline{2-3}
+        Split, T, B' & 2, 2 & 1, 1 \\\cline{2-3}
+        Split, B, B' & 2, 2 & 1, 1 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
+    \begin{itemize}
+      \item[(c)] Find the PSNE.
+    \end{itemize}
+    \vspace{-16pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{7c_extensive_form_.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \nth{2} and \nth{3} stage in normal form:
+      \vspace{-4pt}
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{.5\columnwidth}
+        \import{figures/}{7c_.pdf_tex}
+      \end{figure}
+      \vspace{-9pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T & 3, 3 & 0, 4 \\\cline{2-3}
+          B & 4, 0 & 1, 1 \\\cline{2-3}
+        \end{tabular}\
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T' & 3, 3 & 2, 2 \\\cline{2-3}
+          B' & 2, 2 & 1, 1 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+    \vfill\null \columnbreak
+    Full game:
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        Keep, T, T' & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
+        Keep, T, B' & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
+        Keep, B, T' & \textcolor{red}{4}, 0 & 1, \textcolor{blue}{1} \\\cline{2-3}
+        Keep, B, B' & \textcolor{red}{4}, 0 & 1, \textcolor{blue}{1} \\\cline{2-3}
+        Split, T, T' & 3, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+        Split, B, T' & 3, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+        Split, T, B' & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+        Split, B, B' & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
+    \begin{itemize}
+      \item[(c)] \textbf{\textit{NO PSNE EXISTS!}}
+    \end{itemize}
+    \vspace{-16pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{7c_extensive_form_.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \nth{2} and \nth{3} stage in normal form:
+      \vspace{-4pt}
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{.5\columnwidth}
+        \import{figures/}{7c_.pdf_tex}
+      \end{figure}
+      \vspace{-9pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T & 3, 3 & 0, 4 \\\cline{2-3}
+          B & 4, 0 & 1, 1 \\\cline{2-3}
+        \end{tabular}\
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T' & 3, 3 & 2, 2 \\\cline{2-3}
+          B' & 2, 2 & 1, 1 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+    \vfill\null \columnbreak
+    Full game:
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        Keep, T, T' & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
+        Keep, T, B' & 3, 3 & 0, \textcolor{blue}{4} \\\cline{2-3}
+        Keep, B, T' & \textcolor{red}{4}, 0 & 1, \textcolor{blue}{1} \\\cline{2-3}
+        Keep, B, B' & \textcolor{red}{4}, 0 & 1, \textcolor{blue}{1} \\\cline{2-3}
+        Split, T, T' & 3, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+        Split, B, T' & 3, \textcolor{blue}{3} & \textcolor{red}{2}, 2 \\\cline{2-3}
+        Split, T, B' & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+        Split, B, B' & 2, \textcolor{blue}{2} & 1, 1 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\end{document}
