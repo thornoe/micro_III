@@ -22,8 +22,7 @@
     \begin{itemize}
       \item[(a)] Write down the game tree of this two-stage game: be careful to represent the simultaneous-move game in the second stage using information sets.
       \item[(b)] Find the \underline{subgame perfect} Nash Equilibria (SPNE).
-      \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. Draw
-      the game tree (again using information sets) and find the \underline{pure strategy} Nash Equilibria (PSNE).
+      \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. Draw the game tree (again using information sets) and find the \underline{subgame perfect} Nash Equilibria (SPNE).
     \end{itemize}
   \vfill\null
   \end{multicols}
@@ -192,7 +191,7 @@
   $SPNE=\{(Split,B,T'),(R,L')\}$ with outcome (3,3).
   \vspace{-6pt}
   \begin{itemize}
-    \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. \textbf{\textit{Draw the game tree (again using information sets)}} and find the pure strategy Nash Equilibria (PSNE).
+    \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. \textbf{\textit{Draw the game tree (again using information sets)}} and find the subgame perfect Nash Equilibria (SPNE).
   \end{itemize}
   \vfill\null
   \end{multicols}
@@ -201,7 +200,7 @@
 
 \begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
     \begin{itemize}
-      \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. Draw the game tree (again using information sets) \textbf{\textit{and find the pure strategy Nash Equilibria (PSNE).}}
+      \item[(c)] Now suppose that Player 2 cannot observe Player 1’s choice in the first stage. Draw the game tree (again using information sets) \textbf{\textit{and find the subgame perfect Nash Equilibria (SPNE).}}
     \end{itemize}
     \begin{figure}[!h]
       \center
@@ -212,7 +211,7 @@
 \end{frame}
 \begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
     \begin{itemize}
-      \item[(c)] Find the pure strategy Nash Equilibria (PSNE).
+      \item[(c)] Find the subgame perfect Nash Equilibria (SPNE).
     \end{itemize}
     \vspace{-4pt}
     \begin{figure}[!h]
@@ -221,7 +220,7 @@
       \import{figures/}{7c_extensive_form_.pdf_tex}
     \end{figure}
     \vspace{-4pt}
-    \nth{2} and \nth{3} stage in normal form (Player 1 knows her own action in \nth{1} stage):
+    With \nth{2} and \nth{3} stage in normal form (Player 1 knows her own action in \nth{1} stage):
     \vspace{-4pt}
     \begin{multicols}{2}
       \begin{figure}[!h]
@@ -244,11 +243,49 @@
       \end{table}
     \vfill\null \columnbreak
     \vfill\null
+    \textbf{\textit{How many subgames are there?}}
   \end{multicols}
 \end{frame}
 \begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
     \begin{itemize}
-      \item[(c)] Find the PSNE.
+      \item[(c)] Find the subgame perfect Nash Equilibria (SPNE).
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{7c_extensive_form_.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      With \nth{2} and \nth{3} stage in normal form:
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{.5\columnwidth}
+        \import{figures/}{7c_.pdf_tex}
+      \end{figure}
+      \vspace{-9pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T & 3, 3 & 0, 4 \\\cline{2-3}
+          B & 4, 0 & 1, 1 \\\cline{2-3}
+        \end{tabular}\
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          T' & 3, 3 & 2, 2 \\\cline{2-3}
+          B' & 2, 2 & 1, 1 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+    \vfill\null \columnbreak
+    There is only one subgame; the full game itself.\\\bigskip
+    \textbf{\textit{Write up the game in normal form and solve it.}}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
+    \begin{itemize}
+      \item[(c)] Find the SPNE.
     \end{itemize}
     \vspace{-16pt}
     \begin{figure}[!h]
@@ -258,7 +295,7 @@
     \end{figure}
     \vspace{-8pt}
     \begin{multicols}{2}
-      \nth{2} and \nth{3} stage in normal form:
+      With \nth{2} and \nth{3} stage in normal form:
       \vspace{-4pt}
       \begin{figure}[!h]
         \center
@@ -299,7 +336,7 @@
 \end{frame}
 \begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
     \begin{itemize}
-      \item[(c)] Find the PSNE.
+      \item[(c)] Find the SPNE.
     \end{itemize}
     \vspace{-16pt}
     \begin{figure}[!h]
@@ -309,7 +346,7 @@
     \end{figure}
     \vspace{-8pt}
     \begin{multicols}{2}
-      \nth{2} and \nth{3} stage in normal form:
+      With \nth{2} and \nth{3} stage in normal form:
       \vspace{-4pt}
       \begin{figure}[!h]
         \center
@@ -350,7 +387,7 @@
 \end{frame}
 \begin{frame}{PS6, Ex. 7.c: To keep or split (imperfect information)}
     \begin{itemize}
-      \item[(c)] \textbf{\textit{NO PSNE EXISTS!}}
+      \item[(c)] \textit{\textbf{\underline{No SPNE exists}} (in pure strategies)}
     \end{itemize}
     \vspace{-16pt}
     \begin{figure}[!h]
