@@ -26,39 +26,52 @@
 \section{PS6, Ex. 1 (A): }
 
 \begin{frame}{PS6, Ex. 1 (A): }
-  \begin{multicols}{2}
-    \vfill\null \columnbreak
+    \textbf{Explain $\delta$ mathematically\\}
+    $delta$ is the discount factor which the payoff in the next game will be multiplied by, so if there player stand to gain 1 in the next round, and $\delta=0.5$, it is only worth $1*0.5=0.5$ to the player in the current round.\\
+    \textbf{Explain $\delta$ intuitively}\\ Intuitively $\delta$ is the factor showing how patient the players are. The higher $\delta$, thee less the players will mind waiting for the next round.  \\
+    \textbf{Explain the case $\delta=0$}\\
+    In the case $\delta=0$, the players will have their payoff multiplied by 0 in the next round, so the game turns into an ultimatum game where the first mover can offer the other player anything and they will accept. There is a first mover advantage. \\
+    \textbf{Explain the case $\delta=1$}\\
+    In the case $\delta=1$, the players will have their payoff multiplied by 1 in the next round, so they won't care whether the game goes for another around. This will be the case for each round until the final round, which will then be an ultimatum game where the last mover can offer the other player anything and they will accept. There is no first mover advantage, but there is a last mover advantage. \\
+    \textbf{Explain whether it depends on K}\\
+    For $\delta$=1, the last mover will get the whole price pool, no matter how many rounds (K) the game is. The only case with a first mover advantage is for $K=1$, in which the first move is the same as the last.\\
     \vfill\null
-  \end{multicols}
 \end{frame}
-
-\begin{frame}{PS6, Ex. 1 (A): }
-  \begin{multicols}{2}
-    \vfill\null \columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-
 
 \section{PS6, Ex. 2 (A): }
 
 \begin{frame}{PS6, Ex. 2 (A): }
+    \begin{itemize}
+    \item[part one:] For the payoffs: $ \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ Discuss how the payoff change as each player becomes more or less patient.
+    \end{itemize}
+    \vfill\null
   \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
+      \item[(Step 2)] Use the fact that it's a zero sum game to look at the change in outcome for player 2
+      \item[Answer] Player 1s payoff is increasing in $\delta_1$ and decreasing in $\delta_2$, vice versa for Player 2. This intuitively makes sense, because player i's bargaining power in later rounds will increase when his patience increase relative to player j.
+      \end{itemize}
     \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] $\frac{\partial s_1*}{\partial \delta_1} = \frac{(1-\delta_2)\delta_2}{(1-\delta_1\delta_2)^2}>0 $\\
+    \item[2] $\frac{\partial s_1*}{\partial \delta_2} = -\frac{1-\delta_1}{(1-\delta_1\delta_2)^2}<0 $\\
+    \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS6, Ex. 2.a (A): }
-  \begin{multicols}{2}
-    \vfill\null \columnbreak
+\begin{frame}{PS6, Ex. 2 (A): }
+    \begin{itemize}
+    \item[part two:] For the payoffs: $ \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ show that for $\delta_2=\delta_1$ the payoffs simplify to $\left(\frac{1}{1+\delta},\frac{\delta}{1+\delta}\right)$
+    \end{itemize}
+    Write up the payoffs with $\delta=\delta_1=\delta_2$ \\
+    Use that: $1-x^2=(1+x)(1-x)$, to simplify \\
+    Simplification: \\
+    \begin{math} \left(\frac{1-\delta}{1-\delta^2},\frac{\delta(1-\delta)}{1-\delta^2}\right) \Rightarrow \left(\frac{1-\delta}{(1-\delta)(1+\delta)},\frac{\delta(1-\delta)}{(1-\delta)(1+\delta)}\right) \Rightarrow \left(\frac{1}{1+\delta},\frac{\delta}{1+\delta}\right)
+    \end{math}
     \vfill\null
-  \end{multicols}
 \end{frame}
-
-
-
 
 \section{PS6, Ex. 3: Dynamic games (imperfect information)}
 
@@ -71,6 +84,7 @@
     \end{enumerate}
     \vfill\null
 \end{frame}
+
 
 \begin{frame}{PS6, Ex. 3.a: Dynamic games (imperfect information)}
     \begin{itemize}
@@ -540,38 +554,76 @@
 \section{PS6, Ex. 5: }
 
 \begin{frame}{PS6, Ex. 5: }
-  \begin{multicols}{2}
-    \vfill\null \columnbreak
+    \begin{itemize}
+    \item[] Consider an infinite bargaining game. Show that in the BI outcome, when each player has their own discount factor $\delta_1,\delta_2 \epsilon [0;1]$, player 1 offers the settlement $ (s*,1-s*)= \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ which player 2 accepts.
+    \item[(Step 1)] Start with a three stage game, but where player 1s payoff in turn 3 is denoted s. Write up the outcome for player 1 in round 3. Then use the potential outcome of round 3 to find the outcome in round 2. Do the same for round 1 with respects to round 2.
+    \end{itemize}
     \vfill\null
-  \end{multicols}
+    \begin{itemize}
+        \item[Turn 3] s
+        \item[Turn 2] P1 will choose to accept or decline $s_2 \epsilon [0;1]$. He will accept if $s_2 \geq s\delta_1]$, p2 proposes $s_2 = s\delta_1$ which p1 accepts
+        \item[Turn 1] P2 will choose to accept or decline $1-s_1 \epsilon [0;1]$. He will accept if $1-s_1 \geq (1-s\delta_1)\delta_2$, p1 proposes $s_1 = 1- (1-s\delta_1)\delta_2$ which p2 accepts
+    \end{itemize}
+     \vfill\null
 \end{frame}
 
-\begin{frame}{PS6, Ex. 5.a: }
-  \begin{multicols}{2}
-    \vfill\null \columnbreak
+\begin{frame}{PS6, Ex. 5: }
+    \begin{itemize}
+    \item[] Consider an infinite bargaining game. Show that in the BI outcome, when each player has their own discount factor $\delta_1,\delta_2 \epsilon [0;1]$, player 1 offers the settlement $ (s*,1-s*)= \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ which player 2 accepts.
+    \item[(Step 2)] Since the game is infinite, the players are playing the same game in turn 3 as in turn 1, ie. the outcome of turn 1 should be the same as in turn 3. Use this to find a stationary solution, where $s_turn1=s_turn3$
+    \end{itemize}
     \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+        \item[] $s*=s_1 = 1- (1-s*\delta_1)\delta_2 \Rightarrow$
+        \item[] $s*= 1-\delta_2-s*\delta_1\delta_2 \Rightarrow$
+        \item[] $s*(1+\delta_1\delta_2)= 1-\delta_2 \Rightarrow$
+        \item[] $s*= \frac{1-\delta_2}{1+\delta_1\delta_2} \Rightarrow$
+        \item[] $ (s*,1-s*)= \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[Turn 1] $s_1 = 1- (1-s\delta_1)\delta_2$\\
+    \item[Turn 3] s\\
+    \end{itemize}
+    \vfill\null 
   \end{multicols}
+    \vfill\null 
 \end{frame}
-
-
 
 \section{PS6, Ex. 6: }
 
 \begin{frame}{PS6, Ex. 6: }
+    \begin{itemize}
+    \item[(a)] Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.
+    \end{itemize}
+    \vfill\null
   \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the payoff functions
+      \item[(Step 2)] Write up the FOC and find the best response functions
+      \item[(Step 3)] This is not a symmetric game, so you have to substitute $BR_i$ into $BR_j$ and then isolate $y_i$ and insert it into $BR_j$:
+      \begin{align*}
+          y_1&=\frac{y_1}{2}^{\frac{1}{2}} \Rightarrow y_1-2y_1^2=0 \Rightarrow y_1=\frac{1}{2} \\
+          y_2&=\frac{\frac{1}{2}}{2}=\frac{1}{4}
+      \end{align*}
+      \item[NE:] \begin{math} \left(\frac{1}{2},\frac{1}{4}\right)\end{math}
+    \end{itemize}
     \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
+    \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
+    \item[3] $Payoff_i$: $U_i(y_i,y_j) = q(y_1,y_2)-C_i(y_i).$ \\
+    \item[4] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
+    \item[5] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
+    \item[6] $BR_1(y_2)$: $y_1 = y_2^{1/2}$ \\
+    \item[7] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+    \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
-
-\begin{frame}{PS6, Ex. 6.a: }
-  \begin{multicols}{2}
-    \vfill\null \columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-
 
 
 \section{PS6, Ex. 7: To keep or split (imperfect information)}
