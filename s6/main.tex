@@ -2,6 +2,11 @@
 \begin{document}
 \maketitle
 
+% Select what to do with command \intuition{}:
+  \newcommand{\intuition}[1]{#1} % intuition shown
+  %\newcommand{\intuition}[1]{[...]}  % intuition not shown
+
+
 % ------------------------------------------------------------------------------
 % ------ FRAME -----------------------------------------------------------------
 % ------------------------------------------------------------------------------
@@ -9,23 +14,14 @@
     \tableofcontents
 \end{frame}
 
+\section{PS6, Ex. 1 (A): Sequential bargaining }
 
-
-\section{Kahoot!}
-
-\begin{frame}{Kahoot: A exercises}
-  Form a group for each table:
-  \begin{itemize}
-    \item Get prepared to answer the A exercises as a team (5 min).
-  \end{itemize}
-  \includegraphics[width=\textwidth]{figures/kahoot}
+\begin{frame}{PS6, Ex. 1 (A): Sequential bargaining  }
+Consider the sequential bargaining game discussed in Lecture 6, but now with $K \geq 1$ stages (where $K$ is some arbitrary but fixed integer). Suppose $\delta = 1$ and $K=1,2,3$. Is there a first-mover advantage? Does your answer depend on the value of K?
+    \vfill\null
 \end{frame}
 
-
-
-\section{PS6, Ex. 1 (A): }
-
-\begin{frame}{PS6, Ex. 1 (A): }
+\begin{frame}{PS6, Ex. 1 (A): Sequential bargaining }
     \textbf{Explain $\delta$ mathematically\\}
     $delta$ is the discount factor which the payoff in the next game will be multiplied by, so if there player stand to gain 1 in the next round, and $\delta=0.5$, it is only worth $1*0.5=0.5$ to the player in the current round.\\
     \textbf{Explain $\delta$ intuitively}\\ Intuitively $\delta$ is the factor showing how patient the players are. The higher $\delta$, thee less the players will mind waiting for the next round.  \\
@@ -38,11 +34,70 @@
     \vfill\null
 \end{frame}
 
-\section{PS6, Ex. 2 (A): }
+\section{PS6, Ex. 2 (A): Infinite-horizon bargaining}
 
-\begin{frame}{PS6, Ex. 2 (A): }
+
+\begin{frame}{PS6, Ex. 2 (A): Infinite-horizon bargaining}
+Question 2.3 from Gibbons (p.131) looks at the infinite-horizon bargaining game where player 1 has discount factor $\delta_1$ and player 2 has discount factor $\delta_2$. It shows that the backward-induction outcome of this game is
+
+\begin{align}
+    \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)
+\end{align}
+
+Discuss how these payoffs change as each player becomes more or less patient, i.e. as we vary $\delta_1$ and $\delta_2$. What is the intuition? Show that these payoffs simplify to those derived in Lecture 6
+
+\begin{align}
+\left(\frac{1}{1+\delta},\frac{\delta}{1+\delta}\right)
+\end{align}
+
+for the case where $\delta_1=\delta_2$
+\vfill\null
+\end{frame}
+
+
+\begin{frame}{PS6, Ex. 2 (A): Infinite-horizon bargaining}
     \begin{itemize}
-    \item[part one:] For the payoffs: $ \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ Discuss how the payoff change as each player becomes more or less patient.
+    \item[Part one:] For the payoffs: $ \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ Discuss how the payoff change as each player becomes more or less patient.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
+      \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[]
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+    \vfill\null
+\end{frame}
+
+\begin{frame}{PS6, Ex. 2 (A): Infinite-horizon bargaining}
+    \begin{itemize}
+    \item[Part one:] For the payoffs: $ \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ Discuss how the payoff change as each player becomes more or less patient.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
+      \item[(Step 2)] Use the fact that it's a zero sum game to look at the change in outcome for player 2
+      \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] $\frac{\partial s_1*}{\partial \delta_1} = \frac{(1-\delta_2)\delta_2}{(1-\delta_1\delta_2)^2}>0 $\\
+    \item[2] $\frac{\partial s_1*}{\partial \delta_2} = -\frac{1-\delta_1}{(1-\delta_1\delta_2)^2}<0 $\\
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+ \vfill\null
+\end{frame}
+
+\begin{frame}{PS6, Ex. 2 (A): Infinite-horizon bargaining}
+    \begin{itemize}
+    \item[Part one:] For the payoffs: $ \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ Discuss how the payoff change as each player becomes more or less patient.
     \end{itemize}
     \vfill\null
   \begin{multicols}{2}
@@ -59,17 +114,22 @@
     \end{itemize}
     \vfill\null
   \end{multicols}
+\vfill\null
 \end{frame}
 
-\begin{frame}{PS6, Ex. 2 (A): }
+
+\begin{frame}{PS6, Ex. 2 (A): Infinite-horizon bargaining}
     \begin{itemize}
-    \item[part two:] For the payoffs: $ \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ show that for $\delta_2=\delta_1$ the payoffs simplify to $\left(\frac{1}{1+\delta},\frac{\delta}{1+\delta}\right)$
+    \item[Part two:] For the payoffs: $ \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ show that for $\delta_2=\delta_1$ the payoffs simplify to $\left(\frac{1}{1+\delta},\frac{\delta}{1+\delta}\right)$
     \end{itemize}
-    Write up the payoffs with $\delta=\delta_1=\delta_2$ \\
-    Use that: $1-x^2=(1+x)(1-x)$, to simplify \\
-    Simplification: \\
-    \begin{math} \left(\frac{1-\delta}{1-\delta^2},\frac{\delta(1-\delta)}{1-\delta^2}\right) \Rightarrow \left(\frac{1-\delta}{(1-\delta)(1+\delta)},\frac{\delta(1-\delta)}{(1-\delta)(1+\delta)}\right) \Rightarrow \left(\frac{1}{1+\delta},\frac{\delta}{1+\delta}\right)
-    \end{math}
+    \vfill\null
+    \begin{itemize}
+    \item[]Write up the payoffs with $\delta=\delta_1=\delta_2$ and use that: $1-x^2=(1+x)(1-x)$, to simplify \\
+    \end{itemize}
+    \vfill\null
+    \begin{align*}
+\left(\frac{1-\delta}{1-\delta^2},\frac{\delta(1-\delta)}{1-\delta^2}\right) \Rightarrow \left(\frac{1-\delta}{(1-\delta)(1+\delta)},\frac{\delta(1-\delta)}{(1-\delta)(1+\delta)}\right) \Rightarrow \left(\frac{1}{1+\delta},\frac{\delta}{1+\delta}\right)
+    \end{align*} 
     \vfill\null
 \end{frame}
 
@@ -545,15 +605,24 @@
 
 \begin{frame}{PS6, Ex. 4: }
     Go back to exercise 4 in problem set 5. Write up the game tree for the situation in part (c), where the choice to acquire the weapon is not observed. Find the SPNE. What has changed?\\\bigskip
-    \textit{Last class we actually solved this part and discussed it as an extension...}
+    \textbf{\textit{Last class we actually solved and discussed this part as an extension...}}
 \end{frame}
 
 
 
+\section{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
 
-\section{PS6, Ex. 5: }
+\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
 
-\begin{frame}{PS6, Ex. 5: }
+\begin{align}
+    \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)
+\end{align}
+which player 2 accepts.
+     \vfill\null
+\end{frame}
+
+\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
     \begin{itemize}
     \item[] Consider an infinite bargaining game. Show that in the BI outcome, when each player has their own discount factor $\delta_1,\delta_2 \epsilon [0;1]$, player 1 offers the settlement $ (s*,1-s*)= \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ which player 2 accepts.
     \item[(Step 1)] Start with a three stage game, but where player 1s payoff in turn 3 is denoted s. Write up the outcome for player 1 in round 3. Then use the potential outcome of round 3 to find the outcome in round 2. Do the same for round 1 with respects to round 2.
@@ -567,7 +636,7 @@
      \vfill\null
 \end{frame}
 
-\begin{frame}{PS6, Ex. 5: }
+\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
     \begin{itemize}
     \item[] Consider an infinite bargaining game. Show that in the BI outcome, when each player has their own discount factor $\delta_1,\delta_2 \epsilon [0;1]$, player 1 offers the settlement $ (s*,1-s*)= \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$ which player 2 accepts.
     \item[(Step 2)] Since the game is infinite, the players are playing the same game in turn 3 as in turn 1, ie. the outcome of turn 1 should be the same as in turn 3. Use this to find a stationary solution, where $s_turn1=s_turn3$
@@ -592,37 +661,105 @@
     \vfill\null 
 \end{frame}
 
-\section{PS6, Ex. 6: }
+\section{PS6, Ex. 6: Cornout, colluding to every-ones benefit?}
 
-\begin{frame}{PS6, Ex. 6: }
+\begin{frame}{PS6, Ex. 6: Cornout, colluding to everyone's benefit?}
     \begin{itemize}
-    \item[(a)] Consider the game where both of them choose their effort levels simultaneously and independently. Derive the best response functions. Find the (pure strategy) Nash equilibrium $(y_1^{NE}, y_2^{NE})$ with $y_1^{NE}, y_2^{NE} > 0$.
+    \item[(a)] Given the levels of research $x_1,x_2$, find the resulting levels of output $(q_1(x_1, x_2)$ and $(q_2(x_1, x_2)$) in the second stage
     \end{itemize}
     \vfill\null
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff functions
-      \item[(Step 2)] Write up the FOC and find the best response functions
-      \item[(Step 3)] This is not a symmetric game, so you have to substitute $BR_i$ into $BR_j$ and then isolate $y_i$ and insert it into $BR_j$:
+      \item[(Step 1)] Write up the payoff function, taking research as given
+      \item[(Step 2)] Write up the FOC and find the best response function for $q_i$
+      \item[(Step 3)] Use symmetry to find the NE by setting $q_i=q_j$:
       \begin{align*}
-          y_1&=\frac{y_1}{2}^{\frac{1}{2}} \Rightarrow y_1-2y_1^2=0 \Rightarrow y_1=\frac{1}{2} \\
-          y_2&=\frac{\frac{1}{2}}{2}=\frac{1}{4}
+          q_i = \frac{1}{2} - \frac{q_i}{2} + \frac{x_i+x_j}{2} \Rightarrow \\ q_i = \frac{1+x_i+x_j}{3}
       \end{align*}
-      \item[NE:] \begin{math} \left(\frac{1}{2},\frac{1}{4}\right)\end{math}
+      \item[NE:] \begin{math} \left(\frac{1+x_i+x_j}{3},\frac{1+x_i+x_j}{3}\right)\end{math}
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
     \begin{itemize}
-    \item[1] Quality: $q(y_1, y_2) = y_1y_2.$\\
-    \item[2] Costs: $C_1(y_1) = \frac{1}{3}(y_1)^3,\ \ C_2(y_2) = (y_2)^2.$\\
-    \item[3] $Payoff_i$: $U_i(y_i,y_j) = q(y_1,y_2)-C_i(y_i).$ \\
-    \item[4] $Payoff_1(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-\frac{1}{3}y_1^3$ \\
-    \item[5] $Payoff_2(y_1,y_2)$: $U_1(y_1,y_2) = y_1*y_2-y_2^2$ \\
-    \item[6] $BR_1(y_2)$: $y_1 = y_2^{1/2}$ \\
-    \item[7] $BR_2(y_1)$: $y_2 = \frac{y_1}{2}$ \\
+    \item[1] Price: $P(q_1,q_2)=2-q_1-q_2$
+    \item[2] Cost production: $c_{1q} = c_{2q} = 1 - x_1 - x_2$
+    \item[3] Cost research: $c_i=x_i^2$
+    \item[4] $Payoff_i$: $\pi_i(q_i,q_j,x_i,x_j) = (2-q_i-q_j)q_i-(1-x_i-x_j)q_i-x_i^2$ 
+    \item[6] $BR_i(q_j)$: $q_i = \frac{1}{2} - \frac{q_j}{2} + \frac{x_i+x_j}{2}$
     \end{itemize}
     \vfill\null
   \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 6: Cornout, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(b)] Assume that the stage one decisions are made simultaneously and independently.
+That is, each firm i chooses $x_i$ in order to maximize its own profit (foreseeing the
+outcome of stage two). Using your results from (a), find the levels of research and
+output in the SPNE:$x_1^*,x_2^*,q_1(x_1^*,x_2^*),q_2(x_1^*,x_2^*)$.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the payoff function as a function of research
+      \item[(Step 2)] Write up the FOC for $x_i$
+      \item[(Step 3)] Use symmetry to find the SPNE by setting $x_i=x_j$ isolating $x_i$ and calculating $q_i$:
+      \begin{align*}
+          0 = \frac{2(1+x_i+x_i)}{9}-2x_i \Rightarrow x_i=\frac{1}{7}
+      \end{align*}
+      \item[SPNE:] \begin{math} \left(\frac{1}{7},\frac{1}{7},\frac{3}{7},\frac{3}{7}\right)\end{math}
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] $BR_i(x_i,x_j): q_i(x_i,x_j)=\frac{1+x_i+x_j}{3}$
+    \item[2] $Payoff_i$: $\pi_i(q_i,q_j,x_i,x_j) = (2-q_i-q_j-(1-x_i-x_j)q_i-x_i^2$ 
+    \item[3] $Payoff_i(x_1,x_2)$: $\pi_i(x_i,x_j) = (2-2\frac{1+x_i+x_j}{3}-(1-x_i-x_j)\frac{1+x_i+x_j}{3}-x_i^2 = \frac{1+x_i+x_j}{3}\frac{1+x_i+x_j}{3}-x_i^2 = \frac{(1+x_i+x_j)^2}{9}-x_i^2 $  
+    \item[4] $FOC_i$: $0 = \frac{2(1+x_i+x_j)}{9}-2x_i$
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 6: Cornout, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(c)] Assume now that the firms collude in the first stage. That is, they choose $x_1 and x_2$ to maximize their joint profit while taking into account that $q_1 and q_2$ will be chosen simultaneously and independently in stage two. Find the resulting levels of research and output: $x_1^**,x_2^**,q_1(x_1^**,x_2^**) and q_2(x_1^**,x_2^**)$.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step 1)] Write up the combined payoff function
+      \item[(Step 2)] Write up the FOC for $x_i$
+      \item[(Step 3)] Use symmetry to find the outcome by setting $x_i=x_j$ isolating $x_i$ and calculating $q_i$:
+      \begin{align*}
+          0 = 0=4*\frac{(1+x_i+x_j)}{9}-2x_i \Rightarrow \\ x_i=\frac{2}{5}
+      \end{align*}
+      \item[Outcome:] \begin{math} \left(\frac{2}{5},\frac{2}{5},\frac{3}{5},\frac{3}{5}\right)\end{math}
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+    \item[1] $Payoff_i(x_1,x_2)$: $\pi_i(x_i,x_j) = \frac{(1+x_i+x_j)^2}{9}-x_i^2 $ 
+    \item[2] $\Pi(x_i,x_j= \pi_i + \pi_j = 2*\frac{(1+x_i+x_j)^2}{9}-\frac{x_i}{2}^2-\frac{x_j}{2}^2 $ 
+    \item[3] $FOC_i$: $0=4*\frac{(1+x_i+x_j)}{9}-2x_i$ 
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS6, Ex. 6: Cornout, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(d)] Based on your findings in (b) and (c), compare the outcomes in terms of consumer
+welfare [hint: it is enough to look at total output] and firms’ profit [hint: no calcula-
+tions are necessary]. Comment on the source of the difference
+    \end{itemize}
+    \vfill\null
+Since the quantity in c is higher, this also means that the price is lower. Higher quantity and lower price means there is a higher consumer welfare.
+
+By definition the profit in c is higher.
+
+\intuition{The difference comes from the fact that the collusion in the first stage drives down the cost, the benefit of which is then distributed amongst companies and consumers}
+\vfill\null
 \end{frame}
 
 
