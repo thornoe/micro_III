@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file '6b2.pdf' (pdf, eps, ps)
+%% Accompanies image file '3b1.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,7 +53,7 @@
   \begin{picture}(1,0.59378475)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{6b2.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{3b1.pdf}}%
     \put(-1.04477875,-2.07937627){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.48714369\unitlength}\raggedright \end{minipage}}}%
     \put(0.53836768,0.30513192){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L_2$\end{tabular}}}}%
     \put(0.69464231,0.38920898){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 1\end{tabular}}}}%
@@ -62,7 +62,7 @@
     \put(0.14302327,0.4689157){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L_1$\end{tabular}}}}%
     \put(0.31495319,0.56876389){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 1\end{tabular}}}}%
     \put(1.3539594,-5.50951266){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.36144582\unitlength}\raggedright \end{minipage}}}%
-    \put(0.71156544,0.00662506){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(-1,-1)\end{tabular}}}}%
+    \put(0.71156544,0.00662506){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,-1)\end{tabular}}}}%
     \put(0.87757098,0.00662506){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(-3,-3)\end{tabular}}}}%
     \put(0.86819021,0.24348858){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
     \put(0.92531828,0.13305153){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
@@ -74,6 +74,6 @@
     \put(0.41647509,0.1330567){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L$\end{tabular}}}}%
     \put(0.33489808,0.24355678){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
     \put(0.03289376,0.08538092){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.34512801\unitlength}\raggedright \end{minipage}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{6b2.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{3b1.pdf}}%
   \end{picture}%
 \endgroup%

@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file '6a_.pdf' (pdf, eps, ps)
+%% Accompanies image file '3a_.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,7 +53,7 @@
   \begin{picture}(1,0.58611808)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{6a_.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{3a_.pdf}}%
     \put(-1.08337209,-2.13749644){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.53408628\unitlength}\raggedright \end{minipage}}}%
     \put(0.55481998,0.29201718){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L_2$\end{tabular}}}}%
     \put(0.68887896,0.37768112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 1\end{tabular}}}}%
@@ -74,6 +74,6 @@
     \put(0.40546158,0.1166942){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L$\end{tabular}}}}%
     \put(0.37267571,0.22927987){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Player 2\end{tabular}}}}%
     \put(0.01464051,0.06811858){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.35164199\unitlength}\raggedright \end{minipage}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{6a_.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{3a_.pdf}}%
   \end{picture}%
 \endgroup%
