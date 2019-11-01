@@ -23,14 +23,14 @@ Consider the sequential bargaining game discussed in Lecture 6, but now with $K 
 
 \begin{frame}{PS6, Ex. 1 (A): Sequential bargaining }
     \textbf{Explain $\delta$ mathematically\\}
-    $delta$ is the discount factor which the payoff in the next game will be multiplied by, so if there player stand to gain 1 in the next round, and $\delta=0.5$, it is only worth $1*0.5=0.5$ to the player in the current round.\\
-    \textbf{Explain $\delta$ intuitively}\\ Intuitively $\delta$ is the factor showing how patient the players are. The higher $\delta$, thee less the players will mind waiting for the next round.  \\
+    $delta$ is the discount factor which the payoff in the next game will be multiplied by, so if there player stand to gain 1 in the next stage, and $\delta=0.5$, it is only worth $1*0.5=0.5$ to the player in the current stage.\\
+    \textbf{Explain $\delta$ intuitively}\\ Intuitively $\delta$ is the factor showing how patient the players are. The higher $\delta$, thee less the players will mind waiting for the next stage.  \\
     \textbf{Explain the case $\delta=0$}\\
-    In the case $\delta=0$, the players will have their payoff multiplied by 0 in the next round, so the game Rounds into an ultimatum game where the first mover can offer the other player anything and they will accept. There is a first mover advantage. \\
+    In the case $\delta=0$, the players will have their payoff multiplied by 0 in the next stage, so the game stages into an ultimatum game where the first mover can offer the other player anything and they will accept. There is a first mover advantage. \\
     \textbf{Explain the case $\delta=1$}\\
-    In the case $\delta=1$, the players will have their payoff multiplied by 1 in the next round, so they won't care whether the game goes for another around. This will be the case for each round until the final round, which will then be an ultimatum game where the last mover can offer the other player anything and they will accept. There is no first mover advantage, but there is a last mover advantage. \\
+    In the case $\delta=1$, the players will have their payoff multiplied by 1 in the next stage, so they won't care whether the game goes for another astage. This will be the case for each stage until the final stage, which will then be an ultimatum game where the last mover can offer the other player anything and they will accept. There is no first mover advantage, but there is a last mover advantage. \\
     \textbf{Explain whether it depends on K}\\
-    For $\delta$=1, the last mover will get the whole price pool, no matter how many rounds (K) the game is. The only case with a first mover advantage is for $K=1$, in which the first move is the same as the last.\\
+    For $\delta$=1, the last mover will get the whole price pool, no matter how many stages (K) the game is. The only case with a first mover advantage is for $K=1$, in which the first move is the same as the last.\\
     \vfill\null
 \end{frame}
 
@@ -62,7 +62,7 @@ for the case where $\delta_1=\delta_2$
     \vfill\null
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
+      \item[(Step a)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
       \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -81,8 +81,8 @@ for the case where $\delta_1=\delta_2$
     \vfill\null
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
-      \item[(Step 2)] Use the fact that it's a zero sum game to look at the change in outcome for player 2
+      \item[(Step a)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
+      \item[(Step b)] Use the fact that it's a zero sum game to look at the change in outcome for player 2
       \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -102,9 +102,9 @@ for the case where $\delta_1=\delta_2$
     \vfill\null
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
-      \item[(Step 2)] Use the fact that it's a zero sum game to look at the change in outcome for player 2
-      \item[Answer] Player 1s payoff is increasing in $\delta_1$ and decreasing in $\delta_2$, vice versa for Player 2. This intuitively makes sense, because player i's bargaining power in later rounds will increase when his patience increase relative to player j.
+      \item[(Step a)] Write up partial derivatives for $\delta_2$'s and $\delta_1$'s effect on the outcome for player 1, are the partial derivatives positive or negative?
+      \item[(Step b)] Use the fact that it's a zero sum game to look at the change in outcome for player 2
+      \item[Answer] Player 1s payoff is increasing in $\delta_1$ and decreasing in $\delta_2$, vice versa for Player 2. This intuitively makes sense, because player i's bargaining power in later stages will increase when his patience increase relative to player j.
       \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -706,102 +706,96 @@ for the case where $\delta_1=\delta_2$
     which player 2 accepts.\\\medskip
     \textbf{Hints:}
     \begin{enumerate}
-      \item Start with a three stage game where Player 1 gets a payoff $s_3$ in round 3.
+      \item Start with a three stage game where Player 1 gets a payoff $s_3$ in stage 3.
       \item Use this to find a stationary solution where $s_1=s_3$.
       \item Remember that the outcome in period $\bm{t}$ is always denoted $\bm{s_t}$ for Player 1 and $\bm{1-s_t}$ for Player 2.
     \end{enumerate}
     \vfill\null
 \end{frame}
 
-\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+\begin{frame}{PS6, Ex. 5 (a): Infinite-horizon bargaining with different discount factors}
     Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
     $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
     which player 2 accepts.
     \begin{itemize}
-      \item[(Step 1)] Start with a three stage game where Player 1's payoff in round 3 is denoted $s_3$. Write up the outcome for Player 1 in round 3. Then use the potential outcome of round 3 to find the outcome in round 2. Do the same for round 1 with respects to round 2.
+      \item[(Step a)] Start with a three stage game where Player 1's payoff in stage 3 is denoted $s_3$. Write up the outcome for Player 1 in stage 3. Then use the potential outcome of stage 3 to find the outcome in stage 2. Do the same for stage 1 with respects to stage 2.
     \end{itemize}
-    \vfill\null
     \begin{itemize}
-        \item[Round 3] What does Player 1 propose? Does Player 2 accept? What does Player 1 get himself?
+        \item[Stage 3] What does Player 1 propose? Does Player 2 accept? What does Player 1 get himself?
     \end{itemize}
     \vfill\null
 \end{frame}
-\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+\begin{frame}{PS6, Ex. 5 (a): Infinite-horizon bargaining with different discount factors}
     Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
     $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
     which player 2 accepts.
     \begin{itemize}
-      \item[(Step 1)] Start with a three stage game where Player 1's payoff in round 3 is denoted $s_3$. Write up the outcome for Player 1 in round 3. Then use the potential outcome of round 3 to find the outcome in round 2. Do the same for round 1 with respects to round 2.
+      \item[(Step a)] Start with a three stage game where Player 1's payoff in stage 3 is denoted $s_3$. Write up the outcome for Player 1 in stage 3. Then use the potential outcome of stage 3 to find the outcome in stage 2. Do the same for stage 1 with respects to stage 2.
     \end{itemize}
-    \vfill\null
     \begin{itemize}
-        \item[Round 3] P2 will choose to accept or decline an offer $1-s_3\in [0;1]$: She will accept anything. P1 proposes $1-s_3$ which P2 accepts. P1 gets $s_3$ for himself.
-        \item[Round 2]
+        \item[Stage 3] P2 will choose to accept or decline an offer $1-s_3\in [0;1]$: She will accept anything. P1 proposes $1-s_3$ which P2 accepts. P1 gets $s_3$ for himself.
+        \item[Stage 2]
     \end{itemize}
     \vfill\null
 \end{frame}
-\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+\begin{frame}{PS6, Ex. 5 (a): Infinite-horizon bargaining with different discount factors}
     Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
     $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
     which player 2 accepts.
     \begin{itemize}
-      \item[(Step 1)] Start with a three stage game where Player 1's payoff in round 3 is denoted $s_3$. Write up the outcome for Player 1 in round 3. Then use the potential outcome of round 3 to find the outcome in round 2. Do the same for round 1 with respects to round 2.
+      \item[(Step a)] Start with a three stage game where Player 1's payoff in stage 3 is denoted $s_3$. Write up the outcome for Player 1 in stage 3. Then use the potential outcome of stage 3 to find the outcome in stage 2. Do the same for stage 1 with respects to stage 2.
     \end{itemize}
-    \vfill\null
     \begin{itemize}
-        \item[Round 3] P2 will choose to accept or decline an offer $1-s_3\in [0;1]$: She will accept anything. P1 proposes $1-s_3$ which P2 accepts. P1 gets $s_3$ for himself.
-        \item[Round 2] P1 will choose to accept or decline an offer $s_2 \in [0;1]$: He will accept if $s_2 \geq s_3\delta_1$. P2 proposes $s_2 = s_3\delta_1$ which P1 accepts. P2 gets $1-s_2 = 1-s_3\delta_1$.
-        \item[Round 1]
+        \item[Stage 3] P2 will choose to accept or decline an offer $1-s_3\in [0;1]$: She will accept anything. P1 proposes $1-s_3$ which P2 accepts. P1 gets $s_3$ for himself.
+        \item[Stage 2] P1 will choose to accept or decline an offer $s_2 \in [0;1]$: He will accept if $s_2 \geq s_3\delta_1$. P2 proposes $s_2 = s_3\delta_1$ which P1 accepts. P2 gets $1-s_2 = 1-s_3\delta_1$.
+        \item[Stage 1]
     \end{itemize}
     \vfill\null
 \end{frame}
-\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+\begin{frame}{PS6, Ex. 5 (a): Infinite-horizon bargaining with different discount factors}
     Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
     $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
     which player 2 accepts.
     \begin{itemize}
-      \item[(Step 1)] Start with a three stage game where Player 1's payoff in round 3 is denoted $s_3$. Write up the outcome for Player 1 in round 3. Then use the potential outcome of round 3 to find the outcome in round 2. Do the same for round 1 with respects to round 2.
+      \item[(Step a)] Start with a three stage game where Player 1's payoff in stage 3 is denoted $s_3$. Write up the outcome for Player 1 in stage 3. Then use the potential outcome of stage 3 to find the outcome in stage 2. Do the same for stage 1 with respects to stage 2.
     \end{itemize}
-    \vfill\null
     \begin{itemize}
-        \item[Round 3] P2 will choose to accept or decline an offer $1-s_3\in [0;1]$: She will accept anything. P1 proposes $1-s_3$ which P2 accepts. P1 gets $s_3$ for himself.
-        \item[Round 2] P1 will choose to accept or decline an offer $s_2 \in [0;1]$: He will accept if $s_2 \geq s_3\delta_1$. P2 proposes $s_2 = s_3\delta_1$ which P1 accepts. P2 gets $1-s_2 = 1-s_3\delta_1$.
-        \item[Round 1] P2 will choose to accept or decline an offer $1-s_1 \in [0;1]$: She will accept if $1-s_1 \geq (1-s_3\delta_1)\delta_2$. P1 proposes $1-s_1 = (1-s_3\delta_1)\delta_2$ which P2 accepts. P1 gets $s_1 =1-(1-s_3\delta_1)\delta_2$.
+        \item[Stage 3] P2 will choose to accept or decline an offer $1-s_3\in [0;1]$: She will accept anything. P1 proposes $1-s_3$ which P2 accepts. P1 gets $s_3$ for himself.
+        \item[Stage 2] P1 will choose to accept or decline an offer $s_2 \in [0;1]$: He will accept if $s_2 \geq s_3\delta_1$. P2 proposes $s_2 = s_3\delta_1$ which P1 accepts. P2 gets $1-s_2 = 1-s_3\delta_1$.
+        \item[Stage 1] P2 will choose to accept or decline an offer $1-s_1 \in [0;1]$: She will accept if $1-s_1 \geq (1-s_3\delta_1)\delta_2$. P1 proposes $1-s_1 = (1-s_3\delta_1)\delta_2$ which P2 accepts. P1 gets $s_1 =1-(1-s_3\delta_1)\delta_2$.
     \end{itemize}
      \vfill\null
 \end{frame}
 
 
-\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+\begin{frame}{PS6, Ex. 5 (b): Infinite-horizon bargaining with different discount factors}
     Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
     $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
     which player 2 accepts.
     \begin{itemize}
-      \item[(Step 2)] Since the game is infinite, the players are playing the same game in Round 3 as in Round 1, thus, the outcome of Round 1 should be the same as in Round 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
+      \item[(Step b)] Since the game is infinite, the players are playing the same game in stage 3 as in stage 1, thus, the outcome of stage 1 should be the same as in stage 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
     \end{itemize}
-    \vfill\null
   \begin{multicols}{2}
     \vfill\null \columnbreak
     Outcomes for Player 1:
     \begin{itemize}
         \item[]\vspace{-8pt}
             \begin{itemize}\normalsize
-            \item[Round 1] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
-            \item[Round 3] $s_3$.
+              \item[Stage 1:] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
+              \item[Stage 3:] $s_3$.
             \end{itemize}
     \end{itemize}
     \vfill\null
   \end{multicols}
     \vfill\null
 \end{frame}
-\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+\begin{frame}{PS6, Ex. 5 (b): Infinite-horizon bargaining with different discount factors}
     Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
     $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
     which player 2 accepts.
     \begin{itemize}
-      \item[(Step 2)] Since the game is infinite, the players are playing the same game in Round 3 as in Round 1, thus, the outcome of Round 1 should be the same as in Round 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
+      \item[(Step b)] Since the game is infinite, the players are playing the same game in stage 3 as in stage 1, thus, the outcome of stage 1 should be the same as in stage 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
     \end{itemize}
-    \vfill\null
   \begin{multicols}{2}
     Stationary solution:
     \begin{align*}
@@ -813,22 +807,21 @@ for the case where $\delta_1=\delta_2$
     \begin{itemize}
         \item[]\vspace{-8pt}
             \begin{itemize}\normalsize
-            \item[Round 1] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
-            \item[Round 3] $s_3$.
+              \item[Stage 1:] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
+              \item[Stage 3:] $s_3$.
             \end{itemize}
     \end{itemize}
     \vfill\null
   \end{multicols}
     \vfill\null
 \end{frame}
-\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+\begin{frame}{PS6, Ex. 5 (b): Infinite-horizon bargaining with different discount factors}
     Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
     $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
     which player 2 accepts.
     \begin{itemize}
-      \item[(Step 2)] Since the game is infinite, the players are playing the same game in Round 3 as in Round 1, thus, the outcome of Round 1 should be the same as in Round 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
+      \item[(Step b)] Since the game is infinite, the players are playing the same game in stage 3 as in stage 1, thus, the outcome of stage 1 should be the same as in stage 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
     \end{itemize}
-    \vfill\null
   \begin{multicols}{2}
     Stationary solution:
     \begin{align*}
@@ -843,22 +836,21 @@ for the case where $\delta_1=\delta_2$
     \begin{itemize}
         \item[]\vspace{-8pt}
             \begin{itemize}\normalsize
-            \item[Round 1] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
-            \item[Round 3] $s_3$.
+              \item[Stage 1:] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
+              \item[Stage 3:] $s_3$.
             \end{itemize}
     \end{itemize}
     \vfill\null
   \end{multicols}
     \vfill\null
 \end{frame}
-\begin{frame}{PS6, Ex. 5: Infinite-horizon bargaining with different discount factors}
+\begin{frame}{PS6, Ex. 5 (b): Infinite-horizon bargaining with different discount factors}
     Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
     $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
     which player 2 accepts.
     \begin{itemize}
-      \item[(Step 2)] Since the game is infinite, the players are playing the same game in Round 3 as in Round 1, thus, the outcome of Round 1 should be the same as in Round 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
+      \item[(Step b)] Since the game is infinite, the players are playing the same game in stage 3 as in stage 1, thus, the outcome of stage 1 should be the same as in stage 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
     \end{itemize}
-    \vfill\null
   \begin{multicols}{2}
     Stationary solution:
     \begin{align*}
@@ -877,14 +869,16 @@ for the case where $\delta_1=\delta_2$
     \begin{itemize}
         \item[]\vspace{-8pt}
             \begin{itemize}\normalsize
-            \item[Round 1] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
-            \item[Round 3] $s_3$.
+            \item[Stage 1:] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
+            \item[Stage 3:] $s_3$.
             \end{itemize}
     \end{itemize}
     \vfill\null
   \end{multicols}
     \vfill\null
 \end{frame}
+
+
 
 
 \section{PS6, Ex. 6: Cournot, colluding to every-ones benefit?}
@@ -932,7 +926,7 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff function, taking research as given.
+      \item[(Step a)] Write up the payoff function, taking research as given.
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -950,7 +944,7 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff function, taking research as given:
+      \item[(Step a)] Write up the payoff function, taking research as given:
     \end{itemize}
     \begin{align*}
       \pi_i &= P\cdot q_i - c_q\cdot q_i - c_{xi}\\
@@ -958,8 +952,24 @@ for the case where $\delta_1=\delta_2$
             &= (2-q_i-q_j-(1-x_i-x_j))q_i-x_i^2\\
             &= (1+x_i+x_j-q_i-q_j)q_i-x_i^2
     \end{align*}
+    \vfill\null \columnbreak
+    Information so far:
     \begin{itemize}
-      \item[(Step 2)] Find $FOC_{q_i}:\delta\pi_i(q_i,q_j,x_i,x_j)/\delta q_i$.
+      \item[1] Price: $P(q_1,q_2)=2-q_1-q_2$
+      \item[2] Marginal cost of production: $c_{q1} = c_{q2} = c_q =1 - x_1 - x_2$
+      \item[3] Cost of research for firm $i$: $c_{xi}=x_i^2$
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 6.a: Cournot, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(a)] Given the levels of research $x_1,x_2$, find the resulting levels of output $(q_1(x_1, x_2))$ and $(q_2(x_1, x_2))$ in the second stage.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Write up the payoff function, taking research as given:
+      \item[(Step b)] Find $FOC_{q_i}:\delta\pi_i(q_i,q_j,x_i,x_j)/\delta q_i$.
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -978,13 +988,31 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff function, taking research as given.
-      \item[(Step 2)] Find $FOC_{q_i}:\delta\pi_i(q_i,q_j,x_i,x_j)/\delta q_i$:
+      \item[(Step a)] Write up the payoff function, taking research as given.
+      \item[(Step b)] Find $FOC_{q_i}:\delta\pi_i(q_i,q_j,x_i,x_j)/\delta q_i$:
     \end{itemize}
     \begin{align*}
       \frac{\delta\pi_i}{\delta q_i}&=1-2q_i-q_j+x_i+x_j=0
     \end{align*}
+    \vfill\null \columnbreak
+    Information so far:
     \begin{itemize}
+      \item[1] Price: $P(q_1,q_2)=2-q_1-q_2$
+      \item[2] Marginal cost of production: $c_{q1} = c_{q2} = c_q =1 - x_1 - x_2$
+      \item[3] Cost of research for firm $i$: $c_{xi}=x_i^2$
+      \item[4] $Payoff_i(q_i,q_j,x_i,x_j)$: $\pi_i=(1+x_i+x_j-q_i-q_j)q_i-x_i^2$
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 6.a: Cournot, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(a)] Given the levels of research $x_1,x_2$, find the resulting levels of output $(q_1(x_1, x_2))$ and $(q_2(x_1, x_2))$ in the second stage.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Write up the payoff function, taking research as given.
+      \item[(Step b)] Find $FOC_{q_i}:\delta\pi_i(q_i,q_j,x_i,x_j)/\delta q_i$:
       \item[(Step 3)] Due to symmetry, $q_i=q_j$. Use this to find $BR_i=q_i(x_i,x_j)$ and the NE for the \nth{2} stage.
     \end{itemize}
     \vfill\null \columnbreak
@@ -1005,8 +1033,8 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff function, taking research as given.
-      \item[(Step 2)] Write up the FOC and find the best response function for $q_i$.
+      \item[(Step a)] Write up the payoff function, taking research as given.
+      \item[(Step b)] Write up the FOC and find the best response function for $q_i$.
       \item[(Step 3)] Due to symmetry, $q_i=q_j$. Use this to find $BR_i=q_i(x_i,x_j)$ and the NE for the \nth{2} stage:
       \begin{align*}
           1-2q_i-q_i+x_i+x_j&=0\Rightarrow \\
@@ -1032,7 +1060,7 @@ for the case where $\delta_1=\delta_2$
 
 \begin{frame}{PS6, Ex. 6.b: Cournot, colluding to everyone's benefit?}
     \begin{itemize}
-    \item[(b)] Assume that the stage one decisions are made simultaneously and independently. That is, each firm i chooses $x_i$ in order to maximize its own profit (foreseeing the outcome of stage two). Using your results from (a), find the levels of research and output in the SPNE: $x_1^*,x_2^*,q_1(x_1^*,x_2^*),q_2(x_1^*,x_2^*)$.
+    \item[(b)] Assume that the stage one decisions are made simultaneously and independently. That is, each firm $i$ chooses $x_i$ in order to maximize its own profit (foreseeing the outcome of stage two). Using your results from (a), find the levels of research and output in the SPNE: $x_1^*,x_2^*,q_1(x_1^*,x_2^*),q_2(x_1^*,x_2^*)$.
     \end{itemize}
   \begin{multicols}{2}
     \vfill\null \columnbreak
@@ -1050,7 +1078,7 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$.
+      \item[(Step a)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$.
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -1067,7 +1095,7 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$:
+      \item[(Step a)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$:
     \end{itemize}
     \begin{align*}
       \pi_i =&\ (1+x_i+x_j-q_i-q_j)q_i-x_i^2\Rightarrow\\
@@ -1076,8 +1104,23 @@ for the case where $\delta_1=\delta_2$
             =&\ \left(\frac{1+x_i+x_j}{3}\right)\frac{1+x_i+x_j}{3}-x_i^2\Rightarrow\\
             =&\ \frac{(1+x_i+x_j)^2}{9}-x_i^2
     \end{align*}
+    \vfill\null \columnbreak
+    Information so far:
     \begin{itemize}
-      \item[(Step 2)] Write up the $FOC_{x_i}:\delta\pi_i(x_i,x_j)/\delta x_i$.
+    \item[1] $BR_i(x_i,x_j)$: $q_i = \frac{1+x_i+x_j}{3}$
+    \item[2] $Payoff_i(q_i,q_j,x_i,x_j)$: $\pi_i=(1+x_i+x_j-q_i-q_j)q_i-x_i^2$
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 6.b: Cournot, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(b)] Assume that the stage one decisions are made simultaneously and independently. That is, each firm i chooses $x_i$ in order to maximize its own profit (foreseeing the outcome of stage two). Using your results from (a), find the levels of research and output in the SPNE: $x_1^*,x_2^*,q_1(x_1^*,x_2^*),q_2(x_1^*,x_2^*)$.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$:
+      \item[(Step b)] Write up the $FOC_{x_i}:\delta\pi_i(x_i,x_j)/\delta x_i$.
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -1096,13 +1139,31 @@ for the case where $\delta_1=\delta_2$
     \vfill\null
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$.
-      \item[(Step 2)] Write up the $FOC_{x_i}:$
+      \item[(Step a)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$.
+      \item[(Step b)] Write up the $FOC_{x_i}:$
     \end{itemize}
     \begin{align*}
       \frac{\delta\pi_i(x_i,x_j)}{\delta x_i}=\frac{2}{9}(1+x_i+x_j)-2x_i=0
     \end{align*}
+    \vfill\null \columnbreak
+    Information so far:
     \begin{itemize}
+    \item[1] $BR_i(x_i,x_j)$: $q_i = \frac{1+x_i+x_j}{3}$
+    \item[2] $Payoff_i(q_i,q_j,x_i,x_j)$: $\pi_i=(1+x_i+x_j-q_i-q_j)q_i-x_i^2$
+    \item[3] $Payoff_i(x_1,x_2)$: $\pi_i=\frac{(1+x_i+x_j)^2}{9}-x_i^2$
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 6.b: Cournot, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(b)] Assume that the stage one decisions are made simultaneously and independently. That is, each firm i chooses $x_i$ in order to maximize its own profit (foreseeing the outcome of stage two). Using your results from (a), find the levels of research and output in the SPNE: $x_1^*,x_2^*,q_1(x_1^*,x_2^*),q_2(x_1^*,x_2^*)$.
+    \end{itemize}
+    \vfill\null
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$.
+      \item[(Step b)] Write up the $FOC_{x_i}:$
       \item[(Step 3)] Use symmetry to find the SPNE by setting $x_i=x_j=x_i^{*}$, isolating $x_i^{*}$, and calculating $q_i(x_i^{*},x_j^{*})$.
     \end{itemize}
     \vfill\null \columnbreak
@@ -1122,8 +1183,8 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$.
-      \item[(Step 2)] Write up the $FOC_{x_i}:\delta\pi_i(x_i,x_j)/\delta x_i$.
+      \item[(Step a)] Write up the payoff function as a function of research: $\pi_i(x_i,x_j)$.
+      \item[(Step b)] Write up the $FOC_{x_i}:\delta\pi_i(x_i,x_j)/\delta x_i$.
       \item[(Step 3)] Use symmetry to find the SPNE by setting $x_i=x_j=x_i^{*}$, isolating $x_i^{*}$, and calculating $q_i(x_i^{*},x_j^{*})$:
     \end{itemize}
     \vspace{-4pt}
@@ -1147,7 +1208,7 @@ for the case where $\delta_1=\delta_2$
     \item[3] $Payoff_i(x_1,x_2)$: $\pi_i=\frac{(1+x_i+x_j)^2}{9}-x_i^2$
     \item[4] $FOC_{x_i}$: $\frac{2}{9}(1+x_i+x_j)-2x_i=0$
     \end{itemize}
-    \vfill\null
+    \vfill
   \end{multicols}
 \end{frame}
 
@@ -1172,7 +1233,7 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Under collusion, set $x_i=x_j=x_i$ and write up the total payoff function $\Pi(x_i)$.
+      \item[(Step a)] Under collusion, write up the total payoff function $\Pi(x_i,x_j)$.
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
@@ -1189,21 +1250,17 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Under collusion, set $x_i=x_j=x_i$ and write up the total payoff function:
+      \item[(Step a)] Under collusion, write up the total payoff function $\Pi(x_i,x_j)$:
     \end{itemize}
     \begin{align*}
-      \Pi(x_i,x_j)&=2\frac{(1+x_i+x_j)^2}{9}-x_i^2-x_j^2\Rightarrow\\
-      \Pi(x_i)    &=2\frac{(1+2x_i)^2}{9}-2x_i^2
+      \Pi(x_i,x_j)&=\pi_i+\pi_j\Rightarrow\\
+                  &=2\frac{(1+x_i+x_j)^2}{9}-x_i^2-x_j^2
     \end{align*}
-    \begin{itemize}
-      \item[(Step 2)] Write up the $FOC_T:\delta\Pi(x_i)/\delta x_i$.
-    \end{itemize}
     \vfill\null \columnbreak
     Information so far:
     \begin{itemize}
       \item[1] $BR_i(x_i,x_j)$: $q_i = \frac{1+x_i+x_j}{3}$
       \item[2] $Payoff_i(x_1,x_2)$: $\pi_i=\frac{(1+x_i+x_j)^2}{9}-x_i^2$
-      \item[3] $Payoff_{total}(x_i)$: $\Pi=2\frac{(1+2x_i)^2}{9}-2x_i^2$
     \end{itemize}
     \vfill\null
   \end{multicols}
@@ -1214,22 +1271,15 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Under collusion, set $x_i=x_j=x_i$ and write up the total payoff function.
-      \item[(Step 2)] Write up the $FOC_{x_i}:\delta\Pi(x_i)/\delta x_i$:
-    \end{itemize}
-    \begin{align*}
-      \frac{\delta\Pi(x_i)}{\delta x_i}&=8\frac{(1+2x_i)^2}{9}-4x_i=0
-    \end{align*}
-    \begin{itemize}
-      \item[(Step 3)] Find the outcome by isolating $x_i$ and calculating $q_i$ using $BR_i$.
+      \item[(Step a)] Under collusion, write up the total payoff function $\Pi(x_i,x_j)$:
+      \item[(Step b)] Write up the $FOC_{x_i}:\delta\Pi(x_i,x_j)/\delta x_i$.
     \end{itemize}
     \vfill\null \columnbreak
     Information so far:
     \begin{itemize}
       \item[1] $BR_i(x_i,x_j)$: $q_i = \frac{1+x_i+x_j}{3}$
       \item[2] $Payoff_i(x_1,x_2)$: $\pi_i=\frac{(1+x_i+x_j)^2}{9}-x_i^2$
-      \item[3] $Payoff_{total}(x_i)$: $\Pi=2\frac{(1+2x_i)^2}{9}-2x_i^2$
-      \item[4] $FOC_{x_i}:$ $8\frac{(1+2x_i)^2}{9}-4x_i=0$
+      \item[3] $Payoff_{total}(x_i,x_j)$: $\Pi=2\frac{(1+x_i+x_j)^2}{9}-x_i^2-x_j^2$
     \end{itemize}
     \vfill\null
   \end{multicols}
@@ -1240,18 +1290,62 @@ for the case where $\delta_1=\delta_2$
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step 1)] Under collusion, set $x_i=x_j=x_i$ and write up the total payoff function.
-      \item[(Step 2)] Write up the $FOC_{x_i}:\delta\Pi(x_i)/\delta x_i$:
-      \item[(Step 3)] Find the outcome by isolating $x_i$ and calculating $q_i$ using $BR_i$:
+      \item[(Step a)] Under collusion, write up the total payoff function $\Pi(x_i,x_j)$.
+      \item[(Step b)] Write up the $FOC_{x_i}:\delta\Pi(x_i,x_j)/\delta x_i$.
     \end{itemize}
     \begin{align*}
-        8\frac{(1+2x_i)^2}{9}-4x_i&=0\Rightarrow \\
-        \frac{8}{9}+\frac{16}{9}x_i-\frac{36}{9}x_i&=0\Rightarrow \\
-        x_i^{**}&=\frac{8}{9}\cdot\frac{9}{20}=\frac{2}{5}
+      \frac{\delta\Pi(x_i,x_j)}{\delta x_i}&=4\frac{(1+x_i+x_j)^2}{9}-2x_i=0
+    \end{align*}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+      \item[1] $BR_i(x_i,x_j)$: $q_i = \frac{1+x_i+x_j}{3}$
+      \item[2] $Payoff_i(x_1,x_2)$: $\pi_i=\frac{(1+x_i+x_j)^2}{9}-x_i^2$
+      \item[3] $Payoff_{total}(x_i,x_j)$: $\Pi=2\frac{(1+x_i+x_j)^2}{9}-x_i^2-x_j^2$
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 6.c: Cournot, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(c)] Assume now that the firms collude in the first stage. That is, they choose $x_1$ and $x_2$ to maximize their joint profit while taking into account that $q_1$ and $q_2$ will be chosen simultaneously and independently in stage two. Find the resulting levels of research and output: $x_1^{**},x_2^{**},q_1(x_1^{**},x_2^{**})$ and $q_2(x_1^{**},x_2^{**})$.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Under collusion, write up the total payoff function $\Pi(x_i,x_j)$.
+      \item[(Step b)] Write up the $FOC_{x_i}:\delta\Pi(x_i,x_j)/\delta x_i$.
+      \item[(Step 3)] Taking advantage of symmetry, find the outcome by isolating $x_i^{**}$ and calculate $q_i^{**}$ using $BR_i(x_i^{**},x_j^{**})$.
+    \end{itemize}
+    \vfill\null \columnbreak
+    Information so far:
+    \begin{itemize}
+      \item[1] $BR_i(x_i,x_j)$: $q_i = \frac{1+x_i+x_j}{3}$
+      \item[2] $Payoff_i(x_1,x_2)$: $\pi_i=\frac{(1+x_i+x_j)^2}{9}-x_i^2$
+      \item[3] $Payoff_{total}(x_i,x_j)$: $\Pi=2\frac{(1+x_i+x_j)^2}{9}-x_i^2-x_j^2$
+      \item[4] $FOC_{x_i}:$ $4\frac{(1+x_i+x_j)^2}{9}-2x_i=0$
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS6, Ex. 6.c: Cournot, colluding to everyone's benefit?}
+    \begin{itemize}
+    \item[(c)] Assume now that the firms collude in the first stage. That is, they choose $x_1$ and $x_2$ to maximize their joint profit while taking into account that $q_1$ and $q_2$ will be chosen simultaneously and independently in stage two. Find the resulting levels of research and output: $x_1^{**},x_2^{**},q_1(x_1^{**},x_2^{**})$ and $q_2(x_1^{**},x_2^{**})$.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Under collusion, write up the total payoff function $\Pi(x_i,x_j)$.
+      \item[(Step b)] Write up the $FOC_{x_i}:\delta\Pi(x_i,x_j)/\delta x_i$.
+      \item[(Step 3)] Taking advantage of symmetry, find the outcome by isolating $x_i^{**}$ and calculate $q_i^{**}$ using $BR_i(x_i^{**},x_j^{**})$:
+    \end{itemize}
+    \begin{align*}
+        4\frac{(1+x_i^{**}+x_j^{**})^2}{9}-2x_i^{**}&=0\Rightarrow \\
+        \frac{4}{9}+\frac{8}{9}x_i^{**}-\frac{18}{9}x_i^{**}&=0\Rightarrow \\
+        x_i^{**}&=\frac{4}{9}\cdot\frac{9}{10}=\frac{4}{10}=\frac{2}{5}
     \end{align*}
     \begin{align*}
-        q_i^{**}=\frac{1+x_i+x_j}{3}=\frac{1}{3}\left(1+\frac{2}{5}+\frac{2}{5}\right)=\frac{3}{5}
+        q_i^{**}=\frac{1+x_i+x_j}{3}=\frac{1}{3}\left(1+\frac{2}{5}+\frac{2}{5}\right)=\frac{1}{3}\cdot\frac{9}{5}=\frac{3}{5}
     \end{align*}
+    \vspace{-8pt}
     \begin{itemize}
       \item[Outcome:] $(x_1^{**},x_2^{**},q_1^{**},q_2^{**}) = \left(\frac{2}{5},\frac{2}{5},\frac{3}{5},\frac{3}{5}\right)$
     \end{itemize}
@@ -1260,8 +1354,8 @@ for the case where $\delta_1=\delta_2$
     \begin{itemize}
       \item[1] $BR_i(x_i,x_j)$: $q_i = \frac{1+x_i+x_j}{3}$
       \item[2] $Payoff_i(x_1,x_2)$: $\pi_i=\frac{(1+x_i+x_j)^2}{9}-x_i^2$
-      \item[3] $Payoff_{total}(x_i)$: $\Pi=2\frac{(1+2x_i)^2}{9}-2x_i^2$
-      \item[4] $FOC_{x_i}:$ $8\frac{(1+2x_i)^2}{9}-4x_i=0$
+      \item[3] $Payoff_{total}(x_i,x_j)$: $\Pi=2\frac{(1+x_i+x_j)^2}{9}-x_i^2-x_j^2$
+      \item[4] $FOC_{x_i}:$ $4\frac{(1+x_i+x_j)^2}{9}-2x_i=0$
     \end{itemize}
     \vfill\null
   \end{multicols}
@@ -1275,11 +1369,12 @@ for the case where $\delta_1=\delta_2$
     \vspace{-10pt}
   \begin{multicols}{2}
     \vfill\null \columnbreak
-    Total outcome:
+    Relevant information:
     \begin{itemize}
-    \item[(a)] $(x_T^{*},q_T^{*})= \left(x_i+x_j, \frac{2}{3}(1+x_i+x_j)\right)$
-    \item[(b)] $(x_T^{*},q_T^{*})= \left(\frac{2}{7},\frac{6}{7}\right)$
-    \item[(c)] $(x_T^{*},q_T^{*})= \left(\frac{4}{5},\frac{6}{5}\right)$
+      \item[(b)] $(x_T^{*},q_T^{*})= \left(\frac{2}{7},\frac{6}{7}\right)$
+      \item[(c)] $(x_T^{**},q_T^{**})= \left(\frac{4}{5},\frac{6}{5}\right)$
+      \item[$P$:] $2-q_1-q_2$
+      \item[$\pi_i:$] $(1+x_i+x_j-q_i-q_j)q_i-x_i^2$
     \end{itemize}
     \vfill\null
   \end{multicols}
@@ -1288,19 +1383,19 @@ for the case where $\delta_1=\delta_2$
     \begin{itemize}
     \item[(d)] Based on your findings in (b) and (c), compare the outcomes in terms of consumer welfare [hint: it is enough to look at total output] and firms’ profit [hint: no calculations are necessary]. Comment on the source of the difference.
     \end{itemize}
-    \vspace{-10pt}
   \begin{multicols}{2}
     \begin{itemize}
-      \item Since the quantity in (c) is higher, this also means that the price is lower. Higher quantity and lower price means there is a higher consumer welfare.
-      \item By definition the profit in (c) is higher.
+      \item Since the quantity in (c) is higher, this also means that the price $P$ is lower. Higher quantity and lower price means there is a higher consumer welfare.
+      \item The growth in $x_T$ from collusion is much higher than the growth in $q_T$ from collusion, i.e. the profit in (c) is higher.
       \item \intuition{The difference comes from the fact that the collusion in the first stage leads to more research which drives down the marginal cost of production. The benefit of this is distributed amongst companies and consumers.}
     \end{itemize}
     \vfill\null \columnbreak
-    Total outcome:
+    Relevant information:
     \begin{itemize}
-    \item[(a)] $(x_T^{*},q_T^{*})= \left(x_i+x_j, \frac{2}{3}(1+x_i+x_j)\right)$
-    \item[(b)] $(x_T^{*},q_T^{*})= \left(\frac{2}{7},\frac{6}{7}\right)$
-    \item[(c)] $(x_T^{*},q_T^{*})= \left(\frac{4}{5},\frac{6}{5}\right)$
+      \item[(b)] $(x_{total}^{*},q_{total}^{*})= \left(\frac{2}{7},\frac{6}{7}\right)$
+      \item[(c)] $(x_{total}^{**},q_{total}^{**})= \left(\frac{4}{5},\frac{6}{5}\right)$
+      \item[$P$:] $2-q_1-q_2$
+      \item[$\pi_i:$] $(1+x_i+x_j-q_i-q_j)q_i-x_i^2$
     \end{itemize}
     \vfill\null
   \end{multicols}
