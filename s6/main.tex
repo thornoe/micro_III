@@ -873,11 +873,52 @@ for the case where $\delta_1=\delta_2$
             \item[Stage 3:] $s_3$.
             \end{itemize}
     \end{itemize}
+    \textbf{\textit{Bonus: Is there a first-mover advantage?}}
     \vfill\null
   \end{multicols}
     \vfill\null
 \end{frame}
-
+\begin{frame}{PS6, Ex. 5 (b): Infinite-horizon bargaining with different discount factors}
+    Consider Rubinstein's infinite-horizon bargaining game, but where each player has a different discount factor: $\delta_1,\delta_2$. Show that in the backwards induction outcome, player 1 offers the settlement
+    $(s^{*},1-s^{*})=\left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)$
+    which player 2 accepts.
+    \begin{itemize}
+      \item[(Step b)] Since the game is infinite, the players are playing the same game in stage 3 as in stage 1, thus, the outcome of stage 1 should be the same as in stage 3. Use this to find a stationary solution, where $s_{1}=s_{3}$.
+    \end{itemize}
+  \begin{multicols}{2}
+    Stationary solution:
+    \begin{align*}
+          s_1&= s_3 \Rightarrow\\
+        s^{*}&= 1- (1-s^{*}\delta_1)\delta_2 \Rightarrow\\
+        s^{*}&= 1-\delta_2+s^{*}\delta_1\delta_2 \Rightarrow\\
+        s^{*}(1-\delta_1\delta_2)&= 1-\delta_2 \Rightarrow\\
+        s^{*}&= \frac{1-\delta_2}{1-\delta_1\delta_2}
+    \end{align*}
+    Insert in $1-s^{*}$, juggle a bit, and get:
+    \begin{align*}
+        (s^{*},1-s^{*})= \left( \frac{1-\delta_2}{1-\delta_1\delta_2},\frac{\delta_2(1-\delta_1)}{1-\delta_1\delta_2}\right)
+    \end{align*}
+    \vfill\null \columnbreak
+    Outcomes for Player 1:
+    \begin{itemize}
+        \item[]\vspace{-8pt}
+            \begin{itemize}\normalsize
+            \item[Stage 1:] $s_1 = 1-(1-s_3\delta_1)\delta_2$.
+            \item[Stage 3:] $s_3$.
+            \end{itemize}
+    \end{itemize}
+    P1 has first-mover advantage if:
+    \begin{align*}
+      1-\delta_2&\geq\delta_2(1-\delta_1)\Rightarrow\\
+      \frac{1}{\delta_2}-\frac{\delta_2}{\delta_2}&\geq1-\delta_1\Rightarrow\\
+      \frac{1}{\delta_2}&\geq2-\delta_1\Rightarrow\\
+      \delta_2&\geq\frac{1}{2-\delta_1}\in\left[\frac{1}{2},1\right]\text{ for }\delta_1\in[0,1]
+    \end{align*}
+    I.e. unless P2 is impatient.
+    \vfill\null
+  \end{multicols}
+    \vfill\null
+\end{frame}
 
 
 
