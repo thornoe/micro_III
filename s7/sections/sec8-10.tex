@@ -1,15 +1,477 @@
-\section{PS7, Ex. 8: }
+\section{PS7, Ex. 8: Trigger strategy (infinitely repeated game)}
 
-\begin{frame}{PS7, Ex. 8: }
+\begin{frame}{PS7, Ex. 8: Trigger strategy (infinitely repeated game)}
+  The next exercises use the following game $G$:
+  \begin{table}
+    \begin{tabular}{l|c|c|c|}
+      \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+      L & 10, 10 & 3, 15 & 0, 7 \\\cline{2-4}
+      M & 15, 3 & 7, 7 & -4, 5 \\\cline{2-4}
+      H & 7, 0 & 5, -4 & -15, -15 \\\cline{2-4}
+    \end{tabular}
+  \end{table}
+  Suppose that the Players play the infinitely repeated game $G(\infty)$ and that they would like to support as a SPNE the 'collusive' outcome in which $(L, L)$ is played every round.
+  \begin{itemize}
+    \item[(a)] Define a trigger strategy which delivers the collusive outcome in every period where no deviation has been made, and gives $(x_1, x_2)$ forever after a deviation.
+    \item[(b)] A necessary (but not sufficient) condition for a SPNE is $x_1 = x_2 = M$. Explain why.
+    \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{PS7, Ex. 8.a: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, 15 & 0, 7 \\\cline{2-4}
+        M & 15, 3 & 7, 7 & -4, 5 \\\cline{2-4}
+        H & 7, 0 & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(a)] Define a trigger strategy which delivers the collusive outcome in every period where no deviation has been made, and gives $(x_1, x_2)$ forever after a deviation.
+    \end{itemize}
   \begin{multicols}{2}
     \vfill\null\columnbreak
     \vfill\null
   \end{multicols}
 \end{frame}
+\begin{frame}{PS7, Ex. 8.a: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, 15 & 0, 7 \\\cline{2-4}
+        M & 15, 3 & 7, 7 & -4, 5 \\\cline{2-4}
+        H & 7, 0 & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(a)] Define a trigger strategy which delivers the collusive outcome in every period where no deviation has been made, and gives $(x_1, x_2)$ forever after a deviation.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Write up the trigger strategy.
+    \end{itemize}
+    \vfill\null\columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.a: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, 15 & 0, 7 \\\cline{2-4}
+        M & 15, 3 & 7, 7 & -4, 5 \\\cline{2-4}
+        H & 7, 0 & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(a)] Define a trigger strategy which delivers the collusive outcome in every period where no deviation has been made, and gives $(x_1, x_2)$ forever after a deviation.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Write up the trigger strategy.
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger strategy for Player $i\in1,2$: "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. Otherwise, play $x_i$."
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
 
-\begin{frame}{PS7, Ex. 8.a: }
+\begin{frame}{PS7, Ex. 8.b: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, 15 & 0, 7 \\\cline{2-4}
+        M & 15, 3 & 7, 7 & -4, 5 \\\cline{2-4}
+        H & 7, 0 & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(b)] A necessary (but not sufficient) condition for a SPNE is $x_1 = x_2 = M$. Explain why.
+    \end{itemize}
   \begin{multicols}{2}
     \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger strategy for Player $i\in1,2$: "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. Otherwise, play $x_i$."
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.b: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, 15 & 0, 7 \\\cline{2-4}
+        M & 15, 3 & 7, 7 & -4, 5 \\\cline{2-4}
+        H & 7, 0 & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(b)] A necessary (but not sufficient) condition for a SPNE is $x_1 = x_2 = M$. Explain why.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Find the PSNE in the stage game $G$.
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger strategy for Player $i\in1,2$: "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. Otherwise, play $x_i$."
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.b: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(b)] A necessary (but not sufficient) condition for a SPNE is $x_1 = x_2 = M$. Explain why.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Find the PSNE in the stage game $G$.
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger strategy for Player $i\in1,2$: "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. Otherwise, play $x_i$."
+      \item Stage game NE: $(M,M)$.
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.b: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(b)] A necessary (but not sufficient) condition for a SPNE is $x_1 = x_2 = M$. Explain why.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Find the PSNE in the stage game $G$.
+      \item[(Step b)] Explain.
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger strategy for Player $i\in1,2$: "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. Otherwise, play $x_i$."
+      \item Stage game NE: $(M,M)$.
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.b: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(b)] A necessary (but not sufficient) condition for a SPNE is $x_1 = x_2 = M$. Explain why.
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Find the PSNE in the stage game $G$.
+      \item[(Step b)] Explain.
+    \end{itemize}
+    For a trigger strategy to constitute a SPNE, the threat of (eternal and unchangeable) punishment must be credible, i.e. must be a stage game NE.\\\medskip
+    Thus, $x_1 = x_2 = M$ is a necessary (but not sufficient) condition for the trigger strategies to constitute a SPNE.
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger strategy for Player $i\in1,2$: "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. Otherwise, play $x_i$."
+      \item Unique stage game NE: $(M,M)$.
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger strategy: "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. Otherwise, play $M$."
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Given Player $j$ plays the trigger strategy, write up Player $i$'s respective payoffs from playing "trigger" and from her best deviation.
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger Strategy (TS): "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. If not, play $M$."
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Given Player $j$ plays the Trigger Strategy (TS), write up Player $i$'s Optimal Deviation Strategy (ODS).
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger Strategy (TS): "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. If not, play $M$."
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Given Player $j$ plays the Trigger Strategy (TS), write up Player $i$'s Optimal Deviation Strategy (ODS).
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger Strategy (TS): "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. If not, play $M$."
+      \item Optimal Deviation Strategy (ODS): "Always play $M$."
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Given Player $j$ plays the Trigger Strategy (TS), write up Player $i$'s Optimal Deviation Strategy (ODS).
+      \item[(Step b)] Given Player $j$ plays TS, write up Player $i$'s respective payoffs from playing TS and ODS.
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger Strategy (TS): "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. If not, play $M$."
+      \item Optimal Deviation Strategy (ODS): "Always play $M$."
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Given Player $j$ plays the Trigger Strategy (TS), write up Player $i$'s Optimal Deviation Strategy (ODS).
+      \item[(Step b)] Given Player $j$ plays TS, write up Player $i$'s respective payoffs from playing TS and ODS.
+    \end{itemize}
+    Player $i$'s payoffs from playing TS:
+    \begin{align*}
+      \sum_{t=1}^\infty10\delta^{t-1}=\frac{10}{1-\delta}
+    \end{align*}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger Strategy (TS): "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. If not, play $M$."
+      \item Optimal Deviation Strategy (ODS): "Always play $M$."
+      \item $U_i(TS,TS)=\frac{10}{1-\delta}$.
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Given Player $j$ plays the Trigger Strategy (TS), write up Player $i$'s Optimal Deviation Strategy (ODS).
+      \item[(Step b)] Given Player $j$ plays TS, write up Player $i$'s respective payoffs from playing TS and ODS.
+    \end{itemize}
+    Player $i$'s payoffs from playing TS:
+    \vspace{-4pt}
+    \begin{align*}
+      \sum_{t=1}^\infty10\delta^{t-1}=\frac{10}{1-\delta}
+    \end{align*}
+    Player $i$'s payoffs from playing ODS:
+    \vspace{-4pt}
+    \begin{align*}
+      15+\sum_{\bm{t=2}}^\infty7\delta^{t-1}=15+\frac{7\delta}{1-\delta}
+    \end{align*}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger Strategy (TS): "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. If not, play $M$."
+      \item Optimal Deviation Strategy (ODS): "Always play $M$."
+      \item $U_i(TS,TS)=\frac{10}{1-\delta}$
+      \item $U_i(ODS,TS)=15+\frac{7\delta}{1-\delta}$
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Given Player $j$ plays the Trigger Strategy (TS), write up Player $i$'s Optimal Deviation Strategy (ODS).
+      \item[(Step b)] Given Player $j$ plays TS, write up Player $i$'s respective payoffs from playing TS and ODS.
+      \item[(Step c)] Show that the deviation is preferred for $\delta=4/7$.
+    \end{itemize}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger Strategy (TS): "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. If not, play $M$."
+      \item Optimal Deviation Strategy (ODS): "Always play $M$."
+      \item $U_i(TS,TS)=\frac{10}{1-\delta}$
+      \item $U_i(ODS,TS)=15+\frac{7\delta}{1-\delta}$
+    \end{enumerate}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 8.c: Trigger strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
+    \end{itemize}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[(Step a)] Given Player $j$ plays the Trigger Strategy (TS), write up Player $i$'s Optimal Deviation Strategy (ODS).
+      \item[(Step b)] Given Player $j$ plays TS, write up Player $i$'s respective payoffs from playing TS and ODS.
+      \item[(Step c)] Show that the deviation is preferred for $\delta=4/7$:
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{align*}
+      U_i\left(ODS,TS;\delta=\frac{4}{7}\right)&>U_i\left(TS,TS;\delta=\frac{4}{7}\right)\\
+      15+\frac{7\frac{4}{7}}{1-\frac{4}{7}}&>\frac{10}{1-\frac{4}{7}}\\
+      \frac{73}{3}&>\frac{70}{3}
+    \end{align*}
+    \vfill\null\columnbreak
+    Information so far:
+    \begin{enumerate}
+      \item Trigger Strategy (TS): "If $t=1$ or if the outcome in all previous stages was $(L,L)$, play $L$. If not, play $M$."
+      \item Optimal Deviation Strategy (ODS): "Always play $M$."
+      \item $U_i(TS,TS)=\frac{10}{1-\delta}$
+      \item $U_i(ODS,TS)=15+\frac{7\delta}{1-\delta}$
+    \end{enumerate}
     \vfill\null
   \end{multicols}
 \end{frame}
