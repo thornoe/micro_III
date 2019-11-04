@@ -14,8 +14,8 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg1001"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="2a.svg">
+   sodipodi:docname="2a.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <defs
      id="defs995" />
   <sodipodi:namedview
@@ -25,15 +25,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="459.68243"
-     inkscape:cy="479.65512"
+     inkscape:zoom="2.8"
+     inkscape:cx="388.43504"
+     inkscape:cy="439.46516"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1137"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -176,10 +176,17 @@
        cy="165.5303"
        r="1.0775048" />
     <circle
-       style="display:inline;opacity:1;fill:#000003;fill-opacity:1;stroke:#000000;stroke-width:0.18886022;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#ff00ff;stroke-width:0.18886022;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path832-0-1-5-33-5-7-5-2"
        cx="101.55737"
        cy="152.45918"
        r="1.0775048" />
+    <ellipse
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000a00;stroke-width:0.14454412;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.50980395"
+       id="path862-3-1"
+       ry="11.524446"
+       rx="9.9061069"
+       cy="160.8152"
+       cx="101.49605" />
   </g>
 </svg>
