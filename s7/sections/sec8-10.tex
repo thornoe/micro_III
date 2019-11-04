@@ -16,6 +16,7 @@
     \item[(b)] A necessary (but not sufficient) condition for a SPNE is $x_1 = x_2 = M$. Explain why.
     \vspace{-4pt} \item[(c)] Suppose $\delta = 4/7$. Show by finding a profitable deviation that the above trigger strategy is not a SPNE. \vspace{-6pt}
   \end{itemize}
+  \vfill\null
 \end{frame}
 
 \begin{frame}{PS7, Ex. 8.a: Trigger strategy (infinitely repeated game)}
@@ -31,10 +32,7 @@
     \begin{itemize}
       \item[(a)] Define a trigger strategy which delivers the collusive outcome in every period where no deviation has been made, and gives $(x_1, x_2)$ forever after a deviation.
     \end{itemize}
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
     \vfill\null
-  \end{multicols}
 \end{frame}
 \begin{frame}{PS7, Ex. 8.a: Trigger strategy (infinitely repeated game)}
     Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
@@ -250,7 +248,7 @@
     \end{itemize}
   \begin{multicols}{2}
     \begin{itemize}
-      \item[(Step a)] Given Player $j$ plays the trigger strategy, write up Player $i$'s respective payoffs from playing "trigger" and from her best deviation.
+      \item[(Step a)] Given Player $j$ plays the trigger strategy, write up Player $i$'s respective payoffs from playing "trigger" and from his best deviation.
     \end{itemize}
     \vfill\null\columnbreak
     Information so far:
@@ -478,36 +476,198 @@
 
 
 
-\section{PS7, Ex. 9: }
+\section{PS7, Ex. 9: Optimal Punishment Strategy (infinitely repeated game)}
 
-\begin{frame}{PS7, Ex. 9: }
+\begin{frame}{PS7, Ex. 9: Optimal Punishment Strategy (infinitely repeated game)}
+    We continue analyzing $G(\infty)$. As in \sout{Lecture 8} (Lecture 6, slides 50-68), consider the strategy profile $(OP,OP)$, where $OP$ stands for optimal punishment...\\\medskip
+    \textit{[See the lecture slides and the full description of the exercise in the problem set.]}\\\medskip
+    Stage game $G$:\vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{PS7, Ex. 9.a: Optimal Punishment Strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Discuss how this increased leniency over time may give player 1 an incentive to accept his punishment (and actually play according to $Q_D$, rather than deviate again).
+    \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS7, Ex. 9.a: Optimal Punishment Strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{M} & \multicolumn{1}{c}{\textbf{\underline{H}}} \\\cline{2-4}
+        L & 10, 10 & 3, \textcolor{blue}{15} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        \textbf{\underline{M}} & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & \textbf{\underline{-4, 5}} \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Discuss how this increased leniency over time may give player 1 an incentive to accept his punishment (and actually play according to $Q_D$, rather than deviate again).
+    \end{itemize}
+    \vspace{-8pt}
   \begin{multicols}{2}
+    The 'tough' stage (the \nth{1} round of punishment):\vspace{-4pt}
+    \begin{itemize}
+      \item P1 earns -4 from $(M, H)$ and 3 from $(L, M)$ in all later rounds.
+      \item he can deviate by playing $L$ and earn 0, but then the punishment will start over again and P1 will therefore stay in the 'tough' stage.
+      \item Both -4 and 0 is less than 3, which is why this punishment structure leaves P1 without an incentive to deviate from the 'punishment path' $(Q^D,Q^P)$.
+    \end{itemize}
     \vfill\null\columnbreak
-    \vfill
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 9.a: Optimal Punishment Strategy (infinitely repeated game)}
+    Consider $G(\infty)$, i.e. the infinitely repeated game with stage game $G$: \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\textbf{\underline{M}}} & \multicolumn{1}{c}{H} \\\cline{2-4}
+        \textbf{\underline{L}} & 10, 10 & \textbf{\underline{3, \textcolor{blue}{15}}} & \textcolor{red}{0}, 7 \\\cline{2-4}
+        M & \textcolor{red}{15}, 3 & \textcolor{red}{7}, \textcolor{blue}{7} & -4, 5 \\\cline{2-4}
+        H & 7, \textcolor{blue}{0} & 5, -4 & -15, -15 \\\cline{2-4}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Discuss how this increased leniency over time may give player 1 an incentive to accept his punishment (and actually play according to $Q_D$, rather than deviate again).
+    \end{itemize}
+    \vspace{-8pt}
+  \begin{multicols}{2}
+    The 'tough' stage (the \nth{1} round of punishment):\vspace{-4pt}
+    \begin{itemize}
+      \item P1 earns -4 from $(M, H)$ and 3 from $(L, M)$ in all later rounds.
+      \item he can deviate by playing $L$ and earn 0, but then the punishment will start over again and P1 will therefore stay in the 'tough' stage.
+      \item Both -4 and 0 is less than 3, which is why this punishment structure leaves P1 without an incentive to deviate from the 'punishment path' $(Q^D,Q^P)$.
+    \end{itemize}
+    \vfill\null\columnbreak
+    The 'mild' stage (from the \nth{2} round of punishment):\vspace{-4pt}
+    \begin{itemize}
+      \item P1 earns 3 from $(L, M)$ in this and all subsequent rounds.
+      \item he can deviate by playing $M$ and earn 7, but then the punishment will start over again and P1 will earn -4 in the 'tough' stage (or alternatively 0 by deviating again).
+      \item Both -4 and 0 is less than 3, which is why this punishment structure provides P1 with an incentive to stay in the 'mild stage'.
+    \end{itemize}
+    \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS7, Ex. 9.a: }
+\begin{frame}{PS7, Ex. 9.b: Optimal Punishment Strategy (infinitely repeated game)}
   \begin{multicols}{2}
+    The 'tough' stage (the \nth{1} round of punishment):\vspace{-4pt}
+    \begin{itemize}
+      \item P1 earns -4 from $(M, H)$ and 3 from $(L, M)$ in all later rounds.
+      \item he can deviate by playing $L$ and earn 0, but then the punishment will start over again and P1 will therefore stay in the 'tough' stage.
+      \item Both -4 and 0 is less than 3, which is why this punishment structure leaves P1 without an incentive to deviate from the punishment path.
+    \end{itemize}
     \vfill\null\columnbreak
+    The 'mild' stage (from the \nth{2} round of punishment):\vspace{-4pt}
+    \begin{itemize}
+      \item P1 earns 3 from $(L, M)$ in this and all subsequent rounds.
+      \item he can deviate by playing $M$ and earn 7, but then the punishment will start over again and P1 will earn -4 in the 'tough' stage (or alternatively 0 by deviating again).
+      \item Both -4 and 0 is less than 3, which is why this punishment structure provides P1 with an incentive to stay in the 'mild stage'.
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+    \vspace{-24pt}
+    \begin{itemize}
+      \item[(b)] How does your answer relate to the following quote from Wikipedia?
+      \item[] \textit{The “carrot and stick” approach is an idiom that refers to a policy of offering a combination of rewards and punishment to induce behavior. It is named in reference to a cart driver dangling a carrot in front of a mule and holding a stick behind it. The mule would move towards the carrot because it wants the reward of food, while also moving away from the stick behind it, since it does not want the punishment of pain, thus drawing the cart.}
+    \end{itemize}
+\end{frame}
+\begin{frame}{PS7, Ex. 9.b: Optimal Punishment Strategy (infinitely repeated game)}
+  \begin{itemize}
+    \item[(b)] How does your answer relate to the following quote from Wikipedia?
+    \item[] \textit{The “carrot and stick” approach is an idiom that refers to a policy of offering a combination of rewards and punishment to induce behavior. It is named in reference to a cart driver dangling a carrot in front of a mule and holding a stick behind it. The mule would move towards the carrot because it wants the reward of food, while also moving away from the stick behind it, since it does not want the punishment of pain, thus drawing the cart.}
+  \end{itemize}
+  \vspace{-4pt}
+  \begin{multicols}{2}
+    The 'tough' stage (the \nth{1} round of punishment):
+    \begin{itemize}
+      \item The promise of a future 'mild punishment' should be regarded as a reward for accepting the punishment without deviating from the 'punishment path' and is therefore \textcolor{orange}{the carrot}.
+    \end{itemize}
+    \vfill\null\columnbreak
+    \vfill\null
+  \end{multicols}
+\end{frame}
+\begin{frame}{PS7, Ex. 9.b: Optimal Punishment Strategy (infinitely repeated game)}
+  \begin{itemize}
+    \item[(b)] How does your answer relate to the following quote from Wikipedia?
+    \item[] \textit{The “carrot and stick” approach is an idiom that refers to a policy of offering a combination of rewards and punishment to induce behavior. It is named in reference to a cart driver dangling a carrot in front of a mule and holding a stick behind it. The mule would move towards the carrot because it wants the reward of food, while also moving away from the stick behind it, since it does not want the punishment of pain, thus drawing the cart.}
+  \end{itemize}
+  \vspace{-4pt}
+  \begin{multicols}{2}
+    The 'tough' stage (the \nth{1} round of punishment):
+    \begin{itemize}
+      \item The promise of a future 'mild punishment' should be regarded as a reward for accepting the punishment without deviating from the 'punishment path' and is therefore \textcolor{orange}{the carrot}.
+    \end{itemize}
+    \vfill\null\columnbreak
+    The 'mild' stage (from the \nth{2} round of punishment):
+    \begin{itemize}
+      \item The threat of a future 'tough punishment' should be regarded as further punishment for deviating in the first place and is therefore \textcolor{brown}{the stick}.
+    \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
 
 
 
-\section{PS7, Ex. 10: }
+\section{PS7, Ex. 10: Proof of optimal punishment (infinitely repeated game)}
 
-\begin{frame}{PS7, Ex. 10: }
+\begin{frame}{PS7, Ex. 10: Proof of optimal punishment (infinitely repeated game)}
+    We continue analyzing $G(\infty)$. Complete the proof that $(OP,OP)$ is a SPNE when $\delta=4/7$. We checked the first three points of the road map in Lecture 6. The last two points consist of checking that it is optimal for Player 2 to punish Player 1 after a deviation. In particular, you need to check that Player 2 has no profitable deviation when he is in the first and in the second round of punishing Player 1.
+    \vfill\null
+\end{frame}
+\begin{frame}{PS7, Ex. 10: Proof of optimal punishment (infinitely repeated game)}
+    We continue analyzing $G(\infty)$. Complete the proof that $(OP,OP)$ is a SPNE when $\delta=4/7$. We checked the first three points of the road map in Lecture 6. The last two points consist of checking that it is optimal for Player 2 to punish Player 1 after a deviation. In particular, you need to check that Player 2 has no profitable deviation when he is in the first and in the second round of punishing Player 1.
   \begin{multicols}{2}
+    In the lecture it was checked that Player 1 will not deviate from $(OP,OP)$ in:
+    \begin{enumerate}
+      \item Round 1, or if $(L,L)$ was played in all previous rounds.
+      \item The \nth{1} round of being punished.
+      \item Subsequent rounds of being punished.
+    \end{enumerate}
+    \vfill\null\columnbreak
+    Check that Player 2 will not deviate:
+    \begin{itemize}
+      \item[4.] When he is in the \nth{1} round of punishing Player 1.
+      \item[5.] When he is in subsequent rounds of punishing Player 1.
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+  \vfill\null
+\end{frame}
+
+\begin{frame}{PS7, Ex. 10: Proof of optimal punishment (infinitely repeated game)}
+    Check that Player 2 will not deviate:
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item[4.] When he is in the \nth{1} round of punishing Player 1:
+    \end{itemize}
+    If P2 does not deviate from $Q^P$ his expected utility is:
+    \begin{align*}
+      U_2(Q^P;Q^D)=5
+    \end{align*}
     \vfill\null\columnbreak
     \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS7, Ex. 10.a: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
+%\item[5.] \textbf{When he is in subsequent rounds of punishing Player 1.}
+
+%Given the results from above and from Lecture 6, we can therefor conclude that $(OP,OP)$ is a SPNE for $\delta = 4/7$
