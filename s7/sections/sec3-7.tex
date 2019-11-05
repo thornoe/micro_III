@@ -14,14 +14,16 @@
     \end{table}
     Consider the repeated game G(T), where G is repeated T times and the outcomes of each round are observed by both players before the next round.
     \begin{itemize}
-        \item{(a)} If T = 2, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round?
-        \item{(b)} What if T = 42?
+        \item[(a)] If T = 2, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round?
+        \item[(b)] What if T = 42?
     \end{itemize}
     \vfill\null
 \end{frame}
 
 \begin{frame}{PS7, Ex. 3.a (A): }
-     If T = 2, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round? \\
+     \begin{itemize}
+         \item[(a)] If T = 2, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round?
+     \end{itemize}
     \vspace{-10pt}
     \begin{table}
       \begin{tabular}{cl|c|c|}
@@ -35,12 +37,14 @@
     No. Since there is only one NE (A,D) which is not (B,C), that NE will be played in both games.\\
     \vspace{10pt}
     Explanation: \\
-    In the last round, an NE from the stage game must be played. In this case there is only one NE, which is (A,D). Knowing that (A,D) will be played no matter what in the second round, no player has an incentive to cooperate in the first turn. Player A will play his dominant strategy A and player B will play her dominant strategy D.
+    \intuition{In the last round, an NE from the stage game must be played. In this case there is only one NE, which is (A,D). Knowing that (A,D) will be played no matter what in the second round, no player has an incentive to cooperate in the first turn. Player A will play his dominant strategy A and player B will play her dominant strategy D.}
     \vfill\null    
 \end{frame}
 
 \begin{frame}{PS7, Ex. 3.b (A): }
-     If T = 42, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round? \\
+     \begin{itemize}
+         \item[(b)] If T = 42, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round?
+     \end{itemize}
     \vspace{-10pt}
     \begin{table}
       \begin{tabular}{cl|c|c|}
@@ -74,29 +78,112 @@
       \end{tabular}
     \end{table}
     \begin{itemize}
-        \item{(a)} Find a subgame perfect Nash equilibrium such that the outcome of the first stage is (B,Y). Make sure to write down the full equilibrium.
-        \item{(b)} Find a subgame perfect Nash equilibrium such that the outcome of the first stage is (C,Z). Make sure to write down the full equilibrium.
-        \item{(c)} Can you find a subgame perfect Nash equilibrium such that the total payoffs that the players receive are 10 for player 1 and 11 for player 2? If yes, write down the full equilibrium.
+        \item[(a)] Find a subgame perfect Nash equilibrium such that the outcome of the first stage is (B,Y). Make sure to write down the full equilibrium.
+        \item[(b)] Find a subgame perfect Nash equilibrium such that the outcome of the first stage is (C,Z). Make sure to write down the full equilibrium.
+        \item[(c)] Can you find a subgame perfect Nash equilibrium such that the total payoffs that the players receive are 10 for player 1 and 11 for player 2? If yes, write down the full equilibrium.
     \end{itemize}
     \vfill\null
 \end{frame}
 
 \begin{frame}{PS7, Ex. 4.a: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null\null
-  \end{multicols}
+Consider the two times repeated game where the stage game is:
+    \begin{table}
+      \begin{tabular}{cl|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{4}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{Y} & \multicolumn{1}{c}{Z}\\\cline{3-5}
+        & A   & 6, 6 &  0, \textcolor{blue}{8} &  0, 0  \\\cline{3-5}
+        & B & \textcolor{red}{7}, 1  & \textcolor{red}{2}, \textcolor{blue}{2} &  1, 1  \\\cline{3-5}
+        & C & 0, 0  & 1, 1 &  \textcolor{red}{4}, \textcolor{blue}{5}  \\\cline{3-5}
+      \end{tabular}
+    \end{table}
+\begin{itemize}
+    \item[(a)] Find a subgame perfect Nash equilibrium such that the outcome of the first stage is (B,Y). Make sure to write down the full equilibrium.
+\end{itemize}
+\vspace{10pt}
+The first step is to find the NE in the stage game, in this case there are two: $\{(B,Y),(C,Z)\}$.\\
+Knowing this, it is possible for the outcome of any stage of the game to be (B,Y). We can therefore choose the strategies such that (B,Y) will be the outcome of the first stage, and then either of the NE's can be the outcome of the second stage.\\
+Using this information, write up the SPNE, keeping in mind that you need to write up a second stage strategy for each of the possible outcomes of the first stage (3*3 matrix, so 9 possible outcomes).\\
+\vspace{10pt}
+SPNE=$\{(BBBBBBBBBB,YYYYYYYYYY)\}$ \\
+or SPNE=$\{(BCCCCCCCCC,YZZZZZZZZZ)\}$
+    \vfill\null
 \end{frame}
 
+\begin{frame}{PS7, Ex. 4.b: }
+Consider the two times repeated game where the stage game is:
+    \begin{table}
+      \begin{tabular}{cl|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{4}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{Y} & \multicolumn{1}{c}{Z}\\\cline{3-5}
+        & A   & 6, 6 &  0, \textcolor{blue}{8} &  0, 0  \\\cline{3-5}
+        & B & \textcolor{red}{7}, 1  & \textcolor{red}{2}, \textcolor{blue}{2} &  1, 1  \\\cline{3-5}
+        & C & 0, 0  & 1, 1 &  \textcolor{red}{4}, \textcolor{blue}{5}  \\\cline{3-5}
+      \end{tabular}
+    \end{table}
+\begin{itemize}
+    \item[(b)] Find a subgame perfect Nash equilibrium such that the outcome of the first stage is (C,Z). Make sure to write down the full equilibrium.
+\end{itemize}
+\vspace{10pt}
+The first step is to find the NE in the stage game, in this case there are two: $\{(B,Y),(C,Z)\}$.\\
+Knowing this, it is possible for the outcome of any stage of the game to be (C,Z). We can therefore choose the strategies such that (C,Z) will be the outcome of the first stage, and then either of the NE's can be the outcome of the second stage.\\
+Using this information, write up the SPNE, keeping in mind that you need to write up a second stage strategy for each of the possible outcomes of the first stage (3*3 matrix, so 9 possible outcomes).\\
+\vspace{10pt}
+SPNE=$\{(CCCCCCCCCC,ZZZZZZZZZZ)\}$ \\
+or SPNE=$\{(CBBBBBBBBB,ZYYYYYYYYYY)\}$
+    \vfill\null
+\end{frame}
 
+\begin{frame}{PS7, Ex. 4.c: }
+    \begin{table}
+      \begin{tabular}{cl|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{4}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{Y} & \multicolumn{1}{c}{Z}\\\cline{3-5}
+        & A   & 6, 6 &  0, \textcolor{blue}{8} &  0, 0  \\\cline{3-5}
+        & B & \textcolor{red}{7}, 1  & \textcolor{red}{2}, \textcolor{blue}{2} &  1, 1  \\\cline{3-5}
+        & C & 0, 0  & 1, 1 &  \textcolor{red}{4}, \textcolor{blue}{5}  \\\cline{3-5}
+      \end{tabular}
+    \end{table}
+\begin{itemize}
+    \item[(c)] Can you find a SPNE such that the total payoffs that the players receive are 10 for player 1 and 11 for player 2? If yes, write down the full equilibrium.
+\end{itemize}
+\vspace{-5pt}
+  \begin{multicols}{2}
+First, find out which combination of outcomes would yield the payoff (10,11), under the restriction that the last stage must be be an NE: \\
+\vspace{10pt}
+Stage1:(A,X), Stage2:(C,Z), of which stage 2 is an NE so it doesn't need examination.\\
+Now, look for a threatening strategy which if abode by will lead to the combination. Threatening that the players will go for the (Y,B) NE rather than (C,Z) in the second stage if (A,X) is not the outcome of stage 1.\\
+\vspace{10pt}
+Using the threat, we get that player 1 can choose between going along (6+4=10) and playing B in the first round (7+2=9). Player 2 can choose between going along (6+5=11) and playing Y in the first round (8+2=10). For both players going along yield a strictly higher payoff.\\
+Now write up the strategy:\\
+\vspace{10pt}
+SPNE=$\{(ACBBBBBBBB,XZYYYYYYYY)\}$ \\
+  \end{multicols}
+    \vfill\null
+\end{frame}
 
 \section{PS7, Ex. 5: }
 
 \begin{frame}{PS7, Ex. 5: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
+Consider the situation of two flatmates. They both prefer having a clean kitchen, but cleaning is a tedious task, so that it is individually rational not to clean regardless of what
+the other does. This results in the following game G:
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Cl} & \multicolumn{1}{c}{DCl} \\\cline{3-4}
+        & Cl & 4, 4 &  0, \textcolor{blue}{6}  \\\cline{3-4}
+        & Dcl & \textcolor{red}{5}, 0  & \textcolor{red}{1}, \textcolor{blue}{1}  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+Now consider the situation where the two flatmates have to decide every day whether to clean or not, i.e. consider the infinitely repeated game $G(\infty,\delta)$\\
+\begin{itemize}
+    \item{(a)} Define trigger strategies such that the outcome of all stages will be (Clean,Clean). 
+    \item{(b)} Find the lowest value of $\delta$ such that the trigger strategies from (b) constitute a SPNE in $G(\infty,\delta)$. Recall: you have to check for deviations both on and off the equilibrium path.
+\end{itemize}
     \vfill
-  \end{multicols}
 \end{frame}
 
 \begin{frame}{PS7, Ex. 5.a: }
@@ -111,10 +198,24 @@
 \section{PS7, Ex. 6: }
 
 \begin{frame}{PS7, Ex. 6: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
+Consider again the the infinitely repeated game $G(\infty,\delta)$ with the stage game:
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Cl} & \multicolumn{1}{c}{DCl} \\\cline{3-4}
+        & Cl & 4, 4 &  0, \textcolor{blue}{6}  \\\cline{3-4}
+        & Dcl & \textcolor{red}{5}, 0  & \textcolor{red}{1}, \textcolor{blue}{1}  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+\begin{itemize}
+    \item{(a)} Define a tit-for-tat strategy such that the outcome of all stages will be (Clean, Clean).
+    \item{(b)} Check for which $\delta$ tit-for-tat is optimal on the equilibrium path against the following strategy: ’Always play ’Do not clean”
+    \item{(c)} Check for which $\delta$ tit-for-tat is optimal on the equilibrium path against the following strategy: ’Start by playing ’Do not clean’, then play ’tit-for-tat’ forever after that’.
+    \item{(d)} Argue informally that ’tit-for-tat’ is a NE for the appropriate values of $\delta$. In particular, think about whether there are other deviations that would be better for the players.
+\end{itemize}
+When we say "against", it doesn't mean that the other player is playing the "against" strategy. It means to compare the two strategies, in this case "on the equilibrium path", so if the other player is playing "tit-for-tat"
+    \vfill
 \end{frame}
 
 \begin{frame}{PS7, Ex. 6.a: }
