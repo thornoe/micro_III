@@ -1,28 +1,84 @@
-\section{PS7, Ex. 3 (A): }
+\section{PS7, Ex. 3 (A): A finite repeated game with one NE in the stagegame}
 
 \begin{frame}{PS7, Ex. 3 (A): }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
+     Let G be the following game:
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{D} \\\cline{3-4}
+        & A   & \textcolor{red}{27}, -3 &  \textcolor{red}{0}, \textcolor{blue}{0}  \\\cline{3-4}
+        & B & 6, 6  & -2, \textcolor{blue}{7}  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    Consider the repeated game G(T), where G is repeated T times and the outcomes of each round are observed by both players before the next round.
+    \begin{itemize}
+        \item{(a)} If T = 2, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round?
+        \item{(b)} What if T = 42?
+    \end{itemize}
     \vfill\null
-  \end{multicols}
 \end{frame}
 
 \begin{frame}{PS7, Ex. 3.a (A): }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
+     If T = 2, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round? \\
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{D} \\\cline{3-4}
+        & A   & \textcolor{red}{27}, -3 &  \textcolor{red}{0}, \textcolor{blue}{0}  \\\cline{3-4}
+        & B & 6, 6  & -2, \textcolor{blue}{7}  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    No. Since there is only one NE (A,D) which is not (B,C), that NE will be played in both games.\\
+    \vspace{10pt}
+    Explanation: \\
+    In the last round, an NE from the stage game must be played. In this case there is only one NE, which is (A,D). Knowing that (A,D) will be played no matter what in the second round, no player has an incentive to cooperate in the first turn. Player A will play his dominant strategy A and player B will play her dominant strategy D.
+    \vfill\null    
 \end{frame}
 
-
+\begin{frame}{PS7, Ex. 3.b (A): }
+     If T = 42, is there a Subgame Perfect Nash Equilibrium such that (B,C) is played during the first round? \\
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{D} \\\cline{3-4}
+        & A   & \textcolor{red}{27}, -3 &  \textcolor{red}{0}, \textcolor{blue}{0}  \\\cline{3-4}
+        & B & 6, 6  & -2, \textcolor{blue}{7}  \\\cline{3-4}
+      \end{tabular}
+    \end{table}
+    No. Since there is only one NE (A,D) which is not (B,C), that NE will be played in every turn of any finite game G(T).\\
+    \vspace{10pt}
+    Explanation: \\
+    In the last round, an NE from the stage game must be played. In this case there is only one NE, which is (A,D). Knowing that (A,D) will be played no matter what in the last round, no player has an incentive to cooperate in the round before that. This keeps applying until the players reach the first stage of the game. Thus, the NE (A,D) will be played in every turn of any finite game G(T).
+    \vfill\null    
+\end{frame}
 
 \section{PS7, Ex. 4: }
 
 \begin{frame}{PS7, Ex. 4: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
+     Consider the two times repeated game where the stage game is:
+    \vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{cl|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{4}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{Y} & \multicolumn{1}{c}{Z}\\\cline{3-5}
+        & A   & 6, 6 &  0, \textcolor{blue}{8} &  0, 0  \\\cline{3-5}
+        & B & \textcolor{red}{7}, 1  & \textcolor{red}{2}, \textcolor{blue}{2} &  1, 1  \\\cline{3-5}
+        & C & 0, 0  & 1, 1 &  \textcolor{red}{4}, \textcolor{blue}{5}  \\\cline{3-5}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+        \item{(a)} Find a subgame perfect Nash equilibrium such that the outcome of the first stage is (B,Y). Make sure to write down the full equilibrium.
+        \item{(b)} Find a subgame perfect Nash equilibrium such that the outcome of the first stage is (C,Z). Make sure to write down the full equilibrium.
+        \item{(c)} Can you find a subgame perfect Nash equilibrium such that the total payoffs that the players receive are 10 for player 1 and 11 for player 2? If yes, write down the full equilibrium.
+    \end{itemize}
     \vfill\null
-  \end{multicols}
 \end{frame}
 
 \begin{frame}{PS7, Ex. 4.a: }
