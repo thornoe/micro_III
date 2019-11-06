@@ -37,7 +37,7 @@
     No. Since there is only one NE (A,D) which is not (B,C), that NE will be played in both games.\\
     \vspace{10pt}
     Explanation: \\
-    \intuition{In the last round, an NE from the stage game must be played. In this case there is only one NE, which is (A,D). Knowing that (A,D) will be played no matter what in the \nth{2} round, no player has an incentive to cooperate in the \nth{1} turn. Player A will play his dominant strategy A and player B will play her dominant strategy D.}
+    In the last round, a NE from the stage game must be played. In this case there is only one NE, which is (A,D). Knowing that (A,D) will be played no matter what in the \nth{2} round, no player has an incentive to cooperate in the \nth{1} turn. Player A will play his dominant strategy A and player B will play her dominant strategy D.
     \vfill\null    
 \end{frame}
 
@@ -498,7 +498,7 @@
 \nth{1}, find out which combination of outcomes would yield the payoff (10,11), under the restriction that the last stage must be be an NE: \\
 \vspace{10pt}
 Stage1:(A,X), Stage2:(C,Z), of which stage 2 is an NE so it doesn't need examination.\\
-Now, look for a threatening strategy which if abode by will lead to the combination. Threatening that the players will go for the (Y,B) NE rather than (C,Z) in the \nth{2} stage if (A,X) is not the outcome of stage 1.\\
+Now, look for a threatening strategy which if followed will lead to the combination. Threatening that the players will go for the (Y,B) NE rather than (C,Z) in the \nth{2} stage if (A,X) is not the outcome of stage 1.\\
 \vspace{10pt}
 Using the threat, we get that player 1 can choose between going along (6+4=10) and playing B in the \nth{1} round (7+2=9). Player 2 can choose between going along (6+5=11) and playing Y in the \nth{1} round (8+2=10). For both players going along yield a strictly higher payoff.\\
 Now write up the strategy:\\
@@ -748,7 +748,7 @@ When we say "against", it doesn't mean that the other player is playing the "aga
     \end{itemize}
     For $\delta\geq\frac{1}{2}$ we have shown that tit-for-tat is better than the two deviations. If one of the players were to apply the trigger strategy or "always play clean", the outcome would be the same as for playing tit-for-that, which is (clean,clean) in every round.\\\medskip
     Of the two deviations, for $\delta\geq\frac{1}{2}$ the "play don't clean then tit for tat" dominates the "always play don't clean". This is seen by looking at the payoff of the \nth{2} and \nth{3} round (\nth{1} round is the same). $1+\frac{1}{2}*1\leq0+6*\frac{1}{2}$ the \nth{2} and \nth{3} round is essentially repeated forever, so if the payoff for the \nth{2} and \nth{3} round is higher, then the sum of the payoffs are higher.\\\medskip
-    Could other deviations be better?
+    \textbf{\textit{Could other deviations be better? What is required for a strategy to be part of a NE?}}
     \vfill\null
 \end{frame}
 \begin{frame}{PS7, Ex. 6.d: Tit-for-tat strategy (infinitely repeated game)}
@@ -767,8 +767,9 @@ When we say "against", it doesn't mean that the other player is playing the "aga
         \item[(d)] Argue informally that ’tit-for-tat’ is a NE for the appropriate values of $\delta$. In particular, think about whether there are other deviations that would be better for the players.
     \end{itemize}
     For $\delta\geq\frac{1}{2}$ we have shown that tit-for-tat is better than the two deviations. If one of the players were to apply the trigger strategy or "always play clean", the outcome would be the same as for playing tit-for-that, which is (clean,clean) in every round.\\\medskip
-    Of the two deviations, for $\delta\geq\frac{1}{2}$ the "play don't clean then tit for tat" dominates the "always play don't clean". This is seen by looking at the payoff of the \nth{2} and \nth{3} round (\nth{1} round is the same). $1+\frac{1}{2}*1\leq0+6*\frac{1}{2}$ the \nth{2} and \nth{3} round is essentially repeated forever, so if the payoff for the \nth{2} and \nth{3} round is higher, then the sum of the payoffs are higher.\\\medskip
-    \intuition{The final piece of the puzzle is to realize that all other plausible deviations are combinations of the two deviations we have already examined, but since "play don't clean then tit for tat" dominates for $\delta\geq\frac{1}{2}$, we don't need to examine any of them in order to conclude that ’tit-for-tat’ is a NE for the appropriate values of $\delta$.}
+    Of the two deviations, for $\delta\geq\frac{1}{2}$ the "play don't clean then tit for tat" dominates the "always play don't clean". This is seen by looking at the payoff of the \nth{2} and \nth{3} round (\nth{1} round is the same). $1+\frac{1}{2}\cdot1\leq0+6\cdot\frac{1}{2}$ the \nth{2} and \nth{3} round is essentially repeated forever, so if the payoff for the \nth{2} and \nth{3} round is higher, then the sum of the payoffs are higher.\\\medskip
+    \intuition{The final piece of the puzzle is to realize that all other plausible deviations are combinations of the two deviations we have already examined. Thus, for $\delta\geq\frac{1}{2}$ no deviation can give a strictly higher payoff and ’tit-for-tat’ is best-response \textit{on} the equilibrium path which is the requirement for being part of a NE.}
+    %\intuition{The final piece of the puzzle is to realize that all other plausible deviations are combinations of the two deviations we have already examined, but since "play don't clean then tit for tat" dominates for $\delta\geq\frac{1}{2}$, we don't need to examine any of them in order to conclude that ’tit-for-tat’ is a NE for the appropriate values of $\delta$.}
     \vfill\null
 \end{frame}
 
