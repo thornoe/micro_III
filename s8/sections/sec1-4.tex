@@ -1,38 +1,72 @@
 \section{PS8, Ex. 1 (A): }
 
-\begin{frame}{PS8, Ex. 1 (A): }
+\begin{frame}{PS8, Ex. 1 (A): Trigger strategy in infinitely repeated game:}
   \begin{multicols}{2}
     \vfill\null\columnbreak
     \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS8, Ex. 1 (A): }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
+\begin{frame}{PS8, Ex. 1 (A): Trigger strategy in infinitely repeated game:}
+    \vspace{-10pt}
+    Consider the following game G:
+    \begin{table}
+      \begin{tabular}{cl|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{3}{c}{Player 2}\\
+        \parbox[t]{1mm}{\multirow{4}{*}{\rotatebox[origin=r]{90}{Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{Y} & \multicolumn{1}{c}{Z}\\\cline{3-5}
+        & A   & 6, 6 &  0, 8 &  0, 0  \\\cline{3-5}
+        & B & 7, 1  & 2, 2 &  1, 1  \\\cline{3-5}
+        & C & 0, 0  & 1, 1 & 4, 5  \\\cline{3-5}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+        \item[(a)] Suppose that G is repeated infinitely many times, so that we have G(1, $\infty$). Define trigger strategies such that the outcome of all stages is (A,X). Find the smallest value of $\delta$ such that these strategies constitute a SPNE.
+    \end{itemize}
     \vfill\null
-  \end{multicols}
-
 \end{frame}
 
+\begin{frame}{PS8, Ex. 1 (A): Trigger strategy in infinitely repeated game - exam answer)}
+    \begin{itemize}
+        \item The following is how I personally would write my answer at the exam, it cannot be guaranteed that writing your answer in this way would yield fill points.
+        \item[(a)] Suppose that G is repeated infinitely many times, so that we have G(1, $\infty$). Define trigger strategies such that the outcome of all stages is (A,X). Find the smallest value of $\delta$ such that these strategies constitute a SPNE.
+    \end{itemize}
+  \begin{multicols}{2}
+  Trigger strategies such that the outcome of all stages of the game is (A,X) are possible using respectively B,Y or C,Z as the threats. Since the threats B,Y will make the SPNE possible for the smallest $\delta$, I will use B,Y in the trigger strategies i define: \\
+    \begin{enumerate}
+    \item Trigger strategy $p1$: In the \nth{1} turn, play A. In every subsequent turn, if outcome from every previous turn was (A,X), play A, otherwise play B.
+    \item Trigger strategy $p2$: In the \nth{1} turn, play X. In every subsequent turn, if outcome from every previous turn was (A,X), play X, otherwise play Y.
+    \end{enumerate}
+    \vfill\null\columnbreak
+    Player 2 has the highest incentive to deviate, so I only examine player 2's incentive to deviate. In order to find the lowest $\delta$ to secure cooperation I set up the inequality for which the payoff for cooperation is higher than the payoff for deviating:
+    \begin{align}
+    \frac{6}{1-\delta} \geq 8 + \frac{2\delta}{1-\delta} \Rightarrow 6 & \geq 8 - 8\delta + 2\delta \Rightarrow & \delta \geq \frac{1}{3}
+    \end{align}
+    $\delta=\frac{1}{3}$ is the smallest value for which the strategies constitute a SPNE.    
+    \vfill\null
+  \end{multicols}
+\end{frame}
 
+\section{PS8, Ex. 2 (A): Bayes Rule}
 
-\section{PS8, Ex. 2 (A): }
+\begin{frame}{PS8, Ex. 2 (A): Bayes Rule:}
+    \vspace{-10pt}
+    \begin{itemize}
+        \item Review the intuition from the ‘Doctor’ example in lecture 7, and then use Bayes’ rule to solve the following problem:
+        \item A cab was involved in a hit and run accident at night. $85\%$ of the cabs in the city are Green and $15\%$ are Blue. A witness later recalls that the cab was Blue, and we know that this witness’ memory is reliable $80\%$ of the time. Given the statement from the witness, calculate the probability that the cab involved in the accident was actually Blue.
+    \end{itemize}
+    \vfill\null
+\end{frame}
 
 \begin{frame}{PS8, Ex. 2 (A): }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
+    \begin{itemize}
+        \item P(B) The odds that the car is blue: $\frac{15}{100}$
+        \item P(obs B given B): The odds that the witness says the car is blue, given that it is blue: $\frac{80}{100}$
+        \item P(obs B given G): The odds that the witness says the car is blue, given that it is green: $\frac{20}{100}$
+        \item P(obs B): The odds that the witness says the car is blue: P(obs B given B)*P(B)+P(obs B given G)*P(G)= $\frac{80}{100}$*$\frac{15}{100}$+$\frac{20}{100}$*$\frac{85}{100}=\frac{29}{100}$
+        \item P(B given obs B):$\frac{P(Obs B given B)*P(B)}{P(obs B)}=\frac{\frac{85}{100}*\frac{85}{100}}{\frac{29}{100}}=0.414$
+    \end{itemize}
 \end{frame}
-
-\begin{frame}{PS8, Ex. 2.a (A): }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
 
 
 \section{PS8, Ex. 3 (A): }
