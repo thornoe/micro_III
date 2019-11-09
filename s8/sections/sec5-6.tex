@@ -1,13 +1,15 @@
-\section{PS8, Ex. 5: }
+\section{PS8, Ex. 5: The dating game (Bayesian Nash Equilibria)}
 
-\begin{frame}{PS8, Ex. 5: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill
-  \end{multicols}
+\begin{frame}{PS8, Ex. 5: The dating game (Bayesian Nash Equilibria)}
+    Consider the ‘dating game’. In this game, player 1 wants to meet with player 2, even if player 2 is of type $t_2$, who does not want to meet with player 1. Player 2’s types have equal probability.\\\medskip
+    Now suppose we construct an alternative version of the game, where player 1 has self respect, and only wants to meet up with player 2 if player 2 also wants to meet up (i.e. if player 2 is of type $t_1$). Otherwise, player 1 prefers to $miscoordinate$ (i.e. not to meet up) as well. Player 1 still has the same preference for going to football versus the opera.
+    \begin{itemize}
+      \item[(a)] Write up this new game. Use the same payoffs as before (0,1, and 2) such that the payoff matrix when player 2’s type is $t_1$ is the same as in the slides.
+      \item[(b)] Find the set of (pure strategy) Bayesian Nash Equilibria of this game.
+    \end{itemize}
 \end{frame}
 
-\begin{frame}{PS8, Ex. 5.a: }
+\begin{frame}{PS8, Ex. 5.a: The dating game (Bayesian Nash Equilibria)}
   \begin{multicols}{2}
     \vfill\null\columnbreak
     \vfill\null
@@ -20,7 +22,33 @@
 
 \begin{frame}{PS8, Ex. 6: }
   \begin{multicols}{2}
+    Difficult. Consider the public goods game from lecture 7. Suppose now instead that there is two-sided incomplete information. In particular, the cost of writing the reference is uniformly distributed between 0 and 2:
+    \begin{align*}
+      c_i\sim u(0,2)\text{ for }i=1,2
+    \end{align*}
+    In this setting, we can show that the players optimally follow a ‘cutoff’ strategy. Thus, the equilibrium strategies take the form
+    \begin{align*}
+      s_1^*(c_1)&=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\\
+      s_2^*(c_2)&=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
     \vfill\null\columnbreak
+    \begin{itemize}
+      \item[(a)] Let $z_{-i}^* = \mathbb{P}(s_{-i}^*=Write)$, i.e. the probability that the other player plays 'Write' in equilibrium. Argue that
+      \vspace{-18pt}
+      \begin{align}
+        1-c_i^*=z_{-i}^*\label{7a}
+      \end{align}
+      \textit{Hint:} Calculate $i$'s expected payoff from writing the reference and from not writing the reference, conditional on $z_{-i}^*$.
+      \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$. $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
+      \item[(c)] Use the result from (b) together with eq. \eqref{7a} to find $(c_1^* , c_2^*)$.
+      \item[(d)] What’s the probability of under- investment (i.e. that nobody writes the reference)? What’s the prob. of overinvestment (i.e. both write)?
+    \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
