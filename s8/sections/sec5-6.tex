@@ -4,12 +4,61 @@
     Consider the ‘dating game’. In this game, player 1 wants to meet with player 2, even if player 2 is of type $t_2$, who does not want to meet with player 1. Player 2’s types have equal probability.\\\medskip
     Now suppose we construct an alternative version of the game, where player 1 has self respect, and only wants to meet up with player 2 if player 2 also wants to meet up (i.e. if player 2 is of type $t_1$). Otherwise, player 1 prefers to $miscoordinate$ (i.e. not to meet up) as well. Player 1 still has the same preference for going to football versus the opera.
     \begin{itemize}
-      \item[(a)] Write up this new game. Use the same payoffs as before (0,1, and 2) such that the payoff matrix when player 2’s type is $t_1$ is the same as in the slides.
+      \item[(a)] Write up this new game. Use the same payoffs as before (0,1, and 2) such that the payoff matrix when player 2’s type is $t_1$ is the same as in the slides (Lecture 7, slides 22-26).
       \item[(b)] Find the set of (pure strategy) Bayesian Nash Equilibria of this game.
     \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5: The dating game (Bayesian Nash Equilibria)}
+    Consider the ‘dating game’. In this game, player 1 wants to meet with player 2, even if player 2 is of type $t_2$, who does not want to meet with player 1. Player 2’s types have equal probability.\\\medskip
+    Now suppose we construct an alternative version of the game, where player 1 has self respect, and only wants to meet up with player 2 if player 2 also wants to meet up (i.e. if player 2 is of type $t_1$). Otherwise, player 1 prefers to $miscoordinate$ (i.e. not to meet up) as well. Player 1 still has the same preference for going to football versus the opera.
+    \begin{itemize}
+      \item[(a)] Write up this new game. Use the same payoffs as before (0,1, and 2) such that the payoff matrix when player 2’s type is $t_1$ is the same as in the slides (Lecture 7, slides 22-26).
+    \end{itemize}
+    \textbf{\textit{Hint:}} Write up the Bayesian game (players, type spaces, beliefs, action spaces, strategy spaces, and the type-dependent payoff matrices.)
+    \begin{itemize}
+      \item[(b)] Find the set of (pure strategy) Bayesian Nash Equilibria of this game.
+    \end{itemize}
+    \textbf{\textit{Hints:}}
+    \begin{enumerate}
+      \item Check for equilibria where player 1 plays $Football$ and $Opera$ respectively.
+      \item In equilibrium, a strategy should maximize expected payoff given the strategy of the other player and the probability of each type.
+    \end{enumerate}
+    \vfill\null
 \end{frame}
 
 \begin{frame}{PS8, Ex. 5.a: The dating game (Bayesian Nash Equilibria)}
+    \begin{itemize}
+      \item[(a)] Write up this new game. Use the same payoffs as before (0,1, and 2) such that the payoff matrix when player 2’s type is $t_1$ is the same as in the slides (Lecture 7, slides 22-26).
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{enumerate}
+      \item Players: P1, P2.
+      \item Type spaces: $T_1=\{t\},\ T_2=\{t_1,t_2\}$
+      \item Beliefs: $\mathbb{P}_1(T_2=t_1)=\mathbb{P}_1(T_2=t_2)=\frac{1}{2},\ \mathbb{P}_2(T_1=t)=1$
+      \item Action space: $A_i=\{Football,Opera\},\text{ for }i\in1,2$
+      \item Strategy spaces: $S_1=\{F,O\},\ S_2=\{FF,FO,OF,OO\}$
+      \item Type-dependent payoff matrices:
+    \end{enumerate}
+    \vspace{-8pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1\ (p=\frac{1}{2})$} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{F} & \multicolumn{1}{c}{O} \\\cline{2-3}
+        F & 2, 1 & 0, 0 \\\cline{2-3}
+        O & 0, 0 & 1, 2 \\\cline{2-3}
+      \end{tabular}\quad
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2\ (p=\frac{1}{2})$} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{F} & \multicolumn{1}{c}{O} \\\cline{2-3}
+        F & 0, 0 & 2, 2 \\\cline{2-3}
+        O & 1, 1 & 0, 0 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vfill\null
+\end{frame}
+
+\begin{frame}{PS8, Ex. 5.b: The dating game (Bayesian Nash Equilibria)}
   \begin{multicols}{2}
     \vfill\null\columnbreak
     \vfill\null
