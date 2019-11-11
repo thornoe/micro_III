@@ -39,9 +39,9 @@
     \end{enumerate}
     \vfill\null\columnbreak
     Player 2 has the highest incentive to deviate, so I only examine player 2's incentive to deviate. In order to find the lowest $\delta$ to secure cooperation I set up the inequality for which the payoff for cooperation is higher than the payoff for deviating:
-    \begin{align}
+    \begin{align*}
     \frac{6}{1-\delta} \geq 8 + \frac{2\delta}{1-\delta} \Rightarrow 6 & \geq 8 - 8\delta + 2\delta \Rightarrow & \delta \geq \frac{1}{3}
-    \end{align}
+    \end{align*}
     $\delta=\frac{1}{3}$ is the smallest value for which the strategies constitute a SPNE.    
     \vfill\null
   \end{multicols}
@@ -155,7 +155,7 @@
         \item Write up the best-response of the other player(s): $s_j^*(t_j)\equiv BR_j\left(s_i(t_i)|t_j\right)$.
         \item If $s_i(t_i)=BR_i\left(s_j(t_j)|t_i\right)\equiv s_i^*(t_i)$ then $\left(s_i^*(t_i),s_j^*(t_j)\right)$ is a BNE.
       \end{enumerate}
-      \item In BNE, a strategy must maximize expected utility given the strategy of the other player(s) and the probability of them being each type, i.e. no type of any player has an incentive to deviate as in equilibrium player $i$'s strategy is a best response to player $j$'s strategy\textbar player $i$'s beliefs:
+      \item In BNE, a strategy must maximize expected utility given the strategy of the other player(s) and the probability of them being each type, i.e. no type of any player has an incentive to deviate as in equilibrium player $i$'s strategy is a best response to player $j$'s strategy given player $i$'s beliefs:
       \begin{align*}
         \max\limits_{s_i}\sum\limits_{j\neq i}\sum\limits_{t_{jk}\in T_j}\mathbb{P}_i(t_{jk}|t_i)\cdot u_i\left(s_i(t_i),s_j^*(t_j)|t_i\right)
       \end{align*}
