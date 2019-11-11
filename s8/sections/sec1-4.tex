@@ -53,20 +53,116 @@
     \vspace{-10pt}
     \begin{itemize}
         \item Review the intuition from the ‘Doctor’ example in lecture 7, and then use Bayes’ rule to solve the following problem:
-        \item A cab was involved in a hit and run accident at night. $85\%$ of the cabs in the city are Green and $15\%$ are Blue. A witness later recalls that the cab was Blue, and we know that this witness’ memory is reliable $80\%$ of the time. Given the statement from the witness, calculate the probability that the cab involved in the accident was actually Blue.
+        \item A cab was involved in a hit and run accident at night. $85\%$ of the cabs in the city are Green and $15\%$ are Blue. A witness later recalls that the cab was Blue, and we know that this witness’ memory is reliable $80\%$ of the time.\textbar the statement from the witness, calculate the probability that the cab involved in the accident was actually Blue.
     \end{itemize}
     \vfill\null
 \end{frame}
 
 \begin{frame}{PS8, Ex. 2 (A): }
     \begin{itemize}
-        \item P(B) The odds that the car is blue: $\frac{15}{100}$
-        \item P(obs B given B): The odds that the witness says the car is blue, given that it is blue: $\frac{80}{100}$
-        \item P(obs B given G): The odds that the witness says the car is blue, given that it is green: $\frac{20}{100}$
-        \item P(obs B): The odds that the witness says the car is blue: P(obs B given B)*P(B)+P(obs B given G)*P(G)= $\frac{80}{100}$*$\frac{15}{100}$+$\frac{20}{100}$*$\frac{85}{100}=\frac{29}{100}$
-        \item P(B given obs B):$\frac{P(Obs B given B)*P(B)}{P(obs B)}=\frac{\frac{85}{100}*\frac{85}{100}}{\frac{29}{100}}=0.414$
+    \item[] We wanna find the chance that the car is blue, given that the witness says it's blue. This is the samee as the odds that the car will be blue and the witness says it's blue, divided by the uncontional chance the witness says it blue.
+        \item P(B) The chance that the car is blue: $\frac{15}{100}$
+        \item P(obs B\textbar B): The chance that the witness says the car is blue, given that it is blue: $\frac{80}{100}$
+        \item P(obs B\textbar G): The chance that the witness says the car is blue, given that it is green: $\frac{20}{100}$
+        \item P(obs B): The unconditional chance that the witness says the car is blue, so the amount of chance the witness would look at a blue car and say it's blue, plus the chance the witness would look at a green car and say it's blue: P(obs B\textbar B)*P(B)+P(obs B\textbar G)*P(G)= $\frac{80}{100}$*$\frac{15}{100}$+$\frac{20}{100}$*$\frac{85}{100}=\frac{29}{100}$
+        \item P(B\textbar obs B):$\frac{P(Obs B | B)*P(B)}{P(obs B)}=\frac{\frac{80}{100}*\frac{15}{100}}{\frac{29}{100}}=0.414$
     \end{itemize}
 \end{frame}
+
+
+
+\section{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
+
+\begin{frame}{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
+    \begin{enumerate}
+      \item The timing is as follows where $p$ is a commonly known distribution:
+      \begin{enumerate}\normalsize
+        \item Nature draws all players' type according to $p$.
+        \item Each player $i$ learns her own type $t_{i}$.
+        \item Players form their beliefs about the type profile.
+        \item Players simultaneously choose actions and payoffs are realized.
+      \end{enumerate}
+    \end{enumerate}
+    \vfill\null
+\end{frame}
+\begin{frame}{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
+    \begin{enumerate}
+      \item The timing is as follows where $p$ is a commonly known distribution:
+      \begin{enumerate}\normalsize
+        \item Nature draws all players' type according to $p$.
+        \item Each player $i$ learns her own type $t_{i}$.
+        \item Players form their beliefs about the type profile.
+        \item Players simultaneously choose actions and payoffs are realized.
+      \end{enumerate}
+      \item The static Bayesian game consists of:
+      \begin{enumerate}\normalsize
+        \item Players: $Player\ 1,...,Player\ n$
+        \item Type spaces: $T_1=\{t_{11},...,t_{1K}\},...$
+        \item Beliefs: $\mathbb{P}_1(T_2=t_{21})=\cdot,...$
+        \item Action spaces: $A_1=\{\cdot\},...$
+        \item Strategy spaces: $S_1=\left\{s_1(t_1),\cdot\right\}=\left\{(s_1|t_{11},...,s_1|t_{1K}),\cdot\right\},...$
+        \item Type-dependent payoff matrices.
+      \end{enumerate}
+    \end{enumerate}
+    \vfill\null
+\end{frame}
+\begin{frame}{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
+    \begin{enumerate}
+      \item The timing is as follows where $p$ is a commonly known distribution:
+      \begin{enumerate}\normalsize
+        \item Nature draws all players' type according to $p$.
+        \item Each player $i$ learns her own type $t_{i}$.
+        \item Players form their beliefs about the type profile.
+        \item Players simultaneously choose actions and payoffs are realized.
+      \end{enumerate}
+      \item The static Bayesian game consists of:
+      \begin{enumerate}\normalsize
+        \item Players: $Player\ 1,...,Player\ n$
+        \item Type spaces: $T_1=\{t_{11},...,t_{1K}\},...$
+        \item Beliefs: $\mathbb{P}_1(T_2=t_{21})=\cdot,...$
+        \item Action spaces: $A_1=\{\cdot\},...$
+        \item Strategy spaces: $S_1=\left\{s_1(t_1),\cdot\right\}=\left\{(s_1|t_{11},...,s_1|t_{1K}),\cdot\right\},...$
+        \item Type-dependent payoff matrices.
+      \end{enumerate}
+      \item Find Bayesian Nash Equilibria (BNE) by going through the possible strategies for a player $i$ (the player with the smallest strategy space). For each strategy $s_i(t_i)$:
+      \begin{enumerate}\normalsize
+        \item Write up the best-response of the other player(s): $s_j^*(t_j)\equiv BR_j\left(s_i(t_i)|t_j\right)$.
+        \item If $s_i(t_i)=BR_i\left(s_j(t_j)|t_i\right)\equiv s_i^*(t_i)$ then $\left(s_i^*(t_i),s_j^*(t_j)\right)$ is a BNE.
+      \end{enumerate}
+    \end{enumerate}
+    \vfill\null
+\end{frame}
+\begin{frame}{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
+    \begin{enumerate}
+      \item The timing is as follows where $p$ is a commonly known distribution:
+      \begin{enumerate}\normalsize
+        \item Nature draws all players' type according to $p$.
+        \item Each player $i$ learns her own type $t_{i}$.
+        \item Players form their beliefs about the type profile.
+        \item Players simultaneously choose actions and payoffs are realized.
+      \end{enumerate}
+      \item The static Bayesian game consists of:
+      \begin{enumerate}\normalsize
+        \item Players: $Player\ 1,...,Player\ n$
+        \item Type spaces: $T_1=\{t_{11},...,t_{1K}\},...$
+        \item Beliefs: $\mathbb{P}_1(T_2=t_{21})=\cdot,...$
+        \item Action spaces: $A_1=\{\cdot\},...$
+        \item Strategy spaces: $S_1=\left\{s_1(t_1),\cdot\right\}=\left\{(s_1|t_{11},...,s_1|t_{1K}),\cdot\right\},...$
+        \item Type-dependent payoff matrices.
+      \end{enumerate}
+      \item Find Bayesian Nash Equilibria (BNE) by going through the possible strategies for a player $i$ (the player with the smallest strategy space). For each strategy $s_i(t_i)$:
+      \begin{enumerate}\normalsize
+        \item Write up the best-response of the other player(s): $s_j^*(t_j)\equiv BR_j\left(s_i(t_i)|t_j\right)$.
+        \item If $s_i(t_i)=BR_i\left(s_j(t_j)|t_i\right)\equiv s_i^*(t_i)$ then $\left(s_i^*(t_i),s_j^*(t_j)\right)$ is a BNE.
+      \end{enumerate}
+      \item In BNE, a strategy must maximize expected utility given the strategy of the other player(s) and the probability of them being each type, i.e. no type of any player has an incentive to deviate as in equilibrium player $i$'s strategy is a best response to player $j$'s strategy\textbar player $i$'s beliefs:
+      \begin{align*}
+        \max\limits_{s_i}\sum\limits_{j\neq i}\sum\limits_{t_{jk}\in T_j}\mathbb{P}_i(t_{jk}|t_i)\cdot u_i\left(s_i(t_i),s_j^*(t_j)|t_i\right)
+      \end{align*}
+    \end{enumerate}
+    \vfill\null
+\end{frame}
+
 
 
 \section{PS8, Ex. 3 (A): }
@@ -80,7 +176,28 @@
 
 \begin{frame}{PS8, Ex. 3.a (A): }
   \begin{multicols}{2}
+    \begin{itemize}
+    \item[a] a only affects $p_2$'s payoff, but also $p_1$'s strategy. For a=2 $p_2$ will have R as a dominant strategy, for a=-2 $p_2$ will have L as a dominant strategy.
+    \item[b] This can be modelled as a Bayesian game since $p_2$ has two types (he either has L or R as a dominant strategy) and $p_1$ has a belief about the distribution of these types (Each happen $\frac{1}{2}$ the time.). 
+        \item[Players:] $(p_1,p_2)$
+        \item[A. sets:] $A_1=(U,D),A_2=(L,R)$
+        \item[Type space:] $T_1=(t)$ [one type], $T_2=(2,-2)$
+        \item[Beliefs:] $p_1(t_2=2)=p_1(t_2=-2)=\frac{1}{2}$ 
+        \item[] The expected payoff matrix:
+        \end{itemize}
+        \begin{table}
+      \begin{tabular}{cl|c|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{4}{c}{\color{blue}Player 2}\\
+        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{LR} & \multicolumn{1}{c}{RL} & \multicolumn{1}{c}{RR} \\\cline{3-6}
+        & U & \textcolor{red}{2},1 &  1,-$\frac{1}{2}$ & \textcolor{red}{1},\textcolor{blue}{$\frac{3}{2}$} & 0, 0  \\\cline{3-6}
+        & D & 0, 1  & $\frac{1}{2}$, -$\frac{1}{2}$ & $\frac{1}{2}$, \textcolor{blue}{$\frac{3}{2}$} & \textcolor{red}{1}, 0  \\\cline{3-6}
+      \end{tabular}
+      \end{table}  
     \vfill\null\columnbreak
+    \begin{itemize}
+    \item[c] The BNE is: (U,RL)
+    \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
@@ -90,13 +207,36 @@
 \section{PS8, Ex. 4: }
 
 \begin{frame}{PS8, Ex. 4: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
+    \begin{table}
+      \begin{tabular}{ll|c|c|}
+        \multicolumn{1}{c}{Game 1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & T & 1, 1 & 0, 0 \\\cline{3-4}
+        & B & 0, 0 & 0, 0 \\\cline{3-4}
+      \end{tabular}
+      \quad\quad
+      \begin{tabular}{ll|c|c|}
+        \multicolumn{1}{c}{Game 2:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & T & 0, 0 & 0, 0 \\\cline{3-4}
+        & B & 0, 0 & 2, 2 \\\cline{3-4}
+      \end{tabular}
+    \end{table}
     \vfill\null
-  \end{multicols}
 \end{frame}
 
 \begin{frame}{PS8, Ex. 4.a: }
+    \begin{table}
+      \begin{tabular}{ll|c|c|}
+        \multicolumn{1}{c}{Game 1 $(p=\frac{1}{2})$:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & T & 1, 1 & 0, 0 \\\cline{3-4}
+        & B & 0, 0 & 0, 0 \\\cline{3-4}
+      \end{tabular}
+      \quad\quad
+      \begin{tabular}{ll|c|c|}
+        \multicolumn{1}{c}{Game 2 $(p=\frac{1}{2})$:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+        & T & 0, 0 & 0, 0 \\\cline{3-4}
+        & B & 0, 0 & 2, 2 \\\cline{3-4}
+      \end{tabular}
+    \end{table}
   \begin{multicols}{2}
     \vfill\null\columnbreak
     \vfill\null\null
