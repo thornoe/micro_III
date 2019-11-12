@@ -634,11 +634,23 @@
 
 \begin{frame}{PS8, Ex. 6: Static public goods game (two-sided incomplete information)}
   \begin{multicols}{2}
-    Difficult. Consider the public goods game from lecture 7. Suppose now instead that there is two-sided incomplete information. In particular, the cost of writing the reference is uniformly distributed between 0 and 2:
+    \textbf{Difficult}. Consider the public goods game from lecture 7 (slides 34-40):
+    \vspace{-6pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{W} & \multicolumn{1}{c}{D} \\\cline{2-3}
+        W & $1-c_1,1-c_2$ & $1-c_1,1$ \\\cline{2-3}
+        D & $1,1-c_2$     & $0,0$     \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vspace{-6pt}
+    Suppose now instead that there is two-sided incomplete information. In particular, the cost of writing the reference is uniformly distributed between 0 and 2:
+    \vspace{-4pt}
     \begin{align*}
       c_i\sim u(0,2)\text{ for }i=1,2
     \end{align*}
     In this setting, we can show that the players optimally follow a ‘cutoff’ strategy. Thus, the equilibrium strategies take the form
+    \vspace{-4pt}
     \begin{align*}
       s_1^*(c_1)&=\left\{\begin{array}{rcl}
         Write & \text{if} & c_1\leq c_1^*\\
@@ -654,11 +666,11 @@
       \item[(a)] Let $z_{-i}^* = \mathbb{P}(s_{-i}^*=Write)$, i.e. the probability that the other player plays 'Write' in equilibrium. Argue that
       \vspace{-18pt}
       \begin{align}
-        1-c_i^*=z_{-i}^*\label{7a}
+        1-c_i^*=z_{-i}^*\label{ex6a}
       \end{align}
       \item[] \vspace{-8pt}\textit{Hint:} Calculate $i$'s expected payoff from writing the reference and from not writing the reference, conditional on $z_{-i}^*$.
       \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$. $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
-      \item[(c)] Use the result from (b) together with eq. \eqref{7a} to find $(c_1^* , c_2^*)$.
+      \item[(c)] Use the result from (b) together with eq. \eqref{ex6a} to find $(c_1^* , c_2^*)$.
       \item[(d)] What’s the probability of under- investment (i.e. that nobody writes the reference)? What’s the probability of overinvestment (i.e. both write the reference)?
     \end{itemize}
     \vfill\null
@@ -666,16 +678,145 @@
 \end{frame}
 
 \begin{frame}{PS8, Ex. 6.a: Static public goods game (two-sided incomplete information)}
-  \begin{itemize}
-    \item[(a)] Let $z_{-i}^* = \mathbb{P}(s_{-i}^*=Write)$, i.e. the probability that the other player plays 'Write' in equilibrium. Argue that
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(a)] Let $z_{-i}^* = \mathbb{P}(s_{-i}^*=Write)$, i.e. the probability that the other player plays 'Write' in equilibrium. Argue that $1-c_i^*=z_{-i}^*\quad(1)$
+      \item[] \textit{Hint:} Calculate $i$'s expected payoff from writing the reference and from not writing the reference, conditional on $z_{-i}^*$.
+    \end{itemize}
     \vspace{-8pt}
-    \begin{align}
-      1-c_i^*=z_{-i}^*\label{7a}
-    \end{align}
-    \item[] \vspace{-8pt}\textit{Hint:} Calculate $i$'s expected payoff from writing the reference and from not writing the reference, conditional on $z_{-i}^*$.
-  \end{itemize}
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
+    \begin{itemize}
+      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively.
+    \end{itemize}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.a: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(a)] Let $z_{-i}^* = \mathbb{P}(s_{-i}^*=Write)$, i.e. the probability that the other player plays 'Write' in equilibrium. Argue that $1-c_i^*=z_{-i}^*\quad(1)$
+      \item[] \textit{Hint:} Calculate $i$'s expected payoff from writing the reference and from not writing the reference, conditional on $z_{-i}^*$.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{align*}
+      E[s_i=W]&=\mathbb{P}\left[s_{-i}^*=W\right]\cdot(1-c_i)+\mathbb{P}\left[s_{-i}^*=D\right]\cdot(1-c_i)=1-c_i\\
+      E[s_i=D]&=\mathbb{P}\left[s_{-i}^*=W\right]\cdot1+\mathbb{P}\left[s_{-i}^*=D\right]\cdot0=\mathbb{P}\left[s_{-i}^*=W\right]=z_{-i}^*
+    \end{align*}
     \vfill\null
-  \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.a: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(a)] Let $z_{-i}^* = \mathbb{P}(s_{-i}^*=Write)$, i.e. the probability that the other player plays 'Write' in equilibrium. Argue that $1-c_i^*=z_{-i}^*\quad(1)$
+      \item[] \textit{Hint:} Calculate $i$'s expected payoff from writing the reference and from not writing the reference, conditional on $z_{-i}^*$.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{align*}
+      E[s_i=W]&=\mathbb{P}\left[s_{-i}^*=W\right]\cdot(1-c_i)+\mathbb{P}\left[s_{-i}^*=D\right]\cdot(1-c_i)=1-c_i\\
+      E[s_i=D]&=\mathbb{P}\left[s_{-i}^*=W\right]\cdot1+\mathbb{P}\left[s_{-i}^*=D\right]\cdot0=\mathbb{P}\left[s_{-i}^*=W\right]=z_{-i}^*
+    \end{align*}
+    \vspace{-16pt}
+    \begin{itemize}
+      \item[Step 2:] Use this to argue that \eqref{ex6a} holds. (Remember: the 'cutoff' value $c_i^*$ is where player $i$ is indifferent between $W$ and $D$).
+    \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 6.a: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(a)] Let $z_{-i}^* = \mathbb{P}(s_{-i}^*=Write)$, i.e. the probability that the other player plays 'Write' in equilibrium. Argue that $1-c_i^*=z_{-i}^*\quad(1)$
+      \item[] \textit{Hint:} Calculate $i$'s expected payoff from writing the reference and from not writing the reference, conditional on $z_{-i}^*$.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{align*}
+      E[u_i|s_i=W]&=\mathbb{P}\left[s_{-i}^*=W\right]\cdot(1-c_i)+\mathbb{P}\left[s_{-i}^*=D\right]\cdot(1-c_i)=1-c_i\\
+      E[u_i|s_i=D]&=\mathbb{P}\left[s_{-i}^*=W\right]\cdot1+\mathbb{P}\left[s_{-i}^*=D\right]\cdot0=\mathbb{P}\left[s_{-i}^*=W\right]=z_{-i}^*
+    \end{align*}
+    \vspace{-16pt}
+    \begin{itemize}
+      \item[Step 2:] Use this to argue that \eqref{ex6a} holds. (Remember: the 'cutoff' value $c_i^*$ is where player $i$ is indifferent between $W$ and $D$).
+    \end{itemize}
+    For $c_i=c_i^*$ the expected equilibrium payoff is the same regardless of strategy, i.e.
+    \begin{align*}
+      E[u_i|s_i=W]&=E[u_i|s_i=D]\Rightarrow\\
+      1-c_i^*&=z_{-i}^*
+    \end{align*}
+    \vfill\null
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 6.b: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$. $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Knowing $z_i^*$, write up $z_i$ as the probability player $i$ herself plays $W$ in equilibrium.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item $z_i^*=\mathbb{P}[s_i^*=write]$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
 \end{frame}
