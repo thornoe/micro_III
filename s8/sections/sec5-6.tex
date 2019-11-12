@@ -670,12 +670,13 @@
       \end{align}
       \item[] \vspace{-8pt}\textit{Hint:} Calculate $i$'s expected payoff from writing the reference and from not writing the reference, conditional on $z_{-i}^*$.
       \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$. $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
-      \item[(c)] Use the result from (b) together with eq. \eqref{ex6a} to find $(c_1^* , c_2^*)$.
-      \item[(d)] What’s the probability of under- investment (i.e. that nobody writes the reference)? What’s the probability of overinvestment (i.e. both write the reference)?
+      \item[(c)] Use the result from (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+      \item[(d)] What’s the probability of under- investment (i.e. that nobody writes the reference)? What’s the probability of overinvestment (i.e. that both write the reference)?
     \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
+
 
 \begin{frame}{PS8, Ex. 6.a: Static public goods game (two-sided incomplete information)}
     \begin{align*}
@@ -716,7 +717,7 @@
     \end{itemize}
     \vspace{-8pt}
     \begin{itemize}
-      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively.
+      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively:
     \end{itemize}
     \vspace{-8pt}
     \begin{align*}
@@ -743,7 +744,7 @@
     \end{itemize}
     \vspace{-8pt}
     \begin{itemize}
-      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively.
+      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively:
     \end{itemize}
     \vspace{-8pt}
     \begin{align*}
@@ -752,7 +753,8 @@
     \end{align*}
     \vspace{-16pt}
     \begin{itemize}
-      \item[Step 2:] Use this to argue that \eqref{ex6a} holds. (Remember: the 'cutoff' value $c_i^*$ is where player $i$ is indifferent between $W$ and $D$).
+      \item[Step 2:] Use this to argue that equation \eqref{ex6a} holds.
+      \item[]        \textit{Hint:} the 'cutoff' value $c_i^*$ is where player $i$ is indifferent between $W$ and $D$.
     \end{itemize}
     \vfill\null
 \end{frame}
@@ -774,7 +776,7 @@
     \end{itemize}
     \vspace{-8pt}
     \begin{itemize}
-      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively.
+      \item[Step 1:] Write up the expected payoffs from playing $W$ and $D$ respectively:
     \end{itemize}
     \vspace{-8pt}
     \begin{align*}
@@ -783,12 +785,14 @@
     \end{align*}
     \vspace{-16pt}
     \begin{itemize}
-      \item[Step 2:] Use this to argue that \eqref{ex6a} holds. (Remember: the 'cutoff' value $c_i^*$ is where player $i$ is indifferent between $W$ and $D$).
+      \item[Step 2:] Use this to argue that equation \eqref{ex6a} holds.
+      \item[]        \textit{Hint:} the 'cutoff' value $c_i^*$ is where player $i$ is indifferent between $W$ and $D$.
     \end{itemize}
-    For $c_i=c_i^*$ the expected equilibrium payoff is the same regardless of strategy, i.e.
+    For $c_i=c_i^*$ player $i$'s expected payoff is the same regardless of strategy, i.e.
     \begin{align*}
       E[u_i|s_i=W]&=E[u_i|s_i=D]\Rightarrow\\
-      1-c_i^*&=z_{-i}^*
+      1-c_i^*&=z_{-i}^*\\
+      & && Q.E.D.
     \end{align*}
     \vfill\null
 \end{frame}
@@ -807,16 +811,478 @@
     \end{align*}
     \vspace{-12pt}
     \begin{itemize}
-      \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$. $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
+      \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$.
+      \item[]    $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
+    \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 6.b: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$.
+      \item[]    $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
     \end{itemize}
     \begin{multicols}{2}
       \begin{itemize}
-        \item[Step 1:] Knowing $z_i^*$, write up $z_i$ as the probability player $i$ herself plays $W$ in equilibrium.
+        \item[Step 1:] Knowing that $z_i^*$ is the probability that the other player plays $W$ in equilibrium, write up $z_i$ as the probability player $i$ herself plays $W$ in equilibrium.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.b: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$.
+      \item[]    $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Knowing that $z_i^*$ is the probability that the other player plays $W$ in equilibrium, write up $z_i$ as the probability player $i$ herself plays $W$ in equilibrium.
       \end{itemize}
       \vfill\null\columnbreak
       \begin{enumerate}
-        \item $z_i^*=\mathbb{P}[s_i^*=write]$
+        \item $z_i^*=\mathbb{P}[s_i^*=write]=\mathbb{P}[c_i\leq c_i^*]$
       \end{enumerate}
       \vfill\null
     \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.b: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$.
+      \item[]    $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Knowing that $z_i^*$ is the probability that the other player plays $W$ in equilibrium, write up $z_i$ as the probability player $i$ herself plays $W$ in equilibrium.
+        \item[Step 2:] Use that $c_i$ is uniformly distributed $c_i\sim u(0, 2)$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item $z_i^*=\mathbb{P}[s_i^*=write]=\mathbb{P}[c_i\leq c_i^*]$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.b: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(b)] A standard result on uniform distributions gives the following: if $x\sim u(0, 2)$, then $\mathbb{P}(x<a)=\frac{a}{2}$. Use this to find $z_i^*$.
+      \item[]    $Hint:$ Use the equilibrium strategy and your knowledge of the distribution of $c_{-i}$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Knowing that $z_i^*$ is the probability that the other player plays $W$ in equilibrium, write up $z_i$ as the probability player $i$ herself plays $W$ in equilibrium.
+        \item[Step 2:] Use that $c_i$ is uniformly distributed $c_i\sim u(0, 2)$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item $z_i^*=\mathbb{P}[s_i^*=write]=\mathbb{P}[c_i\leq c_i^*]$
+        \item $z_i^*=\mathbb{P}[c_i\leq c_i^*]=\frac{c_i^*}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 6.c: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(c)] Use the result from question (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \vfill\null\columnbreak
+      Information so far:
+      \begin{enumerate}
+        \item[(a)] $z_{-i}^*=\mathbb{P}[s_{-i}^*=write]=1-c_i^*\quad(1)$
+        \item[(b)] $z_i^*=\mathbb{P}[s_i^*=write]=\frac{c_i^*}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.c: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(c)] Use the result from question (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Though the drawn costs might differ, take advantage of the symmetry in the distribution of the costs to write up equation \eqref{ex6a} for player $i$ instead of $-i$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Information so far:
+      \begin{enumerate}
+        \item[(a)] $z_{-i}^*=\mathbb{P}[s_{-i}^*=write]=1-c_i^*\quad(1)$
+        \item[(b)] $z_i^*=\mathbb{P}[s_i^*=write]=\frac{c_i^*}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.c: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(c)] Use the result from question (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Though the drawn costs might differ, take advantage of the symmetry in the distribution of the costs to write up equation \eqref{ex6a} for player $i$ instead of $-i$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Information so far:
+      \begin{enumerate}
+        \item[(a)] $z_{-i}^*=\mathbb{P}[s_{-i}^*=write]=1-c_i^*\quad(1)$
+        \item[(b)] $z_i^*=\mathbb{P}[s_i^*=write]=\frac{c_i^*}{2}$
+        \item      $z_i^*=1-c_{-i}^*$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.c: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(c)] Use the result from question (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Though the drawn costs might differ, take advantage of the symmetry in the distribution of the costs to write up equation \eqref{ex6a} for player $i$ instead of $-i$.
+        \item[Step 2:] Substitute in $z_i^*$ from (b).
+      \end{itemize}
+      \vfill\null\columnbreak
+      Information so far:
+      \begin{enumerate}
+        \item[(a)] $z_{-i}^*=\mathbb{P}[s_{-i}^*=write]=1-c_i^*\quad(1)$
+        \item[(b)] $z_i^*=\mathbb{P}[s_i^*=write]=\frac{c_i^*}{2}$
+        \item      $z_i^*=1-c_{-i}^*$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.c: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(c)] Use the result from question (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Though the drawn costs might differ, take advantage of the symmetry in the distribution of the costs to write up equation \eqref{ex6a} for player $i$ instead of $-i$.
+        \item[Step 2:] Substitute in $z_i^*$ from (b).
+      \end{itemize}
+      \vfill\null\columnbreak
+      Information so far:
+      \begin{enumerate}
+        \item[(a)] $z_{-i}^*=\mathbb{P}[s_{-i}^*=write]=1-c_i^*\quad(1)$
+        \item[(b)] $z_i^*=\mathbb{P}[s_i^*=write]=\frac{c_i^*}{2}$
+        \item      $z_i^*=1-c_{-i}^*$
+        \item      $\frac{c_i^*}{2}=1-c_{-i}^*$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.c: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(c)] Use the result from question (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+    \end{itemize}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Though the drawn costs might differ, take advantage of the symmetry in the distribution of the costs to write up equation \eqref{ex6a} for player $i$ instead of $-i$.
+        \item[Step 2:] Substitute in $z_i^*$ from (b).
+        \item[Step 3:] Use symmetry in the distribution of the costs to find the cutoff value $c_i^*$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Information so far:
+      \begin{enumerate}
+        \item[(a)] $z_{-i}^*=\mathbb{P}[s_{-i}^*=write]=1-c_i^*\quad(1)$
+        \item[(b)] $z_i^*=\mathbb{P}[s_i^*=write]=\frac{c_i^*}{2}$
+        \item      $z_i^*=1-c_{-i}^*$
+        \item      $\frac{c_i^*}{2}=1-c_{-i}^*$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.c: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[(c)] Use the result from question (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Though the drawn costs might differ, take advantage of the symmetry in the distribution of the costs to write up equation \eqref{ex6a} for player $i$ instead of $-i$.
+        \item[Step 2:] Substitute in $z_i^*$ from (b).
+        \item[Step 3:] Use symmetry in the distribution of the costs to find the cutoff value $c_i^*$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Information so far:
+      \begin{enumerate}
+        \item[(a)] $z_{-i}^*=\mathbb{P}[s_{-i}^*=write]=1-c_i^*\quad(1)$
+        \item[(b)] $z_i^*=\mathbb{P}[s_i^*=write]=\frac{c_i^*}{2}$
+        \item      $z_i^*=1-c_{-i}^*$
+        \item      $\frac{c_i^*}{2}=1-c_{-i}^*$
+        \item      Due to symmetry, they must have the same 'cutoff' value $c_i^*$:\vspace{-8pt}
+                   \begin{align*}
+                     \frac{c_i^*}{2}&=1-c_{i}^*\\
+                     c_i^*&=2-2c_{i}^*\\
+                     c_i^*&=\frac{2}{3}
+                   \end{align*}
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 6.c: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[(c)] Use the result from question (b) together with equation \eqref{ex6a} to find $(c_1^* , c_2^*)$.
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Though the drawn costs might differ, take advantage of the symmetry in the distribution of the costs to write up equation \eqref{ex6a} for player $i$ instead of $-i$.
+        \item[Step 2:] Substitute in $z_i^*$ from (b).
+        \item[Step 3:] Use symmetry in the distribution of the costs to find the cutoff value $c_i^*$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Information so far:
+      \begin{enumerate}
+        \item[(a)] $z_{-i}^*=\mathbb{P}[s_{-i}^*=write]=1-c_i^*\quad(1)$
+        \item[(b)] $z_i^*=\mathbb{P}[s_i^*=write]=\frac{c_i^*}{2}$
+        \item      $z_i^*=1-c_{-i}^*$
+        \item      $\frac{c_i^*}{2}=1-c_{-i}^*$
+        \item      Due to symmetry, they must have the same 'cutoff' value $c_i^*$:\vspace{-8pt}
+                   \begin{align*}
+                     \frac{c_i^*}{2}&=1-c_{i}^*\\
+                     c_i^*&=2-2c_{i}^*\\
+                     c_i^*&=\frac{2}{3}
+                   \end{align*}
+        \item      Hence, $(c_1^* , c_2^*)=\left(\frac{2}{3},\frac{2}{3}\right)$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 6.d: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(d)] What’s the probability of underinvestment (i.e. that nobody writes the reference)? What’s the probability of overinvestment (i.e. that both write the reference)?
+    \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 6.d: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(d)] What’s the probability of underinvestment (i.e. that nobody writes the reference)? What’s the probability of overinvestment (i.e. that both write the reference)?
+      \item[]    $Hint:$ As seen in question (c) we can drop the subscripts due to symmetry.
+    \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 6.d: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(d)] What’s the probability of underinvestment (i.e. that nobody writes the reference)? What’s the probability of overinvestment (i.e. that both write the reference)?
+      \item[]    $Hint:$ As seen in question (c) we can drop the subscripts due to symmetry.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{align*}
+      \mathbb{P}[Nobody\ writes]&=(1-\mathbb{P}[s_{i}^*=write])(1-\mathbb{P}[s_{-i}^*=write])=(1-z_{i}^*)(1-z_{-i}^*)
+    \end{align*}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 6.d: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(d)] What’s the probability of underinvestment (i.e. that nobody writes the reference)? What’s the probability of overinvestment (i.e. that both write the reference)?
+      \item[]    $Hint:$ As seen in question (c) we can drop the subscripts due to symmetry.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{align*}
+      \mathbb{P}[Nobody\ writes]&=(1-\mathbb{P}[s_{i}^*=write])(1-\mathbb{P}[s_{-i}^*=write])=(1-z_{i}^*)(1-z_{-i}^*)\\
+                                &=(1-z^*)^2=(1-(1-c^*))^2=\left(1-\left(1-\frac{2}{3}\right)\right)^2=\left(\frac{2}{3}\right)^2=\frac{4}{9}
+    \end{align*}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 6.d: Static public goods game (two-sided incomplete information)}
+    \begin{align*}
+      s_1^*(c_1)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_1\leq c_1^*\\
+        Don't & \text{if} & c_1>c_1^*
+        \end{array}\right.\quad\quad
+      s_2^*(c_2)=\left\{\begin{array}{rcl}
+        Write & \text{if} & c_2\leq c_2^*\\
+        Don't & \text{if} & c_2>c_2^*
+        \end{array}\right.
+    \end{align*}
+    \vspace{-12pt}
+    \begin{itemize}
+      \item[(d)] What’s the probability of underinvestment (i.e. that nobody writes the reference)? What’s the probability of overinvestment (i.e. that both write the reference)?
+      \item[]    $Hint:$ As seen in question (c) we can drop the subscripts due to symmetry.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{align*}
+      \mathbb{P}[Nobody\ writes]&=(1-\mathbb{P}[s_{i}^*=write])(1-\mathbb{P}[s_{-i}^*=write])=(1-z_{i}^*)(1-z_{-i}^*)\\
+                                &=(1-z^*)^2=(1-(1-c^*))^2=\left(1-\left(1-\frac{2}{3}\right)\right)^2=\left(\frac{2}{3}\right)^2=\frac{4}{9}\\
+      \mathbb{P}[Both\ write]&=(z^*)^2=(1-c^*)^2=\left(1-\frac{2}{3}\right)^2=\left(\frac{1}{3}\right)^2=\frac{1}{9}
+    \end{align*}
+    \vfill\null
 \end{frame}
