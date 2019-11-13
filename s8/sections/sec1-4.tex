@@ -38,7 +38,7 @@
         6 &\geq 8 - 8\delta + 2\delta \Leftrightarrow\\
         \delta &\geq \frac{1}{3}
     \end{align*}
-    $\delta=\frac{1}{3}$ is the smallest value for which the strategies constitute a SPNE.    
+    $\delta=\frac{1}{3}$ is the smallest value for which the strategies constitute a SPNE.
     \vfill\null
   \end{multicols}
 \end{frame}
@@ -119,7 +119,7 @@
 \section{PS8, Ex. 3 (A): Static Bayesian game (Bayesian Nash Equilibria)}
 
 \begin{frame}{PS8, Ex. 3 (A): Static Bayesian game (Bayesian Nash Equilibria)}
-Consider the following static game, where $a$ is a real number:
+    Consider the following static game, where $a$ is a real number:
     \begin{table}
       \begin{tabular}{l|c|c|}
         \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
@@ -129,113 +129,331 @@ Consider the following static game, where $a$ is a real number:
       \end{tabular}
     \end{table}
     \begin{itemize}
-        \item[(a)] Suppose that a = 2. Does any player have a dominant strategy? What about when a = -2?
-        \item[(b)] Now assume that player 2 knows the value of $a$, but player 1 only knows that $a = 2$ with probability $0.5$ and $a = −2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.
+        \item[(a)] Suppose that $a=2$. Does any player have a dominant strategy? What about when $a=-2$?
+        \item[(b)] Now assume that player 2 knows the value of $a$, but player 1 only knows that $a=2$ with probability $0.5$ and $a=-2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.
         \item[(c)] Find the Bayes-Nash equilibrium of the game described in (b).
     \end{itemize}
     \vfill\null
 \end{frame}
 
-\begin{frame}{PS8, Ex. 3.b (A): Static Bayesian game (Bayesian Nash Equilibria)}
-    \vspace{-20pt}
-    \textit{(a) Suppose that a = 2. Does any player have a dominant strategy? What about when a = -2?}
+\begin{frame}{PS8, Ex. 3.a (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(a) Suppose that $a = 2$. Does any player have a dominant strategy? What about when $a = -2$?}
     \vspace{-8pt}
-  \begin{multicols}{2}
-    \begin{itemize}
-    \item[(a)] The value of $a$ not only affects P2's payoff, but also P1's strategy. For a=2 P2 will have R as a dominant strategy, for a=-2 P2 will have L as a dominant strategy.
-    \end{itemize}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
-   \vfill\null
-\end{frame}
-
-\begin{frame}{PS8, Ex. 3.b (A): Static Bayesian game (Bayesian Nash Equilibria)}
-    \textit{(b) Now assume that player 2 knows the value of $a$, but player 1 only knows that $a = 2$ with probability $0.5$ and $a = −2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.}
-    \vspace{-8pt}
-  \begin{multicols}{2}
-    \begin{itemize}
-    \item[(a)] The sign of $a$ not only affects P2's payoff, but also P1's strategy. For a=2 P2 will have R as a dominant strategy, for a=-2 P2 will have L as a dominant strategy.
-    \item[(b)] This can be modelled as a Bayesian game since P2 has two types (he either has L or R as a dominant strategy) and P1 has a belief about the distribution of these types (Each happen $\frac{1}{2}$ the time.). 
-        \item[Players:] P1, P2
-        \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
-        \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
-        \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
-        \vfill\null\columnbreak
-    \end{itemize}
-    Type-dependent payoff matrices:
-    \vspace{-8pt}
-    \begin{table}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ affects P2's payoff:
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, 2 \\\cline{2-3}
+          D & 0, 1 & 1, 2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
         \begin{tabular}{l|c|c|}
-        \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1:a=2\ (p=\frac{1}{2})$} \\
-        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
-        U & 2, 1 & 0, 2 \\\cline{2-3}
-        D & 0, 1 & 1, 2 \\\cline{2-3}
-      \end{tabular}
-    \end{table}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=-2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, -2 \\\cline{2-3}
+          D & 0, 1 & 1, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(a) Suppose that $a = 2$. Does any player have a dominant strategy? What about when $a = -2$?}
     \vspace{-8pt}
-    \begin{table}
-      \begin{tabular}{l|c|c|}
-        \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2:a=-2\ (p=\frac{1}{2})$} \\
-        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
-        U & 2, 1 & 0, -2 \\\cline{2-3}
-        D & 0, 1 & 1, -2 \\\cline{2-3}
-      \end{tabular}
-    \end{table}
-    \vfill\null
-  \end{multicols}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\color{blue}R} \\\cline{2-3}
+          U & \textcolor{red}{2}, 1 & 0, \textcolor{blue}{2} \\\cline{2-3}
+          D & 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=-2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\color{blue}L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & \textcolor{red}{2}, \textcolor{blue}{1} & 0, -2 \\\cline{2-3}
+          D & 0, \textcolor{blue}{1} & \textcolor{red}{1}, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vfill\null
+    \end{multicols}
 \end{frame}
 
+
+\begin{frame}{PS8, Ex. 3.b (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(b) Now assume that player 2 knows the value of $a$, but player 1 only knows that $a=2$ with probability $0.5$ and $a=-2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\color{blue}R} \\\cline{2-3}
+          U & \textcolor{red}{2}, 1 & 0, \textcolor{blue}{2} \\\cline{2-3}
+          D & 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=-2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\color{blue}L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & \textcolor{red}{2}, \textcolor{blue}{1} & 0, -2 \\\cline{2-3}
+          D & 0, \textcolor{blue}{1} & \textcolor{red}{1}, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(b) Now assume that player 2 knows the value of $a$, but player 1 only knows that $a=2$ with probability $0.5$ and $a=-2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \item[(b)] This can be modelled as a Bayesian game since P2 has two types (where he strongly prefers $L$ and $R$ respectively) and P1 has a belief about the distribution of these types (each happen $\frac{1}{2}$ of the time.).
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\color{blue}R} \\\cline{2-3}
+          U & \textcolor{red}{2}, 1 & 0, \textcolor{blue}{2} \\\cline{2-3}
+          D & 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=-2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\color{blue}L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & \textcolor{red}{2}, \textcolor{blue}{1} & 0, -2 \\\cline{2-3}
+          D & 0, \textcolor{blue}{1} & \textcolor{red}{1}, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(b) Now assume that player 2 knows the value of $a$, but player 1 only knows that $a=2$ with probability $0.5$ and $a=-2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \item[(b)] This can be modelled as a Bayesian game since P2 has two types (where he strongly prefers $L$ and $R$ respectively) and P1 has a belief about the distribution of these types (each happen $\frac{1}{2}$ of the time.).
+          \item[Players:] P1, P2
+          \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
+          \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
+          \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{\color{blue}R} \\\cline{2-3}
+          U & \textcolor{red}{2}, 1 & 0, \textcolor{blue}{2} \\\cline{2-3}
+          D & 0, 1 & \textcolor{red}{1}, \textcolor{blue}{2} \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{$a=-2:$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{\color{blue}L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & \textcolor{red}{2}, \textcolor{blue}{1} & 0, -2 \\\cline{2-3}
+          D & 0, \textcolor{blue}{1} & \textcolor{red}{1}, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \textbf{\textit{Write as type-dependent payoff matrices}}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(b) Now assume that player 2 knows the value of $a$, but player 1 only knows that $a=2$ with probability $0.5$ and $a=-2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \item[(b)] This can be modelled as a Bayesian game since P2 has two types (where he strongly prefers $L$ and $R$ respectively) and P1 has a belief about the distribution of these types (each happen $\frac{1}{2}$ of the time.).
+          \item[Players:] P1, P2
+          \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
+          \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
+          \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null\columnbreak
+      Type-dependent payoff matrices:
+      \vspace{-8pt}
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1:a=2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, 2 \\\cline{2-3}
+          D & 0, 1 & 1, 2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2:a=-2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, -2 \\\cline{2-3}
+          D & 0, 1 & 1, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vfill\null
+    \end{multicols}
+\end{frame}
 
 
 \begin{frame}{PS8, Ex. 3.c (A): Static Bayesian game (Bayesian Nash Equilibria)}
     \textit{(c) Find the Bayes-Nash equilibrium of the game described in (b).}
     \vspace{-8pt}
-  \begin{multicols}{2}
-    \begin{itemize}
-    \item[(a)] The sign of $a$ not only affects P2's payoff, but also P1's strategy. For a=2 P2 will have R as a dominant strategy, for a=-2 P2 will have L as a dominant strategy.
-    \item[(b)] This can be modelled as a Bayesian game since P2 has two types (he either has L or R as a dominant strategy) and P1 has a belief about the distribution of these types (Each happen $\frac{1}{2}$ the time.). 
-        \item[Players:] P1, P2
-        \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
-        \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
-        \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
-        \vfill\null\columnbreak
-    \end{itemize}
-    Type-dependent payoff matrices:
-    \vspace{-8pt}
-    \begin{table}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \item[(b)] This can be modelled as a Bayesian game since P2 has two types (where he strongly prefers $L$ and $R$ respectively) and P1 has a belief about the distribution of these types (each happen $\frac{1}{2}$ of the time.).
+          \item[Players:] P1, P2
+          \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
+          \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
+          \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null\columnbreak
+      Type-dependent payoff matrices:
+      \vspace{-8pt}
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1:a=2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, 2 \\\cline{2-3}
+          D & 0, 1 & 1, 2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
         \begin{tabular}{l|c|c|}
-        \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1:a=2\ (p=\frac{1}{2})$} \\
-        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
-        U & 2, 1 & 0, 2 \\\cline{2-3}
-        D & 0, 1 & 1, 2 \\\cline{2-3}
-      \end{tabular}
-    \end{table}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2:a=-2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, -2 \\\cline{2-3}
+          D & 0, 1 & 1, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(c) Find the Bayes-Nash equilibrium of the game described in (b).}
     \vspace{-8pt}
-    \begin{table}
-      \begin{tabular}{l|c|c|}
-        \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2:a=-2\ (p=\frac{1}{2})$} \\
-        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
-        U & 2, 1 & 0, -2 \\\cline{2-3}
-        D & 0, 1 & 1, -2 \\\cline{2-3}
-      \end{tabular}
-    \end{table}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \item[(b)] This can be modelled as a Bayesian game since P2 has two types (he either has L or R as a dominant strategy) and P1 has a belief about the distribution of these types (Each happen $\frac{1}{2}$ the time.).
+          \item[Players:] P1, P2
+          \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
+          \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
+          \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
+          \vfill\null\columnbreak
+      \end{itemize}
+      Type-dependent payoff matrices:
+      \vspace{-8pt}
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1:a=2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, 2 \\\cline{2-3}
+          D & 0, 1 & 1, 2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2:a=-2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, -2 \\\cline{2-3}
+          D & 0, 1 & 1, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{itemize}
+          \item[(c)] The strategy for P1 is just one action, whereas the strategy for P2 is an action for each of the two types. Using this, we can write up the expected payoff matrix:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{LR} & \multicolumn{1}{c}{RL} & \multicolumn{1}{c}{RR} \\\cline{2-5}
+          U & 2, 1 &  1,-$\frac{1}{2}$ & 1, $\frac{3}{2}$ & 0, 0  \\\cline{2-5}
+          D & 0, 1  & $\frac{1}{2}$, -$\frac{1}{2}$ & $\frac{1}{2}$, $\frac{3}{2}$ & 1, 0  \\\cline{2-5}
+        \end{tabular}
+      \end{table}
+      \vspace{-4pt}
+      \textbf{\textit{Find the Bayesian Nash Equilibria.}}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(c) Find the Bayes-Nash equilibrium of the game described in (b).}
     \vspace{-8pt}
-    \begin{itemize}
-        \item[(c)] The strategy for P1 is just one action, whereas the strategy for P2 is an action for both possible type. Using this, we can write up the expected payoff matrix:
-    \end{itemize}
-    \vspace{-12pt}
-    \begin{table}
-      \begin{tabular}{l|c|c|c|c|}
-        \multicolumn{1}{c}{} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{LR} & \multicolumn{1}{c}{RL} & \multicolumn{1}{c}{RR} \\\cline{2-5}
-        U & \textcolor{red}{2},1 &  1,-$\frac{1}{2}$ & \textcolor{red}{1},\textcolor{blue}{$\frac{3}{2}$} & 0, 0  \\\cline{2-5}
-        D & 0, 1  & $\frac{1}{2}$, -$\frac{1}{2}$ & $\frac{1}{2}$, \textcolor{blue}{$\frac{3}{2}$} & \textcolor{red}{1}, 0  \\\cline{2-5}
-      \end{tabular}
-    \end{table}
-    \vspace{-4pt}
-    The BNE is: (U,RL)
-    \vfill\null
-  \end{multicols}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \item[(b)] This can be modelled as a Bayesian game since P2 has two types (he either has L or R as a dominant strategy) and P1 has a belief about the distribution of these types (Each happen $\frac{1}{2}$ the time.).
+          \item[Players:] P1, P2
+          \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
+          \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
+          \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
+          \vfill\null\columnbreak
+      \end{itemize}
+      Type-dependent payoff matrices:
+      \vspace{-8pt}
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1:a=2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, 2 \\\cline{2-3}
+          D & 0, 1 & 1, 2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2:a=-2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, -2 \\\cline{2-3}
+          D & 0, 1 & 1, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{itemize}
+          \item[(c)] The strategy for P1 is just one action, whereas the strategy for P2 is an action for each of the two types. Using this, we can write up the expected payoff matrix:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{LR} & \multicolumn{1}{c}{RL} & \multicolumn{1}{c}{RR} \\\cline{2-5}
+          U & \textcolor{red}{2},1 &  \textcolor{red}{1},-$\frac{1}{2}$ & \textcolor{red}{1},\textcolor{blue}{$\frac{3}{2}$} & 0, 0  \\\cline{2-5}
+          D & 0, 1  & $\frac{1}{2}$, -$\frac{1}{2}$ & $\frac{1}{2}$, \textcolor{blue}{$\frac{3}{2}$} & \textcolor{red}{1}, 0  \\\cline{2-5}
+        \end{tabular}
+      \end{table}
+      \vspace{-4pt}
+      The BNE is: (U,RL)
+      \vfill\null
+    \end{multicols}
 \end{frame}
 
 
@@ -243,13 +461,13 @@ Consider the following static game, where $a$ is a real number:
 \section{PS8, Ex. 4: Static Bayesian game (Bayesian Nash Equilibria)}
 
 \begin{frame}{PS8, Ex. 4: Static Bayesian game (Bayesian Nash Equilibria)}
-Exercise 3.4 in Gibbons (p. 169). Find all the pure-strategy Bayesian Nash equilibria in the following static Bayesian game:
-\begin{itemize}
-    \item[a] Nature determines whether the payoffs are as in Game 1 or as in Game 2, each game being equally likely.
-    \item[b] Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not.
-    \item[c] Player 1 chooses either T or B; player 2 simultaneously chooses either L or R.
-    \item[d] Payoffs are given by the game drawn by nature.
-\end{itemize}
+    Exercise 3.4 in Gibbons (p. 169). Find all the pure-strategy Bayesian Nash equilibria in the following static Bayesian game:
+    \begin{itemize}
+        \item[a.] Nature determines whether the payoffs are as in Game 1 or as in Game 2, each game being equally likely.
+        \item[b.] Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not.
+        \item[c.] Player 1 chooses either T or B; player 2 simultaneously chooses either L or R.
+        \item[d.] Payoffs are given by the game drawn by nature.
+    \end{itemize}
     \begin{table}
       \begin{tabular}{l|c|c|}
         \multicolumn{3}{c}{Game 1 $\left(t_1, p=\frac{1}{2}\right)$:}
@@ -270,52 +488,136 @@ Exercise 3.4 in Gibbons (p. 169). Find all the pure-strategy Bayesian Nash equil
 \end{frame}
 
 \begin{frame}{PS8, Ex. 4.a: Static Bayesian game (Bayesian Nash Equilibria)}
-\begin{itemize}
-    \item[] Find all the pure-strategy Bayesian Nash equilibria
-\end{itemize}
-Use the fact that each type of game happens half the time to write up the expected payoff matrix for the following possibilities:
-\begin{itemize}
-    \item P2 plays L and P1 plays T if game is type 1 and T if game is type 2
-    \item P2 plays L and P1 plays T if game is type 1 and B if game is type 2
-    \item P2 plays L and P1 plays B if game is type 1 and T if game is type 2
-    \item P2 plays L and P1 plays B if game is type 1 and B if game is type 2
-    \item P2 plays L and P1 plays T if game is type 1 and T if game is type 2
-    \item P2 plays R and P1 plays T if game is type 1 and B if game is type 2
-    \item P2 plays R and P1 plays B if game is type 1 and T if game is type 2
-    \item P2 plays R and P1 plays B if game is type 1 and B if game is type 2
-\end{itemize}
+    Find all the Bayesian Nash equilibria in the following static Bayesian game:
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{3}{c}{Game 1 $\left(t_1, p=\frac{1}{2}\right)$:}
+        \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 1, 1 & 0, 0 \\\cline{2-3}
+        B & 0, 0 & 0, 0 \\\cline{2-3}
+      \end{tabular}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{3}{c}{Game 2 $\left(t_2, p=\frac{1}{2}\right)$:}
+        \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 0, 0 & 0, 0 \\\cline{2-3}
+        B & 0, 0 & 2, 2 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \textit{\textbf{Use the fact that each type of game happens half the time to write up the expected payoff matrix for the following possibilities:}}
+    \begin{itemize}
+        \item P2 plays L and P1 plays T if game is type 1 and T if game is type 2
+        \item P2 plays L and P1 plays T if game is type 1 and B if game is type 2
+        \item P2 plays L and P1 plays B if game is type 1 and T if game is type 2
+        \item P2 plays L and P1 plays B if game is type 1 and B if game is type 2
+        \item P2 plays R and P1 plays T if game is type 1 and T if game is type 2
+        \item P2 plays R and P1 plays T if game is type 1 and B if game is type 2
+        \item P2 plays R and P1 plays B if game is type 1 and T if game is type 2
+        \item P2 plays R and P1 plays B if game is type 1 and B if game is type 2
+    \end{itemize}
     \vfill\null\null
 \end{frame}
-
 \begin{frame}{PS8, Ex. 4.a: Static Bayesian game (Bayesian Nash Equilibria)}
-\begin{itemize}
-    \item[] Find all the pure-strategy Bayesian Nash equilibria
-\end{itemize}
-Use the fact that each type of game happens half the time to write up the expected payoff matrix for the following possibilities:
-\begin{itemize}
-    \item P2 plays L and P1 plays T if game is type 1 and T if game is type 2
-    \item P2 plays L and P1 plays T if game is type 1 and B if game is type 2
-    \item P2 plays L and P1 plays B if game is type 1 and T if game is type 2
-    \item P2 plays L and P1 plays B if game is type 1 and B if game is type 2
-    \item P2 plays L and P1 plays T if game is type 1 and T if game is type 2
-    \item P2 plays R and P1 plays T if game is type 1 and B if game is type 2
-    \item P2 plays R and P1 plays B if game is type 1 and T if game is type 2
-    \item P2 plays R and P1 plays B if game is type 1 and B if game is type 2
-\end{itemize}
-        \begin{table}
-      \begin{tabular}{cl|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
-        \parbox[t]{1mm}{\multirow{5}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
-        & TT & \textcolor{red}{$\frac{1}{2}$},\textcolor{blue}{$\frac{1}{2}$} &  0,0  \\\cline{3-4}
-        & TB & \textcolor{red}{$\frac{1}{2}$}, $\frac{1}{2}$  & \textcolor{red}{1},\textcolor{blue}{1}\\\cline{3-4}
-        & BT & 0, \textcolor{blue}{0}  & 0, \textcolor{blue}{0}\\\cline{3-4}
-        & BB & 0, 0  & \textcolor{red}{1},\textcolor{blue}{1}\\\cline{3-4}
+    Find all the Bayesian Nash equilibria in the following static Bayesian game:
+    \vspace{-4pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{3}{c}{Game 1 $\left(t_1, p=\frac{1}{2}\right)$:}
+        \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 1, 1 & 0, 0 \\\cline{2-3}
+        B & 0, 0 & 0, 0 \\\cline{2-3}
       \end{tabular}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{3}{c}{Game 2 $\left(t_2, p=\frac{1}{2}\right)$:}
+        \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 0, 0 & 0, 0 \\\cline{2-3}
+        B & 0, 0 & 2, 2 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item P2 plays L and P1 plays T if game is type 1 and T if game is type 2
+      \item P2 plays L and P1 plays T if game is type 1 and B if game is type 2
+      \item P2 plays L and P1 plays B if game is type 1 and T if game is type 2
+      \item P2 plays L and P1 plays B if game is type 1 and B if game is type 2
+      \item P2 plays R and P1 plays T if game is type 1 and T if game is type 2
+      \item P2 plays R and P1 plays T if game is type 1 and B if game is type 2
+      \item P2 plays R and P1 plays B if game is type 1 and T if game is type 2
+      \item P2 plays R and P1 plays B if game is type 1 and B if game is type 2
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{multicols}{2}
+      The expected payoff matrix:
+      \vspace{-4pt}
+      \begin{table}
+        \begin{tabular}{cl|c|c|}
+          & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Player 2}\\
+          \parbox[t]{1mm}{\multirow{5}{*}{\rotatebox[origin=r]{90}{Player 1}}}
+          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & TT & $\frac{1}{2}$, $\frac{1}{2}$ &  0, 0  \\\cline{3-4}
+          & TB & $\frac{1}{2}$, $\frac{1}{2}$  & 1, 1 \\\cline{3-4}
+          & BT & 0, 0 & 0, 0 \\\cline{3-4}
+          & BB & 0, 0  & 1, 1 \\\cline{3-4}
+        \end{tabular}
       \end{table}
-    This gives the following Bayesian Nash Equilibria:
-    \begin{align*}
+      \vfill\null\columnbreak
+      \vfill\null\null
+      \textbf{\textit{Find all Bayesian Nash Equilibria.}}
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.a: Static Bayesian game (Bayesian Nash Equilibria)}
+    Find all the Bayesian Nash equilibria in the following static Bayesian game:
+    \vspace{-4pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{3}{c}{Game 1 $\left(t_1, p=\frac{1}{2}\right)$:}
+        \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 1, 1 & 0, 0 \\\cline{2-3}
+        B & 0, 0 & 0, 0 \\\cline{2-3}
+      \end{tabular}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{3}{c}{Game 2 $\left(t_2, p=\frac{1}{2}\right)$:}
+        \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 0, 0 & 0, 0 \\\cline{2-3}
+        B & 0, 0 & 2, 2 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item P2 plays L and P1 plays T if game is type 1 and T if game is type 2
+      \item P2 plays L and P1 plays T if game is type 1 and B if game is type 2
+      \item P2 plays L and P1 plays B if game is type 1 and T if game is type 2
+      \item P2 plays L and P1 plays B if game is type 1 and B if game is type 2
+      \item P2 plays R and P1 plays T if game is type 1 and T if game is type 2
+      \item P2 plays R and P1 plays T if game is type 1 and B if game is type 2
+      \item P2 plays R and P1 plays B if game is type 1 and T if game is type 2
+      \item P2 plays R and P1 plays B if game is type 1 and B if game is type 2
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{multicols}{2}
+      The expected payoff matrix:
+      \vspace{-4pt}
+      \begin{table}
+        \begin{tabular}{cl|c|c|}
+          & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\color{blue}Player 2}\\
+          \parbox[t]{1mm}{\multirow{5}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
+          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & TT & \textcolor{red}{$\frac{1}{2}$}, \textcolor{blue}{$\frac{1}{2}$} &  0, 0  \\\cline{3-4}
+          & TB & \textcolor{red}{$\frac{1}{2}$}, $\frac{1}{2}$  & \textcolor{red}{1}, \textcolor{blue}{1}\\\cline{3-4}
+          & BT & 0, \textcolor{blue}{0}  & 0, \textcolor{blue}{0}\\\cline{3-4}
+          & BB & 0, 0  & \textcolor{red}{1}, \textcolor{blue}{1}\\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      \vfill\null\columnbreak
+      \vfill\null
+      This gives the following BNE:
+      \begin{align*}
         BNE=\{(TT,L),(TB,R),(BB,R)\}
-    \end{align*}
-    \vfill\null\null
+      \end{align*}
+    \end{multicols}
 \end{frame}
