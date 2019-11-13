@@ -1,11 +1,4 @@
-\section{PS8, Ex. 1 (A): }
-
-\begin{frame}{PS8, Ex. 1 (A): Trigger strategy in infinitely repeated game:}
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
+\section{PS8, Ex. 1 (A): Trigger strategy in infinitely repeated game:}
 
 \begin{frame}{PS8, Ex. 1 (A): Trigger strategy in infinitely repeated game:}
     \vspace{-10pt}
@@ -21,7 +14,7 @@
       \end{tabular}
     \end{table}
     \begin{itemize}
-        \item[(a)] Suppose that G is repeated infinitely many times, so that we have G(1, $\infty$). Define trigger strategies such that the outcome of all stages is (A,X). Find the smallest value of $\delta$ such that these strategies constitute a SPNE.
+        \item[] Suppose that G is repeated infinitely many times, so that we have G(1, $\infty$). Define trigger strategies such that the outcome of all stages is (A,X). Find the smallest value of $\delta$ such that these strategies constitute a SPNE.
     \end{itemize}
     \vfill\null
 \end{frame}
@@ -29,7 +22,7 @@
 \begin{frame}{PS8, Ex. 1 (A): Trigger strategy in infinitely repeated game - exam answer)}
     \begin{itemize}
         %\item The following is how I personally would write my answer at the exam, it cannot be guaranteed that writing your answer in this way would yield full points.
-        \item[(a)] Suppose that G is repeated infinitely many times, so that we have G(1, $\infty$). Define trigger strategies such that the outcome of all stages is (A,X). Find the smallest value of $\delta$ such that these strategies constitute a SPNE.
+        \item[] Suppose that G is repeated infinitely many times, so that we have G(1, $\infty$). Define trigger strategies such that the outcome of all stages is (A,X). Find the smallest value of $\delta$ such that these strategies constitute a SPNE.
     \end{itemize}
     \vspace{-6pt}
   \begin{multicols}{2}
@@ -83,6 +76,34 @@
         \item P(obs B\textbar G): The chance of remembering a blue cab, given it was green: $\frac{20}{100}$
     \end{enumerate}
     P(obs B): The unconditional chance that the witness says the cab is blue, so the chance the witness would observe a blue cab and remember it as blue, plus the chance the witness would observe a green cab and remember it as blue:
+    \vfill\null
+\end{frame}
+
+\begin{frame}{PS8, Ex. 2 (A): Hit-and-run cab (Bayes' Rule)}
+    Information so far:
+    \begin{enumerate}
+        \item P(B): The unconditional chance that a cab is green: $\frac{85}{100}$
+        \item P(B): The unconditional chance that a cab is blue: $\frac{15}{100}$
+        \item P(obs B\textbar B): The chance of remembering a blue cab, given it was blue: $\frac{80}{100}$
+        \item P(obs B\textbar G): The chance of remembering a blue cab, given it was green: $\frac{20}{100}$
+    \end{enumerate}
+    P(obs B): The unconditional chance that the witness says the cab is blue, so the chance the witness would observe a blue cab and remember it as blue, plus the chance the witness would observe a green cab and remember it as blue:
+    \begin{align*}
+        P(obs\ B)=P(obs\ B|B)\cdot P(B)+P(obs\ B|G)\cdot P(G)=\frac{80}{100}\cdot\frac{15}{100}+\frac{20}{100}\cdot\frac{85}{100}=\frac{29}{100}
+    \end{align*}
+    We want to find the chance that the cab is blue, given that the witness says it's blue. Using Bayes' rule, this is the same as the odds that the cab will be blue and the witness says it's blue, divided by the unconditional chance the witness says it blue.
+    \vfill\null
+\end{frame}
+
+\begin{frame}{PS8, Ex. 2 (A): Hit-and-run cab (Bayes' Rule)}
+    Information so far:
+    \begin{enumerate}
+        \item P(B): The unconditional chance that a cab is green: $\frac{85}{100}$
+        \item P(B): The unconditional chance that a cab is blue: $\frac{15}{100}$
+        \item P(obs B\textbar B): The chance of remembering a blue cab, given it was blue: $\frac{80}{100}$
+        \item P(obs B\textbar G): The chance of remembering a blue cab, given it was green: $\frac{20}{100}$
+    \end{enumerate}
+    P(obs B): The unconditional chance that the witness says the cab is blue, so the chance the witness would observe a blue cab and remember it as blue, plus the chance the witness would observe a green cab and remember it as blue:
     \begin{align*}
         P(obs\ B)=P(obs\ B|B)\cdot P(B)+P(obs\ B|G)\cdot P(G)=\frac{80}{100}\cdot\frac{15}{100}+\frac{20}{100}\cdot\frac{85}{100}=\frac{29}{100}
     \end{align*}
@@ -95,110 +116,43 @@
 
 
 
-\section{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
-
-\begin{frame}{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
-    \begin{enumerate}
-      \item The timing is as follows where $p$ is a commonly known distribution:
-      \begin{enumerate}\normalsize
-        \item Nature draws all players' type according to $p$.
-        \item Each player $i$ learns her own type $t_{i}$.
-        \item Players form their beliefs about the type profile.
-        \item Players simultaneously choose actions and payoffs are realized.
-      \end{enumerate}
-    \end{enumerate}
-    \vfill\null
-\end{frame}
-\begin{frame}{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
-    \begin{enumerate}
-      \item The timing is as follows where $p$ is a commonly known distribution:
-      \begin{enumerate}\normalsize
-        \item Nature draws all players' type according to $p$.
-        \item Each player $i$ learns her own type $t_{i}$.
-        \item Players form their beliefs about the type profile.
-        \item Players simultaneously choose actions and payoffs are realized.
-      \end{enumerate}
-      \item The static Bayesian game consists of:
-      \begin{enumerate}\normalsize
-        \item Players: $Player\ 1,...,Player\ n$
-        \item Type spaces: $T_1=\{t_{11},...,t_{1K}\},...$
-        \item Beliefs: $\mathbb{P}_1[t_2=t_{21}]=\cdot,...$
-        \item Action spaces: $A_1=\{\cdot\},...$
-        \item Strategy spaces: $S_1=\left\{s_1(t_1),\cdot\right\}=\left\{(s_1|t_{11},...,s_1|t_{1K}),\cdot\right\},...$
-        \item Type-dependent payoff matrices.
-      \end{enumerate}
-    \end{enumerate}
-    \vfill\null
-\end{frame}
-\begin{frame}{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
-    \begin{enumerate}
-      \item The timing is as follows where $p$ is a commonly known distribution:
-      \begin{enumerate}\normalsize
-        \item Nature draws all players' type according to $p$.
-        \item Each player $i$ learns her own type $t_{i}$.
-        \item Players form their beliefs about the type profile.
-        \item Players simultaneously choose actions and payoffs are realized.
-      \end{enumerate}
-      \item The static Bayesian game consists of:
-      \begin{enumerate}\normalsize
-        \item Players: $Player\ 1,...,Player\ n$
-        \item Type spaces: $T_1=\{t_{11},...,t_{1K}\},...$
-        \item Beliefs: $\mathbb{P}_1[t_2=t_{21}]=\cdot,...$
-        \item Action spaces: $A_1=\{\cdot\},...$
-        \item Strategy spaces: $S_1=\left\{s_1(t_1),\cdot\right\}=\left\{(s_1|t_{11},...,s_1|t_{1K}),\cdot\right\},...$
-        \item Type-dependent payoff matrices.
-      \end{enumerate}
-      \item Find Bayesian Nash Equilibria (BNE) by going through the possible strategies for a player $i$ (the player with the smallest strategy space). For each strategy $s_i(t_i)$:
-      \begin{enumerate}\normalsize
-        \item Write up the best-response of the other player(s): $s_j^*(t_j)\equiv BR_j\left(s_i(t_i)|t_j\right)$.
-        \item If $s_i(t_i)=BR_i\left(s_j(t_j)|t_i\right)\equiv s_i^*(t_i)$ then $\left(s_i^*(t_i),s_j^*(t_j)\right)$ is a BNE.
-      \end{enumerate}
-    \end{enumerate}
-    \vfill\null
-\end{frame}
-\begin{frame}{Recipe for a static Bayesian game (Bayesian Nash Equilibria)}
-    \begin{enumerate}
-      \item The timing is as follows where $p$ is a commonly known distribution:
-      \begin{enumerate}\normalsize
-        \item Nature draws all players' type according to $p$.
-        \item Each player $i$ learns her own type $t_{i}$.
-        \item Players form their beliefs about the type profile.
-        \item Players simultaneously choose actions and payoffs are realized.
-      \end{enumerate}
-      \item The static Bayesian game consists of:
-      \begin{enumerate}\normalsize
-        \item Players: $Player\ 1,...,Player\ n$
-        \item Type spaces: $T_1=\{t_{11},...,t_{1K}\},...$
-        \item Beliefs: $\mathbb{P}_1[t_2=t_{21}]=\cdot,...$
-        \item Action spaces: $A_1=\{\cdot\},...$
-        \item Strategy spaces: $S_1=\left\{s_1(t_1),\cdot\right\}=\left\{(s_1|t_{11},...,s_1|t_{1K}),\cdot\right\},...$
-        \item Type-dependent payoff matrices.
-      \end{enumerate}
-      \item Find Bayesian Nash Equilibria (BNE) by going through the possible strategies for a player $i$ (the player with the smallest strategy space). For each strategy $s_i(t_i)$:
-      \begin{enumerate}\normalsize
-        \item Write up the best-response of the other player(s): $s_j^*(t_j)\equiv BR_j\left(s_i(t_i)|t_j\right)$.
-        \item If $s_i(t_i)=BR_i\left(s_j(t_j)|t_i\right)\equiv s_i^*(t_i)$ then $\left(s_i^*(t_i),s_j^*(t_j)\right)$ is a BNE.
-      \end{enumerate}
-      \item In BNE, a strategy must maximize expected utility given the strategy of the other player(s) and the probability of them being each type, i.e. no type of any player has an incentive to deviate as in equilibrium player $i$'s strategy is a best response to player $j$'s strategy given player $i$'s beliefs:
-      \begin{align*}
-        \max\limits_{s_i}\sum\limits_{j\neq i}\sum\limits_{t_{jk}\in T_j}\mathbb{P}_i[t_j=t_{jk}]\cdot u_i\left(s_i(t_i),s_j^*(t_j)|t_i\right)
-      \end{align*}
-    \end{enumerate}
-    \vfill\null
-\end{frame}
-
-
-
 \section{PS8, Ex. 3 (A): Static Bayesian game (Bayesian Nash Equilibria)}
 
 \begin{frame}{PS8, Ex. 3 (A): Static Bayesian game (Bayesian Nash Equilibria)}
+Consider the following static game, where $a$ is a real number:
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        U & 2, 1 & 0, $a$ \\\cline{2-3}
+        D & 0, 1 & 1, $a$ \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+        \item[(a)] Suppose that a = 2. Does any player have a dominant strategy? What about when a = -2?
+        \item[(b)] Now assume that player 2 knows the value of $a$, but player 1 only knows that $a = 2$ with probability $0.5$ and $a = −2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.
+        \item[(c)] Find the Bayes-Nash equilibrium of the game described in (b).
+    \end{itemize}
+    \vfill\null
+\end{frame}
+
+\begin{frame}{PS8, Ex. 3.b (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \vspace{-20pt}
+    \textit{(a) Suppose that a = 2. Does any player have a dominant strategy? What about when a = -2?}
+    \vspace{-8pt}
   \begin{multicols}{2}
+    \begin{itemize}
+    \item[(a)] The value of $a$ not only affects P2's payoff, but also P1's strategy. For a=2 P2 will have R as a dominant strategy, for a=-2 P2 will have L as a dominant strategy.
+    \end{itemize}
     \vfill\null\columnbreak
     \vfill\null
   \end{multicols}
+   \vfill\null
 \end{frame}
 
-\begin{frame}{PS8, Ex. 3.a (A): Static Bayesian game (Bayesian Nash Equilibria)}
+\begin{frame}{PS8, Ex. 3.b (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(b) Now assume that player 2 knows the value of $a$, but player 1 only knows that $a = 2$ with probability $0.5$ and $a = −2$ with probability $0.5$. Explain how this situation can be modeled as a Bayesian game, describing the players, their action spaces, type spaces, beliefs and payoff functions.}
+    \vspace{-8pt}
   \begin{multicols}{2}
     \begin{itemize}
     \item[(a)] The sign of $a$ not only affects P2's payoff, but also P1's strategy. For a=2 P2 will have R as a dominant strategy, for a=-2 P2 will have L as a dominant strategy.
@@ -228,20 +182,57 @@
         D & 0, 1 & 1, -2 \\\cline{2-3}
       \end{tabular}
     \end{table}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+
+
+\begin{frame}{PS8, Ex. 3.c (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(c) Find the Bayes-Nash equilibrium of the game described in (b).}
+    \vspace{-8pt}
+  \begin{multicols}{2}
     \begin{itemize}
-        \item[(c)] Find the Bayesian Nash equilibrium:
+    \item[(a)] The sign of $a$ not only affects P2's payoff, but also P1's strategy. For a=2 P2 will have R as a dominant strategy, for a=-2 P2 will have L as a dominant strategy.
+    \item[(b)] This can be modelled as a Bayesian game since P2 has two types (he either has L or R as a dominant strategy) and P1 has a belief about the distribution of these types (Each happen $\frac{1}{2}$ the time.). 
+        \item[Players:] P1, P2
+        \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
+        \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
+        \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
+        \vfill\null\columnbreak
     \end{itemize}
-    The strategy for P1 is just one action, whereas the strategy for P2 is an action for both possible type. Using this, we can write up the expected payoff matrix:
+    Type-dependent payoff matrices:
     \vspace{-8pt}
     \begin{table}
-      \begin{tabular}{cl|c|c|c|c|}
-        & \multicolumn{1}{c}{} & \multicolumn{4}{c}{\color{blue}Player 2}\\
-        \parbox[t]{1mm}{\multirow{3}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
-        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{LR} & \multicolumn{1}{c}{RL} & \multicolumn{1}{c}{RR} \\\cline{3-6}
-        & U & \textcolor{red}{2},1 &  1,-$\frac{1}{2}$ & \textcolor{red}{1},\textcolor{blue}{$\frac{3}{2}$} & 0, 0  \\\cline{3-6}
-        & D & 0, 1  & $\frac{1}{2}$, -$\frac{1}{2}$ & $\frac{1}{2}$, \textcolor{blue}{$\frac{3}{2}$} & \textcolor{red}{1}, 0  \\\cline{3-6}
+        \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1:a=2\ (p=\frac{1}{2})$} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        U & 2, 1 & 0, 2 \\\cline{2-3}
+        D & 0, 1 & 1, 2 \\\cline{2-3}
       \end{tabular}
-    \end{table}  
+    \end{table}
+    \vspace{-8pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2:a=-2\ (p=\frac{1}{2})$} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        U & 2, 1 & 0, -2 \\\cline{2-3}
+        D & 0, 1 & 1, -2 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vspace{-8pt}
+    \begin{itemize}
+        \item[(c)] The strategy for P1 is just one action, whereas the strategy for P2 is an action for both possible type. Using this, we can write up the expected payoff matrix:
+    \end{itemize}
+    \vspace{-12pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{LR} & \multicolumn{1}{c}{RL} & \multicolumn{1}{c}{RR} \\\cline{2-5}
+        U & \textcolor{red}{2},1 &  1,-$\frac{1}{2}$ & \textcolor{red}{1},\textcolor{blue}{$\frac{3}{2}$} & 0, 0  \\\cline{2-5}
+        D & 0, 1  & $\frac{1}{2}$, -$\frac{1}{2}$ & $\frac{1}{2}$, \textcolor{blue}{$\frac{3}{2}$} & \textcolor{red}{1}, 0  \\\cline{2-5}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
     The BNE is: (U,RL)
     \vfill\null
   \end{multicols}
@@ -252,17 +243,27 @@
 \section{PS8, Ex. 4: Static Bayesian game (Bayesian Nash Equilibria)}
 
 \begin{frame}{PS8, Ex. 4: Static Bayesian game (Bayesian Nash Equilibria)}
+Exercise 3.4 in Gibbons (p. 169). Find all the pure-strategy Bayesian Nash equilibria in the following static Bayesian game:
+\begin{itemize}
+    \item[a] Nature determines whether the payoffs are as in Game 1 or as in Game 2, each game being equally likely.
+    \item[b] Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not.
+    \item[c] Player 1 chooses either T or B; player 2 simultaneously chooses either L or R.
+    \item[d] Payoffs are given by the game drawn by nature.
+\end{itemize}
     \begin{table}
-      \begin{tabular}{ll|c|c|}
-        \multicolumn{1}{c}{Game 1 $\left(t_1, p=\frac{1}{2}\right)$:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
-        & T & 1, 1 & 0, 0 \\\cline{3-4}
-        & B & 0, 0 & 0, 0 \\\cline{3-4}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{3}{c}{Game 1 $\left(t_1, p=\frac{1}{2}\right)$:}
+        \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 1, 1 & 0, 0 \\\cline{2-3}
+        B & 0, 0 & 0, 0 \\\cline{2-3}
       \end{tabular}
-      \\
-      \begin{tabular}{ll|c|c|}
-        \multicolumn{1}{c}{Game 2 $\left(t_2, p=\frac{1}{2}\right)$:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
-        & T & 0, 0 & 0, 0 \\\cline{3-4}
-        & B & 0, 0 & 2, 2 \\\cline{3-4}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{3}{c}{Game 2 $\left(t_2, p=\frac{1}{2}\right)$:}
+        \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+        T & 0, 0 & 0, 0 \\\cline{2-3}
+        B & 0, 0 & 2, 2 \\\cline{2-3}
       \end{tabular}
     \end{table}
     \vfill\null
@@ -270,7 +271,7 @@
 
 \begin{frame}{PS8, Ex. 4.a: Static Bayesian game (Bayesian Nash Equilibria)}
 \begin{itemize}
-    \item[a] Question
+    \item[] Find all the pure-strategy Bayesian Nash equilibria
 \end{itemize}
 Use the fact that each type of game happens half the time to write up the expected payoff matrix for the following possibilities:
 \begin{itemize}
@@ -288,7 +289,7 @@ Use the fact that each type of game happens half the time to write up the expect
 
 \begin{frame}{PS8, Ex. 4.a: Static Bayesian game (Bayesian Nash Equilibria)}
 \begin{itemize}
-    \item[a] Question
+    \item[] Find all the pure-strategy Bayesian Nash equilibria
 \end{itemize}
 Use the fact that each type of game happens half the time to write up the expected payoff matrix for the following possibilities:
 \begin{itemize}
@@ -307,14 +308,14 @@ Use the fact that each type of game happens half the time to write up the expect
         \parbox[t]{1mm}{\multirow{5}{*}{\rotatebox[origin=r]{90}{\color{red}Player 1}}}
         & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
         & TT & \textcolor{red}{$\frac{1}{2}$},\textcolor{blue}{$\frac{1}{2}$} &  0,0  \\\cline{3-4}
-        & TB & $\frac{1}{2}$, $\frac{1}{2}$  & \textcolor{red}{1},\textcolor{blue}{1}\\\cline{3-4}
-        & BT & 0, 0  & 0, 0\\\cline{3-4}
+        & TB & \textcolor{red}{$\frac{1}{2}$}, $\frac{1}{2}$  & \textcolor{red}{1},\textcolor{blue}{1}\\\cline{3-4}
+        & BT & 0, \textcolor{blue}{0}  & 0, \textcolor{blue}{0}\\\cline{3-4}
         & BB & 0, 0  & \textcolor{red}{1},\textcolor{blue}{1}\\\cline{3-4}
       \end{tabular}
       \end{table}
-    This gives the following BNE
-    \begin{itemize}
-    \item[] BNE: (TT,L),(TB,R),(BB,R)
-    \end{itemize}
+    This gives the following Bayesian Nash Equilibria:
+    \begin{align*}
+        BNE=\{(TT,L),(TB,R),(BB,R)\}
+    \end{align*}
     \vfill\null\null
 \end{frame}
