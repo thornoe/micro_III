@@ -393,6 +393,56 @@
       \begin{itemize}
           \item[(c)] The strategy for P1 is just one action, whereas the strategy for P2 is an action for each of the two types. Using this, we can write up the expected payoff matrix:
       \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vspace{-20pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{LR} & \multicolumn{1}{c}{RL} & \multicolumn{1}{c}{RR} \\\cline{2-5}
+        U & $\frac{2}{2}$+$\frac{2}{2}$, $\frac{1}{2}$+$\frac{1}{2}$ & $\frac{2}{2}$+$\frac{0}{2}$, $\frac{1}{2}$-$\frac{2}{2}$ &
+        $\frac{0}{2}$+$\frac{2}{2}$, $\frac{2}{2}$+$\frac{1}{2}$ & $\frac{0}{2}$+$\frac{0}{2}$, $\frac{2}{2}$-$\frac{2}{2}$ \\\cline{2-5}
+        D & $\frac{0}{2}$+$\frac{0}{2}$, $\frac{1}{2}$+$\frac{1}{2}$ & $\frac{0}{2}$+$\frac{1}{2}$, $\frac{1}{2}$-$\frac{2}{2}$ &
+        $\frac{1}{2}$+$\frac{0}{2}$, $\frac{2}{2}$+$\frac{1}{2}$ & $\frac{1}{2}$+$\frac{1}{2}$, $\frac{2}{2}$-$\frac{2}{2}$ \\\cline{2-5}
+      \end{tabular}
+    \end{table}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c (A): Static Bayesian game (Bayesian Nash Equilibria)}
+    \textit{(c) Find the Bayes-Nash equilibrium of the game described in (b).}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+      \item[(a)] The value of $a$ not only affects P2's payoff, but also P2's strategy. For $a=2$, P2 will have $R$ as a dominant strategy; and for $a=-2$, P2 will have $L$ as a dominant strategy.
+      \item[(b)] This can be modelled as a Bayesian game since P2 has two types (he either has L or R as a dominant strategy) and P1 has a belief about the distribution of these types (Each happen $\frac{1}{2}$ the time.).
+          \item[Players:] P1, P2
+          \item[Action sp.:] $A_1=(U,D),A_2=(L,R)$
+          \item[Type space:] $T_1=(t)$ [one type], $T_2=(t_1:a=2,t_2:a=-2)$
+          \item[Beliefs:] $\mathbb{P}_1(a=2)=\mathbb{P}_1(a=-2)=\frac{1}{2}$
+          \vfill\null\columnbreak
+      \end{itemize}
+      Type-dependent payoff matrices:
+      \vspace{-8pt}
+      \begin{table}
+          \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_1:a=2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, 2 \\\cline{2-3}
+          D & 0, 1 & 1, 2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{Type $t_2:a=-2\ (p=\frac{1}{2})$} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{2-3}
+          U & 2, 1 & 0, -2 \\\cline{2-3}
+          D & 0, 1 & 1, -2 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \vspace{-8pt}
+      \begin{itemize}
+          \item[(c)] The strategy for P1 is just one action, whereas the strategy for P2 is an action for each of the two types. Using this, we can write up the expected payoff matrix:
+      \end{itemize}
       \vspace{-12pt}
       \begin{table}
         \begin{tabular}{l|c|c|c|c|}
@@ -446,7 +496,7 @@
       \begin{table}
         \begin{tabular}{l|c|c|c|c|}
           \multicolumn{1}{c}{} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{LR} & \multicolumn{1}{c}{RL} & \multicolumn{1}{c}{RR} \\\cline{2-5}
-          U & \textcolor{red}{2},1 &  \textcolor{red}{1},-$\frac{1}{2}$ & \textcolor{red}{1},\textcolor{blue}{$\frac{3}{2}$} & 0, 0  \\\cline{2-5}
+          U & \textcolor{red}{2}, 1 &  \textcolor{red}{1}, -$\frac{1}{2}$ & \textcolor{red}{1}, \textcolor{blue}{$\frac{3}{2}$} & 0, 0  \\\cline{2-5}
           D & 0, 1  & $\frac{1}{2}$, -$\frac{1}{2}$ & $\frac{1}{2}$, \textcolor{blue}{$\frac{3}{2}$} & \textcolor{red}{1}, 0  \\\cline{2-5}
         \end{tabular}
       \end{table}
@@ -505,7 +555,7 @@
         B & 0, 0 & 2, 2 \\\cline{2-3}
       \end{tabular}
     \end{table}
-    \textit{\textbf{Use the fact that each type of game happens half the time to write up the expected payoff matrix for the following possibilities:}}
+    \textit{\textbf{Use the fact that each type of game happens half the time to write up the expected payoff matrix for all possible combinations of strategies:}}
     \begin{itemize}
         \item P2 plays L and P1 plays T if game is type 1 and T if game is type 2
         \item P2 plays L and P1 plays T if game is type 1 and B if game is type 2
