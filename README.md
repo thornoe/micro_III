@@ -8,6 +8,7 @@ Slides for teaching exercise classes in [Microeconomics III](https://kurser.ku.d
 * [Session 5](https://github.com/thornoe/micro_III/blob/master/s5/main.pdf) ([manus](https://github.com/thornoe/micro_III/blob/master/s5/Manus_S5.docx?raw=true))
 * [Session 6](https://github.com/thornoe/micro_III/blob/master/s6/main.pdf)
 * [Session 7](https://github.com/thornoe/micro_III/blob/master/s7/main.pdf) ([manus](https://github.com/thornoe/micro_III/blob/master/s7/Manus_S7.docx?raw=true))
-* [Session 8](https://github.com/thornoe/micro_III/blob/master/s8/main.pdf) ([manus](https://github.com/thornoe/micro_III/blob/master/s8/Manus_S8.docx?raw=true)) - *preliminary*
+* [Session 8](https://github.com/thornoe/micro_III/blob/master/s8/main.pdf)
+* [Session 9](https://github.com/thornoe/micro_III/blob/master/s9/main.pdf) ([manus](https://github.com/thornoe/micro_III/blob/master/s9/Manus_S9.docx?raw=true)) - *preliminary*
 
-The "figures" folders contains Python code and Inkscape (svg) files for creating the figures.
+The "figures" folders contains Inkscape (svg) files for creating the figures as well as Python code for mixed strategy diagrams.
