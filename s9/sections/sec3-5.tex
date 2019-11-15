@@ -1,31 +1,60 @@
-\section{PS8, Ex. 3 (A): }
+\section{PS8, Ex. 3 (A): First- and second-price sealed bid auctions with two bidders (BNE)}
 
-\begin{frame}{PS8, Ex. 3 (A): }
+\begin{frame}{PS8, Ex. 3 (A): First- and second-price sealed bid auctions with two bidders (BNE)}
+  \begin{multicols}{2}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with
+    \begin{align*}
+      v_i\sim u(1,3)
+    \end{align*}
+    Thus, the values are \textit{private}.
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d$.\\
+                 Find \textit{c} and \textit{d}.
+      \item[(b)] Calculate the revenue to the seller.
+    \end{itemize}
+    \vfill\null\columnbreak
+    \begin{itemize}
+      \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+      \begin{itemize}\normalsize
+        \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+        \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+        \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+      \end{itemize}
+    \end{itemize}
+    \vfill\null
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{PS8, Ex. 3.a (A): First- and second-price sealed bid auctions with two bidders (BNE)}
   \begin{multicols}{2}
     \vfill\null\columnbreak
     \vfill\null
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS8, Ex. 3.a (A): }
+
+
+\section{PS8, Ex. 4: First-price sealed bid auctions with three bidders (BNE)}
+
+\begin{frame}{PS8, Ex. 4: First-price sealed bid auctions with three bidders (BNE)}
   \begin{multicols}{2}
+    Consider the auction setting of the previous exercise. But now suppose that there are three identical bidders, $i = 1, 2, 3$, with values $v_i$ where
+    \begin{align*}
+      v_i\sim u(1, 3)
+    \end{align*}
+    and the values are independent, i.e. private. The auction is first-price sealed bid.
     \vfill\null\columnbreak
+    \begin{itemize}
+      \item[(a)] Again, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d$.\\
+                 Find \textit{c} and \textit{d}.
+      \item[(b)] Do you expect seller to earn a higher or a lower revenue than in the previous auction? What is causing this effect?
+      \item[(b)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
     \vfill\null
   \end{multicols}
 \end{frame}
 
-
-
-\section{PS8, Ex. 4: }
-
-\begin{frame}{PS8, Ex. 4: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{PS8, Ex. 4.a: }
+\begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders (BNE)}
   \begin{multicols}{2}
     \vfill\null\columnbreak
     \vfill\null\null
@@ -34,34 +63,23 @@
 
 
 
-\section{PS8, Ex. 5: }
+\section{PS8, Ex. 5: Winner's Curse (BNE)}
 
-\begin{frame}{PS8, Ex. 5: }
+\begin{frame}{PS8, Ex. 5: Winner's Curse (BNE)}
   \begin{multicols}{2}
+    Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\medskip
+    The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
     \vfill\null\columnbreak
+    \begin{itemize}
+      \item[(a)] Are the bidders’ values private or common?
+      \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+      \item[(b)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+    \end{itemize}
     \vfill
   \end{multicols}
 \end{frame}
 
-\begin{frame}{PS8, Ex. 5.a: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-
-
-\section{PS8, Ex. 6: }
-
-\begin{frame}{PS8, Ex. 6: }
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{PS8, Ex. 6.a: }
+\begin{frame}{PS8, Ex. 5.a: Winner's Curse (BNE)}
   \begin{multicols}{2}
     \vfill\null\columnbreak
     \vfill\null
