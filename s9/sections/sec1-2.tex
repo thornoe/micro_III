@@ -1,39 +1,647 @@
-\section{PS8, Ex. 1 (A): Pure-Strategy Bayesian Nash Equilibrium}
+\section{PS8, Ex. 1 (A): Mixed-Strategy NE and Pure-Strategy BNE}
 
-\begin{frame}{PS8, Ex. 1 (A): Pure-Strategy Bayesian Nash Equilibrium}
-  Consider this static game, where $k\in\mathbb{N}:$
-
-  \begin{itemize}
-    \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
-    \item[(b)] Now assume that player 1 knows $k$, but player 2 only knows that $k = 1$ with probability $\frac{1}{2}$ and $k = 3$ with probability $\frac{1}{2}$. Find the Bayesian Nash Equilibrium of this game.
-  \end{itemize}
+\begin{frame}{PS8, Ex. 1 (A): Mixed-Strategy NE and Pure-Strategy BNE}
+    Consider this static game, where $k\in\mathbb{N}:$
+    \vspace{-8pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{D} \\\cline{2-3}
+        A & 0, 2 & 2, 3 \\\cline{2-3}
+        B & 3, 1 & $k$, 8 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+      \item[(b)] Now assume that player 1 knows $k$, but player 2 only knows that $k = 1$ with probability $\frac{1}{2}$ and $k = 3$ with probability $\frac{1}{2}$. Find the Bayesian Nash Equilibrium of this game.
+    \end{itemize}
+    \textit{[Hints on the next slide. Try to independently write down the approach/criteria for a mixed-strategy NE and a pure-strategy BNE respectively.]}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 1 (A): Mixed-Strategy NE and Pure-Strategy BNE}
+    Consider this static game, where $k\in\mathbb{N}:$
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{D (1-q)} \\\cline{2-3}
+        A (p)   & 0, 2 & 2, 3 \\\cline{2-3}
+        B (1-p) & 3, 1 & $k$, 8 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+    \end{itemize}
+    \textbf{Hint}: To find a mixed-strategy NE (MSNE):\\
+    Find the probabilities $q$ for which Player 1 is indifferent, i.e. $u_1(A,q)=u_1(B,q)$\\
+    and the probabilities $p$ for which Player 2 is indifferent, i.e. $u_2(C,p)=u_2(D,p)$.
+    \begin{itemize}
+      \item[(b)] Now assume that player 1 knows $k$, but player 2 only knows that $k = 1$ with probability $\frac{1}{2}$ and $k = 3$ with probability $\frac{1}{2}$. Find the Bayesian Nash Equilibrium of this game.
+    \end{itemize}
+    \textbf{Hint}: Find Bayesian Nash Equilibria (BNE) by going through the possible strategies for player 2 (the player with only one type, $t_2$). For each possible strategy $s_2(t_2)$:
+    \begin{enumerate}\normalsize
+      \item Given the different types $t_{1,k}\in T_1=\{t_{1,k=1},t_{1,k=3}\}$, write up the best response of player 1: $s_1^*(t_{1,k})\equiv BR_1\left(s_2(t_2)|t_{1,k}\right)$.
+      \item If it also holds that $s_2(t_2)=BR_2\left(s_1^*(t_{1,k})|t_2\right)\equiv s_2^*(t_2)$ then $\left(s_1^*(t_{1,k}),s_2^*(t_2)\right)$ is a BNE.
+    \end{enumerate}
+    \vfill\null
 \end{frame}
 
-\begin{frame}{PS8, Ex. 1 (A): Pure-Strategy Bayesian Nash Equilibrium}
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
 
+\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+    \begin{multicols}{2}
+      Consider this static game, where $k\in\mathbb{N}:$
+      \vspace{-16pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{D (1-q)} \\\cline{2-3}
+          A (p)   & 0, 2 & 2, 3 \\\cline{2-3}
+          B (1-p) & 3, 1 & $k$, 8 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \begin{itemize}
+        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+      \end{itemize}
+      \textbf{\textit{First, find all pure-strategy NE given k.}}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+    \begin{multicols}{2}
+      Consider this static game, where $k\in\mathbb{N}:$
+      \vspace{-16pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
+          A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
+          B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \begin{itemize}
+        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+      \end{itemize}
+      P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
+      P1: For P2 playing $D$ consider:
+      \begin{itemize}
+        \item[$k=$1:]
+        \item[$k=$2:]
+        \item[$k\geq$3:]
+      \end{itemize}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+    \begin{multicols}{2}
+      Consider this static game, where $k\in\mathbb{N}:$
+      \vspace{-16pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
+          A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
+          B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \begin{itemize}
+        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+      \end{itemize}
+      P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
+      P1: For P2 playing $D$ consider:
+      \begin{itemize}
+        \item[$k=$1:] One PSNE: $\{(A,D)\}$
+        \item[$k=$2:] Two PSNE: $\{(A,D);(B,D)\}$
+        \item[$k\geq$3:] One PSNE: $\{(B,D)\}$
+      \end{itemize}
+      \textbf{\textit{Then find all mixed-strategy NE given k.}}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+    \begin{multicols}{2}
+      Consider this static game, where $k\in\mathbb{N}:$
+      \vspace{-16pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
+          A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
+          B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \begin{itemize}
+        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+      \end{itemize}
+      P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
+      P1: For P2 playing $D$ consider:
+      \begin{itemize}
+        \item[$k=1:$] One PSNE: $\{(A,D)\}$
+        \item[$k=2:$] Two PSNE: $\{(A,D);(B,D)\}$
+        \item[$k\geq3:$] One PSNE: $\{(B,D)\}$
+      \end{itemize}
+      For P1 to mix, she has to be indifferent between $A$ and $B$, thus we only need to look at:
+      \begin{itemize}
+        \item[$k=2:$]
+      \end{itemize}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+    \begin{multicols}{2}
+      Consider this static game, where $k\in\mathbb{N}:$
+      \vspace{-16pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
+          A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
+          B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \begin{itemize}
+        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+      \end{itemize}
+      P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
+      P1: For P2 playing $D$ consider:
+      \begin{itemize}
+        \item[$k=1:$] One PSNE: $\{(A,D)\}$
+        \item[$k=2:$] Two PSNE: $\{(A,D);(B,D)\}$
+        \item[$k\geq3:$] One PSNE: $\{(B,D)\}$
+      \end{itemize}
+      For P1 to mix, she has to be indifferent between $A$ and $B$, thus we only need to look at:
+      \begin{itemize}
+        \item[$k=2:$] One MSNE: $\{(p\in(0,1),q=0)\}$
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{\textit{Optional: Write up and plot the best-response functions for k=2.}}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+    \begin{multicols}{2}
+      Consider this static game, where $k\in\mathbb{N}:$
+      \vspace{-16pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
+          A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
+          B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \begin{itemize}
+        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+      \end{itemize}
+      P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
+      P1: For P2 playing $D$ consider:
+      \begin{itemize}
+        \item[$k=1:$] One PSNE: $\{(A,D)\}$
+        \item[$k=2:$] Two PSNE: $\{(A,D);(B,D)\}$
+        \item[$k\geq3:$] One PSNE: $\{(B,D)\}$
+      \end{itemize}
+      For P1 to mix, she has to be indifferent between $A$ and $B$, thus we only need to look at:
+      \begin{itemize}
+        \item[$k=2:$] One MSNE: $\{(p\in(0,1),q=0)\}$
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{Optional:} For $k=2$, BR functions are:
+      \vspace{-8pt}
+      \begin{align*}
+        BR_1(q)&=\left\{ \begin{array}{lcl}
+            p\in[0,1] & \text{if} & q=0 \\
+            p=0       & \text{if} & q>0
+        \end{array}\right. \\
+        BR_2(p)&=\left\{ \begin{array}{lcl}
+            q=0       & \text{if} & p\in[0,1]
+        \end{array}\right.
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+    \begin{multicols}{2}
+      Consider this static game, where $k\in\mathbb{N}:$
+      \vspace{-16pt}
+      \begin{table}
+        \begin{tabular}{l|c|c|}
+          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
+          A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
+          B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
+        \end{tabular}
+      \end{table}
+      \begin{itemize}
+        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+      \end{itemize}
+      P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
+      P1: For P2 playing $D$ consider:
+      \begin{itemize}
+        \item[$k=1:$] One PSNE: $\{(A,D)\}$
+        \item[$k=2:$] Two PSNE: $\{(A,D);(B,D)\}$
+        \item[$k\geq3:$] One PSNE: $\{(B,D)\}$
+      \end{itemize}
+      For P1 to mix, she has to be indifferent between $A$ and $B$, thus we only need to look at:
+      \begin{itemize}
+        \item[$k=2:$] One MSNE: $\{(p\in(0,1),q=0)\}$
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{Optional:} For $k=2$, BR functions are:
+      \vspace{-8pt}
+      \begin{align*}
+        BR_1(q)&=\left\{ \begin{array}{lcl}
+            p\in[0,1] & \text{if} & q=0 \\
+            p=0       & \text{if} & q>0
+        \end{array}\right. \\
+        BR_2(p)&=\left\{ \begin{array}{lcl}
+            q=0       & \text{if} & p\in[0,1]
+        \end{array}\right.
+      \end{align*}
+      \issue{FIGURE MISSING}
+      \vfill\null
+    \end{multicols}
 \end{frame}
 
 
-
-\section{PS8, Ex. 2 (A): Mixed-Strategy Bayesian Nash Equilibria}
-
-\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy Bayesian Nash Equilibria}
-  \begin{multicols}{2}
-    Consider the same set-up as exercise 3.4 in Gibbons, but now with the following bi-matrices for Game 1 and Game 2 respectively:
-
-    Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
-    \vfill\null\columnbreak
+\begin{frame}{PS8, Ex. 1.b (A): Pure-Strategy BNE}
+    Consider this static game, where $k\in\mathbb{N}:$
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{D} \\\cline{2-3}
+        A & 0, 2 & 2, 3 \\\cline{2-3}
+        B & 3, 1 & $k$, 8 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(b)] Now assume that player 1 knows $k$, but player 2 only knows that $k = 1$ with probability $\frac{1}{2}$ and $k = 3$ with probability $\frac{1}{2}$. Find the Bayesian Nash Equilibrium of this game.
+    \end{itemize}
+    \textit{[Hint for BNE on next slide.]}
     \vfill\null
-  \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.b (A): Pure-Strategy BNE}
+    Consider this static game, where $k\in\mathbb{N}:$
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{D} \\\cline{2-3}
+        A & 0, 2 & 2, 3 \\\cline{2-3}
+        B & 3, 1 & $k$, 8 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(b)] Now assume that player 1 knows $k$, but player 2 only knows that $k = 1$ with probability $\frac{1}{2}$ and $k = 3$ with probability $\frac{1}{2}$. Find the Bayesian Nash Equilibrium of this game.
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{multicols}{2}
+      \textbf{Hint}: Find Bayesian Nash Equilibria (BNE) by going through the possible strategies for player 2 (the player with only one type, $t_2$). For each possible strategy $s_2(t_2)$:
+      \vspace{-4pt}
+      \begin{enumerate}\normalsize
+        \item[Step 1:] Given the different types $t_{1,k}\in T_1=\{t_{1,k=1},t_{1,k=3}\}$, write up the best response of player 1: $s_1^*(t_{1,k})\equiv BR_1\left(s_2(t_2)|t_{1,k}\right)$.
+        \item[Step 2:] If it also holds that $s_2(t_2)=BR_2\left(s_1^*(t_{1,k})|t_2\right)\equiv s_2^*(t_2)$ then $\left(s_1^*(t_{1,k}),s_2^*(t_2)\right)$ is a BNE.
+      \end{enumerate}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.b (A): Pure-Strategy BNE}
+    Consider this static game, where $k\in\mathbb{N}:$
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{D} \\\cline{2-3}
+        A & 0, 2 & 2, 3 \\\cline{2-3}
+        B & 3, 1 & $k$, 8 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(b)] Now assume that player 1 knows $k$, but player 2 only knows that $k = 1$ with probability $\frac{1}{2}$ and $k = 3$ with probability $\frac{1}{2}$. Find the Bayesian Nash Equilibrium of this game.
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{multicols}{2}
+      \textbf{Hint}: Find Bayesian Nash Equilibria (BNE) by going through the possible strategies for player 2 (the player with only one type, $t_2$). For each possible strategy $s_2(t_2)$:
+      \vspace{-4pt}
+      \begin{enumerate}
+        \item[Step 1:] Given the different types $t_{1,k}\in T_1=\{t_{1,k=1},t_{1,k=3}\}$, write up the best response of player 1: $s_1^*(t_{1,k})\equiv BR_1\left(s_2(t_2)|t_{1,k}\right)$.
+        \item[Step 2:] If it also holds that $s_2(t_2)=BR_2\left(s_1^*(t_{1,k})|t_2\right)\equiv s_2^*(t_2)$ then $\left(s_1^*(t_{1,k}),s_2^*(t_2)\right)$ is a BNE.
+      \end{enumerate}
+      \vfill\null\columnbreak
+      As $C$ is strictly dominated, player 2 only has the viable strategy $s_2(t_2)=D$:
+      \begin{enumerate}\normalsize
+        \item Best response of player 1, $s_1^*(t_{1,k}):$
+      \end{enumerate}
+      \vspace{-8pt}
+      \begin{align*}
+        BR_1\left(D|t_{1,k}\right)=(s_1^*|t_{1,k=1},s_1^*|t_{1,k=3})=(A,B)
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1.b (A): Pure-Strategy BNE}
+    Consider this static game, where $k\in\mathbb{N}:$
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{D} \\\cline{2-3}
+        A & 0, 2 & 2, 3 \\\cline{2-3}
+        B & 3, 1 & $k$, 8 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(b)] Now assume that player 1 knows $k$, but player 2 only knows that $k = 1$ with probability $\frac{1}{2}$ and $k = 3$ with probability $\frac{1}{2}$. Find the Bayesian Nash Equilibrium of this game.
+    \end{itemize}
+    \vspace{-4pt}
+    \begin{multicols}{2}
+      \textbf{Hint}: Find Bayesian Nash Equilibria (BNE) by going through the possible strategies for player 2 (the player with only one type, $t_2$). For each possible strategy $s_2(t_2)$:
+      \vspace{-4pt}
+      \begin{enumerate}
+        \item[Step 1:] Given the different types $t_{1,k}\in T_1=\{t_{1,k=1},t_{1,k=3}\}$, write up the best response of player 1: $s_1^*(t_{1,k})\equiv BR_1\left(s_2(t_2)|t_{1,k}\right)$.
+        \item[Step 2:] If it also holds that $s_2(t_2)=BR_2\left(s_1^*(t_{1,k})|t_2\right)\equiv s_2^*(t_2)$ then $\left(s_1^*(t_{1,k}),s_2^*(t_2)\right)$ is a BNE.
+      \end{enumerate}
+      \vfill\null\columnbreak
+      As $C$ is strictly dominated, player 2 only has the viable strategy $s_2(t_2)=D$:
+      \begin{enumerate}\normalsize
+        \item Best response of player 1, $s_1^*(t_{1,k}):$
+      \end{enumerate}
+      \vspace{-8pt}
+      \begin{align*}
+        BR_1\left(D|t_{1,k}\right)=(s_1^*|t_{1,k=1},s_1^*|t_{1,k=3})=(A,B)
+      \end{align*}
+      \vspace{-16pt}
+      \begin{enumerate}
+        \item[2.] As $D=BR_2\left((A,B)|t_2\right)\equiv s_2^*(t_2)$ we have a unique BNE:
+      \end{enumerate}
+      \vspace{-8pt}
+      \begin{align*}
+        \left((s_1^*|t_{1,k=1},s_1^*|t_{1,k=3}),s_2^*(t_2)\right)=\{((A,B),D)\}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
 \end{frame}
 
-\begin{frame}{PS8, Ex. 2.a (A): Mixed-Strategy Bayesian Nash Equilibria}
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
+
+\section{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+
+\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+    \begin{multicols}{2}
+      Consider the same set-up as exercise 3.4 in Gibbons, but now with the following bi-matrices for Game 1 and Game 2 respectively:
+      \begin{table}
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & U & 1, 1 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 2, 0 \\\cline{3-4}
+        \end{tabular}\\\bigskip
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G2:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & U & 0, 0 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 1, 1 \\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
+      \vfill\null\columnbreak
+      \textit{Exercise 3.4 in Gibbons (p. 169). Find all the pure-strategy Bayesian Nash equilibria in the following static Bayesian game:
+      \begin{itemize}
+          \item[a.] Nature determines whether the payoffs are as in Game 1 or as in Game 2, each game being equally likely.
+          \item[b.] \textbf{Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not.}
+          \item[c.] Player 1 chooses either U or D; player 2 simultaneously chooses either L or R.
+          \item[d.] Payoffs are given by the game drawn by nature.
+      \end{itemize}   }
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+    \begin{multicols}{2}
+      Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not:
+      \begin{table}
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & U & 1, 1 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 2, 0 \\\cline{3-4}
+        \end{tabular}\\\bigskip
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G2:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & U & 0, 0 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 1, 1 \\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
+      \begin{itemize}
+        \item[Step 1:] \textbf{Find the player 1 strategies $\bm{s_1'}$ for which player 2 will want to mix.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+    \begin{multicols}{2}
+      Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not:
+      \begin{table}
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & U & 1, 1 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 2, 0 \\\cline{3-4}
+        \end{tabular}\\\bigskip
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G2:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & U & 0, 0 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 1, 1 \\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
+      \begin{itemize}
+        \item[Step 1:] \textbf{Find the player 1 strategies $\bm{s_1'}$ for which player 2 will want to mix.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{1.} As P1 learns whether nature has drawn G1 or G2 her strategy space is:
+      \begin{align*}
+        S_1=\{(U,U),(U,D),(D,D),(D,U)\}
+      \end{align*}
+      G2: $U$ is weekly dominated by $D$, thus, P1 will play $D$ in G2 as long as P2 plays $R$ with positive probability.\\\medskip I.e. P1 either plays $(U,D)$ or $(D,D)$.
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+    \begin{multicols}{2}
+      Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not:
+      \begin{table}
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & U & 1, 1 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 2, 0 \\\cline{3-4}
+        \end{tabular}\\\bigskip
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G2:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L} & \multicolumn{1}{c}{R} \\\cline{3-4}
+          & U & 0, 0 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 1, 1 \\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
+      \begin{itemize}
+        \item[Step 1:] \textbf{Find the player 1 strategies $\bm{s_1'}$ for which player 2 will want to mix.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{1.} As P1 learns whether nature has drawn G1 or G2 her strategy space is:
+      \begin{align*}
+        S_1=\{(U,U),(U,D),(D,D),(D,U)\}
+      \end{align*}
+      G2: $U$ is weekly dominated by $D$, thus, P1 will play $D$ in G2 as long as P2 plays $R$ with positive probability.\\\medskip I.e. P1 either plays $(U,D)$ or $(D,D)$.\\\medskip
+      $BR_2((D,D))=R$ but for $(U,D)$ P2 is indifferent between $L$ and $R$.
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+    \begin{multicols}{2}
+      Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not:
+      \begin{table}
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+          & U & 1, 1 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 2, 0 \\\cline{3-4}
+        \end{tabular}\\\bigskip
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+          & U & 0, 0 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 1, 1 \\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
+      \begin{itemize}
+        \item[Step 1:] Find the player 1 strategies $s_1'$ for which player 2 will want to mix.
+        \item[Step 2:] \textbf{Find the values of \textit{q} (the probability that player 2 plays \textit{L}) such that player 1 will actually play $\bm{s_1'}$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{1.} As P1 learns whether nature has drawn G1 or G2 her strategy space is:
+      \begin{align*}
+        S_1=\{(U,U),(U,D),(D,D),(D,U)\}
+      \end{align*}
+      G2: $U$ is weekly dominated by $D$, thus, P1 will play $D$ in G2 as long as P2 plays $R$ with positive probability.\\\medskip I.e. P1 either plays $(U,D)$ or $(D,D)$.\\\medskip
+      $BR_2((D,D))=R$ but P2 is indifferent between $L$ and $R$ for $s_1'=(U,D)$.
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+    \begin{multicols}{2}
+      Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not:
+      \begin{table}
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+          & U & 1, 1 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 2, 0 \\\cline{3-4}
+        \end{tabular}\\\bigskip
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+          & U & 0, 0 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 1, 1 \\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
+      \begin{itemize}
+        \item[Step 1:] Find the player 1 strategies $s_1'$ for which player 2 will want to mix.
+        \item[Step 2:] \textbf{Find the values of \textit{q} (the probability that player 2 plays \textit{L}) such that player 1 will actually play $\bm{s_1'}$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{1.} As P1 learns whether nature has drawn G1 or G2 her strategy space is:
+      \begin{align*}
+        S_1=\{(U,U),(U,D),(D,D),(D,U)\}
+      \end{align*}
+      G2: $U$ is weekly dominated by $D$, thus, P1 will play $D$ in G2 as long as P2 plays $R$ with positive probability.\\\medskip I.e. P1 either plays $(U,D)$ or $(D,D)$.\\\medskip
+      $BR_2((D,D))=R$ but P2 is indifferent between $L$ and $R$ for $s_1'=(U,D)$.\\\medskip
+      \textbf{2.} P1 wants to play $U$ in G1 if:
+      \begin{align*}
+        \mathbb{E}[u_1|U]&\geq \mathbb{E}[u_1|D]\Leftrightarrow\\
+        q&\geq2(1-q)\Leftrightarrow 3q\geq2 \Leftrightarrow q\geq\frac{2}{3}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+    \begin{multicols}{2}
+      Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not:
+      \begin{table}
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+          & U & 1, 1 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 2, 0 \\\cline{3-4}
+        \end{tabular}\\\medskip
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+          & U & 0, 0 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 1, 1 \\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      \vspace{-4pt}
+      Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
+      \vspace{-4pt}
+      \begin{itemize}
+        \item[Step 1:] Find the player 1 strategies $s_1'$ for which player 2 will want to mix.
+        \item[Step 2:] Find the values of \textit{q} (the probability that player 2 plays \textit{L}) such that player 1 will actually play $s_1'$.
+        \item[Step 3:] \textbf{Write up the mixed-strategy BNE where P1 plays a pure strategy and P2 randomizes between \textit{L} and \textit{R}.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{1.} As P1 learns whether nature has drawn G1 or G2 her strategy space is:
+      \begin{align*}
+        S_1=\{(U,U),(U,D),(D,D),(D,U)\}
+      \end{align*}
+      G2: $U$ is weekly dominated by $D$, thus, P1 will play $D$ in G2 as long as P2 plays $R$ with positive probability.\\\medskip I.e. P1 either plays $(U,D)$ or $(D,D)$.\\\medskip
+      $BR_2((D,D))=R$ but P2 is indifferent between $L$ and $R$ for $s_1'=(U,D)$.\\\medskip
+      \textbf{2.} P1 wants to play $U$ in G1 if:
+      \begin{align*}
+        \mathbb{E}[u_1|U]&\geq \mathbb{E}[u_1|D]\Leftrightarrow\\
+        q&\geq2(1-q)\Leftrightarrow 3q\geq2 \Leftrightarrow q\geq\frac{2}{3}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 2 (A): Mixed-Strategy BNE}
+    \begin{multicols}{2}
+      Player 1 learns whether nature has drawn Game 1 or Game 2, but player 2 does not:
+      \begin{table}
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+          & U & 1, 1 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 2, 0 \\\cline{3-4}
+        \end{tabular}\\\medskip
+        \begin{tabular}{ll|c|c|}
+          \multicolumn{1}{c}{G1:} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{L ($q$)} & \multicolumn{1}{c}{R (1-$q$)} \\\cline{3-4}
+          & U & 0, 0 & 0, 0 \\\cline{3-4}
+          & D & 0, 0 & 1, 1 \\\cline{3-4}
+        \end{tabular}
+      \end{table}
+      \vspace{-4pt}
+      Find all mixed-strategy Bayesian Nash Equilibria of the following form: Player 1 plays a pure strategy, and Player 2 randomizes between \textit{L} and \textit{R}.
+      \vspace{-4pt}
+      \begin{itemize}
+        \item[Step 1:] Find the player 1 strategies $s_1'$ for which player 2 will want to mix.
+        \item[Step 2:] Find the values of \textit{q} (the probability that player 2 plays \textit{L}) such that player 1 will actually play $s_1'$.
+        \item[Step 3:] \textbf{Write up the mixed-strategy BNE where P1 plays a pure strategy and P2 randomizes between \textit{L} and \textit{R}.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \textbf{1.} As P1 learns whether nature has drawn G1 or G2 her strategy space is:
+      \begin{align*}
+        S_1=\{(U,U),(U,D),(D,D),(D,U)\}
+      \end{align*}
+      G2: $U$ is weekly dominated by $D$, thus, P1 will play $D$ in G2 as long as P2 plays $R$ with positive probability.\\\medskip I.e. P1 either plays $(U,D)$ or $(D,D)$.\\\medskip
+      $BR_2((D,D))=R$ but P2 is indifferent between $L$ and $R$ for $s_1'=(U,D)$.\\\medskip
+      \textbf{2.} P1 wants to play $U$ in G1 if:
+      \begin{align*}
+        \mathbb{E}[u_1|U]&\geq \mathbb{E}[u_1|D]\Leftrightarrow\\
+        q&\geq2(1-q)\Leftrightarrow 3q\geq2 \Leftrightarrow q\geq\frac{2}{3}
+      \end{align*}
+      \textbf{3.} For $q$ being the probability that P2 plays $L$, the mixed-strategy BNE is:
+      \begin{align*}
+        BNE'=\left\{\left((U,D),q\geq\frac{2}{3}\right)\right\}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
 \end{frame}

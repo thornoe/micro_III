@@ -1,87 +1,330 @@
-\section{PS8, Ex. 3 (A): First- and second-price sealed bid auctions with two bidders (BNE)}
+\section{PS8, Ex. 3: First- and second-price sealed bid auctions with two bidders}
 
-\begin{frame}{PS8, Ex. 3 (A): First- and second-price sealed bid auctions with two bidders (BNE)}
-  \begin{multicols}{2}
-    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with
-    \begin{align*}
-      v_i\sim u(1,3)
-    \end{align*}
-    Thus, the values are \textit{private}.
-    \begin{itemize}
-      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d$.\\
-                 Find \textit{c} and \textit{d}.
-      \item[(b)] Calculate the revenue to the seller.
-    \end{itemize}
-    \vfill\null\columnbreak
-    \begin{itemize}
-      \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
-      \begin{itemize}\normalsize
-        \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
-        \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
-        \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+\begin{frame}{PS8, Ex. 3: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with
+      \begin{align*}
+        v_i\sim u(1,3)
+      \end{align*}
+      Thus, the values are \textit{private}.
+      \begin{itemize}
+        \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d$.\\
+                   Find \textit{c} and \textit{d}.
+        \item[(b)] Calculate the revenue to the seller.
       \end{itemize}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+        \end{itemize}
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vspace{-8pt}
+    \textit{[PDF and CDF for the uniform distribution is written up on the next slide.]}
+\end{frame}
+\begin{frame}{PS8, Ex. 3: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with
+      \begin{align*}
+        v_i\sim u(1,3)
+      \end{align*}
+      Thus, the values are \textit{private}.
+      \begin{itemize}
+        \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$.\\
+                   Find \textit{c} and \textit{d}.
+        \item[(b)] Calculate the revenue to the seller.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+        \end{itemize}
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vspace{-8pt}
+    Standard results for a uniform distribution $x\sim u(a, b):$
+    \begin{enumerate}
+      \item[(1)] Probability density function (PDF): $f(x)=\frac{1}{b-a}$
+      \item[(2)] Cumulative distribution function (CDF): $F(x)=\frac{x-a}{b-a}$
+      \item[(3)] The CDF implies: $\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+    \end{enumerate}
+    \vfill\null
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
     \end{itemize}
-    \vfill\null
-  \end{multicols}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Assuming bidder $j$ follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder $i$'s expected payoff from bidding $b_i$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|v_i)(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>cv_j+d)(v_i-b_i)\\
+                                &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+                                &=\frac{\frac{b_i-d}{c}-1}{3-1}(v_i-b_i),\text{ using (3)}\\
+                                &=\frac{b_i-d-c}{2c}(v_i-b_i)
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Take the FOC and SOC wrt. $b_i$.
+        \item[\nth{3} step:] To find $c^*$ and $d^*$, compare the best response function $b_i(v_i)$ to $(*)$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[(1)] PDF: $f(x)=\frac{1}{b-a}$
+        \item[(2)] CDF: $F(x)=\frac{x-a}{b-a}$
+        \item[(3)] The CDF implies: $\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[\nth{2}:] FOC: $\frac{1}{2c}[(v_i-2b_i)+(d+c)]=0$\\
+                        SOC: $-\frac{1}{c}=0$\\
+                        i.e. expected utility is concave in $b_i$.
+        \item[\nth{3}:] From the FOC, the BR is:\vspace{-6pt}
+                        \begin{align*}
+                          b_i(v_i)=\underbrace{\frac{1}{2}}_{c^*}v_1+\underbrace{\frac{1}{2}(d+c)}_{d^*}
+                        \end{align*}
+        \item[]         \vspace{-6pt} Inserting the first term in the second term, $d^*=\frac{1}{2}(d^*+c^*)=\frac{1}{2}(d^*+\frac{1}{2})$, which solves for $c^*=d^*=\frac{1}{2}$.
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
 \end{frame}
 
-\begin{frame}{PS8, Ex. 3.a (A): First- and second-price sealed bid auctions with two bidders (BNE)}
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null
-  \end{multicols}
+
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] Calculate the expected payment of bidder $i$ with valuation $v_i$ is
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\frac{cv_i-c}{2c}(cv_i+d),\text{ using }(*),(**)\\
+                &=\frac{v_i-1}{2}(cv_i+d)\\
+                &=\frac{v_i-1}{2}\left(\frac{v_i}{2}+\frac{1}{2}\right),\text{ using (a)}\\
+                &=\left(\frac{v_i}{2}-\frac{1}{2}\right)\left(\frac{v_i}{2}+\frac{1}{2}\right)\\
+                &=\left(\frac{v_i}{2}\right)^2-\left(\frac{1}{2}\right)^2
+                 =\frac{v_i^2-1}{4}
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+        \item[\nth{3} step:] The expected revenue to the seller is the ex-ante expected payment of both bidders:
+      \end{itemize}
+      \vspace{-8pt}
+      \begin{align*}
+        Seller's\ revenue=\mathbb{E}[m_1(v_1)]+\mathbb{E}[m_2(v_2)]=\frac{5}{3}
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[(1)] PDF: $f(x)=\frac{1}{b-a}$
+        \item[(2)] CDF: $F(x)=\frac{x-a}{b-a}$
+        \item[(3)] The CDF implies: $\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(a)]    $c^*=d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder $i$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
+                            &=\textstyle\int_1^3\frac{v_i^2-1}{4}\cdot\frac{1}{3-1}dv_i\\
+                            &=\frac{1}{8}\textstyle\int_1^3v_i^2-1dv_i\\
+                            &=\frac{1}{8}\left[\frac{1}{3}v_i^3-v_i\right]_1^3\\
+                            &=\frac{1}{8}\left(\frac{3^3}{3}-3-\frac{1^3}{3}+1\right)=\frac{5}{6}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 3.c: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+        \end{itemize}
+      \end{itemize}
+      \vspace{-6pt}
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[(1)] PDF: $f(x)=\frac{1}{b-a}$
+        \item[(2)] CDF: $F(x)=\frac{x-a}{b-a}$
+        \item[(3)] The CDF implies: $\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+      \end{enumerate}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[(ii)] P1 wins: Payoff is independent of $b_1$ unless $b_1<b_2$, in which case P1 no longer wins, thus, gets zero payoff.
+        \item[] P1 looses: Payoff is independent of $b_1$ unless $b_1>b_2$, in which case P1 wins instead but bids more than her evaluation and gets negative payoff.
+        \item[] i.e. there is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 3.c: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+        \end{itemize}
+      \end{itemize}
+      \vspace{-6pt}
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[(1)] PDF: $f(x)=\frac{1}{b-a}$
+        \item[(2)] CDF: $F(x)=\frac{x-a}{b-a}$
+        \item[(3)] The CDF implies: $\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+      \end{enumerate}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
+        \item[(iii)] First, calculate $i$'s expected payment:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        m_i(v_i,v_j)&=\mathbb{P}(i\ wins|v_i,v_j)v_j\\
+                    &=\mathbb{P}(v_i>v_j)v_j
+      \end{align*}
+      \issue{Not complete. No solution guide.}
+      \vfill\null
+    \end{multicols}
 \end{frame}
 
 
 
-\section{PS8, Ex. 4: First-price sealed bid auctions with three bidders (BNE)}
+\section{PS8, Ex. 4: First-price sealed bid auctions with three bidders}
 
-\begin{frame}{PS8, Ex. 4: First-price sealed bid auctions with three bidders (BNE)}
-  \begin{multicols}{2}
+\begin{frame}{PS8, Ex. 4: First-price sealed bid auctions with three bidders}
     Consider the auction setting of the previous exercise. But now suppose that there are three identical bidders, $i = 1, 2, 3$, with values $v_i$ where
     \begin{align*}
       v_i\sim u(1, 3)
     \end{align*}
     and the values are independent, i.e. private. The auction is first-price sealed bid.
-    \vfill\null\columnbreak
     \begin{itemize}
-      \item[(a)] Again, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d$.\\
-                 Find \textit{c} and \textit{d}.
+      \item[(a)] Again, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
       \item[(b)] Do you expect seller to earn a higher or a lower revenue than in the previous auction? What is causing this effect?
       \item[(b)] (More difficult). Calculate the revenue to the seller.
     \end{itemize}
     \vfill\null
-  \end{multicols}
 \end{frame}
 
-\begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders (BNE)}
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
-    \vfill\null\null
-  \end{multicols}
-\end{frame}
-
-
-
-\section{PS8, Ex. 5: Winner's Curse (BNE)}
-
-\begin{frame}{PS8, Ex. 5: Winner's Curse (BNE)}
-  \begin{multicols}{2}
-    Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\medskip
-    The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
-    \vfill\null\columnbreak
+\begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders}
     \begin{itemize}
-      \item[(a)] Are the bidders’ values private or common?
-      \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
-      \item[(b)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+      \item[(a)] For three bidders, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+      \item[Step 1:] Use that $v_j$ and $v_k$ are independent (private) to write $i$'s' expected payoff in eq.:
     \end{itemize}
-    \vfill
-  \end{multicols}
+    \vspace{-10pt}
+    \begin{align*}
+      \mathbb{E}[u_i(b_i,v_i)]
+      &=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+      &=\mathbb{P}\left(b_i>b_j(v_j),b_i>b_k(v_k)\right)(v_i-b_i)\\
+      &=\mathbb{P}(b_i>cv_j+d,b_i>cv_k+d)(v_i-b_i),&&\text{using }(*)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j,\frac{b_i-d}{c}>v_k\right)(v_i-b_i)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+      &=\left(\frac{b_i-d-c}{2c}\right)^2(v_i-b_i),&&\text{from ex. (3.a)}
+    \end{align*}
+    \vspace{-8pt}
+    \begin{align*}
+      FOC:\ 0&=\frac{1}{2c}[2(b_i-d-c)(v_i-b_i)-(b_i-d-c)^2]\\
+            0&=2(v_i-b_i)-(b_i-d-c),&&\text{assuming }b_i-d-c\neq0\\
+            b_i(v_i)&=\underbrace{\frac{2}{3}}_{c^{*}=\frac{2}{3}}v_i+\underbrace{\frac{1}{3}(c+d)}_{d^{*}=\frac{1}{3}\left(\frac{2}{3}+d^{*}\right)\Rightarrow d^{*}=\frac{1}{3}}=\frac{2}{3}v_i+\frac{1}{3}
+    \end{align*}
+    \vfill\null
 \end{frame}
 
-\begin{frame}{PS8, Ex. 5.a: Winner's Curse (BNE)}
-  \begin{multicols}{2}
-    \vfill\null\columnbreak
+
+\begin{frame}{PS8, Ex. 4: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(a)] $BNE:b_i^{*}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
+      \item[(b)] Do you expect seller to earn a higher or a lower revenue than in the previous auction? What is causing this effect?
+    \end{itemize}
     \vfill\null
-  \end{multicols}
+\end{frame}
+
+
+
+\section{PS8, Ex. 5: Winner's Curse}
+
+\begin{frame}{PS8, Ex. 5: Winner's Curse}
+    \begin{multicols}{2}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\medskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(a)] Are the bidders’ values private or common?
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[(b)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+      \end{itemize}
+      \vfill
+    \end{multicols}
+\end{frame}
+
+\begin{frame}{PS8, Ex. 5.a: Winner's Curse}
+    \begin{multicols}{2}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
 \end{frame}
