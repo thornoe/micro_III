@@ -48,27 +48,23 @@
 
 
 \begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
-    \begin{multicols}{2}
-      Consider this static game, where $k\in\mathbb{N}:$
-      \vspace{-16pt}
-      \begin{table}
-        \begin{tabular}{l|c|c|}
-          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
-          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{D (1-q)} \\\cline{2-3}
-          A (p)   & 0, 2 & 2, 3 \\\cline{2-3}
-          B (1-p) & 3, 1 & $k$, 8 \\\cline{2-3}
-        \end{tabular}
-      \end{table}
-      \begin{itemize}
-        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
-      \end{itemize}
-      \textbf{\textit{First, find all pure-strategy NE given k.}}
-      \vfill\null\columnbreak
-      \vfill\null
-    \end{multicols}
+    Consider this static game, where $k\in\mathbb{N}:$
+    \vspace{-16pt}
+    \begin{table}
+      \begin{tabular}{l|c|c|}
+        \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{D (1-q)} \\\cline{2-3}
+        A (p)   & 0, 2 & 2, 3 \\\cline{2-3}
+        B (1-p) & 3, 1 & $k$, 8 \\\cline{2-3}
+      \end{tabular}
+    \end{table}
+    \begin{itemize}
+      \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+    \end{itemize}
+    \textbf{\textit{First, find all pure-strategy NE given k.}}
+    \vfill\null
 \end{frame}
 \begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
-    \begin{multicols}{2}
       Consider this static game, where $k\in\mathbb{N}:$
       \vspace{-16pt}
       \begin{table}
@@ -89,12 +85,9 @@
         \item[$k=$2:]
         \item[$k\geq$3:]
       \end{itemize}
-      \vfill\null\columnbreak
       \vfill\null
-    \end{multicols}
 \end{frame}
 \begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
-    \begin{multicols}{2}
       Consider this static game, where $k\in\mathbb{N}:$
       \vspace{-16pt}
       \begin{table}
@@ -116,12 +109,9 @@
         \item[$k\geq$3:] One PSNE: $\{(B,D)\}$
       \end{itemize}
       \textbf{\textit{Then find all mixed-strategy NE given k.}}
-      \vfill\null\columnbreak
       \vfill\null
-    \end{multicols}
 \end{frame}
 \begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
-    \begin{multicols}{2}
       Consider this static game, where $k\in\mathbb{N}:$
       \vspace{-16pt}
       \begin{table}
@@ -146,12 +136,9 @@
       \begin{itemize}
         \item[$k=2:$]
       \end{itemize}
-      \vfill\null\columnbreak
       \vfill\null
-    \end{multicols}
 \end{frame}
 \begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
-    \begin{multicols}{2}
       Consider this static game, where $k\in\mathbb{N}:$
       \vspace{-16pt}
       \begin{table}
@@ -176,94 +163,91 @@
       \begin{itemize}
         \item[$k=2:$] One MSNE: $\{(p\in(0,1),q=0)\}$
       \end{itemize}
-      \vfill\null\columnbreak
-      \textbf{\textit{Optional: Write up and plot the best-response functions for k=2.}}
       \vfill\null
-    \end{multicols}
 \end{frame}
-\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
-    \begin{multicols}{2}
-      Consider this static game, where $k\in\mathbb{N}:$
-      \vspace{-16pt}
-      \begin{table}
-        \begin{tabular}{l|c|c|}
-          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
-          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
-          A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
-          B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
-        \end{tabular}
-      \end{table}
-      \begin{itemize}
-        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
-      \end{itemize}
-      P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
-      P1: For P2 playing $D$ consider:
-      \begin{itemize}
-        \item[$k=1:$] One PSNE: $\{(A,D)\}$
-        \item[$k=2:$] Two PSNE: $\{(A,D);(B,D)\}$
-        \item[$k\geq3:$] One PSNE: $\{(B,D)\}$
-      \end{itemize}
-      For P1 to mix, she has to be indifferent between $A$ and $B$, thus we only need to look at:
-      \begin{itemize}
-        \item[$k=2:$] One MSNE: $\{(p\in(0,1),q=0)\}$
-      \end{itemize}
-      \vfill\null\columnbreak
-      \textbf{Optional:} For $k=2$, BR functions are:
-      \vspace{-8pt}
-      \begin{align*}
-        BR_1(q)&=\left\{ \begin{array}{lcl}
-            p\in[0,1] & \text{if} & q=0 \\
-            p=0       & \text{if} & q>0
-        \end{array}\right. \\
-        BR_2(p)&=\left\{ \begin{array}{lcl}
-            q=0       & \text{if} & p\in[0,1]
-        \end{array}\right.
-      \end{align*}
-      \vfill\null
-    \end{multicols}
-\end{frame}
-\begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
-    \begin{multicols}{2}
-      Consider this static game, where $k\in\mathbb{N}:$
-      \vspace{-16pt}
-      \begin{table}
-        \begin{tabular}{l|c|c|}
-          \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
-          \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
-          A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
-          B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
-        \end{tabular}
-      \end{table}
-      \begin{itemize}
-        \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
-      \end{itemize}
-      P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
-      P1: For P2 playing $D$ consider:
-      \begin{itemize}
-        \item[$k=1:$] One PSNE: $\{(A,D)\}$
-        \item[$k=2:$] Two PSNE: $\{(A,D);(B,D)\}$
-        \item[$k\geq3:$] One PSNE: $\{(B,D)\}$
-      \end{itemize}
-      For P1 to mix, she has to be indifferent between $A$ and $B$, thus we only need to look at:
-      \begin{itemize}
-        \item[$k=2:$] One MSNE: $\{(p\in(0,1),q=0)\}$
-      \end{itemize}
-      \vfill\null\columnbreak
-      \textbf{Optional:} For $k=2$, BR functions are:
-      \vspace{-8pt}
-      \begin{align*}
-        BR_1(q)&=\left\{ \begin{array}{lcl}
-            p\in[0,1] & \text{if} & q=0 \\
-            p=0       & \text{if} & q>0
-        \end{array}\right. \\
-        BR_2(p)&=\left\{ \begin{array}{lcl}
-            q=0       & \text{if} & p\in[0,1]
-        \end{array}\right.
-      \end{align*}
-      \issue{FIGURE MISSING}
-      \vfill\null
-    \end{multicols}
-\end{frame}
+% \begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+%     \begin{multicols}{2}
+%       Consider this static game, where $k\in\mathbb{N}:$
+%       \vspace{-16pt}
+%       \begin{table}
+%         \begin{tabular}{l|c|c|}
+%           \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+%           \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
+%           A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
+%           B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
+%         \end{tabular}
+%       \end{table}
+%       \begin{itemize}
+%         \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+%       \end{itemize}
+%       P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
+%       P1: For P2 playing $D$ consider:
+%       \begin{itemize}
+%         \item[$k=1:$] One PSNE: $\{(A,D)\}$
+%         \item[$k=2:$] Two PSNE: $\{(A,D);(B,D)\}$
+%         \item[$k\geq3:$] One PSNE: $\{(B,D)\}$
+%       \end{itemize}
+%       For P1 to mix, she has to be indifferent between $A$ and $B$, thus we only need to look at:
+%       \begin{itemize}
+%         \item[$k=2:$] One MSNE: $\{(p\in(0,1),q=0)\}$
+%       \end{itemize}
+%       \vfill\null\columnbreak
+%       \textbf{Optional:} For $k=2$, BR functions are:
+%       \vspace{-8pt}
+%       \begin{align*}
+%         BR_1(q)&=\left\{ \begin{array}{lcl}
+%             p\in[0,1] & \text{if} & q=0 \\
+%             p=0       & \text{if} & q>0
+%         \end{array}\right. \\
+%         BR_2(p)&=\left\{ \begin{array}{lcl}
+%             q=0       & \text{if} & p\in[0,1]
+%         \end{array}\right.
+%       \end{align*}
+%       \vfill\null
+%     \end{multicols}
+% \end{frame}
+% \begin{frame}{PS8, Ex. 1.a (A): Mixed-Strategy NE}
+%     \begin{multicols}{2}
+%       Consider this static game, where $k\in\mathbb{N}:$
+%       \vspace{-16pt}
+%       \begin{table}
+%         \begin{tabular}{l|c|c|}
+%           \multicolumn{1}{c}{} & \multicolumn{2}{c}{} \\
+%           \multicolumn{1}{c}{} & \multicolumn{1}{c}{C (q)} & \multicolumn{1}{c}{\color{blue}D (1-q)} \\\cline{2-3}
+%           A (p)   & 0, 2 & 2, \color{blue}3 \\\cline{2-3}
+%           B (1-p) & 3, 1 & $k$, \color{blue}8 \\\cline{2-3}
+%         \end{tabular}
+%       \end{table}
+%       \begin{itemize}
+%         \item[(a)] For all possible values of $k$, find all Nash Equilibria (pure and mixed).
+%       \end{itemize}
+%       P2: $C$ is strictly dominated by $D$, thus $D$ is played in any NE, pure or mixed.\\\medskip
+%       P1: For P2 playing $D$ consider:
+%       \begin{itemize}
+%         \item[$k=1:$] One PSNE: $\{(A,D)\}$
+%         \item[$k=2:$] Two PSNE: $\{(A,D);(B,D)\}$
+%         \item[$k\geq3:$] One PSNE: $\{(B,D)\}$
+%       \end{itemize}
+%       For P1 to mix, she has to be indifferent between $A$ and $B$, thus we only need to look at:
+%       \begin{itemize}
+%         \item[$k=2:$] One MSNE: $\{(p\in(0,1),q=0)\}$
+%       \end{itemize}
+%       \vfill\null\columnbreak
+%       \textbf{Optional:} For $k=2$, BR functions are:
+%       \vspace{-8pt}
+%       \begin{align*}
+%         BR_1(q)&=\left\{ \begin{array}{lcl}
+%             p\in[0,1] & \text{if} & q=0 \\
+%             p=0       & \text{if} & q>0
+%         \end{array}\right. \\
+%         BR_2(p)&=\left\{ \begin{array}{lcl}
+%             q=0       & \text{if} & p\in[0,1]
+%         \end{array}\right.
+%       \end{align*}
+%       \issue{FIGURE MISSING}
+%       \vfill\null
+%     \end{multicols}
+% \end{frame}
 
 
 \begin{frame}{PS8, Ex. 1.b (A): Pure-Strategy BNE}

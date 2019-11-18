@@ -73,7 +73,7 @@
       \end{itemize}
       \vspace{-12pt}
       \begin{align*}
-        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|v_i)(v_i-b_i)\\
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
                                 &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
                                 &=\mathbb{P}(b_i>cv_j+d)(v_i-b_i)\\
                                 &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
@@ -288,22 +288,93 @@
     \end{align*}
     \vspace{-8pt}
     \begin{align*}
-      FOC:\ 0&=\frac{1}{2c}[2(b_i-d-c)(v_i-b_i)-(b_i-d-c)^2]\\
-            0&=2(v_i-b_i)-(b_i-d-c),&&\text{assuming }b_i-d-c\neq0\\
-            b_i(v_i)&=\underbrace{\frac{2}{3}}_{c^{*}=\frac{2}{3}}v_i+\underbrace{\frac{1}{3}(c+d)}_{d^{*}=\frac{1}{3}\left(\frac{2}{3}+d^{*}\right)\Rightarrow d^{*}=\frac{1}{3}}=\frac{2}{3}v_i+\frac{1}{3}
+      FOC:\quad   0&=\frac{1}{2c}[2(b_i-d-c)(v_i-b_i)-(b_i-d-c)^2]\\
+                  0&=2(v_i-b_i)-(b_i-d-c),&&\text{assuming }b_i-d-c\neq0\\
+      b_i(v_i)^{**}&=\underbrace{\frac{2}{3}}_{c^{*}=\frac{2}{3}}v_i+\underbrace{\frac{1}{3}(c+d)}_{d^{*}=\frac{1}{3}\left(\frac{2}{3}+d^{*}\right)\Rightarrow d^{*}=\frac{1}{3}}=\frac{2}{3}v_i+\frac{1}{3}
     \end{align*}
     \vfill\null
 \end{frame}
 
 
-\begin{frame}{PS8, Ex. 4: First-price sealed bid auctions with three bidders}
+\begin{frame}{PS8, Ex. 4.b: First-price sealed bid auctions with three bidders}
     \begin{itemize}
-      \item[(a)] $BNE:b_i^{*}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
       \item[(b)] Do you expect seller to earn a higher or a lower revenue than in the previous auction? What is causing this effect?
     \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+    Intuitively, more bidders makes it harder to win, which should lead to less bid shading.\\\medskip
+    Surprisingly, with a constant term in the functional form, we see that the bid $b_i(v_i)$ is \textit{lower} for three players for all values of $v_i\in[0,1]$ as:
+    \begin{align*}
+      \frac{2}{3}v_i+\frac{1}{3}&<\frac{1}{2}v_i+\frac{1}{2}\Rightarrow\\
+      \frac{1}{6}v_i&<\frac{1}{6}\Rightarrow\\
+                 v_i&<1
+    \end{align*}
+    \vfill\null\columnbreak
+    BNE found:
+    \begin{itemize}
+      \item[(3.a)] $b_i^{*}(v_i)=\frac{1}{2}v_i+\frac{1}{2}$ for $i\in1,2,3$
+      \item[(4.a)] $b_i^{**}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
+    \end{itemize}
     \vfill\null
+    \end{multicols}
+    \issue{Here the solution guide is wrong (it does not actually look at the counterintuitive result). Gibbons probably has a good point about the constant term.}
 \end{frame}
 
+
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(b)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder $i$ with valuation $v_i$:
+      \end{itemize}
+      \vspace{-14pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2b_i(v_i),\ (*),(+)\\
+                &=\left(\frac{v_i-1}{2}\right)^2(cv_i+d)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\ (4.a)\\
+                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+      \end{align*}
+      \vspace{-14pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+      \end{itemize}
+      \vspace{-6pt}
+      The expected payment from each bidder is lower due to the lower probability of winning.
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[\nth{3} step:] Calculate the seller's revenue and compare to exercise (3.b).
+      \end{itemize}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($+$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2=\left(\frac{cv_i-c}{2c}\right)^2$
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder $i$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
+                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
+                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
+                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
+      \end{align*}
+      \vspace{-12pt}
+      \begin{itemize}
+        \item[\nth{3}:] $Revenue=3\cdot\mathbb{E}[m_i(v_i)]=2>\frac{5}{3}$
+      \end{itemize}
+      \vspace{-8pt}
+      However, the seller can expect a higher revenue as more players increases the chance of one having a high valuation.
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
 
 
 \section{PS8, Ex. 5: Winner's Curse}
