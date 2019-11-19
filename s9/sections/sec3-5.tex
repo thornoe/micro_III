@@ -24,7 +24,7 @@
       \vfill\null
     \end{multicols}
     \vspace{-8pt}
-    \textit{[PDF and CDF for the uniform distribution is written up on the next slide.]}
+    \textit{[Try to write up the PDF, CDF, and Mean for the uniform distribution $x\sim u(a, b)$, before going to the next slide.]}
 \end{frame}
 \begin{frame}{PS8, Ex. 3: First- and second-price sealed bid auctions with two bidders}
     \begin{multicols}{2}
@@ -160,6 +160,40 @@
                             &=\frac{1}{8}\textstyle\int_1^3v_i^2-1dv_i\\
                             &=\frac{1}{8}\left[\frac{1}{3}v_i^3-v_i\right]_1^3\\
                             &=\frac{1}{8}\left(\frac{3^3}{3}-3-\frac{1^3}{3}+1\right)=\frac{5}{6}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 3.c.i: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+        \end{itemize}
+      \end{itemize}
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
       \end{align*}
       \vfill\null
     \end{multicols}
@@ -405,7 +439,7 @@
     \begin{itemize}
       \item[(a)] Are the bidders’ values private or common?
     \end{itemize}
-    Though the reports investigating the values are private, the bidders' actual values are \textit{\textbf{common}} since they are identical.
+    Though the reports investigating the values are private, the bidders' actual values are \textit{\textbf{common}} since they are identical, i.e. $v_1=v_2=v$.
     \vfill\null
 \end{frame}
 
@@ -466,7 +500,7 @@
       \end{align*}
       \vspace{-10pt}
       \begin{itemize}
-        \item[Step 3:] Use $(*)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $\pi_H$ or low $\pi_L$.
+        \item[Step 3:] Use $(*)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$.
       \end{itemize}
       \vfill\null
 \end{frame}
@@ -484,14 +518,15 @@
         \end{align*}
         \vspace{-10pt}
         \begin{itemize}
-        \item[Step 3:] Use $(*)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $\pi_H$ or low $\pi_L$:
+        \item[Step 3:] Use $(*)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$:
       \end{itemize}
       \vspace{-6pt}
       \begin{align*}
-        \mathbb{E}[\pi_i|r_1=H]=\mathbb{P}[H|r_1=H]\pi_H+\mathbb{P}[L|r_1=L]\pi_L=p\pi_H+(1-p)\pi_L
+        \mathbb{E}[v|r_1=H]=\mathbb{P}[H|r_1=H]v_H+\mathbb{P}[L|r_1=L]v_L=pv_H+(1-p)v_L
       \end{align*}
       \vfill\null
 \end{frame}
+
 
 
 \begin{frame}{PS8, Ex. 5.c: Winner's Curse}
@@ -568,13 +603,13 @@
       \end{itemize}
       \vspace{-4pt}
       \begin{align*}
-        \mathbb{E}[\pi_i|r_1&=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]\pi_H+\mathbb{P}[L|r_1=L\wedge win]\pi_L\\
-        &=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]\pi_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)\pi_L\\
-        &=\frac{1}{2}\pi_H+\frac{1}{2}\pi_L<p\pi_H+(1-p)\pi_L\text{   since   }p>\frac{1}{2}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L\\
+        &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H]}&&\text{since }p>\frac{1}{2}
       \end{align*}
-      \vspace{-10pt}
+      \vspace{-14pt}
       \begin{itemize}
-        \item[Step 3:] Explain the difference between the result in (b) and (c).
+        \item[Step 3:] Looking at the inequality above, explain the difference between (b) and (c).
       \end{itemize}
       \vfill\null
 \end{frame}
@@ -595,9 +630,9 @@
       \end{itemize}
       \vspace{-8pt}
       \begin{align*}
-        \mathbb{E}[\pi_i|r_1&=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]\pi_H+\mathbb{P}[L|r_1=L\wedge win]\pi_L\\
-        &=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]\pi_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)\pi_L\\
-        &=\frac{1}{2}\pi_H+\frac{1}{2}\pi_L<p\pi_H+(1-p)\pi_L\text{   since   }p>\frac{1}{2}
+        \mathbb{E}[v|r_1&=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
+        &=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L\\
+        &=\frac{1}{2}v_H+\frac{1}{2}v_L<pv_H+(1-p)v_L\text{   since   }p>\frac{1}{2}
       \end{align*}
       \vspace{-14pt}
       \begin{itemize}
