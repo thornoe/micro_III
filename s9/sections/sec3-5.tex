@@ -290,7 +290,7 @@
       &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j,\frac{b_i-d}{c}>v_k\right)(v_i-b_i)\\
       &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
       &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
-      &=\left(\frac{b_i-d-c}{2c}\right)^2(v_i-b_i),&&\text{using ex. 3.a}
+      &=\left(\frac{b_i-d-c}{2c}\right)^2(v_i-b_i),&&\text{using ex. (3.a)}
     \end{align*}
     \vspace{-8pt}
     \begin{align*}
@@ -308,15 +308,15 @@
     \end{itemize}
     \vspace{-8pt}
     \begin{multicols}{2}
-    Intuitively, more bidders decreases the chance of winning, which should lead to less bid shading $\left(\frac{2}{3}>\frac{1}{2}\right)$ and therefore a \textit{higher} revenue for the seller.\\\medskip
-    Analytically, we can confirm this:
+    Intuitively, \intuition{more bidders decreases the chance of winning, which should lead to less bid shading $\left(\frac{2}{3}>\frac{1}{2}\right)$ and therefore a \textit{higher} revenue for the seller.}\\\medskip
+    Analytically, \intuition{we can confirm this:
     \begin{align*}
       b_i^{**}&>b_i^{*}\Leftrightarrow\\
       \frac{2}{3}v_i+\frac{1}{3}&>\frac{1}{2}v_i+\frac{1}{2}\Leftrightarrow\\
       \frac{1}{6}v_i&>\frac{1}{6}\Leftrightarrow\\
                  v_i&>1
     \end{align*}
-    I.e. except for the rare case where all players have the valuation $v=1$, the seller's revenue  is strictly higher with three players than with two players.
+    I.e. except for the rare case where all players have the valuation $v=1$, the seller's revenue  is strictly higher with three players than with two players.}
     \vfill\null\columnbreak
     BNE found:
     \begin{itemize}
@@ -350,7 +350,7 @@
         \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
       \end{itemize}
       \vspace{-4pt}
-      The expected payment from each bidder is lower due to the lower probability of winning.
+      \intuition{Though the bids are higher, the expected payment from each bidder is lower due to a lower probability of winning.}
       \vspace{-4pt}
       \begin{itemize}
         \item[\nth{3} step:] Calculate the seller's revenue and compare to exercise (3.b).
@@ -377,7 +377,7 @@
         \item[\nth{3}:] $Revenue=3\cdot\mathbb{E}[m_i(v_i)]=2>\frac{5}{3}$
       \end{itemize}
       \vspace{-6pt}
-      However, the seller can expect a higher revenue as more players increases the chance of one having a high valuation.
+      \intuition{The seller can expect higher revenue as more players increases competition and the chance of one having high valuation.}
       \vfill\null
     \end{multicols}
     \vfill\null
@@ -405,7 +405,7 @@
     \begin{itemize}
       \item[(a)] Are the bidders’ values private or common?
     \end{itemize}
-    Though the reports are private, the bidders' values are \textit{\textbf{common}} since they are identical.
+    Though the reports investigating the values are private, the bidders' actual values are \textit{\textbf{common}} since they are identical.
     \vfill\null
 \end{frame}
 
@@ -601,7 +601,7 @@
       \end{align*}
       \vspace{-14pt}
       \begin{itemize}
-        \item[Step 3:] This is an example of The Winner's Curse: The equally trustworthy reports of the two companies cancel each other out. Since the valuations of the auctioned object are correlated, you are likely to win the object when you overestimate the value.
+        \item[Step 3:] \intuition{This is an example of The Winner's Curse: The equally trustworthy reports of the two companies cancel each other out. Since the valuations of the auctioned object are correlated, you are likely to win the object when you overestimate the value.}
       \end{itemize}
       \vfill\null
 \end{frame}
