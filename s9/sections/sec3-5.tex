@@ -69,9 +69,57 @@
     \vspace{-8pt}
     \begin{multicols}{2}
       \begin{itemize}
-        \item[\nth{1} step:] Assuming bidder $j$ follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder $i$'s expected payoff from bidding $b_i$:
+        \item[\nth{1} step:] \textbf{Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$.}
       \end{itemize}
-      \vspace{-12pt}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] \textbf{Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$:}
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$:
+      \end{itemize}
+      \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
                                 &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
@@ -80,10 +128,116 @@
                                 &=\frac{\frac{b_i-d}{c}-1}{3-1}(v_i-b_i),\text{ using CDF}\\
                                 &=\frac{b_i-d-c}{2c}(v_i-b_i)
       \end{align*}
-      \vspace{-18pt}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>cv_j+d)(v_i-b_i)\\
+                                &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+                                &=\frac{\frac{b_i-d}{c}-1}{3-1}(v_i-b_i),\text{ using CDF}\\
+                                &=\frac{b_i-d-c}{2c}(v_i-b_i)
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[\nth{2} step:] \textbf{Take the FOC and SOC wrt. $b_i$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>cv_j+d)(v_i-b_i)\\
+                                &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+                                &=\frac{\frac{b_i-d}{c}-1}{3-1}(v_i-b_i),\text{ using CDF}\\
+                                &=\frac{b_i-d-c}{2c}(v_i-b_i)
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[\nth{2} step:] \textbf{Take the FOC and SOC wrt. $b_i$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[\nth{2}:] FOC: $\frac{1}{2c}[(v_i-2b_i)+(d+c)]=0$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>cv_j+d)(v_i-b_i)\\
+                                &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+                                &=\frac{\frac{b_i-d}{c}-1}{3-1}(v_i-b_i),\text{ using CDF}\\
+                                &=\frac{b_i-d-c}{2c}(v_i-b_i)
+      \end{align*}
+      \vspace{-10pt}
       \begin{itemize}
         \item[\nth{2} step:] Take the FOC and SOC wrt. $b_i$.
-        \item[\nth{3} step:] To find $c^*$ and $d^*$, compare the best response function $b_i(v_i)$ to $(*)$.
       \end{itemize}
       \vfill\null\columnbreak
       Standard results for $x\sim u(a, b):$
@@ -100,7 +254,144 @@
         \item[\nth{2}:] FOC: $\frac{1}{2c}[(v_i-2b_i)+(d+c)]=0$\\
                         SOC: $-\frac{1}{c}=0$\\
                         i.e. expected utility is concave in $b_i$.
-        \item[\nth{3}:] From the FOC, the BR is:\vspace{-6pt}
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>cv_j+d)(v_i-b_i)\\
+                                &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+                                &=\frac{\frac{b_i-d}{c}-1}{3-1}(v_i-b_i),\text{ using CDF}\\
+                                &=\frac{b_i-d-c}{2c}(v_i-b_i)
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Take the FOC and SOC wrt. $b_i$.
+        \item[\nth{3} step:] \textbf{To find $c^*$ and $d^*$, compare the best-response function $b_i(v_i)$ to $(*)$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[\nth{2}:] FOC: $\frac{1}{2c}[(v_i-2b_i)+(d+c)]=0$\\
+                        SOC: $-\frac{1}{c}=0$\\
+                        i.e. expected utility is concave in $b_i$.
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>cv_j+d)(v_i-b_i)\\
+                                &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+                                &=\frac{\frac{b_i-d}{c}-1}{3-1}(v_i-b_i),\text{ using CDF}\\
+                                &=\frac{b_i-d-c}{2c}(v_i-b_i)
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Take the FOC and SOC wrt. $b_i$.
+        \item[\nth{3} step:] \textbf{To find $c^*$ and $d^*$, compare the best-response function $b_i(v_i)$ to $(*)$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[\nth{2}:] FOC: $\frac{1}{2c}[(v_i-2b_i)+(d+c)]=0$\\
+                        SOC: $-\frac{1}{c}=0$\\
+                        i.e. expected utility is concave in $b_i$.
+        \item[\nth{3}:] From the FOC, the BR function is:\vspace{-6pt}
+                        \begin{align*}
+                          2b_i&=v_i+d+c\Rightarrow\\
+                          b_i(v_i)&=\underbrace{\frac{1}{2}}_{c^*}v_1+\underbrace{\frac{1}{2}(d+c)}_{d^*}
+                        \end{align*}
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.a: First- and second-price sealed bid auctions with two bidders}
+    Consider a first-price sealed bid auction with two bidders, who have valuations $v_1$ and $v_2$, respectively. These values are distributed independently uniformly with $v_i\sim u(1,3)$, thus, the values are \textit{private}.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Assuming bidder \textit{j} follows the proposed strategy $b_j(v_j) = cv_j + d$, calculate bidder \textit{i}'s expected payoff from bidding $b_i$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i,v_i)]&=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>b_j(v_j))(v_i-b_i)\\
+                                &=\mathbb{P}(b_i>cv_j+d)(v_i-b_i)\\
+                                &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+                                &=\frac{\frac{b_i-d}{c}-1}{3-1}(v_i-b_i),\text{ using CDF}\\
+                                &=\frac{b_i-d-c}{2c}(v_i-b_i)
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Take the FOC and SOC wrt. $b_i$.
+        \item[\nth{3} step:] To find $c^*$ and $d^*$, compare the best-response function $b_i(v_i)$ to $(*)$.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[\nth{2}:] FOC: $\frac{1}{2c}[(v_i-2b_i)+(d+c)]=0$\\
+                        SOC: $-\frac{1}{c}=0$\\
+                        i.e. expected utility is concave in $b_i$.
+        \item[\nth{3}:] From the FOC, the BR function is:\vspace{-6pt}
                         \begin{align*}
                           b_i(v_i)=\underbrace{\frac{1}{2}}_{c^*}v_1+\underbrace{\frac{1}{2}(d+c)}_{d^*}
                         \end{align*}
@@ -115,14 +406,307 @@
     \begin{multicols}{2}
       \begin{itemize}
         \item[(b)] Calculate the revenue to the seller.
-        \item[\nth{1} step:] Calculate the expected payment of bidder $i$ with valuation $v_i$ is
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] \textbf{Calculate the expected payment of bidder \textit{i} with valuation $v_i$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] \textbf{Calculate the expected payment of bidder \textit{i} with valuation $v_i$:}
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-6pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\frac{cv_i-c}{2c}(cv_i+d),\text{ cf. }(*),(**)\\
+                &=\frac{v_i-1}{2}(cv_i+d)\\
+                &=\frac{v_i-1}{2}\left(\frac{v_i}{2}+\frac{1}{2}\right),\text{ using (3.a)}\\
+                &=\left(\frac{v_i}{2}-\frac{1}{2}\right)\left(\frac{v_i}{2}+\frac{1}{2}\right)\\
+                &=\left(\frac{v_i}{2}\right)^2-\left(\frac{1}{2}\right)^2
+                 =\frac{v_i^2-1}{4}
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-6pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\frac{cv_i-c}{2c}(cv_i+d),\text{ cf. }(*),(**)\\
+                &=\frac{v_i-1}{2}(cv_i+d)\\
+                &=\frac{v_i-1}{2}\left(\frac{v_i}{2}+\frac{1}{2}\right),\text{ using (3.a)}\\
+                &=\left(\frac{v_i}{2}-\frac{1}{2}\right)\left(\frac{v_i}{2}+\frac{1}{2}\right)\\
+                &=\left(\frac{v_i}{2}\right)^2-\left(\frac{1}{2}\right)^2
+                 =\frac{v_i^2-1}{4}
+      \end{align*}
+      \vspace{-12pt}
+      \begin{itemize}
+        \item[\nth{2} step:] \textbf{Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-6pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\frac{cv_i-c}{2c}(cv_i+d),\text{ cf. }(*),(**)\\
+                &=\frac{v_i-1}{2}(cv_i+d)\\
+                &=\frac{v_i-1}{2}\left(\frac{v_i}{2}+\frac{1}{2}\right),\text{ using (3.a)}\\
+                &=\left(\frac{v_i}{2}-\frac{1}{2}\right)\left(\frac{v_i}{2}+\frac{1}{2}\right)\\
+                &=\left(\frac{v_i}{2}\right)^2-\left(\frac{1}{2}\right)^2
+                 =\frac{v_i^2-1}{4}
+      \end{align*}
+      \vspace{-12pt}
+      \begin{itemize}
+        \item[\nth{2} step:] \textbf{Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
       \end{itemize}
       \vspace{-12pt}
       \begin{align*}
         m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\frac{cv_i-c}{2c}(cv_i+d),\text{ using }(*),(**)\\
+                &=\frac{cv_i-c}{2c}(cv_i+d),\text{ cf. }(*),(**)\\
                 &=\frac{v_i-1}{2}(cv_i+d)\\
-                &=\frac{v_i-1}{2}\left(\frac{v_i}{2}+\frac{1}{2}\right),\text{ using (a)}\\
+                &=\frac{v_i-1}{2}\left(\frac{v_i}{2}+\frac{1}{2}\right),\text{ using (3.a)}\\
+                &=\left(\frac{v_i}{2}-\frac{1}{2}\right)\left(\frac{v_i}{2}+\frac{1}{2}\right)\\
+                &=\left(\frac{v_i}{2}\right)^2-\left(\frac{1}{2}\right)^2
+                 =\frac{v_i^2-1}{4}
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
+                            &=\textstyle\int_1^3\frac{v_i^2-1}{4}\cdot\frac{1}{3-1}dv_i\\
+                            &=\frac{1}{8}\textstyle\int_1^3v_i^2-1dv_i\\
+                            &=\frac{1}{8}\left[\frac{1}{3}v_i^3-v_i\right]_1^3\\
+                            &=\frac{1}{8}\left(\frac{3^3}{3}-3-\frac{1^3}{3}+1\right)=\frac{5}{6}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\frac{cv_i-c}{2c}(cv_i+d),\text{ cf. }(*),(**)\\
+                &=\frac{v_i-1}{2}(cv_i+d)\\
+                &=\frac{v_i-1}{2}\left(\frac{v_i}{2}+\frac{1}{2}\right),\text{ using (3.a)}\\
+                &=\left(\frac{v_i}{2}-\frac{1}{2}\right)\left(\frac{v_i}{2}+\frac{1}{2}\right)\\
+                &=\left(\frac{v_i}{2}\right)^2-\left(\frac{1}{2}\right)^2
+                 =\frac{v_i^2-1}{4}
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+        \item[\nth{3} step:] \textbf{Write up the expected revenue to the seller.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)]  $b_i(v_i) = cv_i+d$
+        \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
+                            &=\textstyle\int_1^3\frac{v_i^2-1}{4}\cdot\frac{1}{3-1}dv_i\\
+                            &=\frac{1}{8}\textstyle\int_1^3v_i^2-1dv_i\\
+                            &=\frac{1}{8}\left[\frac{1}{3}v_i^3-v_i\right]_1^3\\
+                            &=\frac{1}{8}\left(\frac{3^3}{3}-3-\frac{1^3}{3}+1\right)=\frac{5}{6}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.b: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(b)] Calculate the revenue to the seller.
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\frac{cv_i-c}{2c}(cv_i+d),\text{ cf. }(*),(**)\\
+                &=\frac{v_i-1}{2}(cv_i+d)\\
+                &=\frac{v_i-1}{2}\left(\frac{v_i}{2}+\frac{1}{2}\right),\text{ using (3.a)}\\
                 &=\left(\frac{v_i}{2}-\frac{1}{2}\right)\left(\frac{v_i}{2}+\frac{1}{2}\right)\\
                 &=\left(\frac{v_i}{2}\right)^2-\left(\frac{1}{2}\right)^2
                  =\frac{v_i^2-1}{4}
@@ -150,8 +734,8 @@
       \begin{itemize}
         \item[($*$)]  $b_i(v_i) = cv_i+d$
         \item[($**$)] $\mathbb{P}(i\ wins|v_i)=\frac{b_i(v_i)-d-c}{2c}=\frac{cv_i-c}{2c}$
-        \item[(a)]    $c^*=d^*=\frac{1}{2}$
-        \item[\nth{2}:] Ex-ante payment of bidder $i$:
+        \item[(3.a)]    $c^*=d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
       \end{itemize}
       \vspace{-12pt}
       \begin{align*}
@@ -166,13 +750,36 @@
 \end{frame}
 
 
-\begin{frame}{PS8, Ex. 3.c.i: First- and second-price sealed bid auctions with two bidders}
+\begin{frame}{PS8, Ex. 3.c: First- and second-price sealed bid auctions with two bidders}
     \begin{multicols}{2}
       \begin{itemize}
         \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
         \begin{itemize}\normalsize
           \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
           \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+        \end{itemize}
+      \end{itemize}
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 3.c.i: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  \textbf{Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.}
           \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
         \end{itemize}
       \end{itemize}
@@ -207,7 +814,7 @@
         \begin{itemize}\normalsize
           \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
           \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
-          \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
+          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).}
         \end{itemize}
       \end{itemize}
       Standard results for $x\sim u(a, b):$
@@ -247,6 +854,128 @@
         \begin{itemize}\normalsize
           \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
           \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).}
+        \end{itemize}
+      \end{itemize}
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-16pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
+        \item[(iii)] \textbf{Calculate player \textit{i}'s expected payment in the BNE.}
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c.iii: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).}
+        \end{itemize}
+      \end{itemize}
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-16pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
+        \item[(iii)] \textbf{Calculate player \textit{i}'s expected payment in the BNE:}
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)\cdot\mathbb{E}[b_j^*(v_j)|b_j^*(v_j)<b_i^*(v_i)]
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c.iii: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).}
+        \end{itemize}
+      \end{itemize}
+      Standard results for $x\sim u(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{enumerate}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-16pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
+        \item[(iii)] Player \textit{i}'s expected payment in BNE:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)\cdot\mathbb{E}[b_j^*(v_j)|b_j^*(v_j)<b_i^*(v_i)]\\
+                &=\mathbb{P}(v_i>v_j)\cdot\mathbb{E}[v_j|v_j<v_i]\\
+                &=\frac{v_i-1}{3-1}\cdot\frac{1+v_i}{2},\text{ using CDF and Mean}\\
+                &=\frac{v_i+v_i^2-1^2-v_i}{2^2}=\frac{v_i^2-1}{4}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c.iii: First- and second-price sealed bid auctions with two bidders}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[(c)] Suppose now that the object is sold by a \textit{second-price sealed bid auction}.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
           \item[iii.] Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).
         \end{itemize}
       \end{itemize}
@@ -272,7 +1001,7 @@
       \vspace{-18pt}
       \begin{itemize}
         \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
-        \item[(iii)] Player $i$'s expected payment in BNE:
+        \item[(iii)] Player \textit{i}'s expected payment in BNE:
       \end{itemize}
       \vspace{-12pt}
       \begin{align*}
@@ -281,7 +1010,7 @@
                 &=\frac{v_i-1}{3-1}\cdot\frac{1+v_i}{2},\text{ using CDF and Mean}\\
                 &=\frac{v_i+v_i^2-1^2-v_i}{2^2}=\frac{v_i^2-1}{4}
       \end{align*}
-      As this is the same as in (b), we know:
+      As this is the same as in (3.b), we know:
       \vspace{-8pt}
       \begin{align*}\vspace{-4pt}
         \text{Ex-ante expected payment}&=\mathbb{E}[m_i(v_i)]=\frac{5}{6}\\
@@ -310,10 +1039,92 @@
     \vfill\null
 \end{frame}
 
+
 \begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders}
     \begin{itemize}
       \item[(a)] For three bidders, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
-      \item[Step 1:] Use that $v_j$ and $v_k$ are independent (private) to write $i$'s' expected payoff in eq.:
+      \item[Hint:] Use that $v_j$ and $v_k$ are independent (private) to write bidder \textit{i}'s expected payoff in the proposed equilibrium.
+    \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(a)] For three bidders, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+      \item[Hint:] Use that $v_j$ and $v_k$ are independent (private) to write bidder \textit{i}'s expected payoff in the proposed equilibrium:
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{align*}
+      \mathbb{E}[u_i(b_i,v_i)]
+      &=\mathbb{P}(i\ wins|b_i)(v_i-b_i)
+    \end{align*}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(a)] For three bidders, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+      \item[Hint:] Use that $v_j$ and $v_k$ are independent (private) to write \textit{i}'s expected payoff in eq.:
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{align*}
+      \mathbb{E}[u_i(b_i,v_i)]
+      &=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+      &=\mathbb{P}\left(b_i>b_j(v_j),b_i>b_k(v_k)\right)(v_i-b_i)\\
+      &=\mathbb{P}(b_i>cv_j+d,b_i>cv_k+d)(v_i-b_i),&&\text{using }(*)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j,\frac{b_i-d}{c}>v_k\right)(v_i-b_i)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+      &=\left(\frac{b_i-d-c}{2c}\right)^2(v_i-b_i),&&\text{using ex. (3.a)}
+    \end{align*}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(a)] For three bidders, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+      \item[Hint:] Use that $v_j$ and $v_k$ are independent (private) to write \textit{i}'s expected payoff in eq.:
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{align*}
+      \mathbb{E}[u_i(b_i,v_i)]
+      &=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+      &=\mathbb{P}\left(b_i>b_j(v_j),b_i>b_k(v_k)\right)(v_i-b_i)\\
+      &=\mathbb{P}(b_i>cv_j+d,b_i>cv_k+d)(v_i-b_i),&&\text{using }(*)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j,\frac{b_i-d}{c}>v_k\right)(v_i-b_i)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+      &=\left(\frac{b_i-d-c}{2c}\right)^2(v_i-b_i),&&\text{using ex. (3.a)}
+    \end{align*}
+    \vspace{-8pt}
+    \textbf{Take the FOC and isolate $b_i^{**}(v_i)$.}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(a)] For three bidders, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+      \item[Hint:] Use that $v_j$ and $v_k$ are independent (private) to write \textit{i}'s expected payoff in eq.:
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{align*}
+      \mathbb{E}[u_i(b_i,v_i)]
+      &=\mathbb{P}(i\ wins|b_i)(v_i-b_i)\\
+      &=\mathbb{P}\left(b_i>b_j(v_j),b_i>b_k(v_k)\right)(v_i-b_i)\\
+      &=\mathbb{P}(b_i>cv_j+d,b_i>cv_k+d)(v_i-b_i),&&\text{using }(*)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j,\frac{b_i-d}{c}>v_k\right)(v_i-b_i)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+      &=\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)\times\mathbb{P}\left(\frac{b_i-d}{c}>v_j\right)(v_i-b_i)\\
+      &=\left(\frac{b_i-d-c}{2c}\right)^2(v_i-b_i),&&\text{using ex. (3.a)}
+    \end{align*}
+    \vspace{-8pt}
+    \begin{align*}
+      FOC:\quad   0&=\frac{1}{2c}[2(b_i-d-c)(v_i-b_i)-(b_i-d-c)^2]\\
+                  0&=2(v_i-b_i)-(b_i-d-c),&&\text{assuming }b_i-d-c\neq0\\
+      b_i^{**}(v_i)&=\frac{2}{3}v_i+\frac{1}{3}(c+d)
+    \end{align*}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.a: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(a)] For three bidders, show that there is a symmetric Bayesian Nash Equilibrium in linear strategies: $b_i(v_i) = cv_i + d\ (*)$. Find \textit{c} and \textit{d}.
+      \item[Hint:] Use that $v_j$ and $v_k$ are independent (private) to write \textit{i}'s expected payoff in eq.:
     \end{itemize}
     \vspace{-10pt}
     \begin{align*}
@@ -342,15 +1153,46 @@
     \end{itemize}
     \vspace{-8pt}
     \begin{multicols}{2}
+    \vfill\null\columnbreak
+    BNE found:
+    \begin{itemize}
+      \item[(3.a)] $b_i^{*}(v_i)=\frac{1}{2}v_i+\frac{1}{2}$ for $i\in1,2,3$
+      \item[(4.a)] $b_i^{**}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
+    \end{itemize}
+    \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(b)] Do you expect seller to earn a higher or a lower revenue than in the previous auction? What is causing this effect?
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+    Intuitively, \intuition{more bidders decreases the chance of winning, which should lead to less bid shading $\left(\frac{2}{3}>\frac{1}{2}\right)$ and therefore a \textit{higher} revenue for the seller.}
+    \vfill\null\columnbreak
+    BNE found:
+    \begin{itemize}
+      \item[(3.a)] $b_i^{*}(v_i)=\frac{1}{2}v_i+\frac{1}{2}$ for $i\in1,2,3$
+      \item[(4.a)] $b_i^{**}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
+    \end{itemize}
+    \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(b)] Do you expect seller to earn a higher or a lower revenue than in the previous auction? What is causing this effect?
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
     Intuitively, \intuition{more bidders decreases the chance of winning, which should lead to less bid shading $\left(\frac{2}{3}>\frac{1}{2}\right)$ and therefore a \textit{higher} revenue for the seller.}\\\medskip
-    Analytically, \intuition{we can confirm this:
+    Analytically, \intuition{we can confirm this:}
     \begin{align*}
       b_i^{**}&>b_i^{*}\Leftrightarrow\\
       \frac{2}{3}v_i+\frac{1}{3}&>\frac{1}{2}v_i+\frac{1}{2}\Leftrightarrow\\
       \frac{1}{6}v_i&>\frac{1}{6}\Leftrightarrow\\
                  v_i&>1
     \end{align*}
-    I.e. except for the rare case where all players have the valuation $v=1$, the seller's revenue  is strictly higher with three players than with two players.}
+    \intuition{I.e. except for the rare case where all players have the valuation $v=1$, the seller's revenue  is strictly higher with three players than with two players.}
     \vfill\null\columnbreak
     BNE found:
     \begin{itemize}
@@ -368,15 +1210,321 @@
     \end{itemize}
     \vspace{-8pt}
     \begin{multicols}{2}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
       \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder $i$ with valuation $v_i$:
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] \textbf{Calculate the expected payment of bidder \textit{i} with valuation $v_i$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] \textbf{Calculate the expected payment of bidder \textit{i} with valuation $v_i$:}
+      \end{itemize}
+      \vspace{-14pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)
+      \end{align*}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ cf. }(\dagger)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ cf. }(*)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ cf. }(4.a)\\
+                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+      \end{align*}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-10pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ cf. }(\dagger)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ cf. }(*)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ cf. }(4.a)\\
+                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[\nth{2} step:] \textbf{Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-10pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ cf. }(\dagger)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ cf. }(*)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ cf. }(4.a)\\
+                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[\nth{2} step:] \textbf{Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-10pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ cf. }(\dagger)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ cf. }(*)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ cf. }(4.a)\\
+                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+      \end{itemize}
+      \vspace{-4pt}
+      \textbf{Why is the ex-ante expected payment lower than in exercise 3.b?}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
+                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
+                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
+                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-10pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ cf. }(\dagger)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ cf. }(*)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ cf. }(4.a)\\
+                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+      \end{itemize}
+      \vspace{-4pt}
+      \intuition{Though the bids are higher, the expected payment from each bidder is lower due to a lower probability of winning.}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
+                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
+                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
+                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-10pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ cf. }(\dagger)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ cf. }(*)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ cf. }(4.a)\\
+                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+      \end{itemize}
+      \vspace{-4pt}
+      \intuition{Though the bids are higher, the expected payment from each bidder is lower due to a lower probability of winning.}
+      \vspace{-4pt}
+      \begin{itemize}
+        \item[\nth{3} step:] \textbf{Calculate the seller's revenue and compare to exercise (3.b).}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
+                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
+                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
+                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
       \end{itemize}
       \vspace{-14pt}
       \begin{align*}
         m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2b_i(v_i),\ (*),(+)\\
-                &=\left(\frac{v_i-1}{2}\right)^2(cv_i+d)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\ (4.a)\\
+                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ cf. }(\dagger)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ cf. }(*)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ cf. }(4.a)\\
                 &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
       \end{align*}
       \vspace{-14pt}
@@ -394,10 +1542,64 @@
       \vspace{-6pt}
       \begin{itemize}
         \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($+$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2=\left(\frac{cv_i-c}{2c}\right)^2$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
         \item[(3.a)] $c^*=d^*=\frac{1}{2}$
         \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-        \item[\nth{2}:] Ex-ante payment of bidder $i$:
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
+                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
+                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
+                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
+      \end{align*}
+      \vspace{-16pt}
+      \begin{itemize}
+        \item[\nth{3}:] $Revenue=3\cdot\mathbb{E}[m_i(v_i)]=2>\frac{5}{3}$
+      \end{itemize}
+      \vspace{-6pt}
+      \textbf{Why is seller’s revenue higher than in exercise 3.b?}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+      \end{itemize}
+      \vspace{-14pt}
+      \begin{align*}
+        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
+                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ cf. }(\dagger)\\
+                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ cf. }(*)\\
+                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ cf. }(4.a)\\
+                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+      \end{align*}
+      \vspace{-14pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+      \end{itemize}
+      \vspace{-4pt}
+      \intuition{Though the bids are higher, the expected payment from each bidder is lower due to a lower probability of winning.}
+      \vspace{-4pt}
+      \begin{itemize}
+        \item[\nth{3} step:] Calculate the seller's revenue and compare to exercise (3.b).
+      \end{itemize}
+      \vfill\null\columnbreak
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
       \end{itemize}
       \vspace{-12pt}
       \begin{align*}
@@ -482,7 +1684,7 @@
       \end{itemize}
       \vspace{-12pt}
       \begin{align*}
-        \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (*)
+        \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
       \end{align*}
       \vfill\null
 \end{frame}
@@ -496,11 +1698,11 @@
       \end{itemize}
       \vspace{-8pt}
       \begin{align*}
-        \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (*)
+        \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
       \end{align*}
       \vspace{-10pt}
       \begin{itemize}
-        \item[Step 3:] Use $(*)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$.
+        \item[Step 3:] Use $(\star)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$.
       \end{itemize}
       \vfill\null
 \end{frame}
@@ -514,19 +1716,42 @@
         \end{itemize}
         \vspace{-8pt}
         \begin{align*}
-          \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (*)
+          \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
         \end{align*}
         \vspace{-10pt}
         \begin{itemize}
-        \item[Step 3:] Use $(*)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$:
+        \item[Step 3:] Use $(\star)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$:
       \end{itemize}
       \vspace{-6pt}
       \begin{align*}
-        \mathbb{E}[v|r_1=H]=\mathbb{P}[H|r_1=H]v_H+\mathbb{P}[L|r_1=L]v_L=pv_H+(1-p)v_L
+        \mathbb{E}[v|r_1=H]&=\mathbb{P}[H|r_1=H]v_H+\mathbb{P}[L|r_1=H]v_L
       \end{align*}
       \vfill\null
 \end{frame}
-
+\begin{frame}{PS8, Ex. 5.b: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[Step 1:] Bayes' rule: $P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+        \item[Step 2:] The probability that the value of the oil-field is high given the report $r_1=H$:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
+        \end{align*}
+        \vspace{-10pt}
+        \begin{itemize}
+        \item[Step 3:] Use $(\star)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$:
+      \end{itemize}
+      \vspace{-6pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H]&=\mathbb{P}[H|r_1=H]v_H+\mathbb{P}[L|r_1=H]v_L\\
+        &=\mathbb{P}[H|r_1=H]v_H+\left(1-\mathbb{P}[H|r_1=H]\right)v_L,\text{ cf. }(\star)\\
+        &=pv_H+(1-p)v_L
+      \end{align*}
+      \vfill\null
+\end{frame}
 
 
 \begin{frame}{PS8, Ex. 5.c: Winner's Curse}
@@ -535,7 +1760,6 @@
       \vspace{-2pt}
       \begin{itemize}
         \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
-        \item[Step 1:] Write up the probability that company 1 wins the auction after receiving the report $r_1=H$.
         \end{itemize}
       \vfill\null
 \end{frame}
@@ -545,7 +1769,17 @@
       \vspace{-2pt}
       \begin{itemize}
         \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
-        \item[Step 1:] The probability company 1 wins the auction after receiving the report $r_1=H$:
+        \item[Step 1:] Write up the probability that the value of the oil-field is $H$ given company 1 receives a report $r_1=H$ and wins the auction.
+        \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \vspace{-2pt}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
         \end{itemize}
         \vspace{-8pt}
         \begin{align*}
@@ -554,60 +1788,80 @@
       \vfill\null
 \end{frame}
 \begin{frame}{PS8, Ex. 5.c: Winner's Curse}
-      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
-      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
-      \vspace{-2pt}
       \begin{itemize}
         \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
-        \item[Step 1:] The probability company 1 wins the auction after receiving the report $r_1=H$:
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
         \end{itemize}
         \vspace{-8pt}
         \begin{align*}
           \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
-            &=\frac{\mathbb{P}[r_1=H\wedge r_2=low|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=low|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=low|L]\times\mathbb{P}[L]}&\\
-            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(**)
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
         \end{align*}
       \vfill\null
 \end{frame}
 \begin{frame}{PS8, Ex. 5.c: Winner's Curse}
       \begin{itemize}
         \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
-        \item[Step 1:] The probability company 1 wins the auction after receiving the report $r_1=H$:
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
         \end{itemize}
         \vspace{-12pt}
         \begin{align*}
           \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
-            &=\frac{\mathbb{P}[r_1=H\wedge r_2=low|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=low|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=low|L]\times\mathbb{P}[L]}&\\
-            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(**)
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
         \end{align*}
         \vspace{-12pt}
         \begin{itemize}
-        \item[Step 2:] Use $(**)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction.
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction.
       \end{itemize}
       \vfill\null
 \end{frame}
 \begin{frame}{PS8, Ex. 5.c: Winner's Curse}
       \begin{itemize}
         \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
-        \item[Step 1:] The probability company 1 wins the auction after receiving the report $r_1=H$:
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
         \end{itemize}
         \vspace{-8pt}
         \begin{align*}
           \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
-            &=\frac{\mathbb{P}[r_1=H\wedge r_2=low|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=low|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=low|L]\times\mathbb{P}[L]}&\\
-            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(**)
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
         \end{align*}
         \vspace{-8pt}
         \begin{itemize}
-        \item[Step 2:] Use $(**)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L
+      \end{align*}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-8pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
       \end{itemize}
       \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
         &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L\\
-        &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H]}&&\text{since }p>\frac{1}{2}
+        &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ cf. (b)}}&&\text{since }p>\frac{1}{2}
       \end{align*}
-      \vspace{-14pt}
+      \vspace{-10pt}
       \begin{itemize}
         \item[Step 3:] Looking at the inequality above, explain the difference between (b) and (c).
       \end{itemize}
@@ -616,25 +1870,51 @@
 \begin{frame}{PS8, Ex. 5.c: Winner's Curse}
       \begin{itemize}
         \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
-        \item[Step 1:] The probability company 1 wins the auction after receiving the report $r_1=H$:
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-8pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L\\
+        &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ cf. (b)}}&&\text{since }p>\frac{1}{2}
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[Step 3:] Looking at the inequality above, explain the difference between (b) and (c).
+        \item[]        \textit{In other words, why is company 1 less certain that the value is $H$ after they actually win the auction?}
+      \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
         \end{itemize}
         \vspace{-10pt}
         \begin{align*}
           \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
-            &=\frac{\mathbb{P}[r_1=H\wedge r_2=low|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=low|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=low|L]\times\mathbb{P}[L]}&\\
-            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(**)
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
         \end{align*}
         \vspace{-12pt}
         \begin{itemize}
-        \item[Step 2:] Use $(**)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
       \end{itemize}
       \vspace{-8pt}
       \begin{align*}
         \mathbb{E}[v|r_1&=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
         &=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L\\
-        &=\frac{1}{2}v_H+\frac{1}{2}v_L<pv_H+(1-p)v_L\text{   since   }p>\frac{1}{2}
+        &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ cf. (b)}}&&\text{since }p>\frac{1}{2}
       \end{align*}
-      \vspace{-14pt}
+      \vspace{-10pt}
       \begin{itemize}
         \item[Step 3:] \intuition{This is an example of The Winner's Curse: The equally trustworthy reports of the two companies cancel each other out. Since the valuations of the auctioned object are correlated, you are likely to win the object when you overestimate the value.}
       \end{itemize}
