@@ -1684,7 +1684,10 @@
       \end{itemize}
       \vspace{-12pt}
       \begin{align*}
-        \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
+        \mathbb{P}[H|r_1=H]
+        &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H]}
+        =\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}\\
+        &=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
       \end{align*}
       \vfill\null
 \end{frame}
@@ -1698,7 +1701,10 @@
       \end{itemize}
       \vspace{-8pt}
       \begin{align*}
-        \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
+        \mathbb{P}[H|r_1=H]
+        &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H]}
+        =\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}\\
+        &=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
       \end{align*}
       \vspace{-10pt}
       \begin{itemize}
@@ -1794,7 +1800,8 @@
         \end{itemize}
         \vspace{-8pt}
         \begin{align*}
-          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L]}&\\
             &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
             &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
             &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
@@ -1808,7 +1815,8 @@
         \end{itemize}
         \vspace{-12pt}
         \begin{align*}
-          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L]}&\\
             &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
             &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
             &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
@@ -1826,7 +1834,8 @@
         \end{itemize}
         \vspace{-8pt}
         \begin{align*}
-          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L]}&\\
             &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
             &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
             &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
@@ -1858,7 +1867,29 @@
       \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
-        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L
+      \end{align*}
+      Now, insert $(\star\star)$ above and compare to the result in (3.b).
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-8pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L&&\text{insert }(\star\star)\\
         &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ cf. (b)}}&&\text{since }p>\frac{1}{2}
       \end{align*}
       \vspace{-10pt}
@@ -1884,7 +1915,7 @@
       \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
-        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L&&\text{insert }(\star\star)\\
         &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ cf. (b)}}&&\text{since }p>\frac{1}{2}
       \end{align*}
       \vspace{-10pt}
@@ -1910,8 +1941,8 @@
       \end{itemize}
       \vspace{-8pt}
       \begin{align*}
-        \mathbb{E}[v|r_1&=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
-        &=H\wedge win]=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L\\
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L&&\text{insert }(\star\star)\\
         &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ cf. (b)}}&&\text{since }p>\frac{1}{2}
       \end{align*}
       \vspace{-10pt}
