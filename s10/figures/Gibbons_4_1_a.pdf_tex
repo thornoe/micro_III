@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{263.13996906bp}%
+    \setlength{\unitlength}{263.13999069bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,31 +50,31 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.40612439)%
+  \begin{picture}(1,0.40612436)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{Gibbons_4_1_a.pdf}}%
-    \put(0.0783598,0.12494368){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L'$\end{tabular}}}}%
-    \put(-0.80441946,-2.06073059){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.2960502\unitlength}\raggedright \end{minipage}}}%
+    \put(0.08406018,0.12494367){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L'$\end{tabular}}}}%
+    \put(-0.798719,-2.06073042){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.29605001\unitlength}\raggedright \end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{Gibbons_4_1_a.pdf}}%
-    \put(0.33860715,0.00612114){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
-    \put(0.13712385,0.22603902){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$[p]$\end{tabular}}}}%
-    \put(0.31544067,0.12494368){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R'$\end{tabular}}}}%
+    \put(0.33290673,0.00612114){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
+    \put(0.14282423,0.226039){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$[p]$\end{tabular}}}}%
+    \put(0.32114104,0.12494367){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R'$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{Gibbons_4_1_a.pdf}}%
-    \put(0.66279008,0.12346876){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L'$\end{tabular}}}}%
-    \put(0.80705782,0.22603902){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$[1-p]$\end{tabular}}}}%
-    \put(0.89987038,0.12346876){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R'$\end{tabular}}}}%
-    \put(0.65601945,0.28606941){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$M$\end{tabular}}}}%
-    \put(0.3263231,0.28606941){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L$\end{tabular}}}}%
-    \put(0.4907437,0.38394632){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.66849042,0.12346875){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L'$\end{tabular}}}}%
+    \put(0.81275815,0.226039){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$[1-p]$\end{tabular}}}}%
+    \put(0.9055707,0.12346875){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R'$\end{tabular}}}}%
+    \put(0.66171979,0.28606938){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$M$\end{tabular}}}}%
+    \put(0.33202347,0.28606938){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$L$\end{tabular}}}}%
+    \put(0.49644405,0.38394629){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{Gibbons_4_1_a.pdf}}%
-    \put(1.41001761,-5.22732099){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.25684252\unitlength}\raggedright \end{minipage}}}%
-    \put(0.92528631,0.00611604){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,1)\end{tabular}}}}%
+    \put(1.41571789,-5.22732056){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.25684241\unitlength}\raggedright \end{minipage}}}%
+    \put(0.92528632,0.00611604){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,1)\end{tabular}}}}%
     \put(-0.0026869,0.00612114){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(4,1)\end{tabular}}}}%
-    \put(0.83501793,0.35200721){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,2)\end{tabular}}}}%
-    \put(0.5948198,0.00611604){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,0)\end{tabular}}}}%
+    \put(0.84071825,0.35200719){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,2)\end{tabular}}}}%
+    \put(0.58341888,0.00611604){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,0)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{Gibbons_4_1_a.pdf}}%
-    \put(0.65602003,0.3674774){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
-    \put(0.49074091,0.19529722){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.66172037,0.36747737){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
+    \put(0.49644126,0.1952972){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
   \end{picture}%
 \endgroup%
