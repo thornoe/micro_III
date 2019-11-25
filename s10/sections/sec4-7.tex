@@ -1,15 +1,15 @@
-\section{PS8, Ex. 4: A simple principal-agent model of corruption}
+\section{PS8, Ex. 4: A simple principal-agent model of corruption (all-pay auction}
 
-\begin{frame}{PS8, Ex. 4: A simple principal-agent model of corruption}
+\begin{frame}{PS8, Ex. 4: A simple principal-agent model of corruption (all-pay auction}
     Suppose two lobbyists, $i = 1, 2$, are trying to persuade a policymaker to implement their preferred policy by making a costly effort $e_i\in[0, 1]$. The policymaker can only implement one of the policies, and will implement the policy of the lobbyist who makes the most effort (you can also think of the policymaker as being corrupt, and the effort being a bribe.) The point is, that the lobbyist has to make the effort \textit{before} he learns if his policy is implemented.\\\medskip
     The value to $i$ of having his preferred policy implemented is $v_i$, where $v_i\sim U(0, 1)$ independently (private values). The lobbyists know their own valuation, but not that of the other lobbyist.
     \begin{itemize}
       \item[(a)] Rewrite this as an auction. What is the difference to the auctions we have seen so far?
-      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2$, and find \textit{c}.
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}.
     \end{itemize}
 \end{frame}
 
-\begin{frame}{PS8, Ex. 4.a: A simple principal-agent model of corruption}
+\begin{frame}{PS8, Ex. 4.a: A simple principal-agent model of corruption (all-pay auction}
     Suppose two lobbyists, $i = 1, 2$, are trying to persuade a policymaker to implement their preferred policy by making a costly effort $e_i\in[0, 1]$. The policymaker can only implement one of the policies, and will implement the policy of the lobbyist who makes the most effort (you can also think of the policymaker as being corrupt, and the effort being a bribe.) The point is, that the lobbyist has to make the effort \textit{before} he learns if his policy is implemented.\\\medskip
     The value to $i$ of having his preferred policy implemented is $v_i$, where $v_i\sim U(0, 1)$ independently (private values). The lobbyists know their own valuation, but not that of the other lobbyist.
     \begin{itemize}
@@ -17,24 +17,621 @@
     \end{itemize}
     \vspace{-8pt}
     \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] \textbf{Write up the bidders, valuations, bids, and utilities.}
+      \end{itemize}
       \vfill\null\columnbreak
       \vfill\null
     \end{multicols}
 \end{frame}
-
-\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption}
+\begin{frame}{PS8, Ex. 4.a: A simple principal-agent model of corruption (all-pay auction}
     Suppose two lobbyists, $i = 1, 2$, are trying to persuade a policymaker to implement their preferred policy by making a costly effort $e_i\in[0, 1]$. The policymaker can only implement one of the policies, and will implement the policy of the lobbyist who makes the most effort (you can also think of the policymaker as being corrupt, and the effort being a bribe.) The point is, that the lobbyist has to make the effort \textit{before} he learns if his policy is implemented.\\\medskip
     The value to $i$ of having his preferred policy implemented is $v_i$, where $v_i\sim U(0, 1)$ independently (private values). The lobbyists know their own valuation, but not that of the other lobbyist.
     \begin{itemize}
-      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2$, and find \textit{c}.
+      \item[(a)] Rewrite this as an auction. What is the difference to the auctions we have seen so far?
     \end{itemize}
     \vspace{-8pt}
     \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up the auction with bidders, valuations, bids, and utilities.
+        \item[Step 2:] \textbf{How is this different from the auctions we have seen so far?}
+      \end{itemize}
       \vfill\null\columnbreak
+      \begin{enumerate}
+        \item Two bidders, $i\in1,2$.
+        \item[] Valuations are independently distributed $v_i\sim U(0, 1)$
+        \item[] Bids $b_i\in[0,1]$
+        \begin{align*}
+          u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+            v_i-b_i           & \text{if} & b_i>b_j \\
+            \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+            -b_i              & \text{if} & b_i<b_j
+          \end{array}\right.
+        \end{align*}
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.a: A simple principal-agent model of corruption (all-pay auction}
+    Suppose two lobbyists, $i = 1, 2$, are trying to persuade a policymaker to implement their preferred policy by making a costly effort $e_i\in[0, 1]$. The policymaker can only implement one of the policies, and will implement the policy of the lobbyist who makes the most effort (you can also think of the policymaker as being corrupt, and the effort being a bribe.) The point is, that the lobbyist has to make the effort \textit{before} he learns if his policy is implemented.\\\smallskip
+    The value to $i$ of having his preferred policy implemented is $v_i$, where $v_i\sim U(0, 1)$ independently (private values). The lobbyists know their own valuation, but not that of the other lobbyist.
+    \vspace{-4pt}
+    \begin{itemize}
+      \item[(a)] Rewrite this as an auction. What is the difference to the auctions we have seen so far?
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up the auction with bidders, valuations, bids, and utilities.
+        \item[Step 2:] How is this different from the auctions we have seen so far?
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item Two bidders, $i\in1,2$.
+        \item[] Valuations are independently distributed $v_i\sim U(0, 1)$
+        \item[] Bids $b_i\in[0,1]$ \vspace{-6pt}
+        \begin{align*}
+          u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+            v_i-b_i           & \text{if} & b_i>b_j \\
+            \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+            -b_i              & \text{if} & b_i<b_j
+          \end{array}\right.
+        \end{align*}
+        \item \vspace{-6pt} Both bidders pay their bid $b_i$ regardless of whether they win. This is known as an \textit{all-pay auction}.
+      \end{enumerate}
       \vfill\null
     \end{multicols}
 \end{frame}
 
+
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    Suppose two lobbyists, $i = 1, 2$, are trying to persuade a policymaker to implement their preferred policy by making a costly effort $e_i\in[0, 1]$. The policymaker can only implement one of the policies, and will implement the policy of the lobbyist who makes the most effort (you can also think of the policymaker as being corrupt, and the effort being a bribe.) The point is, that the lobbyist has to make the effort \textit{before} he learns if his policy is implemented.\\\medskip
+    The value to $i$ of having his preferred policy implemented is $v_i$, where $v_i\sim U(0, 1)$ independently (private values). The lobbyists know their own valuation, but not that of the other lobbyist.
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \vfill\null\columnbreak
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] \textbf{Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+      \end{itemize} \vspace{-8pt}
+      \begin{align*}
+        \mathbb{P}(i\ wins)&=\mathbb{P}(b_i>b_j(v_j))\\
+                           &=\mathbb{P}(b_i>cv_j^2)\\
+                           &=\mathbb{P}\left(\frac{b_i}{c}>v_j^2\right)\\
+                           &=\mathbb{P}\left(\sqrt{\frac{b_i}{c}}>v_j\right)\\
+                           &=\sqrt{\frac{b_i}{c}}
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+      \end{itemize} \vspace{-8pt}
+      \begin{align*}
+        \mathbb{P}(i\ wins)&=\mathbb{P}(b_i>b_j(v_j))\\
+                           &=\mathbb{P}(b_i>cv_j^2)\\
+                           &=\mathbb{P}\left(\frac{b_i}{c}>v_j^2\right)\\
+                           &=\mathbb{P}\left(\sqrt{\frac{b_i}{c}}>v_j\right)\\
+                           &=\sqrt{\frac{b_i}{c}}
+      \end{align*} \vspace{-8pt}
+      \begin{itemize}
+        \item[Step 2:] \textbf{Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+      \end{itemize} \vspace{-8pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i)|v_i]&=\mathbb{P}(i\ wins)v_i-b_i\\
+                           &=\sqrt{\frac{b_i}{c}}v_i-b_i,&&cf.\ (1)
+      \end{align*} \vspace{-8pt}
+      Remember that the bid is always payed.
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+      \end{itemize} \vspace{-8pt}
+      \begin{align*}
+        \mathbb{E}[u_i(b_i)|v_i]&=\mathbb{P}(i\ wins)v_i-b_i\\
+                           &=\sqrt{\frac{b_i}{c}}v_i-b_i,&&cf.\ (1)
+      \end{align*} \vspace{-8pt}
+      Remember that the bid is always payed. \vspace{4pt}
+      \begin{itemize}
+        \item[Step 3:] \textbf{Take the first-order condition and second-order condition with respect to $b_i$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+        \item[Step 3:] Take the FOC and SOC wrt. $b_i$.
+      \end{itemize} \vspace{-8pt}
+      \begin{align*}
+        \frac{\delta\mathbb{E}[u_i(b_i)|v_i]}{\delta b_i}
+          &=\frac{\delta}{\delta b_i}\left(\sqrt{\frac{b_i}{c}}v_i-b_i\right)\\
+          &=\frac{\delta}{\delta b_i}\left(\frac{\sqrt{b_i}}{\sqrt{c}}v_i-b_i\right)\\
+          &=\frac{\delta}{\delta b_i}\left(b_i^{\frac{1}{2}}\frac{1}{\sqrt{c}}v_i-b_i\right)\\
+          &=\frac{1}{2}b_i^{-\frac{1}{2}}\frac{1}{\sqrt{c}}v_i-1\\
+          &=\frac{1}{2}\frac{1}{\sqrt{b_i}}\frac{1}{\sqrt{c}}v_i-1\\
+          &=\frac{1}{2\sqrt{b_ic}}v_i-1
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+        \item FOC: $\frac{1}{2\sqrt{b_ic}}v_i-1=0$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+        \item[Step 3:] Take the FOC and SOC wrt. $b_i$.
+      \end{itemize} \vspace{-8pt}
+      \begin{align*}
+        \frac{\delta\mathbb{E}[u_i(b_i)|v_i]}{\delta b_i}
+          &=\frac{\delta}{\delta b_i}\left(\sqrt{\frac{b_i}{c}}v_i-b_i\right)\\
+          &=\frac{\delta}{\delta b_i}\left(\frac{\sqrt{b_i}}{\sqrt{c}}v_i-b_i\right)\\
+          &=\frac{\delta}{\delta b_i}\left(b_i^{\frac{1}{2}}\frac{1}{\sqrt{c}}v_i-b_i\right)\\
+          &=\frac{1}{2}b_i^{-\frac{1}{2}}\frac{1}{\sqrt{c}}v_i-1&&(**)\\
+          &=\frac{1}{2}\frac{1}{\sqrt{b_i}}\frac{1}{\sqrt{c}}v_i-1\\
+          &=\frac{1}{2\sqrt{b_ic}}v_i-1
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+        \item FOC: $\frac{1}{2\sqrt{b_ic}}v_i-1=0$
+        \item[] SOC: $-\frac{1}{4}b_i^{-\frac{3}{2}}\frac{1}{\sqrt{c}}v_i=0,\quad cf.\ (**)$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+        \item[Step 3:] Take the FOC and SOC wrt. $b_i$.
+        \item[Step 4:] \textbf{Solve to find $b_i(v_i)$.}
+      \end{itemize} \vspace{-8pt}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+        \item FOC: $\frac{1}{2\sqrt{b_ic}}v_i-1=0$
+        \item[] SOC: $-\frac{1}{4}b_i^{-\frac{3}{2}}\frac{1}{\sqrt{c}}v_i=0,\quad cf.\ (**)$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+        \item[Step 3:] Take the FOC and SOC wrt. $b_i$.
+        \item[Step 4:] Solve to find $b_i(v_i)$.
+      \end{itemize} \vspace{-6pt}
+      As the SOC is negative for all $b_i,v_i,c>0$ bidder $i$ maximizes expected utility for \vspace{-6pt}
+      \begin{align*}
+        0&=\frac{1}{2\sqrt{b_i(v_i)c}}v_i-1\Leftrightarrow\\
+        2\sqrt{b_i(v_i)c}&=v_i\Leftrightarrow\\
+        2^2b_i(v_i)c&=v_i^2\Leftrightarrow\\
+        b_i(v_i)&=\frac{1}{4c}v_i^2
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+        \item FOC: $\frac{1}{2\sqrt{b_ic}}v_i-1=0$
+        \item[] SOC: $-\frac{1}{4}b_i^{-\frac{3}{2}}\frac{1}{\sqrt{c}}v_i=0,\quad cf.\ (**)$
+        \item $b_i(v_i)=\frac{1}{4c}v_i^2$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+        \item[Step 3:] Take the FOC and SOC wrt. $b_i$.
+        \item[Step 4:] Solve to find $b_i(v_i)$.
+      \end{itemize} \vspace{-6pt}
+      As the SOC is negative for all $b_i,v_i,c>0$ bidder $i$ maximizes expected utility for \vspace{-6pt}
+      \begin{align*}
+        0&=\frac{1}{2\sqrt{b_i(v_i)c}}v_i-1\Leftrightarrow\\
+        2\sqrt{b_i(v_i)c}&=v_i\Leftrightarrow\\
+        2^2b_i(v_i)c&=v_i^2\Leftrightarrow\\
+        b_i(v_i)&=\frac{1}{4c}v_i^2
+      \end{align*} \vspace{-12pt}
+      \begin{itemize}
+        \item[Step 5:] \textbf{Set this equal to $(*)$ to find $c^*$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+        \item FOC: $\frac{1}{2\sqrt{b_ic}}v_i-1=0$
+        \item[] SOC: $-\frac{1}{4}b_i^{-\frac{3}{2}}\frac{1}{\sqrt{c}}v_i=0,\quad cf.\ (**)$
+        \item $b_i(v_i)=\frac{1}{4c}v_i^2$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+        \item[Step 3:] Take the FOC and SOC wrt. $b_i$.
+        \item[Step 4:] Solve to find $b_i(v_i)$.
+        \item[Step 5:] Set this equal to $(*)$ to find $c^*$.
+      \end{itemize} \vspace{-6pt}
+      \begin{align*}
+        c^*v_i^2&=\frac{1}{4c^*}v_i^2\Leftrightarrow\\
+        c^*&=\frac{1}{4c^*}\Leftrightarrow\\
+        2c^*&=\frac{1}{4}\Leftrightarrow\\
+        c^*&=\frac{1}{2}\\
+      \end{align*}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+        \item FOC: $\frac{1}{2\sqrt{b_ic}}v_i-1=0$
+        \item[] SOC: $-\frac{1}{4}b_i^{-\frac{3}{2}}\frac{1}{\sqrt{c}}v_i=0,\quad cf.\ (**)$
+        \item $b_i(v_i)=\frac{1}{4c}v_i^2$
+        \item $c^*=\frac{1}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+        \item[Step 3:] Take the FOC and SOC wrt. $b_i$.
+        \item[Step 4:] Solve to find $b_i(v_i)$.
+        \item[Step 5:] Set this equal to $(*)$ to find $c^*$.
+      \end{itemize} \vspace{-6pt}
+      \begin{align*}
+        c^*v_i^2&=\frac{1}{4c^*}v_i^2\Leftrightarrow\\
+        c^*&=\frac{1}{4c^*}\Leftrightarrow\\
+        2c^*&=\frac{1}{4}\Leftrightarrow\\
+        c^*&=\frac{1}{2}
+      \end{align*} \vspace{-12pt}
+      \begin{itemize}
+        \item[Step 6:] \textbf{Write up the equilibrium bidding strategy.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+        \item FOC: $\frac{1}{2\sqrt{b_ic}}v_i-1=0$
+        \item[] SOC: $-\frac{1}{4}b_i^{-\frac{3}{2}}\frac{1}{\sqrt{c}}v_i=0,\quad cf.\ (**)$
+        \item $b_i(v_i)=\frac{1}{4c}v_i^2$
+        \item $c^*=\frac{1}{2}$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: A simple principal-agent model of corruption (all-pay auction}
+    \begin{itemize}
+      \item[(b)] Check that there is a symmetric Bayesian Nash Equilibrium of the type $b_i(v_i) = cv_i^2\ (*)$, and find \textit{c}. Values are independently distributed $v_i\sim U(0, 1)$.
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up bidder \textit{i}'s probability of winning the auction if \textit{j} sticks to the equilibrium strategy.
+        \item[Step 2:] Write up bidder \textit{i}'s expected payoff from bidding $b_i$ conditional on $v_i$.
+        \item[Step 3:] Take the FOC and SOC wrt. $b_i$.
+        \item[Step 4:] Solve to find $b_i(v_i)$.
+        \item[Step 5:] Set this equal to $(*)$ to find $c^*$.
+        \item[Step 6:] Write up the equilibrium bidding strategy.
+      \end{itemize}
+      \vfill\null\columnbreak
+      Standard results for $x\sim u(a, b):$ \vspace{-6pt}
+      \begin{itemize}
+        \item[PDF:] $f(x)=\frac{1}{b-a}$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(c>x)=\frac{c-a}{b-a}$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(c<x)=\frac{a+x}{2}$
+      \end{itemize}
+      \vspace{-6pt}
+      Results so far: \vspace{-6pt}
+      \begin{align*}
+        u_i(b_i,b_j)=\left\{\begin{array}{lcl}
+          v_i-b_i           & \text{if} & b_i>b_j \\
+          \frac{v_i}{2}-b_i & \text{if} & b_i=b_j \\
+          -b_i              & \text{if} & b_i<b_j
+        \end{array}\right.
+      \end{align*} \vspace{-16pt}
+      \begin{enumerate}
+        \item $\mathbb{P}(i\ wins)=\sqrt{b_i/c}$
+        \item $\mathbb{E}[u_i(b_i)|v_i]=\sqrt{b_i/c}\cdot v_i-b_i$
+        \item FOC: $\frac{1}{2\sqrt{b_ic}}v_i-1=0$
+        \item[] SOC: $-\frac{1}{4}b_i^{-\frac{3}{2}}\frac{1}{\sqrt{c}}v_i=0,\quad cf.\ (**)$
+        \item $b_i(v_i)=\frac{1}{4c}v_i^2$
+        \item $c^*=\frac{1}{2}$
+        \item BNE: $b_i^*(v_i)=\frac{1}{2}v_i^2$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
 
 
 

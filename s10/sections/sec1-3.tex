@@ -7,17 +7,124 @@
 \begin{frame}{PS8, Ex. 1 (A): Asymmetric values (second-price sealed bid auction)}
     Suppose there are two bidders who have private but asymmetric values. In particular, $v_1\sim U(0, 1)$ and $v_2\sim U(0, 2)$. Suppose the auction format is second-price sealed bid. When the values are private and symmetric, it is a weakly dominant strategy to bid one’s value. Is this still true when the values are asymmetric?
     \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Recall the argument in PS9, Ex. 3.c.
+      \end{itemize}
       \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1 (A): Asymmetric values (second-price sealed bid auction)}
+    Suppose there are two bidders who have private but asymmetric values. In particular, $v_1\sim U(0, 1)$ and $v_2\sim U(0, 2)$. Suppose the auction format is second-price sealed bid. When the values are private and symmetric, it is a weakly dominant strategy to bid one’s value. Is this still true when the values are asymmetric?
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Recall the argument in PS9, Ex. 3.c.
+        \begin{itemize}\normalsize
+          \item[i.]   \textbf{Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.}
+        \end{itemize}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1 (A): Asymmetric values (second-price sealed bid auction)}
+    Suppose there are two bidders who have private but asymmetric values. In particular, $v_1\sim U(0, 1)$ and $v_2\sim U(0, 2)$. Suppose the auction format is second-price sealed bid. When the values are private and symmetric, it is a weakly dominant strategy to bid one’s value. Is this still true when the values are asymmetric?
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Recall the argument in PS9, Ex. 3.c.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  \textbf{Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.}
+        \end{itemize}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1 (A): Asymmetric values (second-price sealed bid auction)}
+    Suppose there are two bidders who have private but asymmetric values. In particular, $v_1\sim U(0, 1)$ and $v_2\sim U(0, 2)$. Suppose the auction format is second-price sealed bid. When the values are private and symmetric, it is a weakly dominant strategy to bid one’s value. Is this still true when the values are asymmetric?
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Recall the argument in PS9, Ex. 3.c.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+        \end{itemize}
+        \item[Step 2:] \textbf{How is this result affected by the distribution of the bidder's values?}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[(ii)] P1 wins: Payoff is independent of $b_1$ unless $b_1<b_2$, in which case P1 no longer wins, thus, gets zero payoff.
+        \item[] P1 looses: Payoff is independent of $b_1$ unless $b_1>b_2$, in which case P1 wins instead but bids more than her evaluation and gets negative payoff.
+        \item[] i.e. there is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 1 (A): Asymmetric values (second-price sealed bid auction)}
+    Suppose there are two bidders who have private but asymmetric values. In particular, $v_1\sim U(0, 1)$ and $v_2\sim U(0, 2)$. Suppose the auction format is second-price sealed bid. When the values are private and symmetric, it is a weakly dominant strategy to bid one’s value. Is this still true when the values are asymmetric?
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Recall the argument in PS9, Ex. 3.c.
+        \begin{itemize}\normalsize
+          \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
+          \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
+        \end{itemize}
+        \item[Step 2:] How is this result affected by the distribution of the bidder's values?
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{itemize}
+        \item[(i)] The expected payoffs of P1 given $b_2$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        u_1(b_1,b_2)=\left\{\begin{array}{lcl}
+          v_1-b_2     & \text{if} & b_1>b_2 \\
+          (v_1-b_2)/2 & \text{if} & b_1=b_2 \\
+          0           & \text{if} & b_1<b_2
+        \end{array}\right.
+      \end{align*}
+      \vspace{-18pt}
+      \begin{itemize}
+        \item[(ii)] P1 wins: Payoff is independent of $b_1$ unless $b_1<b_2$, in which case P1 no longer wins, thus, gets zero payoff.
+        \item[] P1 looses: Payoff is independent of $b_1$ unless $b_1>b_2$, in which case P1 wins instead but bids more than her evaluation and gets negative payoff.
+        \item[] i.e. there is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
+        \item[2:] The result is independent of the distributions, thus it's still a best-response to bid one's value.
+      \end{itemize}
       \vfill\null
     \end{multicols}
 \end{frame}
 
 
 
+
 \section{PS8, Ex. 2 (A): Crimea Through a Game-Theory }
 
 \begin{frame}{PS8, Ex. 2 (A): }
-    Read through the New York Times article \href{https://www.nytimes.com/2014/03/16/business/crimea-through-a-game-theory-lens.html}{Crime Through a Game-Theory Lens} by Tyler Cowen (co-author of the popular economics blog Marginal Revolution). Try to think about how you would set up models to describe the situations he writes about. \textit{(This exercise is just for reflection, no answer will be provided).}
+    Read through the New York Times article \href{https://www.nytimes.com/2014/03/16/business/crimea-through-a-game-theory-lens.html}{Crimea Through a Game-Theory Lens} by Tyler Cowen (co-author of the popular economics blog Marginal Revolution). Try to think about how you would set up models to describe the situations he writes about. \textit{(This exercise is just for reflection, no answer will be provided).}
 \end{frame}
 
 
@@ -31,41 +138,129 @@
       \item[(b)] What would happen if buyers cannot do so, and know that half of all used cars are lemons? Draw this as a dynamic game of incomplete information, where nature chooses the type of the car, the seller observes this and sets a price (any positive real number) and the buyer decides whether to buy or not.
       \item[(c)] Find a Perfect Bayesian Equilibrium of this model.
     \end{itemize}
+    \textit{"In US English, a lemon is a vehicle (often new) that turns out to have several manufacturing defects affecting its safety, value or utility."} (Source: \href{https://en.wikipedia.org/wiki/Lemon_(automobile)}{Wikipedia})
 \end{frame}
 
 \begin{frame}{PS8, Ex. 3.a (A): The 'Lemons' model (asymmetric information)}
     Consider the The 'Lemons' model of Akerlof. Suppose that used cars come in two types: high-quality “beauties” and low-quality “lemons”. Lemon-owners are willing to sell for \$800 but Beauty-owners will not sell for anything less than \$2000. Buyers will pay up to \$1200 for a lemon and up to \$2400 for a beauty.
     \begin{itemize}
       \item[(a)] Describe what would happen in the used-car market if buyers can distinguish between beauties and lemons.
-      \item[(b)] What would happen if buyers cannot do so, and know that half of all used cars are lemons? Draw this as a dynamic game of incomplete information, where nature chooses the type of the car, the seller observes this and sets a price (any positive real number) and the buyer decides whether to buy or not.
-      \item[(c)] Find a Perfect Bayesian Equilibrium of this model.
     \end{itemize}
-    \vspace{-8pt}
-    \begin{multicols}{2}
-      \vfill\null\columnbreak
-      \vfill\null
-    \end{multicols}
+    If buyers can distinguish between beauties and lemons they would be traded on two separate markets with prices within $[800,1200]$ and $[2000,2400]$ respectively.
 \end{frame}
 
 \begin{frame}{PS8, Ex. 3.b (A): The 'Lemons' model (asymmetric information)}
     Consider the The 'Lemons' model of Akerlof. Suppose that used cars come in two types: high-quality “beauties” and low-quality “lemons”. Lemon-owners are willing to sell for \$800 but Beauty-owners will not sell for anything less than \$2000. Buyers will pay up to \$1200 for a lemon and up to \$2400 for a beauty.
+    \vspace{-4pt}
     \begin{itemize}
       \item[(b)] What would happen if buyers cannot do so, and know that half of all used cars are lemons? Draw this as a dynamic game of incomplete information, where nature chooses the type of the car, the seller observes this and sets a price (any positive real number) and the buyer decides whether to buy or not.
     \end{itemize}
     \vspace{-8pt}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{3b.pdf_tex}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 3.c (A): The 'Lemons' model (asymmetric information)}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{3b.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[(c)] Find a Perfect Bayesian Equilibrium of this model.
+    \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c (A): The 'Lemons' model (asymmetric information)}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{3b.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[(c)] Find a Perfect Bayesian Equilibrium of this model.
+    \end{itemize}
+    \vspace{-12pt}
     \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] \textbf{Write up buyer's expectation to the car's value given her beliefs regarding \textit{p}}
+      \end{itemize}
       \vfill\null\columnbreak
       \vfill\null
     \end{multicols}
 \end{frame}
-
 \begin{frame}{PS8, Ex. 3.c (A): The 'Lemons' model (asymmetric information)}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{3b.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
     \begin{itemize}
       \item[(c)] Find a Perfect Bayesian Equilibrium of this model.
     \end{itemize}
-    \vspace{-8pt}
+    \vspace{-12pt}
     \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up buyer's expectation to the car's value given her beliefs regarding \textit{p}.
+      \end{itemize}
       \vfill\null\columnbreak
+      \begin{enumerate}
+        \item $E[V]=\frac{1}{2}1200+\frac{1}{2}2400=1800$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c (A): The 'Lemons' model (asymmetric information)}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{3b.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[(c)] Find a Perfect Bayesian Equilibrium of this model.
+    \end{itemize}
+    \vspace{-12pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up buyer's expectation to the car's value given her beliefs regarding \textit{p}.
+        \item[Step 2:] \textbf{As both the seller and the buyer know this expectation, what will the outcome be?}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item $E[V]=\frac{1}{2}1200+\frac{1}{2}2400=1800$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 3.c (A): The 'Lemons' model (asymmetric information)}
+    \begin{figure}[!h]
+      \center
+      \def\svgwidth{.8\columnwidth}
+      \import{figures/}{3b.pdf_tex}
+    \end{figure}
+    \vspace{-8pt}
+    \begin{itemize}
+      \item[(c)] Find a Perfect Bayesian Equilibrium of this model.
+    \end{itemize}
+    \vspace{-12pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Write up buyer's expectation to the car's value given her beliefs regarding \textit{p}.
+        \item[Step 2:] As both the seller and the buyer know this expectation, what will the outcome be?
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item $E[V]=\frac{1}{2}1200+\frac{1}{2}2400=1800$
+        \item The seller will not sell \textit{beauties} for a price below 2000. The buyer anticipates this, thus, there will only be a market for \textit{lemons} being sold for $price\in[800,1200]$ as 1200 is the highest amount that the buyer is willing to pay for a \textit{lemon}.
+      \end{enumerate}
       \vfill\null
     \end{multicols}
 \end{frame}
