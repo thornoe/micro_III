@@ -1881,41 +1881,6 @@
 \end{frame}
 
 
-\begin{frame}{PS8, Ex. 6: Extensive form game (Mixed-strategy PBE)}
-    Exercise 4.2 in Gibbons (p. 245). (i) Show that there does not exist a pure-strategy PBE in the following extensive-form game. (ii) What is the mixed-strategy PBE?
-    \vspace{-9pt}
-    \begin{multicols}{2}
-      \begin{itemize}
-        \item[(i)] Look at
-        \item[SPNE =] PSNE, due to no proper subgames.
-        \item[PBE:] $\bm{\left\{(R,M'),p\in\left[\frac{1}{3},\frac{2}{3}\right]\right\}}$
-      \end{itemize} \vspace{-6pt}
-      Given her beliefs, find P2's expected utility of $L'$, $M'$, and $R'$ respectively: \vspace{-6pt}
-      \begin{align*}
-        \mathbb{E}[u_2(L')|p]&=3p+0[1-p]=3p\\
-        \mathbb{E}[u_2(M')|p]&=2p+2[1-p]=2\\
-        \mathbb{E}[u_2(R')|p]&=0p+3[1-p]=3-3p
-      \end{align*}
-      P2 is indifferent at $p'$ and $p''$: \vspace{-6pt}
-      \begin{align*}
-        \mathbb{E}[u_2(M')]\text{=}\mathbb{E}[u_2(R')]&\Rightarrow 2\text{=3-3}p\Rightarrow p'\text{=}1/3\\
-        \mathbb{E}[u_2(L')]\text{=}\mathbb{E}[u_2(M')]&\Rightarrow 3p\text{=}2\Rightarrow p''\text{=}2/3
-      \end{align*} \vspace{-22pt}
-      \begin{align*}
-        p\leq1/3&\text{:}\ BR_1(R')=L\rightarrow\text{P2 deviates to }L'\\
-        p\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ BR_1(M')=R\rightarrow\text{no deviation}\\
-        p\geq2/3&\text{:}\ BR_1(L')=M\rightarrow\text{P2 deviates to }R'
-      \end{align*}
-      \vfill\null\columnbreak
-      \begin{figure}[!h]
-        \center \def\svgwidth{1.1\columnwidth}
-        \import{figures/}{Gibbons_4_2.pdf_tex}
-      \end{figure}
-      \includegraphics[width=1.1\columnwidth]{figures/Gibbons_4_2_E[u]}
-      \vfill\null
-    \end{multicols}
-\end{frame}
-
 
 
 \section{PS8, Ex. 7: Dissolving a partnership (Perfect Bayesian Equilibria)}
