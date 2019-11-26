@@ -1115,6 +1115,7 @@
     Exercise 4.1.b in Gibbons (p. 245). In the following extensive-form games, derive the normal-form game and find all the pure-strategy Nash, subgame-perfect, and perfect Bayesian equilibria.
     \vspace{-8pt}
     \begin{multicols}{2}
+      \vfill\null
       \textbf{Derive the normal-form game.}
       \vfill\null\columnbreak
       \begin{figure}[!h]
@@ -1240,7 +1241,8 @@
         \item[PSNE:] $\{(R,M')\}$
         \item[SPNE =] PSNE, due to no proper subgames.
         \item[PBE:]
-      \end{itemize}
+      \end{itemize} \vspace{-4pt}
+      \textbf{Given her beliefs, find P2's expected utility of $L'$, $M'$, and $R'$ respectively.}
       \vfill\null\columnbreak
       \begin{figure}[!h]
         \center \def\svgwidth{1.1\columnwidth}
@@ -1273,32 +1275,6 @@
         \item[SPNE =] PSNE, due to no proper subgames.
         \item[PBE:]
       \end{itemize} \vspace{-4pt}
-      \textbf{Given her beliefs, find P2's expected utility of $L'$, $M'$, and $R'$ respectively.}
-      \vfill\null\columnbreak
-      \begin{figure}[!h]
-        \center \def\svgwidth{1.1\columnwidth}
-        \import{figures/}{Gibbons_4_1_b.pdf_tex}
-      \end{figure}
-      \vfill\null
-    \end{multicols}
-\end{frame}
-\begin{frame}{PS8, Ex. 5.b: Extensive form games (Perfect Bayesian Equilibria)}
-    Exercise 4.1.b in Gibbons (p. 245). In the following extensive-form games, derive the normal-form game and find all the pure-strategy NE, SPNE, and PBE.
-    \vspace{-8pt}
-    \begin{multicols}{2}
-      \begin{table}
-        \begin{tabular}{l|c|c|c|}
-          \multicolumn{1}{c}{} & \multicolumn{1}{c}{L'} & \multicolumn{1}{c}{M'} & \multicolumn{1}{c}{R'} \\\cline{2-4}
-          L [p]   & 1, \color{blue}3 & 1, 2 & \textcolor{red}{4}, 0 \\\cline{2-4}
-          M [1-p] & \textcolor{red}{4}, 0 & 0, 2 & 3, \color{blue}3 \\\cline{2-4}
-          R       & 2, \color{blue}4 & \textcolor{red}{2}, \color{blue}4 & 2, \color{blue}4 \\\cline{2-4}
-        \end{tabular}
-      \end{table} \vspace{-4pt}
-      \begin{itemize}
-        \item[PSNE:] $\{(R,M')\}$
-        \item[SPNE =] PSNE, due to no proper subgames.
-        \item[PBE:]
-      \end{itemize} \vspace{-4pt}
       Given her beliefs, find P2's expected utility of $L'$, $M'$, and $R'$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_2(L')|p]&=3p+0[1-p]=3p\\
@@ -1309,7 +1285,14 @@
       \begin{figure}[!h]
         \center \def\svgwidth{1.1\columnwidth}
         \import{figures/}{Gibbons_4_1_b.pdf_tex}
-      \end{figure}
+      \end{figure} \vspace{-4pt}
+      Requirements for a PBE: \vspace{-4pt}
+      \begin{itemize}
+        \item[R2:] In each information set, players have beliefs about where they are.
+        \item[R2:] Sequential rationality: At each information set the action taken is optimal given the player's belief at the information set and the other player's subsequent strategies.
+        \item[R3:] Bayesian beliefs \textit{on} equilibrium path.
+        \item[R4:] Bayesian beliefs \textit{off} equilibrium path.
+      \end{itemize}
       \vfill\null
     \end{multicols}
 \end{frame}
@@ -1341,7 +1324,14 @@
       \begin{figure}[!h]
         \center \def\svgwidth{1.1\columnwidth}
         \import{figures/}{Gibbons_4_1_b.pdf_tex}
-      \end{figure}
+      \end{figure} \vspace{-4pt}
+      Requirements for a PBE: \vspace{-4pt}
+      \begin{itemize}
+        \item[R2:] In each information set, players have beliefs about where they are.
+        \item[R2:] Sequential rationality: At each information set the action taken is optimal given the player's belief at the information set and the other player's subsequent strategies.
+        \item[R3:] Bayesian beliefs \textit{on} equilibrium path.
+        \item[R4:] Bayesian beliefs \textit{off} equilibrium path.
+      \end{itemize}
       \vfill\null
     \end{multicols}
 \end{frame}
@@ -1668,8 +1658,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       \vfill\null\columnbreak
       \begin{figure}[!h]
@@ -1694,8 +1684,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       \textbf{Draw the expected utility of each choice as functions of \textit{q}.}
       \vfill\null\columnbreak
@@ -1721,8 +1711,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       \vfill\null\columnbreak
       \begin{figure}[!h]
@@ -1748,8 +1738,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       \textbf{Using the diagram and the expected utility functions, find the intersections $q'$ and $q''$.}
       \vfill\null\columnbreak
@@ -1776,8 +1766,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       P1 is indifferent at $q'$ and $q''$: \vspace{-6pt}
       \begin{align*}
@@ -1808,8 +1798,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       P1 is indifferent at $q'$ and $q''$: \vspace{-6pt}
       \begin{align*}
@@ -1840,8 +1830,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       P1 is indifferent at $q'$ and $q''$: \vspace{-6pt}
       \begin{align*}
@@ -1850,7 +1840,7 @@
       \end{align*} \vspace{-16pt}
       \begin{align*}
         q\leq1/3&\text{:}\ BR_2(M)\text{=}L'\rightarrow\text{P1 deviates to }L\\
-        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{P2 is indifferent}\\
+        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{does P2 mix?}\\
         q\geq2/3&\text{:}\ BR_2(L)\text{=}R'\rightarrow\text{P2 deviates to }M
       \end{align*}
       \textbf{Find the beliefs $p$ such that P2 is indifferent between $L'$ and $R'$.}
@@ -1877,8 +1867,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       P1 is indifferent at $q'$ and $q''$: \vspace{-6pt}
       \begin{align*}
@@ -1887,12 +1877,12 @@
       \end{align*} \vspace{-16pt}
       \begin{align*}
         q\leq1/3&\text{:}\ BR_2(M)\text{=}L'\rightarrow\text{P1 deviates to }L\\
-        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{P2 is indifferent}\\
+        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{does P2 mix?}\\
         q\geq2/3&\text{:}\ BR_2(L)\text{=}R'\rightarrow\text{P2 deviates to }M
       \end{align*}
       P2 is indifferent if she believes that: \vspace{-6pt}
       \begin{align*}
-        \mathbb{E}[u_2(L')]\text{=}\mathbb{E}[u_1(R')]&\Rightarrow \text{1-}p\text{=}p\Rightarrow p^*\text{=}1/2
+        \mathbb{E}[u_2(L')]\text{=}\mathbb{E}[u_1(R')]\Rightarrow \text{0}p\text{+1[1-}p\text{]=}\text{1}p\text{+0[1-}p\text{]}\Rightarrow \text{1-}p\text{=}p\Rightarrow p^*\text{=}1/2
       \end{align*}
       \vfill\null\columnbreak
       \begin{figure}[!h]
@@ -1917,8 +1907,8 @@
       Given his beliefs, find P1's expected utility of $L$, $M$, and $R$ respectively: \vspace{-4pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       P1 is indifferent at $q'$ and $q''$: \vspace{-6pt}
       \begin{align*}
@@ -1927,7 +1917,7 @@
       \end{align*} \vspace{-16pt}
       \begin{align*}
         q\leq1/3&\text{:}\ BR_2(M)\text{=}L'\rightarrow\text{P1 deviates to }L\\
-        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{P2 is indifferent}\\
+        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{does P2 mix?}\\
         q\geq2/3&\text{:}\ BR_2(L)\text{=}R'\rightarrow\text{P2 deviates to }M
       \end{align*}
       P2 is indifferent if she believes that: \vspace{-6pt}
@@ -1958,8 +1948,8 @@
       P1's expected utility of $L$, $M$, and $R$: \vspace{-6pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       P1 is indifferent at $q'$ and $q''$: \vspace{-6pt}
       \begin{align*}
@@ -1968,7 +1958,7 @@
       \end{align*} \vspace{-20pt}
       \begin{align*}
         q\leq1/3&\text{:}\ BR_2(M)\text{=}L'\rightarrow\text{P1 deviates to }L\\
-        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{P2 is indifferent}\\
+        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{does P2 mix?}\\
         q\geq2/3&\text{:}\ BR_2(L)\text{=}R'\rightarrow\text{P2 deviates to }M
       \end{align*}
       P2 is indifferent if she believes that: \vspace{-6pt}
@@ -2000,8 +1990,8 @@
       P1's expected utility of $L$, $M$, and $R$: \vspace{-8pt}
       \begin{align*}
         \mathbb{E}[u_1(L)|q]&=3q+0[1-q]=3q\\
-        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3p\\
-        \mathbb{E}[u_1(R)|q]&=2
+        \mathbb{E}[u_1(M)|q]&=0q+3[1-q]=3-3q\\
+        \mathbb{E}[u_1(R)]&=2
       \end{align*}
       P1 is indifferent at $q'$ and $q''$: \vspace{-8pt}
       \begin{align*}
@@ -2010,7 +2000,7 @@
       \end{align*} \vspace{-22pt}
       \begin{align*}
         q\leq1/3&\text{:}\ BR_2(M)\text{=}L'\rightarrow\text{P1 deviates to }L\\
-        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{P2 is indifferent}\\
+        q\text{$\in$}{\textstyle\left[\frac{1}{3},\frac{2}{3}\right]}&\text{:}\ \text{P1 plays }R\rightarrow\text{does P2 mix?}\\
         q\geq2/3&\text{:}\ BR_2(L)\text{=}R'\rightarrow\text{P2 deviates to }M
       \end{align*}
       P2 is indifferent if she believes that: \vspace{-8pt}
