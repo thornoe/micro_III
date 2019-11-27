@@ -1,6 +1,6 @@
-\section{The expected highest and second highest draw from a uniform distribution}
+\section{The expected highest and second-highest draw from a uniform distribution}
 
-\begin{frame}{The expected highest and second highest draw from a uniform distribution}
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
     To find \textit{seller's expected revenue} from a sealed bid auction (e.g. bidders simultaneously submit their bids in sealed envelopes without knowing the bids of others) with symmetric bidders with valuation drawn from a uniform distribution, there are two different approaches:
     \begin{enumerate}
       \item One approach is to derive each \textit{bidder's expected payment} as a function of her valuation and then integrate this expression using the PDF to get the \textit{ex-ante expected payment} of each bidder which can then be added together to find seller's expected revenue.
@@ -9,21 +9,8 @@
     Deriving the bid-function (best-response function) is a prerequisite for both approaches.
 \end{frame}
 
-\begin{frame}{The expected highest and second highest draw from a uniform distribution}
-    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution: $x\sim U(0, 1)$.\\\smallskip
-    The expected highest draw $Y_1$ and the expected second-highest draw $Y_2$ for all $N$ draws are: \vspace{-8pt}
-    \begin{multicols}{2}
-      \begin{align*}
-        \mathbb{E}[Y_1]&=\frac{N}{N+1},\ \text{ where }Y_1=max(X)\\
-        \mathbb{E}[Y_2]&=\frac{N-1}{N+1},\ \text{ where }Y_2=max(X\neq Y_1)
-      \end{align*}
-      \vfill\null\columnbreak
-      \vfill\null
-    \end{multicols}
-\end{frame}
-\begin{frame}{The expected highest and second highest draw from a uniform distribution}
-    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution: $x\sim U(0, 1)$.\\\smallskip
-    The expected highest draw $Y_1$ and the expected second-highest draw $Y_2$ for all $N$ draws are: \vspace{-8pt}
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textbf{\textit{standard} uniform distribution} $\bm{x\sim U(0, 1)}$. The highest draw $Y_1$ and the second-highest draw $Y_2$ of all $N$ draws are expected to be: \vspace{-8pt}
     \begin{multicols}{2}
       \begin{align*}
         \mathbb{E}[Y_1]&=\frac{N}{N+1},\ \text{ where }Y_1=max(X)\\
@@ -38,9 +25,8 @@
       \vfill\null
     \end{multicols}
 \end{frame}
-\begin{frame}{The expected highest and second highest draw from a uniform distribution}
-    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution: $x\sim U(0, 1)$.\\\smallskip
-    The expected highest draw $Y_1$ and the expected second-highest draw $Y_2$ for all $N$ draws are: \vspace{-10pt}
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution $x\sim U(0, 1)$. The highest draw $Y_1$ and the second-highest draw $Y_2$ of all $N$ draws are expected to be: \vspace{-10pt}
     \begin{multicols}{2}
       \begin{align*}
         \mathbb{E}[Y_1]&=\frac{N}{N+1},\ \text{ where }Y_1=max(X)\\
@@ -54,15 +40,14 @@
       \end{figure}
       \vfill\null
     \end{multicols} \vspace{-20pt}
-    Generalized, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from a uniform distribution: $x\sim U(a, b)$. The expected highest draw $Y_1$ and the expected second-highest draw $Y_2$ for all $N$ draws are:
+    \textbf{Generalized}, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from a uniform distribution $x\sim U(a, b)$. The highest draw $Y_1$ and the second-highest draw $Y_2$ of all $N$ draws are expected to be:
     \begin{align*}
       \mathbb{E}[Y_1]&=a+N\frac{b-a}{N+1},&&\text{where }Y_1=max(X)\\
       \mathbb{E}[Y_2]&=a+(N-1)\frac{b-a}{N+1},&&\text{where }Y_2=max(X\neq Y_1)
     \end{align*}
 \end{frame}
-\begin{frame}{The expected highest and second highest draw from a uniform distribution}
-    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution: $x\sim U(0, 1)$.\\\smallskip
-    The expected highest draw $Y_1$ and the expected second-highest draw $Y_2$ for all $N$ draws are: \vspace{-16pt}
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution $x\sim U(0, 1)$. The highest draw $Y_1$ and the second-highest draw $Y_2$ of all $N$ draws are expected to be: \vspace{-12pt}
     \begin{multicols}{2}
       \begin{align*}
         \mathbb{E}[Y_1]&=\frac{N}{N+1},\ \text{ where }Y_1=max(X)\\
@@ -76,21 +61,21 @@
       \end{figure}
       \vfill\null
     \end{multicols} \vspace{-24pt}
-    Generalized, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from a uniform distribution: $x\sim U(a, b)$. The expected highest draw $Y_1$ and the expected second-highest draw $Y_2$ for all $N$ draws are: \vspace{-4pt}
+    Generalized, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from a uniform distribution $x\sim U(a, b)$. The highest draw $Y_1$ and the second-highest draw $Y_2$ of all $N$ draws are expected to be: \vspace{-2pt}
     \begin{align*}
       \mathbb{E}[Y_1]&=a+N\frac{b-a}{N+1},&&\text{where }Y_1=max(X)\\
       \mathbb{E}[Y_2]&=a+(N-1)\frac{b-a}{N+1},&&\text{where }Y_2=max(X\neq Y_1)
     \end{align*}
-    E.g. for $N=1$, $\mathbb{E}[Y_1]$ simply collapses to the expression for the expected mean, $\mu$:\vspace{-4pt}
+    \textbf{E.g.} for $N=1$, $\mathbb{E}[Y_1]$ simply collapses to the expression for the expected mean, $\mu$:\vspace{-2pt}
     \begin{align*}
       \mathbb{E}[Y_1]=a+N\frac{b-a}{N+1}=a+1\frac{b-a}{1+1}=\frac{2a}{2}+\frac{b-a}{2}=\frac{a+b}{2}\equiv\mu
     \end{align*}
 \end{frame}
 
-\begin{frame}{The expected highest and second highest draw from a uniform distribution}
-    Applied to auctions, consider $N$ number of bidders where each bidder $i$ has the value $v_i$ that is independently drawn from the same uniform distribution $v_i\sim U(a,b)$.
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    \textbf{Applied to auctions:} Consider $N$ number of bidders where each bidder $i$ has the value $v_i$ that is independently drawn from the same uniform distribution $v_i\sim U(a,b)$.
     \begin{itemize}
-      \item[\nth{1} step:] The expected highest value $Y_1$ and the expected second-highest value $Y_2$ for all $N$ bidders are:
+      \item[\nth{1} step:] The highest value $Y_1$ and the second-highest value $Y_2$ for all $N$ bidders are expected to be:
     \end{itemize}
     \begin{align*}
       \mathbb{E}[Y_1]&=a+N\frac{b-a}{N+1},&&\text{ where }Y_1=max(V),\ V=v_1,v_2,...,v_N\\
@@ -99,6 +84,36 @@
     \begin{itemize}
       \item[\nth{2} step:] To calculate the seller's expected revenue, insert the expected highest value $\mathbb{E}[Y_1]$ (first-price sealed bid auction) or the expected second-highest value $\mathbb{E}[Y_2]$ (second-price sealed bid auction) in the derived bid-function.
     \end{itemize}
+    \vfill\null
+\end{frame}
+
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    \textbf{Proof:} [only for those interested] Let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from a uniform distribution $x\sim U(a, b)$. Denote the highest draw $Y_1=max(X)$. The cumulative distribution function (CDF) of $Y_1$ is: \vspace{-6pt}
+    \begin{align*}
+      G(x)&=\mathbb{P}[Y_1\leq x]\\
+          &=\mathbb{P}[x_1\leq x,x_1\leq x,...,x_N\leq x],&&\text{since $Y_1$ is the max of }X\\
+          &=\mathbb{P}[x_1\leq x]\times\mathbb{P}[x_1\leq x]\times...\times\mathbb{P}[x_N\leq x],&&\text{since draws are independent}\\
+          &=F(x)\times F(x)\times...\times F(x)=(F(x))^N,&&F(x)\text{ is the CDF of }x:F(x)=\frac{x-a}{b-a}\ (*)
+    \end{align*}
+    The first-derivative of the CDF gives the probability density function (PDF) of $Y_1$: \vspace{-6pt}
+    \begin{align*}
+      g(x)&=\frac{\delta G(x)}{\delta x}\\
+          &= F'(x)N(F(x))^{N-1}\\
+          &= f(x)N(F(x))^{N-1},&&f(x)\text{ is the PDF of }x:f(x)=\frac{1}{b-a}\ (**)
+    \end{align*}
+    The expectation to $Y_1$ is found by integrating $x$ times the PDF of $Y_1$, $g(x)$: \vspace{-6pt}
+    \begin{align*}
+      \mathbb{E}[Y_1]&=\textstyle\int_a^b x\cdot g(x)\ dx\\
+                     &=\textstyle\int_a^b x\cdot f(x)N(F(x))^{N-1}\ dx\\
+                     &=\textstyle\int_a^b x\cdot \frac{1}{b-a}N\left(\frac{x-a}{b-a}\right)^{N-1}\ dx,&&\text{ using }(**)\text{ and }(*)
+    \end{align*}
+    While the general solution isn't too obvious, the integral solves easily for $x\sim (0, 1)$: \vspace{-5pt}
+    \begin{align*}
+      \mathbb{E}[Y_1]&=\textstyle\int_0^1 x  \frac{1}{1-0}N\left(\frac{x-0}{1-0}\right)^{N-1} dx
+      =\textstyle\int_0^1 x N x^{N-1} dx
+      =\textstyle\int_0^1 N x^N dx
+      =\left[\frac{N}{N+1} x^{N+1}\right]_0^1 = \frac{N}{N+1}
+    \end{align*}
     \vfill\null
 \end{frame}
 
@@ -130,7 +145,7 @@
       \vfill\null
     \end{multicols}
     \vspace{-8pt}
-    \textit{[Consider a uniform distribution $x\sim U(a, b)$. Try to write up the probability density function (PDF), cumulative distribution function (CDF), and the expected highest value $Y_1$ and second-highest value $Y_2$ from N draws of x.]}
+    \textit{[Consider a uniform distribution $x\sim U(a, b)$. Try to write up the probability density function (PDF), cumulative distribution function (CDF), and the expectations to the highest value $Y_1$ and to the second-highest value $Y_2$ from N draws of x.]}
 \end{frame}
 \begin{frame}{PS8, Ex. 3: First- and second-price sealed bid auctions with two bidders}
     \begin{multicols}{2}
@@ -680,6 +695,7 @@
 \end{frame}
 
 
+
 \begin{frame}{PS8, Ex. 3.c: First- and second-price sealed bid auctions with two bidders}
     \begin{multicols}{2}
       \begin{itemize}
@@ -929,12 +945,12 @@
           0           & \text{if} & b_1<b_2
         \end{array}\right.
       \end{align*}
-      \vspace{-18pt}
+      \vspace{-20pt}
       \begin{itemize}
         \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
         \item[(iii)] Calculate the expected second-highest value $v_i$ for $N=2$ draws from the uniform distribution $v_i\sim U(1,3)$:
       \end{itemize}
-      \vspace{-16pt}
+      \vspace{-18pt}
       \begin{align*}
         \mathbb{E}[Y_2]&=a+(N-1)\frac{b-a}{N+1}\\
                        &=1+1\frac{3-1}{2+1}\\
@@ -1083,9 +1099,16 @@
     \vspace{-8pt}
     \begin{multicols}{2}
     \vfill\null\columnbreak
+    For $N$ draws from $x\sim U(a, b):$
+    \vspace{-6pt}
+    \begin{enumerate}
+      \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+    \end{enumerate}
+    \vspace{-6pt}
     BNE found:
     \begin{itemize}
       \item[(3.a)] $b_i^{*}(v_i)=\frac{1}{2}v_i+\frac{1}{2}$ for $i\in1,2,3$
+      \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
       \item[(4.a)] $b_i^{**}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
     \end{itemize}
     \vfill\null
@@ -1099,9 +1122,16 @@
     \begin{multicols}{2}
     Intuitively, \intuition{more bidders decreases the chance of winning, which should lead to less bid shading $\left(\frac{2}{3}>\frac{1}{2}\right)$ and therefore a \textit{higher} revenue for the seller.}
     \vfill\null\columnbreak
+    For $N$ draws from $x\sim U(a, b):$
+    \vspace{-6pt}
+    \begin{enumerate}
+      \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+    \end{enumerate}
+    \vspace{-6pt}
     BNE found:
     \begin{itemize}
       \item[(3.a)] $b_i^{*}(v_i)=\frac{1}{2}v_i+\frac{1}{2}$ for $i\in1,2,3$
+      \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
       \item[(4.a)] $b_i^{**}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
     \end{itemize}
     \vfill\null
@@ -1114,7 +1144,7 @@
     \vspace{-8pt}
     \begin{multicols}{2}
     Intuitively, \intuition{more bidders decreases the chance of winning, which should lead to less bid shading $\left(\frac{2}{3}>\frac{1}{2}\right)$ and therefore a \textit{higher} revenue for the seller.}\\\medskip
-    Analytically, \intuition{we can confirm this:}
+    Looking at the bid strategies, \intuition{we can confirm this, as each bidder submits higher bids with more opponents:}
     \begin{align*}
       b_i^{**}&>b_i^{*}\Leftrightarrow\\
       \frac{2}{3}v_i+\frac{1}{3}&>\frac{1}{2}v_i+\frac{1}{2}\Leftrightarrow\\
@@ -1123,9 +1153,48 @@
     \end{align*}
     \intuition{I.e. except for the rare case where all players have the valuation $v=1$, the seller's revenue  is strictly higher with three players than with two players.}
     \vfill\null\columnbreak
+    For $N$ draws from $x\sim U(a, b):$
+    \vspace{-6pt}
+    \begin{enumerate}
+      \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+    \end{enumerate}
+    \vspace{-6pt}
     BNE found:
     \begin{itemize}
       \item[(3.a)] $b_i^{*}(v_i)=\frac{1}{2}v_i+\frac{1}{2}$ for $i\in1,2,3$
+      \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
+      \item[(4.a)] $b_i^{**}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
+    \end{itemize}
+    \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS8, Ex. 4.b: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(b)] Do you expect seller to earn a higher or a lower revenue than in the previous auction? What is causing this effect?
+    \end{itemize}
+    \vspace{-8pt}
+    \begin{multicols}{2}
+    Intuitively, \intuition{more bidders decreases the chance of winning, which should lead to less bid shading $\left(\frac{2}{3}>\frac{1}{2}\right)$ and therefore a \textit{higher} revenue for the seller.}\\\smallskip
+    Looking at the bid strategies, \intuition{we can confirm this, as each bidder submits higher bids with more opponents:} \vspace{-2pt}
+    \begin{align*}
+      b_i^{**}&>b_i^{*}\Leftrightarrow\\
+      \frac{2}{3}v_i+\frac{1}{3}&>\frac{1}{2}v_i+\frac{1}{2}\Leftrightarrow\\
+      \frac{1}{6}v_i&>\frac{1}{6}\Leftrightarrow\\
+                 v_i&>1
+    \end{align*}
+    \intuition{I.e. except for the rare case where all players have the valuation $v=1$, the seller's revenue  is strictly higher with three players than with two players.}\\\smallskip
+    Furthermore, the expected highest value of $N$ draws \intuition{is increasing in $N$.}
+    \vfill\null\columnbreak
+    For $N$ draws from $x\sim U(a, b):$
+    \vspace{-6pt}
+    \begin{enumerate}
+      \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+    \end{enumerate}
+    \vspace{-6pt}
+    BNE found:
+    \begin{itemize}
+      \item[(3.a)] $b_i^{*}(v_i)=\frac{1}{2}v_i+\frac{1}{2}$ for $i\in1,2,3$
+      \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
       \item[(4.a)] $b_i^{**}(v_i)=\frac{2}{3}v_i+\frac{1}{3}$ for $i\in1,2,3$
     \end{itemize}
     \vfill\null
@@ -1140,12 +1209,18 @@
     \vspace{-8pt}
     \begin{multicols}{2}
       \vfill\null\columnbreak
+      For $N$ draws from $x\sim U(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+      \end{enumerate}
+      \vspace{-6pt}
       Results so far:
       \vspace{-6pt}
       \begin{itemize}
         \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
         \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
         \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
       \end{itemize}
       \vfill\null
@@ -1159,15 +1234,21 @@
     \vspace{-8pt}
     \begin{multicols}{2}
       \begin{itemize}
-        \item[\nth{1} step:] \textbf{Calculate the expected payment of bidder \textit{i} with valuation $v_i$.}
+        \item[\nth{1} step:] \textbf{Calculate the expected highest value $v_i$ for $N=3$ draws from the uniform distribution $v_i\sim U(1,3)$.}
       \end{itemize}
       \vfill\null\columnbreak
+      For $N$ draws from $x\sim U(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+      \end{enumerate}
+      \vspace{-6pt}
       Results so far:
       \vspace{-6pt}
       \begin{itemize}
         \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
         \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
         \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
       \end{itemize}
       \vfill\null
@@ -1181,123 +1262,80 @@
     \vspace{-8pt}
     \begin{multicols}{2}
       \begin{itemize}
-        \item[\nth{1} step:] \textbf{Calculate the expected payment of bidder \textit{i} with valuation $v_i$:}
+        \item[\nth{1} step:] Calculate the expected highest value $v_i$ for $N=3$ draws from the uniform distribution $v_i\sim U(1,3)$:
       \end{itemize}
-      \vspace{-14pt}
+      \vspace{-8pt}
       \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)
+        \mathbb{E}[Y_1]&=a+N\frac{b-a}{N+1}\\
+                       &=1+3\frac{3-1}{3+1}\\
+                       &=1+\frac{6}{4}=\frac{10}{4}=\frac{5}{2}
       \end{align*}
-      \vfill\null\columnbreak
-      Results so far:
-      \vspace{-6pt}
-      \begin{itemize}
-        \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
-        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
-        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-      \end{itemize}
-      \vfill\null
-    \end{multicols}
-    \vfill\null
-\end{frame}
-\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
-    \begin{itemize}
-      \item[(c)] (More difficult). Calculate the revenue to the seller.
-    \end{itemize}
-    \vspace{-8pt}
-    \begin{multicols}{2}
-      \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
-      \end{itemize}
-      \vspace{-4pt}
-      \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ using }(\dagger)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ using }(*)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ using }(4.a)\\
-                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
-      \end{align*}
-      \vfill\null\columnbreak
-      Results so far:
-      \vspace{-6pt}
-      \begin{itemize}
-        \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
-        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
-        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-      \end{itemize}
-      \vfill\null
-    \end{multicols}
-    \vfill\null
-\end{frame}
-\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
-    \begin{itemize}
-      \item[(c)] (More difficult). Calculate the revenue to the seller.
-    \end{itemize}
-    \vspace{-8pt}
-    \begin{multicols}{2}
-      \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
-      \end{itemize}
-      \vspace{-10pt}
-      \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ using }(\dagger)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ using }(*)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ using }(4.a)\\
-                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
-      \end{align*}
-      \vspace{-10pt}
-      \begin{itemize}
-        \item[\nth{2} step:] \textbf{Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.}
-      \end{itemize}
-      \vfill\null\columnbreak
-      Results so far:
-      \vspace{-6pt}
-      \begin{itemize}
-        \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
-        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
-        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-      \end{itemize}
-      \vfill\null
-    \end{multicols}
-    \vfill\null
-\end{frame}
-\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
-    \begin{itemize}
-      \item[(c)] (More difficult). Calculate the revenue to the seller.
-    \end{itemize}
-    \vspace{-8pt}
-    \begin{multicols}{2}
-      \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
-      \end{itemize}
-      \vspace{-10pt}
-      \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ using }(\dagger)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ using }(*)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ using }(4.a)\\
-                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
-      \end{align*}
-      \vspace{-10pt}
-      \begin{itemize}
-        \item[\nth{2} step:] \textbf{Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.}
-      \end{itemize}
-      \vfill\null\columnbreak
-      Results so far:
-      \vspace{-6pt}
-      \begin{itemize}
-        \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
-        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
-        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
-      \end{itemize}
       \vspace{-12pt}
+      \begin{itemize}
+        \item[\nth{2} step:] \textbf{Insert the expected highest value $\mathbb{E}[Y_1]$ in the bid-function $(*)$  to find the seller's expected revenue.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      For $N$ draws from $x\sim U(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+        \item[\nth{1}:] $\mathbb{E}[Y_1]=\frac{5}{2}$
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
+    \begin{itemize}
+      \item[(c)] (More difficult). Calculate the revenue to the seller.
+    \end{itemize}
+    \vspace{-10pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[\nth{1} step:] Calculate the expected highest value $v_i$ for $N=3$ draws from the uniform distribution $v_i\sim U(1,3)$:
+      \end{itemize}
+      \vspace{-8pt}
       \begin{align*}
-        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i
+        \mathbb{E}[Y_1]&=a+N\frac{b-a}{N+1}\\
+                       &=1+3\frac{3-1}{3+1}\\
+                       &=1+\frac{6}{4}=\frac{10}{4}=\frac{5}{2}
+      \end{align*}
+      \vspace{-12pt}
+      \begin{itemize}
+        \item[\nth{2} step:] Insert the expected highest value $\mathbb{E}[Y_1]$ in the bid-function $(*)$  to find the seller's expected revenue.
+        \item[\nth{3} step:] \textbf{Does this live up to your expectation in ex. (4.b)?}
+      \end{itemize}
+      \vfill\null\columnbreak
+      For $N$ draws from $x\sim U(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+      \end{enumerate}
+      \vspace{-6pt}
+      Results so far:
+      \vspace{-6pt}
+      \begin{itemize}
+        \item[($*$)] $b_i(v_i) = cv_i+d$
+        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
+        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
+        \item[\nth{1}:] $\mathbb{E}[Y_1]=\frac{5}{2}$
+        \item[\nth{2}:] The seller's expected revenue:
+      \end{itemize} \vspace{-12pt}
+      \begin{align*}
+        \mathbb{E}[revenue]&=b_i\left(\frac{5}{2}\right)\\
+                           &= c^*\frac{5}{2}+d^*\\
+                           &= \frac{2}{3}\cdot\frac{5}{2}+\frac{1}{3},&&\text{using (4.a)}\\
+                           &= \frac{5}{3}+\frac{1}{3}=\frac{6}{3}=2>\frac{5}{3}
       \end{align*}
       \vfill\null
     \end{multicols}
@@ -1307,242 +1345,48 @@
     \begin{itemize}
       \item[(c)] (More difficult). Calculate the revenue to the seller.
     \end{itemize}
-    \vspace{-8pt}
+    \vspace{-10pt}
     \begin{multicols}{2}
       \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+        \item[\nth{1} step:] Calculate the expected highest value $v_i$ for $N=3$ draws from the uniform distribution $v_i\sim U(1,3)$:
       \end{itemize}
-      \vspace{-10pt}
+      \vspace{-8pt}
       \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ using }(\dagger)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ using }(*)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ using }(4.a)\\
-                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
+        \mathbb{E}[Y_1]&=a+N\frac{b-a}{N+1}\\
+                       &=1+3\frac{3-1}{3+1}\\
+                       &=1+\frac{6}{4}=\frac{10}{4}=\frac{5}{2}
       \end{align*}
-      \vspace{-10pt}
+      \vspace{-12pt}
       \begin{itemize}
-        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
+        \item[\nth{2} step:] Insert the expected highest value $\mathbb{E}[Y_1]$ in the bid-function $(*)$  to find the seller's expected revenue.
+        \item[\nth{3} step:] Does this live up to your expectation in ex. (4.b)?
       \end{itemize}
-      \vspace{-4pt}
-      \textbf{Why is the ex-ante expected payment lower than in exercise 3.b?}
       \vfill\null\columnbreak
+      For $N$ draws from $x\sim U(a, b):$
+      \vspace{-6pt}
+      \begin{enumerate}
+        \item[$\mathbb{E}(Y_1)$] $=a$+$N\frac{b-a}{N+1}$, $Y_1=\max(X$=$x_1,..,x_N)$
+      \end{enumerate}
+      \vspace{-6pt}
       Results so far:
       \vspace{-6pt}
       \begin{itemize}
         \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
         \item[(3.a)] $c^*=d^*=\frac{1}{2}$
+        \item[(3.b)] $\mathbb{E}[revenue]=\frac{5}{3}$
         \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
-      \end{itemize}
-      \vspace{-12pt}
+        \item[\nth{1}:] $\mathbb{E}[Y_1]=\frac{5}{2}$
+        \item[\nth{2}:] The seller's expected revenue:
+      \end{itemize} \vspace{-12pt}
       \begin{align*}
-        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
-                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
-                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
-                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
-      \end{align*}
-      \vfill\null
-    \end{multicols}
-    \vfill\null
-\end{frame}
-\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
-    \begin{itemize}
-      \item[(c)] (More difficult). Calculate the revenue to the seller.
-    \end{itemize}
-    \vspace{-8pt}
-    \begin{multicols}{2}
+        \mathbb{E}[revenue]&=b_i\left(\frac{5}{2}\right)\\
+                           &= c^*\frac{5}{2}+d^*\\
+                           &= \frac{2}{3}\cdot\frac{5}{2}+\frac{1}{3},&&\text{using (4.a)}\\
+                           &= \frac{5}{3}+\frac{1}{3}=\frac{6}{3}=2>\frac{5}{3}
+      \end{align*}\vspace{-22pt}
       \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
+        \item[\nth{3}:] \intuition{The expected revenue is higher as more players increases competition and the expected highest valuation.}
       \end{itemize}
-      \vspace{-10pt}
-      \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ using }(\dagger)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ using }(*)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ using }(4.a)\\
-                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
-      \end{align*}
-      \vspace{-10pt}
-      \begin{itemize}
-        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
-      \end{itemize}
-      \vspace{-4pt}
-      \intuition{Though the bids are higher, the expected payment from each bidder is lower due to a lower probability of winning.}
-      \vfill\null\columnbreak
-      Results so far:
-      \vspace{-6pt}
-      \begin{itemize}
-        \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
-        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
-        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
-      \end{itemize}
-      \vspace{-12pt}
-      \begin{align*}
-        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
-                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
-                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
-                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
-      \end{align*}
-      \vfill\null
-    \end{multicols}
-    \vfill\null
-\end{frame}
-\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
-    \begin{itemize}
-      \item[(c)] (More difficult). Calculate the revenue to the seller.
-    \end{itemize}
-    \vspace{-8pt}
-    \begin{multicols}{2}
-      \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
-      \end{itemize}
-      \vspace{-10pt}
-      \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ using }(\dagger)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ using }(*)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ using }(4.a)\\
-                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
-      \end{align*}
-      \vspace{-10pt}
-      \begin{itemize}
-        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
-      \end{itemize}
-      \vspace{-4pt}
-      \intuition{Though the bids are higher, the expected payment from each bidder is lower due to a lower probability of winning.}
-      \vspace{-4pt}
-      \begin{itemize}
-        \item[\nth{3} step:] \textbf{Calculate the seller's revenue and compare to exercise (3.b).}
-      \end{itemize}
-      \vfill\null\columnbreak
-      Results so far:
-      \vspace{-6pt}
-      \begin{itemize}
-        \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
-        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
-        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
-      \end{itemize}
-      \vspace{-12pt}
-      \begin{align*}
-        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
-                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
-                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
-                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
-      \end{align*}
-      \vfill\null
-    \end{multicols}
-    \vfill\null
-\end{frame}
-\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
-    \begin{itemize}
-      \item[(c)] (More difficult). Calculate the revenue to the seller.
-    \end{itemize}
-    \vspace{-8pt}
-    \begin{multicols}{2}
-      \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
-      \end{itemize}
-      \vspace{-14pt}
-      \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ using }(\dagger)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ using }(*)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ using }(4.a)\\
-                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
-      \end{align*}
-      \vspace{-14pt}
-      \begin{itemize}
-        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
-      \end{itemize}
-      \vspace{-4pt}
-      \intuition{Though the bids are higher, the expected payment from each bidder is lower due to a lower probability of winning.}
-      \vspace{-4pt}
-      \begin{itemize}
-        \item[\nth{3} step:] Calculate the seller's revenue and compare to exercise (3.b).
-      \end{itemize}
-      \vfill\null\columnbreak
-      Results so far:
-      \vspace{-6pt}
-      \begin{itemize}
-        \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
-        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
-        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
-      \end{itemize}
-      \vspace{-12pt}
-      \begin{align*}
-        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
-                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
-                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
-                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
-      \end{align*}
-      \vspace{-16pt}
-      \begin{itemize}
-        \item[\nth{3}:] $Revenue=3\cdot\mathbb{E}[m_i(v_i)]=2>\frac{5}{3}$
-      \end{itemize}
-      \vspace{-6pt}
-      \textbf{Why is seller’s revenue higher than in exercise 3.b?}
-      \vfill\null
-    \end{multicols}
-    \vfill\null
-\end{frame}
-\begin{frame}{PS8, Ex. 4.c: First-price sealed bid auctions with three bidders}
-    \begin{itemize}
-      \item[(c)] (More difficult). Calculate the revenue to the seller.
-    \end{itemize}
-    \vspace{-8pt}
-    \begin{multicols}{2}
-      \begin{itemize}
-        \item[\nth{1} step:] Calculate the expected payment of bidder \textit{i} with valuation $v_i$:
-      \end{itemize}
-      \vspace{-14pt}
-      \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)b_i(v_i)\\
-                &=\left(\frac{b_i-d-c}{2c}\right)^2b_i(v_i),\text{ using }(\dagger)\\
-                &=\left(\frac{cv_i-c}{2c}\right)^2(cv_i+d),\text{ using }(*)\\
-                &=\left(\frac{v_i-1}{2}\right)^2\left(\frac{2}{3}v_i+\frac{1}{3}\right),\text{ using }(4.a)\\
-                &=\left(\frac{2v_i^3-3v_i^2+1}{12}\right)
-      \end{align*}
-      \vspace{-14pt}
-      \begin{itemize}
-        \item[\nth{2} step:] Find the ex-ante expected payment by integrating $m_i(v_i)$ using the PDF.
-      \end{itemize}
-      \vspace{-4pt}
-      \intuition{Though the bids are higher, the expected payment from each bidder is lower due to a lower probability of winning.}
-      \vspace{-4pt}
-      \begin{itemize}
-        \item[\nth{3} step:] Calculate the seller's revenue and compare to exercise (3.b).
-      \end{itemize}
-      \vfill\null\columnbreak
-      Results so far:
-      \vspace{-6pt}
-      \begin{itemize}
-        \item[($*$)] $b_i(v_i) = cv_i+d$
-        \item[($\dagger$)] $\mathbb{P}(i\ wins|v_i)=\left(\frac{b_i-d-c}{2c}\right)^2$ from (4.a)
-        \item[(3.a)] $c^*=d^*=\frac{1}{2}$
-        \item[(4.a)] $c^*=\frac{2}{3},\ d^*=\frac{1}{2}$
-        \item[\nth{2}:] Ex-ante payment of bidder \textit{i}:
-      \end{itemize}
-      \vspace{-12pt}
-      \begin{align*}
-        \mathbb{E}[m_i(v_i)]&=\textstyle\int_1^3m_i(v_i)f_i(v_i)dv_i\\
-                            &=\textstyle\int_1^3\left(\frac{2v_i^3-3v_i^2+1}{12}\right)\cdot\frac{1}{3-1}dv_i\\
-                            &=\frac{1}{24}\left[\frac{2}{4}v_i^4-\frac{3}{3}v_i^3+v_i\right]_1^3\\
-                            &=\frac{1}{24}\left(\frac{33}{2}-\frac{1}{2}\right)=\frac{2}{3}<\frac{5}{6}
-      \end{align*}
-      \vspace{-16pt}
-      \begin{itemize}
-        \item[\nth{3}:] $Revenue=3\cdot\mathbb{E}[m_i(v_i)]=2>\frac{5}{3}$
-      \end{itemize}
-      \vspace{-6pt}
-      \intuition{The seller can expect higher revenue as more players increases competition and the chance of one having high valuation.}
       \vfill\null
     \end{multicols}
     \vfill\null
