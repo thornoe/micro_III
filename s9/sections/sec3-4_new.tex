@@ -10,10 +10,6 @@
 \end{frame}
 
 \begin{frame}{The expected highest and second highest draw from a uniform distribution}
-    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution: $x\sim U(0, 1)$.
-    \vfill\null
-\end{frame}
-\begin{frame}{The expected highest and second highest draw from a uniform distribution}
     First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution: $x\sim U(0, 1)$.\\\smallskip
     The expected highest draw $Y_1$ and the expected second-highest draw $Y_2$ for all $N$ draws are: \vspace{-8pt}
     \begin{multicols}{2}
@@ -92,13 +88,17 @@
 \end{frame}
 
 \begin{frame}{The expected highest and second highest draw from a uniform distribution}
-    Applied to auctions, consider $N$ number of bidders where each bidder $i$ has the value $v_i$ that is independently drawn from the same uniform distribution $v_i\sim U(a,b)$.\\\medskip
-    Then the expected highest value $Y_1$ and the expected second-highest value $Y_2$ for all $N$ bidders are:
+    Applied to auctions, consider $N$ number of bidders where each bidder $i$ has the value $v_i$ that is independently drawn from the same uniform distribution $v_i\sim U(a,b)$.
+    \begin{itemize}
+      \item[\nth{1} step:] The expected highest value $Y_1$ and the expected second-highest value $Y_2$ for all $N$ bidders are:
+    \end{itemize}
     \begin{align*}
       \mathbb{E}[Y_1]&=a+N\frac{b-a}{N+1},&&\text{ where }Y_1=max(V),\ V=v_1,v_2,...,v_N\\
       \mathbb{E}[Y_2]&=a+(N-1)\frac{b-a}{N+1},&&\text{ where }Y_2=max(V\neq Y_1)
     \end{align*}
-    To calculate the seller's expected revenue, insert the expected highest value $\mathbb{E}[Y_1]$ (first-price sealed bid auction) or the expected second-highest value $\mathbb{E}[Y_2]$ (second-price sealed bid auction) in the derived bid-function.
+    \begin{itemize}
+      \item[\nth{2} step:] To calculate the seller's expected revenue, insert the expected highest value $\mathbb{E}[Y_1]$ (first-price sealed bid auction) or the expected second-highest value $\mathbb{E}[Y_2]$ (second-price sealed bid auction) in the derived bid-function.
+    \end{itemize}
     \vfill\null
 \end{frame}
 
@@ -787,7 +787,7 @@
         \begin{itemize}\normalsize
           \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
           \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
-          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).}
+          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium.} Compare to the answer in (b).
         \end{itemize}
       \end{itemize}
       For $N$ draws from $x\sim U(a, b):$
@@ -813,7 +813,6 @@
       \vspace{-18pt}
       \begin{itemize}
         \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
-        \item[(iii)] \textbf{Calculate player \textit{i}'s expected payment in the BNE.}
       \end{itemize}
       \vfill\null
     \end{multicols}
@@ -825,7 +824,7 @@
         \begin{itemize}\normalsize
           \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
           \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
-          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).}
+          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium.} Compare to the answer in (b).
         \end{itemize}
       \end{itemize}
       For $N$ draws from $x\sim U(a, b):$
@@ -851,12 +850,8 @@
       \vspace{-18pt}
       \begin{itemize}
         \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
-        \item[(iii)] \textbf{Calculate player \textit{i}'s expected payment in the BNE:}
+        \item[(iii)] \textbf{Calculate the expected second-highest value $v_i$ for $N=2$ draws from the uniform distribution $v_i\sim U(1,3)$.}
       \end{itemize}
-      \vspace{-12pt}
-      \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)\cdot\mathbb{E}[b_j^*(v_j)|b_j^*(v_j)<b_i^*(v_i)]
-      \end{align*}
       \vfill\null
     \end{multicols}
 \end{frame}
@@ -867,7 +862,7 @@
         \begin{itemize}\normalsize
           \item[i.]   Suppose player 2 bids his valuation: $b_2(v_2) = v_2$. Write down the expected payoffs to player 1 from bidding $b_1$.
           \item[ii.]  Using your previous answer, argue that there is a symmetric Bayesian Nash Equilibrium (BNE) in which both players bid their valuation.
-          \item[iii.] \textbf{Calculate the revenue to the seller from this equilibrium. Compare to the answer in (b).}
+          \item[iii.] Calculate the revenue to the seller from this equilibrium. \textbf{Compare to the answer in (b).}
         \end{itemize}
       \end{itemize}
       For $N$ draws from $x\sim U(a, b):$
@@ -893,14 +888,13 @@
       \vspace{-18pt}
       \begin{itemize}
         \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
-        \item[(iii)] Player \textit{i}'s expected payment in BNE:
+        \item[(iii)] Calculate the expected second-highest value $v_i$ for $N=2$ draws from the uniform distribution $v_i\sim U(1,3)$:
       \end{itemize}
-      \vspace{-12pt}
+      \vspace{-8pt}
       \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)\cdot\mathbb{E}[b_j^*(v_j)|b_j^*(v_j)<b_i^*(v_i)]\\
-                &=\mathbb{P}(v_i>v_j)\cdot\mathbb{E}[v_j|v_j<v_i]\\
-                &=\frac{v_i-1}{3-1}\cdot\frac{1+v_i}{2},\text{ using CDF and Mean}\\
-                &=\frac{v_i+v_i^2-1^2-v_i}{2^2}=\frac{v_i^2-1}{4}
+        \mathbb{E}[Y_2]&=a+(N-1)\frac{b-a}{N+1}\\
+                       &=1+1\frac{3-1}{2+1}\\
+                       &=1+\frac{2}{3}=\frac{5}{3}
       \end{align*}
       \vfill\null
     \end{multicols}
@@ -938,20 +932,18 @@
       \vspace{-18pt}
       \begin{itemize}
         \item[(ii)] There is no incentive to deviate from $BNE=(b_1^*,b_2^*)=\{(v_1,v_2)\}$.
-        \item[(iii)] Player \textit{i}'s expected payment in BNE:
+        \item[(iii)] Calculate the expected second-highest value $v_i$ for $N=2$ draws from the uniform distribution $v_i\sim U(1,3)$:
       \end{itemize}
-      \vspace{-12pt}
+      \vspace{-16pt}
       \begin{align*}
-        m_i(v_i)&=\mathbb{P}(i\ wins|v_i)\cdot\mathbb{E}[b_j^*(v_j)|b_j^*(v_j)<b_i^*(v_i)]\\
-                &=\mathbb{P}(v_i>v_j)\cdot\mathbb{E}[v_j|v_j<v_i]\\
-                &=\frac{v_i-1}{3-1}\cdot\frac{1+v_i}{2},\text{ using CDF and Mean}\\
-                &=\frac{v_i+v_i^2-1^2-v_i}{2^2}=\frac{v_i^2-1}{4}
+        \mathbb{E}[Y_2]&=a+(N-1)\frac{b-a}{N+1}\\
+                       &=1+1\frac{3-1}{2+1}\\
+                       &=1+\frac{2}{3}=\frac{5}{3}
       \end{align*}
-      As this is the same as in (3.b), we know:
+      Knowing from (ii) that each bidders bid their valuation:
       \vspace{-8pt}
-      \begin{align*}\vspace{-4pt}
-        \text{Ex-ante expected payment}&=\mathbb{E}[m_i(v_i)]=\frac{5}{6}\\
-        \text{Seller's revenue}&=2\cdot\mathbb{E}[m_i(v_i)]=\frac{5}{3}
+      \begin{align*}
+        \text{Seller's revenue}&=\mathbb{E}[Y_2]=\frac{5}{3}
       \end{align*}
       Thus, the outcome is the exact same as for the \textit{first-price sealed bid auction}.
       \vfill\null
