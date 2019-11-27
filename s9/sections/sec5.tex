@@ -1,0 +1,330 @@
+\section{PS8, Ex. 5: Winner's Curse}
+
+\begin{frame}{PS8, Ex. 5: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\medskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(a)] Are the bidders’ values private or common?
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+      \end{itemize}
+      \vfill\null
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 5.a: Winner's Curse}
+    Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\medskip
+    The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+    \begin{itemize}
+      \item[(a)] Are the bidders’ values private or common?
+    \end{itemize}
+    Though the reports investigating the values are private, the bidders' actual values are \textit{\textbf{common}} since they are identical, i.e. $v_1=v_2=v$.
+    \vfill\null
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 5.b: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\medskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[Step 1:] Write up Bayes' rule.
+      \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.b: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\medskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[Step 1:] Bayes' rule: $P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+      \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.b: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\medskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[Step 1:] Bayes' rule: $P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+        \item[Step 2:] Use Bayes' rule and the given probabilities to write up the probability that the value of the oil-field is high after having received the report $r_1=H$.
+      \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.b: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[Step 1:] Bayes' rule: $P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+        \item[Step 2:] The probability that the value of the oil-field is high given the report $r_1=H$:
+      \end{itemize}
+      \vspace{-12pt}
+      \begin{align*}
+        \mathbb{P}[H|r_1=H]
+        &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H]}
+        =\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}\\
+        &=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
+      \end{align*}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.b: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[Step 1:] Bayes' rule: $P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+        \item[Step 2:] The probability that the value of the oil-field is high given the report $r_1=H$:
+      \end{itemize}
+      \vspace{-8pt}
+      \begin{align*}
+        \mathbb{P}[H|r_1=H]
+        &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H]}
+        =\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}\\
+        &=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[Step 3:] Use $(\star)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$.
+      \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.b: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[Step 1:] Bayes' rule: $P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+        \item[Step 2:] The probability that the value of the oil-field is high given the report $r_1=H$:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
+        \end{align*}
+        \vspace{-10pt}
+        \begin{itemize}
+        \item[Step 3:] Use $(\star)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$:
+      \end{itemize}
+      \vspace{-6pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H]&=\mathbb{P}[H|r_1=H]v_H+\mathbb{P}[L|r_1=H]v_L
+      \end{align*}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.b: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \begin{itemize}
+        \item[(b)] Assume that company 1 receives a report of $H$. Given this report, what is the expected value of the oil field to this company?
+        \item[Step 1:] Bayes' rule: $P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+        \item[Step 2:] The probability that the value of the oil-field is high given the report $r_1=H$:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H]=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[L]}=\frac{p\frac{1}{2}}{p\frac{1}{2}+(1-p)\frac{1}{2}}=\frac{p\frac{1}{2}}{\frac{1}{2}}=p\quad (\star)
+        \end{align*}
+        \vspace{-10pt}
+        \begin{itemize}
+        \item[Step 3:] Use $(\star)$ to write up the expected value of the oil-field after receiving the report $r_1=H$ where the profits can be either high $v_H$ or low $v_L$:
+      \end{itemize}
+      \vspace{-6pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H]&=\mathbb{P}[H|r_1=H]v_H+\mathbb{P}[L|r_1=H]v_L\\
+        &=\mathbb{P}[H|r_1=H]v_H+\left(1-\mathbb{P}[H|r_1=H]\right)v_L,\text{ using }(\star)\\
+        &=pv_H+(1-p)v_L
+      \end{align*}
+      \vfill\null
+\end{frame}
+
+
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \vspace{-2pt}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \vspace{-2pt}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] Write up the probability that the value of the oil-field is $H$ given company 1 receives a report $r_1=H$ and wins the auction.
+        \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      Two companies want to acquire the drilling rights to a North Sea oil field. However, the companies are unsure about the value of these rights. They know the drilling rights have an identical value for both companies, and this value is either high $(H)$ or low $(L)$ with equal probability.\\\smallskip
+      The Danish government plans to hold an auction to sell off the rights, so each company sends a research team to the oil field to learn more about its value. The research team then sends a private report back to the company that sent it. Each report say the value is either $H$ or $L$, and is correct with probability $p$, where $\frac{1}{2} < p < 1$. The probability of a mistake is independent across the two reports.
+      \vspace{-2pt}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)
+        \end{align*}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+            \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L]}&\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-12pt}
+        \begin{align*}
+            \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L]}&\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-12pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction.
+      \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+            \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L]}&\\
+            &=\frac{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H\wedge r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H\wedge r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]}{\mathbb{P}[r_1=H|H]\times\mathbb{P}[r_2=L|H]\times\mathbb{P}[H]+\mathbb{P}[r_1=H|L]\times\mathbb{P}[r_2=L|L]\times\mathbb{P}[L]}&\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-8pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=L\wedge win]v_L
+      \end{align*}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-8pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=R\wedge win]v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L
+      \end{align*}
+      Now, insert $(\star\star)$ above and compare to the result in (3.b).
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-8pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=R\wedge win]v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L&&\text{insert }(\star\star)\\
+        &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ using (b)}}&&\text{since }p>\frac{1}{2}
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[Step 3:] Looking at the inequality above, explain the difference between (b) and (c).
+      \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-8pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-8pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+      \end{itemize}
+      \vspace{-4pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=R\wedge win]v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L&&\text{insert }(\star\star)\\
+        &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ using (b)}}&&\text{since }p>\frac{1}{2}
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[Step 3:] Looking at the inequality above, explain the difference between (b) and (c).
+        \item[]        \textit{In other words, why is company 1 less certain that the value is $H$ after they actually win the auction?}
+      \end{itemize}
+      \vfill\null
+\end{frame}
+\begin{frame}{PS8, Ex. 5.c: Winner's Curse}
+      \begin{itemize}
+        \item[(c)] Continue to assume that company 1 receives a report of $H$, and suppose that this company bids $b_H$ in the auction. Assume that company 2 will bid $b_L < b_H$ if its own report is $L$ and $b_H$ if it is $H$. Suppose that company 2 wins the auction if it places the higher bid and also in the case of a tie. Use Bayes’ to calculate the expected value of the oil field to company 1, conditional on it winning the auction. How does this value compare to your answer in (b)?
+        \item[Step 1:] The probability the value is $H$ given company 1 receives a report $r_1=H$ and wins:
+        \end{itemize}
+        \vspace{-10pt}
+        \begin{align*}
+          \mathbb{P}[H|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge r_2=L],\quad\quad\quad\quad(\text{company 1 only wins if }r_2=L)\\
+            &=\frac{p(1-p)\frac{1}{2}}{p(1-p)\frac{1}{2}+(1-p)p\frac{1}{2}}=\frac{p(1-p)}{2(p(1-p))}=\frac{1}{2}\quad\quad\quad\quad\quad\quad\quad(\star\star)
+        \end{align*}
+        \vspace{-12pt}
+        \begin{itemize}
+        \item[Step 2:] Use $(\star\star)$ to write up the expected value of the oil-field conditional on the report being $r_1=H$ and company 1 winning the auction:
+      \end{itemize}
+      \vspace{-8pt}
+      \begin{align*}
+        \mathbb{E}[v|r_1=H\wedge win]&=\mathbb{P}[H|r_1=H\wedge win]v_H+\mathbb{P}[L|r_1=R\wedge win]v_L\\
+        &=\mathbb{P}[H|r_1=H\wedge win]v_H+\left(1-\mathbb{P}[H|r_1=H\wedge win]\right)v_L&&\text{insert }(\star\star)\\
+        &=\frac{1}{2}v_H+\frac{1}{2}v_L<\underbrace{pv_H+(1-p)v_L}_{\textstyle\mathbb{E}[v|r_1=H],\text{ using (b)}}&&\text{since }p>\frac{1}{2}
+      \end{align*}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item[Step 3:] \intuition{This is an example of The Winner's Curse: The equally trustworthy reports of the two companies cancel each other out. Since the valuations of the auctioned object are correlated, you are likely to win the object when you overestimate the value.}
+      \end{itemize}
+      \vfill\null
+\end{frame}
