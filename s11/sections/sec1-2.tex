@@ -69,7 +69,7 @@
         \item Standard results for $x\sim U(a, b):$
         \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
         \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
-        \item $S_s(v_s,p)=\left\{\begin{array}{ll}
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
@@ -90,7 +90,7 @@
         \item Standard results for $x\sim U(a, b):$
         \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
         \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
-        \item $S_s(v_s,p)=\left\{\begin{array}{ll}
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
@@ -114,7 +114,7 @@
         \item Standard results for $x\sim U(a, b):$
         \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
         \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
-        \item $S_s(v_s,p)=\left\{\begin{array}{ll}
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
@@ -141,11 +141,11 @@
         \item Standard results for $x\sim U(a, b):$
         \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
         \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
-        \item $S_s(v_s,p)=\left\{\begin{array}{ll}
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item $\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
       \end{enumerate}
       \vfill\null
     \end{multicols}
@@ -165,18 +165,18 @@
         =\displaystyle{\max_p}&\ p\left(k\frac{0+p}{2}-p\right)&&\text{using }(\ddagger)
       \end{align*} \vspace{-8pt}
       \begin{itemize}
-        \item[Step 4:] \textbf{Maximize buyer's utility for $\bm{k>2}$.}
+        \item[Step 4:] \textbf{Take the first-order condition.}
       \end{itemize}
       \vfill\null\columnbreak
       \begin{enumerate}
         \item Standard results for $x\sim U(a, b):$
         \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
         \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
-        \item $S_s(v_s,p)=\left\{\begin{array}{ll}
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item $\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
       \end{enumerate}
       \vfill\null
     \end{multicols}
@@ -187,19 +187,168 @@
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] Write up the buyer's problem:
-        \item[Step 4:] Maximize buyer's utility for $k>2$:
+        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 4:] Take the first-order condition:
       \end{itemize} \vspace{-8pt}
+      \begin{align*}
+        \frac{\delta u_b(p,k)}{\delta p}&=0\\
+        2p\left(\frac{k}{2}-1\right)&=0\\
+        2p\frac{k}{2}&=2p\\
+        p\frac{k}{2}&=p
+      \end{align*}
       \vfill\null\columnbreak
       \begin{enumerate}
         \item Standard results for $x\sim U(a, b):$
         \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
         \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
-        \item $S_s(v_s,p)=\left\{\begin{array}{ll}
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item $\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item FOC: $p\frac{k}{2}=p$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 2 (A): Asymmetric information (PBE)}
+    Exercise 4.11 in Gibbons (p. 250). Difficult. A buyer and a seller have valuations $v_b$ and $v_s$. It is common knowledge that there are gains from trade (i.e., that $v_b > v_s$), but the size of the gains is private information, as follows: the seller’s valuation is uniformly distributed on [0,1]; the buyer’s valuation $v_b = kv_s$, where $k > 1$ is common knowledge; the seller knows $v_s$ (and hence $v_b$) but the buyer does not know $v_b$ (and hence $v_s$). Suppose the buyer makes a single offer, $p$, which the seller either accepts or rejects. What is the perfect Bayesian equilibrium when $k < 2$? When $k > 2$? (See Samuelson 1984.) \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
+        \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
+        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 4:] Take the first-order condition.
+        \item[Step 5:] \textbf{Maximize buyer's utility for $\bm{k<2}$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item Standard results for $x\sim U(a, b):$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
+          Sell  & \text{if }p\geq v_s \\
+          Don't & \text{if }p < v_s
+        \end{array}\right.$
+        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item FOC: $p\frac{k}{2}=p$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 2 (A): Asymmetric information (PBE)}
+    Exercise 4.11 in Gibbons (p. 250). Difficult. A buyer and a seller have valuations $v_b$ and $v_s$. It is common knowledge that there are gains from trade (i.e., that $v_b > v_s$), but the size of the gains is private information, as follows: the seller’s valuation is uniformly distributed on [0,1]; the buyer’s valuation $v_b = kv_s$, where $k > 1$ is common knowledge; the seller knows $v_s$ (and hence $v_b$) but the buyer does not know $v_b$ (and hence $v_s$). Suppose the buyer makes a single offer, $p$, which the seller either accepts or rejects. What is the perfect Bayesian equilibrium when $k < 2$? When $k > 2$? (See Samuelson 1984.) \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
+        \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
+        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 4:] Take the first-order condition.
+        \item[Step 5:] Maximize buyer's utility for $k<2$.
+        \item[Step 6:] \textbf{Maximize buyer's utility for $\bm{k>2}$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item Standard results for $x\sim U(a, b):$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
+          Sell  & \text{if }p\geq v_s \\
+          Don't & \text{if }p < v_s
+        \end{array}\right.$
+        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item FOC: $p\frac{k}{2}=p$
+        \item For $k\in(1,2): p\frac{k}{2}<p\Rightarrow p^*=0$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 2 (A): Asymmetric information (PBE)}
+    Exercise 4.11 in Gibbons (p. 250). Difficult. A buyer and a seller have valuations $v_b$ and $v_s$. It is common knowledge that there are gains from trade (i.e., that $v_b > v_s$), but the size of the gains is private information, as follows: the seller’s valuation is uniformly distributed on [0,1]; the buyer’s valuation $v_b = kv_s$, where $k > 1$ is common knowledge; the seller knows $v_s$ (and hence $v_b$) but the buyer does not know $v_b$ (and hence $v_s$). Suppose the buyer makes a single offer, $p$, which the seller either accepts or rejects. What is the perfect Bayesian equilibrium when $k < 2$? When $k > 2$? (See Samuelson 1984.) \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
+        \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
+        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 4:] Take the first-order condition.
+        \item[Step 5:] Maximize buyer's utility for $k<2$.
+        \item[Step 6:] Maximize buyer's utility for $k>2$.
+        \item[Step 7:] \textbf{Looking at the seller's strategy, will trade occur when $\bm{k>2}$?\\
+        What about $\bm{k\in(1,2)}$? Have we seen something similar before?}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item Standard results for $x\sim U(a, b):$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
+          Sell  & \text{if }p\geq v_s \\
+          Don't & \text{if }p < v_s
+        \end{array}\right.$
+        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item FOC: $p\frac{k}{2}=p$
+        \item For $k\in(1,2): p\frac{k}{2}<p\Rightarrow p^*=0$
+        \item For $k>2: p\frac{k}{2}>p\Rightarrow p^{**}=1$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 2 (A): Asymmetric information (PBE)}
+    Exercise 4.11 in Gibbons (p. 250). Difficult. A buyer and a seller have valuations $v_b$ and $v_s$. It is common knowledge that there are gains from trade (i.e., that $v_b > v_s$), but the size of the gains is private information, as follows: the seller’s valuation is uniformly distributed on [0,1]; the buyer’s valuation $v_b = kv_s$, where $k > 1$ is common knowledge; the seller knows $v_s$ (and hence $v_b$) but the buyer does not know $v_b$ (and hence $v_s$). Suppose the buyer makes a single offer, $p$, which the seller either accepts or rejects. What is the perfect Bayesian equilibrium when $k < 2$? When $k > 2$? (See Samuelson 1984.) \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
+        \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
+        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 4:] Take the first-order condition.
+        \item[Step 5:] Maximize buyer's utility for $k<2$.
+        \item[Step 6:] Maximize buyer's utility for $k>2$.
+        \item[Step 7:] $\bm{k>2}$: As $v_s\in[0,1]\leq1=p^{**}$, seller will always accept this price.\\
+        \textbf{What about $\bm{k\in(1,2)}$? Have we seen something similar before?}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item Standard results for $x\sim U(a, b):$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
+          Sell  & \text{if }p\geq v_s \\
+          Don't & \text{if }p < v_s
+        \end{array}\right.$
+        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item FOC: $p\frac{k}{2}=p$
+        \item For $k\in(1,2): p\frac{k}{2}<p\Rightarrow p^*=0$
+        \item For $k>2: p\frac{k}{2}>p\Rightarrow p^{**}=1$
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 2 (A): Asymmetric information (PBE)}
+    Exercise 4.11 in Gibbons (p. 250). Difficult. A buyer and a seller have valuations $v_b$ and $v_s$. It is common knowledge that there are gains from trade (i.e., that $v_b > v_s$), but the size of the gains is private information, as follows: the seller’s valuation is uniformly distributed on [0,1]; the buyer’s valuation $v_b = kv_s$, where $k > 1$ is common knowledge; the seller knows $v_s$ (and hence $v_b$) but the buyer does not know $v_b$ (and hence $v_s$). Suppose the buyer makes a single offer, $p$, which the seller either accepts or rejects. What is the perfect Bayesian equilibrium when $k < 2$? When $k > 2$? (See Samuelson 1984.) \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
+        \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
+        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 4:] Take the first-order condition.
+        \item[Step 5:] Maximize buyer's utility for $k<2$.
+        \item[Step 6:] Maximize buyer's utility for $k>2$.
+        \item[Step 7:] $\bm{k>2}$: As $v_s\in[0,1]\leq1=p^{**}$, seller will always accept this price.\\
+        $\bm{k\in(1,2)}$: Seller will not accept if $v_s>0$, though trade would benefit both under perfect information. Similar to Akerlof's \textit{'Lemons'}.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item Standard results for $x\sim U(a, b):$
+        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}\ \ (\dagger)$
+        \item[Mean:] $\mu=\frac{a+b}{2}\Rightarrow\mathbb{E}(x<c)=\frac{a+c}{2}\quad\quad\ (\ddagger)$
+        \item $S_s(p,v_s)=\left\{\begin{array}{ll}
+          Sell  & \text{if }p\geq v_s \\
+          Don't & \text{if }p < v_s
+        \end{array}\right.$
+        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item FOC: $p\frac{k}{2}=p$
+        \item For $k\in(1,2): p\frac{k}{2}<p\Rightarrow p^*=0$
+        \item For $k>2: p\frac{k}{2}>p\Rightarrow p^{**}=1$
       \end{enumerate}
       \vfill\null
     \end{multicols}
