@@ -12,11 +12,11 @@
         \item S: The sender realizes her type and sends a signal from $M=\{m_1,...\}$, typically either $L$ (left) or $R$ (right).
         \item R: The receiver observes $m$ (but not the type $t$!) and forms his beliefs:\vspace{-4pt}
         \begin{align*}
-          p=\mu(t_1|L)\text{ and }q=\mu(t_1|R)
+          \mu(t_1|L)=p\text{ and }\mu(t_1|R)=q
         \end{align*}
         \item[] \vspace{-4pt} Consequently, for $S$ having two possible types:\vspace{-4pt}
         \begin{align*}
-          1-p=\mu(t_2|L)\text{ and }1-q=\mu(t_2|R)
+          \mu(t_2|L)=1-p\text{ and }\mu(t_2|R)=1-q
         \end{align*}
         \item \vspace{-4pt} R: The receiver chooses an action from $A=\{a_1,...\}$, e.g. $up$ or $down$.
         \item Payoffs are realized.
@@ -40,7 +40,7 @@
       \textbf{Timing:}\vspace{-8pt}
       \begin{enumerate}
         \item Nature chooses the sender's type from $T=\{t_1,...\}$.
-        \item S: The sender realizes her type and sends a signal from $M=\{m_1,...\}$. Typically either $L$ (left) or $R$ (right).
+        \item S: The sender realizes her type and sends a signal from $M=\{m_1,...\}$, typically either $L$ (left) or $R$ (right).
         \item R: The receiver observes $m$ (but not the type $t$!) and forms his beliefs:\vspace{-5pt}
         \begin{align*}
           p=\mu(t_1|L)\text{ and }q=\mu(t_1|R)
@@ -76,7 +76,7 @@
       \textbf{Timing:}\vspace{-10pt}
       \begin{enumerate}
         \item Nature chooses the sender's type from $T=\{t_1,...\}$.
-        \item \vspace{-4pt} S: The sender realizes her type and sends a signal from $M=\{m_1,...\}$. Typically either $L$ (left) or $R$ (right).
+        \item \vspace{-4pt} S: The sender realizes her type and sends a signal from $M=\{m_1,...\}$, typically either $L$ (left) or $R$ (right).
         \item \vspace{-4pt} R: The receiver observes $m$ (but not the type $t$!) and forms his beliefs:\vspace{-8pt}
         \begin{align*}
           p=\mu(t_1|L)\text{ and }q=\mu(t_1|R)
@@ -101,10 +101,10 @@
       \end{figure} \vspace{-6pt}
       \textbf{Cookbook: For each possible equilibrium go over signaling requirements 3 and 2:}\vspace{-6pt}
       \begin{itemize}
-        \item[SR3:] R: Find the beliefs of R given S's equilibrium strategy. (In equilibrium, we only consider beliefs of R that are consistent with S's eq. strategy.)
-        \item[SR2R:] \vspace{-2pt} R: Find the R's optimal strategy given beliefs about S's strategy.
-        \item[SR2S:] \vspace{-2pt} S: Check whether S wants to deviate.
-        \item[PBE:] \vspace{-2pt} If no deviation, it's a PBE.
+        \item[SR3:] R: Find the beliefs $p,q$ given S's eq. strategy. (Only consider beliefs that are consistent with S's eq. strategy.)
+        \item[SR2R:] \vspace{-2pt} R: Given beliefs, find $a(m_j|\mu(t_1|m_j))$.
+        \item[SR2S:] \vspace{-2pt} S: Does $t_1$ or $t_2$ want to deviate?
+        \item[PBE:]  \vspace{-2pt} No deviation $\rightarrow$ PBE. Pooling on $L$: Find off-eq. $a(R|q)$ $\rightarrow$ possibly two different PBE for different $q$.
       \end{itemize}
       \vfill\null
     \end{multicols}
