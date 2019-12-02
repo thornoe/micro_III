@@ -1,0 +1,88 @@
+\input{sections/preample}
+
+\begin{document}
+
+
+\begin{frame}{PS11: Signaling games in general}
+    \begin{multicols}{2}
+      \textbf{Players:}\vspace{-10pt}
+      \begin{itemize}
+        \item 2 players: Sender (S) and receiver (R). E.g. firm and consumer, or employer and employee (Spence).
+      \end{itemize}\vspace{-8pt}
+      \textbf{Timing:}\vspace{-10pt}
+      \begin{enumerate}
+        \item Nature chooses the sender's type from $T=\{t_1,...\}$.
+        \item \vspace{-4pt} S: The sender realizes her type and sends a signal from $M=\{m_1,...\}$, typically either $L$ (left) or $R$ (right).
+        \item \vspace{-4pt} R: The receiver observes $m$ (but not the type $t$!) and forms his beliefs:\vspace{-8pt}
+        \begin{align*}
+          p=\mu(t_1|L)\text{ and }q=\mu(t_1|R)
+        \end{align*}
+        \item[] \vspace{-8pt} Consequently, for $S$ having two possible types:\vspace{-8pt}
+        \begin{align*}
+          1-p=\mu(t_2|L)\text{ and }1-q=\mu(t_2|R)
+        \end{align*}
+        \item \vspace{-8pt} R: The receiver chooses an action from $A=\{a_1,...\}$, e.g. $up$ or $down$.
+        \item \vspace{-4pt} Payoffs are realized.
+      \end{enumerate}\vspace{-8pt}
+      \textbf{Four possible equilibria for two types:}\vspace{-8pt}
+      \begin{itemize}
+        \item Pooling on $L$ or pooling on $R$.
+        \item \vspace{-4pt} Separating: $t_1$ plays $L$ and $t_2$ plays $R$ or the other way around.
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{\columnwidth}
+        \import{figures/}{figure1.pdf_tex}
+      \end{figure} \vspace{-6pt}
+      \textbf{Cookbook: For each possible equilibrium go over signaling requirements 3 and 2:}\vspace{-6pt}
+      \begin{itemize}
+        \item[SR3:] R: Find the beliefs $p,q$ given S's eq. strategy. (Only consider beliefs that are consistent with S's eq. strategy.)
+        \item[SR2R:] \vspace{-2pt} R: Given beliefs, find $a(m_j|\mu(t_1|m_j))$.
+        \item[SR2S:] \vspace{-2pt} S: Does $t_1$ or $t_2$ want to deviate?
+        \item[PBE:]  \vspace{-2pt} No deviation $\rightarrow$ PBE. Pooling on $L$: Find off-eq. $a(R|q)$ $\rightarrow$ possibly two different PBE for different $q$.
+      \end{itemize}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+
+
+\begin{frame}{PS11, Ex. 3.b: Notation (separating PBE)}
+    \begin{itemize}
+        \item[(b)] Consider a possible separating PBE where $t_1$ sends message $R$, $t_2$ sends message $L$, and where the receiver chooses $u$ if and only if he receives message $L$. Can you write down payoffs for this game such that nobody has an incentive to deviate?
+    \end{itemize} \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[SR3:] R: Find the beliefs of R given S's equilibrium strategy. (In equilibrium, we only consider beliefs of R that are consistent with S's eq. strategy.)
+        \item[SR2R:] R: Find R's optimal strategy given beliefs about S's strategy.
+        \item[SR2S:] S: Check whether S wants to deviate.
+        \item[PBE:]  Write up the conditions such that SR2R and SR2S hold (no incentive to deviate) for the following PBE:
+      \end{itemize}\vspace{-14pt}
+      \begin{align*}
+        \{(\underbrace{R}_{m(t_1)},\underbrace{L}_{m(t_2)}),(\underbrace{u}_{a(L)},\underbrace{d}_{a(R)}),\underbrace{p=0}_{\mu(t_1|L)},\underbrace{q=1}_{\mu(t_1|R)}\}
+      \end{align*}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{\columnwidth}
+        \import{figures/}{figure1b.pdf_tex}
+      \end{figure} \vspace{-8pt}
+      \begin{itemize}
+        \item[SR3:] In the separating PBE, R has beliefs:\vspace{-10pt}
+        \begin{align*}
+          \mu(t_1|L)&=p^*=0&\\
+          \mu(t_1|R)&=q^*=1
+        \end{align*}
+        \item[SR2R:] \vspace{-6pt}
+                     $\mathbb{E}[u_\text{R}(L,u|p$=$0)]\geq\mathbb{E}[u_\text{R}(L,d|p$=$0)]$\\
+                     $\mathbb{E}[u_\text{R}(R,d|q$=$1)]\geq \mathbb{E}[u_\text{R}(R,u|q$=$1)]$
+        \item[SR2S:] $u_\text{S}(R,d|t_1)\geq u_\text{S}(L,d|t_1)$\\
+                     $u_\text{S}(L,u|t_2)\geq u_\text{S}(R,u|t_2)$
+      \end{itemize}
+      \vfill\null \columnbreak
+      \vfill
+    \end{multicols}
+\end{frame}
+
+
+\end{document}
