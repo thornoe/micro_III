@@ -61,7 +61,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=2]{Gibbons_4_4_b.pdf}}%
     \put(-0.0036972,0.21939449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,3)\end{tabular}}}}%
     \put(-0.0036972,0.43213776){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
-    \put(-0.0036972,0.6326583){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,1)\end{tabular}}}}%
+    \put(-0.0036972,0.6326583){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,0)\end{tabular}}}}%
     \put(0.89719341,0.00841572){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,0)\end{tabular}}}}%
     \put(0.89719341,0.21939449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,2)\end{tabular}}}}%
     \put(0.89719341,0.43213776){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(4,1)\end{tabular}}}}%
