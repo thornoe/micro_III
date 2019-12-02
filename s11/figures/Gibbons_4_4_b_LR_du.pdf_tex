@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'Gibbons_4_4_b_LL.pdf' (pdf, eps, ps)
+%% Accompanies image file 'Gibbons_4_4_b_LR_du.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,12 +53,12 @@
   \begin{picture}(1,0.66444194)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{Gibbons_4_4_b_LL.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Gibbons_4_4_b_LR_du.pdf}}%
     \put(-1.28765952,-3.89855588){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{4.21250848\unitlength}\raggedright \end{minipage}}}%
     \put(0.50977464,0.42509876){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{1}{2}$\end{tabular}}}}%
     \put(2.7751153,-9.70822368){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.30589896\unitlength}\raggedright \end{minipage}}}%
     \put(-0.0036972,0.00841572){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,1)\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{Gibbons_4_4_b_LL.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Gibbons_4_4_b_LR_du.pdf}}%
     \put(-0.0036972,0.21939449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,3)\end{tabular}}}}%
     \put(-0.0036972,0.43213776){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
     \put(-0.0036972,0.6326583){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(3,0)\end{tabular}}}}%
@@ -81,7 +81,7 @@
     \put(0.78989836,0.43600482){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d$\end{tabular}}}}%
     \put(0.78989836,0.205682){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u$\end{tabular}}}}%
     \put(0.78989836,0.01385638){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{Gibbons_4_4_b_LL.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Gibbons_4_4_b_LR_du.pdf}}%
     \put(0.52756198,0.31938018){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Nature\end{tabular}}}}%
     \put(0.72124769,0.31874688){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}R\end{tabular}}}}%
     \put(0.30324241,0.31874688){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}R\end{tabular}}}}%
