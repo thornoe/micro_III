@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'Gibbons_4_3_b.pdf' (pdf, eps, ps)
+%% Accompanies image file 'Gibbons_4_3_b_LLL.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,7 +53,7 @@
   \begin{picture}(1,1.082777)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{Gibbons_4_3_b.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Gibbons_4_3_b_LLL.pdf}}%
     \put(-0.00369712,0.00841572){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
     \put(-0.00369712,0.21939449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
     \put(0.89719341,0.00841572){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,1)\end{tabular}}}}%
@@ -64,15 +64,15 @@
     \put(0.17586136,0.01385638){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d$\end{tabular}}}}%
     \put(0.78989836,0.205682){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u$\end{tabular}}}}%
     \put(0.78989836,0.01385638){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{Gibbons_4_3_b.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Gibbons_4_3_b_LLL.pdf}}%
     \put(0.55944496,0.16260692){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[1-$q_1$-$q_2$]\end{tabular}}}}%
     \put(0.2520447,0.1624685){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[1-$p_1$--$p_2$]\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{Gibbons_4_3_b.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Gibbons_4_3_b_LLL.pdf}}%
     \put(-1.28765952,-3.48022083){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{4.21250848\unitlength}\raggedright \end{minipage}}}%
     \put(0.48658192,0.88925079){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{1}{3}$\end{tabular}}}}%
     \put(2.7751153,-9.28988863){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.30589896\unitlength}\raggedright \end{minipage}}}%
     \put(-0.0036972,0.42675077){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{Gibbons_4_3_b.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Gibbons_4_3_b_LLL.pdf}}%
     \put(-0.0036972,0.63772954){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(2,1)\end{tabular}}}}%
     \put(-0.0036972,0.85047281){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,0)\end{tabular}}}}%
     \put(-0.0036972,1.05099336){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
@@ -94,7 +94,7 @@
     \put(0.78989836,0.85433988){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d$\end{tabular}}}}%
     \put(0.78989836,0.62401705){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u$\end{tabular}}}}%
     \put(0.78989836,0.43219144){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{Gibbons_4_3_b.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Gibbons_4_3_b_LLL.pdf}}%
     \put(0.72124769,0.73708193){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Receiver\end{tabular}}}}%
     \put(0.72124769,0.31874235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Receiver\end{tabular}}}}%
     \put(0.2625064,0.99929512){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[$p_1$]\end{tabular}}}}%

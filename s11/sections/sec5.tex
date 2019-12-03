@@ -40,7 +40,7 @@
         \item[SR2R:] R: Best response is to play $d$ as\\
           $\mathbb{E}[u_\text{R}(R,u|q$=$\frac{1}{2})]=1\frac{1}{2}+0\frac{1}{2}=\frac{1}{2}$\\
           $\mathbb{E}[u_\text{R}(R,d|q$=$\frac{1}{2})]=0\frac{1}{2}+2\frac{1}{2}=1$
-        \item[SR2S:] $t_1$ will never deviate as\vspace{-5pt}
+        \item[SR2S:] $t_1$ will not deviate as\vspace{-5pt}
         \begin{align*}
           u_\text{S}(R,d|t_1)=3&>1=u_\text{S}(L,u|t_1)\\
           u_\text{S}(R,d|t_1)=3&>2=u_\text{S}(L,d|t_1)
@@ -70,7 +70,7 @@
         \item[SR2R:] R: Best response is to play $d$ as\\
           $\mathbb{E}[u_\text{R}(R,u|q$=$\frac{1}{2})]=1\frac{1}{2}+0\frac{1}{2}=\frac{1}{2}$\\
           $\mathbb{E}[u_\text{R}(R,d|q$=$\frac{1}{2})]=0\frac{1}{2}+2\frac{1}{2}=1$
-        \item[SR2S:] $t_1$ will never deviate as\vspace{-5pt}
+        \item[SR2S:] $t_1$ will not deviate as\vspace{-5pt}
         \begin{align*}
           u_\text{S}(R,d|t_1)=3&>1=u_\text{S}(L,u|t_1)\\
           u_\text{S}(R,d|t_1)=3&>2=u_\text{S}(L,d|t_1)
@@ -107,14 +107,14 @@
         \item[SR2R:] R: Best response is to play $d$ as\\
           $\mathbb{E}[u_\text{R}(R,u|q$=$\frac{1}{2})]=1\frac{1}{2}+0\frac{1}{2}=\frac{1}{2}$\\
           $\mathbb{E}[u_\text{R}(R,d|q$=$\frac{1}{2})]=0\frac{1}{2}+2\frac{1}{2}=1$
-        \item[SR2S:] $t_1$ will never deviate as\vspace{-5pt}
+        \item[SR2S:] $t_1$ will not deviate as\vspace{-5pt}
         \begin{align*}
           u_\text{S}(R,d|t_1)=3&>1=u_\text{S}(L,u|t_1)\\
           u_\text{S}(R,d|t_1)=3&>2=u_\text{S}(L,d|t_1)
         \end{align*}\vspace{-14pt}
         \item[] $t_2$ will deviate if $a(L)=d$ (as 2$<$3) but not if $a(L)=u$ (as 2$>$0).
         \item[PBE:] Find the off-equilibrium beliefs \textit{p} for which R plays $a^*(L)=u$:
-      \end{itemize}\vspace{-8pt}
+      \end{itemize}
       \begin{align*}
         \mathbb{E}[u_\text{R}(L,u|p)]&\geq\mathbb{E}[u_\text{R}(L,d|p)]\\
         2p&\geq1-p\\
@@ -138,7 +138,7 @@
 \subsection{PS11, Ex. 5.b: Three-type signaling game (pooling PBE)}
 
 \begin{frame}{PS11, Ex. 5.b: Signaling games (pooling PBE)}
-    Exercise 4.3.b in Gibbons (p. 246). The following three-type signaling game begins with a move by nature, not shown in the tree, that yields one of the three types with equal probability Specify a pooling perfect Bayesian equilibria in which all three Sender types play $L$.\vspace{-8pt}
+    Exercise 4.3.b in Gibbons (p. 246). The following three-type signaling game begins with a move by nature, not shown in the tree, that yields one of the three types with equal probability. Specify a pooling perfect Bayesian equilibria in which all three Sender types play $L$.\vspace{-4pt}
     \begin{multicols}{2}
       \vfill\null\columnbreak
       \begin{figure}[!h]
@@ -147,4 +147,109 @@
       \end{figure}
       \vfill\null
     \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 5.b: Signaling games (pooling PBE)}
+    Exercise 4.3.b in Gibbons (p. 246). The following three-type signaling game begins with a move by nature, not shown in the tree, that yields one of the three types with equal probability. Specify a pooling PBE in which all three Sender types play $L$.\vspace{-4pt}
+    \begin{multicols}{2}
+      \textbf{For the pooling strategy (\textit{L,L,L}), go over SR3, SR2R, and SR2S.}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{Gibbons_4_3_b_LLL.pdf_tex}
+      \end{figure}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 5.b: Signaling games (pooling PBE)}
+    Exercise 4.3.b in Gibbons (p. 246). The following three-type signaling game begins with a move by nature, not shown in the tree, that yields one of the three types with equal probability. Specify a pooling PBE in which all three Sender types play $L$.\vspace{-8pt}
+    \begin{multicols}{2}
+      For the pooling strategy (\textit{L,L,L}), go over SR3, SR2R, and SR2S:\vspace{-4pt}
+      \begin{itemize}
+        \item[SR3:] R: Beliefs given S's eq. strategy:
+      \end{itemize}\vspace{-12pt}
+      \begin{align*}
+        &\mu(t_1|L)\equiv p_1=\frac{1}{3}=p_2\equiv \mu(t_2|L)\\
+        &\mu(t_1|R)=q_1\in[0,1]\\
+        &\mu(t_2|R)=q_1\in[0,1-q_1]
+      \end{align*}\vspace{-20pt}
+      \begin{itemize}
+        \item[SR2R:] R: Best response is to play $u|L$ as\\
+        $\mathbb{E}[u_\text{R}(L,u)]=1\frac{1}{3}+1\frac{1}{3}+1\frac{1}{3}=1$\\
+        $\mathbb{E}[u_\text{R}(L,d)]=0\frac{1}{3}+0\frac{1}{3}+0\frac{1}{3}=0$
+        \item[SR2S:] $t_1$ will never deviate as $L|t_1$ strictly dominates $R|t_1$.
+        \item[]      $t_2$ will not deviate (2$>$1, 2$>$1).
+        \item[]      $t_3$ will not deviate if R plays $a(R)$=u.
+        \item[PBE:] \textbf{Find the off-equilibrium beliefs $\bm{q_1,q_2}$ for which R plays $\bm{a^*(R)=u}$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{Gibbons_4_3_b_LLL_u.pdf_tex}
+      \end{figure}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 5.b: Signaling games (pooling PBE)}
+    Exercise 4.3.b in Gibbons (p. 246). Find a PBE in which all three Sender types play $L$.\\
+    For the pooling strategy (\textit{L,L,L}), go over SR3, SR2R, and SR2S:\vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[SR3:] R: Beliefs given S's eq. strategy:\\
+        $\mu(t_1|L)\equiv p_1=\frac{1}{3}=p_2\equiv \mu(t_2|L)$\\
+        $\mu(t_1|R)=q_1\in[0,1]$\\
+        $\mu(t_2|R)=q_1\in[0,1-q_1]$
+        \item[SR2R:] R: Best response is to play $u|L$ as\\
+        $\mathbb{E}[u_\text{R}(L,u)]=1\frac{1}{3}+1\frac{1}{3}+1\frac{1}{3}=1$\\
+        $\mathbb{E}[u_\text{R}(L,d)]=0\frac{1}{3}+0\frac{1}{3}+0\frac{1}{3}=0$
+        \item[SR2S:] $t_1$ will never deviate as $L|t_1$ strictly dominates $R|t_1$.\\
+                     $t_2$ will not deviate (2$>$1, 2$>$1).\\
+                     $t_3$ will not deviate if R plays $a(R)$=u.
+        \item[PBE:] Find the off-equilibrium beliefs $q_1,q_2$ for which R plays $a^*(R)=u$:
+      \end{itemize}\vspace{-10pt}
+      \begin{align*}
+        \mathbb{E}[u_\text{R}(R,u)]&\geq\mathbb{E}[u_\text{R}(R,d)]\\
+        1q_1+1q_2&\geq1(1-q_1-q_2)\\
+        2q_1+2q_2&\geq1\\
+        q_1+q_2&\geq\frac{1}{2}
+      \end{align*}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{Gibbons_4_3_b_LLL_uu.pdf_tex}
+      \end{figure}
+      \vfill\null
+    \end{multicols}\vspace{-24pt}
+    \textbf{Write up the PBE with pooling on \textit{L}}
+\end{frame}
+\begin{frame}{PS11, Ex. 5.b: Signaling games (pooling PBE)}
+    Exercise 4.3.b in Gibbons (p. 246). Find a PBE in which all three Sender types play $L$.\\
+    For the pooling strategy (\textit{L,L,L}), go over SR3, SR2R, and SR2S:\vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item[SR3:] R: Beliefs given S's eq. strategy:\\
+        $\mu(t_1|L)\equiv p_1=\frac{1}{3}=p_2\equiv \mu(t_2|L)$\\
+        $\mu(t_1|R)=q_1\in[0,1]$\\
+        $\mu(t_2|R)=q_1\in[0,1-q_1]$
+        \item[SR2R:] R: Best response is to play $u|L$ as\\
+        $\mathbb{E}[u_\text{R}(L,u)]=1\frac{1}{3}+1\frac{1}{3}+1\frac{1}{3}=1$\\
+        $\mathbb{E}[u_\text{R}(L,d)]=0\frac{1}{3}+0\frac{1}{3}+0\frac{1}{3}=0$
+        \item[SR2S:] $t_1$ will never deviate as $L|t_1$ strictly dominates $R|t_1$.\\
+                     $t_2$ will not deviate (2$>$1, 2$>$1).\\
+                     $t_3$ will not deviate if R plays $a(R)$=u.
+        \item[PBE:] Find the off-equilibrium beliefs $q_1,q_2$ for which R plays $a^*(R)=u$:
+      \end{itemize}\vspace{-10pt}
+      \begin{align*}
+        \mathbb{E}[u_\text{R}(R,u)]&\geq\mathbb{E}[u_\text{R}(R,d)]\\
+        1q_1+1q_2&\geq1(1-q_1-q_2)\\
+        2q_1+2q_2&\geq1\\
+        q_1+q_2&\geq\frac{1}{2}
+      \end{align*}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{Gibbons_4_3_b_LLL_uu.pdf_tex}
+      \end{figure}
+      \vfill\null
+    \end{multicols}\vspace{-24pt}
+    Write up the PBE with pooling on \textit{L}: $\left\{(L,L,L),(u,u),p_1=p_2=\frac{1}{3},q_1+q_2\geq\frac{1}{2}\right\}$
 \end{frame}
