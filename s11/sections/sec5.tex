@@ -1,5 +1,8 @@
 \section{PS11, Ex. 5: Signaling games (pooling PBE)}
 
+
+\subsection{PS11, Ex. 5.a: Signaling game (pooling PBE)}
+
 \begin{frame}{PS11, Ex. 5.a: Signaling games (pooling PBE)}
     Exercise 4.3.a in Gibbons (p. 246). Specify a pooling perfect Bayesian equilibria in which both Sender types play $R$ in the following signaling game.\vspace{-8pt}
     \begin{multicols}{2}
@@ -11,7 +14,128 @@
       \vfill\null
     \end{multicols}
 \end{frame}
+\begin{frame}{PS11, Ex. 5.a: Signaling games (pooling PBE)}
+    Exercise 4.3.a in Gibbons (p. 246). Specify a pooling perfect Bayesian equilibria in which both Sender types play $R$ in the following signaling game.\vspace{-8pt}
+    \begin{multicols}{2}
+      \textbf{For the pooling strategy (\textit{R,R}), go over SR3, SR2R, and SR2S.}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{Gibbons_4_3_a_RR.pdf_tex}
+      \end{figure}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 5.a: Signaling games (pooling PBE)}
+    Exercise 4.3.a in Gibbons (p. 246). Specify a pooling perfect Bayesian equilibria in which both Sender types play $R$ in the following signaling game.\vspace{-8pt}
+    \begin{multicols}{2}
+      For the pooling strategy (\textit{R,R}), go over SR3, SR2R, and SR2S:\vspace{-4pt}
+      \begin{itemize}
+        \item[SR3:] R: Beliefs given S's eq. strategy:
+      \end{itemize}\vspace{-10pt}
+      \begin{align*}
+        \mu(t_1|L)=p\in[0,1]\text{ and }\mu(t_1|R)=q=\frac{1}{2}
+      \end{align*}\vspace{-18pt}
+      \begin{itemize}
+        \item[SR2R:] R: Best response is to play $d$ as\\
+          $\mathbb{E}[u_\text{R}(R,u|q$=$\frac{1}{2})]=1\frac{1}{2}+0\frac{1}{2}=\frac{1}{2}$\\
+          $\mathbb{E}[u_\text{R}(R,d|q$=$\frac{1}{2})]=0\frac{1}{2}+2\frac{1}{2}=1$
+        \item[SR2S:] $t_1$ will never deviate as\vspace{-5pt}
+        \begin{align*}
+          u_\text{S}(R,d|t_1)=3&>1=u_\text{S}(L,u|t_1)\\
+          u_\text{S}(R,d|t_1)=3&>2=u_\text{S}(L,d|t_1)
+        \end{align*}\vspace{-14pt}
+        \item[] $t_2$ will deviate if $a(L)=d$ (as 2$<$3) but not if $a(L)=u$ (as 2$>$0).
+        \item[PBE:] \textbf{Find the off-equilibrium beliefs \textit{p} for which R plays $\bm{a^*(L)=u}$.}
+      \end{itemize}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{Gibbons_4_3_a_RR_d.pdf_tex}
+      \end{figure}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 5.a: Signaling games (pooling PBE)}
+    Exercise 4.3.a in Gibbons (p. 246). Specify a pooling perfect Bayesian equilibria in which both Sender types play $R$ in the following signaling game.\vspace{-8pt}
+    \begin{multicols}{2}
+      For the pooling strategy (\textit{R,R}), go over SR3, SR2R, and SR2S:\vspace{-4pt}
+      \begin{itemize}
+        \item[SR3:] R: Beliefs given S's eq. strategy:
+      \end{itemize}\vspace{-10pt}
+      \begin{align*}
+        \mu(t_1|L)=p\in[0,1]\text{ and }\mu(t_1|R)=q=\frac{1}{2}
+      \end{align*}\vspace{-18pt}
+      \begin{itemize}
+        \item[SR2R:] R: Best response is to play $d$ as\\
+          $\mathbb{E}[u_\text{R}(R,u|q$=$\frac{1}{2})]=1\frac{1}{2}+0\frac{1}{2}=\frac{1}{2}$\\
+          $\mathbb{E}[u_\text{R}(R,d|q$=$\frac{1}{2})]=0\frac{1}{2}+2\frac{1}{2}=1$
+        \item[SR2S:] $t_1$ will never deviate as\vspace{-5pt}
+        \begin{align*}
+          u_\text{S}(R,d|t_1)=3&>1=u_\text{S}(L,u|t_1)\\
+          u_\text{S}(R,d|t_1)=3&>2=u_\text{S}(L,d|t_1)
+        \end{align*}\vspace{-14pt}
+        \item[] $t_2$ will deviate if $a(L)=d$ (as 2$<$3) but not if $a(L)=u$ (as 2$>$0).
+        \item[PBE:] Find the off-equilibrium beliefs \textit{p} for which R plays $a^*(L)=u$:
+      \end{itemize}\vspace{-8pt}
+      \begin{align*}
+        \mathbb{E}[u_\text{R}(L,u|p)]&\geq\mathbb{E}[u_\text{R}(L,d|p)]\\
+        2p&\geq1-p\\
+        3p&\geq1\\
+        p&\geq\frac{1}{3}
+      \end{align*}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{Gibbons_4_3_a_RR_ud.pdf_tex}
+      \end{figure}
+      \textbf{Write up the PBE.}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS11, Ex. 5.a: Signaling games (pooling PBE)}
+    Exercise 4.3.a in Gibbons (p. 246). Specify a pooling perfect Bayesian equilibria in which both Sender types play $R$ in the following signaling game.\vspace{-8pt}
+    \begin{multicols}{2}
+      For the pooling strategy (\textit{R,R}), go over SR3, SR2R, and SR2S:\vspace{-4pt}
+      \begin{itemize}
+        \item[SR3:] R: Beliefs given S's eq. strategy:
+      \end{itemize}\vspace{-10pt}
+      \begin{align*}
+        \mu(t_1|L)=p\in[0,1]\text{ and }\mu(t_1|R)=q=\frac{1}{2}
+      \end{align*}\vspace{-18pt}
+      \begin{itemize}
+        \item[SR2R:] R: Best response is to play $d$ as\\
+          $\mathbb{E}[u_\text{R}(R,u|q$=$\frac{1}{2})]=1\frac{1}{2}+0\frac{1}{2}=\frac{1}{2}$\\
+          $\mathbb{E}[u_\text{R}(R,d|q$=$\frac{1}{2})]=0\frac{1}{2}+2\frac{1}{2}=1$
+        \item[SR2S:] $t_1$ will never deviate as\vspace{-5pt}
+        \begin{align*}
+          u_\text{S}(R,d|t_1)=3&>1=u_\text{S}(L,u|t_1)\\
+          u_\text{S}(R,d|t_1)=3&>2=u_\text{S}(L,d|t_1)
+        \end{align*}\vspace{-14pt}
+        \item[] $t_2$ will deviate if $a(L)=d$ (as 2$<$3) but not if $a(L)=u$ (as 2$>$0).
+        \item[PBE:] Find the off-equilibrium beliefs \textit{p} for which R plays $a^*(L)=u$:
+      \end{itemize}\vspace{-8pt}
+      \begin{align*}
+        \mathbb{E}[u_\text{R}(L,u|p)]&\geq\mathbb{E}[u_\text{R}(L,d|p)]\\
+        2p&\geq1-p\\
+        3p&\geq1\\
+        p&\geq\frac{1}{3}
+      \end{align*}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{Gibbons_4_3_a_RR_ud.pdf_tex}
+      \end{figure}
+      Write up the PBE:\vspace{-4pt}
+      \begin{align*}
+        \left\{(R,R),(u,d),p\geq\frac{1}{3},q=\frac{1}{2}\right\}
+      \end{align*}
+      \vfill\null
+    \end{multicols}
+\end{frame}
 
+
+\subsection{PS11, Ex. 5.b: Three-type signaling game (pooling PBE)}
 
 \begin{frame}{PS11, Ex. 5.b: Signaling games (pooling PBE)}
     Exercise 4.3.b in Gibbons (p. 246). The following three-type signaling game begins with a move by nature, not shown in the tree, that yields one of the three types with equal probability Specify a pooling perfect Bayesian equilibria in which all three Sender types play $L$.\vspace{-8pt}
