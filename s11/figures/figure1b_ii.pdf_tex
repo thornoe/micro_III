@@ -60,10 +60,10 @@
     \put(-0.0036972,0.00841572){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{figure1b_ii.pdf}}%
     \put(-0.0036972,0.21939449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
-    \put(-0.0036972,0.43213776){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,9)\end{tabular}}}}%
-    \put(-0.0036972,0.6326583){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(9,0)\end{tabular}}}}%
-    \put(0.89719341,0.00841572){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(9,0)\end{tabular}}}}%
-    \put(0.89719341,0.21939449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,9)\end{tabular}}}}%
+    \put(-0.0036972,0.43213776){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(9,0)\end{tabular}}}}%
+    \put(-0.0036972,0.6326583){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,9)\end{tabular}}}}%
+    \put(0.89719341,0.00841572){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,9)\end{tabular}}}}%
+    \put(0.89719341,0.21939449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(9,0)\end{tabular}}}}%
     \put(0.89719341,0.43213776){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(1,1)\end{tabular}}}}%
     \put(0.89719341,0.6326583){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(0,0)\end{tabular}}}}%
     \put(0.48658192,0.58095524){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$t_1$\end{tabular}}}}%

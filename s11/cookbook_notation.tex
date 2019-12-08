@@ -56,17 +56,18 @@
         \item[SR3:] R: Find the beliefs of R given S's equilibrium strategy. (In equilibrium, we only consider beliefs of R that are consistent with S's eq. strategy.)
         \item[SR2R:] R: Find R's optimal strategy given beliefs about S's strategy.
         \item[SR2S:] S: Check whether S wants to deviate.
-        \item[PBE:]  Write up the conditions such that SR2R and SR2S hold (no incentive to deviate) for the following PBE:
+        \item[PBE:]  Write up the conditions such that SR2R and SR2S hold (no incentive to deviate) for the following \textbf{PBE}:
       \end{itemize}\vspace{-14pt}
       \begin{align*}
         \{(\underbrace{R}_{m(t_1)},\underbrace{L}_{m(t_2)}),(\underbrace{u}_{a(L)},\underbrace{d}_{a(R)}),\underbrace{p=0}_{\mu(t_1|L)},\underbrace{q=1}_{\mu(t_1|R)}\}
       \end{align*}
+      Note: For the sender's strategy, we always write the message of $t_1$ first and $t_2$ second. Whereas for the receiver's strategy, we always write the action in response to $L$ first and to $R$ second.
       \vfill\null\columnbreak
       \begin{figure}[!h]
         \center
         \def\svgwidth{\columnwidth}
         \import{figures/}{figure1b.pdf_tex}
-      \end{figure} \vspace{-8pt}
+      \end{figure} \vspace{-9pt}
       \begin{itemize}
         \item[SR3:] In the separating PBE, R has beliefs:\vspace{-10pt}
         \begin{align*}
@@ -76,8 +77,8 @@
         \item[SR2R:] \vspace{-6pt}
                      $\mathbb{E}[u_\text{R}(L,u|p$=$0)]\geq\mathbb{E}[u_\text{R}(L,d|p$=$0)]$\\
                      $\mathbb{E}[u_\text{R}(R,d|q$=$1)]\geq \mathbb{E}[u_\text{R}(R,u|q$=$1)]$
-        \item[SR2S:] $u_\text{S}(R,d|t_1)\geq u_\text{S}(L,d|t_1)$\\
-                     $u_\text{S}(L,u|t_2)\geq u_\text{S}(R,u|t_2)$
+        \item[SR2S:] \vspace{-1pt}$u_\text{S}(R,d|t_1)\geq u_\text{S}(L,a(L)|t_1)$\\
+                     $u_\text{S}(L,u|t_2)\geq u_\text{S}(R,a(R)|t_2)$
       \end{itemize}
       \vfill\null \columnbreak
       \vfill

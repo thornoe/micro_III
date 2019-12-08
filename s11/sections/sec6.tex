@@ -28,7 +28,7 @@
 \end{frame}
 \begin{frame}{PS11, Ex. 6: Spence’s education signaling model (PBE)}
     Consider the following version of Spence’s education signaling model, where a firm is hiring a worker. Workers are characterized by their type $\theta$, which measures their ability. There are two worker types: $\theta\in\{\theta_L,\theta_H\}$. Nature chooses the worker’s type, with $p_H=\mathbb{P}[\theta=\theta_H]$ and $p_H=\mathbb{P}[\theta=\theta_H]=1-p_H$.\\\vspace{2pt}
-    The worker observes his own type, but the firm does not. The worker can choose his level of education: $e\in\mathbb{R}^{+}$. The cost to him of acquiring this education is $c_\theta(e)=e/\theta$. Education is observed by the firm, who then forms beliefs about the workers type: $\mu(\theta|e)$. We assume that the marginal productivity of a worker is equal to his ability and that the company is in competition such it pays the marginal productivity: $w(e)=\mathbb{E}[\theta|e]$. Thus, the payoff to a worker conditional on his type and education is $u_\theta(e)=w(e)-c_\theta(e)$. Suppose for this exercise that $\theta_H=3$ and $\theta_L=1$.\vspace{-6pt}
+    The worker observes his own type, but the firm does not. The worker can choose his level of education: $e\in\mathbb{R}^{+}$. The cost to him of acquiring this education is $c_\theta(e)=e/\theta$. Education is observed by the firm, who then forms beliefs about the workers type: $\mu(\theta|e)$. We assume that the marginal productivity of a worker is equal to his ability and that the company is in competition such it pays the marginal productivity: $w(e)=\mathbb{E}[\theta|e]$. Thus, the payoff to a worker conditional on his type and education is $u_\theta(e)=w(e)-c_\theta(e)$. Suppose for this exercise that $\theta_H=3$ and $\theta_L=1$.\vspace{-8pt}
     \begin{multicols}{2}
       \begin{itemize}
         \item[(a)] Find a separating pure strategy PBE.
@@ -77,12 +77,12 @@
       \begin{itemize}
         \item[(a)] Find a separating pure strategy PBE.
         \item[(b)] Find a pooling pure strategy PBE.
-      \end{itemize}\vspace{-6pt}
+      \end{itemize}\vspace{-8pt}
       Given the firm expects a worker to be type $\theta_L$ and pays $\theta_L=1$, find the utility maximizing education level for each type:\vspace{-18pt}
       \begin{itemize}
         \item[Type $\theta_L$:] $\max\limits_{e_L}u_{\theta_L}(e_L)=\max\limits_{e_L}1-e_L\Rightarrow e_L=0$\\
         \item[Type $\theta_H$:] $\max\limits_{e_L}u_{\theta_H}(e_L)=\max\limits_{e_L}1-\frac{e_L}{3}\Rightarrow e_L=0$
-      \end{itemize}\vspace{-12pt}
+      \end{itemize}\vspace{-13pt}
       \begin{align*}
         \pi_{F}=\left\{\begin{array}{rl}
            -2 & \text{for }h|e_H(\theta_L) \\
@@ -190,7 +190,7 @@
       \begin{enumerate}
         \item $(e_L,e_H)$ is not viable, as $F$ would not hire $\theta_L$ despite his high education level $e_H$. Nor is any other PBE where either type of worker is not hired as he would then want to deviate.
         \item No deviation for $e_H\in[2,6]$. It's optimal for $\theta_H$ to choose $e_H=2$ as it's sufficient for credibly signaling his type. Above 2, worker's marginal effect of education is negative.
-      \end{enumerate}\vspace{-12pt}
+      \end{enumerate}\vspace{-14pt}
       \begin{align*}
         PBE=\{(e_H=2,e_L=0),(h,h),p=0,q=1\}
       \end{align*}
@@ -316,7 +316,7 @@
       \end{itemize}\vspace{-12pt}
       \begin{align*}
         u_{\theta_L}(e_L,h)=1>-e_H=u_{\theta_L}(e_H,n)
-      \end{align*}\vspace{-20pt}
+      \end{align*}\vspace{-21pt}
       \begin{itemize}
         \item[Step 3:] Explain: Which 2 assumptions make it possible to have an eq. where both high-ability and low-ability workers take zero education?
       \end{itemize}
@@ -324,11 +324,11 @@
       \begin{figure}[!h]
         \center\def\svgwidth{1.1\columnwidth}
         \import{figures/}{Spence_pooling.pdf_tex}
-      \end{figure}\vspace{-6pt}
+      \end{figure}\vspace{-8pt}
       \begin{enumerate}
         \item $(e_H,e_H)$ is not viable, as $F$ would not hire unless the probability of type $\theta_L$ is $p_L=0$.
         \item \vspace{-2pt} No deviation, thus, we have a PBE:
-      \end{enumerate}\vspace{-14pt}
+      \end{enumerate}\vspace{-15pt}
       \begin{align*}
         \{(e_L=0,e_L=0),(h,n),p=p_H,q\in[0,1]\}
       \end{align*}\vspace{-24pt}

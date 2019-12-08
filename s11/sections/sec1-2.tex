@@ -83,7 +83,7 @@
       \begin{itemize}
         \item[Step 1:] Consider the uniform distribution $x\sim U(a, b)$. Use the cumulative distribution function (CDF) to write up the probability that a random draw of \textit{x} is lower than a constant \textit{c}. Use the mean to write up the expected value of a random draw of \textit{x} where \textit{x} is lower than a constant $c\in[a,b]$.
         \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] \textbf{Write up the buyer's problem.}
+        \item[Step 3:] \textbf{Write out the buyer's problem.}
       \end{itemize}
       \vfill\null\columnbreak
       \begin{enumerate}
@@ -104,7 +104,7 @@
       \begin{itemize}
         \item[Step 1:] Consider the uniform distribution $x\sim U(a, b)$. Use the cumulative distribution function (CDF) to write up the probability that a random draw of \textit{x} is lower than a constant \textit{c}. Use the mean to write up the expected value of a random draw of \textit{x} where \textit{x} is lower than a constant $c\in[a,b]$.
         \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] Write up the buyer's problem:
+        \item[Step 3:] Write out the buyer's problem:
       \end{itemize} \vspace{-8pt}
       \begin{align*}
         \displaystyle{\max_p}&\ \mathbb{P}[v_s<p]\mathbb{E}[v_b-p|v_s<p]
@@ -128,7 +128,7 @@
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] Write up the buyer's problem:
+        \item[Step 3:] Write out the buyer's problem:
       \end{itemize} \vspace{-8pt}
       \begin{align*}
         \displaystyle{\max_p}&\ \mathbb{P}[v_s<p]\mathbb{E}[v_b-p|v_s<p]\\
@@ -145,7 +145,7 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
       \end{enumerate}
       \vfill\null
     \end{multicols}
@@ -156,7 +156,7 @@
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] Write up the buyer's problem:
+        \item[Step 3:] Write out the buyer's problem:
       \end{itemize} \vspace{-8pt}
       \begin{align*}
          \displaystyle{\max_p}&\ \mathbb{P}[v_s<p]\mathbb{E}[v_b-p|v_s<p]\\
@@ -165,7 +165,7 @@
         =\displaystyle{\max_p}&\ p\left(k\frac{0+p}{2}-p\right)&&\text{using }(\ddagger)
       \end{align*} \vspace{-8pt}
       \begin{itemize}
-        \item[Step 4:] \textbf{Take the first-order condition wrt. \textit{p}.}
+        \item[Step 4:] \textbf{Take the first-order condition wrt \textit{p}}
       \end{itemize}
       \vfill\null\columnbreak
       \begin{enumerate}
@@ -176,7 +176,7 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
       \end{enumerate}
       \vfill\null
     \end{multicols}
@@ -186,12 +186,12 @@
     \begin{multicols}{2}
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
-        \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] Write up the buyer's problem.
-        \item[Step 4:] Take the first-order condition wrt. \textit{p}:
-      \end{itemize} \vspace{-8pt}
+        \item[Step 2:] \vspace{-2pt} The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
+        \item[Step 3:] \vspace{-2pt} Write out the buyer's problem.
+        \item[Step 4:] \vspace{-2pt} Take the first-order condition wrt. \textit{p}:
+      \end{itemize} \vspace{-14pt}
       \begin{align*}
-        \frac{\delta u_b(p,k)}{\delta p}&=0\\
+        \frac{\delta u_b(p)}{\delta p}&=0\\
         2p\left(\frac{k}{2}-1\right)&=0&&\textbf{(take the SOC)}\\
         2p\frac{k}{2}&=2p\\
         p\frac{k}{2}&=p
@@ -205,8 +205,9 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
         \item FOC: $p\frac{k}{2}=p$
+        \item[] \textbf{SOC: What is the functional form of $\bm{u_b(p)}$ for different values of \textit{k}? E.g. is the buyer's utility a linear, concave, or convex function of \textit{p}?}
       \end{enumerate}
       \vfill\null
     \end{multicols}
@@ -217,11 +218,11 @@
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 3:] Write out the buyer's problem.
         \item[Step 4:] Take the first-order condition wrt. \textit{p}:
       \end{itemize} \vspace{-8pt}
       \begin{align*}
-        \frac{\delta u_b(p,k)}{\delta p}&=0\\
+        \frac{\delta u_b(p)}{\delta p}&=0\\
         2p\left(\frac{k}{2}-1\right)&=0&&\text{(take the SOC)}\\
         2p\frac{k}{2}&=2p\\
         p\frac{k}{2}&=p
@@ -235,7 +236,7 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
         \item FOC: $p\frac{k}{2}=p$\vspace{-6pt}
         \begin{align*}
           \text{SOC: }k-2\left\{\begin{array}{ll}
@@ -254,7 +255,7 @@
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 3:] Write out the buyer's problem.
         \item[Step 4:] Take the first-order and second-order condition wrt. \textit{p}.
         \item[Step 5:] \textbf{Maximize buyer's utility for $\bm{k<2}$.}
       \end{itemize}
@@ -267,7 +268,7 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
         \item FOC: $p\frac{k}{2}=p$\vspace{-6pt}
         \begin{align*}
           \text{SOC: }k-2\left\{\begin{array}{ll}
@@ -286,7 +287,7 @@
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] Write up the buyer's problem.
+        \item[Step 3:] Write out the buyer's problem.
         \item[Step 4:] Take the first-order and second-order condition wrt. \textit{p}.
         \item[Step 5:] Maximize buyer's utility for $k<2$.
         \item[Step 6:] \textbf{Maximize buyer's utility for $\bm{k>2}$.}
@@ -300,7 +301,7 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item \vspace{-2pt} $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item \vspace{-2pt} $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
         \item \vspace{-2pt} FOC: $p\frac{k}{2}=p$\vspace{-6pt}
         \begin{align*}
           \text{SOC: }k-2\left\{\begin{array}{ll}
@@ -320,7 +321,7 @@
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] \vspace{-2pt} The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] \vspace{-2pt} Write up the buyer's problem.
+        \item[Step 3:] \vspace{-2pt} Write out the buyer's problem.
         \item[Step 4:] \vspace{-2pt} Take the FOC and SOC wrt. \textit{p}.
         \item[Step 5:] \vspace{-2pt} Maximize buyer's utility for $k<2$.
         \item[Step 6:] \vspace{-2pt} Maximize buyer's utility for $k>2$.
@@ -336,7 +337,7 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item \vspace{-2pt} $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item \vspace{-2pt} $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
         \item \vspace{-2pt} FOC: $p\frac{k}{2}=p$\vspace{-6pt}
         \begin{align*}
           \text{SOC: }k-2\left\{\begin{array}{ll}
@@ -357,7 +358,7 @@
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] \vspace{-2pt} The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] \vspace{-2pt} Write up the buyer's problem.
+        \item[Step 3:] \vspace{-2pt} Write out the buyer's problem.
         \item[Step 4:] \vspace{-2pt} Take the FOC and SOC wrt. \textit{p}.
         \item[Step 5:] \vspace{-2pt} Maximize buyer's utility for $k<2$.
         \item[Step 6:] \vspace{-2pt} Maximize buyer's utility for $k>2$.
@@ -373,7 +374,7 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item \vspace{-2pt} $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item \vspace{-2pt} $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
         \item \vspace{-2pt} FOC: $p\frac{k}{2}=p$\vspace{-6pt}
         \begin{align*}
           \text{SOC: }k-2\left\{\begin{array}{ll}
@@ -389,12 +390,12 @@
     \end{multicols}
 \end{frame}
 \begin{frame}{PS11, Ex. 2 (A): Asymmetric/incomplete information (PBE)}
-    Exercise 4.11 in Gibbons (p. 250). Difficult. A buyer and a seller have valuations $v_b$ and $v_s$. It is common knowledge that there are gains from trade (i.e., that $v_b > v_s$), but the size of the gains is private information, as follows: the seller’s valuation is uniformly distributed on [0,1]; the buyer’s valuation $v_b = kv_s$, where $k > 1$ is common knowledge; the seller knows $v_s$ (and hence $v_b$) but the buyer does not know $v_b$ (and hence $v_s$). Suppose the buyer makes a single offer, $p$, which the seller either accepts or rejects. What is the perfect Bayesian equilibrium when $k < 2$? When $k > 2$? (\href{https://www.jstor.org/stable/1911195}{See Samuelson 1984}.) \vspace{-8pt}
+    Exercise 4.11 in Gibbons (p. 250). Difficult. A buyer and a seller have valuations $v_b$ and $v_s$. It is common knowledge that there are gains from trade (i.e., that $v_b > v_s$), but the size of the gains is private information, as follows: the seller’s valuation is uniformly distributed on [0,1]; the buyer’s valuation $v_b = kv_s$, where $k > 1$ is common knowledge; the seller knows $v_s$ (and hence $v_b$) but the buyer does not know $v_b$ (and hence $v_s$). Suppose the buyer makes a single offer, $p$, which the seller either accepts or rejects. What is the perfect Bayesian equilibrium when $k < 2$? When $k > 2$? (\href{https://www.jstor.org/stable/1911195}{See Samuelson 1984}.) \vspace{-9pt}
     \begin{multicols}{2}
       \begin{itemize}
         \item[Step 1:] Use the CDF to write up $\mathbb{P}(x<c)$. Use the mean to write up $\mathbb{E}(x<c)$.
         \item[Step 2:] \vspace{-2pt} The buyer offers a price \textit{p}. Write up the seller's strategy (best response).
-        \item[Step 3:] \vspace{-2pt} Write up the buyer's problem.
+        \item[Step 3:] \vspace{-2pt} Write out the buyer's problem.
         \item[Step 4:] \vspace{-2pt} Take the FOC and SOC wrt. \textit{p}.
         \item[Step 5:] \vspace{-2pt} Maximize buyer's utility for $k<2$.
         \item[Step 6:] \vspace{-2pt} Maximize buyer's utility for $k>2$.
@@ -410,7 +411,7 @@
           Sell  & \text{if }p\geq v_s \\
           Don't & \text{if }p < v_s
         \end{array}\right.$
-        \item \vspace{-2pt} $\displaystyle{\max_p}\ u_b(p,k)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
+        \item \vspace{-2pt} $\displaystyle{\max_p}\ u_b(p)=\displaystyle{\max_p}\ p^2\left(\frac{k}{2}-1\right)$
         \item \vspace{-2pt} FOC: $p\frac{k}{2}=p$\vspace{-6pt}
         \begin{align*}
           \text{SOC: }k-2\left\{\begin{array}{ll}

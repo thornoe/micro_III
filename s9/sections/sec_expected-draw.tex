@@ -1,0 +1,96 @@
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    To find \textit{seller's expected revenue} from a sealed bid auction (e.g. bidders simultaneously submit their bids in sealed envelopes without knowing the bids of others) with symmetric bidders with valuation drawn from a uniform distribution, there are two different approaches:
+    \begin{enumerate}
+      \item One approach is to derive each \textit{bidder's expected payment} as a function of her valuation and then integrate this expression using the PDF to get the \textit{ex-ante expected payment} of each bidder which can then be added together to find seller's expected revenue.
+      \item However, a more simple approach is to for $N$ number of bidders to calculate the expected highest value (first-price sealed bid auction) or the expected second-highest value (second-price sealed bid auction). Plugging the value into the bid-function gives the seller's expected revenue.
+    \end{enumerate}
+    Deriving the optimal bid-function is a prerequisite for both approaches.
+\end{frame}
+
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textbf{\textit{standard} uniform distribution} $\bm{x\sim U(0, 1)}$. The highest draw $Y_1$ and the second-highest draw $Y_2$ of all $N$ draws are expected to be: \vspace{-8pt}
+    \begin{multicols}{2}
+      \begin{align*}
+        \mathbb{E}[Y_1]&=\frac{N}{N+1},\ \text{ where }Y_1=max(X)\\
+        \mathbb{E}[Y_2]&=\frac{N-1}{N+1},\ \text{ where }Y_2=max(X\neq Y_1)
+      \end{align*}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{1.1\columnwidth}
+        \import{figures/}{E[Y_1].pdf_tex}
+      \end{figure}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    First, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from the \textit{standard} uniform distribution $x\sim U(0, 1)$. The highest draw $Y_1$ and the second-highest draw $Y_2$ of all $N$ draws are expected to be: \vspace{-10pt}
+    \begin{multicols}{2}
+      \begin{align*}
+        \mathbb{E}[Y_1]&=\frac{N}{N+1},\ \text{ where }Y_1=max(X)\\
+        \mathbb{E}[Y_2]&=\frac{N-1}{N+1},\ \text{ where }Y_2=max(X\neq Y_1)
+      \end{align*}
+      \vfill\null\columnbreak
+      \begin{figure}[!h]
+        \center
+        \def\svgwidth{1.1\columnwidth}
+        \import{figures/}{E[Y_1].pdf_tex}
+      \end{figure}
+      \vfill\null
+    \end{multicols} \vspace{-24pt}
+    \textbf{Generalized}, let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from a uniform distribution $x\sim U(a, b)$. The highest draw $Y_1$ and the second-highest draw $Y_2$ of all $N$ draws are expected to be:\vspace{-2pt}
+    \begin{align*}
+      \mathbb{E}[Y_1]&=a+(b-a)\frac{N}{N+1},&&\text{where }Y_1=max(X)\\
+      \mathbb{E}[Y_2]&=a+(b-a)\frac{N-1}{N+1},&&\text{where }Y_2=max(X\neq Y_1)
+    \end{align*}
+    \textbf{E.g.} for $N=1$, $\mathbb{E}[Y_1]$ simply collapses to the expression for the expected mean, $\mu$:\vspace{-2pt}
+    \begin{align*}
+      \mathbb{E}[Y_1]=a+(b-a)\frac{N}{N+1}=a+(b-a)\frac{1}{1+1}
+      =\frac{2a}{2}+\frac{b-a}{2}=\frac{a+b}{2}\equiv\mu
+    \end{align*}
+\end{frame}
+
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    \textbf{Applied to auctions:} Consider $N$ number of bidders where each bidder $i$ has the value $v_i$ that is independently drawn from the same uniform distribution $v_i\sim U(a,b)$.
+    \begin{itemize}
+      \item[\nth{1} step:] The highest value $Y_1$ and the second-highest value $Y_2$ for all $N$ bidders are expected to be:
+    \end{itemize}
+    \begin{align*}
+      \mathbb{E}[Y_1]&=a+(b-a)\frac{N}{N+1},&&\text{ where }Y_1=max(V),\ V=v_1,v_2,...,v_N\\
+      \mathbb{E}[Y_2]&=a+(b-a)\frac{N-1}{N+1},&&\text{ where }Y_2=max(V\neq Y_1)
+    \end{align*}
+    \begin{itemize}
+      \item[\nth{2} step:] To calculate the seller's expected revenue, insert the expected highest value $\mathbb{E}[Y_1]$ (first-price sealed bid auction) or the expected second-highest value $\mathbb{E}[Y_2]$ (second-price sealed bid auction) in the derived bid-function.
+    \end{itemize}
+    \vfill\null
+\end{frame}
+
+\begin{frame}{The expected highest and second-highest draw from a uniform distribution}
+    \textbf{Proof:} [only for those interested] Let $X=x_1,x_2,...,x_N$ be $N$ independent and identically distributed (i.i.d.) draws from a uniform distribution $x\sim U(a, b)$. Denote the highest draw $Y_1=max(X)$. The cumulative distribution function (CDF) of $Y_1$ is: \vspace{-6pt}
+    \begin{align*}
+      G(x)&=\mathbb{P}[Y_1\leq x]\\
+          &=\mathbb{P}[x_1\leq x,x_1\leq x,...,x_N\leq x],&&\text{since $Y_1$ is the max of }X\\
+          &=\mathbb{P}[x_1\leq x]\times\mathbb{P}[x_1\leq x]\times...\times\mathbb{P}[x_N\leq x],&&\text{since draws are independent}\\
+          &=F(x)\times F(x)\times...\times F(x)=(F(x))^N,&&F(x)\text{ is the CDF of }x:F(x)=\frac{x-a}{b-a}\ (*)
+    \end{align*}
+    The first-derivative of the CDF gives the probability density function (PDF) of $Y_1$: \vspace{-6pt}
+    \begin{align*}
+      g(x)&=\frac{\delta G(x)}{\delta x}\\
+          &= F'(x)N(F(x))^{N-1}\\
+          &= f(x)N(F(x))^{N-1},&&f(x)\text{ is the PDF of }x:f(x)=\frac{1}{b-a}\ (**)
+    \end{align*}
+    The expectation to $Y_1$ is found by integrating $x$ times the PDF of $Y_1$, $g(x)$: \vspace{-6pt}
+    \begin{align*}
+      \mathbb{E}[Y_1]&=\textstyle\int_a^b x\cdot g(x)\ dx\\
+                     &=\textstyle\int_a^b x\cdot f(x)N(F(x))^{N-1}\ dx\\
+                     &=\textstyle\int_a^b x\cdot \frac{1}{b-a}N\left(\frac{x-a}{b-a}\right)^{N-1}\ dx,&&\text{ using }(**)\text{ and }(*)
+    \end{align*}
+    While the general solution isn't too obvious, the integral solves easily for $x\sim (0, 1)$: \vspace{-5pt}
+    \begin{align*}
+      \mathbb{E}[Y_1]&=\textstyle\int_0^1 x  \frac{1}{1-0}N\left(\frac{x-0}{1-0}\right)^{N-1} dx
+      =\textstyle\int_0^1 x N x^{N-1} dx
+      =\textstyle\int_0^1 N x^N dx
+      =\left[\frac{N}{N+1} x^{N+1}\right]_0^1 = \frac{N}{N+1}
+    \end{align*}
+    \vfill\null
+\end{frame}
