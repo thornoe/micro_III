@@ -35,17 +35,33 @@
     \begin{itemize}
       \item[(a)] Formulate this strategic situation as a cheap talk game, assuming that the type space is equal to the message space $(T = M)$.
     \end{itemize}\vspace{-6pt}
-    \begin{multicols}{2}
-      \vfill\null\columnbreak
-      \vfill\null
-    \end{multicols}
+    \vfill\null
 \end{frame}
 
 \begin{frame}{PS12, Ex. 2.a (A): Farrell \& Rabin (1996). Formulate a cheap talk game}
-    \begin{itemize}
+  \begin{table}
+    \begin{tabular}{ll|c|c|c|}
+        & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Job 1} & \multicolumn{1}{c}{Job 2} & \multicolumn{1}{c}{Manager} \\\cline{3-5}
+        \parbox[t]{20mm}{\multirow{2}{*}{Sally's knowledge}}
+         & Task 1 efficient & 2, 5 & 1, -2 & 3, 3 \\\cline{3-5}
+         & Task 2 efficient & 1, -2 & 2, 5 & 3, 3 \\\cline{3-5}
+    \end{tabular}
+  \end{table}\vspace{-12pt}
+  \begin{itemize}
       \item[(a)] Formulate this strategic situation as a cheap talk game, assuming that the type space is equal to the message space $(T = M)$.
     \end{itemize}\vspace{-6pt}
-    The game is as follows: first, Sally's type is realized: $t\in\{T_1,T_2\}$, where $t=T_1,T_2$ corresponds to efficiency with Task 1,Task 2. Sally observes her type and sends a cheap talk message $m\in\{T_1,T_2\}$. Rayco observes the message and chooses a job for Sally: $a\in\{T_1,T_2,M\}$, where $a=T_1,T_2,M$ corresponds to giving Sally the job: Job 1 (compatible with task 1 efficiency), Job 2 (compatible with task 2 efficiency), Manager.\vspace{-14pt}
+    The game is as follows:\vspace{-6pt}
+    \begin{enumerate}
+      \item Sally's type is realized: $t\in\{T_1,T_2\}$, where $t=T_1,T_2$ corresponds to efficiency with Task 1 and Task 2 respectively.
+      \item Sally observes her type and sends a cheap talk message $m(t)\in\{T_1,T_2\}$.
+      \item Rayco observes the message and chooses a job for Sally: $a(m)\in\{T_1,T_2,M\}$ where $a=T_1,T_2,M$ corresponds to giving Sally one of three jobs:
+      \begin{itemize}\normalsize
+        \item Job 1 (compatible with task 1 efficiency)
+        \item Job 2 (compatible with task 2 efficiency)
+        \item Manager (compatible with both but more expensive).
+      \end{itemize}
+    \end{enumerate}
+    \vfill\null
 \end{frame}
 
 
@@ -64,23 +80,85 @@
     \begin{itemize}
       \item[(b)] Show that a separating equilibrium exists where Sally truthfully reveals which job is efficient, and the firm then places Sally in that specific job.
     \end{itemize}\vspace{-6pt}
-    \begin{multicols}{2}
-      \vfill\null\columnbreak
-      \vfill\null
-    \end{multicols}
+    \vfill\null
 \end{frame}
-
 \begin{frame}{PS12, Ex. 2.b (A): Farrell \& Rabin (1996). Find a separating PBE}
+    \begin{table}
+      \begin{tabular}{ll|c|c|c|}
+          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Job 1} & \multicolumn{1}{c}{Job 2} & \multicolumn{1}{c}{Manager} \\\cline{3-5}
+          \parbox[t]{20mm}{\multirow{2}{*}{Sally's knowledge}}
+           & Task 1 efficient & 2, 5 & 1, -2 & 3, 3 \\\cline{3-5}
+           & Task 2 efficient & 1, -2 & 2, 5 & 3, 3 \\\cline{3-5}
+      \end{tabular}
+    \end{table}\vspace{-12pt}
     \begin{itemize}
       \item[(b)] Show that a separating equilibrium exists where Sally truthfully reveals which job is efficient, and the firm then places Sally in that specific job.
+      \item[Step 1:] \textbf{Go over the beliefs and actions in such a separating PBE. Does either type want to deviate?}
+    \end{itemize}
+    \vfill\null
+\end{frame}
+\begin{frame}{PS12, Ex. 2.b (A): Farrell \& Rabin (1996). Find a separating PBE}
+    \begin{table}
+      \begin{tabular}{ll|c|c|c|}
+          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Job 1} & \multicolumn{1}{c}{Job 2} & \multicolumn{1}{c}{Manager} \\\cline{3-5}
+          \parbox[t]{20mm}{\multirow{2}{*}{Sally's knowledge}}
+           & Task 1 efficient & 2, 5 & 1, -2 & 3, 3 \\\cline{3-5}
+           & Task 2 efficient & 1, -2 & 2, 5 & 3, 3 \\\cline{3-5}
+      \end{tabular}
+    \end{table}\vspace{-12pt}
+    \begin{itemize}
+      \item[(b)] Show that a separating equilibrium exists where Sally truthfully reveals which job is efficient, and the firm then places Sally in that specific job.
+      \item[Step 1:] Go over the beliefs and actions in such a separating PBE. Does either type want to deviate?
     \end{itemize}\vspace{-6pt}
     In a PBE, the beliefs must correspond to the action of the senders.\\
-    Thus in a separating PBE where $M(t=T_1)=T_1$ and $M(t=T_2)=T_2$, then $\mu(t=T_1|m=T_1)=1$ and $\mu(t=T_2|m=T_2)=1$. This gives the best responses $BR(m=T_1)=T_1$ and $BR(m=T_2)=T_2$.\\
-    Since no message yields the response Manager, neither type has an incentive to deviate, thus the PBE is:
+    Thus in a separating PBE where $m(t=T_1)=T_1$ and $m(t=T_2)=T_2$, beliefs are\vspace{-2pt}
     \begin{align*}
-        {(T_1,T_2),(T_1,T_2),\mu(t=T_1|m=T_1)=1,\mu(t=T_2|m=T_2)=1}
+      \mu(t=T_1|m=T_1)=1\text{ and }\mu(t=T_2|m=T_2)=1
     \end{align*}
+    This gives R's best responses.
+    \vspace{-2pt}
+    \begin{align*}
+      a(m=T_1)=T_1\text{ and }a(m=T_2)=T_2
+    \end{align*}
+    Since no message yields the position \textit{Manager}, neither type can imitate the other to get this position, thus, no type has an incentive to deviate.\vspace{-6pt}
+    \begin{itemize}
+      \item[Step 2:] \textbf{Write up the separating PBE.}
+    \end{itemize}
+    \vfill\null
 \end{frame}
+\begin{frame}{PS12, Ex. 2.b (A): Farrell \& Rabin (1996). Find a separating PBE}
+    \begin{table}
+      \begin{tabular}{ll|c|c|c|}
+          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Job 1} & \multicolumn{1}{c}{Job 2} & \multicolumn{1}{c}{Manager} \\\cline{3-5}
+          \parbox[t]{20mm}{\multirow{2}{*}{Sally's knowledge}}
+           & Task 1 efficient & 2, 5 & 1, -2 & 3, 3 \\\cline{3-5}
+           & Task 2 efficient & 1, -2 & 2, 5 & 3, 3 \\\cline{3-5}
+      \end{tabular}
+    \end{table}\vspace{-12pt}
+    \begin{itemize}
+      \item[(b)] Show that a separating equilibrium exists where Sally truthfully reveals which job is efficient, and the firm then places Sally in that specific job.
+      \item[Step 1:] Go over the beliefs and actions in such a separating PBE. Does either type want to deviate?
+    \end{itemize}\vspace{-6pt}
+    In a PBE, the beliefs must correspond to the action of the senders.\\
+    Thus in a separating PBE where $m(t=T_1)=T_1$ and $m(t=T_2)=T_2$, beliefs are\vspace{-2pt}
+    \begin{align*}
+      \mu(t=T_1|m=T_1)=1\text{ and }\mu(t=T_2|m=T_2)=1
+    \end{align*}
+    This gives R's best responses.
+    \vspace{-2pt}
+    \begin{align*}
+      a(m=T_1)=T_1\text{ and }a(m=T_2)=T_2
+    \end{align*}
+    Since no message yields the position \textit{Manager}, neither type can imitate the other to get this position, thus, no type has an incentive to deviate.\vspace{-6pt}
+    \begin{itemize}
+      \item[Step 2:] Write up the separating PBE:
+    \end{itemize}\vspace{-6pt}
+    \begin{align*}
+      \{\underbrace{(T_1,T_2)}_{m(t=T_1),m(t=T_2)},\underbrace{(T_1,T_2)}_{a(m=T_1),a(m=T_2)},\underbrace{\mu(T_1|T_1)=1}_{\mu(t=T_1|m=T_1)},\underbrace{\mu(T_2|T_2)=1}_{\mu(t=T_2|m=T_2)}\}
+    \end{align*}
+    \vfill\null
+\end{frame}
+
 
 \subsection{PS12, Ex. 2.c (A): Discuss if PBE is reasonable?}
 
@@ -103,10 +181,24 @@
 \end{frame}
 
 \begin{frame}{PS12, Ex. 2.c (A): Farrell \& Rabin (1996). Discuss if PBE is reasonable?}
+    \begin{table}
+      \begin{tabular}{ll|c|c|c|}
+          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Job 1} & \multicolumn{1}{c}{Job 2} & \multicolumn{1}{c}{Manager} \\\cline{3-5}
+          \parbox[t]{20mm}{\multirow{2}{*}{Sally's knowledge}}
+           & Task 1 efficient & 2, 5 & 1, -2 & 3, 3 \\\cline{3-5}
+           & Task 2 efficient & 1, -2 & 2, 5 & 3, 3 \\\cline{3-5}
+      \end{tabular}
+    \end{table}\vspace{-12pt}
     \begin{itemize}
       \item[(c)] Discuss whether or not this separating equilibrium seems reasonable. Why isn’t Sally able to convince the firm to give her the manager position?
+      \item[Step 1:] Why does Sally not have an incentive to deviate?
     \end{itemize}\vspace{-6pt}
-    Sally has to say that she is efficient at one of the jobs, and since Royco believe she is telling the truth, she has no choice but to tell the truth, as she would otherwise end up in a worse job for her.\\
-    However, there is a pooling equilibrium where all hypothetical Sally's chooses the same message, thus not giving any additional information on what type they are. In this case, if nature has distributed the Sallys such that $p(t=T_1)\epsilon]\frac{2}{7};\frac{5}{7}[$, then the best response for Royco would be to choose a=M.\\
-    So if Sally constitute all senders, and thus can decide on a tactic for all senders, the separating PBE does not seem realistic (for certain distributions of types), as she could choose the pooling strategy and get a higher payoff.
+    Sally has to say that she is efficient at one of the jobs. Since Royco believe she is telling the truth, she has no choice but to tell the truth, as she would otherwise end up in a worse job for her.\vspace{-6pt}
+    \begin{itemize}
+      \item[Step 2:] Under which circumstances would a pooling PBE exist where both types would get hired as \textit{Manager}?
+    \end{itemize}\vspace{-6pt}
+    There is a pooling equilibrium where all hypothetical Sallys chooses the same message, thus not giving any additional information on what type they are.\\\smallskip
+    In this case, if nature has distributed the Sallys such that $p(t=T_1)\in\left[\frac{2}{7};\frac{5}{7}\right]$, then the best response for Royco would be to choose $a(m=T_1)=a(m=T_1)=Manager$ and no type of Sally would want to deviate.\\\smallskip
+    That is, the separating PBE seem realistic if each type where to come up with a strategy in isolation. However, if Sally constitute all types and can decide on a tactic for all type of senders, the pooling PBE would be more beneficial for all types and she would choose this (for certain distributions of types).
+    \vfill\null
 \end{frame}

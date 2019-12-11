@@ -54,11 +54,11 @@
 \begin{frame}{PS12, Ex. 3.i: Cheap talk games (extensive form)}
     (ii) (a) and (d) are cheap talk games as messages don't affect $u_\text{S}(t_i,a_k),u_\text{R}(t_i,a_k)$:\vspace{-14pt}
     \begin{multicols}{2}
-      \vfill\null\vspace{-10.2pt}
+      \vfill\null\vspace{-12.15pt}
       \begin{figure}[!h]
         \center\def\svgwidth{1\columnwidth}
         \import{figures/}{3a.pdf_tex}
-      \end{figure}\vspace{-19.5pt}
+      \end{figure}\vspace{-20.7pt}
       \begin{figure}[!h]
         \center\def\svgwidth{1.41\columnwidth}
         \import{figures/}{3b_red.pdf_tex}
@@ -67,7 +67,7 @@
       \begin{figure}[!h]
         \center\def\svgwidth{1.26\columnwidth}
         \import{figures/}{3c_red.pdf_tex}
-      \end{figure}\vspace{-8pt}
+      \end{figure}\vspace{-9pt}
       \begin{figure}[!h]
         \center\def\svgwidth{1\columnwidth}
         \import{figures/}{3d.pdf_tex}
@@ -213,7 +213,73 @@
         \item[Step 1:] For the separating strategy (\textit{L,R}), go over SR3, SR2R, and SR2S. PBE?
         \item[Step 2:] For the separating strategy (\textit{R,L}), go over SR3, SR2R, and SR2S. PBE?
         \item[Step 3:] Write up the set of separating PBE.
+        \item[Step 4:] \textbf{Is S's "cheap talk" informative? How is/isn't that possible?}
       \end{itemize}
+      \vfill\null\columnbreak
+      \begin{enumerate}
+        \item SR3: R: Beliefs given S's strategy:\vspace{-8pt}
+        \begin{align*}
+          \mu(t_1|L)=p=1\text{ and }\mu(t_1|R)=q=0
+        \end{align*}\vspace{-18pt}
+        \begin{itemize}\normalsize
+          \item[SR2R:] R: $a^*(L)=u,\ a^*(R)=d$.
+          \item[SR2S:] $t_1$ will not deviate if
+        \end{itemize}\vspace{-10pt}
+        \begin{align*}
+          u_\text{S}(L,u|t_1)=3\geq a=u_\text{S}(R,d|t_1)
+        \end{align*}\vspace{-18pt}
+        \begin{itemize}\normalsize
+          \item[] $t_2$ will never deviate as
+        \end{itemize}\vspace{-10pt}
+        \begin{align*}
+          u_\text{S}(R,d|t_2)=5>2=u_\text{S}(L,u|t_2)
+        \end{align*}\vspace{-18pt}
+        \begin{itemize}\normalsize
+          \item[PBE:] No deviation if $a\leq3$ \textcolor{Pink}{(pink)}.
+        \end{itemize}
+        \item SR3: R: Beliefs given S's strategy:\vspace{-8pt}
+        \begin{align*}
+          \mu(t_1|L)=p=0\text{ and }\mu(t_1|R)=q=1
+        \end{align*}\vspace{-18pt}
+        \begin{itemize}\normalsize
+          \item[SR2R:] R: $a^*(L)=d,\ a^*(R)=u$.
+          \item[SR2S:] $t_1$ will not deviate if
+        \end{itemize}\vspace{-10pt}
+        \begin{align*}
+          u_\text{S}(R,u|t_1)=3\geq a=u_\text{S}(L,d|t_1)
+        \end{align*}\vspace{-18pt}
+        \begin{itemize}\normalsize
+          \item[] $t_2$ will never deviate as
+        \end{itemize}\vspace{-10pt}
+        \begin{align*}
+          u_\text{S}(L,d|t_2)=5>2=u_\text{S}(R,u|t_2)
+        \end{align*}\vspace{-18pt}
+        \begin{itemize}\normalsize
+          \item[PBE:] No deviation if $a\leq3$ \textcolor{green}{(green)}.
+        \end{itemize}
+        \item Two separating PBE exist for $a\leq3$:\vspace{-8pt}
+        \begin{align*}
+          PBE=\left\{\begin{array}{c}
+              (L,R),(u,d),p=1,q=0\\
+              (R,L),(d,u),p=0,q=1\end{array}\right\}
+        \end{align*}
+      \end{enumerate}
+      \vfill\null
+    \end{multicols}
+\end{frame}
+\begin{frame}{PS12, Ex. 3.ii.a: Cheap talk games (extensive form)}
+    \begin{multicols}{2}
+      \begin{figure}[!h]
+        \center\def\svgwidth{1.1\columnwidth}
+        \import{figures/}{3a_LR-RL.pdf_tex}
+      \end{figure}\vspace{-8pt}
+      \begin{itemize}
+        \item[Step 1:] For the separating strategy (\textit{L,R}), go over SR3, SR2R, and SR2S. PBE?
+        \item[Step 2:] \vspace{-2pt}For the separating strategy (\textit{R,L}), go over SR3, SR2R, and SR2S. PBE?
+        \item[Step 3:] \vspace{-2pt}Write up the set of separating PBE.
+        \item[Step 4:] \vspace{-2pt}S's "cheap talk" is informative as:
+      \end{itemize}\vspace{-6pt}
+      (1) $t_1$ and $t_2$ prefer different actions, (2) R prefers different actions for different sender types, and (3) S’s types and R’s preferences are aligned.
       \vfill\null\columnbreak
       \begin{enumerate}
         \item SR3: R: Beliefs given S's strategy:\vspace{-8pt}
@@ -386,9 +452,9 @@
       \end{figure}\vspace{-6pt}
       \begin{itemize}
         \item[Step 1:] For the separating strategy (\textit{L,R}), go over SR3, SR2R, and SR2S. PBE?
-        \item[Step 2:] For the separating strategy (\textit{R,L}), go over SR3, SR2R, and SR2S. PBE?
-        \item[Step 3:] Write up the full set of separating PBE.
-        \item[Step 4:] \textbf{Explain. Why can the signals be considered "cheap talk"?}
+        \item[Step 2:] \vspace{-1pt}For the separating strategy (\textit{R,L}), go over SR3, SR2R, and SR2S. PBE?
+        \item[Step 3:] \vspace{-1pt}Write up the full set of separating PBE.
+        \item[Step 4:] \vspace{-1pt}\textbf{Explain. Why are the signals non-informative "cheap talk"?}
       \end{itemize}
       \vfill\null\columnbreak
       \begin{enumerate}
@@ -449,7 +515,7 @@
         \item[Step 1:] For the separating strategy (\textit{L,R}), go over SR3, SR2R, and SR2S. PBE?
         \item[Step 2:] For the separating strategy (\textit{R,L}), go over SR3, SR2R, and SR2S. PBE?
         \item[Step 3:] Write up the full set of separating PBE.
-        \item[Step 4:] Explain. Why can the signals be considered "cheap talk"?
+        \item[Step 4:] Explain. Why are the signals non-informative "cheap talk"?
       \end{itemize}
       \vfill\null\columnbreak
       \begin{enumerate}
@@ -496,7 +562,7 @@
         \item $\left\{\begin{array}{c}
             (L,R),(u,d),p=1,q=0\\
             (R,L),(d,u),p=0,q=1\end{array}\right\}$
-        \item \vspace{-1pt}Two "weak separating PBE": S is indifferent between signals which are "cheap talk" as R choose $u$ anyway.
+        \item \vspace{-1pt}Two "weak separating PBE": Both $t_1$ and $t_2$ is indifferent between signals as R will always choose $u$.
       \end{enumerate}
       \vfill\null
     \end{multicols}
