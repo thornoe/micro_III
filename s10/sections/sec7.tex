@@ -77,14 +77,14 @@
             &=(1-\mathbb{P}[v_2<p])(p-v_1)s+\mathbb{P}[v_2<p](v_1-p)(1-s)\\
             &=\left(1-\frac{p-0}{1-0}\right)(p-v_1)s+\frac{p-0}{1-0}(v_1-p)(1-s),&&\text{using the CDF}\\
             &=\left(1-p\right)(p-v_1)s+p(v_1-p)(1-s)\\
-            &=ps-v_1s-p^2s+pv_1s+pv_1-pv_1s-p^2+p^2s\\
-            &=ps-v_1s+pv_1-p^2%=s(p-v_1)+p(v_1-p)=s(p-v_1)-p(p-v_1)=(s-p)(p-v_1)
-            &&(*)
+            &=ps-v_1s\textcolor{red}{-p^2s}+\textcolor{red}{pv_1s}+pv_1\textcolor{red}{-pv_1s}-p^2+\textcolor{red}{p^2s}\\
+            &=ps-v_1s+pv_1-p^2  &&(*)
       \end{align*}
       \vfill\null\columnbreak
       \begin{enumerate}
         \item Standard result for $x\sim U(a, b):$
         \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}$
+        \item $\mathbb{E}[u_1(v_1,p)]=ps-v_1s+pv_1-p^2\ \ \ (*)$
       \end{enumerate}
       \vfill\null
     \end{multicols}
@@ -95,7 +95,7 @@
       \begin{itemize}
         \item[Step 1:] Write up the cumulative distribution function (CDF) for a uniform distribution $x\sim U(a, b)$, and the probability that a random draw of $x$ is lower than a constant $c$.
         \item[Step 2:] P1's expected utility from price \textit{p}.
-        \item[Step 3:] \textbf{Maximize P1's expected utility $(*)$ with respect to the price \textit{p}.}
+        \item[Step 3:] \textbf{Find the PBE price $\bm{p^*}$ by maximizing P1's expected utility $\bm{(*)}$ with respect to the price \textit{p}.}
       \end{itemize}\vspace{-8pt}
       \vfill\null\columnbreak
       \begin{enumerate}
@@ -112,39 +112,8 @@
       \begin{itemize}
         \item[Step 1:] Write up the cumulative distribution function (CDF) for a uniform distribution $x\sim U(a, b)$, and the probability that a random draw of $x$ is lower than a constant $c$.
         \item[Step 2:] P1's expected utility from price \textit{p}.
-        \item[Step 3:] $\max\mathbb{E}[u_1(v_1,p)]$ wrt. \textit{p}:
-      \end{itemize}\vspace{-6pt}
-      \begin{align*}
-        \frac{\delta \mathbb{E}[u_1(v_1,p)]}{\delta p}&=0\Rightarrow\\
-        s+v_1-2p&=0\Leftrightarrow\\
-        s+v_1&=2p\Leftrightarrow\\
-        p^*&=\frac{s+v_1}{2}
-      \end{align*}
-      \textbf{What is the PBE?}
-      \vfill\null\columnbreak
-      \begin{enumerate}
-        \item Standard result for $x\sim U(a, b):$
-        \item[CDF:] $F(x)=\frac{x-a}{b-a}\Rightarrow\mathbb{P}(x<c)=\frac{c-a}{b-a}$
-        \item $\mathbb{E}[u_1(v_1,p)]=ps-v_1s+pv_1-p^2\ \ \ (*)$
-      \end{enumerate}
-      \vfill\null
-    \end{multicols}
-\end{frame}
-\begin{frame}{PS10, Ex. 7: Dissolving a partnership (Perfect Bayesian Equilibria)}
-    Difficult. Exercise 4.10 in Gibbons (p. 250). Two partners must dissolve their partnership. Partner 1 currently owns share $s$ of the partnership, partner 2 owns share $1-s$. The partners agree to play the following game: partner 1 names a price, $p$, for the whole partnership, and partner 2 then chooses either to buy l's share for $ps$ or to sell his or her share to 1 for $p(1-s)$. Suppose it is common knowledge that the partners' valuations for owning the whole partnership are independently and uniformly distributed on $[0,1]$, but that each partner's valuation is private information. What is the perfect Bayesian equilibrium?\vspace{-11pt}
-    \begin{multicols}{2}
-      \begin{itemize}
-        \item[Step 1:] Write up the cumulative distribution function (CDF) for a uniform distribution $x\sim U(a, b)$, and the probability that a random draw of $x$ is lower than a constant $c$.
-        \item[Step 2:] P1's expected utility from price \textit{p}.
-        \item[Step 3:] $\max\mathbb{E}[u_1(v_1,p)]$ wrt. \textit{p}:
-      \end{itemize}\vspace{-6pt}
-      \begin{align*}
-        \frac{\delta \mathbb{E}[u_1(v_1,p)]}{\delta p}&=0\Rightarrow\\
-        s+v_1-2p&=0\Leftrightarrow\\
-        s+v_1&=2p\Leftrightarrow\\
-        p^*&=\frac{s+v_1}{2}
-      \end{align*}
-      What is the PBE?
+        \item[Step 3:] Find the PBE price $p^*$ by maximizing P1's expected utility $(*)$ with respect to the price \textit{p}.
+      \end{itemize}
       \vfill\null\columnbreak
       \begin{enumerate}
         \item Standard result for $x\sim U(a, b):$
@@ -152,8 +121,13 @@
         \item $\mathbb{E}[u_1(v_1,p)]=ps-v_1s+pv_1-p^2\ \ \ (*)$
         \item As the quadratic term is negative, $(*)$ is a parabola which opens downward from the vertex $p^*$.\\
         I.e. $p^*$ is the maximum of $(*)$, thus:
-        \item[] In the PBE, the price is $p^*=\frac{s+v_1}{2}$
-      \end{enumerate}
+      \end{enumerate}\vspace{-14pt}
+      \begin{align*}
+        \frac{\delta \mathbb{E}[u_1(v_1,p)]}{\delta p}&=0\Rightarrow\\
+        s+v_1-2p&=0\Leftrightarrow\\
+        s+v_1&=2p\Leftrightarrow\\
+        p^*&=\frac{s+v_1}{2}
+      \end{align*}
       \vfill\null
     \end{multicols}
 \end{frame}
