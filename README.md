@@ -17,7 +17,7 @@ Slides for teaching exercise classes in [Microeconomics III](https://kurser.ku.d
 The "figures" folders contain Python code for Cournot and mixed strategy diagrams (sessions 2-4) as well as Inkscape (svg) files for the game trees (sessions 5-12).
 
 ### Draving game trees
-* I draw the game trees in [Inkscape](https://inkscape.org/), which is a great piece of free software – when you have gotten used to it.
+I draw the game trees in [Inkscape](https://inkscape.org/), which is a great piece of free software – when you have gotten used to it.
   * Editing one of the existing game trees can be a quite straightforward start.
   * One can use LaTeX math mode such as `$x_1$`.
   * Exporting an illustration to a LaTeX document can be a bit cumbersome. Choose a name without spacing and save it as type: “Portable Document Format (\*.pdf)” and choose “Omit text in PDF and create LaTeX file” and “Use exported object’s size”, which creates two new files (\*.pdf and \*.pdf_tex). Both must be included in the folder that is referred to in the LaTeX document using the code below (e.g. uploaded to [Overleaf](https://www.overleaf.com/)) to even see what the final figure looks like, as the files make little sense on their own.
@@ -29,6 +29,6 @@ The "figures" folders contain Python code for Cournot and mixed strategy diagram
   \import{folder_name/}{figure_name.pdf_tex}
 \end{figure}
 ```
-* For students, I instead recommend drawing game trees in hand (or using PowerPoint) as it is the quickest and resembles the exam situation.
+For students, I instead recommend drawing game trees in hand (or using PowerPoint) as it is the quickest and resembles the exam situation.
   * If writing an assignments on the computer, one can take a picture or leave blank space to draw the figures after printing.
   * Alternatively, an existing game tree can simply be coloured in Paint or PowerPoint.
