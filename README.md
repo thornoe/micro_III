@@ -14,4 +14,4 @@ Slides for teaching exercise classes in [Microeconomics III](https://kurser.ku.d
 * [Session 11](https://github.com/thornoe/micro_III/blob/master/s11/main.pdf) and [*Signaling games: Cookbook and notation*](https://github.com/thornoe/micro_III/blob/master/s11/cookbook_notation.pdf)
 * [Session 12](https://github.com/thornoe/micro_III/blob/master/s12/main.pdf)
 
-The "figures" folders contain Inkscape (svg) files for creating the figures as well as Python code for mixed strategy diagrams.
+The "figures" folders contain Python code for Cournot and mixed strategy diagrams (sessions 2-4) as well as Inkscape (svg) files for the game trees (sessions 5-12).
