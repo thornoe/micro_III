@@ -30,5 +30,5 @@ I draw the game trees in [Inkscape](https://inkscape.org/), which is a great pie
 \end{figure}
 ```
 For students, I instead recommend drawing game trees in hand (or using PowerPoint) as it is the quickest and resembles the exam situation.
-  * If writing an assignments on the computer, one can take a picture or leave blank space to draw the figures after printing.
+  * Writing an assignments on the computer, one can take a picture or leave blank space to draw the figures after printing.
   * Alternatively, an existing game tree can simply be coloured in Paint or PowerPoint.
