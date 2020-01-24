@@ -30,7 +30,7 @@ I draw the game trees in [Inkscape](https://inkscape.org/), which is a great pie
 ```
 * When editing figures or tables for LaTeX in an external program it becomes cumbersome to use Overleaf, as you need to upload each edition. Instead, consider setting up an offline text editor such as [Atom](https://github.com/thornoe/AtomSetup) or [Visual Studio Code](https://code.visualstudio.com) (with [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)).
 * Troubleshoot errors when building in LaTeX:
-    - If LaTeX can't build, it's usually due to free-floating rather than attached elements, typically dots or dashed lines. Two different selecting tools can be accessed by pressing `F1` and `F2` respectively. For dots one needs to use `F2` in order for them to 'attach' when hovering near the end of a line.
+    - If LaTeX can't build, it's usually due to free-floating rather than attached elements, typically dots or dashed lines. In Inkscape, two different selecting tools can be accessed by pressing `F1` and `F2` respectively. For dots one needs to use `F2` in order for them to 'attach' when hovering near the end of a line.
     - If white space is left at the right of the figure, reduce the font size in Inkscape as this only affects the area taken into account for the figure.
 
 For students, I instead recommend drawing game trees in hand (or using PowerPoint) as it is the quickest and resembles the exam situation.
