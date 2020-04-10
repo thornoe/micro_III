@@ -16,7 +16,8 @@ Slides for teaching exercise classes in [Microeconomics III](https://kurser.ku.d
 
 The "figures" folders contain Python code for Cournot and mixed strategy diagrams (sessions 2-4) as well as Inkscape (svg) files for the game trees (sessions 5-12).
 
-### Drawing game trees
+
+## Drawing game trees
 I draw the game trees in [Inkscape](https://inkscape.org/), which is a great piece of free software – when you have gotten used to it.
 * Editing one of the existing game trees can be a quite straightforward start. If
 * One can use LaTeX math mode such as `$x_1$`.
@@ -36,3 +37,30 @@ I draw the game trees in [Inkscape](https://inkscape.org/), which is a great pie
 For students, I instead recommend drawing game trees in hand (or using PowerPoint) as it is the quickest and resembles the exam situation.
 * Writing an assignments on the computer, one can take a picture or leave blank space to draw the figures after printing.
 * Alternatively, an existing game tree can simply be coloured in Paint or PowerPoint.
+
+
+## License
+
+This project is released under the MIT License, that is, you can basically do anything with my code as long as you give appropriate credit and don’t hold me liable.
+
+### MIT License
+
+Copyright (c) 2020 Thor Donsby Noe
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
