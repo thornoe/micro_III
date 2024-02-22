@@ -40,4 +40,4 @@ For students, I instead recommend drawing game trees in hand (or using PowerPoin
 
 
 ## License
-This project is released under the [MIT License]([https://github.com/thornoe/GreenGDP/blob/master/LICENSE](https://github.com/thornoe/micro_III/blob/master/LICENSE)), that is, you can basically do anything with my code as long as you give appropriate credit and don’t hold me liable.
+This project is released under the [MIT License](https://github.com/thornoe/micro_III/blob/master/LICENSE), that is, you can basically do anything with my code as long as you give appropriate credit and don’t hold me liable.
